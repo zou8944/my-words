@@ -1,0 +1,19 @@
+{
+  "name": "my-words",
+  "version": "1.0.0",
+  "description": "我的博客数据源",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zou8944/my-words.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zou8944/my-words/issues"
+  },
+  "homepage": "https://github.com/zou8944/my-words#readme"
+}

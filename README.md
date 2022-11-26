@@ -2,11 +2,11 @@
 
 我的博客数据源
 
-## What is this
+## What
 
 这是我的博客数据源，所有平台文章都从此处加载。文章的添加和修改也应在此处执行。
 
-## Why this
+## Why
 
 前前后后用过 wordpress、hexo 等博客系统，最近又在折腾自己的博客系统。
 
@@ -16,10 +16,21 @@
 
 再者，写文章其实和写代码很像，有固定的格式、需要错字纠察，此时 lint 工具就排上了用场。
 
+## 文章规范
+
+- 格式：Markdown
+- 元数据：
+  - 标题：以文档标题为准
+  - 分类：[categories.json](./posts/categories.json)
+  - 标签：[tags.json](./posts/tags.json)
+  - 创建时间：front matter - created_at
+  - 更新时间：front matter - updated_at
+  - 期望slug: front matter - slug
+
 ## To do
 
 - [ ] 以往博客整理
-- [ ] 文章规范文章
+- [x] 文章规范
 - [ ] 文章规范 lint 工具
 - [ ] markdown lint 接入
 - [ ] chinese lint 接入
