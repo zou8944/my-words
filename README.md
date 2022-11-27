@@ -26,10 +26,14 @@
   - 创建时间：front matter - created_at
   - 更新时间：front matter - updated_at
   - 期望slug: front matter - slug
+- 概览： \<!--more-->
+
+文档标题建议：关键词前移
 
 ## To do
 
-- [ ] 以往博客整理
+- [x] 以往博客整理
+- [ ] 以往博客分类
 - [x] 文章规范
 - [ ] 文章规范 lint 工具
 - [ ] markdown lint 接入
