@@ -1,6 +1,7 @@
 ---
 created_at: 2021-12-23 20:52:58
 updated_at: 2021-12-23 20:52:58
+slug: openid-connect-1.0-introduction
 tags:
   - OpenID Connect
 ---

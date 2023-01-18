@@ -1,6 +1,7 @@
 ---
 created_at: 2022-03-19 17:05:05
 updated_at: 2022-03-19 17:05:05
+slug: spring-and-kotlin-compatibility
 tags:
   - Kotlin
   - Spring

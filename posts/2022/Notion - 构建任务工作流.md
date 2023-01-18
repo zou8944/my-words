@@ -1,6 +1,7 @@
 ---
 created_at: 2022-04-13 23:19:33
 updated_at: 2022-04-13 23:19:33
+slug: build-work-flow-with-notion
 tags:
   - notion
   - 任务管理

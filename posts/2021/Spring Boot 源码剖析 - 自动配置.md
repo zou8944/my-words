@@ -1,6 +1,7 @@
 ---
 created_at: 2021-12-11 15:59:58
 updated_at: 2021-12-11 15:59:58
+slug: spring-boot-source-analyse-auto-configuration
 tags:
   - Spring
   - 源码剖析

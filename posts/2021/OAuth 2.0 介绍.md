@@ -1,6 +1,7 @@
 ---
 created_at: 2021-12-23 19:48:39
 updated_at: 2021-12-23 19:48:39
+slug: oauth-2.0-introduction
 tags:
   - OAuth2.0
 ---
