@@ -260,6 +260,20 @@ class CommentAdmin(admin.ModelAdmin):
 
 ```
 
+### 自定义html组件样式
+
+显示字段时，每一种Model的filed类型都有固定的html元素样式对应，比如Text类型对应\<textarea>元素。可以通过如下方式自定义
+
+```python
+@admin.register(Location)
+class LocationAdmin(GeneralAdmin):
+    # 为每种Model字段类型指定对应的html组件
+    formfield_overrides = {
+        models.CharField: {'widget': TextInput(attrs={'size': '5'})},
+        models.TextField: {'widget': Textarea(attrs={'rows': 1, 'cols': 40})},
+    }
+```
+
 ### 禁用删除和添加
 
 重写如下方法能够禁用删除和添加action
