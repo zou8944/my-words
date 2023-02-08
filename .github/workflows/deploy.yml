@@ -1,0 +1,9 @@
+name: Post my words to my own blog site
+on: [push]
+jobs:
+  post-my-words:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger my blog site to import from my-words
+        run: |
+          curl --location --request POST 'zou8944.com/import'
