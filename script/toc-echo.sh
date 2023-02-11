@@ -17,7 +17,8 @@ function iteratePost() {
   for post in $(ls -t $yearDir); do
     if [ -d $yearDir ]; then
       title=${post%.*}
-      echo "- [$title]($yearDir/$post)"
+      link=$(echo $yearDir/$post | sed 's/ /%20/g')
+      echo "- [$title]($link)"
     fi
   done
 }
