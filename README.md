@@ -1,43 +1,139 @@
-# my-words
+# 随便写点东西
 
-我的博客数据源
+[果冻的碎碎念 - zou8944.com](https://zou8944.com)
 
-## What
+## 2023
 
-这是我的博客数据源，所有平台文章都从此处加载。文章的添加和修改也应在此处执行。
+- [树](./posts/2023/树.md)
+- [Django Admin 速记](./posts/2023/Django Admin 速记.md)
+- [一种订阅计算方法](./posts/2023/一种订阅计算方法.md)
 
-## Why
+## 2022
 
-前前后后用过 wordpress、hexo 等博客系统，最近又在折腾自己的博客系统。
+- [Spring 与 Kotlin 兼容性注意事项](./posts/2022/Spring 与 Kotlin 兼容性注意事项.md)
+- [Notion - 构建任务工作流](./posts/2022/Notion - 构建任务工作流.md)
+- [重构 - 记一次重构实践](./posts/2022/重构 - 记一次重构实践.md)
+- [自省 - 我们应如何测试](./posts/2022/自省 - 我们应如何测试.md)
+- [常用登录方案的调试方法](./posts/2022/常用登录方案的调试方法.md)
+- [如何安全地使用 token](./posts/2022/如何安全地使用 token.md)
+- [单元测试 - 理论](./posts/2022/单元测试 - 理论.md)
+- [单元测试 - 最佳实践](./posts/2022/单元测试 - 最佳实践.md)
+- [单元测试 - 工具](./posts/2022/单元测试 - 工具.md)
+- [X.509 介绍](./posts/2022/X.509 介绍.md)
+- [Linux Shell 编程概览](./posts/2022/Linux Shell 编程概览.md)
+- [K8s RBAC 介绍](./posts/2022/K8s RBAC 介绍.md)
+- [Linux 用户和权限管理](./posts/2022/Linux 用户和权限管理.md)
+- [K8s 排障 - Deployment 环境变量不生效](./posts/2022/K8s 排障 - Deployment 环境变量不生效.md)
+- [K8s 应用资源管理实践](./posts/2022/K8s 应用资源管理实践.md)
+- [K8s 安全介绍](./posts/2022/K8s 安全介绍.md)
+- [K8s 网络碎碎念](./posts/2022/K8s 网络碎碎念.md)
+- [K8s 灰度发布](./posts/2022/K8s 灰度发布.md)
+- [K3s & Rancher 初体验](./posts/2022/K3s & Rancher 初体验.md)
+- [iptables 介绍](./posts/2022/iptables 介绍.md)
+- [我是调包侠](./posts/2022/我是调包侠.md)
+- [IAP StoreKit2 后端开发完全指南](./posts/2022/IAP StoreKit2 后端开发完全指南.md)
+- [gitops实践总结](./posts/2022/gitops实践总结.md)
 
-每次博客搬家时，面临的最大问题是数据迁移。不同系统往往有不同的格式需求，迁移起来比较麻烦。
+## 2021
 
-但是文章本身是独立的，它不应该受限于展示它的系统，所以有必要将其解耦。
+- [设计模式介绍](./posts/2021/设计模式介绍.md)
+- [Spring Boot 源码剖析 - 自动配置](./posts/2021/Spring Boot 源码剖析 - 自动配置.md)
+- [OpenID Connect 1.0 介绍](./posts/2021/OpenID Connect 1.0 介绍.md)
+- [OAuth 2.0 介绍](./posts/2021/OAuth 2.0 介绍.md)
+- [随想 - 20210704](./posts/2021/随想 - 20210704.md)
+- [随想 - 20210711](./posts/2021/随想 - 20210711.md)
+- [读《超越感觉》所感](./posts/2021/读《超越感觉》所感.md)
+- [读《认知觉醒》有感](./posts/2021/读《认知觉醒》有感.md)
+- [读《西西弗神话》有感](./posts/2021/读《西西弗神话》有感.md)
+- [读《刻意练习》有感](./posts/2021/读《刻意练习》有感.md)
+- [观《反叛的鲁鲁修》有感](./posts/2021/观《反叛的鲁鲁修》有感.md)
+- [自省 - 读书不应过于理性](./posts/2021/自省 - 读书不应过于理性.md)
+- [自省 - 任务心态](./posts/2021/自省 - 任务心态.md)
+- [时区问题](./posts/2021/时区问题.md)
+- [序列化探索 - Protobuf](./posts/2021/序列化探索 - Protobuf.md)
+- [序列化探索 - Kotlin](./posts/2021/序列化探索 - Kotlin.md)
+- [序列化探索 - Java](./posts/2021/序列化探索 - Java.md)
+- [序列化探索 - Jackson](./posts/2021/序列化探索 - Jackson.md)
+- [序列化探索 - Gson](./posts/2021/序列化探索 - Gson.md)
+- [序列化探索 - Fastjson](./posts/2021/序列化探索 - Fastjson.md)
+- [Java 动态代理介绍](./posts/2021/Java 动态代理介绍.md)
+- [做个馒头吧](./posts/2021/做个馒头吧.md)
+- [一种将 HTML 转换为格式化文本的方法](./posts/2021/一种将 HTML 转换为格式化文本的方法.md)
+- [WebSocket 介绍](./posts/2021/WebSocket 介绍.md)
+- [UUID 介绍](./posts/2021/UUID 介绍.md)
+- [Spring 源码剖析 - PostProcessor](./posts/2021/Spring 源码剖析 - PostProcessor.md)
+- [Spring 源码剖析 - BeanDefinition](./posts/2021/Spring 源码剖析 - BeanDefinition.md)
+- [Spring 源码剖析 - ApplicationContext](./posts/2021/Spring 源码剖析 - ApplicationContext.md)
+- [Spring Webflux 介绍](./posts/2021/Spring Webflux 介绍.md)
+- [Spring STOMP 如何区分客户端](./posts/2021/Spring STOMP 如何区分客户端.md)
+- [Spring Data JPA 介绍](./posts/2021/Spring Data JPA 介绍.md)
+- [Spring Boot 源码剖析 - 启动流程](./posts/2021/Spring Boot 源码剖析 - 启动流程.md)
+- [PostgreSQL 权限管理介绍](./posts/2021/PostgreSQL 权限管理介绍.md)
+- [LDAP 介绍](./posts/2021/LDAP 介绍.md)
+- [JMH - 性能调优介绍](./posts/2021/JMH - 性能调优介绍.md)
+- [Java 缓存介绍](./posts/2021/Java 缓存介绍.md)
+- [Java 反射介绍](./posts/2021/Java 反射介绍.md)
+- [CORS 跨域介绍](./posts/2021/CORS 跨域介绍.md)
+- [容器化基石 - namespace & cgroup](./posts/2021/容器化基石 - namespace & cgroup.md)
+- [K8s 搭建辛酸史](./posts/2021/K8s 搭建辛酸史.md)
+- [JWT 介绍](./posts/2021/JWT 介绍.md)
+- [HTTP2 介绍](./posts/2021/HTTP2 介绍.md)
+- [Docker 速记 - Dockerfile](./posts/2021/Docker 速记 - Dockerfile.md)
+- [Charles 抓包配置](./posts/2021/Charles 抓包配置.md)
 
-再者，写文章其实和写代码很像，有固定的格式、需要错字纠察，此时 lint 工具就排上了用场。
+## 2019
 
-## 文章规范
+- [自省 - 我有点想写博客了](./posts/2019/自省 - 我有点想写博客了.md)
+- [推荐系统 - 概述](./posts/2019/推荐系统 - 概述.md)
+- [推荐系统 - 基于用户行为的推荐](./posts/2019/推荐系统 - 基于用户行为的推荐.md)
+- [域名系统介绍](./posts/2019/域名系统介绍.md)
+- [SockJS  介绍](./posts/2019/SockJS  介绍.md)
+- [RxJava 介绍](./posts/2019/RxJava 介绍.md)
+- [Python 包管理和虚拟环境工具 pipenv 介绍](./posts/2019/Python 包管理和虚拟环境工具 pipenv 介绍.md)
+- [Angular & Vue & React 介绍](./posts/2019/Angular & Vue & React 介绍.md)
+- [Akka & Lightend 介绍](./posts/2019/Akka & Lightend 介绍.md)
+- [K8s 初探 - Volume](./posts/2019/K8s 初探 - Volume.md)
+- [K8s 初探 - ConfigMap & Secret](./posts/2019/K8s 初探 - ConfigMap & Secret.md)
+- [K8s 初探 - 访问 Pod 元数据及其他资源](./posts/2019/K8s 初探 - 访问 Pod 元数据及其他资源.md)
+- [K8s 初探 - 概览](./posts/2019/K8s 初探 - 概览.md)
+- [K8s 初探 - StatefulSet](./posts/2019/K8s 初探 - StatefulSet.md)
+- [K8s 初探 - Service](./posts/2019/K8s 初探 - Service.md)
+- [K8s 初探 - Pod](./posts/2019/K8s 初探 - Pod.md)
+- [K8s 初探 - Deployment](./posts/2019/K8s 初探 - Deployment.md)
+- [Common FileUpload 介绍](./posts/2019/Common FileUpload 介绍.md)
 
-- 格式：Markdown
-- 元数据：
-  - 标题：以文档标题为准
-  - 分类：[categories.json](./posts/categories.json)
-  - 标签：[tags.json](./posts/tags.json)
-  - 创建时间：front matter - created_at
-  - 更新时间：front matter - updated_at
-  - 期望slug: front matter - slug
-- 概览： \<!--more-->
+## 2020
 
-文档标题建议：关键词前移
+- [自省 - 区分随笔和正文](./posts/2020/自省 - 区分随笔和正文.md)
+- [消息队列 - 拉取消息原理](./posts/2020/消息队列 - 拉取消息原理.md)
+- [服务器监控 - Prometheus & Grafana](./posts/2020/服务器监控 - Prometheus & Grafana.md)
+- [Vert.x 源码剖析 - Web](./posts/2020/Vert.x 源码剖析 - Web.md)
+- [Vert.x 源码剖析 - Core](./posts/2020/Vert.x 源码剖析 - Core.md)
+- [Vert.x - 缓存 Future 带来的问题](./posts/2020/Vert.x - 缓存 Future 带来的问题.md)
+- [Vert.x - Web API Contract 错误处理](./posts/2020/Vert.x - Web API Contract 错误处理.md)
+- [Sign In with Apple 后端开发完全指南](./posts/2020/Sign In with Apple 后端开发完全指南.md)
+- [Python 日志介绍](./posts/2020/Python 日志介绍.md)
+- [PostgreSQL 如何看懂 Explain](./posts/2020/PostgreSQL 如何看懂 Explain.md)
+- [PostgreSQL vs MySQL 为何我们选择前者](./posts/2020/PostgreSQL vs MySQL 为何我们选择前者.md)
+- [PostgreSQL Listen-Notify 机制](./posts/2020/PostgreSQL Listen-Notify 机制.md)
+- [Nginx - server & location 的匹配算法](./posts/2020/Nginx - server & location 的匹配算法.md)
+- [Maven - 插件编写](./posts/2020/Maven - 插件编写.md)
+- [Maven - 发布到中央库](./posts/2020/Maven - 发布到中央库.md)
+- [JSON Schema 用于 API 响应验证](./posts/2020/JSON Schema 用于 API 响应验证.md)
+- [Java IO 介绍](./posts/2020/Java IO 介绍.md)
+- [frp - 另一种内网穿透选择](./posts/2020/frp - 另一种内网穿透选择.md)
+- [Kotlin 协程详解](./posts/2020/Kotlin 协程详解.md)
+- [Java 中的时间问题](./posts/2020/Java 中的时间问题.md)
 
-## To do
+## 2018
 
-- [x] 以往博客整理
-- [ ] 以往博客分类
-- [x] 文章规范
-- [ ] 文章规范 lint 工具
-- [ ] markdown lint 接入
-- [ ] chinese lint 接入
-- [ ] hexo 连接工具
-- [ ] CSDN 连接工具
-- [ ] 自定义博客 连接工具
+- [Spring Webflow - 配置](./posts/2018/Spring Webflow - 配置.md)
+- [Spring Webflow - 视图状态](./posts/2018/Spring Webflow - 视图状态.md)
+- [Spring Webflow - 第一个Flow](./posts/2018/Spring Webflow - 第一个Flow.md)
+- [Spring Webflow - 基础](./posts/2018/Spring Webflow - 基础.md)
+- [Spring Webflow - 前言](./posts/2018/Spring Webflow - 前言.md)
+- [Spring Webflow - EL表达式](./posts/2018/Spring Webflow - EL表达式.md)
+- [Spring Webflow - Action](./posts/2018/Spring Webflow - Action.md)
+- [HTTP 常见问题](./posts/2018/HTTP 常见问题.md)
+- [Git 介绍](./posts/2018/Git 介绍.md)
+
