@@ -7,6 +7,7 @@
 - [树](./posts/2023/树.md)
 - [Django Admin 速记](./posts/2023/Django%20Admin%20速记.md)
 - [一种订阅计算方法](./posts/2023/一种订阅计算方法.md)
+- [再看时间](./posts/2023/再看时间.md)
 
 ## 2022
 
