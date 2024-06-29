@@ -1,0 +1,7 @@
+## 2024-06-29
+
+Google Authenticator 背后的技术其实非常简单：HOTP 或 TOTP，如果要自己实现一个服务端，只需要做两件事
+
+- 去网上找一个 otp 的实现库，比如这个: https://github.com/pquerna/otp
+- 按照 Google Authenticator 的协商格式生成一个 uri 的二维码：https://github.com/google/google-authenticator/wiki/Key-Uri-Format
+
