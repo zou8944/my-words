@@ -11,3 +11,26 @@
 - 苹果、微软这样的老牌厂商创建时，我们还在经历文化大革命。
 - 我们的知名企业都是在临近或改革开放之后发展起来的。
 - 1984 年前后是网络设备的发展；1994 年前后是互联网公司兴起的时间点。
+
+## 2024-11-22
+
+如果 git 操作时报 ”Account has been blocked“ 怎么办？
+
+先确定 ssh 连接是否成功；再确定 git server 把我们当成了哪个用户。然后看这个用户是否真的被 block 了
+
+```shell
+# ssh -v 是个好办法，它能让我们知道 git 选择了哪个秘钥进行 ssh 认证
+GIT_SSH_COMMAND="ssh -v" git clone git@git.xxxx.work:g1/xxxx/prod.git
+```
+
+```shell
+# 然后看一下这个秘钥在 git server 对应的到底是哪个用户
+
+# ssh -i 是个好办法
+ssh -i /home/www/.ssh/id_rsa git@git.xxxx.work
+
+# ssh -T 也是可以的，甚至可以不用先 ssh -v 看用的是哪个秘钥
+ssh -T git@git.mampod.work
+# 它的输出可能如下
+Welcome to GitLab, @zouguodong!
+```
