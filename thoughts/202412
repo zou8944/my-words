@@ -1,0 +1,40 @@
+## 2024-12-12
+
+以 python 3.12 为基础镜像的 Dockerfile 如何替换国内镜像源. 
+
+这是传统的方式
+
+```dockerfile
+... ...
+RUN sed -i 's/deb.debian.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apt/sources.list && \
+    sed -i 's|security.debian.org/debian-security|mirrors.tuna.tsinghua.edu.cn/debian-security|g' /etc/apt/sources.list
+... ...
+```
+
+但是自从 Debian 11 (Bullseye) 开始，Debian 支持使用 .sources 文件格式来配置 APT 源，而不是传统的 sources.list 文件。这种新格式提供了更多功能，比如更好的签名支持。所以新的完整的例子如下
+
+```
+FROM registry.cn-beijing.aliyuncs.com/xxx/python:3.12
+
+COPY requirements.txt .
+
+# 使用国内的 apt 源
+RUN sed -i 's|http://deb.debian.org|http://mirrors.aliyun.com|g' /etc/apt/sources.list.d/debian.sources; \
+    sed -i 's|http://security.debian.org|http://mirrors.aliyun.com|g' /etc/apt/sources.list.d/debian.sources; \
+    apt-get update && apt-get install -y ffmpeg; \
+    apt-get clean
+
+WORKDIR /app
+COPY . .
+
+ARG BE_PODCAST_WORKER
+
+ENV BE_PODCAST_WORKER=$BE_PODCAST_WORKER
+ENV PYTHONUNBUFFERED=1
+
+RUN pip install --no-cache-dir -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt
+
+CMD ["python", "worker_main.py"]
+
+```
+
