@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  newsletter:
+    build: .
+    container_name: my-newsletter
+    restart: unless-stopped
+    environment:
+      - TZ=Asia/Shanghai
+      - PYTHONPATH=/app
+      - NEWSLETTER_DIR=/app/newsletter
+    volumes:
+      # 挂载数据目录，保存生成的 newsletter 文件
+      - ./data:/app/data
+      - ./logs:/app/logs
+      # 挂载 Newsletter 目录
+      - /Users/zouguodong/Documents/bosidian_gd/Newsletter:/app/newsletter
+    env_file:
+      - .env
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    # 健康检查
+    healthcheck:
+      test: ["CMD", "python", "-c", "import sys; sys.exit(0)"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
