@@ -10,6 +10,7 @@ import sys
 from datetime import datetime
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
+from urllib.parse import quote
 
 try:
     import yaml
@@ -182,7 +183,9 @@ def generate_readme(articles: List[Dict]) -> str:
         for article in year_articles:
             title = article['title']
             path = article['path']
-            readme_content.append(f"- [{title}]({path})")
+            # 对路径进行URL编码，处理空格等特殊字符
+            encoded_path = quote(path, safe='/')
+            readme_content.append(f"- [{title}]({encoded_path})")
         
         readme_content.append("")  # 年份之间空一行
     
