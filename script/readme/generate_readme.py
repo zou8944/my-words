@@ -171,7 +171,8 @@ def generate_readme(articles: List[Dict]) -> str:
     # 生成 README 内容
     readme_content = [
         "# 我叫果冻\n",
-        "[果冻的碎碎念 - zou8944.com](https://zou8944.com)\n",
+        "[果冻的碎碎念 - zou8944.com](https://zou8944.com)\n\n",
+        "[今日要闻](./newsletters/homepage.md)\n",
     ]
 
     # 按年份倒序排列

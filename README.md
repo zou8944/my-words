@@ -2,6 +2,9 @@
 
 [果冻的碎碎念 - zou8944.com](https://zou8944.com)
 
+
+[今日要闻](./newsletters/homepage.md)
+
 ## 2025
 
 - [Go 反射梳理](posts/2025/Go%20%E5%8F%8D%E5%B0%84%E6%A2%B3%E7%90%86.md)
