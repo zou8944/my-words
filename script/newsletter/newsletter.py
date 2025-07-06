@@ -155,7 +155,7 @@ def generate_newsletter():
 
     current_datetime_formatted = news_utils.current_datetime_formatted()
     contents = [
-        "## 今日技术 Newsletter",
+        "## 今日要闻",
         "\n<sub> 生成时间：{}</sub>\n".format(current_datetime_formatted),
         "\n---\n",
         "### AI 推荐要点\n",
