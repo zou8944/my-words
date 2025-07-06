@@ -3,6 +3,7 @@
 如果不行就使用 llama-cpp-python + Yi-1.5-6B 的本地模型
 """
 
+import atexit
 import time
 from typing import Optional
 
@@ -46,6 +47,16 @@ class LLMStats:
 
 
 llm_stats = LLMStats()
+
+
+def _print_llm_stats_on_exit():
+    """进程退出时打印LLM统计信息"""
+    if llm_stats.total_calls > 0:
+        print(f"\n[进程退出] {llm_stats.get_summary()}")
+
+
+# 注册退出处理函数
+atexit.register(_print_llm_stats_on_exit)
 
 
 def get_llm_stats() -> str:

@@ -207,8 +207,6 @@ def try_generate_newsletter():
     generate_newsletter()
     # 加载到本地
     load_all_files_from_r2()
-    # 输出LLM使用统计
-    logger.info(llm.get_llm_stats())
 
 
 def main():
