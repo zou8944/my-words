@@ -1,21 +1,14 @@
-import os
 from datetime import datetime
 from typing import Optional
 
 import llm
-from news_utils import (
-    create_newsletter_directory_structure,
-    fetch_and_convert_to_markdown,
-    get_rss_entries,
-    save_markdown_to_file,
-    setup_logger,
-)
+import news_utils
 
-logger = setup_logger(__name__)
+logger = news_utils.setup_logger(__name__)
 
 
 def get_latest_link() -> Optional[str]:
-    first_entry = get_rss_entries("https://news.smol.ai/rss.xml", limit=1)
+    first_entry = news_utils.get_rss_entries("https://news.smol.ai/rss.xml", limit=1)
     first_entry_link = first_entry[0].get("link")
     return first_entry_link
 
@@ -28,7 +21,7 @@ def get_latest_news_as_markdown() -> Optional[str]:
 
     logger.info(f"正在抓取新闻: {link}")
 
-    return fetch_and_convert_to_markdown(link)
+    return news_utils.fetch_and_convert_to_markdown(link)
 
 
 def summarize(markdown_content: str) -> Optional[str]:
@@ -51,8 +44,8 @@ def summarize(markdown_content: str) -> Optional[str]:
 - 禁止使用：本Newsletter自身的链接作为来源
 - 如无原始链接：写"来源：文章内容"
 
-Markdown输出格式如下（以 ``` 包围提供的，但在生成时候请将该 ``` 去除）：
-```
+Markdown输出格式如下
+
 ## 📰 十大AI新闻要点
 
 ### 1. [要点标题](原始消息源链接，如 https://twitter.com/xxx 或 https://github.com/xxx)
@@ -83,7 +76,6 @@ Markdown输出格式如下（以 ``` 包围提供的，但在生成时候请将�
 ### 3. ...
 
 ---
-```
 
 筛选优先级：
 - 重大技术突破或产品发布
@@ -112,13 +104,13 @@ def fetch_news():
     link = get_latest_link()
     if not link:
         return None
-    news_content = fetch_and_convert_to_markdown(link)
+    news_content = news_utils.fetch_and_convert_to_markdown(link)
     if not news_content:
         logger.error("获取最新新闻内容失败")
         return
 
     # 从 get_today_news_file 获取文件路径
-    _, sum_filepath = get_today_news_file()
+    _, sum_filename = get_today_news_file()
     current_date = datetime.now().strftime("%Y-%m-%d")
 
     # 保存原文到文件
@@ -136,8 +128,8 @@ def fetch_news():
     # 保存总结到文件
     summarized_content = f"> [原文链接]({link})\n\n" + summarized_content
     summarized_content = f"## AINews - {current_date}\n\n" + summarized_content
-    if save_markdown_to_file(summarized_content, sum_filepath):
-        logger.info(f"✓ 总结已保存: {sum_filepath}")
+    if news_utils.put_file_to_r2_with_today(sum_filename, summarized_content):
+        logger.info(f"✓ 总结已保存: {sum_filename}")
     else:
         logger.error("✗ 保存总结失败")
         return
@@ -147,34 +139,31 @@ def get_today_news_file():
     """
     获取今天的AI新闻存储路径
     """
-    current_date = datetime.now().strftime("%Y-%m-%d")
-    day_dir, _ = create_newsletter_directory_structure()
+    current_date = news_utils.current_date_formatted()
 
     raw_filename = f"ai_news_{current_date}.md"
     sum_filename = f"ai_news_summary_{current_date}.md"
 
-    raw_filepath = os.path.join(day_dir, raw_filename)
-    sum_filepath = os.path.join(day_dir, sum_filename)
-
-    return raw_filepath, sum_filepath
+    return raw_filename, sum_filename
 
 
 def get_today_news_content() -> str:
     """
     获取今天的AI新闻内容
     """
-    _, sum_filepath = get_today_news_file()
+    _, sum_filename = get_today_news_file()
 
-    # 如果今天的新闻文件存在，读取内容并返回；如果不存在，则调用 fetch_news() 写入然后再返回
-    if os.path.exists(sum_filepath):
-        logger.info(f"今天的AI新闻摘要已存在: {sum_filepath}, 直接读取")
-        with open(sum_filepath, "r", encoding="utf-8") as f:
-            return f.read()
+    content = news_utils.get_file_from_r2_with_today(sum_filename)
+    if content:
+        logger.info(f"今天的AI新闻摘要已存在: {sum_filename}, 直接读取")
+        return content
 
+    logger.info(f"今天的AI新闻摘要不存在: {sum_filename}, 开始抓取")
     fetch_news()
-    with open(sum_filepath, "r", encoding="utf-8") as f:
-        return f.read()
+    content = news_utils.get_file_from_r2_with_today(sum_filename)
+    assert content
+    return content
 
 
 if __name__ == "__main__":
-    fetch_news()
+    get_today_news_content()

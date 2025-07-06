@@ -6,7 +6,6 @@ https://tech.meituan.com/feed/
 处理逻辑：获取发布日期为今天的那篇文章的链接
 """
 
-import os
 from datetime import datetime, timedelta
 from typing import Optional
 
@@ -17,16 +16,7 @@ logger = news_utils.setup_logger(__name__)
 
 
 def get_today_news_file():
-    """
-    获取今天的GitHub Trending新闻存储路径
-    """
-    current_date = datetime.now().strftime("%Y-%m-%d")
-    day_dir, _ = news_utils.create_newsletter_directory_structure()
-
-    filename = f"meituan_{current_date}.md"
-    filepath = os.path.join(day_dir, filename)
-
-    return filepath
+    return f"meituan_{news_utils.current_date_formatted()}.md"
 
 
 def summarize_content(content: str) -> Optional[str]:
@@ -96,25 +86,28 @@ def fetch_news():
         final_contents = ["今天没有新的文章发布"]
 
     # 获取文件路径并保存
-    filepath = get_today_news_file()
+    filename = get_today_news_file()
 
     full_content = "\n".join(final_contents)
-    news_utils.save_markdown_to_file(full_content, filepath)
-    logger.info(f"美团技术团队内容已保存: {filepath}")
+    if news_utils.put_file_to_r2_with_today(filename, full_content):
+        logger.info(f"美团技术团队内容已保存到: {filename}")
+    else:
+        logger.error(f"无法保存美团技术团队内容到: {filename}")
+        return
 
 
 def get_today_posts_content():
-    filepath = get_today_news_file()
-    if os.path.exists(filepath):
-        logger.info("今日美图技术团队文章已存在，直接读取内容")
-        with open(filepath, "r", encoding="utf-8") as f:
-            return f.read()
+    filename = get_today_news_file()
+    content = news_utils.get_file_from_r2_with_today(filename)
+    if content:
+        logger.info("今日美图技术团队文章已存在，直接返回内容")
+        return content
 
     fetch_news()
-    with open(filepath, "r", encoding="utf-8") as f:
-        return f.read()
-
-    return None
+    
+    content = news_utils.get_file_from_r2_with_today(filename)
+    assert content
+    return content
 
 
 if __name__ == "__main__":

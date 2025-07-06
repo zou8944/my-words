@@ -2,20 +2,12 @@
 https://36kr.com/feed
 """
 
-import os
-from datetime import datetime
 from typing import Optional
 
 import llm
-from news_utils import (
-    convert_html_to_markdown,
-    create_newsletter_directory_structure,
-    get_rss_entries,
-    save_markdown_to_file,
-    setup_logger,
-)
+import news_utils
 
-logger = setup_logger(__name__)
+logger = news_utils.setup_logger(__name__)
 
 
 def concurrent_summarize_content(contents: list[str]) -> list[Optional[str]]:
@@ -36,21 +28,13 @@ def concurrent_summarize_content(contents: list[str]) -> list[Optional[str]]:
     return llm.concurrent_one_shoot([(system_prompt, user_prompt) for user_prompt in user_prompts])
 
 
-def get_today_news_file():
-    """
-    获取今天的新闻存储路径
-    """
-
-    current_date = datetime.now().strftime("%Y-%m-%d")
-    day_dir, _ = create_newsletter_directory_structure()
+def get_r2_object_key():
+    current_date = news_utils.current_date_formatted()
 
     raw_filename = f"36kr_raw_{current_date}.md"
     sum_filename = f"36kr_summary_{current_date}.md"
 
-    raw_filepath = os.path.join(day_dir, raw_filename)
-    sum_filepath = os.path.join(day_dir, sum_filename)
-
-    return raw_filepath, sum_filepath
+    return raw_filename, sum_filename
 
 
 def fetch_news():
@@ -58,13 +42,13 @@ def fetch_news():
     logger.info("开始处理36氪新闻源")
 
     rss_url = "https://36kr.com/feed"
-    entries = get_rss_entries(rss_url, limit=20)
+    entries = news_utils.get_rss_entries(rss_url, limit=20)
 
     # 预处理内容并转换为Markdown
     md_summaries = []
     for entry in entries:
         raw_summary = entry.get("summary", "无摘要")
-        md_summary = convert_html_to_markdown(raw_summary)
+        md_summary = news_utils.convert_html_to_markdown(raw_summary)
         md_summaries.append(md_summary)
 
     # 使用处理后的内容生成LLM摘要
@@ -91,27 +75,26 @@ def fetch_news():
 
         sum_contents.append(f"### {i + 1}. [{title}]({link})\n\n> {llm_summary}\n\n---\n\n")
 
-    raw_filepath, sum_filepath = get_today_news_file()
+    raw_filename, sum_filename = get_r2_object_key()
 
-    save_markdown_to_file("\n".join(raw_contents), raw_filepath)
-    save_markdown_to_file("\n".join(sum_contents), sum_filepath)
+    news_utils.put_file_to_r2_with_today(raw_filename, "\n".join(raw_contents))
+    news_utils.put_file_to_r2_with_today(sum_filename, "\n".join(sum_contents))
 
 
 def get_today_news_content() -> str:
     """
     获取今天的新闻
     """
-    _, sum_filepath = get_today_news_file()
-
-    # 如果今天的新闻文件存在，读取内容并返回；如果不在在，则调用 fetch_news() 写入然后再返回
-    if os.path.exists(sum_filepath):
-        logger.info(f"今天的36氪新闻已存在，直接返回: {sum_filepath}")
-        with open(sum_filepath, "r", encoding="utf-8") as f:
-            return f.read()
+    _, sum_filename = get_r2_object_key()
+    content = news_utils.get_file_from_r2_with_today(sum_filename)
+    if content:
+        logger.info(f"今天的36氪新闻已存在，直接返回: {sum_filename}")
+        return content
 
     fetch_news()
-    with open(sum_filepath, "r", encoding="utf-8") as f:
-        return f.read()  # 返回最新的内容
+    content = news_utils.get_file_from_r2_with_today(sum_filename)
+    assert content
+    return content
 
 
 if __name__ == "__main__":

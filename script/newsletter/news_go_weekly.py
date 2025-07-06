@@ -4,8 +4,6 @@ GolangWeekly
 https://cprss.s3.amazonaws.com/golangweekly.com.xml
 """
 
-import os
-from datetime import datetime
 from typing import Optional
 
 import llm
@@ -66,16 +64,7 @@ def summarize_go_weekly(content: str) -> Optional[str]:
 
 
 def get_today_news_file():
-    """
-    获取今天的Go Weekly新闻存储路径
-    """
-    current_date = datetime.now().strftime("%Y-%m-%d")
-    day_dir, _ = news_utils.create_newsletter_directory_structure()
-
-    filename = f"go_weekly_{current_date}.md"
-    filepath = os.path.join(day_dir, filename)
-
-    return filepath
+    return f"go_weekly_{news_utils.current_date_formatted()}.md"
 
 
 def fetch_latest_weekly():
@@ -99,21 +88,25 @@ def fetch_latest_weekly():
 {summary_llm}
     """
 
-    filepath = get_today_news_file()
-    news_utils.save_markdown_to_file(content, filepath)
-    logger.info(f"✓ 已保存最新的 Go Weekly 到: {filepath}")
+    filename = get_today_news_file()
+    if news_utils.put_file_to_r2_with_today(filename, content):
+        logger.info(f"✓ 已保存最新的 Go Weekly 到 R2: {filename}")
+    else:
+        logger.error("✗ 保存最新的 Go Weekly 到 R2 失败")
 
 
 def get_today_news_content() -> str:
-    filepath = get_today_news_file()
-    if os.path.exists(filepath):
-        logger.info(f"今天的 Go Weekly 已经存在: {filepath}")
-        with open(filepath, "r", encoding="utf-8") as file:
-            return file.read()
+    filename = get_today_news_file()
+    content = news_utils.get_file_from_r2_with_today(filename)
+    if content:
+        logger.info(f"今天的 Go Weekly 已经存在: {filename}")
+        return content
 
     fetch_latest_weekly()
-    with open(filepath, "r", encoding="utf-8") as file:
-        return file.read()
+
+    content = news_utils.get_file_from_r2_with_today(filename)
+    assert content
+    return content
 
 
 if __name__ == "__main__":

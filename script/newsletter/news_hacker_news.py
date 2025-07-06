@@ -7,7 +7,6 @@ show(看看别人展示了啥): https://hnrss.org/show
 高赞评论 RSS: https://hnrss.org/bestcomments
 """
 
-import os
 from datetime import datetime
 from typing import Optional
 
@@ -177,19 +176,16 @@ def process_top_hn(rss_url: str, slug: str, file_title: str):
                 f"---\n"
             )
 
-    filepath = get_today_news_file(slug)
+    filename = get_today_news_file(slug)
     final_content = "\n".join(final_contents)
-    news_utils.save_markdown_to_file(final_content, filepath)
+    if news_utils.put_file_to_r2_with_today(filename, final_content):
+        logger.info(f"✓ {file_title} 新闻已保存到 R2: {filename}")
+    else:
+        logger.error(f"✗ 无法保存 {file_title} 新闻到 R2: {filename}")
 
 
 def get_today_news_file(slug: str) -> str:
-    current_date = datetime.now().strftime("%Y-%m-%d")
-    day_dir, _ = news_utils.create_newsletter_directory_structure()
-
-    filename = f"{slug}_{current_date}.md"
-    filepath = os.path.join(day_dir, filename)
-
-    return filepath
+    return f"{slug}_{news_utils.current_date_formatted()}.md"
 
 
 def all_rss_urls() -> list[tuple[str, str, str]]:
@@ -207,16 +203,17 @@ def get_today_news_content() -> str:
     # 把几个都加成一个
     content = []
     for slug, url, title in all_rss_urls():
-        filepath = get_today_news_file(slug)
-        if os.path.exists(filepath):
-            logger.info(f"今天的 {title} 新闻已存在，直接读取: {filepath}")
-            with open(filepath, "r", encoding="utf-8") as file:
-                content.append(file.read())
+        filename = get_today_news_file(slug)
+        _content = news_utils.get_file_from_r2_with_today(filename)
+        if _content:
+            logger.info(f"今天的 {title} 新闻已存在，直接读取: {filename}")
+            content.append(_content)
             continue
 
         process_top_hn(url, slug, title)
-        with open(filepath, "r", encoding="utf-8") as file:
-            content.append(file.read())
+        _content = news_utils.get_file_from_r2_with_today(filename)
+        assert _content
+        content.append(_content)
     return "\n".join(content)
 
 
