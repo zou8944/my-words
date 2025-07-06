@@ -15,8 +15,6 @@ class Settings:
         self.r2_secret_access_key = self._must_get_env("R2_SECRET_ACCESS_KEY")
         self.r2_bucket = self._must_get_env("R2_BUCKET")
 
-        self.newsletter_dir = self._must_get_env("NEWSLETTER_DIR")
-
         self.push_deer_key = self._must_get_env("PUSH_DEER_KEY")
 
     def _must_get_env(self, key: str) -> str:

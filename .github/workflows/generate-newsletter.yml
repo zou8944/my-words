@@ -35,16 +35,18 @@ jobs:
         uv sync
     
     - name: Generate newsletter
+      environment: production
       run: |
         cd script/newsletter
         uv run main.py
       env:
         # 这里需要设置你的环境变量，请在 GitHub Secrets 中配置
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
         R2_ENDPOINT: ${{ secrets.R2_ENDPOINT }}
         R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
         R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
         R2_BUCKET: ${{ secrets.R2_BUCKET }}
-        DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         PUSHDEER_KEY: ${{ secrets.PUSHDEER_KEY }}
     
     - name: Configure Git
