@@ -1,0 +1,67 @@
+name: Generate Newsletter
+
+on:
+  schedule:
+    # 每天上午 9:00 (UTC+8 = 01:00 UTC) 自动运行
+    - cron: '0 1 * * *'
+  workflow_dispatch:  # 允许手动触发
+
+jobs:
+  generate-newsletter:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        # 获取完整的提交历史，以便能够推送
+        fetch-depth: 0
+        # 使用 token 以便能够推送到仓库
+        token: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+    
+    - name: Install uv
+      run: |
+        curl -LsSf https://astral.sh/uv/install.sh | sh
+        echo "$HOME/.cargo/bin" >> $GITHUB_PATH
+    
+    - name: Navigate to newsletter directory and install dependencies
+      run: |
+        cd script/newsletter
+        uv sync
+    
+    - name: Generate newsletter
+      run: |
+        cd script/newsletter
+        uv run main.py
+      env:
+        # 这里需要设置你的环境变量，请在 GitHub Secrets 中配置
+        R2_ENDPOINT: ${{ secrets.R2_ENDPOINT }}
+        R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+        R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+        R2_BUCKET: ${{ secrets.R2_BUCKET }}
+        DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        PUSHDEER_KEY: ${{ secrets.PUSHDEER_KEY }}
+    
+    - name: Configure Git
+      run: |
+        git config --local user.email "newsletter-bot@github.com"
+        git config --local user.name "Newsletter Bot"
+    
+    - name: Commit and push changes
+      run: |
+        # 检查是否有新文件或更改
+        git add newsletters/
+        
+        # 如果有更改，则提交
+        if git diff --staged --quiet; then
+          echo "没有新的 newsletter 文件需要提交"
+        else
+          git commit -m "📰 自动生成每日技术 newsletter $(date +'%Y-%m-%d')"
+          git push origin main
+          echo "✅ 已成功提交新的 newsletter 文件"
+        fi
