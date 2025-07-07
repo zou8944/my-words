@@ -40,7 +40,7 @@
 ---
 
 ### 各渠道精选摘要
-- [AINews](././ai_news_summary_2025-07-05.md)
+- [AINews](./ai_news_summary_2025-07-05.md)
 - [GitHub Trending](./github_trending_2025-07-05.md)
 - [少数派](./shaoshupai_2025-07-05.md)
 - [36Kr](./36kr_summary_2025-07-05.md)
