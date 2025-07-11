@@ -40,50 +40,16 @@
 ---
 
 ### 各渠道精选摘要
-- [AINews](./2025-07-11/ai_news_summary_2025-07-11.md)
-- [GitHub Trending](./2025-07-11/github_trending_2025-07-11.md)
-- [少数派](./2025-07-11/shaoshupai_2025-07-11.md)
-- [36Kr](./2025-07-11/36kr_summary_2025-07-11.md)
-- [V2EX 热门贴子](./2025-07-11/v2ex_hot_2025-07-11.md)
-- [美团技术团队](./2025-07-11/meituan_2025-07-11.md)
-- [Go Weekly](./2025-07-11/go_weekly_2025-07-11.md)
-- [Hacker News 首页](./2025-07-11/hacker_news_frontpage_2025-07-11.md)
-- [Hacker News 近期最佳](./2025-07-11/hacker_news_best_2025-07-11.md)
-- [Hacker News 高赞评论](./2025-07-11/hacker_news_top_comments_2025-07-11.md)
-- [Hacker News 问答](./2025-07-11/hacker_news_ask_2025-07-11.md)
-- [Hacker News 展示](./2025-07-11/hacker_news_show_2025-07-11.md)
-- [Hacker News 音频技术](./2025-07-11/hacker_news_audio_tech_2025-07-11.md)
-
-# 往日新闻
-
-#### [2025-07-10](./2025-07-10/newsletter.md)
-
-#### [2025-07-08](./2025-07-08/newsletter.md)
-
-#### [2025-07-07](./2025-07-07/newsletter.md)
-
-#### [2025-07-06](./2025-07-06/newsletter.md)
-
-#### [2025-07-05](./2025-07-05/newsletter.md)
-
-#### [2025-07-04](./2025-07-04/newsletter.md)
-
-#### [2025-07-02](./2025-07-02/newsletter.md)
-
-#### [2025-07-01](./2025-07-01/newsletter.md)
-
-#### [2025-06-30](./2025-06-30/newsletter.md)
-
-#### [2025-06-28](./2025-06-28/newsletter.md)
-
-#### [2025-06-27](./2025-06-27/newsletter.md)
-
-#### [2025-06-26](./2025-06-26/newsletter.md)
-
-#### [2025-06-25](./2025-06-25/newsletter.md)
-
-#### [2025-06-24](./2025-06-24/newsletter.md)
-
-#### [2025-06-23](./2025-06-23/newsletter.md)
-
-#### [2025-06-22](./2025-06-22/newsletter.md)
+- [AINews](./ai_news_summary_2025-07-11.md)
+- [GitHub Trending](./github_trending_2025-07-11.md)
+- [少数派](./shaoshupai_2025-07-11.md)
+- [36Kr](./36kr_summary_2025-07-11.md)
+- [V2EX 热门贴子](./v2ex_hot_2025-07-11.md)
+- [美团技术团队](./meituan_2025-07-11.md)
+- [Go Weekly](./go_weekly_2025-07-11.md)
+- [Hacker News 首页](./hacker_news_frontpage_2025-07-11.md)
+- [Hacker News 近期最佳](./hacker_news_best_2025-07-11.md)
+- [Hacker News 高赞评论](./hacker_news_top_comments_2025-07-11.md)
+- [Hacker News 问答](./hacker_news_ask_2025-07-11.md)
+- [Hacker News 展示](./hacker_news_show_2025-07-11.md)
+- [Hacker News 音频技术](./hacker_news_audio_tech_2025-07-11.md)
