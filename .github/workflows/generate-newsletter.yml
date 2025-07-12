@@ -18,8 +18,8 @@ jobs:
       with:
         # 获取完整的提交历史，以便能够推送
         fetch-depth: 0
-        # 使用 token 以便能够推送到仓库
-        token: ${{ secrets.GITHUB_TOKEN }}
+        # 使用 PAT 以便能够推送到仓库并触发其他工作流
+        token: ${{ secrets.PAT }}
     
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -57,14 +57,28 @@ jobs:
     
     - name: Commit and push changes
       run: |
+        # 显示当前时间和分支信息
+        echo "🕐 当前时间: $(date)"
+        echo "🌿 当前分支: $(git branch --show-current)"
+        echo "📂 当前目录: $(pwd)"
+        
         # 检查是否有新文件或更改
         git add newsletters/
         
+        # 显示将要提交的文件
+        echo "📋 准备提交的文件:"
+        git diff --staged --name-only
+        
         # 如果有更改，则提交
         if git diff --staged --quiet; then
-          echo "没有新的 newsletter 文件需要提交"
+          echo "❌ 没有新的 newsletter 文件需要提交"
         else
+          echo "✅ 发现需要提交的更改，开始提交..."
           git commit -m "📰 自动生成每日技术 newsletter $(date +'%Y-%m-%d')"
+          
+          echo "🚀 开始推送到远程仓库..."
           git push origin main
+          
           echo "✅ 已成功提交新的 newsletter 文件"
+          echo "🔄 推送完成，这应该会触发 deploy 工作流"
         fi
