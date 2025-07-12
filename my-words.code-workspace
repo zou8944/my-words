@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "script/newsletter"
+		},
+		{
+			"path": "script/readme"
+		}
+	],
+	"settings": {}
+}
