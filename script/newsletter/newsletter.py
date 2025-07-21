@@ -11,7 +11,6 @@ import news_hacker_news
 import news_meituan
 import news_shaoshupai
 import news_utils
-import news_v2ex
 
 logger = news_utils.setup_logger(__name__)
 
@@ -127,7 +126,7 @@ def generate_newsletter_summary():
         logger.info(f"今天的 newsletter 摘要 已经存在，不重复生成: {summary_filename}")
         return
 
-    _ = news_v2ex.get_today_news_content()
+    # _ = news_v2ex.get_today_news_content()
     _ = news_meituan.get_today_posts_content()
     _ = news_go_weekly.get_today_news_content()
     last_newsletter_summary = get_last_newsletter_summary()
@@ -177,7 +176,7 @@ def generate_newsletter():
         "- [GitHub Trending](./{})".format(news_github_trending_daily.get_today_news_file()),
         "- [少数派](./{})".format(news_shaoshupai.get_today_news_file()),
         "- [36Kr](./{})".format(news_36kr.get_r2_object_key()[1]),
-        "- [V2EX 热门贴子](./{})".format(news_v2ex.get_today_news_file()),
+        # "- [V2EX 热门贴子](./{})".format(news_v2ex.get_today_news_file()),
         "- [美团技术团队](./{})".format(news_meituan.get_today_news_file()),
         "- [Go Weekly](./{})".format(news_go_weekly.get_today_news_file()),
     ]
