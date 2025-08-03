@@ -42,93 +42,15 @@
 ---
 
 ### 各渠道精选摘要
-- [AINews](./2025-08-03/ai_news_summary_2025-08-03.md)
-- [GitHub Trending](./2025-08-03/github_trending_2025-08-03.md)
-- [少数派](./2025-08-03/shaoshupai_2025-08-03.md)
-- [36Kr](./2025-08-03/36kr_summary_2025-08-03.md)
-- [美团技术团队](./2025-08-03/meituan_2025-08-03.md)
-- [Go Weekly](./2025-08-03/go_weekly_2025-08-03.md)
-- [Hacker News 首页](./2025-08-03/hacker_news_frontpage_2025-08-03.md)
-- [Hacker News 近期最佳](./2025-08-03/hacker_news_best_2025-08-03.md)
-- [Hacker News 高赞评论](./2025-08-03/hacker_news_top_comments_2025-08-03.md)
-- [Hacker News 问答](./2025-08-03/hacker_news_ask_2025-08-03.md)
-- [Hacker News 展示](./2025-08-03/hacker_news_show_2025-08-03.md)
-- [Hacker News 音频技术](./2025-08-03/hacker_news_audio_tech_2025-08-03.md)
-
-# 往日新闻
-
-#### [2025-08-02](./2025-08-02/newsletter.md)
-
-#### [2025-08-01](./2025-08-01/newsletter.md)
-
-#### [2025-07-31](./2025-07-31/newsletter.md)
-
-#### [2025-07-30](./2025-07-30/newsletter.md)
-
-#### [2025-07-29](./2025-07-29/newsletter.md)
-
-#### [2025-07-28](./2025-07-28/newsletter.md)
-
-#### [2025-07-27](./2025-07-27/newsletter.md)
-
-#### [2025-07-26](./2025-07-26/newsletter.md)
-
-#### [2025-07-25](./2025-07-25/newsletter.md)
-
-#### [2025-07-24](./2025-07-24/newsletter.md)
-
-#### [2025-07-23](./2025-07-23/newsletter.md)
-
-#### [2025-07-22](./2025-07-22/newsletter.md)
-
-#### [2025-07-21](./2025-07-21/newsletter.md)
-
-#### [2025-07-19](./2025-07-19/newsletter.md)
-
-#### [2025-07-18](./2025-07-18/newsletter.md)
-
-#### [2025-07-17](./2025-07-17/newsletter.md)
-
-#### [2025-07-16](./2025-07-16/newsletter.md)
-
-#### [2025-07-15](./2025-07-15/newsletter.md)
-
-#### [2025-07-14](./2025-07-14/newsletter.md)
-
-#### [2025-07-13](./2025-07-13/newsletter.md)
-
-#### [2025-07-12](./2025-07-12/newsletter.md)
-
-#### [2025-07-11](./2025-07-11/newsletter.md)
-
-#### [2025-07-10](./2025-07-10/newsletter.md)
-
-#### [2025-07-08](./2025-07-08/newsletter.md)
-
-#### [2025-07-07](./2025-07-07/newsletter.md)
-
-#### [2025-07-06](./2025-07-06/newsletter.md)
-
-#### [2025-07-05](./2025-07-05/newsletter.md)
-
-#### [2025-07-04](./2025-07-04/newsletter.md)
-
-#### [2025-07-02](./2025-07-02/newsletter.md)
-
-#### [2025-07-01](./2025-07-01/newsletter.md)
-
-#### [2025-06-30](./2025-06-30/newsletter.md)
-
-#### [2025-06-28](./2025-06-28/newsletter.md)
-
-#### [2025-06-27](./2025-06-27/newsletter.md)
-
-#### [2025-06-26](./2025-06-26/newsletter.md)
-
-#### [2025-06-25](./2025-06-25/newsletter.md)
-
-#### [2025-06-24](./2025-06-24/newsletter.md)
-
-#### [2025-06-23](./2025-06-23/newsletter.md)
-
-#### [2025-06-22](./2025-06-22/newsletter.md)
+- [AINews](./ai_news_summary_2025-08-03.md)
+- [GitHub Trending](./github_trending_2025-08-03.md)
+- [少数派](./shaoshupai_2025-08-03.md)
+- [36Kr](./36kr_summary_2025-08-03.md)
+- [美团技术团队](./meituan_2025-08-03.md)
+- [Go Weekly](./go_weekly_2025-08-03.md)
+- [Hacker News 首页](./hacker_news_frontpage_2025-08-03.md)
+- [Hacker News 近期最佳](./hacker_news_best_2025-08-03.md)
+- [Hacker News 高赞评论](./hacker_news_top_comments_2025-08-03.md)
+- [Hacker News 问答](./hacker_news_ask_2025-08-03.md)
+- [Hacker News 展示](./hacker_news_show_2025-08-03.md)
+- [Hacker News 音频技术](./hacker_news_audio_tech_2025-08-03.md)
