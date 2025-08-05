@@ -1,6 +1,6 @@
 ## 今日要闻
 
-<sub> 生成时间：2025-08-04 08:10:47</sub>
+<sub> 生成时间：2025-08-05 08:10:59</sub>
 
 
 ---
@@ -9,53 +9,55 @@
 
 根据筛选原则，以下是今日精选的高价值技术内容（已过滤昨日重复内容）：
 
-- **[MotiaDev/motia](https://github.com/MotiaDev/motia)**（来源：GitHub Trending）  
-> 现代化统一后端框架，将API、后台任务和AI代理整合为单一系统，创新性"Step"概念支持多语言混合编程，内置状态管理和全链路追踪。
+- **[LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch)**（来源：GitHub Trending）  
+> 从零实现类ChatGPT大语言模型的PyTorch教程，配套书籍涵盖文本处理、注意力机制到预训练全流程，适合教育目的的小型LLM开发。
 
-- **[人格向量：监控与调控语言模型中的性格特征](https://news.ycombinator.com/item?id=44777760)**（来源：Hacker News）  
-> 通过向量空间建模LLM性格特征，实现可控人格调整，解决AI输出一致性与伦理对齐问题。
+- **[Sidequest.js](https://news.ycombinator.com/item?id=44787343)**（来源：Hacker News）  
+> Node.js后台任务运行库，支持隔离线程、数据库持久化、重试和优先级控制，无需额外基础设施，简化异步任务管理。
 
-- **[Ask HN：无代码AI工作流工具能否取代运维手册？](https://news.ycombinator.com/item?id=44780519)**（来源：Hacker News）  
-> 深度讨论n8n/Zapier等工具在基础设施自动化中的可行性，含StackStorm迁移案例与事件响应架构设计。
+- **[PostgreSQL与Vitess在PB级数据下的对比](https://news.ycombinator.com/item?id=44792168)**（来源：Hacker News）  
+> 深度讨论Citus/CockroachDB等Postgres方案与Vitess在超大规模写入场景的成熟度差异，含真实生产环境性能数据。
 
-- **[浙江大学发布全球最大规模神经拟态类脑计算机"悟空"](https://36kr.com/p/3407761551510919)**（来源：36氪）  
-> 1.2亿神经元规模，支持脉冲神经网络训练，能效比传统架构提升100倍，已开放教育科研接口。
+- **[OpenAPI-TypeScript-server](https://news.ycombinator.com/item?id=44790144)**（来源：Hacker News）  
+> 从OpenAPI生成TypeScript服务器代码的工具，结合gRPC开发优势与OpenAPI普及性，提升AI时代API开发效率。
 
-- **[Chisel：PyTorch性能分析工具](https://news.ycombinator.com/item?id=44779115)**（来源：Hacker News）  
-> 通过装饰器实现GPU性能追踪，提供可视化面板，解决机器学习工程师实际调试痛点，支持A100显卡。
+- **[Taffy：Rust生态的CSS布局引擎](https://news.ycombinator.com/item?id=44744821)**（来源：Hacker News）  
+> Servo项目拆分的独立布局库，已被Bevy游戏引擎等采用，模块化设计降低Web引擎开发门槛。
 
-- **[OpenAI企业用户超500万，将发布多项新产品](https://36kr.com/p/3407761551510919)**（来源：36氪）  
-> 企业API调用量季度环比增长240%，Altman预告将推出多模态推理优化框架和成本控制工具。
+- **[现代Node.js模式](https://news.ycombinator.com/item?id=44778936)**（来源：Hacker News）  
+> 一线工程师总结Node.js在微服务、Serverless等场景的最佳实践，包括错误处理、性能优化和架构设计。
 
-- **[编写优秀的设计文档](https://news.ycombinator.com/item?id=44779428)**（来源：Hacker News）  
+- **[环视智能完成千万融资](https://36kr.com/p/3404027670367616)**（来源：36氪）  
+> 天津大学团队研发千元级机器人3D视觉模组，解决传统方案成本高难题，已应用于无人机和无人车场景。
+
+- **[华为AI落地方法论](https://36kr.com/p/3408170321137033)**（来源：36氪）  
+> 华为NCE总裁王辉指出AI应用正从技术指标转向商业价值，ToB领域需大小模型结合提升准确性。
+
+- **[人形机器人订单分析](https://36kr.com/newsflashes/3409169303326084)**（来源：36氪）  
+> 当前人形机器人订单集中于表演导览场景，为工业/家庭服务铺路，反映产业渐进式发展路径。
+
+- **[编写优秀设计文档](https://news.ycombinator.com/item?id=44779428)**（来源：Hacker News）  
 > Stripe工程师分享设计文档模板，强调问题定义、权衡分析和迭代记录，含真实项目复盘。
-
-- **[PostgreSQL性能调优实战：让数据库变慢](https://news.ycombinator.com/item?id=44704736)**（来源：Hacker News）  
-> 逆向实验验证索引误用与查询重写陷阱，提供EXPLAIN ANALYZE深度解读方法论，适合DBA进阶学习。
-
-- **[瓦拉英语结合AI大模型与情境学习法](https://36kr.com/p/3405695180230021)**（来源：36氪）  
-> 为6-12岁学生打造沉浸式英语学习场景，AI生成真实情境使86%学生每日主动学习超30分钟。
-
-- **[《2024年中国AI产业投资蓝皮书》发布](https://36kr.com/p/3404163365097089)**（来源：36氪）  
-> 披露中国AI产业年投资额850亿元，70%集中在A轮前，医疗和自动驾驶占比最高，杭州成新兴AI集群。
 
 ---
 
 ### 各渠道精选摘要
-- [AINews](./2025-08-04/ai_news_summary_2025-08-04.md)
-- [GitHub Trending](./2025-08-04/github_trending_2025-08-04.md)
-- [少数派](./2025-08-04/shaoshupai_2025-08-04.md)
-- [36Kr](./2025-08-04/36kr_summary_2025-08-04.md)
-- [美团技术团队](./2025-08-04/meituan_2025-08-04.md)
-- [Go Weekly](./2025-08-04/go_weekly_2025-08-04.md)
-- [Hacker News 首页](./2025-08-04/hacker_news_frontpage_2025-08-04.md)
-- [Hacker News 近期最佳](./2025-08-04/hacker_news_best_2025-08-04.md)
-- [Hacker News 高赞评论](./2025-08-04/hacker_news_top_comments_2025-08-04.md)
-- [Hacker News 问答](./2025-08-04/hacker_news_ask_2025-08-04.md)
-- [Hacker News 展示](./2025-08-04/hacker_news_show_2025-08-04.md)
-- [Hacker News 音频技术](./2025-08-04/hacker_news_audio_tech_2025-08-04.md)
+- [AINews](./2025-08-05/ai_news_summary_2025-08-05.md)
+- [GitHub Trending](./2025-08-05/github_trending_2025-08-05.md)
+- [少数派](./2025-08-05/shaoshupai_2025-08-05.md)
+- [36Kr](./2025-08-05/36kr_summary_2025-08-05.md)
+- [美团技术团队](./2025-08-05/meituan_2025-08-05.md)
+- [Go Weekly](./2025-08-05/go_weekly_2025-08-05.md)
+- [Hacker News 首页](./2025-08-05/hacker_news_frontpage_2025-08-05.md)
+- [Hacker News 近期最佳](./2025-08-05/hacker_news_best_2025-08-05.md)
+- [Hacker News 高赞评论](./2025-08-05/hacker_news_top_comments_2025-08-05.md)
+- [Hacker News 问答](./2025-08-05/hacker_news_ask_2025-08-05.md)
+- [Hacker News 展示](./2025-08-05/hacker_news_show_2025-08-05.md)
+- [Hacker News 音频技术](./2025-08-05/hacker_news_audio_tech_2025-08-05.md)
 
 # 往日新闻
+
+#### [2025-08-04](./2025-08-04/newsletter.md)
 
 #### [2025-08-03](./2025-08-03/newsletter.md)
 
