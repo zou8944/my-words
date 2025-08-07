@@ -1,61 +1,70 @@
 ## 今日要闻
 
-<sub> 生成时间：2025-08-05 08:10:59</sub>
+<sub> 生成时间：2025-08-07 08:10:52</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-根据筛选原则，以下是今日精选的高价值技术内容（已过滤昨日重复内容）：
+以下是今日精选的技术内容，涵盖AI、后端开发及前沿技术动态：
 
-- **[LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch)**（来源：GitHub Trending）  
-> 从零实现类ChatGPT大语言模型的PyTorch教程，配套书籍涵盖文本处理、注意力机制到预训练全流程，适合教育目的的小型LLM开发。
+### AI/模型更新
+- **[OpenAI发布开源权重模型GPT-OSS](https://openai.com/open-models/)**（来源：OpenAI）  
+  > 120B和20B参数的MoE架构模型，支持单H100 GPU运行，20B版仅需16GB内存，内置Harmony对话格式和智能体能力。
 
-- **[Sidequest.js](https://news.ycombinator.com/item?id=44787343)**（来源：Hacker News）  
-> Node.js后台任务运行库，支持隔离线程、数据库持久化、重试和优先级控制，无需额外基础设施，简化异步任务管理。
+- **[DeepMind发布Genie 3世界模型](https://deepmind.google/discover/blog/genie-3-a-new-frontier-for-world-models/)**（来源：DeepMind）  
+  > 实时生成可交互的720p模拟环境，保持1分钟一致性记忆，物理模拟和社交交互仍是挑战。
 
-- **[PostgreSQL与Vitess在PB级数据下的对比](https://news.ycombinator.com/item?id=44792168)**（来源：Hacker News）  
-> 深度讨论Citus/CockroachDB等Postgres方案与Vitess在超大规模写入场景的成熟度差异，含真实生产环境性能数据。
+- **[KittenTTS发布25MB超小型语音模型](https://github.com/KittenML/KittenTTS)**（来源：GitHub）  
+  > 边缘设备友好的TTS模型，支持8种音色，树莓派可运行，无需GPU依赖。
 
-- **[OpenAPI-TypeScript-server](https://news.ycombinator.com/item?id=44790144)**（来源：Hacker News）  
-> 从OpenAPI生成TypeScript服务器代码的工具，结合gRPC开发优势与OpenAPI普及性，提升AI时代API开发效率。
+### 开发工具/框架
+- **[llama.cpp新增MoE卸载功能](https://github.com/ggml-org/llama.cpp/pull/15077)**（来源：GitHub）  
+  > 通过`-n-cpu-moe`参数优化专家模型层卸载，3x3090配置下实现>45 token/s的推理速度。
 
-- **[Taffy：Rust生态的CSS布局引擎](https://news.ycombinator.com/item?id=44744821)**（来源：Hacker News）  
-> Servo项目拆分的独立布局库，已被Bevy游戏引擎等采用，模块化设计降低Web引擎开发门槛。
+- **[Reflex：纯Python全栈Web框架](https://github.com/reflex-dev/reflex)**（来源：GitHub）  
+  > 无JavaScript需求，内置60+组件，一键部署，降低全栈开发门槛。
 
-- **[现代Node.js模式](https://news.ycombinator.com/item?id=44778936)**（来源：Hacker News）  
-> 一线工程师总结Node.js在微服务、Serverless等场景的最佳实践，包括错误处理、性能优化和架构设计。
+### 数据库/后端
+- **[C语言中稳定指针的快速可增长数组实现](https://news.ycombinator.com/item?id=44815702)**（来源：Hacker News）  
+  > 讨论C语言动态数组的高效实现，兼顾内存安全与性能，适合嵌入式和高性能场景。
 
-- **[环视智能完成千万融资](https://36kr.com/p/3404027670367616)**（来源：36氪）  
-> 天津大学团队研发千元级机器人3D视觉模组，解决传统方案成本高难题，已应用于无人机和无人车场景。
+### 工程实践
+- **[百度文库AI重构实战](https://36kr.com/p/3410964970081920)**（来源：36氪）  
+  > 采用MoE架构和GenFlow调度技术，实现多场景智能内容生成，降低创作门槛。
 
-- **[华为AI落地方法论](https://36kr.com/p/3408170321137033)**（来源：36氪）  
-> 华为NCE总裁王辉指出AI应用正从技术指标转向商业价值，ToB领域需大小模型结合提升准确性。
+### 开源项目
+- **[Sim：AI智能体工作流构建平台](https://github.com/simstudioai/sim)**（来源：GitHub）  
+  > Next.js+Bun技术栈，集成PostgreSQL向量数据库，支持本地模型部署和云端托管。
 
-- **[人形机器人订单分析](https://36kr.com/newsflashes/3409169303326084)**（来源：36氪）  
-> 当前人形机器人订单集中于表演导览场景，为工业/家庭服务铺路，反映产业渐进式发展路径。
+### 深度讨论
+- **[AI辅助开发的真实效率提升](https://news.ycombinator.com/item?id=44798605)**（来源：Hacker News）  
+  > 实测显示LLM使编码效率提升2-5倍，但整体工程效率受限于需求分析等非编码环节。
 
-- **[编写优秀设计文档](https://news.ycombinator.com/item?id=44779428)**（来源：Hacker News）  
-> Stripe工程师分享设计文档模板，强调问题定义、权衡分析和迭代记录，含真实项目复盘。
+### 安全/隐私
+- **[Tornado Cash案件与开源隐私困境](https://news.ycombinator.com/item?id=44816363)**（来源：Hacker News）  
+  > 探讨开源隐私工具的法律边界，呼吁捍卫数字隐私权。
 
 ---
 
 ### 各渠道精选摘要
-- [AINews](./2025-08-05/ai_news_summary_2025-08-05.md)
-- [GitHub Trending](./2025-08-05/github_trending_2025-08-05.md)
-- [少数派](./2025-08-05/shaoshupai_2025-08-05.md)
-- [36Kr](./2025-08-05/36kr_summary_2025-08-05.md)
-- [美团技术团队](./2025-08-05/meituan_2025-08-05.md)
-- [Go Weekly](./2025-08-05/go_weekly_2025-08-05.md)
-- [Hacker News 首页](./2025-08-05/hacker_news_frontpage_2025-08-05.md)
-- [Hacker News 近期最佳](./2025-08-05/hacker_news_best_2025-08-05.md)
-- [Hacker News 高赞评论](./2025-08-05/hacker_news_top_comments_2025-08-05.md)
-- [Hacker News 问答](./2025-08-05/hacker_news_ask_2025-08-05.md)
-- [Hacker News 展示](./2025-08-05/hacker_news_show_2025-08-05.md)
-- [Hacker News 音频技术](./2025-08-05/hacker_news_audio_tech_2025-08-05.md)
+- [AINews](./2025-08-07/ai_news_summary_2025-08-07.md)
+- [GitHub Trending](./2025-08-07/github_trending_2025-08-07.md)
+- [少数派](./2025-08-07/shaoshupai_2025-08-07.md)
+- [36Kr](./2025-08-07/36kr_summary_2025-08-07.md)
+- [美团技术团队](./2025-08-07/meituan_2025-08-07.md)
+- [Go Weekly](./2025-08-07/go_weekly_2025-08-07.md)
+- [Hacker News 首页](./2025-08-07/hacker_news_frontpage_2025-08-07.md)
+- [Hacker News 近期最佳](./2025-08-07/hacker_news_best_2025-08-07.md)
+- [Hacker News 高赞评论](./2025-08-07/hacker_news_top_comments_2025-08-07.md)
+- [Hacker News 问答](./2025-08-07/hacker_news_ask_2025-08-07.md)
+- [Hacker News 展示](./2025-08-07/hacker_news_show_2025-08-07.md)
+- [Hacker News 音频技术](./2025-08-07/hacker_news_audio_tech_2025-08-07.md)
 
 # 往日新闻
+
+#### [2025-08-05](./2025-08-05/newsletter.md)
 
 #### [2025-08-04](./2025-08-04/newsletter.md)
 
