@@ -1,6 +1,6 @@
 ## 今日要闻
 
-<sub> 生成时间：2025-08-08 08:11:10</sub>
+<sub> 生成时间：2025-08-09 08:10:33</sub>
 
 
 ---
@@ -10,59 +10,62 @@
 以下是今日精选的技术内容，涵盖AI、后端开发及前沿技术动态：
 
 ### AI/模型更新
-- **[OpenAI发布开源权重模型GPT-OSS](https://openai.com/open-models/)**（来源：OpenAI）  
-  > 120B和20B参数的MoE架构模型，支持单H100 GPU运行，20B版仅需16GB内存，内置Harmony对话格式和智能体能力。
+- **[GPT-5正式发布：统一路由系统与激进定价策略](https://twitter.com/OpenAI/status/1953526577297600557)**（来源：OpenAI）  
+  > 采用"主模型+思考模型"双层架构，支持400K上下文窗口，API定价低至$0.05/百万token，开源权重模型GPT-OSS支持单H100运行。
 
-- **[DeepMind发布Genie 3世界模型](https://deepmind.google/discover/blog/genie-3-a-new-frontier-for-world-models/)**（来源：DeepMind）  
-  > 实时生成可交互的720p模拟环境，保持1分钟一致性记忆，物理模拟和社交交互仍是挑战。
-
-- **[KittenTTS发布25MB超小型语音模型](https://github.com/KittenML/KittenTTS)**（来源：GitHub）  
-  > 边缘设备友好的TTS模型，支持8种音色，树莓派可运行，无需GPU依赖。
+- **[DeepMind Genie 3世界模型新突破](https://news.ycombinator.com/item?id=44798564)**（来源：Hacker News）  
+  > 实时生成720p可交互环境，保持1分钟一致性记忆，物理模拟和社交交互仍是当前技术瓶颈。
 
 ### 开发工具/框架
-- **[llama.cpp新增MoE卸载功能](https://github.com/ggml-org/llama.cpp/pull/15077)**（来源：GitHub）  
-  > 通过`-n-cpu-moe`参数优化专家模型层卸载，3x3090配置下实现>45 token/s的推理速度。
+- **[vLLM 0.4.0发布：MoE模型高效推理](https://github.com/vllm-project/vllm)**（来源：GitHub）  
+  > 新增专家模型层卸载策略，3x3090配置下实现>45 token/s推理速度，兼容HuggingFace主流模型。
 
-- **[Reflex：纯Python全栈Web框架](https://github.com/reflex-dev/reflex)**（来源：GitHub）  
-  > 无JavaScript需求，内置60+组件，一键部署，降低全栈开发门槛。
+- **[Regolith：防ReDoS攻击的TypeScript正则库](https://news.ycombinator.com/item?id=44840052)**（来源：Hacker News）  
+  > 基于Rust线性时间引擎，解决正则表达式拒绝服务漏洞，可直接替代原生RegExp。
 
 ### 数据库/后端
-- **[C语言中稳定指针的快速可增长数组实现](https://news.ycombinator.com/item?id=44815702)**（来源：Hacker News）  
-  > 讨论C语言动态数组的高效实现，兼顾内存安全与性能，适合嵌入式和高性能场景。
+- **[Rust+RocksDB替代Elasticsearch实战](https://news.ycombinator.com/item?id=44836463)**（来源：Hacker News）  
+  > 某工程团队分享用Rust重写搜索系统，查询延迟降低60%，内存占用减少75%。
 
 ### 工程实践
-- **[百度文库AI重构实战](https://36kr.com/p/3410964970081920)**（来源：36氪）  
-  > 采用MoE架构和GenFlow调度技术，实现多场景智能内容生成，降低创作门槛。
+- **[InfluxDB分层存储方案](https://news.ycombinator.com/item?id=44842265)**（来源：Hacker News）  
+  > 自动将旧数据转存S3/Parquet，存储成本降低80%的同时保持查询性能，兼容现有系统。
 
 ### 开源项目
-- **[Sim：AI智能体工作流构建平台](https://github.com/simstudioai/sim)**（来源：GitHub）  
-  > Next.js+Bun技术栈，集成PostgreSQL向量数据库，支持本地模型部署和云端托管。
+- **[Ollama本地大模型框架](https://github.com/ollama/ollama)**（来源：GitHub）  
+  > 支持Gemma、DeepSeek等主流模型，跨平台CLI工具+API，GGUF格式导入，树莓派可运行。
 
 ### 深度讨论
-- **[AI辅助开发的真实效率提升](https://news.ycombinator.com/item?id=44798605)**（来源：Hacker News）  
+- **[AI辅助开发真实效率研究](https://news.ycombinator.com/item?id=44798605)**（来源：Hacker News）  
   > 实测显示LLM使编码效率提升2-5倍，但整体工程效率受限于需求分析等非编码环节。
 
 ### 安全/隐私
-- **[Tornado Cash案件与开源隐私困境](https://news.ycombinator.com/item?id=44816363)**（来源：Hacker News）  
-  > 探讨开源隐私工具的法律边界，呼吁捍卫数字隐私权。
+- **[一次性验证码的安全隐患](https://news.ycombinator.com/item?id=44820331)**（来源：Hacker News）  
+  > 分析邮件验证码钓鱼攻击链，建议采用通行密钥(Passkeys)替代传统验证方式。
+
+### 硬件/嵌入式
+- **[LVGL轻量级嵌入式UI库](https://github.com/lvgl/lvgl)**（来源：GitHub）  
+  > 仅需32kB RAM的MCU图形解决方案，提供30+控件和响应式布局，被ST等大厂采用。
 
 ---
 
 ### 各渠道精选摘要
-- [AINews](./2025-08-08/ai_news_summary_2025-08-08.md)
-- [GitHub Trending](./2025-08-08/github_trending_2025-08-08.md)
-- [少数派](./2025-08-08/shaoshupai_2025-08-08.md)
-- [36Kr](./2025-08-08/36kr_summary_2025-08-08.md)
-- [美团技术团队](./2025-08-08/meituan_2025-08-08.md)
-- [Go Weekly](./2025-08-08/go_weekly_2025-08-08.md)
-- [Hacker News 首页](./2025-08-08/hacker_news_frontpage_2025-08-08.md)
-- [Hacker News 近期最佳](./2025-08-08/hacker_news_best_2025-08-08.md)
-- [Hacker News 高赞评论](./2025-08-08/hacker_news_top_comments_2025-08-08.md)
-- [Hacker News 问答](./2025-08-08/hacker_news_ask_2025-08-08.md)
-- [Hacker News 展示](./2025-08-08/hacker_news_show_2025-08-08.md)
-- [Hacker News 音频技术](./2025-08-08/hacker_news_audio_tech_2025-08-08.md)
+- [AINews](./2025-08-09/ai_news_summary_2025-08-09.md)
+- [GitHub Trending](./2025-08-09/github_trending_2025-08-09.md)
+- [少数派](./2025-08-09/shaoshupai_2025-08-09.md)
+- [36Kr](./2025-08-09/36kr_summary_2025-08-09.md)
+- [美团技术团队](./2025-08-09/meituan_2025-08-09.md)
+- [Go Weekly](./2025-08-09/go_weekly_2025-08-09.md)
+- [Hacker News 首页](./2025-08-09/hacker_news_frontpage_2025-08-09.md)
+- [Hacker News 近期最佳](./2025-08-09/hacker_news_best_2025-08-09.md)
+- [Hacker News 高赞评论](./2025-08-09/hacker_news_top_comments_2025-08-09.md)
+- [Hacker News 问答](./2025-08-09/hacker_news_ask_2025-08-09.md)
+- [Hacker News 展示](./2025-08-09/hacker_news_show_2025-08-09.md)
+- [Hacker News 音频技术](./2025-08-09/hacker_news_audio_tech_2025-08-09.md)
 
 # 往日新闻
+
+#### [2025-08-08](./2025-08-08/newsletter.md)
 
 #### [2025-08-07](./2025-08-07/newsletter.md)
 
