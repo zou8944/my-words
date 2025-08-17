@@ -1,6 +1,6 @@
 ## 今日要闻
 
-<sub> 生成时间：2025-08-16 08:10:57</sub>
+<sub> 生成时间：2025-08-17 08:11:06</sub>
 
 
 ---
@@ -52,20 +52,22 @@
 ---
 
 ### 各渠道精选摘要
-- [AINews](./2025-08-16/ai_news_summary_2025-08-16.md)
-- [GitHub Trending](./2025-08-16/github_trending_2025-08-16.md)
-- [少数派](./2025-08-16/shaoshupai_2025-08-16.md)
-- [36Kr](./2025-08-16/36kr_summary_2025-08-16.md)
-- [美团技术团队](./2025-08-16/meituan_2025-08-16.md)
-- [Go Weekly](./2025-08-16/go_weekly_2025-08-16.md)
-- [Hacker News 首页](./2025-08-16/hacker_news_frontpage_2025-08-16.md)
-- [Hacker News 近期最佳](./2025-08-16/hacker_news_best_2025-08-16.md)
-- [Hacker News 高赞评论](./2025-08-16/hacker_news_top_comments_2025-08-16.md)
-- [Hacker News 问答](./2025-08-16/hacker_news_ask_2025-08-16.md)
-- [Hacker News 展示](./2025-08-16/hacker_news_show_2025-08-16.md)
-- [Hacker News 音频技术](./2025-08-16/hacker_news_audio_tech_2025-08-16.md)
+- [AINews](./2025-08-17/ai_news_summary_2025-08-17.md)
+- [GitHub Trending](./2025-08-17/github_trending_2025-08-17.md)
+- [少数派](./2025-08-17/shaoshupai_2025-08-17.md)
+- [36Kr](./2025-08-17/36kr_summary_2025-08-17.md)
+- [美团技术团队](./2025-08-17/meituan_2025-08-17.md)
+- [Go Weekly](./2025-08-17/go_weekly_2025-08-17.md)
+- [Hacker News 首页](./2025-08-17/hacker_news_frontpage_2025-08-17.md)
+- [Hacker News 近期最佳](./2025-08-17/hacker_news_best_2025-08-17.md)
+- [Hacker News 高赞评论](./2025-08-17/hacker_news_top_comments_2025-08-17.md)
+- [Hacker News 问答](./2025-08-17/hacker_news_ask_2025-08-17.md)
+- [Hacker News 展示](./2025-08-17/hacker_news_show_2025-08-17.md)
+- [Hacker News 音频技术](./2025-08-17/hacker_news_audio_tech_2025-08-17.md)
 
 # 往日新闻
+
+#### [2025-08-16](./2025-08-16/newsletter.md)
 
 #### [2025-08-15](./2025-08-15/newsletter.md)
 
