@@ -1,59 +1,61 @@
 ## 今日要闻
 
-<sub> 生成时间：2025-08-21 08:10:11</sub>
+<sub> 生成时间：2025-08-23 08:10:37</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[DeepSeek V3.1 Base模型MIT许可证开源](https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Base)**（来源：Hugging Face）  
-  > 685B+参数大模型采用宽松MIT许可证，编码基准表现优异，为开发者提供罕见的高性能开源基础模型选择。
+- **[Cohere发布Command A Reasoning开源推理模型](https://x.com/cohere/status/1958542682890047511)**（来源：AINews）  
+  > 企业级开源推理模型，支持工具使用和智能体基准测试，平衡安全性与实用性，适合私有部署。
 
-- **[Luminal：开源基于搜索的GPU编译器](https://news.ycombinator.com/item?id=44963135)**（来源：Hacker News）  
-  > 通过生成数百万内核自动搜索最优方案，无需人工启发式规则即可实现类似Flash Attention的复杂GPU代码优化。
+- **[DeepSeek发布V3.1混合推理模型](https://twitter.com/deepseek_ai/status/1958417062008918312)**（来源：AINews）  
+  > 671B参数MoE模型，支持推理/非推理模式切换，在SWE-Bench达到66%性能，API定价$0.56/M输入。
 
-- **[钉钉重注AI：成立行业专属模型团队](https://36kr.com/p/3431000523115908)**（来源：36Kr）  
-  > 钉钉组建垂直行业大模型团队，向CTO汇报，为企业客户提供定制化AI服务，推动大模型在业务场景落地。
+- **[ByteDance发布Seed-OSS-36B开源模型](https://github.com/orgs/bytedance/repositories)**（来源：AINews）  
+  > 36B密集模型，512K上下文窗口，无合成数据训练，专注长上下文能力。
 
-- **[PostgreSQL 监控与运维 MCP 服务器](https://news.ycombinator.com/item?id=44967208)**（来源：Hacker News）  
-  > 提供20+项数据库运维功能，包括状态检查、性能分析和索引优化，专为PostgreSQL生产环境监控设计。
+- **[vLLM和SGLang支持DeepSeek-V3.1推理模式切换](https://twitter.com/vllm_project/status/1958580047658491947)**（来源：AINews）  
+  > 主流推理框架新增模式切换支持，为开发者提供灵活配置选项。
 
-- **[vLLM新增智谱GLM-4.5/4.5V支持](https://twitter.com/vllm_project/status/1957731795887353895)**（来源：vLLM）  
-  > 高性能推理引擎新增对GLM-4.5系列模型支持，展示Kimi K2服务示例，扩展多模型部署能力。
+- **[firecrawl/firecrawl](https://github.com/firecrawl/firecrawl)**（来源：GitHub Trending）  
+  > 网页转Markdown/结构化数据API，支持智能爬取和批量处理，集成主流AI框架。
 
-- **[结构化并发编程范式深度探讨](https://news.ycombinator.com/item?id=44945783)**（来源：Hacker News）  
-  > 分析显式生命周期管理如何解决传统并发中的资源泄漏和竞态条件，提升后端系统可靠性。
+- **[nextjs/saas-starter](https://github.com/nextjs/saas-starter)**（来源：GitHub Trending）  
+  > Next.js SaaS模板，集成Postgres、Stripe和shadcn/ui，含身份验证和RBAC权限控制。
 
-- **[腾讯混元推出AutoCodeBench多语言编码基准](https://twitter.com/TencentHunyuan/status/1957751900608110982)**（来源：腾讯混元）  
-  > 提供全自动LLM+沙箱管道，覆盖20种语言的3920个问题，包含高性能多语言沙箱环境。
+- **[simstudioai/sim](https://github.com/simstudioai/sim)**（来源：GitHub Trending）  
+  > 开源AI智能体工作流构建工具，支持低代码可视化界面和PostgreSQL向量数据库。
 
-- **[SkyPilot发布1T+参数模型多节点服务模板](https://twitter.com/skypilot_org/status/1957831495462379743)**（来源：SkyPilot）  
-  > 结合张量和管道并行的多节点部署方案，支持超大规模模型的高效推理服务部署。
+- **[AWS CEO称用AI取代初级员工是"我听过最愚蠢的事"](https://news.ycombinator.com/item?id=44972151)**（来源：Hacker News）  
+  > 强调工程思维和问题解决能力的重要性，AI应辅助而非替代人类分析能力。
 
-- **[字节跳动开源多模态GUI智能体UI-TARS-1.5](https://github.com/bytedance/UI-TARS)**（来源：GitHub）  
-  > 基于强化学习的多模态GUI自动化框架，在OSWorld等基准超越Claude 3.7，支持桌面和移动端操作。
+- **[Nitro：轻量级初始化系统与进程管理器](https://news.ycombinator.com/item?id=44988530)**（来源：Hacker News）  
+  > 灵活轻量的进程管理方案，适用于容器化和系统服务部署场景。
 
-- **[中金：2026年全球AI液冷市场规模达86亿美元](https://36kr.com/newsflashes/3431830883765891)**（来源：36Kr）  
-  > AI算力需求推动液冷替代风冷，冷板式液冷将率先落地，为基础设施优化提供明确技术路径。
+- **[诱导ChatGPT自主行动的操作方法](https://news.ycombinator.com/item?id=44989659)**（来源：Hacker News）  
+  > 通过递归叙事框架突破LLM交互限制，实现高度专注的自主性，适合智能体实验。
 
 ---
 
 ### 各渠道精选摘要
-- [AINews](./2025-08-21/ai_news_summary_2025-08-21.md)
-- [GitHub Trending](./2025-08-21/github_trending_2025-08-21.md)
-- [少数派](./2025-08-21/shaoshupai_2025-08-21.md)
-- [36Kr](./2025-08-21/36kr_summary_2025-08-21.md)
-- [美团技术团队](./2025-08-21/meituan_2025-08-21.md)
-- [Go Weekly](./2025-08-21/go_weekly_2025-08-21.md)
-- [Hacker News 首页](./2025-08-21/hacker_news_frontpage_2025-08-21.md)
-- [Hacker News 近期最佳](./2025-08-21/hacker_news_best_2025-08-21.md)
-- [Hacker News 高赞评论](./2025-08-21/hacker_news_top_comments_2025-08-21.md)
-- [Hacker News 问答](./2025-08-21/hacker_news_ask_2025-08-21.md)
-- [Hacker News 展示](./2025-08-21/hacker_news_show_2025-08-21.md)
-- [Hacker News 音频技术](./2025-08-21/hacker_news_audio_tech_2025-08-21.md)
+- [AINews](./2025-08-23/ai_news_summary_2025-08-23.md)
+- [GitHub Trending](./2025-08-23/github_trending_2025-08-23.md)
+- [少数派](./2025-08-23/shaoshupai_2025-08-23.md)
+- [36Kr](./2025-08-23/36kr_summary_2025-08-23.md)
+- [美团技术团队](./2025-08-23/meituan_2025-08-23.md)
+- [Go Weekly](./2025-08-23/go_weekly_2025-08-23.md)
+- [Hacker News 首页](./2025-08-23/hacker_news_frontpage_2025-08-23.md)
+- [Hacker News 近期最佳](./2025-08-23/hacker_news_best_2025-08-23.md)
+- [Hacker News 高赞评论](./2025-08-23/hacker_news_top_comments_2025-08-23.md)
+- [Hacker News 问答](./2025-08-23/hacker_news_ask_2025-08-23.md)
+- [Hacker News 展示](./2025-08-23/hacker_news_show_2025-08-23.md)
+- [Hacker News 音频技术](./2025-08-23/hacker_news_audio_tech_2025-08-23.md)
 
 # 往日新闻
+
+#### [2025-08-21](./2025-08-21/newsletter.md)
 
 #### [2025-08-20](./2025-08-20/newsletter.md)
 
