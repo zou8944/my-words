@@ -1,38 +1,38 @@
 ## 今日要闻
 
-<sub> 生成时间：2025-08-23 08:10:37</sub>
+<sub> 生成时间：2025-08-24 08:11:16</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[Cohere发布Command A Reasoning开源推理模型](https://x.com/cohere/status/1958542682890047511)**（来源：AINews）  
-  > 企业级开源推理模型，支持工具使用和智能体基准测试，平衡安全性与实用性，适合私有部署。
+- **[DeepMind发布Genie 3多模态世界模拟器](https://twitter.com/demishassabis/status/1958696882105995312)**（来源：AINews）  
+  > 交互式世界模拟器支持文本/照片/视频输入，具备空间记忆和实时控制，为embodied AI训练提供环境。
 
-- **[DeepSeek发布V3.1混合推理模型](https://twitter.com/deepseek_ai/status/1958417062008918312)**（来源：AINews）  
-  > 671B参数MoE模型，支持推理/非推理模式切换，在SWE-Bench达到66%性能，API定价$0.56/M输入。
+- **[阿里巴巴Qwen-Image-Edit开源图像编辑器](https://twitter.com/Alibaba_Qwen/status/1958725835818770748)**（来源：AINews）  
+  > Apache-2.0开源图像编辑器，3-bit ARA微调，单张5090可训练，成本效益极高，性能媲美GPT-4o。
 
-- **[ByteDance发布Seed-OSS-36B开源模型](https://github.com/orgs/bytedance/repositories)**（来源：AINews）  
-  > 36B密集模型，512K上下文窗口，无合成数据训练，专注长上下文能力。
+- **[DeepConf推理时分支剪枝方法](https://twitter.com/jiawzhao/status/1958982524333678877)**（来源：AINews）  
+  > 插件式推理时方法，在并行CoT中剪枝低置信度分支，节省85% token，50行代码即可集成vLLM。
 
-- **[vLLM和SGLang支持DeepSeek-V3.1推理模式切换](https://twitter.com/vllm_project/status/1958580047658491947)**（来源：AINews）  
-  > 主流推理框架新增模式切换支持，为开发者提供灵活配置选项。
+- **[microsoft/BitNet](https://github.com/microsoft/BitNet)**（来源：GitHub Trending）  
+  > 微软开源1位大语言模型推理框架，CPU/GPU无损推理，速度提升1.37-6.17倍，能耗降低55-82%。
 
-- **[firecrawl/firecrawl](https://github.com/firecrawl/firecrawl)**（来源：GitHub Trending）  
-  > 网页转Markdown/结构化数据API，支持智能爬取和批量处理，集成主流AI框架。
+- **[使用Io_uring和kTLS实现零系统调用HTTPS服务器](https://news.ycombinator.com/item?id=44980865)**（来源：Hacker News）  
+  > Rust实现零系统调用HTTPS服务器，结合io_uring和kTLS技术，大幅提升网络性能。
 
-- **[nextjs/saas-starter](https://github.com/nextjs/saas-starter)**（来源：GitHub Trending）  
-  > Next.js SaaS模板，集成Postgres、Stripe和shadcn/ui，含身份验证和RBAC权限控制。
+- **[Go语言中的不可变AA树实现](https://news.ycombinator.com/item?id=44997079)**（来源：Hacker News）  
+  > AA树红黑树变种，基于join原语实现集合操作，采用不可变数据结构支持高效共享。
 
-- **[simstudioai/sim](https://github.com/simstudioai/sim)**（来源：GitHub Trending）  
-  > 开源AI智能体工作流构建工具，支持低代码可视化界面和PostgreSQL向量数据库。
+- **[Rust工程学错误处理实践](https://news.ycombinator.com/item?id=44986875)**（来源：Hacker News）  
+  > 探讨Rust错误处理最佳实践：快速编写、轻松调试、精准掌控，适合生产环境应用。
 
-- **[AWS CEO称用AI取代初级员工是"我听过最愚蠢的事"](https://news.ycombinator.com/item?id=44972151)**（来源：Hacker News）  
-  > 强调工程思维和问题解决能力的重要性，AI应辅助而非替代人类分析能力。
+- **[AWS账户根访问问题处理经验](https://news.ycombinator.com/item?id=44996358)**（来源：Hacker News）  
+  > 实际案例分享AWS根邮箱登录异常的处理流程，涉及账单验证和技术支持响应机制。
 
-- **[Nitro：轻量级初始化系统与进程管理器](https://news.ycombinator.com/item?id=44988530)**（来源：Hacker News）  
-  > 灵活轻量的进程管理方案，适用于容器化和系统服务部署场景。
+- **[企业级AI应用实际价值案例](https://news.ycombinator.com/item?id=44974805)**（来源：Hacker News）  
+  > 呼叫中心AI摘要系统年省数百万美元，展示可量化的效率提升而非炒作应用。
 
 - **[诱导ChatGPT自主行动的操作方法](https://news.ycombinator.com/item?id=44989659)**（来源：Hacker News）  
   > 通过递归叙事框架突破LLM交互限制，实现高度专注的自主性，适合智能体实验。
@@ -40,20 +40,22 @@
 ---
 
 ### 各渠道精选摘要
-- [AINews](./2025-08-23/ai_news_summary_2025-08-23.md)
-- [GitHub Trending](./2025-08-23/github_trending_2025-08-23.md)
-- [少数派](./2025-08-23/shaoshupai_2025-08-23.md)
-- [36Kr](./2025-08-23/36kr_summary_2025-08-23.md)
-- [美团技术团队](./2025-08-23/meituan_2025-08-23.md)
-- [Go Weekly](./2025-08-23/go_weekly_2025-08-23.md)
-- [Hacker News 首页](./2025-08-23/hacker_news_frontpage_2025-08-23.md)
-- [Hacker News 近期最佳](./2025-08-23/hacker_news_best_2025-08-23.md)
-- [Hacker News 高赞评论](./2025-08-23/hacker_news_top_comments_2025-08-23.md)
-- [Hacker News 问答](./2025-08-23/hacker_news_ask_2025-08-23.md)
-- [Hacker News 展示](./2025-08-23/hacker_news_show_2025-08-23.md)
-- [Hacker News 音频技术](./2025-08-23/hacker_news_audio_tech_2025-08-23.md)
+- [AINews](./2025-08-24/ai_news_summary_2025-08-24.md)
+- [GitHub Trending](./2025-08-24/github_trending_2025-08-24.md)
+- [少数派](./2025-08-24/shaoshupai_2025-08-24.md)
+- [36Kr](./2025-08-24/36kr_summary_2025-08-24.md)
+- [美团技术团队](./2025-08-24/meituan_2025-08-24.md)
+- [Go Weekly](./2025-08-24/go_weekly_2025-08-24.md)
+- [Hacker News 首页](./2025-08-24/hacker_news_frontpage_2025-08-24.md)
+- [Hacker News 近期最佳](./2025-08-24/hacker_news_best_2025-08-24.md)
+- [Hacker News 高赞评论](./2025-08-24/hacker_news_top_comments_2025-08-24.md)
+- [Hacker News 问答](./2025-08-24/hacker_news_ask_2025-08-24.md)
+- [Hacker News 展示](./2025-08-24/hacker_news_show_2025-08-24.md)
+- [Hacker News 音频技术](./2025-08-24/hacker_news_audio_tech_2025-08-24.md)
 
 # 往日新闻
+
+#### [2025-08-23](./2025-08-23/newsletter.md)
 
 #### [2025-08-21](./2025-08-21/newsletter.md)
 
