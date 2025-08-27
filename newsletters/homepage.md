@@ -1,59 +1,61 @@
 ## 今日要闻
 
-<sub> 生成时间：2025-08-26 08:11:38</sub>
+<sub> 生成时间：2025-08-27 08:11:23</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[DeepMind发布Genie 3世界模拟器](https://twitter.com/demishassabis/status/1958696882105995312)**（来源：AINews）  
-  > 多模态交互式世界模拟器，支持文本/照片/视频生成持久化虚拟环境，具备高级空间记忆和实时avatar控制，为具身智能训练提供新平台。
+- **[xAI发布Grok-2/2.5开源权重](https://huggingface.co/xai-org/grok-2)**（来源：AINews）  
+  > 开源约500GB模型权重，采用μP缩放和MoE残差路径，为大规模模型研究提供新参考。
 
-- **[阿里巴巴Qwen-Image-Edit登顶图像编辑竞技场](https://twitter.com/ArtificialAnlys/status/1958712568731902241)**（来源：AINews）  
-  > 开源图像编辑模型性能媲美GPT-4o但成本更低，支持局部精确编辑和风格保真，Apache-2.0许可可商用。
+- **[微软开源VibeVoice-1.5B长文本TTS模型](https://huggingface.co/microsoft/VibeVoice-1.5B)**（来源：AINews）  
+  > 支持90分钟连续语音合成与多说话人对话，MIT许可可商用，适合长音频生成场景。
 
-- **[DeepSeek V3.1全面发布，专注智能体应用](https://twitter.com/basetenco/status/1958716181256577347)**（来源：AINews）  
-  > 重点优化软件工程和搜索智能体能力，Apple Silicon本地推理达21 tok/s，多节点通过MLX Distributed实现线性扩展。
+- **[Motif-2.6B发布详细技术报告](https://twitter.com/eliebakouch/status/1959598428192669870)**（来源：AINews）  
+  > 基于2.5T token训练，采用差分注意力和PolyNorm技术，提供Muon优化器和兼容FSDP2的代码。
 
-- **[Intern-S1科学多模态MoE模型突破](https://twitter.com/iScienceLuvr/status/1958894938248384542)**（来源：AINews）  
-  > 241B参数MoE模型在5T token上预训练，采用创新InternBootCamp框架和混合奖励机制，在1000+任务上进行强化学习。
+- **[DSPy GEPA优化器在v3.0中发布](https://twitter.com/DSPyOSS/status/1960000178179527110)**（来源：AINews）  
+  > 新优化器在500次度量调用中实现40%性能提升，提供列表重排序教程，增强AI编程效率。
 
-- **[OpenAI与RetroBio合作突破细胞重编程效率](https://twitter.com/BorisMPower/status/1958915868693602475)**（来源：AINews）  
-  > 定制模型设计新型Yamanaka因子变体，实现50倍以上iPSC重编程效率，技术文档已公开分享。
-
-- **[dream-num/univer](https://github.com/dream-num/univer)**（来源：GitHub Trending）  
-  > AI驱动的全栈电子表格框架，支持自然语言操作和协同编辑，具备公式计算和多语言支持等企业级功能。
+- **[TPU与GPU系统架构对比分析](https://twitter.com/JingyuanLiu123/status/1959093411283443726)**（来源：AINews）  
+  > 分析TPU v3/v4 pod的带宽优势与2D环面扩展设计，为大规模AI训练硬件选型提供参考。
 
 - **[HKUDS/DeepCode](https://github.com/HKUDS/DeepCode)**（来源：GitHub Trending）  
-  > 多智能体代码生成平台，支持从论文/文本描述自动生成生产级代码，通过智能编排代理提升开发效率。
+  > 多智能体代码生成平台，支持从论文/文本自动生成生产级代码，通过CodeRAG提升开发效率。
 
-- **[逆向工程所有树莓派型号](https://news.ycombinator.com/item?id=45018509)**（来源：Hacker News）  
-  > 深度逆向工程研究揭示树莓派硬件设计细节，为嵌入式开发和安全分析提供宝贵参考资料。
+- **[willccbb/verifiers](https://github.com/willccbb/verifiers)**（来源：GitHub Trending）  
+  > 专为LLM强化学习设计的模块化环境库，支持大规模FSDP训练和OpenAI兼容接口。
 
-- **[RubyGems.org 如何保护开源软件基础设施](https://news.ycombinator.com/item?id=45016794)**（来源：Hacker News）  
-  > 详细解析RubyGems安全防护机制，包括依赖验证、恶意包检测和基础设施防护等实践方案。
+- **[使用Io_uring、kTLS和Rust实现零系统调用的HTTPS服务器](https://news.ycombinator.com/item?id=44980865)**（来源：Hacker News）  
+  > 通过异步I/O和内核TLS优化网络性能，为高性能后端服务提供实践方案。
 
-- **[谷歌的液体冷却技术](https://news.ycombinator.com/item?id=45016720)**（来源：Hacker News）  
-  > 揭秘谷歌数据中心液体冷却系统技术细节，展示高效散热解决方案对AI计算集群的重要性。
+- **[人类级RAG——无需向量技术](https://news.ycombinator.com/item?id=45029489)**（来源：Hacker News）  
+  > PageIndex用层次化树结构替代向量检索，实现透明可解释的信息定位，提升RAG效率。
+
+- **[官方「数据库」上线，Obsidian 可以替代 Notion 了吗？](https://sspai.com/post/102002)**（来源：少数派）  
+  > Obsidian Bases功能增强非结构化笔记管理，为知识库构建提供新思路。
 
 ---
 
 ### 各渠道精选摘要
-- [AINews](./2025-08-26/ai_news_summary_2025-08-26.md)
-- [GitHub Trending](./2025-08-26/github_trending_2025-08-26.md)
-- [少数派](./2025-08-26/shaoshupai_2025-08-26.md)
-- [36Kr](./2025-08-26/36kr_summary_2025-08-26.md)
-- [美团技术团队](./2025-08-26/meituan_2025-08-26.md)
-- [Go Weekly](./2025-08-26/go_weekly_2025-08-26.md)
-- [Hacker News 首页](./2025-08-26/hacker_news_frontpage_2025-08-26.md)
-- [Hacker News 近期最佳](./2025-08-26/hacker_news_best_2025-08-26.md)
-- [Hacker News 高赞评论](./2025-08-26/hacker_news_top_comments_2025-08-26.md)
-- [Hacker News 问答](./2025-08-26/hacker_news_ask_2025-08-26.md)
-- [Hacker News 展示](./2025-08-26/hacker_news_show_2025-08-26.md)
-- [Hacker News 音频技术](./2025-08-26/hacker_news_audio_tech_2025-08-26.md)
+- [AINews](./2025-08-27/ai_news_summary_2025-08-27.md)
+- [GitHub Trending](./2025-08-27/github_trending_2025-08-27.md)
+- [少数派](./2025-08-27/shaoshupai_2025-08-27.md)
+- [36Kr](./2025-08-27/36kr_summary_2025-08-27.md)
+- [美团技术团队](./2025-08-27/meituan_2025-08-27.md)
+- [Go Weekly](./2025-08-27/go_weekly_2025-08-27.md)
+- [Hacker News 首页](./2025-08-27/hacker_news_frontpage_2025-08-27.md)
+- [Hacker News 近期最佳](./2025-08-27/hacker_news_best_2025-08-27.md)
+- [Hacker News 高赞评论](./2025-08-27/hacker_news_top_comments_2025-08-27.md)
+- [Hacker News 问答](./2025-08-27/hacker_news_ask_2025-08-27.md)
+- [Hacker News 展示](./2025-08-27/hacker_news_show_2025-08-27.md)
+- [Hacker News 音频技术](./2025-08-27/hacker_news_audio_tech_2025-08-27.md)
 
 # 往日新闻
+
+#### [2025-08-26](./2025-08-26/newsletter.md)
 
 #### [2025-08-25](./2025-08-25/newsletter.md)
 
