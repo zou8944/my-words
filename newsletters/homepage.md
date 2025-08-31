@@ -1,59 +1,61 @@
 ## 今日要闻
 
-<sub> 生成时间：2025-08-30 08:10:10</sub>
+<sub> 生成时间：2025-08-31 08:11:08</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[OpenAI Realtime API正式发布](https://openai.com/index/introducing-gpt-realtime/)**（来源：AINews）  
-  > 新增图像输入、远程MCP服务器和SIP/PBX支持，价格降低20%，为实时AI应用提供生产级多模态交互能力。
+- **[Apple发布FastVLM和MobileCLIP2实时视觉语言模型](https://huggingface.co/collections/apple/fastvlm-68ac97b9cd5cacefdd04872e)**（来源：AINews）  
+  > 实时视觉语言模型，比之前工作快85倍、小3.4倍，支持WebGPU/transformers.js演示和MLX/Core ML，适合本地部署。
 
-- **[xAI发布Grok Code Fast 1编程模型](https://twitter.com/xai/status/1961129789944627207)**（来源：AINews）  
-  > 经济型编程推理模型，集成GitHub Copilot等主流IDE，免费试用一周，提升代码生成效率。
+- **[单向量嵌入技术遇到瓶颈](https://twitter.com/orionweller/status/1961436569409331579)**（来源：AINews）  
+  > 理论和实证表明单向量无法满足现代检索需求，ColBERT风格后期交互和开源pylate栈提供替代方案。
 
-- **[腾讯开源视频到音频生成框架HunyuanVideo-Foley](https://github.com/Tencent-Hunyuan/HunyuanVideo-Foley)**（来源：GitHub Trending）  
-  > 端到端文本/视频到音频框架，采用MMDiT骨干网络，在音频质量和时间对齐方面达到SOTA水平。
+- **[Step-Audio 2 Mini语音模型发布](https://huggingface.co/stepfun-ai/Step-Audio-2-mini)**（来源：AINews）  
+  > 8B参数Apache-2.0许可语音模型，训练超800万小时音频，支持5万种声音，在内部评估中击败GPT-4o-Audio。
 
-- **[MODSetter/SurfSense](https://github.com/MODSetter/SurfSense)**（来源：GitHub Trending）  
-  > 开源AI研究代理，集成搜索引擎和外部数据源，支持50+文件格式和多模态RAG检索，适用于知识管理。
+- **[HumanLayer为AI智能体提供人类监督机制](https://github.com/humanlayer/humanlayer)**（来源：GitHub Trending）  
+  > 通过审批工作流确保高风险函数调用安全，支持Slack、邮件等多渠道异步通信，兼容主流LLM框架。
 
-- **[数据工程与软件工程正在融合](https://news.ycombinator.com/item?id=45067867)**（来源：Hacker News）  
-  > 探讨两大工程领域的技术栈和工具链趋同，为后端架构设计提供新思路。
+- **[Wren AI是开源生成式BI代理](https://github.com/Canner/WrenAI)**（来源：GitHub Trending）  
+  > 支持自然语言查询数据库，自动生成精准SQL和可视化图表，通过语义层技术保障输出准确性。
 
-- **[在96块H100 GPU上部署DeepSeek](https://news.ycombinator.com/item?id=45064329)**（来源：Hacker News）  
-  > 分享大规模GPU集群部署实战经验，涉及硬件配置、分布式训练和性能优化。
+- **[混合式PHP的兴起：PHP与Go和Rust的融合](https://news.ycombinator.com/item?id=45077143)**（来源：Hacker News）  
+  > 探讨PHP与Go/Rust混合编程趋势，为后端架构设计提供新思路和技术选型参考。
 
-- **[RAG防火墙——为LangChain/LlamaIndex提供检索时防护机制](https://news.ycombinator.com/item?id=45068582)**（来源：Hacker News）  
-  > 开源工具在检索阶段拦截恶意内容和API密钥泄露，提供审计日志和主流框架集成。
+- **[认知负荷才是关键](https://news.ycombinator.com/item?id=45074248)**（来源：Hacker News）  
+  > 强调系统设计中认知负荷管理的重要性，为复杂工程问题提供简化思路。
 
-- **[优化可维护性——Strand 生产环境中的 Gleam 实践](https://news.ycombinator.com/item?id=45053462)**（来源：Hacker News）  
-  > 探讨Gleam语言在生产环境中的应用，强调类型安全和可维护性在系统设计中的价值。
+- **[从多头注意力到潜在注意力：注意力机制的演进历程](https://news.ycombinator.com/item?id=45072160)**（来源：Hacker News）  
+  > 深入分析注意力机制的技术演进，为LLM模型优化提供理论参考。
 
-- **[SQLite关于其持久性属性的文档表述不清](https://news.ycombinator.com/item?id=45066999)**（来源：Hacker News）  
-  > 深入分析SQLite的ACID实现和持久性保证，为数据库选型和故障排查提供参考。
+- **[美的建了全球首个智能体工厂](https://36kr.com/p/3443892636177796)**（来源：36Kr）  
+  > 通过工厂大脑和14个智能体协同作业，生产效率提升80%以上，实现秒级响应和柔性化生产。
 
-- **[Ask HN：Redis V8 与竞品（Valkey、Dragonfly 等）对比如何？](https://news.ycombinator.com/item?id=45069760)**（来源：Hacker News）  
-  > 社区讨论Redis新版本与开源分支的性能差异，帮助开发者选择合适的内存数据库方案。
+- **[无问芯穹提出"双向奔赴"方案解决AGI算力瓶颈](https://36kr.com/p/3443147159246210)**（来源：36Kr）  
+  > 推出大中小盒子产品体系，从算力供给侧和模型需求侧双向优化，赋能千行百业。
 
 ---
 
 ### 各渠道精选摘要
-- [AINews](./2025-08-30/ai_news_summary_2025-08-30.md)
-- [GitHub Trending](./2025-08-30/github_trending_2025-08-30.md)
-- [少数派](./2025-08-30/shaoshupai_2025-08-30.md)
-- [36Kr](./2025-08-30/36kr_summary_2025-08-30.md)
-- [美团技术团队](./2025-08-30/meituan_2025-08-30.md)
-- [Go Weekly](./2025-08-30/go_weekly_2025-08-30.md)
-- [Hacker News 首页](./2025-08-30/hacker_news_frontpage_2025-08-30.md)
-- [Hacker News 近期最佳](./2025-08-30/hacker_news_best_2025-08-30.md)
-- [Hacker News 高赞评论](./2025-08-30/hacker_news_top_comments_2025-08-30.md)
-- [Hacker News 问答](./2025-08-30/hacker_news_ask_2025-08-30.md)
-- [Hacker News 展示](./2025-08-30/hacker_news_show_2025-08-30.md)
-- [Hacker News 音频技术](./2025-08-30/hacker_news_audio_tech_2025-08-30.md)
+- [AINews](./2025-08-31/ai_news_summary_2025-08-31.md)
+- [GitHub Trending](./2025-08-31/github_trending_2025-08-31.md)
+- [少数派](./2025-08-31/shaoshupai_2025-08-31.md)
+- [36Kr](./2025-08-31/36kr_summary_2025-08-31.md)
+- [美团技术团队](./2025-08-31/meituan_2025-08-31.md)
+- [Go Weekly](./2025-08-31/go_weekly_2025-08-31.md)
+- [Hacker News 首页](./2025-08-31/hacker_news_frontpage_2025-08-31.md)
+- [Hacker News 近期最佳](./2025-08-31/hacker_news_best_2025-08-31.md)
+- [Hacker News 高赞评论](./2025-08-31/hacker_news_top_comments_2025-08-31.md)
+- [Hacker News 问答](./2025-08-31/hacker_news_ask_2025-08-31.md)
+- [Hacker News 展示](./2025-08-31/hacker_news_show_2025-08-31.md)
+- [Hacker News 音频技术](./2025-08-31/hacker_news_audio_tech_2025-08-31.md)
 
 # 往日新闻
+
+#### [2025-08-30](./2025-08-30/newsletter.md)
 
 #### [2025-08-29](./2025-08-29/newsletter.md)
 
