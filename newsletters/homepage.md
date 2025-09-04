@@ -1,59 +1,61 @@
 ## 今日要闻
 
-<sub> 生成时间：2025-09-02 08:10:47</sub>
+<sub> 生成时间：2025-09-04 08:10:18</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[Apple发布FastVLM和MobileCLIP2实时视觉语言模型](https://twitter.com/reach_vb/status/1961471154197053769)**（来源：AINews）  
-  > 实时视觉语言模型支持WebGPU本地运行，首token时间快7.9倍，适用于实时视频字幕和边缘设备部署。
+- **[微软发布rStar2-Agent模型，数学和工具性能达前沿水平](https://twitter.com/iScienceLuvr/status/1962798181059817480)**（来源：Twitter）  
+  > 14B参数模型在AIME24/25数学竞赛超越DeepSeek-R1，采用GRPO-RoC和多阶段训练方法，展示小模型的高效推理能力。
 
-- **[单向量嵌入瓶颈与ColBERT后期交互解决方案](https://twitter.com/orionweller/status/1961436569409331579)**（来源：AINews）  
-  > 理论证明单向量无法满足现代检索需求，开源pylate栈提供ColBERT式后期交互技术方案。
+- **[Zhipu/THUDM开源Slime v0.1.0强化学习基础设施](https://twitter.com/ZhihuFrontier/status/1962751555591086226)**（来源：Twitter）  
+  > GLM-4.5背后的RL训练框架开源，支持FP8 rollout和多令牌预测，解码速度提升6-7倍，适合高性能推理优化。
 
-- **[Step-Audio 2 Mini开源8B语音到语音模型](https://twitter.com/reach_vb/status/1961414067668558319)**（来源：AINews）  
-  > Apache-2.0许可语音模型，声称击败GPT-4o-Audio，支持5万+声音克隆和本地部署。
+- **[Hugging Face发布Jupyter Agent数据集](https://twitter.com/a_yukh/status/1962911097452683710)**（来源：Twitter）  
+  > 包含20亿令牌和7TB代码执行轨迹，提升AI代理的代码执行与数据分析能力，基于真实Kaggle笔记本数据。
 
-- **[QuentinFuxa/WhisperLiveKit](https://github.com/QuentinFuxa/WhisperLiveKit)**（来源：GitHub Trending）  
-  > 实时本地语音转文本工具，支持多用户并发和说话人分离，无需云端依赖，适合会议转录场景。
+- **[基于嵌入检索的理论局限性](https://news.ycombinator.com/item?id=45119397)**（来源：Hacker News）  
+  > 讨论向量检索在语义匹配中的理论边界，对RAG系统设计具有重要参考价值，避免过度依赖嵌入相似性。
 
-- **[JetBrains/koog](https://github.com/JetBrains/koog)**（来源：GitHub Trending）  
-  > Kotlin多平台AI智能体框架，支持全平台部署，集成MCP协议和向量检索，适合企业级应用开发。
+- **[Salesforce发布MCP-Universe代理评估框架](https://twitter.com/_philschmid/status/1962935890415599650)**（来源：Twitter）  
+  > 使用真实MCP服务器在231个任务中测试代理性能，揭示工具过多可能降低效果，为多工具编排提供实践洞察。
 
-- **[humanlayer/humanlayer](https://github.com/humanlayer/humanlayer)**（来源：GitHub Trending）  
-  > AI智能体人类监督框架，通过审批工作流确保高风险函数调用安全，支持Slack/邮件集成。
+- **[理解Transformer：一个极简示例](https://news.ycombinator.com/item?id=45116957)**（来源：Hacker News）  
+  > 通过简化代码实例解析Transformer核心机制，适合快速理解注意力机制和位置编码的实现原理。
 
-- **[迈向内存专业化：长期与短期RAM的差异化应用](https://news.ycombinator.com/item?id=45096140)**（来源：Hacker News）  
-  > 探讨内存架构优化策略，为高性能系统设计提供新的硬件资源管理思路。
+- **[google/comprehensive-rust](https://github.com/google/comprehensive-rust)**（来源：GitHub）  
+  > 谷歌官方Rust课程，涵盖从基础语法到Android/Chromium实战案例，适合C++/Java背景工程师系统学习。
 
-- **[Show HN: Neuron——用于推理的认知多智能体架构](https://news.ycombinator.com/item?id=45095422)**（来源：Hacker News）  
-  > 并行电路思维架构支持动态路由和持久化记忆，能处理矛盾输入和复杂推理任务。
+- **[LangChain/LangGraph发布1.0 alpha版本](https://twitter.com/LangChainAI/status/1962934869065191457)**（来源：Twitter）  
+  > 底层代理编排框架重构，强调标准化内容块和模型可移植性，支持复杂工作流的稳定生产部署。
 
-- **[Show HN: 微调版Llama 3.2 3B模型实现本地转录性能比肩70B大模型](https://news.ycombinator.com/item?id=45095353)**（来源：Hacker News）  
-  > 通过微调实现音频转录JSON结构化输出，在多项指标上超越更大模型，提供完整训练代码。
+- **[自适应LLM路由框架优化成本质量比](https://twitter.com/omarsar0/status/1962875108512411938)**（来源：Twitter）  
+  > 将路由设计为上下文bandit问题，在预算约束下动态选择最优模型，平衡响应质量与推理成本。
 
-- **[用 Mac 打造智能化餐厅，这是海底捞给出的答案](https://sspai.com/post/102160)**（来源：少数派）  
-  > 海底捞基于Mac构建核心业务系统，实现数字化用餐体验，为传统行业技术转型提供参考案例。
+- **[用500行Python代码编写C语言编译器（2023）](https://news.ycombinator.com/item?id=45117668)**（来源：Hacker News）  
+  > 极简编译器实现案例，展示词法分析、语法树构建和代码生成的核心逻辑，适合学习编译原理基础。
 
 ---
 
 ### 各渠道精选摘要
-- [AINews](./2025-09-02/ai_news_summary_2025-09-02.md)
-- [GitHub Trending](./2025-09-02/github_trending_2025-09-02.md)
-- [少数派](./2025-09-02/shaoshupai_2025-09-02.md)
-- [36Kr](./2025-09-02/36kr_summary_2025-09-02.md)
-- [美团技术团队](./2025-09-02/meituan_2025-09-02.md)
-- [Go Weekly](./2025-09-02/go_weekly_2025-09-02.md)
-- [Hacker News 首页](./2025-09-02/hacker_news_frontpage_2025-09-02.md)
-- [Hacker News 近期最佳](./2025-09-02/hacker_news_best_2025-09-02.md)
-- [Hacker News 高赞评论](./2025-09-02/hacker_news_top_comments_2025-09-02.md)
-- [Hacker News 问答](./2025-09-02/hacker_news_ask_2025-09-02.md)
-- [Hacker News 展示](./2025-09-02/hacker_news_show_2025-09-02.md)
-- [Hacker News 音频技术](./2025-09-02/hacker_news_audio_tech_2025-09-02.md)
+- [AINews](./2025-09-04/ai_news_summary_2025-09-04.md)
+- [GitHub Trending](./2025-09-04/github_trending_2025-09-04.md)
+- [少数派](./2025-09-04/shaoshupai_2025-09-04.md)
+- [36Kr](./2025-09-04/36kr_summary_2025-09-04.md)
+- [美团技术团队](./2025-09-04/meituan_2025-09-04.md)
+- [Go Weekly](./2025-09-04/go_weekly_2025-09-04.md)
+- [Hacker News 首页](./2025-09-04/hacker_news_frontpage_2025-09-04.md)
+- [Hacker News 近期最佳](./2025-09-04/hacker_news_best_2025-09-04.md)
+- [Hacker News 高赞评论](./2025-09-04/hacker_news_top_comments_2025-09-04.md)
+- [Hacker News 问答](./2025-09-04/hacker_news_ask_2025-09-04.md)
+- [Hacker News 展示](./2025-09-04/hacker_news_show_2025-09-04.md)
+- [Hacker News 音频技术](./2025-09-04/hacker_news_audio_tech_2025-09-04.md)
 
 # 往日新闻
+
+#### [2025-09-02](./2025-09-02/newsletter.md)
 
 #### [2025-09-01](./2025-09-01/newsletter.md)
 
