@@ -1,13 +1,13 @@
 ## 今日要闻
 
-<sub> 生成时间：2025-09-09 08:11:27</sub>
+<sub> 生成时间：2025-09-10 08:11:19</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[Meta推出Set Block Decoding并行采样技术](https://twitter.com/arankomatsuzaki/status/1963817987506643350)**（来源：Twitter）  
+- **[Meta推出Set Block Decoding并行采样技术](https://twitter.com/HuggingPapers/status/1965084731839513059)**（来源：Twitter）  
   > 无需修改架构即可实现3-5倍推理加速，保持KV缓存兼容性，适用于next-token预测任务。
 
 - **[Pathway：Rust引擎的Python流处理框架](https://github.com/pathwaycom/pathway)**（来源：GitHub）  
@@ -40,20 +40,22 @@
 ---
 
 ### 各渠道精选摘要
-- [AINews](./2025-09-09/ai_news_summary_2025-09-09.md)
-- [GitHub Trending](./2025-09-09/github_trending_2025-09-09.md)
-- [少数派](./2025-09-09/shaoshupai_2025-09-09.md)
-- [36Kr](./2025-09-09/36kr_summary_2025-09-09.md)
-- [美团技术团队](./2025-09-09/meituan_2025-09-09.md)
-- [Go Weekly](./2025-09-09/go_weekly_2025-09-09.md)
-- [Hacker News 首页](./2025-09-09/hacker_news_frontpage_2025-09-09.md)
-- [Hacker News 近期最佳](./2025-09-09/hacker_news_best_2025-09-09.md)
-- [Hacker News 高赞评论](./2025-09-09/hacker_news_top_comments_2025-09-09.md)
-- [Hacker News 问答](./2025-09-09/hacker_news_ask_2025-09-09.md)
-- [Hacker News 展示](./2025-09-09/hacker_news_show_2025-09-09.md)
-- [Hacker News 音频技术](./2025-09-09/hacker_news_audio_tech_2025-09-09.md)
+- [AINews](./2025-09-10/ai_news_summary_2025-09-10.md)
+- [GitHub Trending](./2025-09-10/github_trending_2025-09-10.md)
+- [少数派](./2025-09-10/shaoshupai_2025-09-10.md)
+- [36Kr](./2025-09-10/36kr_summary_2025-09-10.md)
+- [美团技术团队](./2025-09-10/meituan_2025-09-10.md)
+- [Go Weekly](./2025-09-10/go_weekly_2025-09-10.md)
+- [Hacker News 首页](./2025-09-10/hacker_news_frontpage_2025-09-10.md)
+- [Hacker News 近期最佳](./2025-09-10/hacker_news_best_2025-09-10.md)
+- [Hacker News 高赞评论](./2025-09-10/hacker_news_top_comments_2025-09-10.md)
+- [Hacker News 问答](./2025-09-10/hacker_news_ask_2025-09-10.md)
+- [Hacker News 展示](./2025-09-10/hacker_news_show_2025-09-10.md)
+- [Hacker News 音频技术](./2025-09-10/hacker_news_audio_tech_2025-09-10.md)
 
 # 往日新闻
+
+#### [2025-09-09](./2025-09-09/newsletter.md)
 
 #### [2025-09-08](./2025-09-08/newsletter.md)
 
