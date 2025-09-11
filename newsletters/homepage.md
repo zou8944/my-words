@@ -1,59 +1,61 @@
 ## 今日要闻
 
-<sub> 生成时间：2025-09-10 08:11:19</sub>
+<sub> 生成时间：2025-09-11 08:11:23</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[Meta推出Set Block Decoding并行采样技术](https://twitter.com/HuggingPapers/status/1965084731839513059)**（来源：Twitter）  
-  > 无需修改架构即可实现3-5倍推理加速，保持KV缓存兼容性，适用于next-token预测任务。
-
 - **[Pathway：Rust引擎的Python流处理框架](https://github.com/pathwaycom/pathway)**（来源：GitHub）  
   > 支持实时ETL和LLM管道，内置多类连接器，适用于AI流水线和实时分析场景。
 
-- **[微软BitNet高效1位推理框架](https://github.com/microsoft/BitNet)**（来源：GitHub）  
-  > 支持CPU/GPU无损推理，ARM CPU加速1.37-5.07倍，能耗降低55-70%，适合边缘设备部署。
+- **[Daft：基于Rust的分布式查询引擎](https://github.com/Eventual-Inc/Daft)**（来源：GitHub）  
+  > 支持Python和SQL接口，专为多模态数据处理设计，可高效处理图像、URL、张量等复杂类型。
 
-- **[NPM debug和chalk包遭恶意入侵分析](https://news.ycombinator.com/item?id=45169657)**（来源：Hacker News）  
-  > 攻击者通过计算莱文斯坦距离替换钱包地址，利用社会工程学手段绕过用户验证。
+- **[Qwen3-Next系列发布新架构](https://qwenlm.github.io/blog/qwen3_next/)**（来源：QwenLM）  
+  > 引入混合注意力堆栈、高稀疏度MoE和多令牌预测，以<1/10训练成本超越Qwen3-32B。
+
+- **[FAIR推出Exploratory Iteration自我改进方法](https://twitter.com/MinqiJiang/status/1965055909605916892)**（来源：Twitter）  
+  > 通过自动课程训练LLMs进行推理时自我改进，在竞赛数学和多轮任务中超越GRPO。
 
 - **[使用Claude Code现代化25年内核驱动](https://news.ycombinator.com/item?id=45163362)**（来源：Hacker News）  
   > 展示AI辅助重构老旧代码的实践，提升维护效率和代码现代化水平。
 
-- **[从Docker迁移Podman的实践经验](https://news.ycombinator.com/item?id=45137525)**（来源：Hacker News）  
-  > 无需root权限、兼容Docker命令，提升容器安全性和资源利用率。
+- **[Dotter：基于Rust编写的Dotfile管理器](https://news.ycombinator.com/item?id=45202252)**（来源：Hacker News）  
+  > 提供模板化和版本控制功能，简化开发环境配置，提升跨设备一致性。
 
-- **[SQLite-vec结合EmbeddingGemma实现离线检索](https://twitter.com/_philschmid/status/1963952204970078579)**（来源：Twitter）  
-  > 支持全离线跨语言检索，为边缘设备提供轻量级解决方案，突破网络依赖限制。
+- **[pgdbtemplate：快速创建PostgreSQL测试数据库](https://news.ycombinator.com/item?id=45203287)**（来源：Hacker News）  
+  > 通过模板数据库加速测试执行，支持主流驱动、迁移处理和容器化。
+
+- **[克服LLM推理中的非确定性问题](https://news.ycombinator.com/item?id=45200925)**（来源：Hacker News）  
+  > 探讨LLM推理稳定性挑战，提供实践方法和优化思路，提升生产环境可靠性。
+
+- **[AutoRound集成至SGLang](https://twitter.com/HaihaoShen/status/1964926924880523701)**（来源：Twitter）  
+  > 提供高效的量化优化功能，提升模型推理效率，适用于高性能计算场景。
 
 - **[防止日志泄露敏感信息的2024实践指南](https://news.ycombinator.com/item?id=45160774)**（来源：Hacker News）  
-  > 减少日志中敏感数据暴露，增强系统安全性和合规性。
-
-- **[智能体评估框架面临实践挑战](https://twitter.com/swyx/status/1963725773355057249)**（来源：Twitter）  
-  > 呼吁开发长周期能力评估和特定领域工作流测试，超越内部试用和错误分析。
-
-- **[混合后训练技术HPT超越基线表现](https://twitter.com/omarsar0/status/1963971173735448858)**（来源：Twitter）  
-  > 通过统一SFT和RL的奖励-KL目标，在多规模和模型家族中一致提升性能。
+  > 减少日志中敏感数据暴露，增强系统安全性和合规性，适用于高安全要求场景。
 
 ---
 
 ### 各渠道精选摘要
-- [AINews](./2025-09-10/ai_news_summary_2025-09-10.md)
-- [GitHub Trending](./2025-09-10/github_trending_2025-09-10.md)
-- [少数派](./2025-09-10/shaoshupai_2025-09-10.md)
-- [36Kr](./2025-09-10/36kr_summary_2025-09-10.md)
-- [美团技术团队](./2025-09-10/meituan_2025-09-10.md)
-- [Go Weekly](./2025-09-10/go_weekly_2025-09-10.md)
-- [Hacker News 首页](./2025-09-10/hacker_news_frontpage_2025-09-10.md)
-- [Hacker News 近期最佳](./2025-09-10/hacker_news_best_2025-09-10.md)
-- [Hacker News 高赞评论](./2025-09-10/hacker_news_top_comments_2025-09-10.md)
-- [Hacker News 问答](./2025-09-10/hacker_news_ask_2025-09-10.md)
-- [Hacker News 展示](./2025-09-10/hacker_news_show_2025-09-10.md)
-- [Hacker News 音频技术](./2025-09-10/hacker_news_audio_tech_2025-09-10.md)
+- [AINews](./2025-09-11/ai_news_summary_2025-09-11.md)
+- [GitHub Trending](./2025-09-11/github_trending_2025-09-11.md)
+- [少数派](./2025-09-11/shaoshupai_2025-09-11.md)
+- [36Kr](./2025-09-11/36kr_summary_2025-09-11.md)
+- [美团技术团队](./2025-09-11/meituan_2025-09-11.md)
+- [Go Weekly](./2025-09-11/go_weekly_2025-09-11.md)
+- [Hacker News 首页](./2025-09-11/hacker_news_frontpage_2025-09-11.md)
+- [Hacker News 近期最佳](./2025-09-11/hacker_news_best_2025-09-11.md)
+- [Hacker News 高赞评论](./2025-09-11/hacker_news_top_comments_2025-09-11.md)
+- [Hacker News 问答](./2025-09-11/hacker_news_ask_2025-09-11.md)
+- [Hacker News 展示](./2025-09-11/hacker_news_show_2025-09-11.md)
+- [Hacker News 音频技术](./2025-09-11/hacker_news_audio_tech_2025-09-11.md)
 
 # 往日新闻
+
+#### [2025-09-10](./2025-09-10/newsletter.md)
 
 #### [2025-09-09](./2025-09-09/newsletter.md)
 
