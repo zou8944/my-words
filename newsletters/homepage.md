@@ -1,59 +1,61 @@
 ## 今日要闻
 
-<sub> 生成时间：2025-09-13 08:11:35</sub>
+<sub> 生成时间：2025-09-14 08:11:27</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[VS Code v1.104集成Copilot Chat与Hugging Face模型](https://twitter.com/code/status/1966145747566375215)**（来源：Twitter）  
-  > 升级Copilot Chat功能，集成Hugging Face推理提供商，支持GLM-4.5、Qwen3 Coder等开源LLM一键调用，提升开发效率。
+- **[MobileLLM-R1：Meta发布的高效小型推理模型](https://huggingface.co/facebook/MobileLLM-R1-950M)**（来源：Hugging Face）  
+  > 参数小于10亿，在MATH准确率上超越同类模型，适用于边缘设备推理，提升移动端AI性能。
 
-- **[OpenAI Evals支持原生音频输入与评估](https://twitter.com/OpenAIDevs/status/1965923707085533368)**（来源：Twitter）  
-  > 无需转录即可评估语音响应，GPT-Realtime在音频竞技场以82.8%准确率领先，适用于语音AI应用开发。
+- **[Qwen3-Next-80B：阿里巴巴稀疏激活MoE模型](https://huggingface.co/collections/Qwen/qwen3-next-68c25fd6838e585db8eeea9d)**（来源：Hugging Face）  
+  > 混合注意力设计，稀疏度3.8%，支持256k上下文，推理速度提升10倍，需SGLang和vLLM适配。
 
-- **[Trillion Labs发布Apache-2.0许可的70B中间检查点](https://huggingface.co/trillionlabs/Tri-70B-Intermediate-Checkpoints)**（来源：Hugging Face）  
-  > 全球首个70B中间训练检查点开源，支持透明训练动态研究，适用于模型缩放分析和微调起点优化。
+- **[OpenPI：机器人视觉语言动作模型](https://github.com/Physical-Intelligence/openpi)**（来源：GitHub）  
+  > 基于万小时机器人数据训练，支持零样本推理和微调，适用于ALOHA/DROID平台任务泛化。
 
-- **[Motia：统一后端开发框架](https://github.com/MotiaDev/motia)**（来源：GitHub）  
-  > 将API、任务、工作流和AI代理整合为单一Step单元，支持多语言混合开发，简化分布式系统构建。
+- **[ROMA：递归分层多智能体框架](https://github.com/sentient-agi/ROMA)**（来源：GitHub）  
+  > 通过原子化分解和并行执行解决复杂任务，支持LLM/API混合调用，适用于高性能多智能体系统。
 
-- **[Agno：高性能多智能体系统运行时框架](https://github.com/agno-agi/agno)**（来源：GitHub）  
-  > 提供会话管理、记忆存储和人类协同功能，支持本地化部署确保数据隐私，具备微秒级启动速度。
+- **[Codebuff：开源AI编程助手](https://github.com/CodebuffAI/codebuff)**（来源：GitHub）  
+  > 多智能体协作实现自然语言指令修改代码，在真实编程任务中准确率达61%，超越Claude Code。
 
-- **[VaultGemma：当前性能最强的差分隐私大语言模型](https://news.ycombinator.com/item?id=45223726)**（来源：Hacker News）  
-  > 谷歌发布全球首个差分隐私大语言模型，在保护用户数据隐私的同时保持高性能表现。
+- **[Hugging Face Transformers v5现代化升级](https://twitter.com/art_zucker/status/1966470835558093226)**（来源：Twitter）  
+  > 推出更快内核和连续批处理，简化评估/训练循环，专注于修补和工具箱而非最大吞吐量服务器。
 
-- **[使用Claude Code现代化25年内核驱动的实践总结](https://news.ycombinator.com/item?id=45163362)**（来源：Hacker News）  
-  > 展示AI辅助重构老旧代码的具体方法，提升维护效率和代码现代化水平，适用于遗留系统改造。
+- **[开源维护者如何优雅地说“不”](https://news.ycombinator.com/item?id=45234593)**（来源：Hacker News）  
+  > 提供开源项目维护者拒绝不合理请求的实用指南，帮助维护者平衡社区贡献与项目可持续性。
 
-- **[NCCL算法与协议详解发布](https://twitter.com/StasBekman/status/1966194963194257759)**（来源：Twitter）  
-  > 提供关于NCCL算法与协议的清晰详解，为优化集体通信提供宝贵资源，帮助开发者优化分布式训练通信效率。
+- **[使用量化方法测试投资配置的平台](https://news.ycombinator.com/item?id=45235042)**（来源：Hacker News）  
+  > 让用户自主测试股票、ETF和加密货币的优化配置方案，将量化工具以友好方式开放给普通用户。
 
-- **[Set Block Decoding大幅减少生成步骤](https://arxiv.org/pdf/2509.07367v1)**（来源：arXiv）  
-  > 集成NTP和MATP，在Llama-3.1和Qwen-3上减少3-5倍前向传递，保持准确性，无需架构更改且兼容KV缓存。
+- **[VeritasGraph：本地部署图检索增强生成系统](https://news.ycombinator.com/item?id=45235033)**（来源：Hacker News）  
+  > 用知识图谱替代向量搜索，解决多跳查询问题，提供可验证溯源和本地部署，确保AI可信度。
 
-- **[SkyPilot自动化分布式训练配置](https://twitter.com/skypilot_org/status/1966208445339807816)**（来源：Twitter）  
-  > 自动化调整网络和存储配置，在相同GPU和代码上实现分布式训练后10倍速度提升。
+- **[为什么下载不能立刻到达最快速度](https://sspai.com/prime/story/download-speed-and-congestion-control-algo)**（来源：少数派）  
+  > 从现象分析拥塞控制算法，解释下载速度逐步提升的原因，帮助优化网络传输策略。
 
 ---
 
 ### 各渠道精选摘要
-- [AINews](./2025-09-13/ai_news_summary_2025-09-13.md)
-- [GitHub Trending](./2025-09-13/github_trending_2025-09-13.md)
-- [少数派](./2025-09-13/shaoshupai_2025-09-13.md)
-- [36Kr](./2025-09-13/36kr_summary_2025-09-13.md)
-- [美团技术团队](./2025-09-13/meituan_2025-09-13.md)
-- [Go Weekly](./2025-09-13/go_weekly_2025-09-13.md)
-- [Hacker News 首页](./2025-09-13/hacker_news_frontpage_2025-09-13.md)
-- [Hacker News 近期最佳](./2025-09-13/hacker_news_best_2025-09-13.md)
-- [Hacker News 高赞评论](./2025-09-13/hacker_news_top_comments_2025-09-13.md)
-- [Hacker News 问答](./2025-09-13/hacker_news_ask_2025-09-13.md)
-- [Hacker News 展示](./2025-09-13/hacker_news_show_2025-09-13.md)
-- [Hacker News 音频技术](./2025-09-13/hacker_news_audio_tech_2025-09-13.md)
+- [AINews](./2025-09-14/ai_news_summary_2025-09-14.md)
+- [GitHub Trending](./2025-09-14/github_trending_2025-09-14.md)
+- [少数派](./2025-09-14/shaoshupai_2025-09-14.md)
+- [36Kr](./2025-09-14/36kr_summary_2025-09-14.md)
+- [美团技术团队](./2025-09-14/meituan_2025-09-14.md)
+- [Go Weekly](./2025-09-14/go_weekly_2025-09-14.md)
+- [Hacker News 首页](./2025-09-14/hacker_news_frontpage_2025-09-14.md)
+- [Hacker News 近期最佳](./2025-09-14/hacker_news_best_2025-09-14.md)
+- [Hacker News 高赞评论](./2025-09-14/hacker_news_top_comments_2025-09-14.md)
+- [Hacker News 问答](./2025-09-14/hacker_news_ask_2025-09-14.md)
+- [Hacker News 展示](./2025-09-14/hacker_news_show_2025-09-14.md)
+- [Hacker News 音频技术](./2025-09-14/hacker_news_audio_tech_2025-09-14.md)
 
 # 往日新闻
+
+#### [2025-09-13](./2025-09-13/newsletter.md)
 
 #### [2025-09-12](./2025-09-12/newsletter.md)
 
