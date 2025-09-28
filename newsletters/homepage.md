@@ -1,59 +1,61 @@
 ## 今日要闻
 
-<sub> 生成时间：2025-09-27 08:11:12</sub>
+<sub> 生成时间：2025-09-28 08:11:10</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[OpenAI发布GDPVal基准测试](https://openai.com/index/gdpval/)**（来源：OpenAI）  
-> 系统评估AI在44个职业1320项经济任务中的表现，为模型工作场景能力提供量化标准。
+- **[字节跳动开源Dolphin文档图像解析模型](https://github.com/bytedance/Dolphin)**（来源：GitHub）  
+> 采用"先分析后解析"两阶段方法，支持多页PDF并行解析文本/表格/公式，为智能文档处理提供高效解决方案。
 
-- **[谷歌推出Gemini Robotics 1.5机器人平台](https://deepmind.google/models/gemini-robotics/)**（来源：Google DeepMind）  
-> 多模态机器人控制平台支持长时程任务规划与跨 embodiment 转移，提升复杂操作自动化水平。
+- **[Exo分布式AI集群框架](https://github.com/exo-explore/exo)**（来源：GitHub）  
+> 将日常设备组建成P2P计算集群，动态分区技术自动分配负载，低成本运行超大模型。
 
-- **[DBOS Go持久化工作流实战总结](https://news.ycombinator.com/item?id=45363319)**（来源：Hacker News）  
-> 基于Postgres的Go库实现自动状态检查点和故障恢复，为分布式系统提供轻量级容错方案。
+- **[Modal团队逆向工程FlashAttention 4技术解析](https://news.ycombinator.com/item?id=45399637)**（来源：Hacker News）  
+> 揭示20%速度提升源于专用warp布局、exp三次近似和异步处理，提供CUDA级优化思路。
 
-- **[Linden——大规模自修复 Playwright 脚本](https://news.ycombinator.com/item?id=45390704)**（来源：Hacker News）  
-> AI生成透明Playwright脚本，失败时仅修复断点，实现低成本稳定自动化测试。
+- **[vLLM v1正式支持混合模型推理](https://twitter.com/RedHat_AI/status/1971569727844876350)**（来源：Twitter）  
+> 将Mamba/Mamba2、线性注意力作为一等公民，提升推理后端兼容性和性能表现。
 
-- **[Cloudflare推出Cap'n Web JavaScript原生RPC系统](https://github.com/cloudflare/capnweb)**（来源：GitHub）  
-> 基于对象能力模型实现双向调用与函数引用传递，压缩后仅10KB，适用于全栈JavaScript应用。
+- **[GraphMend编译器优化PyTorch动态图断裂](https://arxiv.org/abs/2509.16248)**（来源：arXiv）  
+> 消除FX图断裂问题，在RTX 3090上实现75%延迟降低，为动态控制流模型提供编译优化方案。
 
-- **[HumanLayer人工监督框架](https://github.com/humanlayer/humanlayer)**（来源：GitHub）  
-> 通过装饰器实现高风险函数调用的强制审批，为AI智能体提供确定性人机协作基础。
+- **[SSH3：基于HTTP/3的新一代安全外壳协议](https://news.ycombinator.com/item?id=45395991)**（来源：Hacker News）  
+> 利用QUIC协议实现更快速连接建立和丰富功能扩展，为远程管理协议演进提供新方向。
 
-- **[Meta发布Code World Model 32B](https://twitter.com/AIatMeta/status/1970963571753222319)**（来源：Twitter）  
-> 32B参数代码世界模型将代码生成建模为规划任务，在SWE-bench Verified达65.8% pass@1。
+- **[恒为科技AIRaaS并购案分析](https://36kr.com/p/3484384487086985)**（来源：36氪）  
+> A股首例AI结果即服务并购，标志行业从算力竞争转向可量化业务价值交付的实战趋势。
 
-- **[微软公布LLM推理能耗研究结果](https://twitter.com/arankomatsuzaki/status/1971059016878240241)**（来源：Twitter）  
-> 实际聊天查询能耗约0.34Wh，长推理任务约4.3Wh，揭示能效存在8-20倍提升空间。
+- **[DB-Engines发布NewSQL数据库年度评测](https://news.ycombinator.com/item?id=45398467)**（来源：Hacker News）  
+> 深入分析CockroachDB/TiDB等分布式数据库的OLTP优化策略，为高并发事务场景选型提供参考。
 
-- **[Beacon – 轻量级部署与监控工具](https://news.ycombinator.com/item?id=45390625)**（来源：Hacker News）  
-> 开源工具简化自托管应用部署和监控，替代臃肿传统方案，专为轻量级基础设施设计。
+- **[MoonshotAI开源量化验证工具](https://github.com/MoonshotAI/K2-Vendor-Verfier)**（来源：GitHub）  
+> 审计提供商端模型量化质量，推动行业量化披露标准化，保障推理部署可靠性。
 
-- **[Parkiet——低成本微调TTS模型](https://news.ycombinator.com/item?id=45357002)**（来源：Hacker News）  
-> 使用TPU免费额度训练小语种TTS模型，成本100-300美元，为语音合成本地化提供可行方案。
+- **[LLM可观测性实践白皮书](https://news.ycombinator.com/item?id=45398467)**（来源：Hacker News）  
+> 论证OpenTelemetry作为LLM应用可观测性标准的必要性，提供全链路追踪和成本监控实施方案。
 
 ---
 
 ### 各渠道精选摘要
-- [AINews](./2025-09-27/ai_news_summary_2025-09-27.md)
-- [GitHub Trending](./2025-09-27/github_trending_2025-09-27.md)
-- [少数派](./2025-09-27/shaoshupai_2025-09-27.md)
-- [36Kr](./2025-09-27/36kr_summary_2025-09-27.md)
-- [美团技术团队](./2025-09-27/meituan_2025-09-27.md)
-- [Go Weekly](./2025-09-27/go_weekly_2025-09-27.md)
-- [Hacker News 首页](./2025-09-27/hacker_news_frontpage_2025-09-27.md)
-- [Hacker News 近期最佳](./2025-09-27/hacker_news_best_2025-09-27.md)
-- [Hacker News 高赞评论](./2025-09-27/hacker_news_top_comments_2025-09-27.md)
-- [Hacker News 问答](./2025-09-27/hacker_news_ask_2025-09-27.md)
-- [Hacker News 展示](./2025-09-27/hacker_news_show_2025-09-27.md)
-- [Hacker News 音频技术](./2025-09-27/hacker_news_audio_tech_2025-09-27.md)
+- [AINews](./2025-09-28/ai_news_summary_2025-09-28.md)
+- [GitHub Trending](./2025-09-28/github_trending_2025-09-28.md)
+- [少数派](./2025-09-28/shaoshupai_2025-09-28.md)
+- [36Kr](./2025-09-28/36kr_summary_2025-09-28.md)
+- [美团技术团队](./2025-09-28/meituan_2025-09-28.md)
+- [Go Weekly](./2025-09-28/go_weekly_2025-09-28.md)
+- [Hacker News 首页](./2025-09-28/hacker_news_frontpage_2025-09-28.md)
+- [Hacker News 近期最佳](./2025-09-28/hacker_news_best_2025-09-28.md)
+- [Hacker News 高赞评论](./2025-09-28/hacker_news_top_comments_2025-09-28.md)
+- [Hacker News 问答](./2025-09-28/hacker_news_ask_2025-09-28.md)
+- [Hacker News 展示](./2025-09-28/hacker_news_show_2025-09-28.md)
+- [Hacker News 音频技术](./2025-09-28/hacker_news_audio_tech_2025-09-28.md)
 
 # 往日新闻
+
+#### [2025-09-27](./2025-09-27/newsletter.md)
 
 #### [2025-09-26](./2025-09-26/newsletter.md)
 
