@@ -1,59 +1,61 @@
 ## 今日要闻
 
-<sub> 生成时间：2025-10-01 08:10:32</sub>
+<sub> 生成时间：2025-10-02 08:10:21</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[DeepSeek V3.2-Exp稀疏注意力模型](https://twitter.com/deepseek_ai/status/1972604768309871061)**（来源：Twitter）  
-> 学习稀疏注意力方案使预填充成本降3.5倍，解码成本降10倍，API价格降低50%+，质量保持V3.1水平
+- **[NVIDIA推出FP4预训练技术，效率提升6.8倍](https://twitter.com/arankomatsuzaki/status/1972869149102858441)**（来源：Twitter）  
+> 4位预训练在12B模型上匹配FP8性能，实现6.8倍效率提升和50%内存降低，Blackwell架构支持FP4矩阵乘法
 
-- **[vLLM支持DeepSeek稀疏注意力](https://twitter.com/vllm_project/status/1972664010702221399)**（来源：Twitter）  
-> 提供DSA支持配方和H200/B200构建，TileLang在80行代码达手写FlashMLA 95%性能
+- **[智谱GLM-4.6开源发布，编码能力接近Claude Sonnet 4](https://twitter.com/Zai_org/status/1973034639708344767)**（来源：Twitter）  
+> MIT许可模型支持200K上下文，编码能力接近Claude Sonnet 4，比4.5版本减少15% token消耗
 
-- **[RL研究显示LoRA在强化学习后训练中可匹配全参数微调](https://thinkingmachines.ai/blog/lora/)**（来源：Thinking Machines）  
-> 1500+实验证实LoRA在多数RL后训练机制中性能媲美全参数微调，低秩下仍有效
+- **[Claude Sonnet 4.5发布，编码能力大幅提升](https://twitter.com/ArtificialAnlys/status/1972854742167761204)**（来源：Twitter）  
+> 相同价格下提供更高智能水平，工具使用和安全对齐表现突出，独立评估领先Gemini 2.5 Pro
 
-- **[llmq库支持LLaMA/Qwen完全分片FP8训练](https://github.com/IST-DASLab/llmq)**（来源：GitHub）  
-> 纯CUDA/C++实现完全分片FP8训练，实现内存和吞吐量优势，推动大规模训练优化边界
+- **[Done-0/fuck-u-code](https://github.com/Done-0/fuck-u-code)**（来源：GitHub）  
+> 多语言代码质量检测工具，通过七维度评估生成屎山指数，提供本地彩色报告和Markdown输出
 
-- **[snarktank/ai-dev-tasks](https://github.com/snarktank/ai-dev-tasks)**（来源：GitHub）  
-> AI开发任务管理系统，结构化Markdown模板标准化工作流，提升AI协作开发可控性
+- **[anthropics/claude-agent-sdk-python](https://github.com/anthropics/claude-agent-sdk-python)**（来源：GitHub）  
+> Claude Agent Python SDK支持异步查询和双向交互，可将Python函数直接封装为工具供Claude调用
 
-- **[Airweave开源工具让AI代理搜索任意应用](https://news.ycombinator.com/item?id=45427482)**（来源：Hacker News）  
-> 统一API支持语义和关键词搜索多源数据，解决企业内部数据分散问题，提供实时同步
+- **[DARPA启动C语言转Rust自动翻译项目（2024）](https://news.ycombinator.com/item?id=45443368)**（来源：Hacker News）  
+> 政府资助的C到Rust自动翻译项目，推动内存安全语言在系统编程中的采用
 
-- **[设计智能代理循环](https://news.ycombinator.com/item?id=45426680)**（来源：Hacker News）  
-> Simon Willison分享智能代理系统设计模式，涵盖任务分解、工具调用和状态管理实践
+- **[构建堆栈：为预训练搭建30PB硬盘阵列](https://news.ycombinator.com/item?id=45438496)**（来源：Hacker News）  
+> 大规模AI预训练基础设施实践，分享30PB存储阵列的架构设计和实施经验
 
-- **[FomoRobo——替你阅读新闻通讯的AI助手](https://news.ycombinator.com/item?id=45431374)**（来源：Hacker News）  
-> 自动阅读总结多个邮件订阅，支持提问和博客生成，已处理每日100+邮件
+- **[Fossabot：专为Dependabot/Renovate提供重大变更与影响分析的AI代码审查工具](https://news.ycombinator.com/item?id=45439721)**（来源：Hacker News）  
+> AI驱动的依赖更新分析工具，自动识别重大变更并提供影响评估，提升升级安全性
 
-- **[Eventvisor——通过远程配置管理追踪事件](https://news.ycombinator.com/item?id=45430768)**（来源：Hacker News）  
-> GitOps开源工具集中管理分析事件，支持过滤转换采样，无需重新部署应用
+- **[Typst/typst](https://github.com/typst/typst)**（来源：GitHub）  
+> 现代化排版系统兼具LaTeX功能与易用性，编译速度快且错误提示友好，适合技术文档编排
 
-- **[NanoModal——轻量级无障碍弹窗库](https://news.ycombinator.com/item?id=45431902)**（来源：Hacker News）  
-> 850字节库解决原生dialog浏览器兼容性问题，支持无障碍访问和CSS自定义动画
+- **[微软在Office中引入AI代理模式](https://sspai.com/post/102843)**（来源：少数派）  
+> Office集成AI代理实现自动化文档处理，提升办公效率，展示企业级AI应用实践
 
 ---
 
 ### 各渠道精选摘要
-- [AINews](./2025-10-01/ai_news_summary_2025-10-01.md)
-- [GitHub Trending](./2025-10-01/github_trending_2025-10-01.md)
-- [少数派](./2025-10-01/shaoshupai_2025-10-01.md)
-- [36Kr](./2025-10-01/36kr_summary_2025-10-01.md)
-- [美团技术团队](./2025-10-01/meituan_2025-10-01.md)
-- [Go Weekly](./2025-10-01/go_weekly_2025-10-01.md)
-- [Hacker News 首页](./2025-10-01/hacker_news_frontpage_2025-10-01.md)
-- [Hacker News 近期最佳](./2025-10-01/hacker_news_best_2025-10-01.md)
-- [Hacker News 高赞评论](./2025-10-01/hacker_news_top_comments_2025-10-01.md)
-- [Hacker News 问答](./2025-10-01/hacker_news_ask_2025-10-01.md)
-- [Hacker News 展示](./2025-10-01/hacker_news_show_2025-10-01.md)
-- [Hacker News 音频技术](./2025-10-01/hacker_news_audio_tech_2025-10-01.md)
+- [AINews](./2025-10-02/ai_news_summary_2025-10-02.md)
+- [GitHub Trending](./2025-10-02/github_trending_2025-10-02.md)
+- [少数派](./2025-10-02/shaoshupai_2025-10-02.md)
+- [36Kr](./2025-10-02/36kr_summary_2025-10-02.md)
+- [美团技术团队](./2025-10-02/meituan_2025-10-02.md)
+- [Go Weekly](./2025-10-02/go_weekly_2025-10-02.md)
+- [Hacker News 首页](./2025-10-02/hacker_news_frontpage_2025-10-02.md)
+- [Hacker News 近期最佳](./2025-10-02/hacker_news_best_2025-10-02.md)
+- [Hacker News 高赞评论](./2025-10-02/hacker_news_top_comments_2025-10-02.md)
+- [Hacker News 问答](./2025-10-02/hacker_news_ask_2025-10-02.md)
+- [Hacker News 展示](./2025-10-02/hacker_news_show_2025-10-02.md)
+- [Hacker News 音频技术](./2025-10-02/hacker_news_audio_tech_2025-10-02.md)
 
 # 往日新闻
+
+#### [2025-10-01](./2025-10-01/newsletter.md)
 
 #### [2025-09-30](./2025-09-30/newsletter.md)
 
