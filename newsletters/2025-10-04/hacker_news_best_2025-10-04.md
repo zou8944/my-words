@@ -1,0 +1,123 @@
+## Hacker News 近期最佳 - 2025-10-04
+
+
+### 1. [苹果在司法部施压下移除ICE追踪应用](https://news.ycombinator.com/item?id=45457333)
+
+<sub>作者: aspenmayer | 发布于: 2025-10-03 00:34</sub>
+
+---
+
+### 2. [OpenAI 2025年上半年：收入43亿美元，亏损135亿美元](https://news.ycombinator.com/item?id=45453586)
+
+<sub>作者: breadsniffer | 发布于: 2025-10-02 18:37</sub>
+
+---
+
+### 3. [Signal协议与后量子棘轮机制](https://news.ycombinator.com/item?id=45451527)
+
+<sub>作者: pluto_modadic | 发布于: 2025-10-02 16:06</sub>
+
+---
+
+### 4. [以色列行动如何导致加沙饥荒，可视化解析](https://news.ycombinator.com/item?id=45447699)
+
+<sub>作者: nashashmi | 发布于: 2025-10-02 09:23</sub>
+
+---
+
+### 5. [Immich v2.0.0 – 首个稳定版本发布](https://news.ycombinator.com/item?id=45446834)
+
+<sub>作者: Alexvb | 发布于: 2025-10-02 06:25</sub>
+
+---
+
+### 6. [珍·古道尔去世](https://news.ycombinator.com/item?id=45441069)
+
+<sub>作者: jaredwiener | 发布于: 2025-10-01 18:10</sub>
+
+---
+
+### 7. [不要回避职场政治](https://news.ycombinator.com/item?id=45440571)
+
+<sub>作者: matheusml | 发布于: 2025-10-01 17:36</sub>
+
+---
+
+### 8. [Gmail将不再支持通过POP协议收取第三方账户邮件](https://news.ycombinator.com/item?id=45439670)
+
+<sub>作者: sumanep | 发布于: 2025-10-01 16:25</sub>
+
+---
+
+### 9. [Show HN：自闭症模拟器](https://news.ycombinator.com/item?id=45438346)
+> 开发者基于个人和朋友的孤独症经历创建项目，通过模拟日常选择展示社交伪装、决策疲劳等体验，旨在增进对孤独症的理解。
+
+<sub>作者: joshcsimmons | 发布于: 2025-10-01 14:48</sub>
+
+---
+
+### 10. [炎症预测心脏病的能力现已超过胆固醇](https://news.ycombinator.com/item?id=45430498)
+
+<sub>作者: brandonb | 发布于: 2025-09-30 20:00</sub>
+
+---
+
+### 11. [Sora 2](https://news.ycombinator.com/item?id=45427982)
+
+<sub>作者: skilled | 发布于: 2025-09-30 16:55</sub>
+
+---
+
+### 12. [Kagi新闻](https://news.ycombinator.com/item?id=45426490)
+
+<sub>作者: grappler | 发布于: 2025-09-30 15:09</sub>
+
+---
+
+### 13. [Imgur因数据监管机构威胁罚款而退出英国市场](https://news.ycombinator.com/item?id=45424888)
+
+<sub>作者: ANewbury | 发布于: 2025-09-30 13:01</sub>
+
+---
+
+### 14. [理解债：LLM生成代码的定时炸弹](https://news.ycombinator.com/item?id=45423917)
+
+<sub>作者: todsacerdoti | 发布于: 2025-09-30 10:37</sub>
+
+---
+
+### 15. [我已移除Disqus，它让我的博客体验变得更糟](https://news.ycombinator.com/item?id=45423268)
+
+<sub>作者: ry8806 | 发布于: 2025-09-30 08:36</sub>
+
+---
+
+### 16. [Claude Code 2.0](https://news.ycombinator.com/item?id=45416228)
+
+<sub>作者: polyrand | 发布于: 2025-09-29 17:12</sub>
+
+---
+
+### 17. [Claude Sonnet 4.5](https://news.ycombinator.com/item?id=45415962)
+
+<sub>作者: adocomplete | 发布于: 2025-09-29 16:52</sub>
+
+---
+
+### 18. [如果我不想让业余爱好的视频公之于众呢？](https://news.ycombinator.com/item?id=45412419)
+
+<sub>作者: speckx | 发布于: 2025-09-29 11:28</sub>
+
+---
+
+### 19. [F-Droid与谷歌开发者注册规定](https://news.ycombinator.com/item?id=45409794)
+
+<sub>作者: gumby271 | 发布于: 2025-09-29 02:10</sub>
+
+---
+
+### 20. [在地址栏玩贪吃蛇游戏](https://news.ycombinator.com/item?id=45408021)
+
+<sub>作者: macote | 发布于: 2025-09-28 21:08</sub>
+
+---
