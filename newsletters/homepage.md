@@ -1,59 +1,61 @@
 ## 今日要闻
 
-<sub> 生成时间：2025-10-04 08:10:18</sub>
+<sub> 生成时间：2025-10-05 08:10:21</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[tigerbeetle/tigerbeetle](https://github.com/tigerbeetle/tigerbeetle)**（来源：GitHub）  
-> 专为金融交易设计的下一代OLTP数据库，具备强一致性与高吞吐性能，适用于支付清算、证券交易等核心场景
+- **[juspay/hyperswitch](https://github.com/juspay/hyperswitch)**（来源：GitHub）  
+> 基于Rust构建的开源支付交换平台，提供智能路由、PCI合规金库等模块化支付基础设施，具备高性能高可靠性
 
-- **[google/tunix](https://github.com/google/tunix)**（来源：GitHub）  
-> Google开发的JAX原生大语言模型后训练库，支持监督微调、强化学习和知识蒸馏，具备TPU原生加速优势
+- **[kestra-io/kestra](https://github.com/kestra-io/kestra)**（来源：GitHub）  
+> 开源事件驱动编排平台，通过YAML声明式定义工作流，支持数据管道和AI流程的代码化编排与毫秒级扩展
 
-- **[pathwaycom/pathway](https://github.com/pathwaycom/pathway)**（来源：GitHub）  
-> 基于Rust引擎的Python流处理框架，支持实时ETL、数据分析及LLM/RAG管道，提供批流一体处理能力
+- **[Huawei SINQ量化方法突破](https://arxiv.org/pdf/2509.22944)**（来源：arXiv）  
+> 华为提出无需校准数据的后训练量化方案，比AWQ快30倍，在4位量化中改善困惑度，代码已开源
 
-- **[IBM Granite 4.0开源混合架构模型发布](https://www.ibm.com/new/announcements/ibm-granite-4-0-hyper-efficient-high-performance-hybrid-models)**（来源：IBM）  
-> 采用Mamba/Transformer混合架构，在减少内存使用的同时保持准确性，包含32B/9B等规格，Apache 2.0许可
+- **[Ant Group Ling 2.0 FP8训练栈开源](https://twitter.com/ZhihuFrontier/status/1974182694239285260)**（来源：Twitter）  
+> 开源FP8原生混合精度MoE训练栈，报告BF16级别准确率且实现30-60%吞吐量增益，提升训练效率
 
-- **[Rust 中的竞技场内存管理](https://news.ycombinator.com/item?id=45467032)**（来源：Hacker News）  
-> 深入探讨Rust竞技场分配器实现原理，分析其在图形处理、编译器等领域的高效内存管理实践
+- **[DeepSeek稀疏注意力CUDA实现](https://github.com/deepseek-ai/FlashMLA)**（来源：GitHub）  
+> 使用FlashMLA和TileLang实现DeepSeek稀疏注意力，支持部分RoPE和FP8稀疏内核，优化计算效率
 
-- **[取消异步 Rust 操作](https://news.ycombinator.com/item?id=45464632)**（来源：Hacker News）  
+- **[异步 Rust 中的取消操作](https://news.ycombinator.com/item?id=45464632)**（来源：Hacker News）  
 > 解析Rust异步任务取消机制的设计挑战与解决方案，涵盖结构化并发和资源清理最佳实践
 
-- **[Flash-MoE推理优化](https://flash-moe.github.io/)**（来源：技术博客）  
-> Thinking Machines发布Flash-MoE，Flash Attention的稀疏专家变体，显著提升MoE模型推理可扩展性
+- **[PEP 810 – 显式延迟导入](https://news.ycombinator.com/item?id=45466086)**（来源：Hacker News）  
+> Python新提案支持显式延迟导入，解决插件系统启动缓慢问题，提升大型应用初始化性能
 
-- **[Tinker推出灵活微调API支持LoRA共享](https://twitter.com/Smol_AI/status/1973622595124863044)**（来源：Twitter）  
-> 允许编写CPU训练循环并在分布式GPU上运行，支持大型MoE模型，实现高效的LoRA资源共享
+- **[微软/agent-framework](https://github.com/microsoft/agent-framework)**（来源：GitHub）  
+> 微软多语言AI智能体框架，支持Python/.NET双平台，提供基于图的工作流编排和可视化开发工具
 
-- **[开源代码编辑代理接近闭源模型性能](https://twitter.com/cline/status/1973870619013136850)**（来源：Twitter）  
-> GLM-4.6在代码编辑任务中达到94.9%成功率，接近Claude 4.5，成本仅为后者约10%
+- **[emcie-co/parlant](https://github.com/emcie-co/parlant)**（来源：GitHub）  
+> 专为控制设计的LLM智能体框架，通过自然语言定义行为准则确保指令遵循，适用于高合规场景
 
-- **[chiphuyen/aie-book](https://github.com/chiphuyen/aie-book)**（来源：GitHub）  
-> AI工程实践指南开源项目，涵盖提示工程、RAG策略、智能体构建等核心技术，通过真实案例解析生产级AI系统设计
+- **[KernelBench GPU性能评估系统](https://harvard-edge.github.io/cs249r_fall2025/blog/2024/10/01/gpu-performance-engineering/)**（来源：技术博客）  
+> 包含250个精选PyTorch ML工作负载的系统化GPU性能评估框架，引入fast_p加速指标优化推理效率
 
 ---
 
 ### 各渠道精选摘要
-- [AINews](./2025-10-04/ai_news_summary_2025-10-04.md)
-- [GitHub Trending](./2025-10-04/github_trending_2025-10-04.md)
-- [少数派](./2025-10-04/shaoshupai_2025-10-04.md)
-- [36Kr](./2025-10-04/36kr_summary_2025-10-04.md)
-- [美团技术团队](./2025-10-04/meituan_2025-10-04.md)
-- [Go Weekly](./2025-10-04/go_weekly_2025-10-04.md)
-- [Hacker News 首页](./2025-10-04/hacker_news_frontpage_2025-10-04.md)
-- [Hacker News 近期最佳](./2025-10-04/hacker_news_best_2025-10-04.md)
-- [Hacker News 高赞评论](./2025-10-04/hacker_news_top_comments_2025-10-04.md)
-- [Hacker News 问答](./2025-10-04/hacker_news_ask_2025-10-04.md)
-- [Hacker News 展示](./2025-10-04/hacker_news_show_2025-10-04.md)
-- [Hacker News 音频技术](./2025-10-04/hacker_news_audio_tech_2025-10-04.md)
+- [AINews](./2025-10-05/ai_news_summary_2025-10-05.md)
+- [GitHub Trending](./2025-10-05/github_trending_2025-10-05.md)
+- [少数派](./2025-10-05/shaoshupai_2025-10-05.md)
+- [36Kr](./2025-10-05/36kr_summary_2025-10-05.md)
+- [美团技术团队](./2025-10-05/meituan_2025-10-05.md)
+- [Go Weekly](./2025-10-05/go_weekly_2025-10-05.md)
+- [Hacker News 首页](./2025-10-05/hacker_news_frontpage_2025-10-05.md)
+- [Hacker News 近期最佳](./2025-10-05/hacker_news_best_2025-10-05.md)
+- [Hacker News 高赞评论](./2025-10-05/hacker_news_top_comments_2025-10-05.md)
+- [Hacker News 问答](./2025-10-05/hacker_news_ask_2025-10-05.md)
+- [Hacker News 展示](./2025-10-05/hacker_news_show_2025-10-05.md)
+- [Hacker News 音频技术](./2025-10-05/hacker_news_audio_tech_2025-10-05.md)
 
 # 往日新闻
+
+#### [2025-10-04](./2025-10-04/newsletter.md)
 
 #### [2025-10-03](./2025-10-03/newsletter.md)
 
