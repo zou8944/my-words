@@ -1,59 +1,61 @@
 ## 今日要闻
 
-<sub> 生成时间：2025-10-10 08:10:20</sub>
+<sub> 生成时间：2025-10-11 08:10:10</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[AI21发布Apache-2.0许可的Jamba Reasoning 3B模型](https://huggingface.co/ai21labs/AI21-Jamba-Reasoning-3B)**（来源：AINews）  
-> 混合SSM-Transformer模型在长上下文任务中速度比Llama 3.2 3B快3-5倍，iPhone 16 Pro上达16 tok/s，支持64K上下文
+- **[Helion内核优化工具超越Triton性能](https://github.com/fla-org/flash-linear-attention/tree/main/fla/ops)**（来源：GitHub）  
+> 通过输入形状自适应重写内核实现自动调优，在线性注意力等场景中通常优于Triton，为AI推理提供更高性能选择
 
-- **[Python 3.14无GIL解释器结束实验阶段](https://twitter.com/charliermarsh/status/1975913762344608129)**（来源：AINews）  
-> 无全局解释器锁Python正式结束实验阶段，为多核编程带来突破，Pydantic 2.12同日发布支持
+- **[微软发布UserLM-8B用户角色模拟模型](https://www.reddit.com/r/LocalLLaMA/comments/1o23vqf/microsoftuserlm8b_unlike_typical_llms_that_are/)**（来源：AINews）  
+> 基于Llama3-8B在WildChat数据集微调，专门模拟用户对话行为而非助手角色，为对话系统测试提供新工具
 
-- **[人工海马网络压缩长上下文记忆](https://github.com/ByteDance-Seed/AHN)**（来源：AINews）  
-> 字节跳动开源项目将无损记忆转为固定大小压缩表示，混合滑动窗口外无损和压缩记忆，解决长上下文预测难题
-
-- **[browserbase/stagehand](https://github.com/browserbase/stagehand)**（来源：GitHub）  
-> AI驱动浏览器自动化框架，结合Playwright代码控制与自然语言指令，支持OpenAI等CV模型，专为生产级网页自动化设计
-
-- **[trycua/cua](https://github.com/trycua/cua)**（来源：GitHub）  
-> 开源计算机使用智能体基础设施，提供沙箱环境和SDK，支持AI代理跨平台控制完整桌面系统（Windows/Linux/macOS）
-
-- **[100%开源的多主逻辑PostgreSQL复制方案](https://news.ycombinator.com/item?id=45533870)**（来源：Hacker News）  
-> pgedge_postgres展示完全开源的多主复制方案，解决PostgreSQL高可用和扩展性痛点
+- **[OpenAI Agents Python轻量级多智能体框架](https://github.com/openai/openai-agents-python)**（来源：GitHub）  
+> 支持100+模型的多智能体协作框架，内置安全护栏和会话管理，集成Temporal支持长时任务，简化复杂AI应用开发
 
 - **[少量样本即可毒害任意规模的LLM](https://news.ycombinator.com/item?id=45529587)**（来源：Hacker News）  
 > 研究揭示仅需250份恶意文档即可在6亿至130亿参数LLM中植入后门，挑战模型规模越大越安全的假设
 
+- **[FlowiseAI可视化AI智能体构建平台](https://github.com/FlowiseAI/Flowise)**（来源：GitHub）  
+> 拖拽式界面快速搭建AI工作流，支持LangChain等框架，大幅降低AI代理开发门槛，适合企业低代码部署
+
+- **[从Vim切换到Helix的笔记](https://news.ycombinator.com/item?id=45539609)**（来源：Hacker News）  
+> 开发者分享现代编辑器Helix使用体验，突出其内置LSP和树状选择等特性对开发效率的实际提升
+
+- **[Radical Numerics发布30B参数扩散语言模型](https://twitter.com/RadicalNumerics/status/1976332725926936599)**（来源：AINews）  
+> 稀疏MoE架构的扩散语言模型，3B活跃参数提供完整权重和训练细节，推动DLM推理研究
+
 - **[软件质量大崩溃：我们如何将灾难常态化](https://news.ycombinator.com/item?id=45528347)**（来源：Hacker News）  
-> 深度分析现代软件质量危机根源，指出性能退化呈指数级，内存泄漏和错误处理等基础问题被忽视
+> 深度分析现代软件质量危机根源，指出性能退化呈指数级，内存泄漏等基础问题被系统性忽视
 
-- **[Show HN：我用Go语言编写了一个全文搜索引擎](https://news.ycombinator.com/item?id=45530388)**（来源：Hacker News）  
-> 开发者展示纯Go实现的全文搜索引擎，提供轻量级高性能搜索解决方案，适合嵌入式部署
+- **[SemiAnalysis推出InferenceMAX推理基准测试套件](https://twitter.com/dylan522p/status/1976422855928680454)**（来源：AINews）  
+> 每日跨堆栈基准测试覆盖H100/B200/GB200等主流硬件，专注吞吐量、成本和延迟权衡等生产关键指标
 
-- **[英特尔Panther Lake架构解析](https://36kr.com/p/3502170540235905)**（来源：36Kr）  
-> 英特尔新一代处理器采用模块化设计和三级缓存优化，AI算力达50 TOPS，能效提升45%，推动AI PC普及
+- **[Datastar轻量级超媒体Web框架](https://news.ycombinator.com/item?id=45536618)**（来源：Hacker News）  
+> 新兴超媒体框架简化交互式Web应用开发，部分开发者反馈从Htmx迁移后的体验改进
 
 ---
 
 ### 各渠道精选摘要
-- [AINews](./2025-10-10/ai_news_summary_2025-10-10.md)
-- [GitHub Trending](./2025-10-10/github_trending_2025-10-10.md)
-- [少数派](./2025-10-10/shaoshupai_2025-10-10.md)
-- [36Kr](./2025-10-10/36kr_summary_2025-10-10.md)
-- [美团技术团队](./2025-10-10/meituan_2025-10-10.md)
-- [Go Weekly](./2025-10-10/go_weekly_2025-10-10.md)
-- [Hacker News 首页](./2025-10-10/hacker_news_frontpage_2025-10-10.md)
-- [Hacker News 近期最佳](./2025-10-10/hacker_news_best_2025-10-10.md)
-- [Hacker News 高赞评论](./2025-10-10/hacker_news_top_comments_2025-10-10.md)
-- [Hacker News 问答](./2025-10-10/hacker_news_ask_2025-10-10.md)
-- [Hacker News 展示](./2025-10-10/hacker_news_show_2025-10-10.md)
-- [Hacker News 音频技术](./2025-10-10/hacker_news_audio_tech_2025-10-10.md)
+- [AINews](./2025-10-11/ai_news_summary_2025-10-11.md)
+- [GitHub Trending](./2025-10-11/github_trending_2025-10-11.md)
+- [少数派](./2025-10-11/shaoshupai_2025-10-11.md)
+- [36Kr](./2025-10-11/36kr_summary_2025-10-11.md)
+- [美团技术团队](./2025-10-11/meituan_2025-10-11.md)
+- [Go Weekly](./2025-10-11/go_weekly_2025-10-11.md)
+- [Hacker News 首页](./2025-10-11/hacker_news_frontpage_2025-10-11.md)
+- [Hacker News 近期最佳](./2025-10-11/hacker_news_best_2025-10-11.md)
+- [Hacker News 高赞评论](./2025-10-11/hacker_news_top_comments_2025-10-11.md)
+- [Hacker News 问答](./2025-10-11/hacker_news_ask_2025-10-11.md)
+- [Hacker News 展示](./2025-10-11/hacker_news_show_2025-10-11.md)
+- [Hacker News 音频技术](./2025-10-11/hacker_news_audio_tech_2025-10-11.md)
 
 # 往日新闻
+
+#### [2025-10-10](./2025-10-10/newsletter.md)
 
 #### [2025-10-09](./2025-10-09/newsletter.md)
 
