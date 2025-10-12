@@ -1,59 +1,61 @@
 ## 今日要闻
 
-<sub> 生成时间：2025-10-11 08:10:10</sub>
+<sub> 生成时间：2025-10-12 08:10:46</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[Helion内核优化工具超越Triton性能](https://github.com/fla-org/flash-linear-attention/tree/main/fla/ops)**（来源：GitHub）  
-> 通过输入形状自适应重写内核实现自动调优，在线性注意力等场景中通常优于Triton，为AI推理提供更高性能选择
+- **[ATLAS自适应推测解码系统实现4倍加速](https://twitter.com/togethercompute/status/1976655646474031362)**（来源：AINews）  
+> Together AI的实时流量学习系统在DeepSeek-V3.1上达500 TPS，比基线快4倍，性能随使用提升，减少60% RL训练时间
 
-- **[微软发布UserLM-8B用户角色模拟模型](https://www.reddit.com/r/LocalLLaMA/comments/1o23vqf/microsoftuserlm8b_unlike_typical_llms_that_are/)**（来源：AINews）  
-> 基于Llama3-8B在WildChat数据集微调，专门模拟用户对话行为而非助手角色，为对话系统测试提供新工具
+- **[SparseServe为动态稀疏注意力引入KV分层](https://twitter.com/ZhihuFrontier/status/1976544233700929614)**（来源：AINews）  
+> 通过HBM↔DRAM KV分层和动态批处理，在vLLM测试中实现9.26倍更低TTFT和3.14倍更高吞吐量
 
-- **[OpenAI Agents Python轻量级多智能体框架](https://github.com/openai/openai-agents-python)**（来源：GitHub）  
-> 支持100+模型的多智能体协作框架，内置安全护栏和会话管理，集成Temporal支持长时任务，简化复杂AI应用开发
+- **[微软RD-Agent自动化工业研发流程](https://github.com/microsoft/RD-Agent)**（来源：GitHub）  
+> 开源"研究-开发"双智能体框架，在MLE-bench表现最佳，支持量化金融等场景自动完成因子挖掘和模型调优
 
-- **[少量样本即可毒害任意规模的LLM](https://news.ycombinator.com/item?id=45529587)**（来源：Hacker News）  
-> 研究揭示仅需250份恶意文档即可在6亿至130亿参数LLM中植入后门，挑战模型规模越大越安全的假设
+- **[Stagehand AI驱动浏览器自动化框架](https://github.com/browserbase/stagehand)**（来源：GitHub）  
+> 结合Playwright与自然语言指令，支持CV模型一键调用，预审缓存操作步骤，提升网页自动化可靠性
 
-- **[FlowiseAI可视化AI智能体构建平台](https://github.com/FlowiseAI/Flowise)**（来源：GitHub）  
-> 拖拽式界面快速搭建AI工作流，支持LangChain等框架，大幅降低AI代理开发门槛，适合企业低代码部署
+- **[Supermemory高速可扩展记忆引擎](https://github.com/supermemoryai/supermemory)**（来源：GitHub）  
+> 专为AI时代设计的记忆引擎，通过MCP协议连接Claude等工具，实现跨平台碎片化知识管理
 
-- **[从Vim切换到Helix的笔记](https://news.ycombinator.com/item?id=45539609)**（来源：Hacker News）  
-> 开发者分享现代编辑器Helix使用体验，突出其内置LSP和树状选择等特性对开发效率的实际提升
+- **[Meta Superintelligence首篇论文出人意料](https://news.ycombinator.com/item?id=45553577)**（来源：Hacker News）  
+> 社区热议Meta超智能团队首篇研究，可能挑战现有AI训练范式或提出颠覆性架构设计
 
-- **[Radical Numerics发布30B参数扩散语言模型](https://twitter.com/RadicalNumerics/status/1976332725926936599)**（来源：AINews）  
-> 稀疏MoE架构的扩散语言模型，3B活跃参数提供完整权重和训练细节，推动DLM推理研究
+- **[AI编程助手实际应用价值讨论](https://news.ycombinator.com/item?id=45547344)**（来源：Hacker News）  
+> 开发者分享编程智能体作为灵感来源的价值，即使丢弃生成代码也能加速从零到一的过程
 
-- **[软件质量大崩溃：我们如何将灾难常态化](https://news.ycombinator.com/item?id=45528347)**（来源：Hacker News）  
-> 深度分析现代软件质量危机根源，指出性能退化呈指数级，内存泄漏等基础问题被系统性忽视
+- **[BoGO六边形架构Go项目生成器](https://news.ycombinator.com/item?id=45551792)**（来源：Hacker News）  
+> 自动创建标准目录结构，支持PostgreSQL，便于团队统一开发规范和快速启动项目
 
-- **[SemiAnalysis推出InferenceMAX推理基准测试套件](https://twitter.com/dylan522p/status/1976422855928680454)**（来源：AINews）  
-> 每日跨堆栈基准测试覆盖H100/B200/GB200等主流硬件，专注吞吐量、成本和延迟权衡等生产关键指标
+- **[CodeLens.AI实际代码基准测试工具](https://news.ycombinator.com/item?id=45553152)**（来源：Hacker News）  
+> 并行测试6大LLM在实际代码任务表现，通过AI评分和社区投票提供更贴近开发的评估
 
-- **[Datastar轻量级超媒体Web框架](https://news.ycombinator.com/item?id=45536618)**（来源：Hacker News）  
-> 新兴超媒体框架简化交互式Web应用开发，部分开发者反馈从Htmx迁移后的体验改进
+- **[MagicServer简易Node.js HTTPS自动化](https://news.ycombinator.com/item?id=45551616)**（来源：Hacker News）  
+> TypeScript实现的ACME协议工具，自动管理HTTPS证书，无需脚本或反向代理配置
 
 ---
 
 ### 各渠道精选摘要
-- [AINews](./2025-10-11/ai_news_summary_2025-10-11.md)
-- [GitHub Trending](./2025-10-11/github_trending_2025-10-11.md)
-- [少数派](./2025-10-11/shaoshupai_2025-10-11.md)
-- [36Kr](./2025-10-11/36kr_summary_2025-10-11.md)
-- [美团技术团队](./2025-10-11/meituan_2025-10-11.md)
-- [Go Weekly](./2025-10-11/go_weekly_2025-10-11.md)
-- [Hacker News 首页](./2025-10-11/hacker_news_frontpage_2025-10-11.md)
-- [Hacker News 近期最佳](./2025-10-11/hacker_news_best_2025-10-11.md)
-- [Hacker News 高赞评论](./2025-10-11/hacker_news_top_comments_2025-10-11.md)
-- [Hacker News 问答](./2025-10-11/hacker_news_ask_2025-10-11.md)
-- [Hacker News 展示](./2025-10-11/hacker_news_show_2025-10-11.md)
-- [Hacker News 音频技术](./2025-10-11/hacker_news_audio_tech_2025-10-11.md)
+- [AINews](./2025-10-12/ai_news_summary_2025-10-12.md)
+- [GitHub Trending](./2025-10-12/github_trending_2025-10-12.md)
+- [少数派](./2025-10-12/shaoshupai_2025-10-12.md)
+- [36Kr](./2025-10-12/36kr_summary_2025-10-12.md)
+- [美团技术团队](./2025-10-12/meituan_2025-10-12.md)
+- [Go Weekly](./2025-10-12/go_weekly_2025-10-12.md)
+- [Hacker News 首页](./2025-10-12/hacker_news_frontpage_2025-10-12.md)
+- [Hacker News 近期最佳](./2025-10-12/hacker_news_best_2025-10-12.md)
+- [Hacker News 高赞评论](./2025-10-12/hacker_news_top_comments_2025-10-12.md)
+- [Hacker News 问答](./2025-10-12/hacker_news_ask_2025-10-12.md)
+- [Hacker News 展示](./2025-10-12/hacker_news_show_2025-10-12.md)
+- [Hacker News 音频技术](./2025-10-12/hacker_news_audio_tech_2025-10-12.md)
 
 # 往日新闻
+
+#### [2025-10-11](./2025-10-11/newsletter.md)
 
 #### [2025-10-10](./2025-10-10/newsletter.md)
 
