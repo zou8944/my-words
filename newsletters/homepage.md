@@ -1,59 +1,61 @@
 ## 今日要闻
 
-<sub> 生成时间：2025-10-12 08:10:46</sub>
+<sub> 生成时间：2025-10-13 08:10:08</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[ATLAS自适应推测解码系统实现4倍加速](https://twitter.com/togethercompute/status/1976655646474031362)**（来源：AINews）  
-> Together AI的实时流量学习系统在DeepSeek-V3.1上达500 TPS，比基线快4倍，性能随使用提升，减少60% RL训练时间
+- **[Markovian Thinking实现推理长度与上下文大小解耦](https://twitter.com/jiqizhixin/status/1976466786565656986)**（来源：AINews）  
+> Mila和微软提出固定边界训练方法，1.5B模型仅用8K上下文推理24K token，以4倍低计算量击败完整训练模型
 
-- **[SparseServe为动态稀疏注意力引入KV分层](https://twitter.com/ZhihuFrontier/status/1976544233700929614)**（来源：AINews）  
-> 通过HBM↔DRAM KV分层和动态批处理，在vLLM测试中实现9.26倍更低TTFT和3.14倍更高吞吐量
+- **[NVIDIA Blackwell与vLLM深度优化实现显著性能提升](https://twitter.com/mgoin_/status/1976452383258648972)**（来源：AINews）  
+> vLLM通过100+ PRs跨栈优化、FP4/FP8内核和FlashInfer集成，预计通过推测解码实现额外2-3倍吞吐量提升
 
-- **[微软RD-Agent自动化工业研发流程](https://github.com/microsoft/RD-Agent)**（来源：GitHub）  
-> 开源"研究-开发"双智能体框架，在MLE-bench表现最佳，支持量化金融等场景自动完成因子挖掘和模型调优
+- **[Tora统一RL后训练与LoRA/QLoRA/DoRA支持](https://twitter.com/gm8xx8/status/1976443792850092464)**（来源：AINews）  
+> 基于torchtune构建，实现稳定4位RL训练，通过DoRA-Cache将rollout速度提高2-4倍，统一GRPO和FSDP支持
 
-- **[Stagehand AI驱动浏览器自动化框架](https://github.com/browserbase/stagehand)**（来源：GitHub）  
-> 结合Playwright与自然语言指令，支持CV模型一键调用，预审缓存操作步骤，提升网页自动化可靠性
+- **[QwenLM/Qwen3-VL多模态大模型](https://github.com/QwenLM/Qwen3-VL)**（来源：GitHub）  
+> 阿里通义团队推出，支持视觉代理、空间感知和32语种OCR，采用Interleaved-MRoPE提升视频推理精度
 
-- **[Supermemory高速可扩展记忆引擎](https://github.com/supermemoryai/supermemory)**（来源：GitHub）  
-> 专为AI时代设计的记忆引擎，通过MCP协议连接Claude等工具，实现跨平台碎片化知识管理
+- **[dataease/SQLBot智能问数系统](https://github.com/dataease/SQLBot)**（来源：GitHub）  
+> 基于大模型和RAG的自然语言生成SQL工具，支持多平台集成和安全隔离，让非技术人员轻松完成数据查询
 
-- **[Meta Superintelligence首篇论文出人意料](https://news.ycombinator.com/item?id=45553577)**（来源：Hacker News）  
-> 社区热议Meta超智能团队首篇研究，可能挑战现有AI训练范式或提出颠覆性架构设计
+- **[anthropics/claude-code终端编程助手](https://github.com/anthropics/claude-code)**（来源：GitHub）  
+> 终端智能编程助手，通过自然语言理解代码库并执行任务，支持自动化编程和Git工作流处理
 
-- **[AI编程助手实际应用价值讨论](https://news.ycombinator.com/item?id=45547344)**（来源：Hacker News）  
-> 开发者分享编程智能体作为灵感来源的价值，即使丢弃生成代码也能加速从零到一的过程
+- **[使用LLM进行大规模重构经验分享](https://news.ycombinator.com/item?id=45561323)**（来源：Hacker News）  
+> 开发者探讨使用LLM自动化重构大型遗留代码库的实践经验，解决依赖复杂和文件臃肿问题
 
-- **[BoGO六边形架构Go项目生成器](https://news.ycombinator.com/item?id=45551792)**（来源：Hacker News）  
-> 自动创建标准目录结构，支持PostgreSQL，便于团队统一开发规范和快速启动项目
+- **[Xlsx-handlebars：Rust Excel模板引擎](https://news.ycombinator.com/item?id=45556064)**（来源：Hacker News）  
+> 性能比openpyxl快14-28倍，支持WASM跨平台和完整Handlebars语法，专为大数据量报表生成优化
 
-- **[CodeLens.AI实际代码基准测试工具](https://news.ycombinator.com/item?id=45553152)**（来源：Hacker News）  
-> 并行测试6大LLM在实际代码任务表现，通过AI评分和社区投票提供更贴近开发的评估
+- **[Docx-Handlebars：Rust DOCX模板处理](https://news.ycombinator.com/item?id=45556057)**（来源：Hacker News）  
+> 智能处理Word模板，支持Handlebars语法并自动合并XML标签，可编译为WASM跨平台运行
 
-- **[MagicServer简易Node.js HTTPS自动化](https://news.ycombinator.com/item?id=45551616)**（来源：Hacker News）  
-> TypeScript实现的ACME协议工具，自动管理HTTPS证书，无需脚本或反向代理配置
+- **[Kronicler性能监控库](https://news.ycombinator.com/item?id=45560326)**（来源：Hacker News）  
+> Python性能监控工具，通过装饰器记录函数指标到自研Rust列式数据库，提供在线仪表盘可视化
 
 ---
 
 ### 各渠道精选摘要
-- [AINews](./2025-10-12/ai_news_summary_2025-10-12.md)
-- [GitHub Trending](./2025-10-12/github_trending_2025-10-12.md)
-- [少数派](./2025-10-12/shaoshupai_2025-10-12.md)
-- [36Kr](./2025-10-12/36kr_summary_2025-10-12.md)
-- [美团技术团队](./2025-10-12/meituan_2025-10-12.md)
-- [Go Weekly](./2025-10-12/go_weekly_2025-10-12.md)
-- [Hacker News 首页](./2025-10-12/hacker_news_frontpage_2025-10-12.md)
-- [Hacker News 近期最佳](./2025-10-12/hacker_news_best_2025-10-12.md)
-- [Hacker News 高赞评论](./2025-10-12/hacker_news_top_comments_2025-10-12.md)
-- [Hacker News 问答](./2025-10-12/hacker_news_ask_2025-10-12.md)
-- [Hacker News 展示](./2025-10-12/hacker_news_show_2025-10-12.md)
-- [Hacker News 音频技术](./2025-10-12/hacker_news_audio_tech_2025-10-12.md)
+- [AINews](./2025-10-13/ai_news_summary_2025-10-13.md)
+- [GitHub Trending](./2025-10-13/github_trending_2025-10-13.md)
+- [少数派](./2025-10-13/shaoshupai_2025-10-13.md)
+- [36Kr](./2025-10-13/36kr_summary_2025-10-13.md)
+- [美团技术团队](./2025-10-13/meituan_2025-10-13.md)
+- [Go Weekly](./2025-10-13/go_weekly_2025-10-13.md)
+- [Hacker News 首页](./2025-10-13/hacker_news_frontpage_2025-10-13.md)
+- [Hacker News 近期最佳](./2025-10-13/hacker_news_best_2025-10-13.md)
+- [Hacker News 高赞评论](./2025-10-13/hacker_news_top_comments_2025-10-13.md)
+- [Hacker News 问答](./2025-10-13/hacker_news_ask_2025-10-13.md)
+- [Hacker News 展示](./2025-10-13/hacker_news_show_2025-10-13.md)
+- [Hacker News 音频技术](./2025-10-13/hacker_news_audio_tech_2025-10-13.md)
 
 # 往日新闻
+
+#### [2025-10-12](./2025-10-12/newsletter.md)
 
 #### [2025-10-11](./2025-10-11/newsletter.md)
 
