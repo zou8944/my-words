@@ -1,59 +1,61 @@
 ## 今日要闻
 
-<sub> 生成时间：2025-10-16 08:10:17</sub>
+<sub> 生成时间：2025-10-17 08:10:29</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[阿里巴巴发布Qwen3-VL 4B/8B密集模型](https://twitter.com/Alibaba_Qwen/status/1978150959621734624)**（来源：AINews）  
-  > 紧凑视觉语言模型，支持FP8高效部署，在STEM/VQA任务中超越Gemini 2.5 Flash Lite，适合边缘AI部署
+- **[Claude Haiku 4.5发布：速度翻倍，成本降低三分之二](https://www.anthropic.com/news/claude-haiku-4-5)**（来源：AINews）  
+  > 性能接近Sonnet 4.5，速度快2倍以上，成本降低3倍，在SWE-bench上取得73%+成绩
 
-- **[Nanochat端到端训练栈](https://twitter.com/Yuchenj_UW/status/1978144157970661495)**（来源：AINews）  
-  > 极简全流程训练栈，560M模型在8×H100上4小时完成训练，提供Colabs模板加速模型开发
+- **[Google和Yale发布27B癌症研究模型，生成已验证的癌症假说](https://twitter.com/sundarpichai/status/1978507110477332582)**（来源：AINews）  
+  > 基于Gemma的27B模型生成癌细胞行为假说已在活细胞中验证，开源模型权重和资源
 
-- **[Together AI推出ATLAS推测解码技术](https://twitter.com/togethercompute/status/1978210662095475097)**（来源：AINews）  
-  > 推理速度提升4倍，DeepSeek-V3.1达500 TPS，显著优化大模型推理效率
+- **[MIT DSPy实验室宣布递归语言模型，处理无限上下文](https://twitter.com/a1zhang/status/1978469116542337259)**（来源：AINews）  
+  > 递归语言模型可处理无限上下文，在1000万+token上获得114%性能提升，即将推出DSPy模块
 
-- **[alibaba/spring-ai-alibaba](https://github.com/alibaba/spring-ai-alibaba)**（来源：GitHub Trending）  
-  > Java多智能体编排框架，集成阿里云百炼平台，支持可视化调试和分布式MCP发现
+- **[jingyaogong/minimind](https://github.com/jingyaogong/minimind)**（来源：GitHub Trending）  
+  > 从零训练26M参数GPT模型仅需2小时和3元成本，开源全流程代码，支持MoE架构
 
-- **[KellerJordan/modded-nanogpt](https://github.com/KellerJordan/modded-nanogpt)**（来源：GitHub Trending）  
-  > 优化GPT-2训练架构，8×H100仅需3分钟完成训练，效率提升15倍
+- **[anthropics/prompt-eng-interactive-tutorial](https://github.com/anthropics/prompt-eng-interactive-tutorial)**（来源：GitHub Trending）  
+  > Anthropic官方交互式提示工程教程，9章课程系统教授Claude模型提示词编写技巧
 
-- **[从零开始编写LLM，第22部分——训练我们的LLM](https://news.ycombinator.com/item?id=45599727)**（来源：Hacker News）  
-  > 实战教程系列最新篇，深入讲解语言模型训练全流程，适合工程实践参考
+- **[SWE-Grep与SWE-Grep-Mini：基于强化学习的快速多轮上下文检索系统](https://news.ycombinator.com/item?id=45607822)**（来源：Hacker News）  
+  > 强化学习驱动的多轮上下文检索系统，优化代码搜索和问答场景的上下文管理效率
 
-- **[内核栈释放后使用漏洞：利用英伟达GPU Linux驱动程序](https://news.ycombinator.com/item?id=45592585)**（来源：Hacker News）  
-  > 披露NVIDIA GPU驱动安全漏洞，涉及内核栈UAF，对AI计算安全有重要影响
+- **[从零开始构建向量数据库Comet](https://news.ycombinator.com/item?id=45608750)**（来源：Hacker News Show）  
+  > Go编写的轻量级混合向量数据库，支持BM25、HNSW等多种索引，适合学习内部原理
 
-- **[告别无服务器架构带来性能提升与架构简化](https://news.ycombinator.com/item?id=45590756)**（来源：Hacker News）  
-  > 实战经验：从Serverless迁移到传统架构，延迟降低80%，架构复杂度显著下降
+- **[Meta发布无奖励训练方法，提升AI代理泛化能力](https://arxiv.org/abs/2510.08558)**（来源：AINews）  
+  > 通过隐式世界建模和自我反思训练AI代理，无需奖励或演示，在8个环境中显著提升能力
 
-- **[本地RAG评估工具链](https://news.ycombinator.com/item?id=45595999)**（来源：Hacker News Show）  
-  > 提供可复现RAG基准测试，支持多指标评估和Docker部署，加速检索系统开发
+- **[retrieve-dspy模块化集合发布，比较复合检索策略](https://twitter.com/CShorten30/status/1978567334424932523)**（来源：AINews）  
+  > 模块化DSPy集合，用于比较HyDE、ThinkQE、重排序等复合检索策略，提升RAG效果
 
-- **[Specific - 用规范而非代码构建后端系统](https://news.ycombinator.com/item?id=45595760)**（来源：Hacker News Show）  
-  > YC F25项目，通过自然语言描述自动生成含认证、数据库的后端API，无需编码
+- **[Pydantic AI 1.1.0集成Prefect进行代理编排](https://twitter.com/AAAzzam/status/1978611295243981273)**（来源：AINews）  
+  > 集成Prefect工作流管理器，提供更强大的代理编排能力，支持复杂多步骤AI代理任务
 
 ---
 
 ### 各渠道精选摘要
-- [AINews](./2025-10-16/ai_news_summary_2025-10-16.md)
-- [GitHub Trending](./2025-10-16/github_trending_2025-10-16.md)
-- [少数派](./2025-10-16/shaoshupai_2025-10-16.md)
-- [36Kr](./2025-10-16/36kr_summary_2025-10-16.md)
-- [美团技术团队](./2025-10-16/meituan_2025-10-16.md)
-- [Go Weekly](./2025-10-16/go_weekly_2025-10-16.md)
-- [Hacker News 首页](./2025-10-16/hacker_news_frontpage_2025-10-16.md)
-- [Hacker News 近期最佳](./2025-10-16/hacker_news_best_2025-10-16.md)
-- [Hacker News 高赞评论](./2025-10-16/hacker_news_top_comments_2025-10-16.md)
-- [Hacker News 问答](./2025-10-16/hacker_news_ask_2025-10-16.md)
-- [Hacker News 展示](./2025-10-16/hacker_news_show_2025-10-16.md)
-- [Hacker News 音频技术](./2025-10-16/hacker_news_audio_tech_2025-10-16.md)
+- [AINews](./2025-10-17/ai_news_summary_2025-10-17.md)
+- [GitHub Trending](./2025-10-17/github_trending_2025-10-17.md)
+- [少数派](./2025-10-17/shaoshupai_2025-10-17.md)
+- [36Kr](./2025-10-17/36kr_summary_2025-10-17.md)
+- [美团技术团队](./2025-10-17/meituan_2025-10-17.md)
+- [Go Weekly](./2025-10-17/go_weekly_2025-10-17.md)
+- [Hacker News 首页](./2025-10-17/hacker_news_frontpage_2025-10-17.md)
+- [Hacker News 近期最佳](./2025-10-17/hacker_news_best_2025-10-17.md)
+- [Hacker News 高赞评论](./2025-10-17/hacker_news_top_comments_2025-10-17.md)
+- [Hacker News 问答](./2025-10-17/hacker_news_ask_2025-10-17.md)
+- [Hacker News 展示](./2025-10-17/hacker_news_show_2025-10-17.md)
+- [Hacker News 音频技术](./2025-10-17/hacker_news_audio_tech_2025-10-17.md)
 
 # 往日新闻
+
+#### [2025-10-16](./2025-10-16/newsletter.md)
 
 #### [2025-10-14](./2025-10-14/newsletter.md)
 
