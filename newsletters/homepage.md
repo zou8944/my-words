@@ -1,59 +1,61 @@
 ## 今日要闻
 
-<sub> 生成时间：2025-10-17 08:10:29</sub>
+<sub> 生成时间：2025-10-18 08:09:42</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[Claude Haiku 4.5发布：速度翻倍，成本降低三分之二](https://www.anthropic.com/news/claude-haiku-4-5)**（来源：AINews）  
-  > 性能接近Sonnet 4.5，速度快2倍以上，成本降低3倍，在SWE-bench上取得73%+成绩
+- **[Anthropic发布Agent Skills技术](https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills)**（来源：AINews）  
+  > 通过Markdown文件和文件夹构建专用代理的新方法，已实现Claude的PDF/Docs/PPT文档处理功能
 
-- **[Google和Yale发布27B癌症研究模型，生成已验证的癌症假说](https://twitter.com/sundarpichai/status/1978507110477332582)**（来源：AINews）  
-  > 基于Gemma的27B模型生成癌细胞行为假说已在活细胞中验证，开源模型权重和资源
+- **[vLLM推出TPU后端](https://twitter.com/vllm_project/status/1978855648176853100)**（来源：AINews）  
+  > 与谷歌合作重新设计TPU后端，吞吐量提升2-5倍，支持Trillium和v5e芯片
 
-- **[MIT DSPy实验室宣布递归语言模型，处理无限上下文](https://twitter.com/a1zhang/status/1978469116542337259)**（来源：AINews）  
-  > 递归语言模型可处理无限上下文，在1000万+token上获得114%性能提升，即将推出DSPy模块
+- **[递归语言模型突破长上下文限制](https://twitter.com/a1zhang/status/1978948676287340753)**（来源：AINews）  
+  > 通过自调用和工具使用处理无限上下文，在1000万+token任务上超越标准GPT-5
 
-- **[jingyaogong/minimind](https://github.com/jingyaogong/minimind)**（来源：GitHub Trending）  
-  > 从零训练26M参数GPT模型仅需2小时和3元成本，开源全流程代码，支持MoE架构
+- **[testcontainers/testcontainers-java](https://github.com/testcontainers/testcontainers-java)**（来源：GitHub Trending）  
+  > Java测试库通过Docker容器提供轻量级临时实例，自动化管理数据库等依赖服务
 
-- **[anthropics/prompt-eng-interactive-tutorial](https://github.com/anthropics/prompt-eng-interactive-tutorial)**（来源：GitHub Trending）  
-  > Anthropic官方交互式提示工程教程，9章课程系统教授Claude模型提示词编写技巧
+- **[reflex-dev/reflex](https://github.com/reflex-dev/reflex)**（来源：GitHub Trending）  
+  > 纯Python构建全栈Web应用的开源框架，60+内置组件支持快速部署AI应用界面
 
-- **[SWE-Grep与SWE-Grep-Mini：基于强化学习的快速多轮上下文检索系统](https://news.ycombinator.com/item?id=45607822)**（来源：Hacker News）  
-  > 强化学习驱动的多轮上下文检索系统，优化代码搜索和问答场景的上下文管理效率
+- **[Claude Skills功能强大，或许比MCP更重要](https://news.ycombinator.com/item?id=45619537)**（来源：Hacker News）  
+  > 技术社区深度讨论Agent Skills架构价值，认为其通过文件系统管理技能比MCP更实用
 
-- **[从零开始构建向量数据库Comet](https://news.ycombinator.com/item?id=45608750)**（来源：Hacker News Show）  
-  > Go编写的轻量级混合向量数据库，支持BM25、HNSW等多种索引，适合学习内部原理
+- **[从AWS迁移至Hetzner](https://news.ycombinator.com/item?id=45614922)**（来源：Hacker News）  
+  > 实战经验分享裸金属服务器相比云服务的性能优势和成本效益，延迟降低一个数量级
 
-- **[Meta发布无奖励训练方法，提升AI代理泛化能力](https://arxiv.org/abs/2510.08558)**（来源：AINews）  
-  > 通过隐式世界建模和自我反思训练AI代理，无需奖励或演示，在8个环境中显著提升能力
+- **[boGO - 直接从SQL文件生成Go后端服务](https://news.ycombinator.com/item?id=45621499)**（来源：Hacker News Show）  
+  > 开源工具从SQL架构生成完整Go后端，包含模型、API和项目结构，加速开发流程
 
-- **[retrieve-dspy模块化集合发布，比较复合检索策略](https://twitter.com/CShorten30/status/1978567334424932523)**（来源：AINews）  
-  > 模块化DSPy集合，用于比较HyDE、ThinkQE、重排序等复合检索策略，提升RAG效果
+- **[Lightning-SimulWhisper：苹果芯片实时语音识别系统](https://news.ycombinator.com/item?id=45620534)**（来源：Hacker News Show）  
+  > SimulStreaming语音转录模型的CoreML/MLX移植版，在M2 Mac上比PyTorch快15倍
 
-- **[Pydantic AI 1.1.0集成Prefect进行代理编排](https://twitter.com/AAAzzam/status/1978611295243981273)**（来源：AINews）  
-  > 集成Prefect工作流管理器，提供更强大的代理编排能力，支持复杂多步骤AI代理任务
+- **[北京人形开源WoW具身世界模型](https://36kr.com/newsflashes/3513272659483779)**（来源：36Kr）  
+  > 北京人形机器人创新中心开源世界模型架构，帮助机器人通过视觉理解环境并自主学习技能
 
 ---
 
 ### 各渠道精选摘要
-- [AINews](./2025-10-17/ai_news_summary_2025-10-17.md)
-- [GitHub Trending](./2025-10-17/github_trending_2025-10-17.md)
-- [少数派](./2025-10-17/shaoshupai_2025-10-17.md)
-- [36Kr](./2025-10-17/36kr_summary_2025-10-17.md)
-- [美团技术团队](./2025-10-17/meituan_2025-10-17.md)
-- [Go Weekly](./2025-10-17/go_weekly_2025-10-17.md)
-- [Hacker News 首页](./2025-10-17/hacker_news_frontpage_2025-10-17.md)
-- [Hacker News 近期最佳](./2025-10-17/hacker_news_best_2025-10-17.md)
-- [Hacker News 高赞评论](./2025-10-17/hacker_news_top_comments_2025-10-17.md)
-- [Hacker News 问答](./2025-10-17/hacker_news_ask_2025-10-17.md)
-- [Hacker News 展示](./2025-10-17/hacker_news_show_2025-10-17.md)
-- [Hacker News 音频技术](./2025-10-17/hacker_news_audio_tech_2025-10-17.md)
+- [AINews](./2025-10-18/ai_news_summary_2025-10-18.md)
+- [GitHub Trending](./2025-10-18/github_trending_2025-10-18.md)
+- [少数派](./2025-10-18/shaoshupai_2025-10-18.md)
+- [36Kr](./2025-10-18/36kr_summary_2025-10-18.md)
+- [美团技术团队](./2025-10-18/meituan_2025-10-18.md)
+- [Go Weekly](./2025-10-18/go_weekly_2025-10-18.md)
+- [Hacker News 首页](./2025-10-18/hacker_news_frontpage_2025-10-18.md)
+- [Hacker News 近期最佳](./2025-10-18/hacker_news_best_2025-10-18.md)
+- [Hacker News 高赞评论](./2025-10-18/hacker_news_top_comments_2025-10-18.md)
+- [Hacker News 问答](./2025-10-18/hacker_news_ask_2025-10-18.md)
+- [Hacker News 展示](./2025-10-18/hacker_news_show_2025-10-18.md)
+- [Hacker News 音频技术](./2025-10-18/hacker_news_audio_tech_2025-10-18.md)
 
 # 往日新闻
+
+#### [2025-10-17](./2025-10-17/newsletter.md)
 
 #### [2025-10-16](./2025-10-16/newsletter.md)
 
