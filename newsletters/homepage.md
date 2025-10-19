@@ -1,59 +1,61 @@
 ## 今日要闻
 
-<sub> 生成时间：2025-10-18 08:09:42</sub>
+<sub> 生成时间：2025-10-19 08:09:54</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[Anthropic发布Agent Skills技术](https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills)**（来源：AINews）  
-  > 通过Markdown文件和文件夹构建专用代理的新方法，已实现Claude的PDF/Docs/PPT文档处理功能
+- **[Meta发布强化学习扩展定律研究](https://twitter.com/iScienceLuvr/status/1978793969384624226)**（来源：AINews）  
+  > 40万GPU小时系统研究提出ScaleRL等技术，发现目标计算性能可从半计算运行中预测
 
-- **[vLLM推出TPU后端](https://twitter.com/vllm_project/status/1978855648176853100)**（来源：AINews）  
-  > 与谷歌合作重新设计TPU后端，吞吐量提升2-5倍，支持Trillium和v5e芯片
+- **[PyTorch 2.9对称内存功能](https://pytorch.org/blog/pytorch-2-9/)**（来源：AINews）  
+  > 简化多GPU内核编程，支持内核内通信、超低延迟远程访问和自定义通信模式
 
-- **[递归语言模型突破长上下文限制](https://twitter.com/a1zhang/status/1978948676287340753)**（来源：AINews）  
-  > 通过自调用和工具使用处理无限上下文，在1000万+token任务上超越标准GPT-5
+- **[karpathy/nanoGPT](https://github.com/karpathy/nanoGPT)**（来源：GitHub Trending）  
+  > 600行代码实现GPT-2复现，单GPU快速训练，4天完成124M参数模型训练
 
-- **[testcontainers/testcontainers-java](https://github.com/testcontainers/testcontainers-java)**（来源：GitHub Trending）  
-  > Java测试库通过Docker容器提供轻量级临时实例，自动化管理数据库等依赖服务
+- **[jingyaogong/minimind](https://github.com/jingyaogong/minimind)**（来源：GitHub Trending）  
+  > 2小时3元成本训练26M参数GPT模型，覆盖预训练/SFT/DPO全流程，支持MoE架构
 
-- **[reflex-dev/reflex](https://github.com/reflex-dev/reflex)**（来源：GitHub Trending）  
-  > 纯Python构建全栈Web应用的开源框架，60+内置组件支持快速部署AI应用界面
+- **[Ripgrep 15.0 发布](https://news.ycombinator.com/item?id=45627324)**（来源：Hacker News）  
+  > 高性能搜索工具重大更新，优化递归搜索和文件过滤，提升开发效率
 
-- **[Claude Skills功能强大，或许比MCP更重要](https://news.ycombinator.com/item?id=45619537)**（来源：Hacker News）  
-  > 技术社区深度讨论Agent Skills架构价值，认为其通过文件系统管理技能比MCP更实用
+- **[Postgres 是读密集型还是写密集型？](https://news.ycombinator.com/item?id=45619108)**（来源：Hacker News）  
+  > 深度技术讨论数据库工作负载特性，分享实际场景下的性能优化经验
 
-- **[从AWS迁移至Hetzner](https://news.ycombinator.com/item?id=45614922)**（来源：Hacker News）  
-  > 实战经验分享裸金属服务器相比云服务的性能优势和成本效益，延迟降低一个数量级
+- **[SQL反模式](https://news.ycombinator.com/item?id=45626985)**（来源：Hacker News）  
+  > 解析常见SQL设计陷阱，提供高性能查询的实践解决方案
 
-- **[boGO - 直接从SQL文件生成Go后端服务](https://news.ycombinator.com/item?id=45621499)**（来源：Hacker News Show）  
-  > 开源工具从SQL架构生成完整Go后端，包含模型、API和项目结构，加速开发流程
+- **[使用CUE统一物联网传感器数据](https://news.ycombinator.com/item?id=45627048)**（来源：Hacker News）  
+  > 实战经验分享CUE语言在IoT数据标准化中的应用，解决多源数据集成难题
 
-- **[Lightning-SimulWhisper：苹果芯片实时语音识别系统](https://news.ycombinator.com/item?id=45620534)**（来源：Hacker News Show）  
-  > SimulStreaming语音转录模型的CoreML/MLX移植版，在M2 Mac上比PyTorch快15倍
+- **[Flowistry：专注于相关代码的 Rust IDE 插件](https://news.ycombinator.com/item?id=45627692)**（来源：Hacker News）  
+  > 智能代码分析工具自动识别依赖关系，提升大型Rust项目维护效率
 
-- **[北京人形开源WoW具身世界模型](https://36kr.com/newsflashes/3513272659483779)**（来源：36Kr）  
-  > 北京人形机器人创新中心开源世界模型架构，帮助机器人通过视觉理解环境并自主学习技能
+- **[GPU上三次贝塞尔曲线距离的快速计算](https://news.ycombinator.com/item?id=45626037)**（来源：Hacker News）  
+  > 图形学算法优化，实现GPU高效计算曲线距离，适用于实时渲染场景
 
 ---
 
 ### 各渠道精选摘要
-- [AINews](./2025-10-18/ai_news_summary_2025-10-18.md)
-- [GitHub Trending](./2025-10-18/github_trending_2025-10-18.md)
-- [少数派](./2025-10-18/shaoshupai_2025-10-18.md)
-- [36Kr](./2025-10-18/36kr_summary_2025-10-18.md)
-- [美团技术团队](./2025-10-18/meituan_2025-10-18.md)
-- [Go Weekly](./2025-10-18/go_weekly_2025-10-18.md)
-- [Hacker News 首页](./2025-10-18/hacker_news_frontpage_2025-10-18.md)
-- [Hacker News 近期最佳](./2025-10-18/hacker_news_best_2025-10-18.md)
-- [Hacker News 高赞评论](./2025-10-18/hacker_news_top_comments_2025-10-18.md)
-- [Hacker News 问答](./2025-10-18/hacker_news_ask_2025-10-18.md)
-- [Hacker News 展示](./2025-10-18/hacker_news_show_2025-10-18.md)
-- [Hacker News 音频技术](./2025-10-18/hacker_news_audio_tech_2025-10-18.md)
+- [AINews](./2025-10-19/ai_news_summary_2025-10-19.md)
+- [GitHub Trending](./2025-10-19/github_trending_2025-10-19.md)
+- [少数派](./2025-10-19/shaoshupai_2025-10-19.md)
+- [36Kr](./2025-10-19/36kr_summary_2025-10-19.md)
+- [美团技术团队](./2025-10-19/meituan_2025-10-19.md)
+- [Go Weekly](./2025-10-19/go_weekly_2025-10-19.md)
+- [Hacker News 首页](./2025-10-19/hacker_news_frontpage_2025-10-19.md)
+- [Hacker News 近期最佳](./2025-10-19/hacker_news_best_2025-10-19.md)
+- [Hacker News 高赞评论](./2025-10-19/hacker_news_top_comments_2025-10-19.md)
+- [Hacker News 问答](./2025-10-19/hacker_news_ask_2025-10-19.md)
+- [Hacker News 展示](./2025-10-19/hacker_news_show_2025-10-19.md)
+- [Hacker News 音频技术](./2025-10-19/hacker_news_audio_tech_2025-10-19.md)
 
 # 往日新闻
+
+#### [2025-10-18](./2025-10-18/newsletter.md)
 
 #### [2025-10-17](./2025-10-17/newsletter.md)
 
