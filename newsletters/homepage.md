@@ -1,59 +1,61 @@
 ## 今日要闻
 
-<sub> 生成时间：2025-10-21 08:10:07</sub>
+<sub> 生成时间：2025-10-22 08:10:10</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[Claude 4.5 Haiku发布](https://twitter.com/ArtificialAnlys/status/1978661658290790612)**（来源：AINews）  
-  > 推理模式得分55，比Sonnet 4.5便宜3倍，长上下文和编码表现强劲，每百万token仅1/5美元
+- **[DeepSeek发布革命性OCR模型，实现视觉压缩技术](https://github.com/deepseek-ai/DeepSeek-OCR)**（来源：GitHub Trending）  
+  > 3B参数OCR模型采用光学上下文压缩技术，10-20倍压缩保持97%精度，单A100日处理20万页
 
-- **[OpenAI产品更新](https://twitter.com/OpenAI/status/1978608684088643709)**（来源：AINews）  
-  > ChatGPT自动管理记忆，Sora 2为Pro用户新增故事板功能，视频长度延长至15-25秒
+- **[Krea开源实时视频生成模型](https://twitter.com/krea_ai/status/1980358158376988747)**（来源：AINews）  
+  > 14B参数Apache-2.0自回归视频模型，单B200实现11FPS长格式生成，权重已发布
 
-- **[Meta发布强化学习扩展定律研究](https://twitter.com/iScienceLuvr/status/1978793969384624226)**（来源：AINews）  
-  > 40万GPU小时系统研究提出ScaleRL等技术，关键发现目标计算性能可从半计算运行中预测
+- **[TileLang AI DSL达到H100上FlashMLA约95%性能](https://twitter.com/ZhihuFrontier/status/1980170674112188440)**（来源：AINews）  
+  > 新AI DSL通过布局推断和warp专业化，80行Python代码实现H100高性能计算优化
 
-- **[Skyvern-AI/skyvern](https://github.com/Skyvern-AI/skyvern)**（来源：GitHub Trending）  
-  > 利用LLM和CV自动化浏览器操作，通过视觉理解而非DOM解析适应网站变化，提升RPA稳定性
+- **[huggingface/lerobot](https://github.com/huggingface/lerobot)**（来源：GitHub Trending）  
+  > 机器人AI开源库提供端到端学习模型和数据集，支持模仿与强化学习，降低机器人开发门槛
 
-- **[jingyaogong/minimind](https://github.com/jingyaogong/minimind)**（来源：GitHub Trending）  
-  > 从零训练26M参数GPT模型仅需2小时3元成本，覆盖预训练到DPO全流程，专为LLM学习设计
+- **[我们用纯Postgres重写了OpenFGA](https://news.ycombinator.com/item?id=45661547)**（来源：Hacker News）  
+  > 权限系统从NoSQL迁移至纯Postgres实现，展示关系数据库在复杂权限场景的工程实践
 
-- **[anthropics/claude-cookbooks](https://github.com/anthropics/claude-cookbooks)**（来源：GitHub Trending）  
-  > Claude官方代码示例库，提供文本分类、RAG增强、多模态等核心场景的Python实现
+- **[用每月55美元的服务器替代每月3000美元的Heroku账单](https://news.ycombinator.com/item?id=45661253)**（来源：Hacker News）  
+  > Idealist.org云成本优化案例：从Heroku迁移自有服务器，费用降低98%的实战经验
 
-- **[生产级RAG实践：从处理500万份文档中获得的经验](https://news.ycombinator.com/item?id=45645349)**（来源：Hacker News）  
-  > 分享大规模RAG系统实战经验，涵盖文档处理、检索优化和性能调优等关键环节
+- **[GoSMig – 用 Go 编写的极简类型安全 SQL 迁移工具](https://news.ycombinator.com/item?id=45662021)**（来源：Hacker News）  
+  > Go语言SQL迁移库支持事务回滚，提供类型安全和CLI工具，兼容多种数据库
 
-- **[BERT仅需单步文本扩散](https://news.ycombinator.com/item?id=45644328)**（来源：Hacker News）  
-  > 递归语言模型在无界上下文上超越标准GPT-5，1000万+token时仍保持成本效益
+- **[SpacetimeDB：数据库与服务器合一的实时数据处理平台](https://github.com/clockworklabs/SpacetimeDB)**（来源：GitHub Trending）  
+  > Rust编写的一体化实时数据处理平台，客户端直连数据库，专为低延迟场景优化
 
-- **[TernFS：支持EB级规模的多区域分布式文件系统](https://news.ycombinator.com/item?id=45646691)**（来源：Hacker News）  
-  > 新型分布式文件系统设计，支持EB级数据规模和多区域部署，解决大规模存储挑战
+- **[GPTQ int4后训练量化内置到Keras 3](https://twitter.com/fchollet/status/1980343806265552918)**（来源：AINews）  
+  > 模型量化简化部署，内置供应商无关指南，提升推理效率
 
-- **[Show HN：用于嵌入式系统的106字节JSON字段提取器](https://news.ycombinator.com/item?id=45648471)**（来源：Hacker News）  
-  > 轻量级JSON解析器仅106字节，无需动态内存分配，比JSMN小8倍，适合资源受限环境
+- **[TorchAO改进量化配置支持](https://github.com/pytorch/ao/pull/3083)**（来源：GitHub Trending）  
+  > 弃用filter_fn转向quantize_op，支持正则表达式配置，简化大型代码库选择性量化策略
 
 ---
 
 ### 各渠道精选摘要
-- [AINews](./2025-10-21/ai_news_summary_2025-10-21.md)
-- [GitHub Trending](./2025-10-21/github_trending_2025-10-21.md)
-- [少数派](./2025-10-21/shaoshupai_2025-10-21.md)
-- [36Kr](./2025-10-21/36kr_summary_2025-10-21.md)
-- [美团技术团队](./2025-10-21/meituan_2025-10-21.md)
-- [Go Weekly](./2025-10-21/go_weekly_2025-10-21.md)
-- [Hacker News 首页](./2025-10-21/hacker_news_frontpage_2025-10-21.md)
-- [Hacker News 近期最佳](./2025-10-21/hacker_news_best_2025-10-21.md)
-- [Hacker News 高赞评论](./2025-10-21/hacker_news_top_comments_2025-10-21.md)
-- [Hacker News 问答](./2025-10-21/hacker_news_ask_2025-10-21.md)
-- [Hacker News 展示](./2025-10-21/hacker_news_show_2025-10-21.md)
-- [Hacker News 音频技术](./2025-10-21/hacker_news_audio_tech_2025-10-21.md)
+- [AINews](./2025-10-22/ai_news_summary_2025-10-22.md)
+- [GitHub Trending](./2025-10-22/github_trending_2025-10-22.md)
+- [少数派](./2025-10-22/shaoshupai_2025-10-22.md)
+- [36Kr](./2025-10-22/36kr_summary_2025-10-22.md)
+- [美团技术团队](./2025-10-22/meituan_2025-10-22.md)
+- [Go Weekly](./2025-10-22/go_weekly_2025-10-22.md)
+- [Hacker News 首页](./2025-10-22/hacker_news_frontpage_2025-10-22.md)
+- [Hacker News 近期最佳](./2025-10-22/hacker_news_best_2025-10-22.md)
+- [Hacker News 高赞评论](./2025-10-22/hacker_news_top_comments_2025-10-22.md)
+- [Hacker News 问答](./2025-10-22/hacker_news_ask_2025-10-22.md)
+- [Hacker News 展示](./2025-10-22/hacker_news_show_2025-10-22.md)
+- [Hacker News 音频技术](./2025-10-22/hacker_news_audio_tech_2025-10-22.md)
 
 # 往日新闻
+
+#### [2025-10-21](./2025-10-21/newsletter.md)
 
 #### [2025-10-20](./2025-10-20/newsletter.md)
 
