@@ -1,59 +1,61 @@
 ## 今日要闻
 
-<sub> 生成时间：2025-10-22 08:10:10</sub>
+<sub> 生成时间：2025-10-23 08:09:48</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[DeepSeek发布革命性OCR模型，实现视觉压缩技术](https://github.com/deepseek-ai/DeepSeek-OCR)**（来源：GitHub Trending）  
-  > 3B参数OCR模型采用光学上下文压缩技术，10-20倍压缩保持97%精度，单A100日处理20万页
+- **[Meta发布PyTorch新训练库](https://twitter.com/eliebakouch/status/1980637130687942805)**（来源：AINews）  
+  > 推出torchforge、OpenEnv等新库，围绕Monarch和TorchTitan构建"训练未来"路线图，强化RL训练生态
 
-- **[Krea开源实时视频生成模型](https://twitter.com/krea_ai/status/1980358158376988747)**（来源：AINews）  
-  > 14B参数Apache-2.0自回归视频模型，单B200实现11FPS长格式生成，权重已发布
+- **[持续学习内存层技术突破](https://twitter.com/realJessyLin/status/1980662516285075762)**（来源：AINews）  
+  > 稀疏微调内存层相比完整微调/LoRA显著降低遗忘率（-11% vs -89%），为增量模型更新提供实用路径
 
-- **[TileLang AI DSL达到H100上FlashMLA约95%性能](https://twitter.com/ZhihuFrontier/status/1980170674112188440)**（来源：AINews）  
-  > 新AI DSL通过布局推断和warp专业化，80行Python代码实现H100高性能计算优化
+- **[FlashInfer-Bench基准测试工作流](https://flashinfer.ai/2025/10/21/flashinfer-bench.html)**（来源：AINews）  
+  > 自改进基准测试工作流标准化LLM服务内核签名，自动发现最快内核，支持FlashInfer、SGLang和vLLM day-0集成
 
-- **[huggingface/lerobot](https://github.com/huggingface/lerobot)**（来源：GitHub Trending）  
-  > 机器人AI开源库提供端到端学习模型和数据集，支持模仿与强化学习，降低机器人开发门槛
+- **[Skyvern-AI/skyvern](https://github.com/Skyvern-AI/skyvern)**（来源：GitHub Trending）  
+  > 利用LLM和CV自动化浏览器操作，通过视觉理解而非DOM解析应对网站布局变化，提升RPA流程稳定性
 
-- **[我们用纯Postgres重写了OpenFGA](https://news.ycombinator.com/item?id=45661547)**（来源：Hacker News）  
-  > 权限系统从NoSQL迁移至纯Postgres实现，展示关系数据库在复杂权限场景的工程实践
+- **[oceanbase/miniob](https://github.com/oceanbase/miniob)**（来源：GitHub Trending）  
+  > OceanBase轻量级数据库教学项目，简化并发事务等复杂模块，聚焦SQL解析、存储引擎等核心原理
 
-- **[用每月55美元的服务器替代每月3000美元的Heroku账单](https://news.ycombinator.com/item?id=45661253)**（来源：Hacker News）  
-  > Idealist.org云成本优化案例：从Heroku迁移自有服务器，费用降低98%的实战经验
+- **[Cuq – Rust GPU 内核的形式化验证](https://news.ycombinator.com/item?id=45674126)**（来源：Hacker News）  
+  > Show HN项目实现Rust GPU内核形式化验证，为高性能计算提供可靠性和安全性保障
 
-- **[GoSMig – 用 Go 编写的极简类型安全 SQL 迁移工具](https://news.ycombinator.com/item?id=45662021)**（来源：Hacker News）  
-  > Go语言SQL迁移库支持事务回滚，提供类型安全和CLI工具，兼容多种数据库
+- **[重新思考CQRS：OpenCQRS访谈实录](https://news.ycombinator.com/item?id=45674923)**（来源：Hacker News）  
+  > 深入探讨CQRS架构模式实践经验，展示复杂系统设计中的工程思考与权衡
 
-- **[SpacetimeDB：数据库与服务器合一的实时数据处理平台](https://github.com/clockworklabs/SpacetimeDB)**（来源：GitHub Trending）  
-  > Rust编写的一体化实时数据处理平台，客户端直连数据库，专为低延迟场景优化
+- **[程序员的身份认同危机](https://news.ycombinator.com/item?id=45658019)**（来源：Hacker News）  
+  > 讨论AI时代开发者角色转变，代码审查成为质量把控第一防线，揭示工程文化演变趋势
 
-- **[GPTQ int4后训练量化内置到Keras 3](https://twitter.com/fchollet/status/1980343806265552918)**（来源：AINews）  
-  > 模型量化简化部署，内置供应商无关指南，提升推理效率
+- **[Go SYN 扫描器——1秒内扫描2.1万台主机](https://news.ycombinator.com/item?id=45675479)**（来源：Hacker News）  
+  > 使用原始套接字和TPACKET_V3环重构TCP发现流程，通过Go汇编优化校验和，实现亚秒级连接扫描
 
-- **[TorchAO改进量化配置支持](https://github.com/pytorch/ao/pull/3083)**（来源：GitHub Trending）  
-  > 弃用filter_fn转向quantize_op，支持正则表达式配置，简化大型代码库选择性量化策略
+- **[Mazinger – 试图入侵你网络应用的AI](https://news.ycombinator.com/item?id=45675152)**（来源：Hacker News）  
+  > AI渗透测试工具能主动发现并利用SQL注入等漏洞，自动生成专业报告，模拟真实攻击流程
 
 ---
 
 ### 各渠道精选摘要
-- [AINews](./2025-10-22/ai_news_summary_2025-10-22.md)
-- [GitHub Trending](./2025-10-22/github_trending_2025-10-22.md)
-- [少数派](./2025-10-22/shaoshupai_2025-10-22.md)
-- [36Kr](./2025-10-22/36kr_summary_2025-10-22.md)
-- [美团技术团队](./2025-10-22/meituan_2025-10-22.md)
-- [Go Weekly](./2025-10-22/go_weekly_2025-10-22.md)
-- [Hacker News 首页](./2025-10-22/hacker_news_frontpage_2025-10-22.md)
-- [Hacker News 近期最佳](./2025-10-22/hacker_news_best_2025-10-22.md)
-- [Hacker News 高赞评论](./2025-10-22/hacker_news_top_comments_2025-10-22.md)
-- [Hacker News 问答](./2025-10-22/hacker_news_ask_2025-10-22.md)
-- [Hacker News 展示](./2025-10-22/hacker_news_show_2025-10-22.md)
-- [Hacker News 音频技术](./2025-10-22/hacker_news_audio_tech_2025-10-22.md)
+- [AINews](./2025-10-23/ai_news_summary_2025-10-23.md)
+- [GitHub Trending](./2025-10-23/github_trending_2025-10-23.md)
+- [少数派](./2025-10-23/shaoshupai_2025-10-23.md)
+- [36Kr](./2025-10-23/36kr_summary_2025-10-23.md)
+- [美团技术团队](./2025-10-23/meituan_2025-10-23.md)
+- [Go Weekly](./2025-10-23/go_weekly_2025-10-23.md)
+- [Hacker News 首页](./2025-10-23/hacker_news_frontpage_2025-10-23.md)
+- [Hacker News 近期最佳](./2025-10-23/hacker_news_best_2025-10-23.md)
+- [Hacker News 高赞评论](./2025-10-23/hacker_news_top_comments_2025-10-23.md)
+- [Hacker News 问答](./2025-10-23/hacker_news_ask_2025-10-23.md)
+- [Hacker News 展示](./2025-10-23/hacker_news_show_2025-10-23.md)
+- [Hacker News 音频技术](./2025-10-23/hacker_news_audio_tech_2025-10-23.md)
 
 # 往日新闻
+
+#### [2025-10-22](./2025-10-22/newsletter.md)
 
 #### [2025-10-21](./2025-10-21/newsletter.md)
 
