@@ -1,59 +1,61 @@
 ## 今日要闻
 
-<sub> 生成时间：2025-10-26 08:10:00</sub>
+<sub> 生成时间：2025-10-27 08:09:53</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[斯坦福模型溯源检测技术突破](https://twitter.com/percyliang/status/1981612361309098383)**（来源：AINews）  
-  > 仅通过黑盒访问即可检测模型微调来源，统计显著性达p<1e-8，利用训练数据内置元数据实现可靠溯源
+- **[vLLM支持NVIDIA Nemotron系列模型](https://twitter.com/vllm_project/status/1981553870599049286)**（来源：AINews）  
+  > vLLM新增对Nemotron系列支持，9B参数模型采用混合Transformer-Mamba架构，推理速度比密集模型快6倍
 
-- **[Karpathy发布nanochat端到端指南](https://twitter.com/karpathy/status/1981746327995465816)**（来源：AINews）  
-  > 从零构建类ChatGPT堆栈的完整指南，强调可读性与个人所有权，涵盖合成任务生成与Python解释器集成
+- **[Mistral AI Studio生产平台发布](https://twitter.com/MistralAI/status/1981752578951233989)**（来源：AINews）  
+  > 提供代理运行时和全生命周期深度可观测性，帮助用户从实验阶段过渡到生产环境
 
-- **[Thinking Machines "Tinker"分布式微调抽象](https://twitter.com/DeepLearningAI/status/1981752540405301452)**（来源：AINews）  
-  > 将开源LLM分布式微调抽象为单设备API，自动处理多GPU调度、分片和崩溃恢复，支持Qwen3/Llama 3
+- **[Baseten实现GPT-OSS 120B高性能推理](https://twitter.com/basetenco/status/1981757270053494806)**（来源：AINews）  
+  > 在NVIDIA硬件上实现650 TPS和0.11秒TTFT，达到99.99%正常运行时间，相比发布时性能提升显著
 
-- **[guofei9987/blind_watermark](https://github.com/guofei9987/blind_watermark)**（来源：GitHub Trending）  
-  > 基于DWT-DCT-SVD的图片盲水印工具，抗旋转裁剪攻击，无需原图即可提取，适用于版权保护与溯源追踪
+- **[GitHub Copilot新嵌入模型发布](https://twitter.com/github/status/1981727394663731598)**（来源：AINews）  
+  > VS Code新嵌入模型检索性能提升37.6%，吞吐量约2倍，索引大小缩小8倍
 
-- **[emcie-co/parlant](https://github.com/emcie-co/parlant)**（来源：GitHub Trending）  
-  > 专为高合规场景设计的LLM智能体框架，通过自然语言规则确保指令遵循，支持动态指南匹配与全流程可解释性
+- **[LadybirdBrowser/ladybird](https://github.com/LadybirdBrowser/ladybird)**（来源：GitHub Trending）  
+  > 基于Web标准的独立浏览器，采用多进程架构，集成自研渲染引擎LibWeb和JavaScript引擎LibJS
 
-- **[Torchcomms：现代化的PyTorch通信API](https://news.ycombinator.com/item?id=45706545)**（来源：Hacker News）  
-  > 重构PyTorch分布式通信接口，提供更简洁高效的集体操作原语，优化多GPU训练性能
+- **[ubicloud/ubicloud](https://github.com/ubicloud/ubicloud)**（来源：GitHub Trending）  
+  > 开源云服务替代方案，提供弹性计算、块存储等IaaS核心功能，成本比AWS低约70%
 
-- **[Linux 启动流程：从按下电源键到内核加载](https://news.ycombinator.com/item?id=45707658)**（来源：Hacker News）  
-  > 深度解析Linux启动全流程，涵盖BIOS/UEFI初始化、引导加载器阶段至内核加载的完整技术细节
+- **[MyraOS – 用C语言和汇编开发的32位操作系统](https://news.ycombinator.com/item?id=45715055)**（来源：Hacker News）  
+  > 年轻开发者实现从引导到GUI的完整系统，包含内存管理、文件系统和Doom移植
 
-- **[程序如何运行：ELF二进制文件解析（2015）](https://news.ycombinator.com/item?id=45706938)**（来源：Hacker News）  
-  > 经典ELF文件格式深度解析，揭示可执行文件加载、动态链接和内存布局的核心机制
+- **[Zimic：TypeScript优先的HTTP集成方案](https://news.ycombinator.com/item?id=45715262)**（来源：Hacker News）  
+  > 专注于类型安全和开发体验的HTTP工具库，提供OpenAPI类型推断和HTTP模拟功能
 
-- **[ARM内存标记技术：提升C/C++内存安全性（2018）[pdf]](https://news.ycombinator.com/item?id=45706815)**（来源：Hacker News）  
-  > 详细介绍ARM MTE硬件特性，通过内存标记检测use-after-free和缓冲区溢出，提升系统安全
+- **[Agno – 多智能体框架、运行时与控制平台](https://news.ycombinator.com/item?id=45714551)**（来源：Hacker News）  
+  > 类似FastAPI但用于AI代理，支持快速启动、低内存占用和私有化部署
 
-- **[Ask HN：最小化生产环境 Docker 部署需要哪些组件？](https://news.ycombinator.com/item?id=45704470)**（来源：Hacker News）  
-  > 探讨单服务器Docker生产部署最佳实践，涵盖安全配置、监控、备份和自动化部署全流程
+- **[CVE Daily —— 供应商无关CVE简报](https://news.ycombinator.com/item?id=45713792)**（来源：Hacker News）  
+  > 整合NVD和OSV漏洞数据库，优先展示厂商公告并提供修复指导，帮助安全团队快速处理漏洞
 
 ---
 
 ### 各渠道精选摘要
-- [AINews](./2025-10-26/ai_news_summary_2025-10-26.md)
-- [GitHub Trending](./2025-10-26/github_trending_2025-10-26.md)
-- [少数派](./2025-10-26/shaoshupai_2025-10-26.md)
-- [36Kr](./2025-10-26/36kr_summary_2025-10-26.md)
-- [美团技术团队](./2025-10-26/meituan_2025-10-26.md)
-- [Go Weekly](./2025-10-26/go_weekly_2025-10-26.md)
-- [Hacker News 首页](./2025-10-26/hacker_news_frontpage_2025-10-26.md)
-- [Hacker News 近期最佳](./2025-10-26/hacker_news_best_2025-10-26.md)
-- [Hacker News 高赞评论](./2025-10-26/hacker_news_top_comments_2025-10-26.md)
-- [Hacker News 问答](./2025-10-26/hacker_news_ask_2025-10-26.md)
-- [Hacker News 展示](./2025-10-26/hacker_news_show_2025-10-26.md)
-- [Hacker News 音频技术](./2025-10-26/hacker_news_audio_tech_2025-10-26.md)
+- [AINews](./2025-10-27/ai_news_summary_2025-10-27.md)
+- [GitHub Trending](./2025-10-27/github_trending_2025-10-27.md)
+- [少数派](./2025-10-27/shaoshupai_2025-10-27.md)
+- [36Kr](./2025-10-27/36kr_summary_2025-10-27.md)
+- [美团技术团队](./2025-10-27/meituan_2025-10-27.md)
+- [Go Weekly](./2025-10-27/go_weekly_2025-10-27.md)
+- [Hacker News 首页](./2025-10-27/hacker_news_frontpage_2025-10-27.md)
+- [Hacker News 近期最佳](./2025-10-27/hacker_news_best_2025-10-27.md)
+- [Hacker News 高赞评论](./2025-10-27/hacker_news_top_comments_2025-10-27.md)
+- [Hacker News 问答](./2025-10-27/hacker_news_ask_2025-10-27.md)
+- [Hacker News 展示](./2025-10-27/hacker_news_show_2025-10-27.md)
+- [Hacker News 音频技术](./2025-10-27/hacker_news_audio_tech_2025-10-27.md)
 
 # 往日新闻
+
+#### [2025-10-26](./2025-10-26/newsletter.md)
 
 #### [2025-10-25](./2025-10-25/newsletter.md)
 
