@@ -1,59 +1,61 @@
 ## 今日要闻
 
-<sub> 生成时间：2025-10-27 08:09:53</sub>
+<sub> 生成时间：2025-10-28 08:09:31</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[vLLM支持NVIDIA Nemotron系列模型](https://twitter.com/vllm_project/status/1981553870599049286)**（来源：AINews）  
-  > vLLM新增对Nemotron系列支持，9B参数模型采用混合Transformer-Mamba架构，推理速度比密集模型快6倍
+- **[斯坦福开发模型溯源检测方法](https://twitter.com/percyliang/status/1981612361309098383)**（来源：AINews）  
+  > 仅通过黑盒访问即可检测模型微调来源，利用训练数据顺序元数据，统计保证强（p < 1e-8）
 
-- **[Mistral AI Studio生产平台发布](https://twitter.com/MistralAI/status/1981752578951233989)**（来源：AINews）  
-  > 提供代理运行时和全生命周期深度可观测性，帮助用户从实验阶段过渡到生产环境
+- **[Karpathy发布nanochat端到端指南](https://twitter.com/karpathy/status/1981746327995465816)**（来源：AINews）  
+  > 类ChatGPT堆栈强调可读性与个人所有权，详解合成任务、分词优化及SFT+RL混合方法
 
-- **[Baseten实现GPT-OSS 120B高性能推理](https://twitter.com/basetenco/status/1981757270053494806)**（来源：AINews）  
-  > 在NVIDIA硬件上实现650 TPS和0.11秒TTFT，达到99.99%正常运行时间，相比发布时性能提升显著
+- **[Thinking Machines "Tinker"分布式微调抽象](https://twitter.com/DeepLearningAI/status/1981752540405301452)**（来源：AINews）  
+  > 在单设备API后抽象开源LLM分布式微调，处理多GPU调度、分片和崩溃恢复
 
-- **[GitHub Copilot新嵌入模型发布](https://twitter.com/github/status/1981727394663731598)**（来源：AINews）  
-  > VS Code新嵌入模型检索性能提升37.6%，吞吐量约2倍，索引大小缩小8倍
+- **[coinbase/x402](https://github.com/coinbase/x402)**（来源：GitHub Trending）  
+  > 基于HTTP的互联网支付协议，支持零手续费、2秒结算，兼容ERC20标准，为AI代理提供无缝支付
 
-- **[LadybirdBrowser/ladybird](https://github.com/LadybirdBrowser/ladybird)**（来源：GitHub Trending）  
-  > 基于Web标准的独立浏览器，采用多进程架构，集成自研渲染引擎LibWeb和JavaScript引擎LibJS
+- **[cjpais/Handy](https://github.com/cjpais/Handy)**（来源：GitHub Trending）  
+  > 开源离线语音转文字桌面应用，基于Tauri+Rust，支持Whisper模型，本地处理保障隐私
 
-- **[ubicloud/ubicloud](https://github.com/ubicloud/ubicloud)**（来源：GitHub Trending）  
-  > 开源云服务替代方案，提供弹性计算、块存储等IaaS核心功能，成本比AWS低约70%
+- **[microsoft/agent-lightning](https://github.com/microsoft/agent-lightning)**（来源：GitHub Trending）  
+  > AI智能体训练框架，支持零代码优化现有智能体，集成强化学习与自动提示优化算法
 
-- **[MyraOS – 用C语言和汇编开发的32位操作系统](https://news.ycombinator.com/item?id=45715055)**（来源：Hacker News）  
-  > 年轻开发者实现从引导到GUI的完整系统，包含内存管理、文件系统和Doom移植
+- **[AI能写代码，但无法构建软件](https://news.ycombinator.com/item?id=45727664)**（来源：Hacker News）  
+  > 深度讨论AI编程局限性：代码生成与系统设计、架构决策间的本质差异
 
-- **[Zimic：TypeScript优先的HTTP集成方案](https://news.ycombinator.com/item?id=45715262)**（来源：Hacker News）  
-  > 专注于类型安全和开发体验的HTTP工具库，提供OpenAPI类型推断和HTTP模拟功能
+- **[我们通过自建"S3"每年节省50万美元](https://news.ycombinator.com/item?id=45715204)**（来源：Hacker News）  
+  > Nanit工程团队分享对象存储自建实践，替代AWS S3实现成本优化与数据控制
 
-- **[Agno – 多智能体框架、运行时与控制平台](https://news.ycombinator.com/item?id=45714551)**（来源：Hacker News）  
-  > 类似FastAPI但用于AI代理，支持快速启动、低内存占用和私有化部署
+- **[将浏览器自动化转变为AI代理](https://news.ycombinator.com/item?id=45726846)**（来源：Hacker News）  
+  > 使用Playwright构建AI代理直接操作企业系统，探索无API集成场景的自动化方案
 
-- **[CVE Daily —— 供应商无关CVE简报](https://news.ycombinator.com/item?id=45713792)**（来源：Hacker News）  
-  > 整合NVD和OSV漏洞数据库，优先展示厂商公告并提供修复指导，帮助安全团队快速处理漏洞
+- **[Redprint：模块化推理框架提升本地LLM能力](https://news.ycombinator.com/item?id=45722245)**（来源：Hacker News）  
+  > 通过符号记忆和好奇心循环增强推理，减少对大型GPU依赖，支持复杂任务处理
 
 ---
 
 ### 各渠道精选摘要
-- [AINews](./2025-10-27/ai_news_summary_2025-10-27.md)
-- [GitHub Trending](./2025-10-27/github_trending_2025-10-27.md)
-- [少数派](./2025-10-27/shaoshupai_2025-10-27.md)
-- [36Kr](./2025-10-27/36kr_summary_2025-10-27.md)
-- [美团技术团队](./2025-10-27/meituan_2025-10-27.md)
-- [Go Weekly](./2025-10-27/go_weekly_2025-10-27.md)
-- [Hacker News 首页](./2025-10-27/hacker_news_frontpage_2025-10-27.md)
-- [Hacker News 近期最佳](./2025-10-27/hacker_news_best_2025-10-27.md)
-- [Hacker News 高赞评论](./2025-10-27/hacker_news_top_comments_2025-10-27.md)
-- [Hacker News 问答](./2025-10-27/hacker_news_ask_2025-10-27.md)
-- [Hacker News 展示](./2025-10-27/hacker_news_show_2025-10-27.md)
-- [Hacker News 音频技术](./2025-10-27/hacker_news_audio_tech_2025-10-27.md)
+- [AINews](./2025-10-28/ai_news_summary_2025-10-28.md)
+- [GitHub Trending](./2025-10-28/github_trending_2025-10-28.md)
+- [少数派](./2025-10-28/shaoshupai_2025-10-28.md)
+- [36Kr](./2025-10-28/36kr_summary_2025-10-28.md)
+- [美团技术团队](./2025-10-28/meituan_2025-10-28.md)
+- [Go Weekly](./2025-10-28/go_weekly_2025-10-28.md)
+- [Hacker News 首页](./2025-10-28/hacker_news_frontpage_2025-10-28.md)
+- [Hacker News 近期最佳](./2025-10-28/hacker_news_best_2025-10-28.md)
+- [Hacker News 高赞评论](./2025-10-28/hacker_news_top_comments_2025-10-28.md)
+- [Hacker News 问答](./2025-10-28/hacker_news_ask_2025-10-28.md)
+- [Hacker News 展示](./2025-10-28/hacker_news_show_2025-10-28.md)
+- [Hacker News 音频技术](./2025-10-28/hacker_news_audio_tech_2025-10-28.md)
 
 # 往日新闻
+
+#### [2025-10-27](./2025-10-27/newsletter.md)
 
 #### [2025-10-26](./2025-10-26/newsletter.md)
 
