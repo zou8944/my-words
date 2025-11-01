@@ -1,59 +1,61 @@
 ## 今日要闻
 
-<sub> 生成时间：2025-10-31 08:10:25</sub>
+<sub> 生成时间：2025-11-01 08:09:45</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[Cursor 2.0发布，推出首个代理编码模型Composer](https://x.com/cursor_ai/status/1983567619946147967)**（来源：AINews）  
-  > 多代理编排、内置浏览器测试、自动代码审查，Composer-1模型速度达250 tok/s，显著提升编码效率
+- **[Kimi Linear (KDA)技术突破](https://twitter.com/Kimi_Moonshot/status/1983937694360322136)**（来源：AINews）  
+  > 混合架构交织Kimi Delta Attention与MLA，开源CUDA内核集成vLLM，75% KV缓存减少，6倍解码吞吐量提升
 
-- **[OpenAI发布开源安全模型gpt-oss-safeguard](https://twitter.com/OpenAI/status/1983507392374641071)**（来源：AINews）  
-  > 开源20B/120B推理模型，基于Apache 2.0许可，可解释自定义策略并分类消息、响应和完整对话
+- **[Hugging Face发布Smol训练手册](https://huggingface.co/spaces/HuggingFaceTB/smol-training-playbook)**（来源：AINews）  
+  > 200+页实战指南涵盖预训练数据管理、架构选择、后训练和基础设施调试，强调消融实验与工程细节
 
-- **[Cognition发布SWE-1.5快速代理模型](https://twitter.com/cognition/status/1983662836896448756)**（来源：AINews）  
-  > 接近SOTA编码性能且延迟显著降低，通过Cerebras服务达950 tok/s，强调模型-系统协同设计
+- **[HKUST推出Toolathlon基准测试](https://twitter.com/junxian_he/status/1983834164727312391)**（来源：AINews）  
+  > 基于执行的工具调用基准，覆盖32个应用/600+工具，揭示SOTA模型成功率仅38.6%，开源与专有模型差距显著
 
-- **[Anthropic发现LLM内省迹象](https://twitter.com/AnthropicAI/status/1983584136972677319)**（来源：AINews）  
-  > Claude能有限访问自身内部处理过程，表明LLM可能具备某种程度的内省能力，非简单编造答案
+- **[mem0ai/mem0](https://github.com/mem0ai/mem0)**（来源：GitHub Trending）  
+  > AI智能体通用记忆层，多级架构实现用户偏好持续学习，相比OpenAI方案准确率提升26%，token消耗降低90%
 
-- **[allenai/olmocr](https://github.com/allenai/olmocr)**（来源：GitHub Trending）  
-  > AI2开源PDF转文本工具包，基于70亿参数视觉语言模型，支持复杂排版公式表格识别，成本低于200美元/百万页
+- **[microsoft/agent-lightning](https://github.com/microsoft/agent-lightning)**（来源：GitHub Trending）  
+  > 微软AI智能体训练框架，零代码改造优化现有智能体，兼容LangChain/AutoGen，集成强化学习与自动提示优化
 
-- **[block/goose](https://github.com/block/goose)**（来源：GitHub Trending）  
-  > 开源可扩展本地AI智能体，自主完成代码编写、执行、调试及测试，支持多模型配置和MCP服务器集成
+- **[Futurelock：异步Rust中的微妙风险](https://news.ycombinator.com/item?id=45774086)**（来源：Hacker News）  
+  > Oxide团队发现正确程序也会触发的futurelock问题，虽比异步取消影响小，但需经验丰富开发者才能定位缓解
 
-- **[Propolis自动为网页应用进行质量检测](https://news.ycombinator.com/item?id=45762012)**（来源：Hacker News）  
-  > 使用浏览器代理群模拟用户行为，自动检测网站问题并生成端到端测试，可集成CI流程提升测试覆盖率
+- **[使用DuckDB-WASM在浏览器中查询TB级数据](https://news.ycombinator.com/item?id=45774571)**（来源：Hacker News）  
+  > DuckDB-WASM实现客户端大规模数据分析，支持TB级CSV文件浏览器内处理，达到近桌面级性能
 
-- **[Socratic自动化知识合成系统](https://news.ycombinator.com/item?id=45765752)**（来源：Hacker News）  
-  > 将分散文档和代码自动转化为结构化知识库，用于垂直AI代理知识更新，解决人工维护成本高问题
+- **[Perfetto：Linux客户端跟踪的瑞士军刀](https://news.ycombinator.com/item?id=45771019)**（来源：Hacker News）  
+  > 高性能系统跟踪工具，统一性能剖析与调试工作流，支持从内核到应用的端到端可观测性
 
-- **[LangSpend追踪大语言模型成本](https://news.ycombinator.com/item?id=45766237)**（来源：Hacker News）  
-  > SDK包装API调用追踪客户和功能级成本，支持Node.js/Python，提供实时成本面板管理LLM支出
+- **[我们如何发现7 TiB内存闲置未用](https://news.ycombinator.com/item?id=45763359)**（来源：Hacker News）  
+  > 实战内存资源优化案例，通过系统监控与调度策略分析，识别并回收大规模闲置内存资源
 
-- **[Thinking Machines挑战传统LoRA调优方法](https://thinkingmachines.ai/blog/lora/)**（来源：AINews）  
-  > 提倡LoRA应用于所有层，批量大小减至32以下，学习率提高10倍，挑战传统微调实践
+- **[Paykit统一支付集成](https://news.ycombinator.com/item?id=45773708)**（来源：Hacker News）  
+  > 单一SDK支持Stripe、PayPal等平台，提供统一仪表盘和REST API，简化多支付接口开发复杂度
 
 ---
 
 ### 各渠道精选摘要
-- [AINews](./2025-10-31/ai_news_summary_2025-10-31.md)
-- [GitHub Trending](./2025-10-31/github_trending_2025-10-31.md)
-- [少数派](./2025-10-31/shaoshupai_2025-10-31.md)
-- [36Kr](./2025-10-31/36kr_summary_2025-10-31.md)
-- [美团技术团队](./2025-10-31/meituan_2025-10-31.md)
-- [Go Weekly](./2025-10-31/go_weekly_2025-10-31.md)
-- [Hacker News 首页](./2025-10-31/hacker_news_frontpage_2025-10-31.md)
-- [Hacker News 近期最佳](./2025-10-31/hacker_news_best_2025-10-31.md)
-- [Hacker News 高赞评论](./2025-10-31/hacker_news_top_comments_2025-10-31.md)
-- [Hacker News 问答](./2025-10-31/hacker_news_ask_2025-10-31.md)
-- [Hacker News 展示](./2025-10-31/hacker_news_show_2025-10-31.md)
-- [Hacker News 音频技术](./2025-10-31/hacker_news_audio_tech_2025-10-31.md)
+- [AINews](./2025-11-01/ai_news_summary_2025-11-01.md)
+- [GitHub Trending](./2025-11-01/github_trending_2025-11-01.md)
+- [少数派](./2025-11-01/shaoshupai_2025-11-01.md)
+- [36Kr](./2025-11-01/36kr_summary_2025-11-01.md)
+- [美团技术团队](./2025-11-01/meituan_2025-11-01.md)
+- [Go Weekly](./2025-11-01/go_weekly_2025-11-01.md)
+- [Hacker News 首页](./2025-11-01/hacker_news_frontpage_2025-11-01.md)
+- [Hacker News 近期最佳](./2025-11-01/hacker_news_best_2025-11-01.md)
+- [Hacker News 高赞评论](./2025-11-01/hacker_news_top_comments_2025-11-01.md)
+- [Hacker News 问答](./2025-11-01/hacker_news_ask_2025-11-01.md)
+- [Hacker News 展示](./2025-11-01/hacker_news_show_2025-11-01.md)
+- [Hacker News 音频技术](./2025-11-01/hacker_news_audio_tech_2025-11-01.md)
 
 # 往日新闻
+
+#### [2025-10-31](./2025-10-31/newsletter.md)
 
 #### [2025-10-30](./2025-10-30/newsletter.md)
 
