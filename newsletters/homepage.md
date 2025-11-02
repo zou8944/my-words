@@ -1,59 +1,61 @@
 ## 今日要闻
 
-<sub> 生成时间：2025-11-01 08:09:45</sub>
+<sub> 生成时间：2025-11-02 08:09:27</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[Kimi Linear (KDA)技术突破](https://twitter.com/Kimi_Moonshot/status/1983937694360322136)**（来源：AINews）  
-  > 混合架构交织Kimi Delta Attention与MLA，开源CUDA内核集成vLLM，75% KV缓存减少，6倍解码吞吐量提升
+- **[Cursor推出更快更可靠的云代理](https://twitter.com/cursor_ai/status/1983954528933421919)**（来源：AINews）  
+  > 分享内部使用模式，优化AI编程助手响应速度与稳定性，提升开发效率
 
-- **[Hugging Face发布Smol训练手册](https://huggingface.co/spaces/HuggingFaceTB/smol-training-playbook)**（来源：AINews）  
-  > 200+页实战指南涵盖预训练数据管理、架构选择、后训练和基础设施调试，强调消融实验与工程细节
+- **[LangGraph添加Overwrite功能](https://twitter.com/caspar_br/status/1983949095837519901)**（来源：AINews）  
+  > 绕过reducer直接替换状态，为智能代理状态管理提供更灵活控制机制
 
-- **[HKUST推出Toolathlon基准测试](https://twitter.com/junxian_he/status/1983834164727312391)**（来源：AINews）  
-  > 基于执行的工具调用基准，覆盖32个应用/600+工具，揭示SOTA模型成功率仅38.6%，开源与专有模型差距显著
+- **[hiyouga/LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)**（来源：GitHub Trending）  
+  > 统一高效的大语言模型微调框架，支持100+主流模型和多种训练方法，集成FlashAttention优化
 
-- **[mem0ai/mem0](https://github.com/mem0ai/mem0)**（来源：GitHub Trending）  
-  > AI智能体通用记忆层，多级架构实现用户偏好持续学习，相比OpenAI方案准确率提升26%，token消耗降低90%
+- **[patchy631/ai-engineering-hub](https://github.com/patchy631/ai-engineering-hub)**（来源：GitHub Trending）  
+  > 93+生产级AI项目与深度教程，涵盖LLM、RAG和智能体全栈案例，提供企业级实战路径
 
-- **[microsoft/agent-lightning](https://github.com/microsoft/agent-lightning)**（来源：GitHub Trending）  
-  > 微软AI智能体训练框架，零代码改造优化现有智能体，兼容LangChain/AutoGen，集成强化学习与自动提示优化
+- **[Show HN: UnisonDB – 基于日志的键值数据库](https://news.ycombinator.com/item?id=45784331)**（来源：Hacker News）  
+  > 日志原生数据库统一存储与流处理，支持B+树存储和实时复制，强调一致性而非写入速度
 
-- **[Futurelock：异步Rust中的微妙风险](https://news.ycombinator.com/item?id=45774086)**（来源：Hacker News）  
-  > Oxide团队发现正确程序也会触发的futurelock问题，虽比异步取消影响小，但需经验丰富开发者才能定位缓解
+- **[Show HN: Micro-RLE ≤264字节压缩方案](https://news.ycombinator.com/item?id=45784368)**（来源：Hacker News）  
+  > 微型RLE算法在Cortex-M0+上无损压缩传感器数据，体积减少33-70%，启动时间<600微秒
 
-- **[使用DuckDB-WASM在浏览器中查询TB级数据](https://news.ycombinator.com/item?id=45774571)**（来源：Hacker News）  
-  > DuckDB-WASM实现客户端大规模数据分析，支持TB级CSV文件浏览器内处理，达到近桌面级性能
+- **[Ask HN：谁在本地使用开源LLM和编程助手？](https://news.ycombinator.com/item?id=45771870)**（来源：Hacker News）  
+  > 社区调研本地运行开源LLM工作流，讨论硬件配置、使用场景及可靠性评估实践
 
-- **[Perfetto：Linux客户端跟踪的瑞士军刀](https://news.ycombinator.com/item?id=45771019)**（来源：Hacker News）  
-  > 高性能系统跟踪工具，统一性能剖析与调试工作流，支持从内核到应用的端到端可观测性
+- **[SQLite并发性及其重要性解析](https://news.ycombinator.com/item?id=45781298)**（来源：Hacker News）  
+  > 深入分析SQLITE_BUSY错误成因与解决方案，探讨延迟模式与立即模式事务的实践差异
 
-- **[我们如何发现7 TiB内存闲置未用](https://news.ycombinator.com/item?id=45763359)**（来源：Hacker News）  
-  > 实战内存资源优化案例，通过系统监控与调度策略分析，识别并回收大规模闲置内存资源
+- **[配置文件面面观（上）：配置格式的类型和特点](https://sspai.com/prime/story/config-formats-1)**（来源：少数派）  
+  > 系统解析各类配置文件格式特性，提供命令行工具和GUI软件配置优化实践指南
 
-- **[Paykit统一支付集成](https://news.ycombinator.com/item?id=45773708)**（来源：Hacker News）  
-  > 单一SDK支持Stripe、PayPal等平台，提供统一仪表盘和REST API，简化多支付接口开发复杂度
+- **[中国游戏出海迎来AI时刻](https://36kr.com/p/3532752130268037)**（来源：36Kr）  
+  > 62%游戏工作室使用AI提升开发效率，亚马逊云科技推出服务解决本地化与合规挑战
 
 ---
 
 ### 各渠道精选摘要
-- [AINews](./2025-11-01/ai_news_summary_2025-11-01.md)
-- [GitHub Trending](./2025-11-01/github_trending_2025-11-01.md)
-- [少数派](./2025-11-01/shaoshupai_2025-11-01.md)
-- [36Kr](./2025-11-01/36kr_summary_2025-11-01.md)
-- [美团技术团队](./2025-11-01/meituan_2025-11-01.md)
-- [Go Weekly](./2025-11-01/go_weekly_2025-11-01.md)
-- [Hacker News 首页](./2025-11-01/hacker_news_frontpage_2025-11-01.md)
-- [Hacker News 近期最佳](./2025-11-01/hacker_news_best_2025-11-01.md)
-- [Hacker News 高赞评论](./2025-11-01/hacker_news_top_comments_2025-11-01.md)
-- [Hacker News 问答](./2025-11-01/hacker_news_ask_2025-11-01.md)
-- [Hacker News 展示](./2025-11-01/hacker_news_show_2025-11-01.md)
-- [Hacker News 音频技术](./2025-11-01/hacker_news_audio_tech_2025-11-01.md)
+- [AINews](./2025-11-02/ai_news_summary_2025-11-02.md)
+- [GitHub Trending](./2025-11-02/github_trending_2025-11-02.md)
+- [少数派](./2025-11-02/shaoshupai_2025-11-02.md)
+- [36Kr](./2025-11-02/36kr_summary_2025-11-02.md)
+- [美团技术团队](./2025-11-02/meituan_2025-11-02.md)
+- [Go Weekly](./2025-11-02/go_weekly_2025-11-02.md)
+- [Hacker News 首页](./2025-11-02/hacker_news_frontpage_2025-11-02.md)
+- [Hacker News 近期最佳](./2025-11-02/hacker_news_best_2025-11-02.md)
+- [Hacker News 高赞评论](./2025-11-02/hacker_news_top_comments_2025-11-02.md)
+- [Hacker News 问答](./2025-11-02/hacker_news_ask_2025-11-02.md)
+- [Hacker News 展示](./2025-11-02/hacker_news_show_2025-11-02.md)
+- [Hacker News 音频技术](./2025-11-02/hacker_news_audio_tech_2025-11-02.md)
 
 # 往日新闻
+
+#### [2025-11-01](./2025-11-01/newsletter.md)
 
 #### [2025-10-31](./2025-10-31/newsletter.md)
 
