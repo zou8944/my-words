@@ -1,59 +1,61 @@
 ## 今日要闻
 
-<sub> 生成时间：2025-11-02 08:09:27</sub>
+<sub> 生成时间：2025-11-04 08:09:53</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[Cursor推出更快更可靠的云代理](https://twitter.com/cursor_ai/status/1983954528933421919)**（来源：AINews）  
-  > 分享内部使用模式，优化AI编程助手响应速度与稳定性，提升开发效率
+- **[Kimi Linear (KDA)发布，实现长上下文高效处理](https://twitter.com/Kimi_Moonshot/status/1983937694360322136)**（来源：Moonshot AI）  
+  > 开源混合注意力架构，KV缓存减少75%，解码吞吐量提升6倍，长上下文推理质量优于全注意力机制
 
-- **[LangGraph添加Overwrite功能](https://twitter.com/caspar_br/status/1983949095837519901)**（来源：AINews）  
-  > 绕过reducer直接替换状态，为智能代理状态管理提供更灵活控制机制
+- **[Hugging Face发布200+页Smol训练手册](https://huggingface.co/spaces/HuggingFaceTB/smol-training-playbook)**（来源：Hugging Face）  
+  > 涵盖预训练数据管理、架构选择到后训练优化，强调消融实验和论文中常被忽略的实战问题
 
-- **[hiyouga/LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)**（来源：GitHub Trending）  
-  > 统一高效的大语言模型微调框架，支持100+主流模型和多种训练方法，集成FlashAttention优化
+- **[nano-vllm：轻量级大语言模型推理引擎](https://github.com/GeeeekExplorer/nano-vllm)**（来源：GitHub）  
+  > 1200行Python实现核心优化，RTX 4070实测吞吐量达1434 token/秒，性能超越原版vLLM
 
-- **[patchy631/ai-engineering-hub](https://github.com/patchy631/ai-engineering-hub)**（来源：GitHub Trending）  
-  > 93+生产级AI项目与深度教程，涵盖LLM、RAG和智能体全栈案例，提供企业级实战路径
+- **[DeepCode：多智能体代码生成框架](https://github.com/HKUDS/DeepCode)**（来源：GitHub）  
+  > 支持论文算法复现和前后端开发，在OpenAI PaperBench基准测试中超越人类专家
 
-- **[Show HN: UnisonDB – 基于日志的键值数据库](https://news.ycombinator.com/item?id=45784331)**（来源：Hacker News）  
-  > 日志原生数据库统一存储与流处理，支持B+树存储和实时复制，强调一致性而非写入速度
+- **[反对PGVector的理由](https://news.ycombinator.com/item?id=45798479)**（来源：Hacker News）  
+  > 分析PGVector在生产环境的前置过滤缺陷和查询规划复杂性，对比专业向量数据库优劣
 
-- **[Show HN: Micro-RLE ≤264字节压缩方案](https://news.ycombinator.com/item?id=45784368)**（来源：Hacker News）  
-  > 微型RLE算法在Cortex-M0+上无损压缩传感器数据，体积减少33-70%，启动时间<600微秒
+- **[微软Agent Lightning智能体训练框架](https://github.com/microsoft/agent-lightning)**（来源：GitHub）  
+  > 零代码优化现有智能体，集成强化学习和自动提示优化，支持多智能体系统选择性优化
 
-- **[Ask HN：谁在本地使用开源LLM和编程助手？](https://news.ycombinator.com/item?id=45771870)**（来源：Hacker News）  
-  > 社区调研本地运行开源LLM工作流，讨论硬件配置、使用场景及可靠性评估实践
+- **[Meta REFRAG项目优化长上下文处理](https://news.ycombinator.com/item?id=45800249)**（来源：Hacker News）  
+  > 预计算向量直输LLM，首令牌生成快31倍，迭代令牌快3倍，整体吞吐量提升7倍
 
-- **[SQLite并发性及其重要性解析](https://news.ycombinator.com/item?id=45781298)**（来源：Hacker News）  
-  > 深入分析SQLITE_BUSY错误成因与解决方案，探讨延迟模式与立即模式事务的实践差异
+- **[学会阅读Arthur Whitney的C代码](https://news.ycombinator.com/item?id=45800777)**（来源：Hacker News）  
+  > 解析极简C代码设计哲学，提升底层编程智慧和系统优化能力
 
-- **[配置文件面面观（上）：配置格式的类型和特点](https://sspai.com/prime/story/config-formats-1)**（来源：少数派）  
-  > 系统解析各类配置文件格式特性，提供命令行工具和GUI软件配置优化实践指南
+- **[Voyage-3-large嵌入模型登顶HF RTEB榜](https://twitter.com/_avichawla/status/1983783708047093838)**（来源：Voyage AI）  
+  > 量化感知训练在33个数据集排名第一，金融/法律/医疗检索任务超越OpenAI/Cohere
 
-- **[中国游戏出海迎来AI时刻](https://36kr.com/p/3532752130268037)**（来源：36Kr）  
-  > 62%游戏工作室使用AI提升开发效率，亚马逊云科技推出服务解决本地化与合规挑战
+- **[Lightning-SimulWhisper：苹果芯片实时语音识别](https://news.ycombinator.com/item?id=45620534)**（来源：Hacker News）  
+  > CoreML/MLX移植版比PyTorch快15倍，平衡内存与准确率，实现设备端低延迟语音转录
 
 ---
 
 ### 各渠道精选摘要
-- [AINews](./2025-11-02/ai_news_summary_2025-11-02.md)
-- [GitHub Trending](./2025-11-02/github_trending_2025-11-02.md)
-- [少数派](./2025-11-02/shaoshupai_2025-11-02.md)
-- [36Kr](./2025-11-02/36kr_summary_2025-11-02.md)
-- [美团技术团队](./2025-11-02/meituan_2025-11-02.md)
-- [Go Weekly](./2025-11-02/go_weekly_2025-11-02.md)
-- [Hacker News 首页](./2025-11-02/hacker_news_frontpage_2025-11-02.md)
-- [Hacker News 近期最佳](./2025-11-02/hacker_news_best_2025-11-02.md)
-- [Hacker News 高赞评论](./2025-11-02/hacker_news_top_comments_2025-11-02.md)
-- [Hacker News 问答](./2025-11-02/hacker_news_ask_2025-11-02.md)
-- [Hacker News 展示](./2025-11-02/hacker_news_show_2025-11-02.md)
-- [Hacker News 音频技术](./2025-11-02/hacker_news_audio_tech_2025-11-02.md)
+- [AINews](./2025-11-04/ai_news_summary_2025-11-04.md)
+- [GitHub Trending](./2025-11-04/github_trending_2025-11-04.md)
+- [少数派](./2025-11-04/shaoshupai_2025-11-04.md)
+- [36Kr](./2025-11-04/36kr_summary_2025-11-04.md)
+- [美团技术团队](./2025-11-04/meituan_2025-11-04.md)
+- [Go Weekly](./2025-11-04/go_weekly_2025-11-04.md)
+- [Hacker News 首页](./2025-11-04/hacker_news_frontpage_2025-11-04.md)
+- [Hacker News 近期最佳](./2025-11-04/hacker_news_best_2025-11-04.md)
+- [Hacker News 高赞评论](./2025-11-04/hacker_news_top_comments_2025-11-04.md)
+- [Hacker News 问答](./2025-11-04/hacker_news_ask_2025-11-04.md)
+- [Hacker News 展示](./2025-11-04/hacker_news_show_2025-11-04.md)
+- [Hacker News 音频技术](./2025-11-04/hacker_news_audio_tech_2025-11-04.md)
 
 # 往日新闻
+
+#### [2025-11-02](./2025-11-02/newsletter.md)
 
 #### [2025-11-01](./2025-11-01/newsletter.md)
 
