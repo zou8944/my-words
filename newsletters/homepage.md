@@ -1,59 +1,61 @@
 ## 今日要闻
 
-<sub> 生成时间：2025-11-05 08:09:54</sub>
+<sub> 生成时间：2025-11-06 08:10:01</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[PageIndex：基于推理的RAG系统](https://github.com/VectifyAI/PageIndex)**（来源：GitHub）  
-  > 无需向量数据库，通过树状索引模拟专家思维检索，在金融文档分析中达98.7%准确率
+- **[DeepCode：多智能体代码生成框架](https://github.com/HKUDS/DeepCode)**（来源：GitHub）  
+  > 将研究论文和自然语言描述自动转换为生产级代码，在OpenAI PaperBench基准测试中超越人类专家
 
-- **[Pg_lake：支持Iceberg和数据湖访问的Postgres](https://news.ycombinator.com/item?id=45812606)**（来源：Hacker News）  
-  > 扩展PostgreSQL支持数据湖查询，为数据分析师提供统一SQL接口访问异构数据源
+- **[Nano-vLLM：轻量级LLM推理引擎](https://github.com/GeeeekExplorer/nano-vllm)**（来源：GitHub）  
+  > 1200行代码实现与vLLM相当性能，单卡RTX 4070吞吐量达1434 token/秒，适合轻量化部署
 
-- **[Barcable：自动后端负载测试智能代理](https://news.ycombinator.com/item?id=45817081)**（来源：Hacker News）  
-  > 通过自主代理扫描代码库生成负载测试，集成CI/CD无需配置，模拟真实API调用场景
+- **[2025年Rust语言SIMD技术发展现状](https://news.ycombinator.com/item?id=45826348)**（来源：Hacker News）  
+  > 深入分析Rust SIMD生态系统现状，涵盖编译器支持、跨平台抽象和性能优化实践
 
-- **[阿里巴巴Qwen3-Max-Thinking预览版](https://twitter.com/Alibaba_Qwen/status/1985347830110970027)**（来源：阿里巴巴）  
-  > 结合工具使用和测试时计算，在AIME 2025和HMMT基准测试中达到100%准确率
+- **[Guardrail Layer：开源AI数据隐私防火墙](https://news.ycombinator.com/item?id=45827921)**（来源：Hacker News）  
+  > 在数据库与AI系统间建立隐私层，自动执行数据脱敏、访问控制和审计日志
 
-- **[sbsh：持久化终端工具](https://news.ycombinator.com/item?id=45815578)**（来源：Hacker News）  
-  > 解决团队共享Kubernetes和Terraform环境配置难题，支持会话恢复和多用户连接
+- **[Elevenlabs发布30亿参数开源TTS模型](https://news.ycombinator.com/item?id=45819601)**（来源：Hacker News）  
+  > 支持自然语言语音控制、情感化表达和流式生成，集成vLLM并可在单GPU运行
 
-- **[具备严格内存保证的ETL引擎](https://news.ycombinator.com/item?id=45817075)**（来源：Hacker News）  
-  > 通过RAII跟踪和调度强制实施内存上限，可处理任意大数据集而保持小内存占用
+- **[Tritex：Triton中LLM预训练实现](https://github.com/martin-kukla/tritex)**（来源：GitHub）  
+  > 在A100 SXM上以57.5% MFU复制GPT2 1.6B，展示高效训练基础设施设计
 
-- **[多智能体代码审查系统](https://news.ycombinator.com/item?id=45814767)**（来源：Hacker News）  
-  > Mesa平台可定制专业代理审查不同代码维度，支持选择AI模型并控制成本
+- **[Anthropic推出MCP代码执行工程指南](https://twitter.com/AnthropicAI/status/1985846791842250860)**（来源：Anthropic）  
+  > 强调使用更多工具降低token消耗，展示代理如何高效执行代码和管理多工具
 
-- **[LlamaIndex LIGHT框架长上下文处理突破](https://twitter.com/omarsar0/status/1985348779193860414)**（来源：LlamaIndex）  
-  > 在100K-1M token长度上比长上下文LLM和RAG基线提升49-60%，多跳推理提升27.2%
+- **[Roblox开源PII分类器](https://huggingface.co/Roblox/roblox-pii-classifier)**（来源：HuggingFace）  
+  > 处理61亿条日常消息，20万QPS且P90延迟低于100ms，为大规模AI应用提供高效检测
 
-- **[优化GPU上的Datalog查询](https://news.ycombinator.com/item?id=45811447)**（来源：Hacker News）  
-  > 探讨在GPU上加速Datalog查询执行的新方法，为图计算和推理工作负载提供性能优化
+- **[LitServe实现MCP服务器快速部署](https://twitter.com/_avichawla/status/1985595667079971190)**（来源：Twitter）  
+  > 基于FastAPI，约10行代码即可将模型/RAG/代理作为MCP服务器部署并连接Claude Desktop
 
-- **[敏捷医疗腔镜手术机器人获数亿元融资](https://36kr.com/p/3537076934744962)**（来源：36氪）  
-  > AGIBOT®手术机器人已获批上市并完成超百例临床应用，具备快速对接和灵活部署特点
+- **[边缘VPN：去中心化P2P网络工具](https://github.com/mudler/edgevpn)**（来源：GitHub）  
+  > 基于libp2p构建，无需中央服务器创建加密隧道，支持Kubernetes集群组网和边缘计算
 
 ---
 
 ### 各渠道精选摘要
-- [AINews](./2025-11-05/ai_news_summary_2025-11-05.md)
-- [GitHub Trending](./2025-11-05/github_trending_2025-11-05.md)
-- [少数派](./2025-11-05/shaoshupai_2025-11-05.md)
-- [36Kr](./2025-11-05/36kr_summary_2025-11-05.md)
-- [美团技术团队](./2025-11-05/meituan_2025-11-05.md)
-- [Go Weekly](./2025-11-05/go_weekly_2025-11-05.md)
-- [Hacker News 首页](./2025-11-05/hacker_news_frontpage_2025-11-05.md)
-- [Hacker News 近期最佳](./2025-11-05/hacker_news_best_2025-11-05.md)
-- [Hacker News 高赞评论](./2025-11-05/hacker_news_top_comments_2025-11-05.md)
-- [Hacker News 问答](./2025-11-05/hacker_news_ask_2025-11-05.md)
-- [Hacker News 展示](./2025-11-05/hacker_news_show_2025-11-05.md)
-- [Hacker News 音频技术](./2025-11-05/hacker_news_audio_tech_2025-11-05.md)
+- [AINews](./2025-11-06/ai_news_summary_2025-11-06.md)
+- [GitHub Trending](./2025-11-06/github_trending_2025-11-06.md)
+- [少数派](./2025-11-06/shaoshupai_2025-11-06.md)
+- [36Kr](./2025-11-06/36kr_summary_2025-11-06.md)
+- [美团技术团队](./2025-11-06/meituan_2025-11-06.md)
+- [Go Weekly](./2025-11-06/go_weekly_2025-11-06.md)
+- [Hacker News 首页](./2025-11-06/hacker_news_frontpage_2025-11-06.md)
+- [Hacker News 近期最佳](./2025-11-06/hacker_news_best_2025-11-06.md)
+- [Hacker News 高赞评论](./2025-11-06/hacker_news_top_comments_2025-11-06.md)
+- [Hacker News 问答](./2025-11-06/hacker_news_ask_2025-11-06.md)
+- [Hacker News 展示](./2025-11-06/hacker_news_show_2025-11-06.md)
+- [Hacker News 音频技术](./2025-11-06/hacker_news_audio_tech_2025-11-06.md)
 
 # 往日新闻
+
+#### [2025-11-05](./2025-11-05/newsletter.md)
 
 #### [2025-11-04](./2025-11-04/newsletter.md)
 
