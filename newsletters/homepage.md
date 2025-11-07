@@ -1,59 +1,61 @@
 ## 今日要闻
 
-<sub> 生成时间：2025-11-06 08:10:01</sub>
+<sub> 生成时间：2025-11-07 08:10:13</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[DeepCode：多智能体代码生成框架](https://github.com/HKUDS/DeepCode)**（来源：GitHub）  
-  > 将研究论文和自然语言描述自动转换为生产级代码，在OpenAI PaperBench基准测试中超越人类专家
+- **[vLLM v1正式支持混合模型](https://twitter.com/PyTorch/status/1986192579835150436)**（来源：Twitter）  
+  > vLLM v1将混合模型（密集+稀疏专家）作为一等公民支持，现支持Qwen3-Next、Nemotron Nano 2等模型
 
-- **[Nano-vLLM：轻量级LLM推理引擎](https://github.com/GeeeekExplorer/nano-vllm)**（来源：GitHub）  
-  > 1200行代码实现与vLLM相当性能，单卡RTX 4070吞吐量达1434 token/秒，适合轻量化部署
+- **[TabPFN-2.5：表格数据的SOTA基础模型](https://news.ycombinator.com/item?id=45838540)**（来源：Hacker News）  
+  > 支持5万样本和2000特征，无需调参即可在分类和回归任务中实现SOTA性能，提供改进API和蒸馏引擎
 
-- **[2025年Rust语言SIMD技术发展现状](https://news.ycombinator.com/item?id=45826348)**（来源：Hacker News）  
-  > 深入分析Rust SIMD生态系统现状，涵盖编译器支持、跨平台抽象和性能优化实践
+- **[Anthropic发布代码执行+MCP模式优化指南](https://twitter.com/omarsar0/status/1986099467914023194)**（来源：Twitter）  
+  > 通过MCP服务器表示为代码API和环境内数据处理，将工具密集型代理上下文从15万token降至2千token
 
-- **[Guardrail Layer：开源AI数据隐私防火墙](https://news.ycombinator.com/item?id=45827921)**（来源：Hacker News）  
-  > 在数据库与AI系统间建立隐私层，自动执行数据脱敏、访问控制和审计日志
+- **[星际动力发布模块化人形机器人](https://36kr.com/p/3541446120894599)**（来源：36氪）  
+  > 具备灵巧手和模块化关节，采用具身智能大脑系统，代码精简至3000行以内，计划2026年量产
 
-- **[Elevenlabs发布30亿参数开源TTS模型](https://news.ycombinator.com/item?id=45819601)**（来源：Hacker News）  
-  > 支持自然语言语音控制、情感化表达和流式生成，集成vLLM并可在单GPU运行
+- **[PageIndex：基于推理的RAG系统](https://github.com/VectifyAI/PageIndex)**（来源：GitHub）  
+  > 无需向量数据库和文档分块，通过层次化树状索引实现类人检索，在金融文档分析中达98.7%准确率
 
-- **[Tritex：Triton中LLM预训练实现](https://github.com/martin-kukla/tritex)**（来源：GitHub）  
-  > 在A100 SXM上以57.5% MFU复制GPT2 1.6B，展示高效训练基础设施设计
+- **[Skyvern：基于LLM和CV的浏览器自动化](https://github.com/Skyvern-AI/skyvern)**（来源：GitHub）  
+  > 智能代理理解网页内容并执行操作，无需编写定制脚本即可适应不同网站布局，解决传统RPA易失效痛点
 
-- **[Anthropic推出MCP代码执行工程指南](https://twitter.com/AnthropicAI/status/1985846791842250860)**（来源：Anthropic）  
-  > 强调使用更多工具降低token消耗，展示代理如何高效执行代码和管理多工具
+- **[Intraview：VS Code动态代码导览扩展](https://news.ycombinator.com/item?id=45837067)**（来源：Hacker News）  
+  > 通过本地MCP服务器创建动态代码导览，帮助开发者理解和维护AI生成的代码，无需云端服务
 
-- **[Roblox开源PII分类器](https://huggingface.co/Roblox/roblox-pii-classifier)**（来源：HuggingFace）  
-  > 处理61亿条日常消息，20万QPS且P90延迟低于100ms，为大规模AI应用提供高效检测
+- **[Graphiti MCP实现跨应用共享内存](https://twitter.com/_avichawla/status/1985958015452020788)**（来源：Twitter）  
+  > 演示如何将本地Graphiti MCP服务器连接到Claude Desktop和Cursor，作为"代理内存"跨工具持久化检索时序知识图
 
-- **[LitServe实现MCP服务器快速部署](https://twitter.com/_avichawla/status/1985595667079971190)**（来源：Twitter）  
-  > 基于FastAPI，约10行代码即可将模型/RAG/代理作为MCP服务器部署并连接Claude Desktop
+- **[Hugging Face发布200+页Smol训练手册](https://twitter.com/LoubnaBenAllal1/status/1986110843600117760)**（来源：Twitter）  
+  > 涵盖架构/训练前/训练中/训练后/评估，配有可视化解释器，为AI训练提供全面指导
 
-- **[边缘VPN：去中心化P2P网络工具](https://github.com/mudler/edgevpn)**（来源：GitHub）  
-  > 基于libp2p构建，无需中央服务器创建加密隧道，支持Kubernetes集群组网和边缘计算
+- **[tool2agent：LLM工具反馈工作流协议](https://news.ycombinator.com/item?id=45841216)**（来源：Hacker News）  
+  > 提供标准化接口解决LLM工具反馈系统接口不明确问题，帮助开发者构建更高效的AI工作流
 
 ---
 
 ### 各渠道精选摘要
-- [AINews](./2025-11-06/ai_news_summary_2025-11-06.md)
-- [GitHub Trending](./2025-11-06/github_trending_2025-11-06.md)
-- [少数派](./2025-11-06/shaoshupai_2025-11-06.md)
-- [36Kr](./2025-11-06/36kr_summary_2025-11-06.md)
-- [美团技术团队](./2025-11-06/meituan_2025-11-06.md)
-- [Go Weekly](./2025-11-06/go_weekly_2025-11-06.md)
-- [Hacker News 首页](./2025-11-06/hacker_news_frontpage_2025-11-06.md)
-- [Hacker News 近期最佳](./2025-11-06/hacker_news_best_2025-11-06.md)
-- [Hacker News 高赞评论](./2025-11-06/hacker_news_top_comments_2025-11-06.md)
-- [Hacker News 问答](./2025-11-06/hacker_news_ask_2025-11-06.md)
-- [Hacker News 展示](./2025-11-06/hacker_news_show_2025-11-06.md)
-- [Hacker News 音频技术](./2025-11-06/hacker_news_audio_tech_2025-11-06.md)
+- [AINews](./2025-11-07/ai_news_summary_2025-11-07.md)
+- [GitHub Trending](./2025-11-07/github_trending_2025-11-07.md)
+- [少数派](./2025-11-07/shaoshupai_2025-11-07.md)
+- [36Kr](./2025-11-07/36kr_summary_2025-11-07.md)
+- [美团技术团队](./2025-11-07/meituan_2025-11-07.md)
+- [Go Weekly](./2025-11-07/go_weekly_2025-11-07.md)
+- [Hacker News 首页](./2025-11-07/hacker_news_frontpage_2025-11-07.md)
+- [Hacker News 近期最佳](./2025-11-07/hacker_news_best_2025-11-07.md)
+- [Hacker News 高赞评论](./2025-11-07/hacker_news_top_comments_2025-11-07.md)
+- [Hacker News 问答](./2025-11-07/hacker_news_ask_2025-11-07.md)
+- [Hacker News 展示](./2025-11-07/hacker_news_show_2025-11-07.md)
+- [Hacker News 音频技术](./2025-11-07/hacker_news_audio_tech_2025-11-07.md)
 
 # 往日新闻
+
+#### [2025-11-06](./2025-11-06/newsletter.md)
 
 #### [2025-11-05](./2025-11-05/newsletter.md)
 
