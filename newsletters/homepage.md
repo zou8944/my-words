@@ -1,59 +1,61 @@
 ## 今日要闻
 
-<sub> 生成时间：2025-11-10 08:10:15</sub>
+<sub> 生成时间：2025-11-12 08:09:46</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[Kimi K2 Thinking在代理基准测试中超越GPT-5](https://moonshotai.github.io/Kimi-K2/thinking.html#footnote-3-2)**（来源：AINews）  
-  > 1T参数MoE模型在复杂工具使用任务中表现卓越，成为开源权重新标杆
+- **[adk-go](https://github.com/google/adk-go)**（来源：GitHub Trending）  
+  > 谷歌开源Go语言AI智能体开发套件，代码优先设计支持灵活构建、评估和部署复杂代理系统
 
-- **[DreamGym通过"经验模型"革新RL训练](https://twitter.com/jaseweston/status/1986613046047846569)**（来源：AINews）  
-  > 用推理合成经验替代真实环境演练，在模拟到真实转换中表现优异
+- **[MCP Framework](https://news.ycombinator.com/item?id=45893130)**（来源：Hacker News）  
+  > Rust实现的模型上下文协议框架，支持AI代理调用自定义工具，提供Web调试界面和8个示例工具
 
-- **[Meta EdgeTAM实现实时分割跟踪](https://twitter.com/mervenoyann/status/1986785795424788212)**（来源：AINews）  
-  > SAM2替代方案，速度提升22倍，iPhone 15 Pro Max达16 FPS，Apache-2.0许可
+- **[Kimi K2 Thinking模型](https://www.reddit.com/r/LocalLLaMA/comments/1oth5pw/ama_with_moonshot_ai_the_opensource_frontier_lab/)**（来源：AINews）  
+  > 混合注意力架构支持200-300工具调用，原生INT4量化，训练成本仅460万美元
 
-- **[vLLM与SGLang竞争定义推理能力边界](https://twitter.com/EdwardSun0909/status/1986603769195602411)**（来源：AINews）  
-  > 业界视为"真正的AGI竞争"，反映推理堆栈如何定义实践能力边界
+- **[Meta Omnilingual ASR](https://twitter.com/AIatMeta/status/1987946571439444361)**（来源：AINews）  
+  > 开源覆盖1600+语言的语音识别套件，包含500种首次获得服务的语言和7B参数表示模型
 
-- **[GitHub Copilot Orchestra多代理模式开源](https://twitter.com/code/status/1986622178146562300)**（来源：AINews）  
-  > 正式化多代理、测试驱动开发循环，完整提示词开源提供标准化工作流
+- **[Rust缓存友好型Lanczos算法](https://news.ycombinator.com/item?id=45889891)**（来源：Hacker News）  
+  > 低内存实现的Lanczos算法优化，提升科学计算和机器学习中的矩阵运算效率
 
-- **[Helion GPU内核DSL简化注意力机制开发](https://pytorch.org/blog/helion/)**（来源：AINews）  
-  > PyTorch团队DSL在延迟、吞吐量和内存方面优于Triton和Flex Attention
+- **[SYNTH合成数据集](https://twitter.com/Dorialexander/status/1987930819021635964)**（来源：AINews）  
+  > 完全合成的通用预训练数据集，仅用200B tokens训练出在非代码任务达到SOTA的推理模型
 
-- **[jamwithai/arxiv-paper-curator](https://github.com/jamwithai/arxiv-paper-curator)**（来源：GitHub Trending）  
-  > 6周实践课程构建生产级RAG系统，FastAPI+OpenSearch+Docker技术栈
+- **[AMD与Modular实现2.2倍推理加速](https://twitter.com/AMD/status/1987898172484567238)**（来源：AINews）  
+  > 14天内将Instinct MI355X推理性能提升2.2倍，展示硬件优化潜力
 
-- **[awslabs/mcp](https://github.com/awslabs/mcp)**（来源：GitHub Trending）  
-  > AWS模型上下文协议服务器套件，标准化连接LLM应用与AWS资源
+- **[OpenAI GEPA自进化代理框架](https://twitter.com/DSPyOSS/status/1988021062727020589)**（来源：AINews）  
+  > 支持代理反思、从反馈学习并自我进化指令，已有开发者展示Python inspect创造性组合
 
-- **[Ironclad：形式化验证的类Unix操作系统内核](https://news.ycombinator.com/item?id=45860843)**（来源：Hacker News）  
-  > 具备实时能力的内核，通过形式化验证确保系统可靠性
+- **[10,000小时机器人数据集](https://twitter.com/eddybuild/status/1987951619804414416)**（来源：AINews）  
+  > 大规模自我中心机器人数据集含2,153名工作者、10.8亿帧，推动机器人学习研究
 
-- **[Trilogy Studio：开源SQL编辑器和可视化工具](https://news.ycombinator.com/item?id=45870334)**（来源：Hacker News）  
-  > SQL-first分析IDE，集成语义层解决查询复用和数据源变更问题
+- **[Google Nested Learning](https://research.google/blog/introducing-nested-learning-a-new-ml-paradigm-for-continual-learning/)**（来源：AINews）  
+  > 通过嵌套优化器层解决灾难性遗忘问题的新机器学习范式，实现持续学习稳定性能
 
 ---
 
 ### 各渠道精选摘要
-- [AINews](./2025-11-10/ai_news_summary_2025-11-10.md)
-- [GitHub Trending](./2025-11-10/github_trending_2025-11-10.md)
-- [少数派](./2025-11-10/shaoshupai_2025-11-10.md)
-- [36Kr](./2025-11-10/36kr_summary_2025-11-10.md)
-- [美团技术团队](./2025-11-10/meituan_2025-11-10.md)
-- [Go Weekly](./2025-11-10/go_weekly_2025-11-10.md)
-- [Hacker News 首页](./2025-11-10/hacker_news_frontpage_2025-11-10.md)
-- [Hacker News 近期最佳](./2025-11-10/hacker_news_best_2025-11-10.md)
-- [Hacker News 高赞评论](./2025-11-10/hacker_news_top_comments_2025-11-10.md)
-- [Hacker News 问答](./2025-11-10/hacker_news_ask_2025-11-10.md)
-- [Hacker News 展示](./2025-11-10/hacker_news_show_2025-11-10.md)
-- [Hacker News 音频技术](./2025-11-10/hacker_news_audio_tech_2025-11-10.md)
+- [AINews](./2025-11-12/ai_news_summary_2025-11-12.md)
+- [GitHub Trending](./2025-11-12/github_trending_2025-11-12.md)
+- [少数派](./2025-11-12/shaoshupai_2025-11-12.md)
+- [36Kr](./2025-11-12/36kr_summary_2025-11-12.md)
+- [美团技术团队](./2025-11-12/meituan_2025-11-12.md)
+- [Go Weekly](./2025-11-12/go_weekly_2025-11-12.md)
+- [Hacker News 首页](./2025-11-12/hacker_news_frontpage_2025-11-12.md)
+- [Hacker News 近期最佳](./2025-11-12/hacker_news_best_2025-11-12.md)
+- [Hacker News 高赞评论](./2025-11-12/hacker_news_top_comments_2025-11-12.md)
+- [Hacker News 问答](./2025-11-12/hacker_news_ask_2025-11-12.md)
+- [Hacker News 展示](./2025-11-12/hacker_news_show_2025-11-12.md)
+- [Hacker News 音频技术](./2025-11-12/hacker_news_audio_tech_2025-11-12.md)
 
 # 往日新闻
+
+#### [2025-11-10](./2025-11-10/newsletter.md)
 
 #### [2025-11-07](./2025-11-07/newsletter.md)
 
