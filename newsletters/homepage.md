@@ -1,59 +1,61 @@
 ## 今日要闻
 
-<sub> 生成时间：2025-11-12 08:09:46</sub>
+<sub> 生成时间：2025-11-13 08:09:51</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[adk-go](https://github.com/google/adk-go)**（来源：GitHub Trending）  
-  > 谷歌开源Go语言AI智能体开发套件，代码优先设计支持灵活构建、评估和部署复杂代理系统
+- **[Jasmine：基于Jax的简洁、高效、可扩展世界建模代码库](https://news.ycombinator.com/item?id=45907839)**（来源：Hacker News）  
+  > Jax实现的世界建模库，提供简洁API和高效训练，适合研究复杂环境中的序列预测任务
 
-- **[MCP Framework](https://news.ycombinator.com/item?id=45893130)**（来源：Hacker News）  
-  > Rust实现的模型上下文协议框架，支持AI代理调用自定义工具，提供Web调试界面和8个示例工具
+- **[Marble：多模态世界模型](https://news.ycombinator.com/item?id=45907541)**（来源：Hacker News）  
+  > 开源多模态世界模型，整合视觉与语言理解，推动具身智能和环境交互研究
 
-- **[Kimi K2 Thinking模型](https://www.reddit.com/r/LocalLLaMA/comments/1oth5pw/ama_with_moonshot_ai_the_opensource_frontier_lab/)**（来源：AINews）  
-  > 混合注意力架构支持200-300工具调用，原生INT4量化，训练成本仅460万美元
+- **[让 Clang AST 更精简、更快速](https://news.ycombinator.com/item?id=45905620)**（来源：Hacker News）  
+  > Clang AST内存优化方案，减少编译器资源占用，提升大型代码库编译效率
 
-- **[Meta Omnilingual ASR](https://twitter.com/AIatMeta/status/1987946571439444361)**（来源：AINews）  
-  > 开源覆盖1600+语言的语音识别套件，包含500种首次获得服务的语言和7B参数表示模型
+- **[AI代码为何以不同方式失败](https://news.ycombinator.com/item?id=45901525)**（来源：Hacker News）  
+  > 基于200个团队实践总结：AI生成代码易违反系统隐含约束，需用AI验证防范风险
 
-- **[Rust缓存友好型Lanczos算法](https://news.ycombinator.com/item?id=45889891)**（来源：Hacker News）  
-  > 低内存实现的Lanczos算法优化，提升科学计算和机器学习中的矩阵运算效率
+- **[KV 集市——像 memcached 一样跨 GPU 共享 LLM 注意力缓存](https://news.ycombinator.com/item?id=45906914)**（来源：Hacker News）  
+  > 跨GPU注意力缓存共享系统，优化多GPU推理吞吐量，降低LLM服务延迟
 
-- **[SYNTH合成数据集](https://twitter.com/Dorialexander/status/1987930819021635964)**（来源：AINews）  
-  > 完全合成的通用预训练数据集，仅用200B tokens训练出在非代码任务达到SOTA的推理模型
+- **[Scribe v2 实时版——新一代实时语音转文本 SOTA 模型](https://news.ycombinator.com/item?id=45905100)**（来源：Hacker News）  
+  > ElevenLabs发布150ms延迟语音转文本模型，准确率93.5%，支持90+语言，适用于实时AI代理
 
-- **[AMD与Modular实现2.2倍推理加速](https://twitter.com/AMD/status/1987898172484567238)**（来源：AINews）  
-  > 14天内将Instinct MI355X推理性能提升2.2倍，展示硬件优化潜力
+- **[Python 适合 AI 开发：是确实更优，还是仅仅占了先机？](https://news.ycombinator.com/item?id=45901008)**（来源：Hacker News）  
+  > 深度探讨JVM在AI生态潜力，分析Python优势与替代技术栈可能性
 
-- **[OpenAI GEPA自进化代理框架](https://twitter.com/DSPyOSS/status/1988021062727020589)**（来源：AINews）  
-  > 支持代理反思、从反馈学习并自我进化指令，已有开发者展示Python inspect创造性组合
+- **[探讨现代Postgres架构：无共享与全共享之争](https://news.ycombinator.com/item?id=45903862)**（来源：Hacker News）  
+  > 对比无服务器与裸金属Postgres架构优劣，为高扩展OLTP场景提供选型参考
 
-- **[10,000小时机器人数据集](https://twitter.com/eddybuild/status/1987951619804414416)**（来源：AINews）  
-  > 大规模自我中心机器人数据集含2,153名工作者、10.8亿帧，推动机器人学习研究
+- **[usestrix/strix](https://github.com/usestrix/strix)**（来源：GitHub Trending）  
+  > 开源AI安全测试平台，通过自主智能体模拟黑客行为，自动化检测SQL注入、XSS等漏洞
 
-- **[Google Nested Learning](https://research.google/blog/introducing-nested-learning-a-new-ml-paradigm-for-continual-learning/)**（来源：AINews）  
-  > 通过嵌套优化器层解决灾难性遗忘问题的新机器学习范式，实现持续学习稳定性能
+- **[yichuan-w/LEANN](https://github.com/yichuan-w/LEANN)**（来源：GitHub Trending）  
+  > 全球最小向量数据库，图基重计算技术节省97%存储，在个人设备运行私有RAG应用
 
 ---
 
 ### 各渠道精选摘要
-- [AINews](./2025-11-12/ai_news_summary_2025-11-12.md)
-- [GitHub Trending](./2025-11-12/github_trending_2025-11-12.md)
-- [少数派](./2025-11-12/shaoshupai_2025-11-12.md)
-- [36Kr](./2025-11-12/36kr_summary_2025-11-12.md)
-- [美团技术团队](./2025-11-12/meituan_2025-11-12.md)
-- [Go Weekly](./2025-11-12/go_weekly_2025-11-12.md)
-- [Hacker News 首页](./2025-11-12/hacker_news_frontpage_2025-11-12.md)
-- [Hacker News 近期最佳](./2025-11-12/hacker_news_best_2025-11-12.md)
-- [Hacker News 高赞评论](./2025-11-12/hacker_news_top_comments_2025-11-12.md)
-- [Hacker News 问答](./2025-11-12/hacker_news_ask_2025-11-12.md)
-- [Hacker News 展示](./2025-11-12/hacker_news_show_2025-11-12.md)
-- [Hacker News 音频技术](./2025-11-12/hacker_news_audio_tech_2025-11-12.md)
+- [AINews](./2025-11-13/ai_news_summary_2025-11-13.md)
+- [GitHub Trending](./2025-11-13/github_trending_2025-11-13.md)
+- [少数派](./2025-11-13/shaoshupai_2025-11-13.md)
+- [36Kr](./2025-11-13/36kr_summary_2025-11-13.md)
+- [美团技术团队](./2025-11-13/meituan_2025-11-13.md)
+- [Go Weekly](./2025-11-13/go_weekly_2025-11-13.md)
+- [Hacker News 首页](./2025-11-13/hacker_news_frontpage_2025-11-13.md)
+- [Hacker News 近期最佳](./2025-11-13/hacker_news_best_2025-11-13.md)
+- [Hacker News 高赞评论](./2025-11-13/hacker_news_top_comments_2025-11-13.md)
+- [Hacker News 问答](./2025-11-13/hacker_news_ask_2025-11-13.md)
+- [Hacker News 展示](./2025-11-13/hacker_news_show_2025-11-13.md)
+- [Hacker News 音频技术](./2025-11-13/hacker_news_audio_tech_2025-11-13.md)
 
 # 往日新闻
+
+#### [2025-11-12](./2025-11-12/newsletter.md)
 
 #### [2025-11-10](./2025-11-10/newsletter.md)
 
