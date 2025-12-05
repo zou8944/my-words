@@ -1,59 +1,61 @@
 ## 今日要闻
 
-<sub> 生成时间：2025-11-14 08:10:34</sub>
+<sub> 生成时间：2025-12-05 08:10:00</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[DBOS Java – 基于 Postgres 的持久化工作流引擎](https://news.ycombinator.com/item?id=45920156)**（来源：Hacker News）  
-  > 开源Java库，基于Postgres实现持久化工作流，故障重启后可从检查点恢复状态，适用于AI代理、支付等长时任务
+- **[google/adk-go](https://github.com/google/adk-go)**（来源：GitHub Trending）
+  > 谷歌开源的Go语言AI智能体开发套件，采用代码优先理念，提供灵活可控的框架用于构建、评估和部署复杂AI代理。
 
-- **[Memori：SQL原生内存引擎](https://github.com/GibsonAI/Memori)**（来源：GitHub Trending）  
-  > 为LLM提供持久化可查询记忆，一行代码集成主流AI框架，无需向量数据库即可节约80-90%成本
+- **[LightRAG](https://github.com/HKUDS/LightRAG)**（来源：GitHub Trending）
+  > 高效检索增强生成框架，通过知识图谱与向量检索结合实现精准信息提取，显著提升RAG系统的查询速度与准确性。
 
-- **[adk-go：Go语言AI智能体开发套件](https://github.com/google/adk-go)**（来源：GitHub Trending）  
-  > 谷歌开源Go语言AI开发套件，代码优先设计，支持多智能体编排和云原生部署
+- **[verl](https://github.com/volcengine/verl)**（来源：GitHub Trending）
+  > 火山引擎开源的大语言模型强化学习训练库，提供生产级RLHF解决方案，通过3D混合引擎显著提升训练吞吐效率。
 
-- **[我们将 MongoDB 成本降低了 90%](https://news.ycombinator.com/item?id=45915884)**（来源：Hacker News）  
-  > Prosopo公司通过优化查询、索引和分片策略，大幅降低MongoDB运营成本
+- **[CUDA-l2：通过强化学习在矩阵乘法性能上超越cuBLAS](https://news.ycombinator.com/item?id=46153058)**（来源：Hacker News）
+  > 利用强化学习优化矩阵乘法性能，在特定场景下超越NVIDIA cuBLAS库，展示了AI优化底层计算的新思路。
 
-- **[verl：字节跳动LLM强化学习训练库](https://github.com/volcengine/verl)**（来源：GitHub Trending）  
-  > 字节跳动开源RLHF训练库，支持PPO、GRPO等算法，集成FSDP和vLLM，具备3D混合引擎优化
+- **[关于 Go、Rust 与 Zig 的思考](https://news.ycombinator.com/item?id=46153466)**（来源：Hacker News）
+  > 对Go、Rust、Zig三种系统编程语言进行深度对比与思考，探讨各自的设计哲学、适用场景及未来趋势。
 
-- **[Trace.taxi – 智能体消息可视化工具](https://news.ycombinator.com/item?id=45921651)**（来源：Hacker News）  
-  > 开源本地化Agent追踪可视化工具，替代Langfuse和MLflow，支持JSON消息解析和MCP调用
+- **[Django 6 发布](https://news.ycombinator.com/item?id=46153116)**（来源：Hacker News）
+  > Python流行Web框架Django发布第6个主要版本，带来异步视图、表单等核心组件的原生异步支持等重大更新。
 
-- **[650GB数据：Polars、DuckDB、Daft与Spark性能对比](https://news.ycombinator.com/item?id=45920881)**（来源：Hacker News）  
-  > 大规模数据处理框架性能基准测试，为数据工程选型提供实践参考
+- **[PGlite – 可嵌入式 Postgres](https://news.ycombinator.com/item?id=46146133)**（来源：Hacker News）
+  > 一个轻量级、可嵌入的PostgreSQL版本，旨在简化本地开发、测试和边缘计算场景下的数据库使用。
 
-- **[LightRAG：轻量高效检索增强生成框架](https://github.com/HKUDS/LightRAG)**（来源：GitHub Trending）  
-  > 知识图谱与向量检索双级索引，显著提升RAG系统准确性和响应速度
+- **[原生AI工程师与反AI工程师](https://news.ycombinator.com/item?id=46153251)**（来源：Hacker News）
+  > 探讨AI时代工程师思维范式的转变，核心在于理解系统边界与故障模式，而非手动编写每一行代码。
 
-- **[Anytool——为LLM赋予无限工具](https://news.ycombinator.com/item?id=45919345)**（来源：Hacker News）  
-  > AI工具生成平台，将自然语言需求转化为实际npm工具并隔离执行，支持缓存和状态管理
+- **[使用 Parquet、DuckDB 和 Iceberg 构建经济的 OpenTelemetry 数据湖仓](https://news.ycombinator.com/item?id=46152772)**（来源：Hacker News）
+  > 个人实战分享：利用现代数据栈（DuckDB, Iceberg）和廉价对象存储，构建高性价比的可观测性数据平台。
 
-- **[分布式系统中的心跳机制](https://news.ycombinator.com/item?id=45914815)**（来源：Hacker News）  
-  > 深度探讨分布式系统心跳设计原理与实践，涵盖故障检测和系统稳定性保障
+- **[WoolyAI：在机器学习任务执行中分离 GPU 计算与 CPU](https://news.ycombinator.com/item?id=46154601)**（来源：Hacker News）
+  > 通过将GPU计算与CPU解耦，并利用GPU虚拟机池，实现GPU资源的弹性扩展与更高利用率，优化ML任务成本。
 
 ---
 
 ### 各渠道精选摘要
-- [AINews](./2025-11-14/ai_news_summary_2025-11-14.md)
-- [GitHub Trending](./2025-11-14/github_trending_2025-11-14.md)
-- [少数派](./2025-11-14/shaoshupai_2025-11-14.md)
-- [36Kr](./2025-11-14/36kr_summary_2025-11-14.md)
-- [美团技术团队](./2025-11-14/meituan_2025-11-14.md)
-- [Go Weekly](./2025-11-14/go_weekly_2025-11-14.md)
-- [Hacker News 首页](./2025-11-14/hacker_news_frontpage_2025-11-14.md)
-- [Hacker News 近期最佳](./2025-11-14/hacker_news_best_2025-11-14.md)
-- [Hacker News 高赞评论](./2025-11-14/hacker_news_top_comments_2025-11-14.md)
-- [Hacker News 问答](./2025-11-14/hacker_news_ask_2025-11-14.md)
-- [Hacker News 展示](./2025-11-14/hacker_news_show_2025-11-14.md)
-- [Hacker News 音频技术](./2025-11-14/hacker_news_audio_tech_2025-11-14.md)
+- [AINews](./2025-12-05/ai_news_summary_2025-12-05.md)
+- [GitHub Trending](./2025-12-05/github_trending_2025-12-05.md)
+- [少数派](./2025-12-05/shaoshupai_2025-12-05.md)
+- [36Kr](./2025-12-05/36kr_summary_2025-12-05.md)
+- [美团技术团队](./2025-12-05/meituan_2025-12-05.md)
+- [Go Weekly](./2025-12-05/go_weekly_2025-12-05.md)
+- [Hacker News 首页](./2025-12-05/hacker_news_frontpage_2025-12-05.md)
+- [Hacker News 近期最佳](./2025-12-05/hacker_news_best_2025-12-05.md)
+- [Hacker News 高赞评论](./2025-12-05/hacker_news_top_comments_2025-12-05.md)
+- [Hacker News 问答](./2025-12-05/hacker_news_ask_2025-12-05.md)
+- [Hacker News 展示](./2025-12-05/hacker_news_show_2025-12-05.md)
+- [Hacker News 音频技术](./2025-12-05/hacker_news_audio_tech_2025-12-05.md)
 
 # 往日新闻
+
+#### [2025-11-14](./2025-11-14/newsletter.md)
 
 #### [2025-11-13](./2025-11-13/newsletter.md)
 
