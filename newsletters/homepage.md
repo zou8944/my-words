@@ -1,59 +1,61 @@
 ## 今日要闻
 
-<sub> 生成时间：2025-12-05 08:10:00</sub>
+<sub> 生成时间：2025-12-06 08:10:10</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[google/adk-go](https://github.com/google/adk-go)**（来源：GitHub Trending）
-  > 谷歌开源的Go语言AI智能体开发套件，采用代码优先理念，提供灵活可控的框架用于构建、评估和部署复杂AI代理。
+- **[OpenRouter发布首份《AI现状》报告，揭示行业关键趋势](https://openrouter.ai/state-of-ai)**（来源：AINews）
+  > 基于7万亿令牌数据，报告显示编程用例占付费流量50%以上，开源模型过半流量用于角色扮演，用户更看重质量而非价格。
 
-- **[LightRAG](https://github.com/HKUDS/LightRAG)**（来源：GitHub Trending）
-  > 高效检索增强生成框架，通过知识图谱与向量检索结合实现精准信息提取，显著提升RAG系统的查询速度与准确性。
+- **[Mistral Large 3成为开源编码模型新标杆](https://twitter.com/MistralAI/status/1996580307336638951)**（来源：AINews）
+  > Mistral AI宣布其Large 3模型在lmarena上成为排名第一的开源编码模型，已通过Ollama Cloud提供云端服务。
 
-- **[verl](https://github.com/volcengine/verl)**（来源：GitHub Trending）
-  > 火山引擎开源的大语言模型强化学习训练库，提供生产级RLHF解决方案，通过3D混合引擎显著提升训练吞吐效率。
+- **[智能体安全面临严峻挑战，基准测试揭示代码漏洞率高](https://twitter.com/omarsar0/status/1996595107924263287)**（来源：AINews）
+  > SUSVIBES基准测试显示，前沿编码智能体仅能产生10.5%的安全解决方案，凸显AI生成代码的重大安全隐患。
 
-- **[CUDA-l2：通过强化学习在矩阵乘法性能上超越cuBLAS](https://news.ycombinator.com/item?id=46153058)**（来源：Hacker News）
-  > 利用强化学习优化矩阵乘法性能，在特定场景下超越NVIDIA cuBLAS库，展示了AI优化底层计算的新思路。
+- **[sst/opencode](https://github.com/sst/opencode)**（来源：GitHub Trending）
+  > 专为终端设计的开源AI编程助手，支持Claude、OpenAI等多种模型，提供构建和规划两种智能代理模式，内置LSP支持。
 
-- **[关于 Go、Rust 与 Zig 的思考](https://news.ycombinator.com/item?id=46153466)**（来源：Hacker News）
-  > 对Go、Rust、Zig三种系统编程语言进行深度对比与思考，探讨各自的设计哲学、适用场景及未来趋势。
+- **[wshobson/agents](https://github.com/wshobson/agents)**（来源：GitHub Trending）
+  > 为Claude Code提供的智能自动化与多智能体编排系统，包含63个插件、85个专家智能体和47项模块化技能，支持混合模型编排。
 
-- **[Django 6 发布](https://news.ycombinator.com/item?id=46153116)**（来源：Hacker News）
-  > Python流行Web框架Django发布第6个主要版本，带来异步视图、表单等核心组件的原生异步支持等重大更新。
+- **[我们为何选择用 Zig 语言构建 Lightpanda](https://news.ycombinator.com/item?id=46165249)**（来源：Hacker News）
+  > 分享选择Zig构建高性能数据可视化库的实战经验，探讨其内存管理、编译时计算等特性如何满足严苛的性能需求。
 
-- **[PGlite – 可嵌入式 Postgres](https://news.ycombinator.com/item?id=46146133)**（来源：Hacker News）
-  > 一个轻量级、可嵌入的PostgreSQL版本，旨在简化本地开发、测试和边缘计算场景下的数据库使用。
+- **[Rust 防御式编程模式](https://news.ycombinator.com/item?id=46163609)**（来源：Hacker News）
+  > 探讨在Rust中实践防御式编程的模式与技巧，如何利用类型系统和所有权模型构建更健壮、可维护的代码。
 
-- **[原生AI工程师与反AI工程师](https://news.ycombinator.com/item?id=46153251)**（来源：Hacker News）
-  > 探讨AI时代工程师思维范式的转变，核心在于理解系统边界与故障模式，而非手动编写每一行代码。
+- **[Synadia与TigerBeetle向Zig软件基金会捐赠51.2万美元](https://news.ycombinator.com/item?id=46163671)**（来源：Hacker News）
+  > 两家公司向Zig软件基金会捐赠巨额资金，支持Zig语言生态发展，反映业界对新兴系统编程语言的认可与投入。
 
-- **[使用 Parquet、DuckDB 和 Iceberg 构建经济的 OpenTelemetry 数据湖仓](https://news.ycombinator.com/item?id=46152772)**（来源：Hacker News）
-  > 个人实战分享：利用现代数据栈（DuckDB, Iceberg）和廉价对象存储，构建高性价比的可观测性数据平台。
+- **[Sloppylint —— 用于 AI 生成 Python 代码的代码检查工具](https://news.ycombinator.com/item?id=46167703)**（来源：Hacker News）
+  > 专门检测AI生成代码中特有错误模式的工具，如引用不存在包、占位符代码等，提升AI辅助编程的代码质量。
 
-- **[WoolyAI：在机器学习任务执行中分离 GPU 计算与 CPU](https://news.ycombinator.com/item?id=46154601)**（来源：Hacker News）
-  > 通过将GPU计算与CPU解耦，并利用GPU虚拟机池，实现GPU资源的弹性扩展与更高利用率，优化ML任务成本。
+- **[FlowCoder——为Claude Code和Codex“编程”的流程图工具](https://news.ycombinator.com/item?id=46167801)**（来源：Hacker News）
+  > 可视化流程图工具，用于为AI编码代理创建自动化工作流，解决步骤遗漏、重复提示等问题，提升智能体协作效率。
 
 ---
 
 ### 各渠道精选摘要
-- [AINews](./2025-12-05/ai_news_summary_2025-12-05.md)
-- [GitHub Trending](./2025-12-05/github_trending_2025-12-05.md)
-- [少数派](./2025-12-05/shaoshupai_2025-12-05.md)
-- [36Kr](./2025-12-05/36kr_summary_2025-12-05.md)
-- [美团技术团队](./2025-12-05/meituan_2025-12-05.md)
-- [Go Weekly](./2025-12-05/go_weekly_2025-12-05.md)
-- [Hacker News 首页](./2025-12-05/hacker_news_frontpage_2025-12-05.md)
-- [Hacker News 近期最佳](./2025-12-05/hacker_news_best_2025-12-05.md)
-- [Hacker News 高赞评论](./2025-12-05/hacker_news_top_comments_2025-12-05.md)
-- [Hacker News 问答](./2025-12-05/hacker_news_ask_2025-12-05.md)
-- [Hacker News 展示](./2025-12-05/hacker_news_show_2025-12-05.md)
-- [Hacker News 音频技术](./2025-12-05/hacker_news_audio_tech_2025-12-05.md)
+- [AINews](./2025-12-06/ai_news_summary_2025-12-06.md)
+- [GitHub Trending](./2025-12-06/github_trending_2025-12-06.md)
+- [少数派](./2025-12-06/shaoshupai_2025-12-06.md)
+- [36Kr](./2025-12-06/36kr_summary_2025-12-06.md)
+- [美团技术团队](./2025-12-06/meituan_2025-12-06.md)
+- [Go Weekly](./2025-12-06/go_weekly_2025-12-06.md)
+- [Hacker News 首页](./2025-12-06/hacker_news_frontpage_2025-12-06.md)
+- [Hacker News 近期最佳](./2025-12-06/hacker_news_best_2025-12-06.md)
+- [Hacker News 高赞评论](./2025-12-06/hacker_news_top_comments_2025-12-06.md)
+- [Hacker News 问答](./2025-12-06/hacker_news_ask_2025-12-06.md)
+- [Hacker News 展示](./2025-12-06/hacker_news_show_2025-12-06.md)
+- [Hacker News 音频技术](./2025-12-06/hacker_news_audio_tech_2025-12-06.md)
 
 # 往日新闻
+
+#### [2025-12-05](./2025-12-05/newsletter.md)
 
 #### [2025-11-14](./2025-11-14/newsletter.md)
 
