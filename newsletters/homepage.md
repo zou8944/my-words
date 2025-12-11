@@ -1,59 +1,61 @@
 ## 今日要闻
 
-<sub> 生成时间：2025-12-10 08:10:12</sub>
+<sub> 生成时间：2025-12-11 08:10:30</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[Hugging Face发布Claude Code技能，实现自然语言指令微调LLM](https://huggingface.co/blog/hf-skills-training)**（来源：AINews）
-  > 用自然语言描述微调任务，智能体自动完成数据集验证、GPU选择、作业启动到模型发布的全流程，显著降低LLM定制门槛。
+- **[Mistral发布开源代码模型Devstral 2及Vibe CLI工具链](https://mistral.ai/news/devstral-2-vibe-cli)**（来源：AINews）
+  > 开源123B/24B代码模型，性能对标Claude 3.5 Sonnet但成本低10倍，配套Vibe CLI提供终端/编辑器端到端代码自动化工作流。
 
-- **[Google发布Miras框架，探索后Transformer序列架构](https://arxiv.org/abs/2512.xxxxx)**（来源：AINews）
-  > 将Transformer和RNN重新定义为联想记忆系统，提出新架构在长上下文检索等任务上性能提升约20%，为下一代模型设计提供思路。
+- **[AWS Strands Agents：开源的模型驱动代理框架](https://github.com/aws/strands-agents)**（来源：AINews）
+  > AWS开源专注于规划、工具使用和评估的智能体框架，提供Python/TS SDK及向企业级AgentCore升级的路径。
 
-- **[LangChain发布长周期智能体评估模式与基准测试结果](https://twitter.com/LangChainAI/status/1997843687376904400)**（来源：AINews）
-  > 提供了评估长周期运行智能体（规划、文件系统、子智能体）的实用模式，并发布了在Terminal Bench 2.0上的基准测试结果。
+- **[NVIDIA/cutile-python](https://github.com/NVIDIA/cutile-python)**（来源：GitHub Trending）
+  > NVIDIA推出的GPU并行编程语言，用Python语法简化CUDA内核开发，结合易用性与高性能，适用于AI和HPC场景。
 
-- **[OpenEvolve：通过进化引导大语言模型发现算法](https://news.ycombinator.com/item?id=46211861)**（来源：Hacker News）
-  > 一个开源项目，利用进化算法引导LLM自动探索和发现新算法，为自动化算法设计和优化提供了新颖的研究路径。
+- **[google/adk-samples](https://github.com/google/adk-samples)**（来源：GitHub Trending）
+  > 谷歌Agent Development Kit官方示例库，提供Python/Go/Java多语言实现的智能体样例，覆盖从对话到复杂工作流。
 
-- **[Launch HN: Mentat (YC F24) – 通过运行时干预控制大语言模型](https://news.ycombinator.com/item?id=46207017)**（来源：Hacker News）
-  > 通过干预LLM内部特征激活来实现对模型行为的确定性控制，旨在解决幻觉和偏见问题，无需微调或复杂提示工程。
+- **[thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)**（来源：GitHub Trending）
+  > 为Claude Code设计的持久化记忆插件，通过AI压缩会话操作并生成语义摘要，解决AI编程助手跨会话记忆丢失问题。
 
-- **[加速 Spark 查询](https://news.ycombinator.com/item?id=46209807)**（来源：Hacker News）
-  > LitenDB通过将Spark数据重塑为基于Arrow的分布式张量，简化执行计划，声称能将连接密集型和分析查询性能提升10-100倍。
+- **[Rust 进入内核已不再是实验性功能](https://news.ycombinator.com/item?id=46213585)**（来源：Hacker News）
+  > Linux内核中的Rust支持已从“实验性”状态毕业，标志着其在系统级编程中的稳定性和可用性得到官方认可。
 
-- **[微软/VibeVoice](https://github.com/microsoft/VibeVoice)**（来源：GitHub Trending）
-  > 微软开源的高表现力长篇幅对话语音合成框架，采用超低帧率分词器和“下一词扩散”框架，支持多说话人、长达90分钟的音频生成。
+- **[Common Lisp、ASDF 与 Quicklisp：软件包管理详解](https://news.ycombinator.com/item?id=46216446)**（来源：Hacker News）
+  > 一篇深度技术文章，系统解析了Common Lisp生态中ASDF构建系统和Quicklisp包管理器的工作原理与最佳实践。
 
-- **[anthropics/claude-quickstarts](https://github.com/anthropics/claude-quickstarts)**（来源：GitHub Trending）
-  > Anthropic官方提供的Claude API快速入门项目集，包含客服助手、金融分析、计算机控制等可部署应用模板，基于最新多智能体架构。
+- **[基准测试：多GPU加载期间A100与H100的NVMe随机读取吞吐量对比](https://news.ycombinator.com/item?id=46219405)**（来源：Hacker News）
+  > 实测揭示A100集群在并行加载模型时PCIe Gen4存储I/O存在瓶颈，而H100的Gen5能线性扩展，对大模型冷启动有重要参考价值。
 
-- **[patchy631/ai-engineering-hub](https://github.com/patchy631/ai-engineering-hub)**（来源：GitHub Trending）
-  > 一个包含93+个生产级AI项目与深度教程的资源库，涵盖LLM、RAG和智能体，按难度分级，旨在通过真实案例帮助工程落地。
+- **[我开发了一款能绕过验证码和登录页面的AI网络爬虫](https://news.ycombinator.com/item?id=46221924)**（来源：Hacker News）
+  > Spidra.io无代码网页抓取工具，利用AI理解需求并自动绕过验证码和登录页面，直接提取结构化数据。
 
-- **[我最喜欢的小型哈希表](https://news.ycombinator.com/item?id=46205461)**（来源：Hacker News）
-  > 一篇深度技术文章，探讨了一个高效的小型哈希表实现的设计思路与性能优势，对底层数据结构和性能优化有实践参考价值。
+- **[Gophrql——PRQL 的纯 Go 实现](https://news.ycombinator.com/item?id=46223263)**（来源：Hacker News）
+  > 用Go语言实现的PRQL（Pipeline Relational Query Language）编译器，可将PRQL查询编译为多种数据库（Postgres、MySQL等）的SQL。
 
 ---
 
 ### 各渠道精选摘要
-- [AINews](./2025-12-10/ai_news_summary_2025-12-10.md)
-- [GitHub Trending](./2025-12-10/github_trending_2025-12-10.md)
-- [少数派](./2025-12-10/shaoshupai_2025-12-10.md)
-- [36Kr](./2025-12-10/36kr_summary_2025-12-10.md)
-- [美团技术团队](./2025-12-10/meituan_2025-12-10.md)
-- [Go Weekly](./2025-12-10/go_weekly_2025-12-10.md)
-- [Hacker News 首页](./2025-12-10/hacker_news_frontpage_2025-12-10.md)
-- [Hacker News 近期最佳](./2025-12-10/hacker_news_best_2025-12-10.md)
-- [Hacker News 高赞评论](./2025-12-10/hacker_news_top_comments_2025-12-10.md)
-- [Hacker News 问答](./2025-12-10/hacker_news_ask_2025-12-10.md)
-- [Hacker News 展示](./2025-12-10/hacker_news_show_2025-12-10.md)
-- [Hacker News 音频技术](./2025-12-10/hacker_news_audio_tech_2025-12-10.md)
+- [AINews](./2025-12-11/ai_news_summary_2025-12-11.md)
+- [GitHub Trending](./2025-12-11/github_trending_2025-12-11.md)
+- [少数派](./2025-12-11/shaoshupai_2025-12-11.md)
+- [36Kr](./2025-12-11/36kr_summary_2025-12-11.md)
+- [美团技术团队](./2025-12-11/meituan_2025-12-11.md)
+- [Go Weekly](./2025-12-11/go_weekly_2025-12-11.md)
+- [Hacker News 首页](./2025-12-11/hacker_news_frontpage_2025-12-11.md)
+- [Hacker News 近期最佳](./2025-12-11/hacker_news_best_2025-12-11.md)
+- [Hacker News 高赞评论](./2025-12-11/hacker_news_top_comments_2025-12-11.md)
+- [Hacker News 问答](./2025-12-11/hacker_news_ask_2025-12-11.md)
+- [Hacker News 展示](./2025-12-11/hacker_news_show_2025-12-11.md)
+- [Hacker News 音频技术](./2025-12-11/hacker_news_audio_tech_2025-12-11.md)
 
 # 往日新闻
+
+#### [2025-12-10](./2025-12-10/newsletter.md)
 
 #### [2025-12-09](./2025-12-09/newsletter.md)
 
