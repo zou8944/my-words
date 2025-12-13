@@ -1,59 +1,61 @@
 ## 今日要闻
 
-<sub> 生成时间：2025-12-12 08:10:33</sub>
+<sub> 生成时间：2025-12-13 08:09:58</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[开源数学推理模型Nomos 1在普特南竞赛中取得顶尖成绩](https://news.smol.ai/issues/25-12-10-not-much/)**（来源：AINews）
-  > 300B开源模型通过推理时仅激活30B参数的“组合推理”技术，在顶级数学竞赛中媲美闭源模型，证明高效推理架构的潜力。
+- **[研究揭示多智能体系统（MAS）的扩展定律](https://twitter.com/_philschmid/status/1998957966343446844)**（来源：AINews）
+  > Google与MIT的研究评估了180种配置，发现任务可并行时集中协调可提升性能，但单智能体基线超过~45%后增加智能体通常有害。
 
-- **[Unsloth实现3倍训练加速](https://news.smol.ai/issues/25-12-10-not-much/)**（来源：AINews）
-  > 通过融合变长RoPE和int64 Triton内核实现无填充训练，为Llama等主流模型带来3倍速度提升和50% VRAM节省，大幅降低微调门槛。
+- **[智谱AI开源移动端智能体框架AutoGLM](https://twitter.com/Zai_org/status/1999118106543919203)**（来源：AINews）
+  > 开源能理解手机屏幕并执行自主操作的多模态语言模型，模型权重MIT许可，代码Apache-2.0许可，旨在让“每部手机都成为AI手机”。
 
-- **[LangChain发布“Polly”智能体与调试CLI](https://twitter.com/LangChainAI/status/1998807193320305101)**（来源：AINews）
-  > 发布专门用于调试其他智能体的“Polly”智能体及配套CLI，标志着智能体开发工具向复杂系统可观测性演进。
+- **[llama.cpp支持实时模型切换](https://huggingface.co/blog/ggml-org/model-management-in-llamacpp)**（来源：AINews）
+  > 引入路由器模式，支持动态加载、卸载和切换模型而无需重启服务器，采用多进程架构隔离模型崩溃，提高稳定性和工作流灵活性。
 
-- **[vLLM集成Intel AutoRound量化技术](https://twitter.com/vllm_project/status/1998710451312771532)**（来源：AINews）
-  > 集成Intel训练后量化技术，可生成W4A16检查点并直接在Xeon、Gaudi等多种硬件上提供服务，提升部署效率与硬件兼容性。
+- **[Hugging Face TGI进入维护期，推荐vLLM和SGLang](https://twitter.com/LysandreJik/status/1999137874378125436)**（来源：AINews）
+  > Text Generation Inference（TGI）项目进入维护模式，官方推荐用户转向vLLM、SGLang以及llama.cpp/MLX等本地推理引擎。
 
-- **[Perceptron发布开源机器人感知模型Isaac-0.2](https://twitter.com/perceptroninc/status/1998812935821697363)**（来源：AINews）
-  > 开源10亿/20亿参数混合推理视觉语言模型，结合SigLIP与Qwen，为机器人提供强大的感知主干并计划支持视频与控制模态。
+- **[Tencent/WeKnora](https://github.com/Tencent/WeKnora)**（来源：GitHub Trending）
+  > 腾讯开源的基于LLM和RAG的文档理解与检索框架，支持多模态解析、混合检索、智能问答、Agent模式与MCP工具集成。
 
-- **[block/goose](https://github.com/block/goose)**（来源：GitHub Trending）
-  > 本地化、可扩展的开源AI智能体，能自主构建项目、编写代码、调试并编排工作流，超越代码建议，支持任意LLM与MCP服务器。
+- **[GoogleCloudPlatform/agent-starter-pack](https://github.com/GoogleCloudPlatform/agent-starter-pack)**（来源：GitHub Trending）
+  > Google Cloud官方推出的AI智能体快速部署框架，提供生产就绪模板，内置CI/CD、评估与可观测性，支持ReAct、RAG、多智能体等模式。
 
-- **[infiniflow/ragflow](https://github.com/infiniflow/ragflow)**（来源：GitHub Trending）
-  > 领先的开源RAG引擎，融合先进检索增强生成与智能体能力，通过深度文档理解与模板化分块技术处理多格式异构数据。
+- **[thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)**（来源：GitHub Trending）
+  > 为Claude Code设计的持久化记忆插件，能自动捕获并压缩编码会话，通过AI生成语义摘要，在后续会话中智能注入相关上下文。
 
-- **[Show HN：Sim——Apache-2.0 许可的 n8n 替代方案](https://news.ycombinator.com/item?id=46234186)**（来源：Hacker News）
-  > 开源视觉编辑器，用于构建智能体工作流，支持本地Docker部署，提供丰富的集成模块、工具调用、工作流追踪和原生RAG功能。
+- **[使用生成列实现SQLite JSON全索引速度](https://news.ycombinator.com/item?id=46243904)**（来源：Hacker News）
+  > 介绍SQLite中通过生成列和表达式索引优化JSON数据查询性能的方法，为处理半结构化数据提供高效方案。
 
-- **[为什么你的RAG每月花费2400美元（以及我们如何削减了73%）](https://news.ycombinator.com/item?id=46234309)**（来源：Hacker News）
-  > 深度分析生产RAG系统成本构成，并通过令牌感知上下文、混合重排、嵌入缓存和批量处理等实战优化策略显著降低成本。
+- **[Tor Project 宣布将转向 Rust 语言](https://news.ycombinator.com/item?id=46243543)**（来源：Hacker News）
+  > Tor项目正在用Rust重写其核心组件，以提高安全性、性能和可维护性，标志着基础设施软件向内存安全语言迁移的趋势。
 
-- **[pg_exporter：用于 PostgreSQL 指标收集的模块化 Prometheus 导出器](https://news.ycombinator.com/item?id=46232596)**（来源：Hacker News）
-  > 发布模块化、低开销的PostgreSQL监控工具，可自定义收集器以减少Prometheus负载，为后端工程师提供更灵活的数据库监控方案。
+- **[React Server Components 中的拒绝服务与源代码泄露漏洞](https://news.ycombinator.com/item?id=46236924)**（来源：Hacker News）
+  > 披露React Server Components在深度序列化RPC机制中潜在的安全风险，包括拒绝服务与源代码泄露，提醒开发者注意架构透明度。
 
 ---
 
 ### 各渠道精选摘要
-- [AINews](./2025-12-12/ai_news_summary_2025-12-12.md)
-- [GitHub Trending](./2025-12-12/github_trending_2025-12-12.md)
-- [少数派](./2025-12-12/shaoshupai_2025-12-12.md)
-- [36Kr](./2025-12-12/36kr_summary_2025-12-12.md)
-- [美团技术团队](./2025-12-12/meituan_2025-12-12.md)
-- [Go Weekly](./2025-12-12/go_weekly_2025-12-12.md)
-- [Hacker News 首页](./2025-12-12/hacker_news_frontpage_2025-12-12.md)
-- [Hacker News 近期最佳](./2025-12-12/hacker_news_best_2025-12-12.md)
-- [Hacker News 高赞评论](./2025-12-12/hacker_news_top_comments_2025-12-12.md)
-- [Hacker News 问答](./2025-12-12/hacker_news_ask_2025-12-12.md)
-- [Hacker News 展示](./2025-12-12/hacker_news_show_2025-12-12.md)
-- [Hacker News 音频技术](./2025-12-12/hacker_news_audio_tech_2025-12-12.md)
+- [AINews](./2025-12-13/ai_news_summary_2025-12-13.md)
+- [GitHub Trending](./2025-12-13/github_trending_2025-12-13.md)
+- [少数派](./2025-12-13/shaoshupai_2025-12-13.md)
+- [36Kr](./2025-12-13/36kr_summary_2025-12-13.md)
+- [美团技术团队](./2025-12-13/meituan_2025-12-13.md)
+- [Go Weekly](./2025-12-13/go_weekly_2025-12-13.md)
+- [Hacker News 首页](./2025-12-13/hacker_news_frontpage_2025-12-13.md)
+- [Hacker News 近期最佳](./2025-12-13/hacker_news_best_2025-12-13.md)
+- [Hacker News 高赞评论](./2025-12-13/hacker_news_top_comments_2025-12-13.md)
+- [Hacker News 问答](./2025-12-13/hacker_news_ask_2025-12-13.md)
+- [Hacker News 展示](./2025-12-13/hacker_news_show_2025-12-13.md)
+- [Hacker News 音频技术](./2025-12-13/hacker_news_audio_tech_2025-12-13.md)
 
 # 往日新闻
+
+#### [2025-12-12](./2025-12-12/newsletter.md)
 
 #### [2025-12-11](./2025-12-11/newsletter.md)
 
