@@ -1,59 +1,61 @@
 ## 今日要闻
 
-<sub> 生成时间：2025-12-17 08:10:19</sub>
+<sub> 生成时间：2025-12-18 08:10:02</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[NVIDIA发布完全开源的Nemotron 3 Nano模型](https://twitter.com/ctnzr/status/2000567572065091791)**（来源：AINews）
-  > 开源30B混合Mamba-Transformer MoE模型，包含训练配方、数据集及RL环境套件，推理速度极快，商业使用友好。
+- **[小米发布开源大模型MiMo-V2-Flash](https://twitter.com/XiaomiMiMo/status/2000929154670157939)**（来源：AINews）
+  > 开源309B MoE模型，在SWE-Bench上取得开源模型最佳成绩（73.4%），强调高推理效率（150 tokens/s）和长上下文（256K）。
 
-- **[Meta SI提出并行蒸馏精炼（PDR）推理方法](https://twitter.com/dair_ai/status/2000581380733030703)**（来源：AINews）
-  > 将LLM视为改进算子，通过并行草稿生成与提炼，在固定延迟下实现显著性能提升，为推理优化提供新思路。
+- **[NVIDIA发布Nemotron-Cascade模型](https://twitter.com/_weiping/status/2000947255088701628)**（来源：AINews）
+  > 采用“Cascade RL”训练流程的14B模型，在LiveCodeBench上超越DeepSeek-R1，为代码生成模型优化提供新范式。
 
-- **[苹果发布CLaRa：统一的压缩检索增强生成框架](https://twitter.com/omarsar0/status/2000570838920434037)**（来源：AINews）
-  > 使用共享连续记忆token同时服务检索与生成，在16倍压缩下性能匹配或超越文本基线，优化RAG效率。
+- **[Meta开源SAM Audio模型](https://ai.meta.com/research/publications/pushing-the-frontier-of-audiovisual-perception-with-large-scale-multimodal-correspondence-learning/)**（来源：AINews）
+  > 统一的音频分离模型，可根据文本、视觉或时间提示从复杂音频中隔离特定声音，已开源权重并提供演示。
 
-- **[vLLM推出视觉编码器解耦功能](https://twitter.com/vllm_project/status/2000535421642502335)**（来源：AINews）
-  > 将视觉编码器拆分为独立服务，支持图像嵌入缓存，减少资源争用，实现5-20%吞吐量提升并降低P99延迟。
+- **[苹果发布SHARP模型](https://twitter.com/omarsar0/status/2000989377883988311)**（来源：AINews）
+  > 单图像秒级3D生成，通过单次前向传播生成约120万个3D高斯点云，速度较扩散基线提升约1000倍。
 
-- **[DeepCode开源高性能代码生成智能体框架](https://twitter.com/omarsar0/status/2000385348413850055)**（来源：AINews）
-  > 采用蓝图蒸馏、有状态代码记忆等技术，在PaperBench上实现73.5%代码复制率，超越主流商业工具。
+- **[vLLM发布专为推理集群设计的智能路由器](https://twitter.com/vllm_project/status/2000882750010876179)**（来源：AINews）
+  > 用Rust编写，支持KV感知一致性哈希、预填充/解码分离、熔断等机制，旨在优化推理集群的吞吐量与尾部延迟。
 
-- **[HKUDS/DeepCode](https://github.com/HKUDS/DeepCode)**（来源：GitHub Trending）
-  > 开源多智能体代码生成框架，能将研究论文、自然语言描述直接转化为生产级代码，显著提升开发效率。
+- **[simstudioai/sim](https://github.com/simstudioai/sim)**（来源：GitHub Trending）
+  > 开源AI智能体工作流平台，提供可视化画布快速构建和部署AI代理，支持向量数据库集成与本地部署。
 
-- **[Dafny：面向验证的编程语言](https://news.ycombinator.com/item?id=46295792)**（来源：Hacker News）
-  > 探讨用于形式化验证的编程语言Dafny，其设计思想对构建高可靠性系统有重要参考价值。
+- **[thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)**（来源：GitHub Trending）
+  > 为Claude Code设计的持久化记忆插件，通过AI压缩生成语义摘要，实现跨会话的智能上下文管理与复用。
 
-- **[Ty：一款快速的 Python 类型检查器与 LSP](https://news.ycombinator.com/item?id=46294289)**（来源：Hacker News）
-  > 介绍新的Python类型检查工具Ty，关注其性能与LSP集成，为大型Python项目静态分析提供新选择。
+- **[PostHog 安全内幕：SSRF、ClickHouse SQL 注入与默认 Postgres 凭据导致的远程代码执行](https://news.ycombinator.com/item?id=46305321)**（来源：Hacker News）
+  > 深度剖析PostHog产品中的一系列安全漏洞及其利用链，为构建和审计复杂SaaS系统提供宝贵实战经验。
 
-- **[Rust GCC后端：缘由与实现](https://news.ycombinator.com/item?id=46288291)**（来源：Hacker News）
-  > 深入讨论Rust编译器GCC后端的动机与技术实现，涉及编译器设计与生态兼容性等深度话题。
+- **[SQLite 的测试之道](https://news.ycombinator.com/item?id=46303277)**（来源：Hacker News）
+  > 探讨SQLite背后极其严格和全面的测试方法论，对构建高可靠性软件系统有重要借鉴意义。
 
-- **[Hotpath-rs —— 实时 Rust 性能、内存与数据流分析器](https://news.ycombinator.com/item?id=46295048)**（来源：Hacker News Show）
-  > 展示用于Rust的实时性能分析工具，帮助开发者深入理解应用运行时行为，优化系统性能。
+- **[Show HN：用 C 语言编写的极简深度学习库](https://news.ycombinator.com/item?id=46304907)**（来源：Hacker News Show）
+  > 仅24个基础CUDA/CPU算子，支持自动微分与Python API，为理解深度学习底层实现提供了极简而清晰的参考。
 
 ---
 
 ### 各渠道精选摘要
-- [AINews](./2025-12-17/ai_news_summary_2025-12-17.md)
-- [GitHub Trending](./2025-12-17/github_trending_2025-12-17.md)
-- [少数派](./2025-12-17/shaoshupai_2025-12-17.md)
-- [36Kr](./2025-12-17/36kr_summary_2025-12-17.md)
-- [美团技术团队](./2025-12-17/meituan_2025-12-17.md)
-- [Go Weekly](./2025-12-17/go_weekly_2025-12-17.md)
-- [Hacker News 首页](./2025-12-17/hacker_news_frontpage_2025-12-17.md)
-- [Hacker News 近期最佳](./2025-12-17/hacker_news_best_2025-12-17.md)
-- [Hacker News 高赞评论](./2025-12-17/hacker_news_top_comments_2025-12-17.md)
-- [Hacker News 问答](./2025-12-17/hacker_news_ask_2025-12-17.md)
-- [Hacker News 展示](./2025-12-17/hacker_news_show_2025-12-17.md)
-- [Hacker News 音频技术](./2025-12-17/hacker_news_audio_tech_2025-12-17.md)
+- [AINews](./2025-12-18/ai_news_summary_2025-12-18.md)
+- [GitHub Trending](./2025-12-18/github_trending_2025-12-18.md)
+- [少数派](./2025-12-18/shaoshupai_2025-12-18.md)
+- [36Kr](./2025-12-18/36kr_summary_2025-12-18.md)
+- [美团技术团队](./2025-12-18/meituan_2025-12-18.md)
+- [Go Weekly](./2025-12-18/go_weekly_2025-12-18.md)
+- [Hacker News 首页](./2025-12-18/hacker_news_frontpage_2025-12-18.md)
+- [Hacker News 近期最佳](./2025-12-18/hacker_news_best_2025-12-18.md)
+- [Hacker News 高赞评论](./2025-12-18/hacker_news_top_comments_2025-12-18.md)
+- [Hacker News 问答](./2025-12-18/hacker_news_ask_2025-12-18.md)
+- [Hacker News 展示](./2025-12-18/hacker_news_show_2025-12-18.md)
+- [Hacker News 音频技术](./2025-12-18/hacker_news_audio_tech_2025-12-18.md)
 
 # 往日新闻
+
+#### [2025-12-17](./2025-12-17/newsletter.md)
 
 #### [2025-12-16](./2025-12-16/newsletter.md)
 
