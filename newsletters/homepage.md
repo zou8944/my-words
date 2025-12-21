@@ -1,59 +1,61 @@
 ## 今日要闻
 
-<sub> 生成时间：2025-12-20 08:10:14</sub>
+<sub> 生成时间：2025-12-21 08:10:10</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[OpenAI 发布 GPT-5.2-Codex，专注智能体编码与网络安全](https://twitter.com/OpenAIDevs/status/2001723687373017313)**（来源：AINews）
-  > 定位为“最佳智能体编码”模型，改进压缩、长上下文可靠性和工具调用，为构建复杂、安全的AI编码助手提供了新基准。
+- **[OpenAI为Codex引入“技能”标准化功能](https://twitter.com/OpenAIDevs/status/2002099762536010235)**（来源：AINews）
+  > 允许将指令、脚本和资源打包成可复用的模块，通过`$.skill-name`调用，标志着AI代理能力向标准化和互操作性迈进。
 
-- **[Google 发布 FunctionGemma 与 T5Gemma 2，推动设备端AI](https://twitter.com/osanseviero/status/2001704034667769978)**（来源：AINews）
-  > FunctionGemma是270M参数的纯文本函数调用基础模型，T5Gemma 2是多模态编码器-解码器系列，旨在实现高效的设备端/浏览器部署。
+- **[Google DeepMind发布大规模可解释性工具套件Gemma Scope 2](https://twitter.com/osanseviero/status/2001989567998836818)**（来源：AINews）
+  > 为整个Gemma 3模型家族提供稀疏自编码器和转码器，是最大规模的可解释性工具开源发布，助力深入理解模型内部行为。
 
-- **[vLLM 在多节点 H200 上实现宽专家并行 MoE 的高吞吐量](https://twitter.com/vllm_project/status/2001695354983723361)**（来源：AINews）
-  > 通过宽专家并行和负载均衡优化，vLLM在H200上实现约2.2k tokens/s的持续吞吐量，为大规模MoE模型推理提供了性能参考。
+- **[研究揭示RL后训练可能导致模型性能下降（负迁移）](https://twitter.com/aviral_kumar2/status/2001855734485582239)**（来源：AINews）
+  > 解释了RL训练中混合简单与困难任务时，模型可能过度优化简单任务，通过“负迁移”损害困难任务表现，而非仅是熵崩溃。
 
-- **[Mistral 发布 OCR 3，号称文档智能前沿模型](https://twitter.com/MistralAI/status/2001669581275033741)**（来源：AINews）
-  > 新的文档智能模型，在手写体、低质量扫描件和复杂表格识别方面有显著提升，是RAG和文档处理流水线的关键瓶颈突破。
+- **[高性能计算库FlashAttention 3发布，Hopper架构性能大幅提升](https://twitter.com/StasBekman/status/2001839591243026593)**（来源：AINews）
+  > 在Hopper架构（如H100）上实现端到端显著加速（可达50%以上），但需为Blackwell架构重写，目前FA2在B200上运行“非常慢”。
 
-- **[astral-sh/ty](https://github.com/astral-sh/ty)**（来源：GitHub Trending）
-  > 用Rust编写的极速Python类型检查器和语言服务器，比mypy/Pyright快10-100倍，提供高级类型特性和精细增量分析，提升开发体验。
+- **[anthropics/claude-code](https://github.com/anthropics/claude-code)**（来源：GitHub Trending）
+  > 基于终端的智能编程助手，能理解代码库上下文，通过自然语言指令执行常规任务、解释复杂代码、处理Git工作流，提升开发效率。
 
-- **[Garage——一款可靠到可在数据中心外运行的S3对象存储](https://news.ycombinator.com/item?id=46326984)**（来源：Hacker News）
-  > 专为边缘和分布式环境设计的S3兼容对象存储，强调简单性和可靠性，为去中心化应用架构提供了基础设施选择。
+- **[sgl-project/mini-sglang](https://github.com/sgl-project/mini-sglang)**（来源：GitHub Trending）
+  > 轻量级高性能LLM推理框架，代码约五千行，集成Radix缓存、分块预填充等先进优化，支持多GPU张量并行，便于研究和二次开发。
 
-- **[我们通过结构化LLM分析运行了Anthropic的面试](https://news.ycombinator.com/item?id=46331877)**（来源：Hacker News）
-  > 一篇关于使用结构化LLM分析来辅助技术面试的实践分享，为评估工程师能力和设计面试流程提供了新的自动化思路。
+- **[更多数据库应采用单线程设计](https://news.ycombinator.com/item?id=46340117)**（来源：Hacker News）
+  > 一篇探讨数据库架构的文章，主张在某些场景下回归单线程设计以简化复杂性、提升可预测性和降低延迟。
 
-- **[构建包管理器带给我的启示](https://news.ycombinator.com/item?id=46332286)**（来源：Hacker News 问答）
-  > 作者分享开发Zig包管理器zeP的经验教训，包括规划重要性、用户反馈和技术挑战，对工具开发者有实践参考价值。
+- **[放手自托管Postgres吧](https://news.ycombinator.com/item?id=46336947)**（来源：Hacker News）
+  > 一篇来自一线工程师的实战反思，分享从自托管PostgreSQL转向托管服务的决策过程、权衡因素与解放生产力的经验。
 
-- **[Show HN：Context Engine——用于智能体上下文管理的开源基础组件](https://news.ycombinator.com/item?id=46331925)**（来源：Hacker News 展示）
-  > 提出“上下文工程”概念，构建包含可渲染组件、可查询对话等特性的基础设施，旨在解决当前AI智能体框架中上下文管理的痛点。
+- **[Ask HN：如何从想法出发，设计后端原型？](https://news.ycombinator.com/item?id=46335881)**（来源：Hacker News 问答）
+  > 一个高质量的社区讨论，汇集了众多工程师关于从零开始设计后端系统、选择技术栈和架构模式的实践经验与建议。
 
-- **[SonicMoE：针对 NVIDIA Hopper GPU 优化的 MoE 实现](https://arxiv.org/abs/2512.14080)**（来源：AINews）
-  > 针对Hopper GPU优化的混合专家模型实现，相比SOTA减少45%激活内存，速度提升1.86倍，代码已开源，适用于高效MoE训练。
+- **[Show HN：Culsans – Python 的线程安全异步感知队列](https://news.ycombinator.com/item?id=46339322)**（来源：Hacker News 展示）
+  > 为解决Janus库性能问题而创建的独立库，支持跨线程、跨事件循环和greenlets的进程内通信，对构建复杂异步系统有参考价值。
 
 ---
 
 ### 各渠道精选摘要
-- [AINews](./2025-12-20/ai_news_summary_2025-12-20.md)
-- [GitHub Trending](./2025-12-20/github_trending_2025-12-20.md)
-- [少数派](./2025-12-20/shaoshupai_2025-12-20.md)
-- [36Kr](./2025-12-20/36kr_summary_2025-12-20.md)
-- [美团技术团队](./2025-12-20/meituan_2025-12-20.md)
-- [Go Weekly](./2025-12-20/go_weekly_2025-12-20.md)
-- [Hacker News 首页](./2025-12-20/hacker_news_frontpage_2025-12-20.md)
-- [Hacker News 近期最佳](./2025-12-20/hacker_news_best_2025-12-20.md)
-- [Hacker News 高赞评论](./2025-12-20/hacker_news_top_comments_2025-12-20.md)
-- [Hacker News 问答](./2025-12-20/hacker_news_ask_2025-12-20.md)
-- [Hacker News 展示](./2025-12-20/hacker_news_show_2025-12-20.md)
-- [Hacker News 音频技术](./2025-12-20/hacker_news_audio_tech_2025-12-20.md)
+- [AINews](./2025-12-21/ai_news_summary_2025-12-21.md)
+- [GitHub Trending](./2025-12-21/github_trending_2025-12-21.md)
+- [少数派](./2025-12-21/shaoshupai_2025-12-21.md)
+- [36Kr](./2025-12-21/36kr_summary_2025-12-21.md)
+- [美团技术团队](./2025-12-21/meituan_2025-12-21.md)
+- [Go Weekly](./2025-12-21/go_weekly_2025-12-21.md)
+- [Hacker News 首页](./2025-12-21/hacker_news_frontpage_2025-12-21.md)
+- [Hacker News 近期最佳](./2025-12-21/hacker_news_best_2025-12-21.md)
+- [Hacker News 高赞评论](./2025-12-21/hacker_news_top_comments_2025-12-21.md)
+- [Hacker News 问答](./2025-12-21/hacker_news_ask_2025-12-21.md)
+- [Hacker News 展示](./2025-12-21/hacker_news_show_2025-12-21.md)
+- [Hacker News 音频技术](./2025-12-21/hacker_news_audio_tech_2025-12-21.md)
 
 # 往日新闻
+
+#### [2025-12-20](./2025-12-20/newsletter.md)
 
 #### [2025-12-19](./2025-12-19/newsletter.md)
 
