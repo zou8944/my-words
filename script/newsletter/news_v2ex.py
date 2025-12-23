@@ -7,13 +7,14 @@ https://rsshub.app/v2ex/tab/hot
 
 
 import news_utils
+from newsletter import load_all_files_from_r2
 
 logger = news_utils.setup_logger(__name__)
 
 
 def fetch_news():
     logger.info("获取 V2EX 论坛最热门消息...")
-    entries = news_utils.get_rss_entries("https://rsshub.app/v2ex/tab/hot", limit=100)
+    entries = news_utils.get_rss_entries("https://www.v2ex.com/feed/tab/tech.xml", limit=100)
     if not entries:
         logger.warning("没有获取到任何文章")
         return None
@@ -62,4 +63,5 @@ def get_today_news_content() -> str:
 
 if __name__ == "__main__":
     fetch_news()
+    load_all_files_from_r2()
     logger.info("V2EX 论坛消息抓取完成")

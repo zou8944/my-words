@@ -11,6 +11,7 @@ import news_hacker_news
 import news_meituan
 import news_shaoshupai
 import news_utils
+import news_v2ex
 
 logger = news_utils.setup_logger(__name__)
 
@@ -21,7 +22,7 @@ def create_final_newsletter(
     github_trending: str,
     hacker_news: str,
     shaoshupai: str,
-    kr36: str,
+    v2ex: str,
 ) -> Optional[str]:
     system_prompt = (
         """你是一个专业且负责的技术内容编辑助手，擅长从大量信息中提取关键点，生成清晰、结构化的技术 newsletter。"""
@@ -83,9 +84,9 @@ def create_final_newsletter(
 {shaoshupai}
 ```
 
-### 36 Kr
+### v2ex 科技贴
 ```markdown
-{kr36}
+{v2ex[:2000]}
 ```
 
 >>>
@@ -126,7 +127,7 @@ def generate_newsletter_summary():
         logger.info(f"今天的 newsletter 摘要 已经存在，不重复生成: {summary_filename}")
         return
 
-    # _ = news_v2ex.get_today_news_content()
+    v2ex = news_v2ex.get_today_news_content()
     _ = news_meituan.get_today_posts_content()
     _ = news_go_weekly.get_today_news_content()
     last_newsletter_summary = get_last_newsletter_summary()
@@ -134,7 +135,7 @@ def generate_newsletter_summary():
     github_trending_content = news_github_trending_daily.get_today_news_content()
     hacker_news_content = news_hacker_news.get_today_news_content()
     shaoshupai_content = news_shaoshupai.get_today_news_content()
-    kr36_content = news_36kr.get_today_news_content()
+    # kr36_content = news_36kr.get_today_news_content()
 
     newsletter = create_final_newsletter(
         last_newsletter=last_newsletter_summary,
@@ -142,7 +143,7 @@ def generate_newsletter_summary():
         github_trending=github_trending_content,
         hacker_news=hacker_news_content,
         shaoshupai=shaoshupai_content,
-        kr36=kr36_content,
+        v2ex=v2ex,
     )
     if not newsletter:
         logger.error("生成 newsletter 失败")
