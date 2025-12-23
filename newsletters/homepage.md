@@ -1,6 +1,6 @@
 ## 今日要闻
 
-<sub> 生成时间：2025-12-23 08:10:22</sub>
+<sub> 生成时间：2025-12-23 21:43:11</sub>
 
 
 ---
@@ -40,18 +40,46 @@
 ---
 
 ### 各渠道精选摘要
+- [少数派](./2025-12-23/shaoshupai_2025-12-23.md)
+- [美团技术团队](./2025-12-23/meituan_2025-12-23.md)
+
+---
+
+### 渠道精选
 - [AINews](./2025-12-23/ai_news_summary_2025-12-23.md)
 - [GitHub Trending](./2025-12-23/github_trending_2025-12-23.md)
-- [少数派](./2025-12-23/shaoshupai_2025-12-23.md)
-- [36Kr](./2025-12-23/36kr_summary_2025-12-23.md)
-- [美团技术团队](./2025-12-23/meituan_2025-12-23.md)
-- [Go Weekly](./2025-12-23/go_weekly_2025-12-23.md)
+- [V2EX 技术版](./2025-12-23/v2ex_hot_2025-12-23.md)
+
+---
+
+### Hacker News 精选
 - [Hacker News 首页](./2025-12-23/hacker_news_frontpage_2025-12-23.md)
 - [Hacker News 近期最佳](./2025-12-23/hacker_news_best_2025-12-23.md)
 - [Hacker News 高赞评论](./2025-12-23/hacker_news_top_comments_2025-12-23.md)
 - [Hacker News 问答](./2025-12-23/hacker_news_ask_2025-12-23.md)
 - [Hacker News 展示](./2025-12-23/hacker_news_show_2025-12-23.md)
 - [Hacker News 音频技术](./2025-12-23/hacker_news_audio_tech_2025-12-23.md)
+
+---
+
+### Reddit 精选频道
+- [Reddit AMA](./2025-12-23/reddit_ama_2025-12-23.md)
+- [Reddit AskReddit](./2025-12-23/reddit_askreddit_2025-12-23.md)
+- [Reddit Showerthoughts](./2025-12-23/reddit_showerthoughts_2025-12-23.md)
+- [Reddit TIL](./2025-12-23/reddit_todayilearned_2025-12-23.md)
+- [Reddit DevOps](./2025-12-23/reddit_devops_2025-12-23.md)
+- [Reddit Programming](./2025-12-23/reddit_programming_2025-12-23.md)
+- [Reddit ELI5](./2025-12-23/reddit_explainlikeimfive_2025-12-23.md)
+- [Reddit Golang](./2025-12-23/reddit_golang_2025-12-23.md)
+- [Reddit Rust](./2025-12-23/reddit_rust_2025-12-23.md)
+- [Reddit ML](./2025-12-23/reddit_machinelearning_2025-12-23.md)
+
+---
+
+### 每周一看
+- [Cloudflare Blog](https://blog.cloudflare.com/zh-cn/)
+- [少数派](./2025-12-23/shaoshupai_2025-12-23.md)
+- [美团技术团队](./2025-12-23/meituan_2025-12-23.md)
 
 # 往日新闻
 
