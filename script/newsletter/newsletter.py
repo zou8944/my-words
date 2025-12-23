@@ -3,12 +3,12 @@ import pathlib
 from typing import Optional
 
 import llm
-import news_36kr
 import news_ai_news
 import news_github_trending_daily
 import news_go_weekly
 import news_hacker_news
 import news_meituan
+import news_reddit
 import news_shaoshupai
 import news_utils
 import news_v2ex
@@ -173,17 +173,40 @@ def generate_newsletter():
         newsletter_summary,
         "\n---\n",
         "### 各渠道精选摘要",
+        "- [少数派](./{})".format(news_shaoshupai.get_today_news_file()),
+        "- [美团技术团队](./{})".format(news_meituan.get_today_news_file()),
+    ]
+
+    contents.append("\n---\n")
+    contents.append("### 渠道精选")
+    contents.extend([
         "- [AINews](./{})".format(news_ai_news.get_today_news_file()[1]),
         "- [GitHub Trending](./{})".format(news_github_trending_daily.get_today_news_file()),
-        "- [少数派](./{})".format(news_shaoshupai.get_today_news_file()),
-        "- [36Kr](./{})".format(news_36kr.get_r2_object_key()[1]),
-        # "- [V2EX 热门贴子](./{})".format(news_v2ex.get_today_news_file()),
-        "- [美团技术团队](./{})".format(news_meituan.get_today_news_file()),
-        "- [Go Weekly](./{})".format(news_go_weekly.get_today_news_file()),
-    ]
+        "- [V2EX 技术版](./{})".format(news_v2ex.get_today_news_file()),
+    ])
+
+    # News Letter
+    contents.append("\n---\n")
+    contents.append("### Hacker News 精选")
     for slug, _, title in news_hacker_news.all_rss_urls():
         today_news_file = news_hacker_news.get_today_news_file(slug)
         contents.append(f"- [{title}](./{today_news_file})")
+
+    # 添加 Reddit 频道部分
+    contents.append("\n---\n")
+    contents.append("### Reddit 精选频道")
+    for slug, _, title in news_reddit.all_reddit_channels():
+        today_news_file = news_reddit.get_today_news_file(slug)
+        contents.append(f"- [{title}](./{today_news_file})")
+
+    # 一周一看
+    contents.append("\n---\n")
+    contents.append("### 每周一看")
+    contents.extend([
+        "- [Cloudflare Blog](https://blog.cloudflare.com/zh-cn/)",
+        "- [少数派](./{})".format(news_shaoshupai.get_today_news_file()),
+        "- [美团技术团队](./{})".format(news_meituan.get_today_news_file()),
+    ])
 
     if news_utils.put_file_to_r2_with_today(newsletter_filename, "\n".join(contents)):
         logger.info(f"✓ 今日技术 newsletter 已保存: {newsletter_filename}")
@@ -208,11 +231,9 @@ def generate_newsletter_profile():
         
         if i == 0:  # 处理最新的newsletter
             content = file.read_text(encoding="utf-8")
-            # 将 各渠道精选摘要 后面的链接前都加上一个 日期
-            segments = content.split("### 各渠道精选摘要")
-            if len(segments) > 1:
-                segments[1] = segments[1].replace("](./", f"](./{date_formated}/")
-                content = segments[0] + "### 各渠道精选摘要" + segments[1]
+            # 将所有相对路径链接都加上日期前缀
+            # 需要处理 "### 各渠道精选摘要"、"### Reddit 精选频道"、"### 每周一看" 等部分的链接
+            content = content.replace("](./", f"](./{date_formated}/")
             newsletter_homepage.append(content)
         
         if i == 1:  # 在第二个文件前添加往日新闻标题
@@ -260,4 +281,4 @@ def try_generate_newsletter():
 
 
 if __name__ == "__main__":
-    generate_newsletter_profile()
+    try_generate_newsletter()
