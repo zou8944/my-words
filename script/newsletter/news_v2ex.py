@@ -7,7 +7,6 @@ https://rsshub.app/v2ex/tab/hot
 
 
 import news_utils
-from newsletter import load_all_files_from_r2
 
 logger = news_utils.setup_logger(__name__)
 
@@ -63,5 +62,4 @@ def get_today_news_content() -> str:
 
 if __name__ == "__main__":
     fetch_news()
-    load_all_files_from_r2()
     logger.info("V2EX 论坛消息抓取完成")
