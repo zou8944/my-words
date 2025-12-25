@@ -130,6 +130,7 @@ def generate_newsletter_summary():
     v2ex = news_v2ex.get_today_news_content()
     _ = news_meituan.get_today_posts_content()
     _ = news_go_weekly.get_today_news_content()
+    _ = news_reddit.get_today_news_content()
     last_newsletter_summary = get_last_newsletter_summary()
     ai_news_content = news_ai_news.get_today_news_content()
     github_trending_content = news_github_trending_daily.get_today_news_content()
