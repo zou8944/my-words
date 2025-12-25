@@ -1,87 +1,89 @@
 ## 今日要闻
 
-<sub> 生成时间：2025-12-24 10:21:31</sub>
+<sub> 生成时间：2025-12-25 08:09:34</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[GLM-4.7 发布，在编码与复杂推理方面显著提升](https://z.ai/blog/glm-4.7)**（来源：AINews）
-  > 在SWE-bench验证集上达到73.8%准确率，接近Claude Sonnet 4.5，并引入“交错思考”等新认知模式，是强大的开源编码模型。
+- **[英伟达发布完整机器人技术栈，涵盖VLA、世界模型与控制模型](https://twitter.com/DrJimFan/status/2003879965369290797)**（来源：AINews）
+  > 英伟达开源了GR00T VLA、GR00T Dreams世界模型和SONIC控制模型，构成从感知、规划到控制的完整机器人开发平台，对机器人AI工程化有重要参考价值。
 
-- **[小米发布 MiMo-V2-Flash，强调部署成本与效率](https://twitter.com/omarsar0/status/2002768840556728714)**（来源：AINews）
-  > 专注于成本与可部署性的混合专家模型，输入Token价格低至每百万0.1美元，vLLM已提供官方服务配置方案。
+- **[Character.AI披露大规模预训练优化技巧“Squinch”](https://twitter.com/simon_mo_/status/2003608325624406482)**（来源：AINews）
+  > 分享了在大规模预训练中维持高硬件利用率（MFU）的核心技巧，包括Noam Shazeer的梯度压缩算法，为高效训练大模型提供了实战经验。
 
-- **[谷歌开源 A2UI 协议，推动智能体生成交互式 UI](https://twitter.com/osanseviero/status/2002747011230269893)**（来源：AINews）
-  > 标志着智能体从“仅聊天”向“UI生成器”的范式转变，提供了一个标准化的接口层，对前端智能体开发有重要影响。
+- **[研究人员提出端到端RL训练工具使用智能体（Agent-R1）](https://twitter.com/omarsar0/status/2003862504490086596)**（来源：AINews）
+  > 将工具使用视为强化学习问题，设计了信用分配掩码和ToolEnv交互循环，在多项选择题任务上相比传统RAG方法有显著提升。
 
-- **[研究显示生产级智能体项目普遍混合使用多个框架](https://twitter.com/dair_ai/status/2003178236696776814)**（来源：AINews）
-  > 对1575个项目的实证研究发现，96%的高星项目混合使用LangChain+LlamaIndex等框架，并揭示了逻辑失败、终止检测等核心痛点。
+- **[Windsurf发布Wave 13，引入并行多智能体工作流与免费SWE-1.5模型](https://discord.com/channels/1027685395649015980/1027688115592237117/1453488772837671157)**（来源：AINews）
+  > 编码IDE引入并行多智能体级联工作流，并免费开放接近前沿水平的SWE-1.5编码模型3个月，对提升开发效率有直接价值。
 
-- **[高性能注意力推理库 QSInference 发布](https://github.com/yogeshsinghrbt/QSInference)**（来源：AINews）
-  > 用于长上下文LLM的量化稀疏注意力Triton实现，在128k上下文下比FlashAttention-2快8倍，专注解决长序列推理瓶颈。
+- **[Mistral Vibe CLI推出可复用的“技能”模块](https://twitter.com/MistralAI/status/2003843358054068327)**（来源：AINews）
+  > 将“技能”作为可复用的规则包引入CLI，支持推理模型和终端主题定制，旨在推动可共享的、项目级的智能体策略工件。
 
-- **[Fabrice Bellard 发布 MicroQuickJS](https://news.ycombinator.com/item?id=46367224)**（来源：Hacker News）
-  > 大师新作，一个极度精简的JavaScript引擎，引发了关于嵌入式脚本语言选择（如JS vs Lua）的深度技术讨论。
+- **[google/langextract](https://github.com/google/langextract)**（来源：GitHub Trending）
+  > 谷歌开源的Python库，利用LLM从非结构化文本中提取结构化信息，支持精确的源文本定位和交互式可视化，无需微调。
 
-- **[Meta 在其服务器上采用为 Valve Steam Deck 设计的 Linux 调度器](https://news.ycombinator.com/item?id=46366998)**（来源：Hacker News）
-  > 游戏硬件优化（减少卡顿）的技术成果（调度器）被Meta应用于数据中心，展示了开源技术奇妙的“下渗效应”。
+- **[safety-research/bloom](https://github.com/safety-research/bloom)**（来源：GitHub Trending）
+  > 一个开源的大语言模型行为评估框架，通过配置目标行为自动生成多样化测试场景来探测模型潜在风险，支持多模型和分阶段分析。
 
-- **[PostgreSQL 18 实现即时数据库克隆](https://news.ycombinator.com/item?id=46363360)**（来源：Hacker News）
-  > 重要的数据库新特性，能快速创建数据库的时间点副本，极大便利了开发、测试和数据恢复等场景。
+- **[Show HN：Vibium——面向AI与人类的浏览器自动化工具，由Selenium创始人打造](https://news.ycombinator.com/item?id=46377597)**（来源：Hacker News）
+  > Selenium创始人推出的专为AI代理设计的浏览器自动化工具，底层用Go编写，支持npm安装，即将支持Python/Java。
 
-- **[vllm-project/vllm-omni](https://github.com/vllm-project/vllm-omni)**（来源：GitHub Trending）
-  > vLLM扩展为高效的全模态模型推理平台，支持文本、图像、视频和音频，通过KV缓存管理和流水线重叠实现高吞吐。
+- **[Ask HN：有哪些深度剖析真实案例的优秀工程博客？](https://news.ycombinator.com/item?id=46363921)**（来源：Hacker News）
+  > 社区在征集高质量技术博客示例，要求内容深入、结构清晰，并能关联工程决策与业务成果，是寻找深度实战总结的好机会。
 
-- **[exo-explore/exo](https://github.com/exo-explore/exo)**（来源：GitHub Trending）
-  > 开源工具，可将手机、电脑等日常设备通过RDMA over Thunderbolt连接成家庭AI集群，实现大模型的分布式推理。
+- **[当编译器让你意想不到时](https://news.ycombinator.com/item?id=46375384)**（来源：Hacker News）
+  > 一篇关于编译器行为与开发者预期不符的深度技术讨论，涉及底层优化和语言特性，能提升对系统行为的理解。
 
 ---
 
 ### 各渠道精选摘要
-- [少数派](./2025-12-24/shaoshupai_2025-12-24.md)
-- [美团技术团队](./2025-12-24/meituan_2025-12-24.md)
+- [少数派](./2025-12-25/shaoshupai_2025-12-25.md)
+- [美团技术团队](./2025-12-25/meituan_2025-12-25.md)
 
 ---
 
 ### 渠道精选
-- [AINews](./2025-12-24/ai_news_summary_2025-12-24.md)
-- [GitHub Trending](./2025-12-24/github_trending_2025-12-24.md)
-- [V2EX 技术版](./2025-12-24/v2ex_hot_2025-12-24.md)
+- [AINews](./2025-12-25/ai_news_summary_2025-12-25.md)
+- [GitHub Trending](./2025-12-25/github_trending_2025-12-25.md)
+- [V2EX 技术版](./2025-12-25/v2ex_hot_2025-12-25.md)
 
 ---
 
 ### Hacker News 精选
-- [Hacker News 首页](./2025-12-24/hacker_news_frontpage_2025-12-24.md)
-- [Hacker News 近期最佳](./2025-12-24/hacker_news_best_2025-12-24.md)
-- [Hacker News 高赞评论](./2025-12-24/hacker_news_top_comments_2025-12-24.md)
-- [Hacker News 问答](./2025-12-24/hacker_news_ask_2025-12-24.md)
-- [Hacker News 展示](./2025-12-24/hacker_news_show_2025-12-24.md)
-- [Hacker News 音频技术](./2025-12-24/hacker_news_audio_tech_2025-12-24.md)
+- [Hacker News 首页](./2025-12-25/hacker_news_frontpage_2025-12-25.md)
+- [Hacker News 近期最佳](./2025-12-25/hacker_news_best_2025-12-25.md)
+- [Hacker News 高赞评论](./2025-12-25/hacker_news_top_comments_2025-12-25.md)
+- [Hacker News 问答](./2025-12-25/hacker_news_ask_2025-12-25.md)
+- [Hacker News 展示](./2025-12-25/hacker_news_show_2025-12-25.md)
+- [Hacker News 音频技术](./2025-12-25/hacker_news_audio_tech_2025-12-25.md)
 
 ---
 
 ### Reddit 精选频道
-- [Reddit AMA](./2025-12-24/reddit_ama_2025-12-24.md)
-- [Reddit AskReddit](./2025-12-24/reddit_askreddit_2025-12-24.md)
-- [Reddit Showerthoughts](./2025-12-24/reddit_showerthoughts_2025-12-24.md)
-- [Reddit TIL](./2025-12-24/reddit_todayilearned_2025-12-24.md)
-- [Reddit DevOps](./2025-12-24/reddit_devops_2025-12-24.md)
-- [Reddit Programming](./2025-12-24/reddit_programming_2025-12-24.md)
-- [Reddit ELI5](./2025-12-24/reddit_explainlikeimfive_2025-12-24.md)
-- [Reddit Golang](./2025-12-24/reddit_golang_2025-12-24.md)
-- [Reddit Rust](./2025-12-24/reddit_rust_2025-12-24.md)
-- [Reddit ML](./2025-12-24/reddit_machinelearning_2025-12-24.md)
+- [Reddit AMA](./2025-12-25/reddit_ama_2025-12-25.md)
+- [Reddit AskReddit](./2025-12-25/reddit_askreddit_2025-12-25.md)
+- [Reddit Showerthoughts](./2025-12-25/reddit_showerthoughts_2025-12-25.md)
+- [Reddit TIL](./2025-12-25/reddit_todayilearned_2025-12-25.md)
+- [Reddit DevOps](./2025-12-25/reddit_devops_2025-12-25.md)
+- [Reddit Programming](./2025-12-25/reddit_programming_2025-12-25.md)
+- [Reddit ELI5](./2025-12-25/reddit_explainlikeimfive_2025-12-25.md)
+- [Reddit Golang](./2025-12-25/reddit_golang_2025-12-25.md)
+- [Reddit Rust](./2025-12-25/reddit_rust_2025-12-25.md)
+- [Reddit ML](./2025-12-25/reddit_machinelearning_2025-12-25.md)
 
 ---
 
 ### 每周一看
 - [Cloudflare Blog](https://blog.cloudflare.com/zh-cn/)
-- [少数派](./2025-12-24/shaoshupai_2025-12-24.md)
-- [美团技术团队](./2025-12-24/meituan_2025-12-24.md)
+- [少数派](./2025-12-25/shaoshupai_2025-12-25.md)
+- [美团技术团队](./2025-12-25/meituan_2025-12-25.md)
 
 # 往日新闻
+
+#### [2025-12-24](./2025-12-24/newsletter.md)
 
 #### [2025-12-23](./2025-12-23/newsletter.md)
 
