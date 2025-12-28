@@ -1,87 +1,89 @@
 ## 今日要闻
 
-<sub> 生成时间：2025-12-27 08:12:45</sub>
+<sub> 生成时间：2025-12-28 08:13:06</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[我对 Kubernetes 的思考](https://news.ycombinator.com/item?id=46396043)**（来源：Hacker News）
-  > 资深工程师反思Kubernetes的复杂性，探讨其适用场景与替代方案，为后端架构选型提供批判性视角。
+- **[yichuan-w/LEANN](https://github.com/yichuan-w/LEANN)**（来源：GitHub Trending）
+  > 创新的向量数据库，通过基于图的选择性重计算，在个人设备上实现高效、精准且完全私密的RAG应用。
 
-- **[uv 为何如此之快](https://news.ycombinator.com/item?id=46393992)**（来源：Hacker News）
-  > 深入分析Python包管理器uv的性能秘诀，揭示其不仅依赖Rust，更得益于Python生态十年来的标准化工作。
+- **[Show HN：Waycore——一款开源、离线优先的模块化野外计算机](https://news.ycombinator.com/item?id=46406486)**（来源：Hacker News）
+  > 构建用于户外和离网场景的模块化现场计算机，强调设备端AI处理和离线知识，为边缘计算提供新思路。
 
-- **[包管理器总把Git当数据库用，这从来都行不通](https://news.ycombinator.com/item?id=46391514)**（来源：Hacker News）
-  > 批判性讨论包管理器滥用Git作为数据库导致的外部性问题（如用户时间浪费），触及软件工程中的公地悲剧。
+- **[StreamKernel：一个基于 Kafka 原生、高性能的 Java 21 事件编排内核](https://news.ycombinator.com/item?id=46404361)**（来源：Hacker News）
+  > 基于Kafka的高性能事件编排引擎，将编排逻辑与业务语义解耦，实现低延迟数据传输，支持数据增强和可观测性。
 
-- **[Show HN：用 Go 语言（某种程度上）逆向工程 SQLite](https://news.ycombinator.com/item?id=46397601)**（来源：Hacker News）
-  > 一个用Go语言重新实现SQLite核心功能的嵌入式数据库项目，已持续开发一年，借鉴了其他数据库的先进特性。
+- **[Show HN：从混乱电子表格中提取数据的LLM工具](https://news.ycombinator.com/item?id=46405308)**（来源：Hacker News）
+  > 使用LLM识别Excel/CSV表格边界，提取格式规整的强类型数据，能处理货币、百分比等复杂格式。
 
-- **[resemble-ai/chatterbox](https://github.com/resemble-ai/chatterbox)**（来源：GitHub Trending）
-  > Resemble AI开源的高质量文本转语音模型家族，Turbo版采用350M参数单步解码，支持低延迟生成和拟声标签。
+- **[Show HN: Gcommit – 基于语义的代码变更聚类工具](https://news.ycombinator.com/item?id=46405170)**（来源：Hacker News）
+  > 通过语义嵌入和聚类分析Git暂存更改，自动创建多个语义相关的独立提交，解决大提交问题。
 
-- **[ModelTC/LightX2V](https://github.com/ModelTC/LightX2V)**（来源：GitHub Trending）
-  > 轻量高效的视频生成推理框架，通过模型蒸馏、FP8量化和并行优化，最高可实现42倍加速，支持多硬件平台。
+- **[Show HN：HookVerify – 为生产系统提供Webhook投递可见性](https://news.ycombinator.com/item?id=46405410)**（来源：Hacker News）
+  > 提供Webhook投递的可见性工具，帮助开发者监控和调试生产环境中第三方集成的回调可靠性。
 
-- **[OpenAI强调2026年重点在于弥合“能力过剩”与“部署差距”](https://twitter.com/OpenAI/status/2003594025098785145)**（来源：AINews）
-  > OpenAI指出未来进展关键不在于模型能力，而在于如何将AI有效集成到医疗、商业等实际工作流中。
+- **[Character.AI披露大规模预训练优化技巧“Squinch”](https://twitter.com/simon_mo_/status/2003608325624406482)**（来源：AINews）
+  > 分享在大规模预训练中维持高模型浮点利用率（MFU）的技巧，核心是使用梯度压缩算法“Squinch”。
 
-- **[研究提出用于工具使用智能体的端到端强化学习框架（Agent-R1）](https://twitter.com/omarsar0/status/2003862504490086596)**（来源：AINews）
-  > 将智能体工具使用视为强化学习问题，提出明确的信用分配掩码框架，在多跳问答任务上相比RAG有巨大提升。
+- **[FlashSR音频超分辨率模型实现200倍实时处理速度](https://xcancel.com/Yatharth3501/status/2003884180577702074)**（来源：AINews）
+  > 快速的音频增强/超分辨率模型，处理速度超过实时200倍，已集成到MiraTTS中并开源。
 
-- **[英伟达公布机器人技术栈系列进展](https://twitter.com/DrJimFan/status/2003879965369290797)**（来源：AINews）
-  > 开源GR00T VLA模型检查点、世界模型及全身控制模型，展示从仿真到现实的完整机器人训练方案。
+- **[Show HN：InsideStack——通过语义搜索发现精选技术文章](https://news.ycombinator.com/item?id=46404966)**（来源：Hacker News）
+  > 通过语义搜索精选的RSS源，帮助用户发现高质量技术文章，以应对网络充斥AI生成内容的问题。
 
-- **[Show HN：ISON——一种为大型语言模型设计的、比JSON节省30-70%令牌的数据格式](https://news.ycombinator.com/item?id=46397566)**（来源：Hacker News）
-  > 专为LLM和AI代理优化的数据格式，通过表格模式替代JSON，显著减少令牌消耗，并提供类型标注和模式验证。
+- **[Show HN：专为开发者打造的HTTP请求工具](https://news.ycombinator.com/item?id=46405570)**（来源：Hacker News）
+  > HTTP请求客户端，用文本替代复杂UI，支持请求链、前后脚本和负载测试等高级功能。
 
 ---
 
 ### 各渠道精选摘要
-- [少数派](./2025-12-27/shaoshupai_2025-12-27.md)
-- [美团技术团队](./2025-12-27/meituan_2025-12-27.md)
+- [少数派](./2025-12-28/shaoshupai_2025-12-28.md)
+- [美团技术团队](./2025-12-28/meituan_2025-12-28.md)
 
 ---
 
 ### 渠道精选
-- [AINews](./2025-12-27/ai_news_summary_2025-12-27.md)
-- [GitHub Trending](./2025-12-27/github_trending_2025-12-27.md)
-- [V2EX 技术版](./2025-12-27/v2ex_hot_2025-12-27.md)
+- [AINews](./2025-12-28/ai_news_summary_2025-12-28.md)
+- [GitHub Trending](./2025-12-28/github_trending_2025-12-28.md)
+- [V2EX 技术版](./2025-12-28/v2ex_hot_2025-12-28.md)
 
 ---
 
 ### Hacker News 精选
-- [Hacker News 首页](./2025-12-27/hacker_news_frontpage_2025-12-27.md)
-- [Hacker News 近期最佳](./2025-12-27/hacker_news_best_2025-12-27.md)
-- [Hacker News 高赞评论](./2025-12-27/hacker_news_top_comments_2025-12-27.md)
-- [Hacker News 问答](./2025-12-27/hacker_news_ask_2025-12-27.md)
-- [Hacker News 展示](./2025-12-27/hacker_news_show_2025-12-27.md)
-- [Hacker News 音频技术](./2025-12-27/hacker_news_audio_tech_2025-12-27.md)
+- [Hacker News 首页](./2025-12-28/hacker_news_frontpage_2025-12-28.md)
+- [Hacker News 近期最佳](./2025-12-28/hacker_news_best_2025-12-28.md)
+- [Hacker News 高赞评论](./2025-12-28/hacker_news_top_comments_2025-12-28.md)
+- [Hacker News 问答](./2025-12-28/hacker_news_ask_2025-12-28.md)
+- [Hacker News 展示](./2025-12-28/hacker_news_show_2025-12-28.md)
+- [Hacker News 音频技术](./2025-12-28/hacker_news_audio_tech_2025-12-28.md)
 
 ---
 
 ### Reddit 精选频道
-- [Reddit AMA](./2025-12-27/reddit_ama_2025-12-27.md)
-- [Reddit AskReddit](./2025-12-27/reddit_askreddit_2025-12-27.md)
-- [Reddit Showerthoughts](./2025-12-27/reddit_showerthoughts_2025-12-27.md)
-- [Reddit TIL](./2025-12-27/reddit_todayilearned_2025-12-27.md)
-- [Reddit DevOps](./2025-12-27/reddit_devops_2025-12-27.md)
-- [Reddit Programming](./2025-12-27/reddit_programming_2025-12-27.md)
-- [Reddit ELI5](./2025-12-27/reddit_explainlikeimfive_2025-12-27.md)
-- [Reddit Golang](./2025-12-27/reddit_golang_2025-12-27.md)
-- [Reddit Rust](./2025-12-27/reddit_rust_2025-12-27.md)
-- [Reddit ML](./2025-12-27/reddit_machinelearning_2025-12-27.md)
+- [Reddit AMA](./2025-12-28/reddit_ama_2025-12-28.md)
+- [Reddit AskReddit](./2025-12-28/reddit_askreddit_2025-12-28.md)
+- [Reddit Showerthoughts](./2025-12-28/reddit_showerthoughts_2025-12-28.md)
+- [Reddit TIL](./2025-12-28/reddit_todayilearned_2025-12-28.md)
+- [Reddit DevOps](./2025-12-28/reddit_devops_2025-12-28.md)
+- [Reddit Programming](./2025-12-28/reddit_programming_2025-12-28.md)
+- [Reddit ELI5](./2025-12-28/reddit_explainlikeimfive_2025-12-28.md)
+- [Reddit Golang](./2025-12-28/reddit_golang_2025-12-28.md)
+- [Reddit Rust](./2025-12-28/reddit_rust_2025-12-28.md)
+- [Reddit ML](./2025-12-28/reddit_machinelearning_2025-12-28.md)
 
 ---
 
 ### 每周一看
 - [Cloudflare Blog](https://blog.cloudflare.com/zh-cn/)
-- [少数派](./2025-12-27/shaoshupai_2025-12-27.md)
-- [美团技术团队](./2025-12-27/meituan_2025-12-27.md)
+- [少数派](./2025-12-28/shaoshupai_2025-12-28.md)
+- [美团技术团队](./2025-12-28/meituan_2025-12-28.md)
 
 # 往日新闻
+
+#### [2025-12-27](./2025-12-27/newsletter.md)
 
 #### [2025-12-26](./2025-12-26/newsletter.md)
 
