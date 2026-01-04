@@ -1,87 +1,89 @@
 ## 今日要闻
 
-<sub> 生成时间：2026-01-03 08:12:21</sub>
+<sub> 生成时间：2026-01-04 08:12:36</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[DeepSeek发布mHC论文，革新残差连接设计](https://arxiv.org/abs/2512.24880)**（来源：AINews）
-  > 通过数学约束解决超连接训练不稳定问题，在3B/9B/27B模型上实现更好稳定性和性能，训练开销仅增约6.7%。
+- **[通过循环语言模型扩展潜在推理能力](https://news.ycombinator.com/item?id=46481849)**（来源：Hacker News）
+  > 讨论如何通过循环语言模型（RLM）架构扩展模型的潜在推理能力，为长程任务提供新的技术思路。
 
-- **[Prime Intellect提出递归语言模型，旨在解决长程智能体上下文管理瓶颈](https://twitter.com/PrimeIntellect/status/2006834561637036272)**（来源：AINews）
-  > 让模型学习管理自身上下文，将工作推送到工具或子模型执行，为解决长程智能体任务提供新思路。
+- **[同事的AI工作流令怀疑论者刮目相看](https://news.ycombinator.com/item?id=46481814)**（来源：Hacker News）
+  > 分享高效AI代码助手工作流：多模型交叉审查、清晰任务描述和TypeScript单体仓库，显著提升代码生成质量与效率。
 
-- **[IQuest发布40B循环Transformer编码模型，声称在SWE-Bench Verified上超越Claude 4.5](https://huggingface.co/IQuestLab/IQuest-Coder-V1-40B-Loop-Instruct)**（来源：AINews）
-  > 采用循环注意力架构，在SWE-Bench Verified基准测试中声称达到新SOTA，引发社区对编码性能的广泛讨论。
+- **[Yolog——归档并分析你的氛围编程会话](https://news.ycombinator.com/item?id=46482583)**（来源：Hacker News）
+  > 开源桌面应用，用于记录、回放和分析AI编程会话，帮助开发者从历史交互中提取可复用的模式与知识。
 
-- **[开源模型许可问题引发法律风险担忧](https://twitter.com/yacinelearning/status/2006803841761816732)**（来源：AINews）
-  > 讨论生产环境中使用含地域限制等模糊许可证模型带来的工程与法律风险，强调许可证合规的重要性。
+- **[Vibe to Prod——面向AI辅助开发的生产就绪模板](https://news.ycombinator.com/item?id=46481023)**（来源：Hacker News）
+  > 全栈生产级模板，集成前后端、云设施和CI/CD，专为AI辅助开发设计，旨在加速从构思到上线的过程。
 
-- **[bua：面向Windows 11的完全自主计算机使用智能体](https://github.com/starsnatched/bua)**（来源：AINews）
-  > 在Windows 11虚拟桌面中运行的全自主智能体，可执行任意操作，展示智能体向操作系统层的渗透能力。
+- **[Sitewatch – 快速检查 SSL、DNS、HTTP 状态和安全标头](https://news.ycombinator.com/item?id=46481007)**（来源：Hacker News）
+  > 无需登录的网站基础状态检查工具，快速验证SSL、DNS、HTTP状态和安全头，简化运维和部署验证流程。
 
-- **[LEANN：基于图选择性重计算的本地向量数据库](https://github.com/yichuan-w/LEANN)**（来源：GitHub Trending）
-  > 在个人设备上实现高效、精准且私密的RAG应用，相比传统方案节省97%存储空间且无精度损失。
+- **[Megalodon LM重新实现，专注于长上下文子线性内存缩放](https://github.com/pszemraj/megalodon-hf)**（来源：GitHub Trending）
+  > 重新实现Megalodon LM，旨在实现上下文长度的次线性内存缩放，为实际部署长上下文模型提供可行的实验平台。
 
-- **[Amazon Bedrock AgentCore 提供框架与模型无关的AI智能体生产级部署平台](https://github.com/awslabs/amazon-bedrock-agentcore-samples)**（来源：GitHub Trending）
-  > 提供安全、可扩展的运行时、工具集成和可观测性，支持快速将各类AI框架应用投入实际生产。
+- **[用于研究嵌入与输出行为不对称性的代码库](https://github.com/buk81/uniformity-asymmetry)**（来源：GitHub Trending）
+  > 开源代码库揭示模型嵌入几何形状与输出偏好间的巨大差异，对“嵌入即行为”的常见假设提出质疑。
 
-- **[同一AI智能体，不同提示词：安全通过率从0%到62%](https://news.ycombinator.com/item?id=46470164)**（来源：Hacker News）
-  > 系统提示词设计对AI代理安全性影响大于模型本身，相同任务下不同提示结构导致通过率巨大差异。
+- **[多头部潜在注意力（MLA）正成为行业标准](https://twitter.com/teortaxesTex/status/2006710658792910891)**（来源：AINews）
+  > 行业观察指出，多头部潜在注意力（MLA）正被DeepSeek等模型采用，悄然成为全注意力层的新标准。
 
-- **[Go-Highway – Go 语言的可移植 SIMD 库](https://news.ycombinator.com/item?id=46470342)**（来源：Hacker News）
-  > 利用Go 1.26原生SIMD支持，提供兼容层使代码能在AVX2、AVX-512或标量模式下运行，包含常用向量化数学函数。
+- **[研究揭示LLM作为评判者时存在偏见](https://twitter.com/RisingSayak/status/2006701355629686842)**（来源：AINews）
+  > 研究发现LLM作为评判者存在供应商自我偏好、“思考模式”差异等偏见，并发布了可复用的评估流程代码。
 
-- **[Runtm - 为智能体构建软件的开源运行时与控制平面](https://news.ycombinator.com/item?id=46470702)**（来源：Hacker News）
-  > 开源运行时与控制平面，专注于为AI智能体构建软件，提供生产级部署和管理能力。
+- **[StackOverflow 月度提问总数变化趋势](https://news.ycombinator.com/item?id=46482345)**（来源：Hacker News）
+  > 分析StackOverflow提问数下降趋势，社区讨论LLM对开发者社区行为模式产生的深远影响。
 
 ---
 
 ### 各渠道精选摘要
-- [少数派](./2026-01-03/shaoshupai_2026-01-03.md)
-- [美团技术团队](./2026-01-03/meituan_2026-01-03.md)
+- [少数派](./2026-01-04/shaoshupai_2026-01-04.md)
+- [美团技术团队](./2026-01-04/meituan_2026-01-04.md)
 
 ---
 
 ### 渠道精选
-- [AINews](./2026-01-03/ai_news_summary_2026-01-03.md)
-- [GitHub Trending](./2026-01-03/github_trending_2026-01-03.md)
-- [V2EX 技术版](./2026-01-03/v2ex_hot_2026-01-03.md)
+- [AINews](./2026-01-04/ai_news_summary_2026-01-04.md)
+- [GitHub Trending](./2026-01-04/github_trending_2026-01-04.md)
+- [V2EX 技术版](./2026-01-04/v2ex_hot_2026-01-04.md)
 
 ---
 
 ### Hacker News 精选
-- [Hacker News 首页](./2026-01-03/hacker_news_frontpage_2026-01-03.md)
-- [Hacker News 近期最佳](./2026-01-03/hacker_news_best_2026-01-03.md)
-- [Hacker News 高赞评论](./2026-01-03/hacker_news_top_comments_2026-01-03.md)
-- [Hacker News 问答](./2026-01-03/hacker_news_ask_2026-01-03.md)
-- [Hacker News 展示](./2026-01-03/hacker_news_show_2026-01-03.md)
-- [Hacker News 音频技术](./2026-01-03/hacker_news_audio_tech_2026-01-03.md)
+- [Hacker News 首页](./2026-01-04/hacker_news_frontpage_2026-01-04.md)
+- [Hacker News 近期最佳](./2026-01-04/hacker_news_best_2026-01-04.md)
+- [Hacker News 高赞评论](./2026-01-04/hacker_news_top_comments_2026-01-04.md)
+- [Hacker News 问答](./2026-01-04/hacker_news_ask_2026-01-04.md)
+- [Hacker News 展示](./2026-01-04/hacker_news_show_2026-01-04.md)
+- [Hacker News 音频技术](./2026-01-04/hacker_news_audio_tech_2026-01-04.md)
 
 ---
 
 ### Reddit 精选频道
-- [Reddit AMA](./2026-01-03/reddit_ama_2026-01-03.md)
-- [Reddit AskReddit](./2026-01-03/reddit_askreddit_2026-01-03.md)
-- [Reddit Showerthoughts](./2026-01-03/reddit_showerthoughts_2026-01-03.md)
-- [Reddit TIL](./2026-01-03/reddit_todayilearned_2026-01-03.md)
-- [Reddit DevOps](./2026-01-03/reddit_devops_2026-01-03.md)
-- [Reddit Programming](./2026-01-03/reddit_programming_2026-01-03.md)
-- [Reddit ELI5](./2026-01-03/reddit_explainlikeimfive_2026-01-03.md)
-- [Reddit Golang](./2026-01-03/reddit_golang_2026-01-03.md)
-- [Reddit Rust](./2026-01-03/reddit_rust_2026-01-03.md)
-- [Reddit ML](./2026-01-03/reddit_machinelearning_2026-01-03.md)
+- [Reddit AMA](./2026-01-04/reddit_ama_2026-01-04.md)
+- [Reddit AskReddit](./2026-01-04/reddit_askreddit_2026-01-04.md)
+- [Reddit Showerthoughts](./2026-01-04/reddit_showerthoughts_2026-01-04.md)
+- [Reddit TIL](./2026-01-04/reddit_todayilearned_2026-01-04.md)
+- [Reddit DevOps](./2026-01-04/reddit_devops_2026-01-04.md)
+- [Reddit Programming](./2026-01-04/reddit_programming_2026-01-04.md)
+- [Reddit ELI5](./2026-01-04/reddit_explainlikeimfive_2026-01-04.md)
+- [Reddit Golang](./2026-01-04/reddit_golang_2026-01-04.md)
+- [Reddit Rust](./2026-01-04/reddit_rust_2026-01-04.md)
+- [Reddit ML](./2026-01-04/reddit_machinelearning_2026-01-04.md)
 
 ---
 
 ### 每周一看
 - [Cloudflare Blog](https://blog.cloudflare.com/zh-cn/)
-- [少数派](./2026-01-03/shaoshupai_2026-01-03.md)
-- [美团技术团队](./2026-01-03/meituan_2026-01-03.md)
+- [少数派](./2026-01-04/shaoshupai_2026-01-04.md)
+- [美团技术团队](./2026-01-04/meituan_2026-01-04.md)
 
 # 往日新闻
+
+#### [2026-01-03](./2026-01-03/newsletter.md)
 
 #### [2026-01-02](./2026-01-02/newsletter.md)
 
