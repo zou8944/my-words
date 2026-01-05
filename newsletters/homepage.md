@@ -1,87 +1,89 @@
 ## 今日要闻
 
-<sub> 生成时间：2026-01-04 08:12:36</sub>
+<sub> 生成时间：2026-01-05 08:12:33</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[通过循环语言模型扩展潜在推理能力](https://news.ycombinator.com/item?id=46481849)**（来源：Hacker News）
-  > 讨论如何通过循环语言模型（RLM）架构扩展模型的潜在推理能力，为长程任务提供新的技术思路。
+- **[DeepSeek发布mHC论文，革新残差连接设计](https://arxiv.org/abs/2512.24880)**（来源：AINews）
+  > 提出流形约束超连接，在仅6.7%训练开销下显著改善梯度稳定性，为模型扩展提供新的关键杠杆。
 
-- **[同事的AI工作流令怀疑论者刮目相看](https://news.ycombinator.com/item?id=46481814)**（来源：Hacker News）
-  > 分享高效AI代码助手工作流：多模型交叉审查、清晰任务描述和TypeScript单体仓库，显著提升代码生成质量与效率。
+- **[Prime Intellect提出递归语言模型，旨在解决长程智能体上下文管理瓶颈](https://twitter.com/PrimeIntellect/status/2006834561637036272)**（来源：AINews）
+  > 主张智能体突破在于模型学习自主管理上下文，而非扩大窗口，代表架构范式的转变。
 
-- **[Yolog——归档并分析你的氛围编程会话](https://news.ycombinator.com/item?id=46482583)**（来源：Hacker News）
-  > 开源桌面应用，用于记录、回放和分析AI编程会话，帮助开发者从历史交互中提取可复用的模式与知识。
+- **[IQuest发布40B循环Transformer模型，声称在SWE-Bench Verified上超越Claude 4.5 Opus](https://huggingface.co/IQuestLab/IQuest-Coder-V1-40B-Loop-Instruct)**（来源：AINews）
+  > 40B参数循环Transformer模型，采用混合注意力机制，在编码基准上声称达到新SOTA。
 
-- **[Vibe to Prod——面向AI辅助开发的生产就绪模板](https://news.ycombinator.com/item?id=46481023)**（来源：Hacker News）
-  > 全栈生产级模板，集成前后端、云设施和CI/CD，专为AI辅助开发设计，旨在加速从构思到上线的过程。
+- **[CIE (Contextual Instruction Execution)：管理长上下文的工作框架](https://github.com/Diogenesoftoronto/CIE)**（来源：AINews）
+  > 开源框架，帮助模型自主管理和扩展工作集以应对长程任务，为复杂智能体提供工具探索。
 
-- **[Sitewatch – 快速检查 SSL、DNS、HTTP 状态和安全标头](https://news.ycombinator.com/item?id=46481007)**（来源：Hacker News）
-  > 无需登录的网站基础状态检查工具，快速验证SSL、DNS、HTTP状态和安全头，简化运维和部署验证流程。
+- **[Pathway：基于Rust引擎的Python流处理框架](https://github.com/pathwaycom/pathway)**（来源：GitHub Trending）
+  > 统一批流数据处理，内置AI工具链，适合构建低延迟的实时ETL、分析和LLM/RAG管道。
 
-- **[Megalodon LM重新实现，专注于长上下文子线性内存缩放](https://github.com/pszemraj/megalodon-hf)**（来源：GitHub Trending）
-  > 重新实现Megalodon LM，旨在实现上下文长度的次线性内存缩放，为实际部署长上下文模型提供可行的实验平台。
+- **[Show HN：基于大语言模型的PCB原理图检查工具（重大更新）](https://news.ycombinator.com/item?id=46492601)**（来源：Hacker News）
+  > Traceformer.io利用LLM审查电路图，自动获取数据手册，检测传统ERC工具无法发现的问题。
 
-- **[用于研究嵌入与输出行为不对称性的代码库](https://github.com/buk81/uniformity-asymmetry)**（来源：GitHub Trending）
-  > 开源代码库揭示模型嵌入几何形状与输出偏好间的巨大差异，对“嵌入即行为”的常见假设提出质疑。
+- **[Show HN：Delta——用于针对性代码编辑的LLM工具](https://news.ycombinator.com/item?id=46492985)**（来源：Hacker News）
+  > 主张让工程师指定修改内容，AI专注正确写代码，以解决现有AI代理工具不透明的问题。
 
-- **[多头部潜在注意力（MLA）正成为行业标准](https://twitter.com/teortaxesTex/status/2006710658792910891)**（来源：AINews）
-  > 行业观察指出，多头部潜在注意力（MLA）正被DeepSeek等模型采用，悄然成为全注意力层的新标准。
+- **[在谷歌十四年的经验与教训](https://news.ycombinator.com/item?id=46488819)**（来源：Hacker News）
+  > 前谷歌工程师分享大公司内部“用户痴迷”文化的真实实践困境与工程团队脱节现象。
 
-- **[研究揭示LLM作为评判者时存在偏见](https://twitter.com/RisingSayak/status/2006701355629686842)**（来源：AINews）
-  > 研究发现LLM作为评判者存在供应商自我偏好、“思考模式”差异等偏见，并发布了可复用的评估流程代码。
+- **[Ask HN：在编写代码前，你如何对产品需求进行压力测试？](https://news.ycombinator.com/item?id=46489750)**（来源：Hacker News）
+  > QA工程师探讨许多生产bug源于需求不明确，并分享在编码前测试功能逻辑以发现隐藏假设的方法。
 
-- **[StackOverflow 月度提问总数变化趋势](https://news.ycombinator.com/item?id=46482345)**（来源：Hacker News）
-  > 分析StackOverflow提问数下降趋势，社区讨论LLM对开发者社区行为模式产生的深远影响。
+- **[分享一个代码优化导致的死循环](https://www.v2ex.com/t/1182913)**（来源：V2EX）
+  > 实战案例：因标志位未设置为`volatile`被编译器优化，导致多线程环境中出现非必现死循环。
 
 ---
 
 ### 各渠道精选摘要
-- [少数派](./2026-01-04/shaoshupai_2026-01-04.md)
-- [美团技术团队](./2026-01-04/meituan_2026-01-04.md)
+- [少数派](./2026-01-05/shaoshupai_2026-01-05.md)
+- [美团技术团队](./2026-01-05/meituan_2026-01-05.md)
 
 ---
 
 ### 渠道精选
-- [AINews](./2026-01-04/ai_news_summary_2026-01-04.md)
-- [GitHub Trending](./2026-01-04/github_trending_2026-01-04.md)
-- [V2EX 技术版](./2026-01-04/v2ex_hot_2026-01-04.md)
+- [AINews](./2026-01-05/ai_news_summary_2026-01-05.md)
+- [GitHub Trending](./2026-01-05/github_trending_2026-01-05.md)
+- [V2EX 技术版](./2026-01-05/v2ex_hot_2026-01-05.md)
 
 ---
 
 ### Hacker News 精选
-- [Hacker News 首页](./2026-01-04/hacker_news_frontpage_2026-01-04.md)
-- [Hacker News 近期最佳](./2026-01-04/hacker_news_best_2026-01-04.md)
-- [Hacker News 高赞评论](./2026-01-04/hacker_news_top_comments_2026-01-04.md)
-- [Hacker News 问答](./2026-01-04/hacker_news_ask_2026-01-04.md)
-- [Hacker News 展示](./2026-01-04/hacker_news_show_2026-01-04.md)
-- [Hacker News 音频技术](./2026-01-04/hacker_news_audio_tech_2026-01-04.md)
+- [Hacker News 首页](./2026-01-05/hacker_news_frontpage_2026-01-05.md)
+- [Hacker News 近期最佳](./2026-01-05/hacker_news_best_2026-01-05.md)
+- [Hacker News 高赞评论](./2026-01-05/hacker_news_top_comments_2026-01-05.md)
+- [Hacker News 问答](./2026-01-05/hacker_news_ask_2026-01-05.md)
+- [Hacker News 展示](./2026-01-05/hacker_news_show_2026-01-05.md)
+- [Hacker News 音频技术](./2026-01-05/hacker_news_audio_tech_2026-01-05.md)
 
 ---
 
 ### Reddit 精选频道
-- [Reddit AMA](./2026-01-04/reddit_ama_2026-01-04.md)
-- [Reddit AskReddit](./2026-01-04/reddit_askreddit_2026-01-04.md)
-- [Reddit Showerthoughts](./2026-01-04/reddit_showerthoughts_2026-01-04.md)
-- [Reddit TIL](./2026-01-04/reddit_todayilearned_2026-01-04.md)
-- [Reddit DevOps](./2026-01-04/reddit_devops_2026-01-04.md)
-- [Reddit Programming](./2026-01-04/reddit_programming_2026-01-04.md)
-- [Reddit ELI5](./2026-01-04/reddit_explainlikeimfive_2026-01-04.md)
-- [Reddit Golang](./2026-01-04/reddit_golang_2026-01-04.md)
-- [Reddit Rust](./2026-01-04/reddit_rust_2026-01-04.md)
-- [Reddit ML](./2026-01-04/reddit_machinelearning_2026-01-04.md)
+- [Reddit AMA](./2026-01-05/reddit_ama_2026-01-05.md)
+- [Reddit AskReddit](./2026-01-05/reddit_askreddit_2026-01-05.md)
+- [Reddit Showerthoughts](./2026-01-05/reddit_showerthoughts_2026-01-05.md)
+- [Reddit TIL](./2026-01-05/reddit_todayilearned_2026-01-05.md)
+- [Reddit DevOps](./2026-01-05/reddit_devops_2026-01-05.md)
+- [Reddit Programming](./2026-01-05/reddit_programming_2026-01-05.md)
+- [Reddit ELI5](./2026-01-05/reddit_explainlikeimfive_2026-01-05.md)
+- [Reddit Golang](./2026-01-05/reddit_golang_2026-01-05.md)
+- [Reddit Rust](./2026-01-05/reddit_rust_2026-01-05.md)
+- [Reddit ML](./2026-01-05/reddit_machinelearning_2026-01-05.md)
 
 ---
 
 ### 每周一看
 - [Cloudflare Blog](https://blog.cloudflare.com/zh-cn/)
-- [少数派](./2026-01-04/shaoshupai_2026-01-04.md)
-- [美团技术团队](./2026-01-04/meituan_2026-01-04.md)
+- [少数派](./2026-01-05/shaoshupai_2026-01-05.md)
+- [美团技术团队](./2026-01-05/meituan_2026-01-05.md)
 
 # 往日新闻
+
+#### [2026-01-04](./2026-01-04/newsletter.md)
 
 #### [2026-01-03](./2026-01-03/newsletter.md)
 
