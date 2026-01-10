@@ -1,87 +1,89 @@
 ## 今日要闻
 
-<sub> 生成时间：2026-01-08 08:14:02</sub>
+<sub> 生成时间：2026-01-10 08:13:52</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[BitNet.cpp：微软1位大语言模型推理框架](https://github.com/microsoft/BitNet)**（来源：GitHub Trending）
-  > 微软官方推理框架，支持1位量化模型，在CPU上实现5-6倍加速，使百亿参数模型能在单CPU上以接近人眼阅读速度运行。
+- **[GLM-4.7 在开放权重模型中表现领先](https://twitter.com/ArtificialAnlys/status/2009117037667422457)**（来源：AINews）  
+  > 在最新评估中，GLM-4.7（推理）得分42，在编码、智能体应用和科学推理方面表现强劲，是当前最强的开放权重模型之一。
 
-- **[DFlash：结合扩散与自回归的推测解码实现6.2倍无损加速](https://twitter.com/zhijianliu_/status/2008394269103378795)**（来源：AINews）
-  > 使用扩散模型生成草稿、自回归模型验证，在Qwen3-8B上实现6.2倍无损加速，比EAGLE-3快2.5倍。
+- **[vLLM 推理引擎性能取得重大突破](https://twitter.com/vllm_project/status/2009196819331600648)**（来源：AINews）  
+  > vLLM 在 NVIDIA B200 上达到 16k tokens/sec 吞吐量，并集成 KV 卸载连接器，在 H100 上可实现高达 9 倍的吞吐量提升。
 
-- **[SSD、断电保护与fsync延迟](https://news.ycombinator.com/item?id=46532675)**（来源：Hacker News）
-  > 深度探讨SSD断电保护机制与fsync延迟对数据一致性的影响，为数据库和存储系统开发者提供关键实践参考。
+- **[智能体开发模式趋向标准化与文件化](https://twitter.com/hwchase17/status/2009388479604773076)**（来源：AINews）  
+  > LangChain 创始人指出，智能体正被定义为由 Markdown/JSON 文件组成的文件夹，使其更像可版本控制的仓库产物。
 
-- **[PageIndex：基于推理的RAG系统，无需向量数据库](https://github.com/VectifyAI/PageIndex)**（来源：GitHub Trending）
-  > 通过构建文档层次化树状索引，利用LLM进行推理式检索，在专业长文档分析中实现高精度，特别适合金融、法律领域。
+- **[Hugging Face Transformers v5 发布](https://huggingface.co/blog/transformers-v5)**（来源：AINews）  
+  > Transformers v5 统一了分词器后端，模块化了模型定义，主要关注 PyTorch，并优先考虑量化和新的服务/推理功能。
 
-- **[Claude Code的涌现行为：当技能组合时](https://news.ycombinator.com/item?id=46531794)**（来源：Hacker News）
-  > 探讨Claude Code在组合多个定制技能后表现出的涌现能力，揭示AI编程助手在复杂工作流中的潜力与边界。
+- **[Claude-Mem：为 Claude Code 设计的持久化记忆插件](https://github.com/thedotmack/claude-mem)**（来源：GitHub Trending）  
+  > 通过 AI 压缩并智能注入编码会话中的操作，解决了 AI 助手跨会话遗忘上下文的问题，适用于长期项目开发。
 
-- **[vLLM-Omni v0.12.0rc1发布，聚焦生产级多模态服务稳定性](https://twitter.com/vllm_project/status/2008482657991368738)**（来源：AINews）
-  > 专注于稳定性和标准化，提供OpenAI兼容端点，新增模型支持，并增加ROCm/AMD CI + Docker支持。
+- **[VideoRAG：基于检索增强生成的桌面视频对话应用](https://github.com/HKUDS/VideoRAG)**（来源：GitHub Trending）  
+  > 采用图驱动知识索引与分层上下文编码，能高效处理数百小时视频内容，在单 GPU 上实现精准的多模态检索与分析。
 
-- **[我的第一篇论文：基于魔方的实用密码密钥实现](https://news.ycombinator.com/item?id=46533315)**（来源：Hacker News）
-  > 将魔方物理状态作为密钥种子生成FIDO2凭证，实现无需存储密钥的WebAuthn认证，展示硬件安全新思路。
+- **[Embassy：基于 Rust 和异步的现代嵌入式框架](https://news.ycombinator.com/item?id=46547740)**（来源：Hacker News）  
+  > 一个用于嵌入式开发的 Rust 框架，利用异步编程模型，旨在提供高效、可靠且易于使用的开发体验。
 
-- **[NousCoder-14B：在编程竞赛中表现优异的代码模型](https://nousresearch.com/nouscoder-14b-a-competitive-olympiad-programming-model/)**（来源：AINews）
-  > 基于Qwen3-14B训练，在编程竞赛任务上Pass@1率达67.87%，提升7.08%，关注可验证执行奖励和可复现性。
+- **[用 200 行代码实现 Claude Code](https://news.ycombinator.com/item?id=46545620)**（来源：Hacker News）  
+  > 一篇技术文章揭示了编码智能体的核心其实非常简单，就是一个带有工具调用的循环，并提供了最小化实现。
 
-- **[SonicJS：专为Cloudflare Workers打造的开源无头CMS](https://news.ycombinator.com/item?id=46534997)**（来源：Hacker News Show）
-  > 在300多个边缘数据中心运行，响应时间低于100毫秒，采用TypeScript优先，性能比Node/Express快6倍，无冷启动问题。
+- **[Ask HN：2026 年谁在本地运行 AI 工作站？](https://news.ycombinator.com/item?id=46560663)**（来源：Hacker News）  
+  > 一个深入的讨论，探讨了在硬件和软件生态成熟的今天，驱动本地 AI 推理的实际因素、成本优势和真正价值所在。
 
-- **[Ask HN：如何防止AI辅助编程中的草率验证？](https://news.ycombinator.com/item?id=46529713)**（来源：Hacker News 问答）
-  > 开发者探讨AI代码工具带来的验证挑战，分享平衡开发速度与代码质量的几种工作流尝试，具有实践指导意义。
+- **[抽象陷阱：为何层层封装正在扼杀你的模型](https://news.ycombinator.com/item?id=46560240)**（来源：Hacker News）  
+  > 文章批评现代 AI 开发栈过度抽象，主张使用原生工具和协议进行上下文工程，以保持完整上下文和提升模型推理能力。
 
 ---
 
 ### 各渠道精选摘要
-- [少数派](./2026-01-08/shaoshupai_2026-01-08.md)
-- [美团技术团队](./2026-01-08/meituan_2026-01-08.md)
+- [少数派](./2026-01-10/shaoshupai_2026-01-10.md)
+- [美团技术团队](./2026-01-10/meituan_2026-01-10.md)
 
 ---
 
 ### 渠道精选
-- [AINews](./2026-01-08/ai_news_summary_2026-01-08.md)
-- [GitHub Trending](./2026-01-08/github_trending_2026-01-08.md)
-- [V2EX 技术版](./2026-01-08/v2ex_hot_2026-01-08.md)
+- [AINews](./2026-01-10/ai_news_summary_2026-01-10.md)
+- [GitHub Trending](./2026-01-10/github_trending_2026-01-10.md)
+- [V2EX 技术版](./2026-01-10/v2ex_hot_2026-01-10.md)
 
 ---
 
 ### Hacker News 精选
-- [Hacker News 首页](./2026-01-08/hacker_news_frontpage_2026-01-08.md)
-- [Hacker News 近期最佳](./2026-01-08/hacker_news_best_2026-01-08.md)
-- [Hacker News 高赞评论](./2026-01-08/hacker_news_top_comments_2026-01-08.md)
-- [Hacker News 问答](./2026-01-08/hacker_news_ask_2026-01-08.md)
-- [Hacker News 展示](./2026-01-08/hacker_news_show_2026-01-08.md)
-- [Hacker News 音频技术](./2026-01-08/hacker_news_audio_tech_2026-01-08.md)
+- [Hacker News 首页](./2026-01-10/hacker_news_frontpage_2026-01-10.md)
+- [Hacker News 近期最佳](./2026-01-10/hacker_news_best_2026-01-10.md)
+- [Hacker News 高赞评论](./2026-01-10/hacker_news_top_comments_2026-01-10.md)
+- [Hacker News 问答](./2026-01-10/hacker_news_ask_2026-01-10.md)
+- [Hacker News 展示](./2026-01-10/hacker_news_show_2026-01-10.md)
+- [Hacker News 音频技术](./2026-01-10/hacker_news_audio_tech_2026-01-10.md)
 
 ---
 
 ### Reddit 精选频道
-- [Reddit AMA](./2026-01-08/reddit_ama_2026-01-08.md)
-- [Reddit AskReddit](./2026-01-08/reddit_askreddit_2026-01-08.md)
-- [Reddit Showerthoughts](./2026-01-08/reddit_showerthoughts_2026-01-08.md)
-- [Reddit TIL](./2026-01-08/reddit_todayilearned_2026-01-08.md)
-- [Reddit DevOps](./2026-01-08/reddit_devops_2026-01-08.md)
-- [Reddit Programming](./2026-01-08/reddit_programming_2026-01-08.md)
-- [Reddit ELI5](./2026-01-08/reddit_explainlikeimfive_2026-01-08.md)
-- [Reddit Golang](./2026-01-08/reddit_golang_2026-01-08.md)
-- [Reddit Rust](./2026-01-08/reddit_rust_2026-01-08.md)
-- [Reddit ML](./2026-01-08/reddit_machinelearning_2026-01-08.md)
+- [Reddit AMA](./2026-01-10/reddit_ama_2026-01-10.md)
+- [Reddit AskReddit](./2026-01-10/reddit_askreddit_2026-01-10.md)
+- [Reddit Showerthoughts](./2026-01-10/reddit_showerthoughts_2026-01-10.md)
+- [Reddit TIL](./2026-01-10/reddit_todayilearned_2026-01-10.md)
+- [Reddit DevOps](./2026-01-10/reddit_devops_2026-01-10.md)
+- [Reddit Programming](./2026-01-10/reddit_programming_2026-01-10.md)
+- [Reddit ELI5](./2026-01-10/reddit_explainlikeimfive_2026-01-10.md)
+- [Reddit Golang](./2026-01-10/reddit_golang_2026-01-10.md)
+- [Reddit Rust](./2026-01-10/reddit_rust_2026-01-10.md)
+- [Reddit ML](./2026-01-10/reddit_machinelearning_2026-01-10.md)
 
 ---
 
 ### 每周一看
 - [Cloudflare Blog](https://blog.cloudflare.com/zh-cn/)
-- [少数派](./2026-01-08/shaoshupai_2026-01-08.md)
-- [美团技术团队](./2026-01-08/meituan_2026-01-08.md)
+- [少数派](./2026-01-10/shaoshupai_2026-01-10.md)
+- [美团技术团队](./2026-01-10/meituan_2026-01-10.md)
 
 # 往日新闻
+
+#### [2026-01-08](./2026-01-08/newsletter.md)
 
 #### [2026-01-07](./2026-01-07/newsletter.md)
 
