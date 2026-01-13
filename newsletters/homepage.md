@@ -1,87 +1,89 @@
 ## 今日要闻
 
-<sub> 生成时间：2026-01-12 08:14:16</sub>
+<sub> 生成时间：2026-01-13 08:13:38</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[AI21 Labs提出解决多代理“并行写入”问题的方案](https://twitter.com/AI21Labs/status/2009565879600923100)**（来源：AINews）
-  > 利用 `git worktrees` 作为原语，构建“MCP Workspace”层，使多个子代理能并发尝试1-16次写入而无需协调，然后合并最佳结果。
+- **[Anthropic发布面向生产的AI代理评估指南](https://twitter.com/AnthropicAI/status/2009696515061911674)**（来源：AINews）
+  > 涵盖评估者类型、能力与回归评估、pass@k与pass^k区别，建议从真实失败案例构建评估体系，是面向生产的实用指南。
 
-- **[Claude Code开源其内部代码简化代理](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-simplifier)**（来源：AINews）
-  > 开源用于清理大型复杂Pull Request的代码简化代理，可在不改变行为的前提下降低代码复杂度，现集成于官方插件。
+- **[DeepSeek发布新的LLM扩展训练方法MHC](https://www.arxiv.org/abs/2512.24880)**（来源：AINews）
+  > 提出流形约束超连接方法，通过约束混合矩阵凸包防止信号爆炸，在扩展LLM时提升训练稳定性与推理任务表现。
 
-- **[技能框架（Skill.md）成为代理模块化标准](https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills)**（来源：AINews）
-  > Anthropic推广将工具、文档元数据打包成 `skill.md` 捆绑包，使单个代理能选择性读取数千技能，避免提示词膨胀。
+- **[字节开源多模态AI智能体栈TARS](https://github.com/bytedance/UI-TARS-desktop)**（来源：GitHub Trending）
+  > 整合前沿多模态大模型与MCP工具，通过CLI和Web UI提供类人工作流，实现终端、计算机及浏览器的GUI与视觉自动化控制。
 
-- **[代理化RAG演示工具包](https://github.com/chchchadzilla/Agentic-RAG-Demo-Toolkit)**（来源：AINews）
-  > 基于OpenRouter API、Qdrant和FastAPI构建的品牌无关RAG聊天机器人及摄取管道工具包，用于快速创建演示或内部原型。
+- **[Superpowers：为AI编程助手构建的“技能库”与开发工作流框架](https://github.com/obra/superpowers)**（来源：GitHub Trending）
+  > 通过可组合的自动化技能（如需求澄清、TDD实施），将AI助手转变为能执行完整软件工程流程的协作伙伴。
 
-- **[ChromeDevTools/chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp)**（来源：GitHub Trending）
-  > 一个MCP服务器，让AI编程助手能通过Chrome DevTools控制并检查实时浏览器，基于Puppeteer实现可靠自动化与深度调试。
+- **[LLVM：那些不尽如人意的部分](https://news.ycombinator.com/item?id=46588837)**（来源：Hacker News）
+  > 深入探讨LLVM编译器框架在设计、API、文档和社区治理等方面存在的长期问题与挑战，视角来自一线开发者。
 
-- **[Show HN：工程精神分裂症：在拜占庭故障中信任自己](https://news.ycombinator.com/item?id=46580652)**（来源：Hacker News）
-  > 作者分享将分布式系统调试技能应用于应对精神分裂症的经验，并探讨将此过程自动化的可能性，视角独特。
+- **[FUSE 即一切所需——通过文件系统为智能体提供万物访问能力](https://news.ycombinator.com/item?id=46580136)**（来源：Hacker News）
+  > 提出利用FUSE文件系统接口作为统一抽象层，让AI智能体能够以操作文件的方式安全、便捷地访问各类系统资源和服务。
 
-- **[Show HN：Chr2 – 副作用共识（精确一次是谎言）](https://news.ycombinator.com/item?id=46579900)**（来源：Hacker News）
-  > 一个共识库，通过复制待处理队列和持久化防护机制，解决分布式系统中因领导者崩溃导致重复执行副作用的问题。
+- **[Ask HN：管理AI功能与传统编码有本质区别吗？](https://news.ycombinator.com/item?id=46591688)**（来源：Hacker News）
+  > 探讨AI系统开发因输出概率性和上下文依赖，导致工作难以拆分为可预测小任务，与传统确定性工程管理的差异。
 
-- **[Ask HN：如何平衡AI编程工具与初级开发者的成长？](https://news.ycombinator.com/item?id=46577832)**（来源：Hacker News）
-  > 资深开发者担忧团队过度依赖AI工具可能导致新人缺乏基础技能，团队领导面临平衡传统技能培养与现代工具使用的挑战。
+- **[Show HN：Nudge – 将规则注入智能体上下文](https://news.ycombinator.com/item?id=46595449)**（来源：Hacker News）
+  > 通过Hooks API实时监控AI助手代码编写，检测并提示违反编码风格规则的行为，解决长任务中规则遗忘问题。
 
-- **[Show HN：我用三周时间打造了Sonars，测试AI编程对我公司是否有用](https://news.ycombinator.com/item?id=46581314)**（来源：Hacker News）
-  > 资深图形程序员用纯AI代理构建开发工具，核心创新是使用Git工作树隔离每个AI会话，确保主分支安全，大幅提升效率。
+- **[全面量化方法基准测试发布](https://docs.jarvislabs.ai/blog/vllm-quantization-complete-guide-benchmarks)**（来源：AINews）
+  > 对vLLM中各种4位量化方法进行全面基准测试，关键发现包括Marlin推理速度优于FP16基线，BitsandBytes质量损失最小。
 
-- **[基于 Pydantic-Resolve 和 FastAPI-Voyager 的 Clean Architecture 实践](https://github.com/allmonday/A-Python-web-development-methodology-for-complex-business-scenarios/blob/main/README.zh.md)**（来源：V2EX）
-  > 一套面向复杂业务场景的Python Web开发方法论，结合Pydantic-Resolve和FastAPI-Voyager实现清晰的架构与数据解析。
+- **[开源音视频生成模型LTX-2](https://ltx.io/model)**（来源：AINews）
+  > 开源权重的音视频生成模型，据称可在8GB以下显卡运行，生成最长20秒片段，并提供LoRA训练代码，是当前开源A/V生成前沿。
 
 ---
 
 ### 各渠道精选摘要
-- [少数派](./2026-01-12/shaoshupai_2026-01-12.md)
-- [美团技术团队](./2026-01-12/meituan_2026-01-12.md)
+- [少数派](./2026-01-13/shaoshupai_2026-01-13.md)
+- [美团技术团队](./2026-01-13/meituan_2026-01-13.md)
 
 ---
 
 ### 渠道精选
-- [AINews](./2026-01-12/ai_news_summary_2026-01-12.md)
-- [GitHub Trending](./2026-01-12/github_trending_2026-01-12.md)
-- [V2EX 技术版](./2026-01-12/v2ex_hot_2026-01-12.md)
+- [AINews](./2026-01-13/ai_news_summary_2026-01-13.md)
+- [GitHub Trending](./2026-01-13/github_trending_2026-01-13.md)
+- [V2EX 技术版](./2026-01-13/v2ex_hot_2026-01-13.md)
 
 ---
 
 ### Hacker News 精选
-- [Hacker News 首页](./2026-01-12/hacker_news_frontpage_2026-01-12.md)
-- [Hacker News 近期最佳](./2026-01-12/hacker_news_best_2026-01-12.md)
-- [Hacker News 高赞评论](./2026-01-12/hacker_news_top_comments_2026-01-12.md)
-- [Hacker News 问答](./2026-01-12/hacker_news_ask_2026-01-12.md)
-- [Hacker News 展示](./2026-01-12/hacker_news_show_2026-01-12.md)
-- [Hacker News 音频技术](./2026-01-12/hacker_news_audio_tech_2026-01-12.md)
+- [Hacker News 首页](./2026-01-13/hacker_news_frontpage_2026-01-13.md)
+- [Hacker News 近期最佳](./2026-01-13/hacker_news_best_2026-01-13.md)
+- [Hacker News 高赞评论](./2026-01-13/hacker_news_top_comments_2026-01-13.md)
+- [Hacker News 问答](./2026-01-13/hacker_news_ask_2026-01-13.md)
+- [Hacker News 展示](./2026-01-13/hacker_news_show_2026-01-13.md)
+- [Hacker News 音频技术](./2026-01-13/hacker_news_audio_tech_2026-01-13.md)
 
 ---
 
 ### Reddit 精选频道
-- [Reddit AMA](./2026-01-12/reddit_ama_2026-01-12.md)
-- [Reddit AskReddit](./2026-01-12/reddit_askreddit_2026-01-12.md)
-- [Reddit Showerthoughts](./2026-01-12/reddit_showerthoughts_2026-01-12.md)
-- [Reddit TIL](./2026-01-12/reddit_todayilearned_2026-01-12.md)
-- [Reddit DevOps](./2026-01-12/reddit_devops_2026-01-12.md)
-- [Reddit Programming](./2026-01-12/reddit_programming_2026-01-12.md)
-- [Reddit ELI5](./2026-01-12/reddit_explainlikeimfive_2026-01-12.md)
-- [Reddit Golang](./2026-01-12/reddit_golang_2026-01-12.md)
-- [Reddit Rust](./2026-01-12/reddit_rust_2026-01-12.md)
-- [Reddit ML](./2026-01-12/reddit_machinelearning_2026-01-12.md)
+- [Reddit AMA](./2026-01-13/reddit_ama_2026-01-13.md)
+- [Reddit AskReddit](./2026-01-13/reddit_askreddit_2026-01-13.md)
+- [Reddit Showerthoughts](./2026-01-13/reddit_showerthoughts_2026-01-13.md)
+- [Reddit TIL](./2026-01-13/reddit_todayilearned_2026-01-13.md)
+- [Reddit DevOps](./2026-01-13/reddit_devops_2026-01-13.md)
+- [Reddit Programming](./2026-01-13/reddit_programming_2026-01-13.md)
+- [Reddit ELI5](./2026-01-13/reddit_explainlikeimfive_2026-01-13.md)
+- [Reddit Golang](./2026-01-13/reddit_golang_2026-01-13.md)
+- [Reddit Rust](./2026-01-13/reddit_rust_2026-01-13.md)
+- [Reddit ML](./2026-01-13/reddit_machinelearning_2026-01-13.md)
 
 ---
 
 ### 每周一看
 - [Cloudflare Blog](https://blog.cloudflare.com/zh-cn/)
-- [少数派](./2026-01-12/shaoshupai_2026-01-12.md)
-- [美团技术团队](./2026-01-12/meituan_2026-01-12.md)
+- [少数派](./2026-01-13/shaoshupai_2026-01-13.md)
+- [美团技术团队](./2026-01-13/meituan_2026-01-13.md)
 
 # 往日新闻
+
+#### [2026-01-12](./2026-01-12/newsletter.md)
 
 #### [2026-01-11](./2026-01-11/newsletter.md)
 
