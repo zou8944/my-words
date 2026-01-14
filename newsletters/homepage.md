@@ -1,87 +1,89 @@
 ## 今日要闻
 
-<sub> 生成时间：2026-01-13 08:13:38</sub>
+<sub> 生成时间：2026-01-14 08:14:12</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[Anthropic发布面向生产的AI代理评估指南](https://twitter.com/AnthropicAI/status/2009696515061911674)**（来源：AINews）
-  > 涵盖评估者类型、能力与回归评估、pass@k与pass^k区别，建议从真实失败案例构建评估体系，是面向生产的实用指南。
+- **[DeepSeek发布“Engram”：将条件记忆作为新的稀疏性原语](https://github.com/deepseek-ai/Engram/tree/main)**（来源：AINews）
+  > 通过哈希N-gram嵌入内存，为LLM引入新的稀疏性轴，将静态知识卸载到RAM/NVMe，在保持FLOPs稳定的同时廉价扩展知识容量。
 
-- **[DeepSeek发布新的LLM扩展训练方法MHC](https://www.arxiv.org/abs/2512.24880)**（来源：AINews）
-  > 提出流形约束超连接方法，通过约束混合矩阵凸包防止信号爆炸，在扩展LLM时提升训练稳定性与推理任务表现。
+- **[Ramp开源其内部AI编码代理蓝图，称其编写了30%的合并PR](https://twitter.com/zachbruggeman/status/2010728444771074493)**（来源：AINews）
+  > 金融科技公司Ramp开源其AI编码代理系统蓝图，该系统完全在云端运行，基于开源工具构建，已在真实生产环境中成熟应用。
 
-- **[字节开源多模态AI智能体栈TARS](https://github.com/bytedance/UI-TARS-desktop)**（来源：GitHub Trending）
-  > 整合前沿多模态大模型与MCP工具，通过CLI和Web UI提供类人工作流，实现终端、计算机及浏览器的GUI与视觉自动化控制。
+- **[AI21 Labs分享大规模SWE-bench评估经验：基础设施是关键](https://twitter.com/AI21Labs/status/2010738309681823992)**（来源：AINews）
+  > 通过为每个实例单独配置、复用并将生成与评估分离，将SWE-bench评估的失败率从30%降至0，仓库下载量从8000+次减少到500次。
 
-- **[Superpowers：为AI编程助手构建的“技能库”与开发工作流框架](https://github.com/obra/superpowers)**（来源：GitHub Trending）
-  > 通过可组合的自动化技能（如需求澄清、TDD实施），将AI助手转变为能执行完整软件工程流程的协作伙伴。
+- **[开源 Dicer：Databricks 的自动分片工具](https://news.ycombinator.com/item?id=46606902)**（来源：Hacker News）
+  > Databricks开源用于数据湖表的自动分片工具，旨在优化查询性能，是来自一线工程团队的数据处理实战工具。
 
-- **[LLVM：那些不尽如人意的部分](https://news.ycombinator.com/item?id=46588837)**（来源：Hacker News）
-  > 深入探讨LLVM编译器框架在设计、API、文档和社区治理等方面存在的长期问题与挑战，视角来自一线开发者。
+- **[Ask HN：在生产系统中，你们如何防止大语言模型产生幻觉？](https://news.ycombinator.com/item?id=46610280)**（来源：Hacker News）
+  > 探讨在生产环境中防止LLM输出自信但错误内容的方法，包括提示工程、模式验证和人工干预等实际经验。
 
-- **[FUSE 即一切所需——通过文件系统为智能体提供万物访问能力](https://news.ycombinator.com/item?id=46580136)**（来源：Hacker News）
-  > 提出利用FUSE文件系统接口作为统一抽象层，让AI智能体能够以操作文件的方式安全、便捷地访问各类系统资源和服务。
+- **[Show HN：Nogic——将代码库可视化为图的 VS Code 扩展](https://news.ycombinator.com/item?id=46605675)**（来源：Hacker News）
+  > 通过可视化代码结构帮助开发者快速理解复杂代码库，解决AI工具加速代码增长带来的认知负担问题。
 
-- **[Ask HN：管理AI功能与传统编码有本质区别吗？](https://news.ycombinator.com/item?id=46591688)**（来源：Hacker News）
-  > 探讨AI系统开发因输出概率性和上下文依赖，导致工作难以拆分为可预测小任务，与传统确定性工程管理的差异。
+- **[Show HN：Ayder——用 C 语言编写的 HTTP 原生持久化事件日志](https://news.ycombinator.com/item?id=46604862)**（来源：Hacker News）
+  > 用C编写的单二进制文件、基于HTTP的持久化事件日志系统，使用curl作为客户端，无需复杂依赖，性能约每秒5万条消息。
 
-- **[Show HN：Nudge – 将规则注入智能体上下文](https://news.ycombinator.com/item?id=46595449)**（来源：Hacker News）
-  > 通过Hooks API实时监控AI助手代码编写，检测并提示违反编码风格规则的行为，解决长任务中规则遗忘问题。
+- **[DioxusLabs/dioxus](https://github.com/DioxusLabs/dioxus)**（来源：GitHub Trending）
+  > 一个基于 Rust 的全栈应用框架，支持使用单一代码库构建 Web、桌面和移动应用，提供零配置、内置热重载和信号式状态管理。
 
-- **[全面量化方法基准测试发布](https://docs.jarvislabs.ai/blog/vllm-quantization-complete-guide-benchmarks)**（来源：AINews）
-  > 对vLLM中各种4位量化方法进行全面基准测试，关键发现包括Marlin推理速度优于FP16基线，BitsandBytes质量损失最小。
+- **[frankbria/ralph-claude-code](https://github.com/frankbria/ralph-claude-code)**（来源：GitHub Trending）
+  > 为Claude Code设计的自主AI开发循环工具，通过智能退出检测和速率限制，实现项目的持续自动化迭代，防止无限循环和API滥用。
 
-- **[开源音视频生成模型LTX-2](https://ltx.io/model)**（来源：AINews）
-  > 开源权重的音视频生成模型，据称可在8GB以下显卡运行，生成最长20秒片段，并提供LoRA训练代码，是当前开源A/V生成前沿。
+- **[Sakana AI提出“DroPE”：通过丢弃位置编码来扩展上下文](https://twitter.com/SakanaAILabs/status/2010660969719165133)**（来源：AINews）
+  > 训练初期使用RoPE确保收敛，推理时移除位置编码以避免扩展上下文时的语义扭曲，发布了参考训练器实现。
 
 ---
 
 ### 各渠道精选摘要
-- [少数派](./2026-01-13/shaoshupai_2026-01-13.md)
-- [美团技术团队](./2026-01-13/meituan_2026-01-13.md)
+- [少数派](./2026-01-14/shaoshupai_2026-01-14.md)
+- [美团技术团队](./2026-01-14/meituan_2026-01-14.md)
 
 ---
 
 ### 渠道精选
-- [AINews](./2026-01-13/ai_news_summary_2026-01-13.md)
-- [GitHub Trending](./2026-01-13/github_trending_2026-01-13.md)
-- [V2EX 技术版](./2026-01-13/v2ex_hot_2026-01-13.md)
+- [AINews](./2026-01-14/ai_news_summary_2026-01-14.md)
+- [GitHub Trending](./2026-01-14/github_trending_2026-01-14.md)
+- [V2EX 技术版](./2026-01-14/v2ex_hot_2026-01-14.md)
 
 ---
 
 ### Hacker News 精选
-- [Hacker News 首页](./2026-01-13/hacker_news_frontpage_2026-01-13.md)
-- [Hacker News 近期最佳](./2026-01-13/hacker_news_best_2026-01-13.md)
-- [Hacker News 高赞评论](./2026-01-13/hacker_news_top_comments_2026-01-13.md)
-- [Hacker News 问答](./2026-01-13/hacker_news_ask_2026-01-13.md)
-- [Hacker News 展示](./2026-01-13/hacker_news_show_2026-01-13.md)
-- [Hacker News 音频技术](./2026-01-13/hacker_news_audio_tech_2026-01-13.md)
+- [Hacker News 首页](./2026-01-14/hacker_news_frontpage_2026-01-14.md)
+- [Hacker News 近期最佳](./2026-01-14/hacker_news_best_2026-01-14.md)
+- [Hacker News 高赞评论](./2026-01-14/hacker_news_top_comments_2026-01-14.md)
+- [Hacker News 问答](./2026-01-14/hacker_news_ask_2026-01-14.md)
+- [Hacker News 展示](./2026-01-14/hacker_news_show_2026-01-14.md)
+- [Hacker News 音频技术](./2026-01-14/hacker_news_audio_tech_2026-01-14.md)
 
 ---
 
 ### Reddit 精选频道
-- [Reddit AMA](./2026-01-13/reddit_ama_2026-01-13.md)
-- [Reddit AskReddit](./2026-01-13/reddit_askreddit_2026-01-13.md)
-- [Reddit Showerthoughts](./2026-01-13/reddit_showerthoughts_2026-01-13.md)
-- [Reddit TIL](./2026-01-13/reddit_todayilearned_2026-01-13.md)
-- [Reddit DevOps](./2026-01-13/reddit_devops_2026-01-13.md)
-- [Reddit Programming](./2026-01-13/reddit_programming_2026-01-13.md)
-- [Reddit ELI5](./2026-01-13/reddit_explainlikeimfive_2026-01-13.md)
-- [Reddit Golang](./2026-01-13/reddit_golang_2026-01-13.md)
-- [Reddit Rust](./2026-01-13/reddit_rust_2026-01-13.md)
-- [Reddit ML](./2026-01-13/reddit_machinelearning_2026-01-13.md)
+- [Reddit AMA](./2026-01-14/reddit_ama_2026-01-14.md)
+- [Reddit AskReddit](./2026-01-14/reddit_askreddit_2026-01-14.md)
+- [Reddit Showerthoughts](./2026-01-14/reddit_showerthoughts_2026-01-14.md)
+- [Reddit TIL](./2026-01-14/reddit_todayilearned_2026-01-14.md)
+- [Reddit DevOps](./2026-01-14/reddit_devops_2026-01-14.md)
+- [Reddit Programming](./2026-01-14/reddit_programming_2026-01-14.md)
+- [Reddit ELI5](./2026-01-14/reddit_explainlikeimfive_2026-01-14.md)
+- [Reddit Golang](./2026-01-14/reddit_golang_2026-01-14.md)
+- [Reddit Rust](./2026-01-14/reddit_rust_2026-01-14.md)
+- [Reddit ML](./2026-01-14/reddit_machinelearning_2026-01-14.md)
 
 ---
 
 ### 每周一看
 - [Cloudflare Blog](https://blog.cloudflare.com/zh-cn/)
-- [少数派](./2026-01-13/shaoshupai_2026-01-13.md)
-- [美团技术团队](./2026-01-13/meituan_2026-01-13.md)
+- [少数派](./2026-01-14/shaoshupai_2026-01-14.md)
+- [美团技术团队](./2026-01-14/meituan_2026-01-14.md)
 
 # 往日新闻
+
+#### [2026-01-13](./2026-01-13/newsletter.md)
 
 #### [2026-01-12](./2026-01-12/newsletter.md)
 
