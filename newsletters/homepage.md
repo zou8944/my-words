@@ -1,20 +1,11 @@
 ## 今日要闻
 
-<sub> 生成时间：2026-01-14 08:14:12</sub>
+<sub> 生成时间：2026-01-15 08:13:26</sub>
 
 
 ---
 
 ### AI 推荐要点
-
-- **[DeepSeek发布“Engram”：将条件记忆作为新的稀疏性原语](https://github.com/deepseek-ai/Engram/tree/main)**（来源：AINews）
-  > 通过哈希N-gram嵌入内存，为LLM引入新的稀疏性轴，将静态知识卸载到RAM/NVMe，在保持FLOPs稳定的同时廉价扩展知识容量。
-
-- **[Ramp开源其内部AI编码代理蓝图，称其编写了30%的合并PR](https://twitter.com/zachbruggeman/status/2010728444771074493)**（来源：AINews）
-  > 金融科技公司Ramp开源其AI编码代理系统蓝图，该系统完全在云端运行，基于开源工具构建，已在真实生产环境中成熟应用。
-
-- **[AI21 Labs分享大规模SWE-bench评估经验：基础设施是关键](https://twitter.com/AI21Labs/status/2010738309681823992)**（来源：AINews）
-  > 通过为每个实例单独配置、复用并将生成与评估分离，将SWE-bench评估的失败率从30%降至0，仓库下载量从8000+次减少到500次。
 
 - **[开源 Dicer：Databricks 的自动分片工具](https://news.ycombinator.com/item?id=46606902)**（来源：Hacker News）
   > Databricks开源用于数据湖表的自动分片工具，旨在优化查询性能，是来自一线工程团队的数据处理实战工具。
@@ -40,48 +31,50 @@
 ---
 
 ### 各渠道精选摘要
-- [少数派](./2026-01-14/shaoshupai_2026-01-14.md)
-- [美团技术团队](./2026-01-14/meituan_2026-01-14.md)
+- [少数派](./2026-01-15/shaoshupai_2026-01-15.md)
+- [美团技术团队](./2026-01-15/meituan_2026-01-15.md)
 
 ---
 
 ### 渠道精选
-- [AINews](./2026-01-14/ai_news_summary_2026-01-14.md)
-- [GitHub Trending](./2026-01-14/github_trending_2026-01-14.md)
-- [V2EX 技术版](./2026-01-14/v2ex_hot_2026-01-14.md)
+- [AINews](./2026-01-15/ai_news_summary_2026-01-15.md)
+- [GitHub Trending](./2026-01-15/github_trending_2026-01-15.md)
+- [V2EX 技术版](./2026-01-15/v2ex_hot_2026-01-15.md)
 
 ---
 
 ### Hacker News 精选
-- [Hacker News 首页](./2026-01-14/hacker_news_frontpage_2026-01-14.md)
-- [Hacker News 近期最佳](./2026-01-14/hacker_news_best_2026-01-14.md)
-- [Hacker News 高赞评论](./2026-01-14/hacker_news_top_comments_2026-01-14.md)
-- [Hacker News 问答](./2026-01-14/hacker_news_ask_2026-01-14.md)
-- [Hacker News 展示](./2026-01-14/hacker_news_show_2026-01-14.md)
-- [Hacker News 音频技术](./2026-01-14/hacker_news_audio_tech_2026-01-14.md)
+- [Hacker News 首页](./2026-01-15/hacker_news_frontpage_2026-01-15.md)
+- [Hacker News 近期最佳](./2026-01-15/hacker_news_best_2026-01-15.md)
+- [Hacker News 高赞评论](./2026-01-15/hacker_news_top_comments_2026-01-15.md)
+- [Hacker News 问答](./2026-01-15/hacker_news_ask_2026-01-15.md)
+- [Hacker News 展示](./2026-01-15/hacker_news_show_2026-01-15.md)
+- [Hacker News 音频技术](./2026-01-15/hacker_news_audio_tech_2026-01-15.md)
 
 ---
 
 ### Reddit 精选频道
-- [Reddit AMA](./2026-01-14/reddit_ama_2026-01-14.md)
-- [Reddit AskReddit](./2026-01-14/reddit_askreddit_2026-01-14.md)
-- [Reddit Showerthoughts](./2026-01-14/reddit_showerthoughts_2026-01-14.md)
-- [Reddit TIL](./2026-01-14/reddit_todayilearned_2026-01-14.md)
-- [Reddit DevOps](./2026-01-14/reddit_devops_2026-01-14.md)
-- [Reddit Programming](./2026-01-14/reddit_programming_2026-01-14.md)
-- [Reddit ELI5](./2026-01-14/reddit_explainlikeimfive_2026-01-14.md)
-- [Reddit Golang](./2026-01-14/reddit_golang_2026-01-14.md)
-- [Reddit Rust](./2026-01-14/reddit_rust_2026-01-14.md)
-- [Reddit ML](./2026-01-14/reddit_machinelearning_2026-01-14.md)
+- [Reddit AMA](./2026-01-15/reddit_ama_2026-01-15.md)
+- [Reddit AskReddit](./2026-01-15/reddit_askreddit_2026-01-15.md)
+- [Reddit Showerthoughts](./2026-01-15/reddit_showerthoughts_2026-01-15.md)
+- [Reddit TIL](./2026-01-15/reddit_todayilearned_2026-01-15.md)
+- [Reddit DevOps](./2026-01-15/reddit_devops_2026-01-15.md)
+- [Reddit Programming](./2026-01-15/reddit_programming_2026-01-15.md)
+- [Reddit ELI5](./2026-01-15/reddit_explainlikeimfive_2026-01-15.md)
+- [Reddit Golang](./2026-01-15/reddit_golang_2026-01-15.md)
+- [Reddit Rust](./2026-01-15/reddit_rust_2026-01-15.md)
+- [Reddit ML](./2026-01-15/reddit_machinelearning_2026-01-15.md)
 
 ---
 
 ### 每周一看
 - [Cloudflare Blog](https://blog.cloudflare.com/zh-cn/)
-- [少数派](./2026-01-14/shaoshupai_2026-01-14.md)
-- [美团技术团队](./2026-01-14/meituan_2026-01-14.md)
+- [少数派](./2026-01-15/shaoshupai_2026-01-15.md)
+- [美团技术团队](./2026-01-15/meituan_2026-01-15.md)
 
 # 往日新闻
+
+#### [2026-01-14](./2026-01-14/newsletter.md)
 
 #### [2026-01-13](./2026-01-13/newsletter.md)
 
