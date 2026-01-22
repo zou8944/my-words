@@ -1,87 +1,89 @@
 ## 今日要闻
 
-<sub> 生成时间：2026-01-21 08:15:22</sub>
+<sub> 生成时间：2026-01-22 08:15:03</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[STEM架构：无需MoE路由即可扩展Transformer参数记忆](https://twitter.com/TheTuringPost/status/2013011864880660495)**（来源：AINews）
-  > 用静态嵌入查找替换部分FFN层，将模型容量与每token计算开销解耦，实现CPU卸载和异步预取，避免动态路由开销。
+- **[GLM-4.7-Flash 成为本地推理新宠](https://huggingface.co/zai-org/GLM-4.7-Flash)**（来源：AINews）
+  > 30B-A3B MoE模型，支持200K上下文，在SWE-Bench等基准表现优异，可在24GB内存机器上本地运行，已集成至llama.cpp和Ollama生态。
 
-- **[DeepSeek发布Engram：为LLM引入可扩展的确定性O(1)查找记忆](https://github.com/deepseek-ai/Engram/blob/main/Engram_paper.pdf)**（来源：AINews）
-  > 通过哈希N-gram嵌入实现确定性O(1)查找，将模式重建从神经计算中卸载，在等计算量下持续提升知识、推理和代码任务性能。
+- **[Google AI 揭示推理模型的“思想社会”机制](https://twitter.com/rohanpaul_ai/status/2013431689889095767)**（来源：AINews）
+  > 研究发现推理模型性能提升源于内部出现类似辩论的模式（质疑、探索、分歧、收敛），这种机制能带来超过20%的准确率优势。
 
-- **[NVIDIA提出端到端测试时训练方法，允许模型在推理时实时更新权重](https://github.com/test-time-training/e2e)**（来源：AINews）
-  > 将上下文窗口视为训练集，在推理时通过元学习实时更新特定MLP层权重，对128K上下文推理速度比完全注意力快2.7倍。
+- **[合成推理数据研究：在相同计算预算下，“更多采样”优于“更大模型”](https://twitter.com/LiorOnAI/status/2013582631124771104)**（来源：AINews）
+  > DeepMind研究总结，用更小模型生成更多合成推理数据，比用更大模型生成更少数据效果更好，训练收益最高达31.6%。
 
-- **[华为/中国推理系统“2025旗舰作品”总结，聚焦端到端系统设计](https://twitter.com/ZhihuFrontier/status/2013127635589800172)**（来源：AINews）
-  > 针对KV缓存容量墙、混合调度、缓存亲和性等系统设计理念的深度总结，强调从孤立内核转向端到端服务等级目标设计。
+- **[microsoft/agent-lightning](https://github.com/microsoft/agent-lightning)**（来源：GitHub Trending）
+  > 微软开源的AI智能体训练框架，无需修改代码即可通过强化学习、自动提示优化等方法提升现有智能体性能，兼容主流框架。
 
-- **[google/langextract：利用LLM从非结构化文本中提取结构化信息](https://github.com/google/langextract)**（来源：GitHub Trending）
-  > Python库，支持精确源文本定位和交互式可视化，高效处理长文档，无需微调即可快速定制临床报告、文学分析等提取任务。
+- **[Show HN：Grov——AI编程代理的多玩家协作平台](https://news.ycombinator.com/item?id=46711958)**（来源：Hacker News）
+  > 开源AI编程助手上下文层，为团队AI代理提供共享持久记忆，记录决策原因并支持分支管理，优化token使用。
 
-- **[PostgreSQL非常规优化技巧](https://news.ycombinator.com/item?id=46692116)**（来源：Hacker News）
-  > 介绍PostgreSQL索引、查询优化和性能调优的实用非常规方法，为后端工程师提供可直接实践的深度调优思路。
+- **[Show HN：Infinate——O(k)常数时间空间注意力，实现无限LLM上下文](https://news.ycombinator.com/item?id=46711766)**（来源：Hacker News）
+  > 开源注意力机制，利用3D语义空间和最近邻限制实现O(k)常数复杂度，在CPU上处理千万级token仅需7-14毫秒，内存恒定1.5MB。
 
-- **[Fence – 带网络和文件系统限制的沙盒化命令行工具](https://news.ycombinator.com/item?id=46695467)**（来源：Hacker News）
-  > 命令行沙盒工具，默认阻断网络并限制文件写入，用于安全运行半可信代码或管理AI代理权限，提升本地执行安全性。
+- **[Ask HN：你在AI智能体上下文工程中遇到的最大挑战是什么？](https://news.ycombinator.com/item?id=46707675)**（来源：Hacker News）
+  > AI代理开发中，上下文管理成为主要瓶颈，包括调试决策依据、多代理间上下文协调及历史存储优化。
 
-- **[从数据看，使用AI反而降低了我的工作效率](https://news.ycombinator.com/item?id=46698729)**（来源：Hacker News）
-  > 开发者实测使用AI后PR数量锐减，从月均15-30个降至4个，引发对AI工具实际工程效率与精神消耗的深度反思。
+- **[Anthropic 开源其原始家庭作业任务](https://news.ycombinator.com/item?id=46700594)**（来源：Hacker News）
+  > 开源其性能优化面试题，涉及为虚构的VLIW SIMD CPU架构优化无文档的Python程序，是理解底层优化的绝佳案例。
 
-- **[Ask HN：边缘云计算是否需要独立性和自主性？](https://news.ycombinator.com/item?id=46698275)**（来源：Hacker News）
-  > 提出边缘云作为设备数据第一跳的新架构，探讨通过分布式边缘节点就近处理数据以提升安全与韧性，避免被大云控制。
+- **[三类LLM工作负载及其服务策略](https://news.ycombinator.com/item?id=46707708)**（来源：Hacker News）
+  > 讨论LLM工作负载分类（交互式、批处理、流式）及对应的服务策略，为后端工程师设计AI服务架构提供参考。
 
-- **[我们能否停止在 `package.json` 中使用 `^` 符号](https://news.ycombinator.com/item?id=46695541)**（来源：Hacker News）
-  > 为保障供应链安全，建议在package.json中避免使用^符号，改用精确版本或锁定依赖，防止自动更新引入未审查代码。
+- **[软删除的挑战](https://news.ycombinator.com/item?id=46698061)**（来源：Hacker News）
+  > 深入探讨数据库软删除在数据一致性、查询性能、存储膨胀和级联删除等方面带来的工程挑战与解决方案。
 
 ---
 
 ### 各渠道精选摘要
-- [少数派](./2026-01-21/shaoshupai_2026-01-21.md)
-- [美团技术团队](./2026-01-21/meituan_2026-01-21.md)
+- [少数派](./2026-01-22/shaoshupai_2026-01-22.md)
+- [美团技术团队](./2026-01-22/meituan_2026-01-22.md)
 
 ---
 
 ### 渠道精选
-- [AINews](./2026-01-21/ai_news_summary_2026-01-21.md)
-- [GitHub Trending](./2026-01-21/github_trending_2026-01-21.md)
-- [V2EX 技术版](./2026-01-21/v2ex_hot_2026-01-21.md)
+- [AINews](./2026-01-22/ai_news_summary_2026-01-22.md)
+- [GitHub Trending](./2026-01-22/github_trending_2026-01-22.md)
+- [V2EX 技术版](./2026-01-22/v2ex_hot_2026-01-22.md)
 
 ---
 
 ### Hacker News 精选
-- [Hacker News 首页](./2026-01-21/hacker_news_frontpage_2026-01-21.md)
-- [Hacker News 近期最佳](./2026-01-21/hacker_news_best_2026-01-21.md)
-- [Hacker News 高赞评论](./2026-01-21/hacker_news_top_comments_2026-01-21.md)
-- [Hacker News 问答](./2026-01-21/hacker_news_ask_2026-01-21.md)
-- [Hacker News 展示](./2026-01-21/hacker_news_show_2026-01-21.md)
-- [Hacker News 音频技术](./2026-01-21/hacker_news_audio_tech_2026-01-21.md)
+- [Hacker News 首页](./2026-01-22/hacker_news_frontpage_2026-01-22.md)
+- [Hacker News 近期最佳](./2026-01-22/hacker_news_best_2026-01-22.md)
+- [Hacker News 高赞评论](./2026-01-22/hacker_news_top_comments_2026-01-22.md)
+- [Hacker News 问答](./2026-01-22/hacker_news_ask_2026-01-22.md)
+- [Hacker News 展示](./2026-01-22/hacker_news_show_2026-01-22.md)
+- [Hacker News 音频技术](./2026-01-22/hacker_news_audio_tech_2026-01-22.md)
 
 ---
 
 ### Reddit 精选频道
-- [Reddit AMA](./2026-01-21/reddit_ama_2026-01-21.md)
-- [Reddit AskReddit](./2026-01-21/reddit_askreddit_2026-01-21.md)
-- [Reddit Showerthoughts](./2026-01-21/reddit_showerthoughts_2026-01-21.md)
-- [Reddit TIL](./2026-01-21/reddit_todayilearned_2026-01-21.md)
-- [Reddit DevOps](./2026-01-21/reddit_devops_2026-01-21.md)
-- [Reddit Programming](./2026-01-21/reddit_programming_2026-01-21.md)
-- [Reddit ELI5](./2026-01-21/reddit_explainlikeimfive_2026-01-21.md)
-- [Reddit Golang](./2026-01-21/reddit_golang_2026-01-21.md)
-- [Reddit Rust](./2026-01-21/reddit_rust_2026-01-21.md)
-- [Reddit ML](./2026-01-21/reddit_machinelearning_2026-01-21.md)
+- [Reddit AMA](./2026-01-22/reddit_ama_2026-01-22.md)
+- [Reddit AskReddit](./2026-01-22/reddit_askreddit_2026-01-22.md)
+- [Reddit Showerthoughts](./2026-01-22/reddit_showerthoughts_2026-01-22.md)
+- [Reddit TIL](./2026-01-22/reddit_todayilearned_2026-01-22.md)
+- [Reddit DevOps](./2026-01-22/reddit_devops_2026-01-22.md)
+- [Reddit Programming](./2026-01-22/reddit_programming_2026-01-22.md)
+- [Reddit ELI5](./2026-01-22/reddit_explainlikeimfive_2026-01-22.md)
+- [Reddit Golang](./2026-01-22/reddit_golang_2026-01-22.md)
+- [Reddit Rust](./2026-01-22/reddit_rust_2026-01-22.md)
+- [Reddit ML](./2026-01-22/reddit_machinelearning_2026-01-22.md)
 
 ---
 
 ### 每周一看
 - [Cloudflare Blog](https://blog.cloudflare.com/zh-cn/)
-- [少数派](./2026-01-21/shaoshupai_2026-01-21.md)
-- [美团技术团队](./2026-01-21/meituan_2026-01-21.md)
+- [少数派](./2026-01-22/shaoshupai_2026-01-22.md)
+- [美团技术团队](./2026-01-22/meituan_2026-01-22.md)
 
 # 往日新闻
+
+#### [2026-01-21](./2026-01-21/newsletter.md)
 
 #### [2026-01-20](./2026-01-20/newsletter.md)
 
