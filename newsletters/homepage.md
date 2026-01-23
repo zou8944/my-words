@@ -1,87 +1,89 @@
 ## 今日要闻
 
-<sub> 生成时间：2026-01-22 08:15:03</sub>
+<sub> 生成时间：2026-01-23 08:16:33</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[GLM-4.7-Flash 成为本地推理新宠](https://huggingface.co/zai-org/GLM-4.7-Flash)**（来源：AINews）
-  > 30B-A3B MoE模型，支持200K上下文，在SWE-Bench等基准表现优异，可在24GB内存机器上本地运行，已集成至llama.cpp和Ollama生态。
+- **[VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex)**（来源：GitHub Trending）
+  > 基于推理的向量无关RAG系统，通过构建文档的层次化树状索引，利用LLM进行树搜索实现精准检索，无需向量数据库和分块。
 
-- **[Google AI 揭示推理模型的“思想社会”机制](https://twitter.com/rohanpaul_ai/status/2013431689889095767)**（来源：AINews）
-  > 研究发现推理模型性能提升源于内部出现类似辩论的模式（质疑、探索、分歧、收敛），这种机制能带来超过20%的准确率优势。
+- **[Show HN：Sweep，用于下一编辑自动补全的开源1.5B参数模型](https://news.ycombinator.com/item?id=46713106)**（来源：Hacker News）
+  > 开源1.5B参数模型，根据近期编辑预测代码补全，性能优于更大模型，支持本地运行，为IDE智能补全提供新思路。
 
-- **[合成推理数据研究：在相同计算预算下，“更多采样”优于“更大模型”](https://twitter.com/LiorOnAI/status/2013582631124771104)**（来源：AINews）
-  > DeepMind研究总结，用更小模型生成更多合成推理数据，比用更大模型生成更少数据效果更好，训练收益最高达31.6%。
+- **[Show HN：TalkCAD——使用 OpenSCAD 代码生成 CAD 模型的 AI 助手](https://news.ycombinator.com/item?id=46724822)**（来源：Hacker News）
+  > 开源工具利用多智能体编排，通过OpenSCAD生成参数化CAD模型，支持引导、自动搜索数据表、验证修复三种模式。
 
-- **[microsoft/agent-lightning](https://github.com/microsoft/agent-lightning)**（来源：GitHub Trending）
-  > 微软开源的AI智能体训练框架，无需修改代码即可通过强化学习、自动提示优化等方法提升现有智能体性能，兼容主流框架。
+- **[Show HN：我们测试了无需越狱的214种攻击对AI代理的影响](https://news.ycombinator.com/item?id=46725025)**（来源：Hacker News）
+  > 研究通过攻击环境而非模型本身来突破AI代理安全，展示了文件读取、数据外泄等攻击手段，揭示代理系统存在安全漏洞。
 
-- **[Show HN：Grov——AI编程代理的多玩家协作平台](https://news.ycombinator.com/item?id=46711958)**（来源：Hacker News）
-  > 开源AI编程助手上下文层，为团队AI代理提供共享持久记忆，记录决策原因并支持分支管理，优化token使用。
+- **[AirLLM：极低VRAM推理引擎](https://twitter.com/LiorOnAI/status/2014005554948047122)**（来源：AINews）
+  > 通过顺序层加载（加载→计算→释放）技术，在极低VRAM（如8GB）上运行超大规模模型（如405B参数），提供类似Hugging Face的API。
 
-- **[Show HN：Infinate——O(k)常数时间空间注意力，实现无限LLM上下文](https://news.ycombinator.com/item?id=46711766)**（来源：Hacker News）
-  > 开源注意力机制，利用3D语义空间和最近邻限制实现O(k)常数复杂度，在CPU上处理千万级token仅需7-14毫秒，内存恒定1.5MB。
+- **[LangChain Deep Agents与Agent Builder GA](https://twitter.com/LangChain/status/2014034320256880768)**（来源：AINews）
+  > LangChain发布Deep Agents框架（智能体即文件夹）和Agent Builder正式版，提供模板库与集成，减少从提示词到可运行智能体的摩擦。
 
-- **[Ask HN：你在AI智能体上下文工程中遇到的最大挑战是什么？](https://news.ycombinator.com/item?id=46707675)**（来源：Hacker News）
-  > AI代理开发中，上下文管理成为主要瓶颈，包括调试决策依据、多代理间上下文协调及历史存储优化。
+- **[Agent Cognitive Compressor (ACC)：压缩智能体状态](https://twitter.com/dair_ai/status/2014000799245107339)**（来源：AINews）
+  > 提出新的智能体记忆管理方法，通过模式约束的提交维护有界的“压缩认知状态”，声称可在长程任务中降低漂移和幻觉。
 
-- **[Anthropic 开源其原始家庭作业任务](https://news.ycombinator.com/item?id=46700594)**（来源：Hacker News）
-  > 开源其性能优化面试题，涉及为虚构的VLIW SIMD CPU架构优化无文档的Python程序，是理解底层优化的绝佳案例。
+- **[APEX-Agents：专业服务长程任务基准](https://twitter.com/BrendanFoody/status/2014028956752568356)**（来源：AINews）
+  > 用于评估智能体在Google Workspace环境中执行长程“专业服务”任务的新基准，早期Pass@1分数普遍较低，凸显当前智能体自主性脆弱。
 
-- **[三类LLM工作负载及其服务策略](https://news.ycombinator.com/item?id=46707708)**（来源：Hacker News）
-  > 讨论LLM工作负载分类（交互式、批处理、流式）及对应的服务策略，为后端工程师设计AI服务架构提供参考。
+- **[Tree-sitter 与语言服务器之争](https://news.ycombinator.com/item?id=46719899)**（来源：Hacker News）
+  > 讨论Tree-sitter（增量解析）与LSP（语义理解）在代码编辑器/IDE中的技术路线差异、适用场景及未来融合趋势。
 
-- **[软删除的挑战](https://news.ycombinator.com/item?id=46698061)**（来源：Hacker News）
-  > 深入探讨数据库软删除在数据一致性、查询性能、存储膨胀和级联删除等方面带来的工程挑战与解决方案。
+- **[你的大脑与ChatGPT：使用AI助手时认知债务的累积](https://news.ycombinator.com/item?id=46712678)**（来源：Hacker News）
+  > 探讨过度依赖AI编码助手可能导致的理解深度下降、心流状态难以进入等“认知债务”问题，引发对工具使用方式的反思。
 
 ---
 
 ### 各渠道精选摘要
-- [少数派](./2026-01-22/shaoshupai_2026-01-22.md)
-- [美团技术团队](./2026-01-22/meituan_2026-01-22.md)
+- [少数派](./2026-01-23/shaoshupai_2026-01-23.md)
+- [美团技术团队](./2026-01-23/meituan_2026-01-23.md)
 
 ---
 
 ### 渠道精选
-- [AINews](./2026-01-22/ai_news_summary_2026-01-22.md)
-- [GitHub Trending](./2026-01-22/github_trending_2026-01-22.md)
-- [V2EX 技术版](./2026-01-22/v2ex_hot_2026-01-22.md)
+- [AINews](./2026-01-23/ai_news_summary_2026-01-23.md)
+- [GitHub Trending](./2026-01-23/github_trending_2026-01-23.md)
+- [V2EX 技术版](./2026-01-23/v2ex_hot_2026-01-23.md)
 
 ---
 
 ### Hacker News 精选
-- [Hacker News 首页](./2026-01-22/hacker_news_frontpage_2026-01-22.md)
-- [Hacker News 近期最佳](./2026-01-22/hacker_news_best_2026-01-22.md)
-- [Hacker News 高赞评论](./2026-01-22/hacker_news_top_comments_2026-01-22.md)
-- [Hacker News 问答](./2026-01-22/hacker_news_ask_2026-01-22.md)
-- [Hacker News 展示](./2026-01-22/hacker_news_show_2026-01-22.md)
-- [Hacker News 音频技术](./2026-01-22/hacker_news_audio_tech_2026-01-22.md)
+- [Hacker News 首页](./2026-01-23/hacker_news_frontpage_2026-01-23.md)
+- [Hacker News 近期最佳](./2026-01-23/hacker_news_best_2026-01-23.md)
+- [Hacker News 高赞评论](./2026-01-23/hacker_news_top_comments_2026-01-23.md)
+- [Hacker News 问答](./2026-01-23/hacker_news_ask_2026-01-23.md)
+- [Hacker News 展示](./2026-01-23/hacker_news_show_2026-01-23.md)
+- [Hacker News 音频技术](./2026-01-23/hacker_news_audio_tech_2026-01-23.md)
 
 ---
 
 ### Reddit 精选频道
-- [Reddit AMA](./2026-01-22/reddit_ama_2026-01-22.md)
-- [Reddit AskReddit](./2026-01-22/reddit_askreddit_2026-01-22.md)
-- [Reddit Showerthoughts](./2026-01-22/reddit_showerthoughts_2026-01-22.md)
-- [Reddit TIL](./2026-01-22/reddit_todayilearned_2026-01-22.md)
-- [Reddit DevOps](./2026-01-22/reddit_devops_2026-01-22.md)
-- [Reddit Programming](./2026-01-22/reddit_programming_2026-01-22.md)
-- [Reddit ELI5](./2026-01-22/reddit_explainlikeimfive_2026-01-22.md)
-- [Reddit Golang](./2026-01-22/reddit_golang_2026-01-22.md)
-- [Reddit Rust](./2026-01-22/reddit_rust_2026-01-22.md)
-- [Reddit ML](./2026-01-22/reddit_machinelearning_2026-01-22.md)
+- [Reddit AMA](./2026-01-23/reddit_ama_2026-01-23.md)
+- [Reddit AskReddit](./2026-01-23/reddit_askreddit_2026-01-23.md)
+- [Reddit Showerthoughts](./2026-01-23/reddit_showerthoughts_2026-01-23.md)
+- [Reddit TIL](./2026-01-23/reddit_todayilearned_2026-01-23.md)
+- [Reddit DevOps](./2026-01-23/reddit_devops_2026-01-23.md)
+- [Reddit Programming](./2026-01-23/reddit_programming_2026-01-23.md)
+- [Reddit ELI5](./2026-01-23/reddit_explainlikeimfive_2026-01-23.md)
+- [Reddit Golang](./2026-01-23/reddit_golang_2026-01-23.md)
+- [Reddit Rust](./2026-01-23/reddit_rust_2026-01-23.md)
+- [Reddit ML](./2026-01-23/reddit_machinelearning_2026-01-23.md)
 
 ---
 
 ### 每周一看
 - [Cloudflare Blog](https://blog.cloudflare.com/zh-cn/)
-- [少数派](./2026-01-22/shaoshupai_2026-01-22.md)
-- [美团技术团队](./2026-01-22/meituan_2026-01-22.md)
+- [少数派](./2026-01-23/shaoshupai_2026-01-23.md)
+- [美团技术团队](./2026-01-23/meituan_2026-01-23.md)
 
 # 往日新闻
+
+#### [2026-01-22](./2026-01-22/newsletter.md)
 
 #### [2026-01-21](./2026-01-21/newsletter.md)
 
