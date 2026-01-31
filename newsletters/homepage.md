@@ -1,87 +1,89 @@
 ## 今日要闻
 
-<sub> 生成时间：2026-01-30 08:15:48</sub>
+<sub> 生成时间：2026-01-31 08:17:09</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[编码智能体的成功揭示了AI系统的普遍规律](https://news.ycombinator.com/item?id=46818154)**（来源：Hacker News）
-  > 探讨编码智能体成功背后的通用AI系统设计原则，为构建更可靠的AI应用提供理论指导。
+- **[Kimi K2.5 技术报告](https://news.ycombinator.com/item?id=46826597)**（来源：Hacker News）
+  > 月之暗面发布K2.5模型技术细节，在编码、视觉等多任务上表现领先，为开源模型性能优化提供重要参考。
 
-- **[Kimi K2.5成为开源模型焦点，在成本与性能上挑战闭源模型](https://twitter.com/JuanPa/status/2016634998988865571)**（来源：AINews）
-  > 月之暗面Kimi K2.5模型在编码、多模态任务上接近Claude Opus 4.5，成本仅为其10%，量化版可本地运行。
+- **[阿里巴巴开源Qwen3-ASR语音识别模型栈，支持52种语言](https://twitter.com/Alibaba_Qwen/status/2016858705917075645)**（来源：AINews）
+  > 开源生产级语音识别栈，强调对嘈杂真实世界音频的处理能力，单次可处理长达20分钟音频，并提供时间戳。
 
-- **[智能体工程核心转向“技能”抽象与可靠性瓶颈](https://twitter.com/AndrewYNg/status/2016564878098780245)**（来源：AINews）
-  > 业界趋势是将工作流逻辑封装为可复用“技能”单元，但长交互链的可靠性和验证仍是主要瓶颈。
+- **[Primer：为代码仓库生成AI指令文件与评估框架的工具](https://twitter.com/pierceboggan/status/2016732251535397158)**（来源：AINews）
+  > 通过智能体内省代码仓库生成指令文件，并运行“有/无”指令的评估测试，规模化提升AI编码助手在组织内的应用效果。
 
-- **[NVIDIA发布NVFP4精度模型，推理效率大幅提升](https://twitter.com/NVIDIAAIDev/status/2016556881712472570)**（来源：AINews）
-  > NVIDIA发布Nemotron 3 Nano的NVFP4（4位浮点）版本，在Blackwell B200上吞吐量提升高达4倍，vLLM已支持。
+- **[cortex-tms：通过文件分层系统大幅降低Claude API成本](https://github.com/cortex-tms/cortex-tms)**（来源：AINews）
+  > 开源工具将文件分为HOT/WARM/COLD层级，仅加载相关文件，案例显示使用Claude时单会话成本降低94.5%。
 
-- **[LM Studio 0.4.0：支持无头模式和并行推理的本地模型部署工具](https://lmstudio.ai/blog/0.4.0)**（来源：AINews）
-  > 新版本引入无头模式和平行推理，通过REST API支持在CI/CD管道和非GUI服务器上部署本地模型。
+- **[Cursor提出Agent对话追踪开放标准](https://twitter.com/cursor_ai/status/2016934752188576029)**（来源：AINews）
+  > 提出开放标准（agent-trace.dev），旨在追踪智能体对话到其生成的代码，实现跨智能体的可互操作审计与溯源。
 
-- **[MongoDB LEAF：用于嵌入模型的非对称蒸馏框架](https://twitter.com/LiorOnAI/status/2016481603426414883)**（来源：AINews）
-  > 提出的LEAF框架使用大模型离线嵌入文档，小模型在线嵌入查询，达到教师模型96%质量，体积小5-15倍，速度快达24倍。
+- **[Amla Sandbox —— 面向 AI 代理的 WASM bash shell 沙盒](https://news.ycombinator.com/item?id=46824877)**（来源：Hacker News）
+  > 使用WASM沙盒安全运行LLM生成代码，提供类bash环境，仅允许调用预定义工具，无需Docker或SaaS依赖。
 
-- **[深入探究Turso：用Rust重写的SQLite](https://news.ycombinator.com/item?id=46810950)**（来源：Hacker News）
-  > 分析Turso如何用Rust重写SQLite以提升性能与可靠性，探讨其设计取舍及对现代数据库开发的启示。
+- **[Ask HN：理解代码正在变得“可有可无”吗？](https://news.ycombinator.com/item?id=46831133)**（来源：Hacker News）
+  > 探讨编程的核心是构建知识并形成心智模型，而非单纯生成代码，反对将编程视为可被AI完全取代的苦差。
 
-- **[AsyncFast——受 FastAPI 启发的类型化消息驱动框架](https://news.ycombinator.com/item?id=46817798)**（来源：Hacker News）
-  > 一个用于构建消息驱动API的Python框架，支持多种消息代理，实现业务逻辑与底层消息系统的解耦。
+- **[盈利公司为何仍会倒闭：现金流时机，而非利润率](https://news.ycombinator.com/item?id=46828821)**（来源：Hacker News）
+  > 分析企业倒闭的真正原因在于现金流错配，而非账面亏损，为技术创业者识别管理问题到结构性失败的临界点提供洞见。
 
-- **[Lok——将大语言模型视为基础设施，而非聊天机器人](https://news.ycombinator.com/item?id=46815962)**（来源：Hacker News）
-  > 开源CLI工具，用于编排多个LLM协同工作，将模型视为可互换的基础设施组件，支持本地优先和可组合工作流。
+- **[飞牛 OS 疑似 0day 漏洞，许多用户设备遭到攻击，请尽快检查设备或暂停使用](https://www.v2ex.com/t/1189672)**（来源：V2EX）
+  > 社区曝光飞牛NAS系统疑似存在路径穿越漏洞，可在未授权下访问全部文件，导致设备遭恶意程序植入，官方回应引发争议。
 
-- **[memU是为24/7持续运行的智能体设计的记忆框架](https://github.com/NevaMind-AI/memU)**（来源：GitHub Trending）
-  > 能持续捕获和理解用户意图，通过缓存洞察避免冗余LLM调用，大幅降低长期运行成本，使主动式智能体更实用。
+- **[我真的要放弃 Vue，改用 React 了](https://www.v2ex.com/t/1189625)**（来源：V2EX）
+  > 开发者分享因AI辅助编程的现状，React的JSX和函数组件更易被AI准确生成和重构，从而显著提升从想法到产品的开发速度。
 
 ---
 
 ### 各渠道精选摘要
-- [少数派](./2026-01-30/shaoshupai_2026-01-30.md)
-- [美团技术团队](./2026-01-30/meituan_2026-01-30.md)
+- [少数派](./2026-01-31/shaoshupai_2026-01-31.md)
+- [美团技术团队](./2026-01-31/meituan_2026-01-31.md)
 
 ---
 
 ### 渠道精选
-- [AINews](./2026-01-30/ai_news_summary_2026-01-30.md)
-- [GitHub Trending](./2026-01-30/github_trending_2026-01-30.md)
-- [V2EX 技术版](./2026-01-30/v2ex_hot_2026-01-30.md)
+- [AINews](./2026-01-31/ai_news_summary_2026-01-31.md)
+- [GitHub Trending](./2026-01-31/github_trending_2026-01-31.md)
+- [V2EX 技术版](./2026-01-31/v2ex_hot_2026-01-31.md)
 
 ---
 
 ### Hacker News 精选
-- [Hacker News 首页](./2026-01-30/hacker_news_frontpage_2026-01-30.md)
-- [Hacker News 近期最佳](./2026-01-30/hacker_news_best_2026-01-30.md)
-- [Hacker News 高赞评论](./2026-01-30/hacker_news_top_comments_2026-01-30.md)
-- [Hacker News 问答](./2026-01-30/hacker_news_ask_2026-01-30.md)
-- [Hacker News 展示](./2026-01-30/hacker_news_show_2026-01-30.md)
-- [Hacker News 音频技术](./2026-01-30/hacker_news_audio_tech_2026-01-30.md)
+- [Hacker News 首页](./2026-01-31/hacker_news_frontpage_2026-01-31.md)
+- [Hacker News 近期最佳](./2026-01-31/hacker_news_best_2026-01-31.md)
+- [Hacker News 高赞评论](./2026-01-31/hacker_news_top_comments_2026-01-31.md)
+- [Hacker News 问答](./2026-01-31/hacker_news_ask_2026-01-31.md)
+- [Hacker News 展示](./2026-01-31/hacker_news_show_2026-01-31.md)
+- [Hacker News 音频技术](./2026-01-31/hacker_news_audio_tech_2026-01-31.md)
 
 ---
 
 ### Reddit 精选频道
-- [Reddit AMA](./2026-01-30/reddit_ama_2026-01-30.md)
-- [Reddit AskReddit](./2026-01-30/reddit_askreddit_2026-01-30.md)
-- [Reddit Showerthoughts](./2026-01-30/reddit_showerthoughts_2026-01-30.md)
-- [Reddit TIL](./2026-01-30/reddit_todayilearned_2026-01-30.md)
-- [Reddit DevOps](./2026-01-30/reddit_devops_2026-01-30.md)
-- [Reddit Programming](./2026-01-30/reddit_programming_2026-01-30.md)
-- [Reddit ELI5](./2026-01-30/reddit_explainlikeimfive_2026-01-30.md)
-- [Reddit Golang](./2026-01-30/reddit_golang_2026-01-30.md)
-- [Reddit Rust](./2026-01-30/reddit_rust_2026-01-30.md)
-- [Reddit ML](./2026-01-30/reddit_machinelearning_2026-01-30.md)
+- [Reddit AMA](./2026-01-31/reddit_ama_2026-01-31.md)
+- [Reddit AskReddit](./2026-01-31/reddit_askreddit_2026-01-31.md)
+- [Reddit Showerthoughts](./2026-01-31/reddit_showerthoughts_2026-01-31.md)
+- [Reddit TIL](./2026-01-31/reddit_todayilearned_2026-01-31.md)
+- [Reddit DevOps](./2026-01-31/reddit_devops_2026-01-31.md)
+- [Reddit Programming](./2026-01-31/reddit_programming_2026-01-31.md)
+- [Reddit ELI5](./2026-01-31/reddit_explainlikeimfive_2026-01-31.md)
+- [Reddit Golang](./2026-01-31/reddit_golang_2026-01-31.md)
+- [Reddit Rust](./2026-01-31/reddit_rust_2026-01-31.md)
+- [Reddit ML](./2026-01-31/reddit_machinelearning_2026-01-31.md)
 
 ---
 
 ### 每周一看
 - [Cloudflare Blog](https://blog.cloudflare.com/zh-cn/)
-- [少数派](./2026-01-30/shaoshupai_2026-01-30.md)
-- [美团技术团队](./2026-01-30/meituan_2026-01-30.md)
+- [少数派](./2026-01-31/shaoshupai_2026-01-31.md)
+- [美团技术团队](./2026-01-31/meituan_2026-01-31.md)
 
 # 往日新闻
+
+#### [2026-01-30](./2026-01-30/newsletter.md)
 
 #### [2026-01-29](./2026-01-29/newsletter.md)
 
