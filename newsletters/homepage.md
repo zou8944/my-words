@@ -1,87 +1,89 @@
 ## 今日要闻
 
-<sub> 生成时间：2026-03-07 08:15:40</sub>
+<sub> 生成时间：2026-03-08 08:15:04</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[Dapper 中 C# 字符串会悄无声息地破坏 SQL Server 索引](https://news.ycombinator.com/item?id=47282230)**（来源：Hacker News）
-  > 探讨使用Dapper时，C#字符串的默认排序规则与SQL Server不匹配，导致索引失效的性能陷阱及解决方案。
+- **[Together AI发布长上下文训练新方法，内存占用最高可降87%](https://x.com/rronak_/status/2028718679123497007)**（来源：AINews）
+  > 结合上下文并行与序列并行，在8个H100上训练500万上下文窗口的80亿参数模型，显著降低RL后训练内存瓶颈。
 
-- **[TypeScript 6.0 RC 发布](https://news.ycombinator.com/item?id=47280567)**（来源：Hacker News）
-  > TypeScript 6.0候选版发布，引入新的装饰器元数据、控制流分析改进和更严格的检查，提升大型项目开发体验。
+- **[业界反思AI代理工程：基准测试与现实工作脱节，多代理协调脆弱](https://x.com/ZhiruoW/status/2028847081507488011)**（来源：AINews）
+  > 指出当前AI代理基准过度侧重数学/编码，与真实任务（如客服）脱节，且多代理系统在非对抗环境下也易失败。
 
-- **[Jido 2.0，Elixir 智能体框架](https://news.ycombinator.com/item?id=47263036)**（来源：Hacker News 展示）
-  > 基于BEAM虚拟机的生产级AI Agent框架，支持多智能体协作、多种推理策略和持久化，为构建可靠Agent系统提供新选择。
+- **[Unsloth发布针对Qwen 3.5的优化版，支持低至5GB VRAM的LoRA微调](https://x.com/UnslothAI/status/2028845314506150079)**（来源：AINews）
+  > 提供详细的LoRA微调指南，将Qwen3.5-35B-A3B模型的微调VRAM需求降至约5GB，并修复工具调用问题。
 
-- **[Databricks开源FlashOptim优化器](https://news.ycombinator.com/item?id=4728943987349045610)**（来源：AINews）
-  > 一套优化器实现（AdamW/SGD/Lion），在保持更新等价性的同时，将训练内存开销从16字节/参数降至7字节，显著降低大模型微调成本。
+- **[ShadowClaw v1.1：用C语言编写的开源单二进制AI代理](https://github.com/webxos/webxos/tree/main/shadowclaw)**（来源：GitHub Trending）
+  > 极简主义个人AI代理，通过curl与本地LLM通信，支持执行shell命令、文件读写，状态自动保存至磁盘。
 
-- **[SkyPilot提出用于RL后训练的异构基础设施编排方案](https://news.ycombinator.com/item?id=4728878888211013907)**（来源：AINews）
-  > 提出将RL训练负载拆分到不同硬件：高性能GPU训练、廉价GPU模拟推演、高内存CPU管理经验回放，通过单一YAML文件协调生命周期。
+- **[CyberStrikeAI：基于Go语言的AI原生安全测试平台](https://github.com/Ed1s0nZ/CyberStrikeAI)**（来源：GitHub Trending）
+  > 集成上百种安全工具，通过智能编排和MCP协议，实现从自然语言指令到漏洞发现、攻击链分析的全流程自动化。
 
-- **[microsoft/hve-core](https://github.com/microsoft/hve-core)**（来源：GitHub Trending）
-  > 微软推出的企业级GitHub Copilot提示工程框架，提供约束式AI工作流、验证构件和35个专用代理，旨在规模化提升AI辅助编程的代码质量。
+- **[Ask HN：当第七层不可靠时，如何扩展代理系统？](https://news.ycombinator.com/item?id=47292281)**（来源：Hacker News 问答）
+  > 探讨大规模AI代理系统中，因API调用频繁导致的第七层网络故障、重试风暴及工作流恢复等实际生产挑战。
 
-- **[agentscope-ai/ReMe](https://github.com/agentscope-ai/ReMe)**（来源：GitHub Trending）
-  > 为AI智能体设计的记忆管理框架，提供文件与向量双存储，通过自动压缩和持久化解决长上下文截断与会话状态丢失问题。
+- **[Herd – Go 语言的会话亲和进程池](https://news.ycombinator.com/item?id=47291845)**（来源：Hacker News 展示）
+  > Go库，用于管理OS子进程集群，并通过严格会话亲和性路由HTTP流量，避免状态服务在高并发下崩溃或状态泄露。
 
-- **[inclusionAI/AReaL](https://github.com/inclusionAI/AReaL)**（来源：GitHub Trending）
-  > 开源的大规模异步强化学习系统，专为训练LLM的推理与智能体能力设计，具备全异步架构，支持数学、编程、搜索等多种智能体场景。
+- **[Go标准库将引入UUID包](https://news.ycombinator.com/item?id=47283665)**（来源：Hacker News 近期最佳）
+  > Go语言标准库计划新增UUID包，为开发者提供官方、标准的UUID生成与处理支持。
 
-- **[Ask HN：如何判断运维问题是否值得修复？](https://news.ycombinator.com/item?id=47277506)**（来源：Hacker News 问答）
-  > 探讨运维初期如何区分紧急与重要事务，避免将表面问题误判为核心缺陷，建立有效的问题优先级评估框架。
+- **[用户预先定义验收标准时，LLMs表现最佳](https://news.ycombinator.com/item?id=47283337)**（来源：Hacker News 近期最佳）
+  > 研究表明，在任务开始前由用户明确验收标准，能显著提升大语言模型输出结果的质量与符合度。
 
-- **[300位创始人，300万行代码，0位工程师。这是我们的工作流程](https://news.ycombinator.com/item?id=47279224)**（来源：Hacker News 问答）
-  > 分享使用AI编程代理的四阶段工作流（讨论、规划、实施、审查），强调理解代码库上下文比重复实施更重要。
+- **[靠大模型「吵架」完成固件逆向，我有哪些心得体会？](https://sspai.com/post/106443)**（来源：少数派）
+  > 分享借助多个大模型逆向嵌入式芯片字符渲染管线的实战经验，探讨如何利用模型间辩论提升逆向工程效率与深度。
 
 ---
 
 ### 各渠道精选摘要
-- [少数派](./2026-03-07/shaoshupai_2026-03-07.md)
-- [美团技术团队](./2026-03-07/meituan_2026-03-07.md)
+- [少数派](./2026-03-08/shaoshupai_2026-03-08.md)
+- [美团技术团队](./2026-03-08/meituan_2026-03-08.md)
 
 ---
 
 ### 渠道精选
-- [AINews](./2026-03-07/ai_news_summary_2026-03-07.md)
-- [GitHub Trending](./2026-03-07/github_trending_2026-03-07.md)
-- [V2EX 技术版](./2026-03-07/v2ex_hot_2026-03-07.md)
+- [AINews](./2026-03-08/ai_news_summary_2026-03-08.md)
+- [GitHub Trending](./2026-03-08/github_trending_2026-03-08.md)
+- [V2EX 技术版](./2026-03-08/v2ex_hot_2026-03-08.md)
 
 ---
 
 ### Hacker News 精选
-- [Hacker News 首页](./2026-03-07/hacker_news_frontpage_2026-03-07.md)
-- [Hacker News 近期最佳](./2026-03-07/hacker_news_best_2026-03-07.md)
-- [Hacker News 高赞评论](./2026-03-07/hacker_news_top_comments_2026-03-07.md)
-- [Hacker News 问答](./2026-03-07/hacker_news_ask_2026-03-07.md)
-- [Hacker News 展示](./2026-03-07/hacker_news_show_2026-03-07.md)
-- [Hacker News 音频技术](./2026-03-07/hacker_news_audio_tech_2026-03-07.md)
+- [Hacker News 首页](./2026-03-08/hacker_news_frontpage_2026-03-08.md)
+- [Hacker News 近期最佳](./2026-03-08/hacker_news_best_2026-03-08.md)
+- [Hacker News 高赞评论](./2026-03-08/hacker_news_top_comments_2026-03-08.md)
+- [Hacker News 问答](./2026-03-08/hacker_news_ask_2026-03-08.md)
+- [Hacker News 展示](./2026-03-08/hacker_news_show_2026-03-08.md)
+- [Hacker News 音频技术](./2026-03-08/hacker_news_audio_tech_2026-03-08.md)
 
 ---
 
 ### Reddit 精选频道
-- [Reddit AMA](./2026-03-07/reddit_ama_2026-03-07.md)
-- [Reddit AskReddit](./2026-03-07/reddit_askreddit_2026-03-07.md)
-- [Reddit Showerthoughts](./2026-03-07/reddit_showerthoughts_2026-03-07.md)
-- [Reddit TIL](./2026-03-07/reddit_todayilearned_2026-03-07.md)
-- [Reddit DevOps](./2026-03-07/reddit_devops_2026-03-07.md)
-- [Reddit Programming](./2026-03-07/reddit_programming_2026-03-07.md)
-- [Reddit ELI5](./2026-03-07/reddit_explainlikeimfive_2026-03-07.md)
-- [Reddit Golang](./2026-03-07/reddit_golang_2026-03-07.md)
-- [Reddit Rust](./2026-03-07/reddit_rust_2026-03-07.md)
-- [Reddit ML](./2026-03-07/reddit_machinelearning_2026-03-07.md)
+- [Reddit AMA](./2026-03-08/reddit_ama_2026-03-08.md)
+- [Reddit AskReddit](./2026-03-08/reddit_askreddit_2026-03-08.md)
+- [Reddit Showerthoughts](./2026-03-08/reddit_showerthoughts_2026-03-08.md)
+- [Reddit TIL](./2026-03-08/reddit_todayilearned_2026-03-08.md)
+- [Reddit DevOps](./2026-03-08/reddit_devops_2026-03-08.md)
+- [Reddit Programming](./2026-03-08/reddit_programming_2026-03-08.md)
+- [Reddit ELI5](./2026-03-08/reddit_explainlikeimfive_2026-03-08.md)
+- [Reddit Golang](./2026-03-08/reddit_golang_2026-03-08.md)
+- [Reddit Rust](./2026-03-08/reddit_rust_2026-03-08.md)
+- [Reddit ML](./2026-03-08/reddit_machinelearning_2026-03-08.md)
 
 ---
 
 ### 每周一看
 - [Cloudflare Blog](https://blog.cloudflare.com/zh-cn/)
-- [少数派](./2026-03-07/shaoshupai_2026-03-07.md)
-- [美团技术团队](./2026-03-07/meituan_2026-03-07.md)
+- [少数派](./2026-03-08/shaoshupai_2026-03-08.md)
+- [美团技术团队](./2026-03-08/meituan_2026-03-08.md)
 
 # 往日新闻
+
+#### [2026-03-07](./2026-03-07/newsletter.md)
 
 #### [2026-03-06](./2026-03-06/newsletter.md)
 
