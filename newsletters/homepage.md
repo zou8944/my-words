@@ -1,87 +1,89 @@
 ## 今日要闻
 
-<sub> 生成时间：2026-03-08 08:15:04</sub>
+<sub> 生成时间：2026-03-10 08:15:24</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[Together AI发布长上下文训练新方法，内存占用最高可降87%](https://x.com/rronak_/status/2028718679123497007)**（来源：AINews）
-  > 结合上下文并行与序列并行，在8个H100上训练500万上下文窗口的80亿参数模型，显著降低RL后训练内存瓶颈。
+- **[LOAB：评估AI代理能否遵循合规流程而不仅是给出正确答案](https://news.ycombinator.com/item?id=47315813)**（来源：Hacker News Show HN）
+  > 开源基准测试发现，前沿模型结果准确率可达75%，但流程合规时骤降至42%，揭示了AI“走捷径”的严重问题。
 
-- **[业界反思AI代理工程：基准测试与现实工作脱节，多代理协调脆弱](https://x.com/ZhiruoW/status/2028847081507488011)**（来源：AINews）
-  > 指出当前AI代理基准过度侧重数学/编码，与真实任务（如客服）脱节，且多代理系统在非对抗环境下也易失败。
+- **[Agent Safehouse：专为本地AI代理设计的macOS原生沙箱](https://news.ycombinator.com/item?id=47301085)**（来源：Hacker News）
+  > 基于sandbox-exec的策略生成器，为AI代理提供最低权限运行环境，支持自动更新和钥匙串集成，保障本地自动化安全。
 
-- **[Unsloth发布针对Qwen 3.5的优化版，支持低至5GB VRAM的LoRA微调](https://x.com/UnslothAI/status/2028845314506150079)**（来源：AINews）
-  > 提供详细的LoRA微调指南，将Qwen3.5-35B-A3B模型的微调VRAM需求降至约5GB，并修复工具调用问题。
+- **[code-review-graph：持久化代码图谱，大幅降低Claude Code的token消耗](https://news.ycombinator.com/item?id=47314064)**（来源：Hacker News）
+  > 通过构建代码结构图，让AI代码助手仅读取相关文件，显著减少token消耗并提升代码审查质量。
 
-- **[ShadowClaw v1.1：用C语言编写的开源单二进制AI代理](https://github.com/webxos/webxos/tree/main/shadowclaw)**（来源：GitHub Trending）
-  > 极简主义个人AI代理，通过curl与本地LLM通信，支持执行shell命令、文件读写，状态自动保存至磁盘。
+- **[Mog：为AI设计的静态类型嵌入式语言](https://news.ycombinator.com/item?id=47312728)**（来源：Hacker News Show HN）
+  > 让AI能安全编写和动态加载插件，通过能力权限控制保障宿主程序安全，适用于智能体插件系统。
 
-- **[CyberStrikeAI：基于Go语言的AI原生安全测试平台](https://github.com/Ed1s0nZ/CyberStrikeAI)**（来源：GitHub Trending）
-  > 集成上百种安全工具，通过智能编排和MCP协议，实现从自然语言指令到漏洞发现、攻击链分析的全流程自动化。
+- **[CyberStrikeAI：基于Go开发的AI原生安全测试平台](https://github.com/Ed1s0nZ/CyberStrikeAI)**（来源：GitHub Trending）
+  > 集成上百种安全工具，通过智能编排引擎和MCP协议，实现从自然语言指令到漏洞发现的全流程自动化。
 
-- **[Ask HN：当第七层不可靠时，如何扩展代理系统？](https://news.ycombinator.com/item?id=47292281)**（来源：Hacker News 问答）
-  > 探讨大规模AI代理系统中，因API调用频繁导致的第七层网络故障、重试风暴及工作流恢复等实际生产挑战。
+- **[FlashOptim：Databricks开源的训练内存优化器](https://x.com/davisblalock/status/2028943987349045610)**（来源：AINews）
+  > 支持AdamW/SGD/Lion，可将AdamW训练开销从约16字节/参数降至7字节，使80亿参数微调的峰值内存从175 GiB降至113 GiB。
 
-- **[Herd – Go 语言的会话亲和进程池](https://news.ycombinator.com/item?id=47291845)**（来源：Hacker News 展示）
-  > Go库，用于管理OS子进程集群，并通过严格会话亲和性路由HTTP流量，避免状态服务在高并发下崩溃或状态泄露。
+- **[Together AI发布长上下文训练技术，内存占用最高可降87%](https://x.com/rronak_/status/2028718679123497007)**（来源：AINews）
+  > 结合上下文并行和序列并行风格头分块的混合方法，在8个H100上训练500万上下文窗口的80亿参数模型时显著降低内存瓶颈。
 
-- **[Go标准库将引入UUID包](https://news.ycombinator.com/item?id=47283665)**（来源：Hacker News 近期最佳）
-  > Go语言标准库计划新增UUID包，为开发者提供官方、标准的UUID生成与处理支持。
+- **[智能体工程面临现实挑战：基准测试与真实工作脱节](https://x.com/ZhiruoW/status/2028847081507488011)**（来源：AINews）
+  > 当前智能体基准过度侧重数学/编码，与真实世界工作分布不匹配，且多智能体协调在良性环境中也经常失败。
 
-- **[用户预先定义验收标准时，LLMs表现最佳](https://news.ycombinator.com/item?id=47283337)**（来源：Hacker News 近期最佳）
-  > 研究表明，在任务开始前由用户明确验收标准，能显著提升大语言模型输出结果的质量与符合度。
+- **[为什么最有价值的人工智能系统仍是表格模型](https://news.ycombinator.com/item?id=47313564)**（来源：Hacker News）
+  > 构建预测AI系统的真正瓶颈在于从关系型数据中整合信号生成特征表，而非模型本身，GraphReduce等方法可自动化此过程。
 
-- **[靠大模型「吵架」完成固件逆向，我有哪些心得体会？](https://sspai.com/post/106443)**（来源：少数派）
-  > 分享借助多个大模型逆向嵌入式芯片字符渲染管线的实战经验，探讨如何利用模型间辩论提升逆向工程效率与深度。
+- **[AluminatiAI：按任务追踪GPU成本的开源工具](https://news.ycombinator.com/item?id=47314073)**（来源：Hacker News）
+  > 监控GPU训练任务的实时能耗并精确计算成本，支持多种GPU型号，解决nvidia-smi只显示功耗而非费用的问题。
 
 ---
 
 ### 各渠道精选摘要
-- [少数派](./2026-03-08/shaoshupai_2026-03-08.md)
-- [美团技术团队](./2026-03-08/meituan_2026-03-08.md)
+- [少数派](./2026-03-10/shaoshupai_2026-03-10.md)
+- [美团技术团队](./2026-03-10/meituan_2026-03-10.md)
 
 ---
 
 ### 渠道精选
-- [AINews](./2026-03-08/ai_news_summary_2026-03-08.md)
-- [GitHub Trending](./2026-03-08/github_trending_2026-03-08.md)
-- [V2EX 技术版](./2026-03-08/v2ex_hot_2026-03-08.md)
+- [AINews](./2026-03-10/ai_news_summary_2026-03-10.md)
+- [GitHub Trending](./2026-03-10/github_trending_2026-03-10.md)
+- [V2EX 技术版](./2026-03-10/v2ex_hot_2026-03-10.md)
 
 ---
 
 ### Hacker News 精选
-- [Hacker News 首页](./2026-03-08/hacker_news_frontpage_2026-03-08.md)
-- [Hacker News 近期最佳](./2026-03-08/hacker_news_best_2026-03-08.md)
-- [Hacker News 高赞评论](./2026-03-08/hacker_news_top_comments_2026-03-08.md)
-- [Hacker News 问答](./2026-03-08/hacker_news_ask_2026-03-08.md)
-- [Hacker News 展示](./2026-03-08/hacker_news_show_2026-03-08.md)
-- [Hacker News 音频技术](./2026-03-08/hacker_news_audio_tech_2026-03-08.md)
+- [Hacker News 首页](./2026-03-10/hacker_news_frontpage_2026-03-10.md)
+- [Hacker News 近期最佳](./2026-03-10/hacker_news_best_2026-03-10.md)
+- [Hacker News 高赞评论](./2026-03-10/hacker_news_top_comments_2026-03-10.md)
+- [Hacker News 问答](./2026-03-10/hacker_news_ask_2026-03-10.md)
+- [Hacker News 展示](./2026-03-10/hacker_news_show_2026-03-10.md)
+- [Hacker News 音频技术](./2026-03-10/hacker_news_audio_tech_2026-03-10.md)
 
 ---
 
 ### Reddit 精选频道
-- [Reddit AMA](./2026-03-08/reddit_ama_2026-03-08.md)
-- [Reddit AskReddit](./2026-03-08/reddit_askreddit_2026-03-08.md)
-- [Reddit Showerthoughts](./2026-03-08/reddit_showerthoughts_2026-03-08.md)
-- [Reddit TIL](./2026-03-08/reddit_todayilearned_2026-03-08.md)
-- [Reddit DevOps](./2026-03-08/reddit_devops_2026-03-08.md)
-- [Reddit Programming](./2026-03-08/reddit_programming_2026-03-08.md)
-- [Reddit ELI5](./2026-03-08/reddit_explainlikeimfive_2026-03-08.md)
-- [Reddit Golang](./2026-03-08/reddit_golang_2026-03-08.md)
-- [Reddit Rust](./2026-03-08/reddit_rust_2026-03-08.md)
-- [Reddit ML](./2026-03-08/reddit_machinelearning_2026-03-08.md)
+- [Reddit AMA](./2026-03-10/reddit_ama_2026-03-10.md)
+- [Reddit AskReddit](./2026-03-10/reddit_askreddit_2026-03-10.md)
+- [Reddit Showerthoughts](./2026-03-10/reddit_showerthoughts_2026-03-10.md)
+- [Reddit TIL](./2026-03-10/reddit_todayilearned_2026-03-10.md)
+- [Reddit DevOps](./2026-03-10/reddit_devops_2026-03-10.md)
+- [Reddit Programming](./2026-03-10/reddit_programming_2026-03-10.md)
+- [Reddit ELI5](./2026-03-10/reddit_explainlikeimfive_2026-03-10.md)
+- [Reddit Golang](./2026-03-10/reddit_golang_2026-03-10.md)
+- [Reddit Rust](./2026-03-10/reddit_rust_2026-03-10.md)
+- [Reddit ML](./2026-03-10/reddit_machinelearning_2026-03-10.md)
 
 ---
 
 ### 每周一看
 - [Cloudflare Blog](https://blog.cloudflare.com/zh-cn/)
-- [少数派](./2026-03-08/shaoshupai_2026-03-08.md)
-- [美团技术团队](./2026-03-08/meituan_2026-03-08.md)
+- [少数派](./2026-03-10/shaoshupai_2026-03-10.md)
+- [美团技术团队](./2026-03-10/meituan_2026-03-10.md)
 
 # 往日新闻
+
+#### [2026-03-08](./2026-03-08/newsletter.md)
 
 #### [2026-03-07](./2026-03-07/newsletter.md)
 
