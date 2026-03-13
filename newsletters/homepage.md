@@ -1,87 +1,89 @@
 ## 今日要闻
 
-<sub> 生成时间：2026-03-12 08:14:48</sub>
+<sub> 生成时间：2026-03-13 08:15:49</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[FlashOptim：Databricks开源的高效优化器，训练内存占用可减半](https://x.com/davisblalock/status/2028943987349045610)**（来源：Twitter）  
-  > 开源优化器实现（AdamW/SGD/Lion），将AdamW参数内存从16字节/参数降至7字节，显著降低大模型微调内存需求。
+- **[promptfoo/promptfoo](https://github.com/promptfoo/promptfoo)**（来源：GitHub）  
+  > 开源LLM应用评估与红队测试工具，支持自动化测试提示词、模型对比和安全扫描，通过声明式配置和CI/CD集成提升AI应用可靠性。
 
-- **[SkyPilot：用于RL后训练的异构基础设施编排方案](https://x.com/skypilot_org/status/2028878888211013907)**（来源：Twitter）  
-  > 提出将RL训练拆解到不同硬件（高性能GPU训练、廉价GPU模拟、高内存CPU回放），通过单一YAML协调，优化成本与效率。
+- **[WolfIP：无需动态内存分配的轻量级TCP/IP协议栈](https://news.ycombinator.com/item?id=47352385)**（来源：Hacker News）  
+  > 专为资源受限环境设计的TCP/IP协议栈，通过静态内存分配避免动态分配开销，适合嵌入式或高性能网络场景。
 
-- **[nanochat：Karpathy的单GPU节点LLM训练极简框架](https://github.com/karpathy/nanochat)**（来源：GitHub）  
-  > 覆盖分词、预训练、微调、评估全流程，通过单一深度参数优化超参数，约48美元可复现GPT-2级别模型。
+- **[RAG系统中的文档投毒：攻击者如何污染AI的知识源](https://news.ycombinator.com/item?id=47350407)**（来源：Hacker News）  
+  > 本地实验揭示RAG系统安全风险，通过嵌入异常检测等防御层可将攻击成功率降至10%，为生产部署提供实用安全思路。
 
-- **[DeerFlow 2.0：字节跳动开源的超级智能体框架](https://github.com/bytedance/deer-flow)**（来源：GitHub）  
-  > 通过编排子智能体、记忆模块和沙箱环境，结合可扩展技能库，自主完成从研究、编码到创作的多层次复杂任务。
+- **[Understudy – 只需演示一次，即可教会桌面代理执行任务](https://news.ycombinator.com/item?id=47353957)**（来源：Hacker News）  
+  > 本地优先的桌面代理运行时，通过录制用户操作（而非坐标宏）转化为可复用的意图技能，实现跨GUI应用、浏览器和终端的自动化。
 
-- **[多数通过SWE-bench测试的PR不会被合并](https://news.ycombinator.com/item?id=47341645)**（来源：Hacker News）  
-  > 讨论揭示AI生成的代码修复在真实项目中的采纳率极低，凸显了基准测试与现实工程实践的脱节。
+- **[Axe——一个12MB的二进制文件，可替代你的AI框架](https://news.ycombinator.com/item?id=47350516)**（来源：Hacker News）  
+  > 轻量级、可组合的AI代理框架，遵循Unix哲学，通过TOML配置和CLI管道运行，支持多模型和内存持久化，强调简洁与实用。
 
-- **[面向AI代理的开源浏览器协议](https://news.ycombinator.com/item?id=47336171)**（来源：Hacker News）  
-  > 为解决浏览器自动化中页面状态过时问题，在每个操作后冻结页面并捕获最新状态，使LLM能基于实时信息决策。
+- **[Ask HN：如何应对智能体编码节奏被打乱的问题？](https://news.ycombinator.com/item?id=47356614)**（来源：Hacker News）  
+  > 资深开发者反思AI辅助编码导致心流频繁中断的困境，引发关于人机协作模式下深度思考与效率平衡的工程实践讨论。
 
-- **[Glyphh：超维计算运行时，函数调用成本极低](https://news.ycombinator.com/item?id=47341829)**（来源：Hacker News）  
-  > 结合LLM生成意图示例，运行时用纯向量数学路由，实现亚毫秒级确定性函数调用，成本远低于主流模型。
+- **[为提升性能而复制领域数据的成本](https://news.ycombinator.com/item?id=47354949)**（来源：Hacker News）  
+  > 架构反思：为短期性能复制数据会破坏模块化，应接受网络调用成本，用不可变引用作为模块间唯一接口以保持系统清晰。
 
-- **[Together AI发布长上下文训练新方法，内存占用最高减少87%](https://x.com/rronak_/status/2028718679123497007)**（来源：Twitter）  
-  > 提出结合上下文并行和序列并行风格头分块的混合方法，大幅降低长上下文模型训练的内存瓶颈。
+- **[PHP-rnet – 模拟真实浏览器TLS指纹的PHP扩展](https://news.ycombinator.com/item?id=47355313)**（来源：Hacker News）  
+  > 解决PHP请求因TLS指纹被识别为cURL而遭屏蔽的问题，通过扩展模拟真实浏览器的TLS和HTTP/2指纹，提升请求成功率。
 
-- **[TrainTrackLabs推出实时训练可观测性工具](https://traintracklabs.com/)**（来源：TrainTrackLabs）  
-  > 可插入PyTorch流程，使用“LLM即法官”实时评估模型输出中的幻觉和推理质量，旨在早期发现回归问题。
+- **[Ask HN：代码风格现在还重要吗？](https://news.ycombinator.com/item?id=47357216)**（来源：Hacker News）  
+  > 在AI生成代码时代，资深开发者质疑代码可读性与风格的价值，探讨工程经验与自动化产出之间的张力。
 
-- **[智能体工程面临现实挑战：基准测试与真实工作脱节](https://x.com/ZhiruoW/status/2028847081507488011)**（来源：Twitter）  
-  > 研究指出当前智能体基准过度侧重数学编码，与真实工作分布脱节，且多智能体协调非常脆弱。
+- **[寻找合作伙伴构建智能体记忆系统（Zig/Erlang）](https://news.ycombinator.com/item?id=47356098)**（来源：Hacker News）  
+  > 基于向量符号架构的AI代理记忆平台，用高维向量将图遍历压缩为常数时间操作，数据平面用Zig，控制平面用Gleam处理并发。
 
 ---
 
 ### 各渠道精选摘要
-- [少数派](./2026-03-12/shaoshupai_2026-03-12.md)
-- [美团技术团队](./2026-03-12/meituan_2026-03-12.md)
+- [少数派](./2026-03-13/shaoshupai_2026-03-13.md)
+- [美团技术团队](./2026-03-13/meituan_2026-03-13.md)
 
 ---
 
 ### 渠道精选
-- [AINews](./2026-03-12/ai_news_summary_2026-03-12.md)
-- [GitHub Trending](./2026-03-12/github_trending_2026-03-12.md)
-- [V2EX 技术版](./2026-03-12/v2ex_hot_2026-03-12.md)
+- [AINews](./2026-03-13/ai_news_summary_2026-03-13.md)
+- [GitHub Trending](./2026-03-13/github_trending_2026-03-13.md)
+- [V2EX 技术版](./2026-03-13/v2ex_hot_2026-03-13.md)
 
 ---
 
 ### Hacker News 精选
-- [Hacker News 首页](./2026-03-12/hacker_news_frontpage_2026-03-12.md)
-- [Hacker News 近期最佳](./2026-03-12/hacker_news_best_2026-03-12.md)
-- [Hacker News 高赞评论](./2026-03-12/hacker_news_top_comments_2026-03-12.md)
-- [Hacker News 问答](./2026-03-12/hacker_news_ask_2026-03-12.md)
-- [Hacker News 展示](./2026-03-12/hacker_news_show_2026-03-12.md)
-- [Hacker News 音频技术](./2026-03-12/hacker_news_audio_tech_2026-03-12.md)
+- [Hacker News 首页](./2026-03-13/hacker_news_frontpage_2026-03-13.md)
+- [Hacker News 近期最佳](./2026-03-13/hacker_news_best_2026-03-13.md)
+- [Hacker News 高赞评论](./2026-03-13/hacker_news_top_comments_2026-03-13.md)
+- [Hacker News 问答](./2026-03-13/hacker_news_ask_2026-03-13.md)
+- [Hacker News 展示](./2026-03-13/hacker_news_show_2026-03-13.md)
+- [Hacker News 音频技术](./2026-03-13/hacker_news_audio_tech_2026-03-13.md)
 
 ---
 
 ### Reddit 精选频道
-- [Reddit AMA](./2026-03-12/reddit_ama_2026-03-12.md)
-- [Reddit AskReddit](./2026-03-12/reddit_askreddit_2026-03-12.md)
-- [Reddit Showerthoughts](./2026-03-12/reddit_showerthoughts_2026-03-12.md)
-- [Reddit TIL](./2026-03-12/reddit_todayilearned_2026-03-12.md)
-- [Reddit DevOps](./2026-03-12/reddit_devops_2026-03-12.md)
-- [Reddit Programming](./2026-03-12/reddit_programming_2026-03-12.md)
-- [Reddit ELI5](./2026-03-12/reddit_explainlikeimfive_2026-03-12.md)
-- [Reddit Golang](./2026-03-12/reddit_golang_2026-03-12.md)
-- [Reddit Rust](./2026-03-12/reddit_rust_2026-03-12.md)
-- [Reddit ML](./2026-03-12/reddit_machinelearning_2026-03-12.md)
+- [Reddit AMA](./2026-03-13/reddit_ama_2026-03-13.md)
+- [Reddit AskReddit](./2026-03-13/reddit_askreddit_2026-03-13.md)
+- [Reddit Showerthoughts](./2026-03-13/reddit_showerthoughts_2026-03-13.md)
+- [Reddit TIL](./2026-03-13/reddit_todayilearned_2026-03-13.md)
+- [Reddit DevOps](./2026-03-13/reddit_devops_2026-03-13.md)
+- [Reddit Programming](./2026-03-13/reddit_programming_2026-03-13.md)
+- [Reddit ELI5](./2026-03-13/reddit_explainlikeimfive_2026-03-13.md)
+- [Reddit Golang](./2026-03-13/reddit_golang_2026-03-13.md)
+- [Reddit Rust](./2026-03-13/reddit_rust_2026-03-13.md)
+- [Reddit ML](./2026-03-13/reddit_machinelearning_2026-03-13.md)
 
 ---
 
 ### 每周一看
 - [Cloudflare Blog](https://blog.cloudflare.com/zh-cn/)
-- [少数派](./2026-03-12/shaoshupai_2026-03-12.md)
-- [美团技术团队](./2026-03-12/meituan_2026-03-12.md)
+- [少数派](./2026-03-13/shaoshupai_2026-03-13.md)
+- [美团技术团队](./2026-03-13/meituan_2026-03-13.md)
 
 # 往日新闻
+
+#### [2026-03-12](./2026-03-12/newsletter.md)
 
 #### [2026-03-10](./2026-03-10/newsletter.md)
 
