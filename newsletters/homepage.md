@@ -1,87 +1,89 @@
 ## 今日要闻
 
-<sub> 生成时间：2026-03-22 08:15:00</sub>
+<sub> 生成时间：2026-03-23 08:16:36</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[Floci – 免费开源的本地 AWS 模拟器](https://news.ycombinator.com/item?id=47471801)**（来源：Hacker News）  
-  > 开源本地AWS服务模拟器，支持Lambda、S3、DynamoDB等，可用于开发和测试，无需云账户，适合构建无服务器应用。
+- **[Flash-MoE：在笔记本电脑上运行3970亿参数模型](https://news.ycombinator.com/item?id=47476422)**（来源：Hacker News）  
+  > 通过Flash-MoE技术，可在消费级硬件上运行超大规模MoE模型，为本地部署和实验大型模型提供了新思路。
 
-- **[Grafeo：基于Rust构建的快速轻量嵌入式图数据库](https://news.ycombinator.com/item?id=47467567)**（来源：Hacker News）  
-  > 用Rust编写的嵌入式图数据库，强调高性能和低资源占用，适用于需要图数据结构的边缘计算或嵌入式场景。
+- **[vllm-project/vllm-omni](https://github.com/vllm-project/vllm-omni)**（来源：GitHub Trending）  
+  > 基于vLLM扩展的全模态推理框架，支持文本、图像、音频和视频的并行生成与高效服务，兼容OpenAI API。
 
-- **[NVIDIA 发布高性能开源模型 Nemotron-Cascade 2](https://x.com/_weiping/status/2034877099908243746)**（来源：AINews）  
-  > NVIDIA开源300B参数的MoE模型，在数学和代码基准测试中表现卓越，为开源社区提供了新的高性能推理模型选择。
+- **[Mistral 发布混合模态与推理模型 Mistral Small 4](https://x.com/ArtificialAnlys/status/2034960206736892365)**（来源：AINews）  
+  > Mistral发布119B参数MoE模型，支持图像输入和推理模式，Apache 2.0许可，为开源多模态模型提供了新选择。
 
-- **[Meta FAIR 发布视觉自监督学习模型 V-JEPA 2.1](https://x.com/TheTuringPost/status/2034795966931640533)**（来源：AINews）  
-  > Meta视觉自监督学习重要更新，在机器人抓取等任务上性能显著提升，为具身AI和密集预测任务提供了更强的视觉基础模型。
+- **[Kyon：基于WASM的自主基础设施浏览器操作系统](https://news.ycombinator.com/item?id=47479656)**（来源：Hacker News 问答）  
+  > 将基础设施编排和逻辑验证移至浏览器本地执行，利用WASM实现5ms内UI响应，旨在消除云端延迟。
 
-- **[研究显示针对性的数据预训练比微调更有效](https://x.com/konwookim/status/2035029597491011984)**（来源：AINews）  
-  > 斯坦福研究指出，通过合成“超级文档”进行高效预训练，比重复微调更能抵抗过拟合，为模型适应领域任务提供了新思路。
+- **[Inner Warden，基于 eBPF 与 AI 的自防御服务器](https://news.ycombinator.com/item?id=47482236)**（来源：Hacker News 展示）  
+  > 结合eBPF内核技术与AI进行服务器行为监控与主动防御，为构建智能、自适应的安全基础设施提供了实验性方案。
 
-- **[强化学习应用扩展到代码搜索和预测领域](https://x.com/gneubig/status/2035037624105410926)**（来源：AINews）  
-  > CMU/Meta研究将RL用于代码搜索模型，仅用bash终端作为探索界面；在事件预测任务上，RL微调模型超越了前沿模型。
+- **[opendataloader-project/opendataloader-pdf](https://github.com/opendataloader-project/opendataloader-pdf)**（来源：GitHub Trending）  
+  > 开源高性能PDF解析器，可将复杂PDF转换为AI就绪的结构化数据（Markdown/JSON），支持表格、OCR和公式提取。
 
-- **[我们替换了Claude Code附带的所有工具](https://news.ycombinator.com/item?id=47468649)**（来源：Hacker News 问答）  
-  > 作者指出Claude Code在多智能体系统中的六大问题（如权限、缓存、隔离），并开源了为解决这些问题而开发的工具套件。
+- **[被裁员后，我才意识到科技招聘有多糟糕](https://news.ycombinator.com/item?id=47478029)**（来源：Hacker News 问答）  
+  > 资深开发者反思当前技术招聘体系过度依赖算法筛选和标准化面试，而非评估实际工程经验与问题解决能力。
 
-- **[Ask HN：有哪些以 Vim/Nvim 为核心的编程助手或扩展？](https://news.ycombinator.com/item?id=47469349)**（来源：Hacker News 问答）  
-  > 社区讨论为Vim/Neovim量身打造AI编程助手的潜力与现状，反映了对深度集成开发环境工具的需求。
+- **[版本控制的未来](https://news.ycombinator.com/item?id=47478401)**（来源：Hacker News）  
+  > 探讨Git等版本控制系统在呈现合并冲突、历史记录等方面的局限性，并思考下一代工具的可能形态。
 
-- **[jarrodwatts/claude-hud](https://github.com/jarrodwatts/claude-hud)**（来源：GitHub Trending）  
-  > Claude Code插件，在状态栏实时展示上下文使用率、活跃工具和任务进度，帮助开发者清晰掌控AI编码会话状态。
+- **[优化典范：深入解析《过山车大亨》引擎](https://news.ycombinator.com/item?id=47480886)**（来源：Hacker News）  
+  > 深度技术文章剖析经典游戏《过山车大亨》的引擎设计与优化技巧，对现代高性能软件架构仍有启发。
 
-- **[vas3k/TaxHacker](https://github.com/vas3k/TaxHacker)**（来源：GitHub Trending）  
-  > 自托管AI会计应用，利用LLM自动解析收据发票、支持多货币和自定义分类，专为注重数据隐私的自由职业者和小企业设计。
+- **[用现代RTL工具构建FPGA版3dfx Voodoo显卡](https://news.ycombinator.com/item?id=47477284)**（来源：Hacker News）  
+  > 使用现代硬件描述语言和工具链在FPGA上复现经典3D显卡，是硬件仿真和数字遗产保存的硬核工程实践。
 
 ---
 
 ### 各渠道精选摘要
-- [少数派](./2026-03-22/shaoshupai_2026-03-22.md)
-- [美团技术团队](./2026-03-22/meituan_2026-03-22.md)
+- [少数派](./2026-03-23/shaoshupai_2026-03-23.md)
+- [美团技术团队](./2026-03-23/meituan_2026-03-23.md)
 
 ---
 
 ### 渠道精选
-- [AINews](./2026-03-22/ai_news_summary_2026-03-22.md)
-- [GitHub Trending](./2026-03-22/github_trending_2026-03-22.md)
-- [V2EX 技术版](./2026-03-22/v2ex_hot_2026-03-22.md)
+- [AINews](./2026-03-23/ai_news_summary_2026-03-23.md)
+- [GitHub Trending](./2026-03-23/github_trending_2026-03-23.md)
+- [V2EX 技术版](./2026-03-23/v2ex_hot_2026-03-23.md)
 
 ---
 
 ### Hacker News 精选
-- [Hacker News 首页](./2026-03-22/hacker_news_frontpage_2026-03-22.md)
-- [Hacker News 近期最佳](./2026-03-22/hacker_news_best_2026-03-22.md)
-- [Hacker News 高赞评论](./2026-03-22/hacker_news_top_comments_2026-03-22.md)
-- [Hacker News 问答](./2026-03-22/hacker_news_ask_2026-03-22.md)
-- [Hacker News 展示](./2026-03-22/hacker_news_show_2026-03-22.md)
-- [Hacker News 音频技术](./2026-03-22/hacker_news_audio_tech_2026-03-22.md)
+- [Hacker News 首页](./2026-03-23/hacker_news_frontpage_2026-03-23.md)
+- [Hacker News 近期最佳](./2026-03-23/hacker_news_best_2026-03-23.md)
+- [Hacker News 高赞评论](./2026-03-23/hacker_news_top_comments_2026-03-23.md)
+- [Hacker News 问答](./2026-03-23/hacker_news_ask_2026-03-23.md)
+- [Hacker News 展示](./2026-03-23/hacker_news_show_2026-03-23.md)
+- [Hacker News 音频技术](./2026-03-23/hacker_news_audio_tech_2026-03-23.md)
 
 ---
 
 ### Reddit 精选频道
-- [Reddit AMA](./2026-03-22/reddit_ama_2026-03-22.md)
-- [Reddit AskReddit](./2026-03-22/reddit_askreddit_2026-03-22.md)
-- [Reddit Showerthoughts](./2026-03-22/reddit_showerthoughts_2026-03-22.md)
-- [Reddit TIL](./2026-03-22/reddit_todayilearned_2026-03-22.md)
-- [Reddit DevOps](./2026-03-22/reddit_devops_2026-03-22.md)
-- [Reddit Programming](./2026-03-22/reddit_programming_2026-03-22.md)
-- [Reddit ELI5](./2026-03-22/reddit_explainlikeimfive_2026-03-22.md)
-- [Reddit Golang](./2026-03-22/reddit_golang_2026-03-22.md)
-- [Reddit Rust](./2026-03-22/reddit_rust_2026-03-22.md)
-- [Reddit ML](./2026-03-22/reddit_machinelearning_2026-03-22.md)
+- [Reddit AMA](./2026-03-23/reddit_ama_2026-03-23.md)
+- [Reddit AskReddit](./2026-03-23/reddit_askreddit_2026-03-23.md)
+- [Reddit Showerthoughts](./2026-03-23/reddit_showerthoughts_2026-03-23.md)
+- [Reddit TIL](./2026-03-23/reddit_todayilearned_2026-03-23.md)
+- [Reddit DevOps](./2026-03-23/reddit_devops_2026-03-23.md)
+- [Reddit Programming](./2026-03-23/reddit_programming_2026-03-23.md)
+- [Reddit ELI5](./2026-03-23/reddit_explainlikeimfive_2026-03-23.md)
+- [Reddit Golang](./2026-03-23/reddit_golang_2026-03-23.md)
+- [Reddit Rust](./2026-03-23/reddit_rust_2026-03-23.md)
+- [Reddit ML](./2026-03-23/reddit_machinelearning_2026-03-23.md)
 
 ---
 
 ### 每周一看
 - [Cloudflare Blog](https://blog.cloudflare.com/zh-cn/)
-- [少数派](./2026-03-22/shaoshupai_2026-03-22.md)
-- [美团技术团队](./2026-03-22/meituan_2026-03-22.md)
+- [少数派](./2026-03-23/shaoshupai_2026-03-23.md)
+- [美团技术团队](./2026-03-23/meituan_2026-03-23.md)
 
 # 往日新闻
+
+#### [2026-03-22](./2026-03-22/newsletter.md)
 
 #### [2026-03-21](./2026-03-21/newsletter.md)
 
