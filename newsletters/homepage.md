@@ -1,87 +1,89 @@
 ## 今日要闻
 
-<sub> 生成时间：2026-03-26 08:18:26</sub>
+<sub> 生成时间：2026-03-28 08:16:57</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[TurboQuant：以极致压缩重新定义AI效率](https://news.ycombinator.com/item?id=47513475)**（来源：Hacker News）
-  > 谷歌发布的KV缓存压缩算法，实现6-8倍内存减少和加速，凸显运行时与系统层优化的重要性。
+- **[字节跳动开源超级智能体框架 DeerFlow 2.0](https://github.com/bytedance/deer-flow)**（来源：GitHub Trending）
+  > 用于编排子智能体、记忆与沙箱，可处理从研究、编码到创作等耗时数分钟至数小时的复杂长周期任务。
 
-- **[vLLM与Transformers均报告显著推理性能提升](https://x.com/vllm_project/status/2036389182579642544)**（来源：AINews）
-  > vLLM展示多项系统升级，Transformers通过连续批处理等技术，在长文本生成上达到vLLM 95%的吞吐量。
+- **[Fox：高性能 Rust 本地 LLM 推理引擎](https://github.com/ferrumox/fox)**（来源：AINews）
+  > 作为 Ollama 的替代品，具备 PagedAttention、连续批处理等功能，在 RTX 4060 上测试 Llama-3.2-3B 模型时，TTFT 降低 72%，吞吐量提升 111%。
 
-- **[Anthropic发布多智能体工作流工程实践](https://x.com/AnthropicAI/status/2036481033621623056)**（来源：AINews）
-  > 强调智能体能力核心正转向编排框架，并指出生产部署中重试、回滚、结构化日志等非技术瓶颈至关重要。
+- **[Google 发布 TurboQuant，实现 KV 缓存 6-8 倍压缩](https://x.com/GoogleResearch/status/2036533564158910740)**（来源：AINews）
+  > 一种 KV 缓存压缩算法，声称能在不损失精度的情况下实现至少 6 倍内存减少和高达 8 倍速度提升，凸显运行时与系统层优化的重要性。
 
-- **[Fox：高性能Rust本地LLM推理引擎](https://www.reddit.com/r/LocalLLM/comments/1s2753y/i_built_fox_a_rust_llm_inference_engine_with_2x/)**（来源：AINews）
-  > 作为Ollama替代品，在RTX 4060上测试Llama-3.2-3B时，实现了72%的更低TTFT和111%的更高吞吐量。
+- **[Hacker News 讨论：软件工程中逐渐消失的“工作量证明”](https://news.ycombinator.com/item?id=47546734)**（来源：Hacker News）
+  > 探讨 AI 工具导致开发者技能趋同，难以区分真实工程能力与表面编码，引发对能力证明新方式的思考。
 
-- **[Optio——在K8s中编排AI编程代理，从工单到PR一步到位](https://news.ycombinator.com/item?id=47520220)**（来源：Hacker News）
-  > 开源编排系统，使用AI编码代理将工单自动转化为合并的PR，支持从CI失败到代码审查的闭环处理。
+- **[Hacker News 展示：开源版 ‘Conductor + Ghostty’ 终端](https://news.ycombinator.com/item?id=47549197)**（来源：Hacker News）
+  > 一款跨平台终端工具，支持多工作区并行操作和 AI 代理集成，具备通知、GitHub 集成、文件查看和搜索等功能。
 
-- **[Pipguard – 在 pip install 执行前拦截 .pth 恶意软件](https://news.ycombinator.com/item?id=47524231)**（来源：Hacker News）
-  > 针对LiteLLM供应链攻击暴露的风险，提供工具扫描安装包并拦截恶意模式，提升Python生态安全。
+- **[Hacker News 问答：如何为 AI 智能体驱动制定规范标准？](https://news.ycombinator.com/item?id=47543324)**（来源：Hacker News）
+  > 认为智能体开发将普及，但 Markdown 提示词效果差，建议用规范语言定义组件边界并让智能体填充内部。
 
-- **[bytedance/deer-flow](https://github.com/bytedance/deer-flow)**（来源：GitHub Trending）
-  > 字节跳动开源的超级智能体框架，通过编排子智能体、沙箱和记忆，能自主完成从研究到编码的复杂长时任务。
+- **[Hacker News 展示：Hollow —— 面向 AI 智能体的无服务器网页感知工具](https://news.ycombinator.com/item?id=47549679)**（来源：Hacker News）
+  > 开源工具让 AI 代理通过服务器函数低成本访问网页，提供“感知”和“行动”接口，每次加载成本约 0.00003 美元。
 
-- **[supermemoryai/supermemory](https://github.com/supermemoryai/supermemory)**（来源：GitHub Trending）
-  > 面向AI的记忆与上下文引擎，为智能体提供持久化记忆层，支持混合搜索（RAG+记忆）和多模态文件处理。
+- **[Hacker News 展示：开源配对排序工具 Image Ranker](https://news.ycombinator.com/item?id=47548441)**（来源：Hacker News）
+  > 使用贝叶斯 TrueSkill 算法，通过成对比较高效排序大量图像，支持人机协作偏好估计，适用于 RLHF 和生成模型评估。
 
-- **[Ask HN：你们用什么工具进行代码审查？](https://news.ycombinator.com/item?id=47524361)**（来源：Hacker News）
-  > 开发者吐槽GitHub代码审查工具原始，讨论更好的审查工具，触及跨文件修改等复杂场景的痛点。
+- **[Hacker News 讨论：我们用 AI 一天重写了 JSONata，每年节省 50 万美元](https://news.ycombinator.com/item?id=47536712)**（来源：Hacker News）
+  > 分享用 AI 重写核心 JSON 查询引擎以替代昂贵的 Node.js RPC 架构，引发对工程决策与 AI 辅助重构价值的深度讨论。
 
-- **[如何在 MCP 和 RAG 管道中处理安全与访问控制？](https://news.ycombinator.com/item?id=47524804)**（来源：Hacker News）
-  > 探讨在MCP和RAG架构中实施安全与访问控制的当前方案与主要痛点，对构建企业级AI应用至关重要。
+- **[V2EX 讨论：有了 OpenClaw，App 会死吗？](https://www.v2ex.com/t/1201764)**（来源：V2EX）
+  > 探讨作为超级 App 的 OpenClaw 通过技能集成，是否会导致大量单一功能 App 被替代，引发对应用生态未来的思考。
 
 ---
 
 ### 各渠道精选摘要
-- [少数派](./2026-03-26/shaoshupai_2026-03-26.md)
-- [美团技术团队](./2026-03-26/meituan_2026-03-26.md)
+- [少数派](./2026-03-28/shaoshupai_2026-03-28.md)
+- [美团技术团队](./2026-03-28/meituan_2026-03-28.md)
 
 ---
 
 ### 渠道精选
-- [AINews](./2026-03-26/ai_news_summary_2026-03-26.md)
-- [GitHub Trending](./2026-03-26/github_trending_2026-03-26.md)
-- [V2EX 技术版](./2026-03-26/v2ex_hot_2026-03-26.md)
+- [AINews](./2026-03-28/ai_news_summary_2026-03-28.md)
+- [GitHub Trending](./2026-03-28/github_trending_2026-03-28.md)
+- [V2EX 技术版](./2026-03-28/v2ex_hot_2026-03-28.md)
 
 ---
 
 ### Hacker News 精选
-- [Hacker News 首页](./2026-03-26/hacker_news_frontpage_2026-03-26.md)
-- [Hacker News 近期最佳](./2026-03-26/hacker_news_best_2026-03-26.md)
-- [Hacker News 高赞评论](./2026-03-26/hacker_news_top_comments_2026-03-26.md)
-- [Hacker News 问答](./2026-03-26/hacker_news_ask_2026-03-26.md)
-- [Hacker News 展示](./2026-03-26/hacker_news_show_2026-03-26.md)
-- [Hacker News 音频技术](./2026-03-26/hacker_news_audio_tech_2026-03-26.md)
+- [Hacker News 首页](./2026-03-28/hacker_news_frontpage_2026-03-28.md)
+- [Hacker News 近期最佳](./2026-03-28/hacker_news_best_2026-03-28.md)
+- [Hacker News 高赞评论](./2026-03-28/hacker_news_top_comments_2026-03-28.md)
+- [Hacker News 问答](./2026-03-28/hacker_news_ask_2026-03-28.md)
+- [Hacker News 展示](./2026-03-28/hacker_news_show_2026-03-28.md)
+- [Hacker News 音频技术](./2026-03-28/hacker_news_audio_tech_2026-03-28.md)
 
 ---
 
 ### Reddit 精选频道
-- [Reddit AMA](./2026-03-26/reddit_ama_2026-03-26.md)
-- [Reddit AskReddit](./2026-03-26/reddit_askreddit_2026-03-26.md)
-- [Reddit Showerthoughts](./2026-03-26/reddit_showerthoughts_2026-03-26.md)
-- [Reddit TIL](./2026-03-26/reddit_todayilearned_2026-03-26.md)
-- [Reddit DevOps](./2026-03-26/reddit_devops_2026-03-26.md)
-- [Reddit Programming](./2026-03-26/reddit_programming_2026-03-26.md)
-- [Reddit ELI5](./2026-03-26/reddit_explainlikeimfive_2026-03-26.md)
-- [Reddit Golang](./2026-03-26/reddit_golang_2026-03-26.md)
-- [Reddit Rust](./2026-03-26/reddit_rust_2026-03-26.md)
-- [Reddit ML](./2026-03-26/reddit_machinelearning_2026-03-26.md)
+- [Reddit AMA](./2026-03-28/reddit_ama_2026-03-28.md)
+- [Reddit AskReddit](./2026-03-28/reddit_askreddit_2026-03-28.md)
+- [Reddit Showerthoughts](./2026-03-28/reddit_showerthoughts_2026-03-28.md)
+- [Reddit TIL](./2026-03-28/reddit_todayilearned_2026-03-28.md)
+- [Reddit DevOps](./2026-03-28/reddit_devops_2026-03-28.md)
+- [Reddit Programming](./2026-03-28/reddit_programming_2026-03-28.md)
+- [Reddit ELI5](./2026-03-28/reddit_explainlikeimfive_2026-03-28.md)
+- [Reddit Golang](./2026-03-28/reddit_golang_2026-03-28.md)
+- [Reddit Rust](./2026-03-28/reddit_rust_2026-03-28.md)
+- [Reddit ML](./2026-03-28/reddit_machinelearning_2026-03-28.md)
 
 ---
 
 ### 每周一看
 - [Cloudflare Blog](https://blog.cloudflare.com/zh-cn/)
-- [少数派](./2026-03-26/shaoshupai_2026-03-26.md)
-- [美团技术团队](./2026-03-26/meituan_2026-03-26.md)
+- [少数派](./2026-03-28/shaoshupai_2026-03-28.md)
+- [美团技术团队](./2026-03-28/meituan_2026-03-28.md)
 
 # 往日新闻
+
+#### [2026-03-26](./2026-03-26/newsletter.md)
 
 #### [2026-03-23](./2026-03-23/newsletter.md)
 
