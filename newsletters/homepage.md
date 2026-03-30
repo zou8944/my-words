@@ -1,87 +1,89 @@
 ## 今日要闻
 
-<sub> 生成时间：2026-03-29 08:16:15</sub>
+<sub> 生成时间：2026-03-30 08:18:04</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[智谱AI发布GLM-5.1，开源编码模型性能逼近闭源模型](https://x.com/Zai_org/status/2037490078126084514)**（来源：AINews）
-  > 高端中文开源编码模型性能迅速接近闭源模型，为开发者提供了更具成本效益的替代选择。
+- **[LeWorldModel：Yann LeCun 的开源世界模型，规划速度提升48倍](https://x.com/LiorOnAI/status/2037484990779339064)**（来源：AINews）
+  > 通过SIGReg方法避免表征崩溃，显著提升机器人规划效率，为构建更高效的AI系统提供新思路。
 
-- **[Nous Research的Hermes Agent成为开源AI智能体焦点](https://x.com/NousResearch/status/2037654827929338324)**（来源：AINews）
-  > 集成Hugging Face推理，提供28个精选模型，标志着开源智能体在记忆、持久化访问和模型选择上的重要进展。
+- **[Cohere 发布 Apache-2.0 许可的高性能转录模型](https://x.com/victormustar/status/203757266265910476)**（来源：AINews）
+  > 2B参数模型在A100上12分钟转录33小时音频，为后端开发者提供高效、可商用的语音处理方案。
 
-- **[Meta发布SAM 3.1，显著提升视频分割速度](https://x.com/AIatMeta/status/2037582117375553924)**（来源：AINews）
-  > 即插即用更新支持单次前向传播处理多达16个对象，在H100上视频处理吞吐量翻倍至约32 FPS。
+- **[CursorBench：长周期编码智能体评估的新标杆](https://news.smol.ai/issues/26-03-27-not-much/)**（来源：AINews）
+  > 基于真实编码会话，每个任务中位数代码更改达181行，比静态任务更能有效评估智能体实际工程能力。
 
-- **[开源量化新方法 RotorQuant](https://github.com/scrya-com/rotorquant)**（来源：AINews）
-  > 利用克利福德代数进行向量量化，据称比TurboQuant快10-19倍，参数减少44倍，提供新的性能/质量权衡。
+- **[AgentScope：生产就绪、易于使用的智能体框架](https://github.com/agentscope-ai/agentscope)**（来源：GitHub Trending）
+  > 提供ReAct智能体、工具集成、多智能体编排等核心功能，旨在帮助开发者快速构建可理解、可信任的AI应用。
 
-- **[面向真实工作负载的智能体基准测试 AA-AgentPerf](https://x.com/ArtificialAnlys/status/2037562417836929315)**（来源：AINews）
-  > 专注于真实编码轨迹和长序列，以“每加速器/每千瓦/每美元/每机架的并发用户数”衡量吞吐量，贴近实际部署。
+- **[Chandra OCR 2：先进的文档智能OCR模型](https://github.com/datalab-to/chandra)**（来源：GitHub Trending）
+  > 将图像/PDF精准转换为结构化HTML/Markdown/JSON，完整保留复杂布局，支持90+种语言，适用于文档数字化。
 
-- **[SakanaAI/AI-Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2)**（来源：GitHub Trending）
-  > 端到端自主科研系统，通过智能体树搜索实现从假设生成到论文撰写的全流程自动化，产出论文已通过同行评审。
+- **[AyaFlow：基于eBPF的高性能Rust网络流量分析器](https://news.ycombinator.com/item?id=47563978)**（来源：Hacker News）
+  > 利用eBPF和Rust实现高性能网络监控，为后端工程师提供了可观测性和安全分析的新工具。
 
-- **[microsoft/VibeVoice](https://github.com/microsoft/VibeVoice)**（来源：GitHub Trending）
-  > 微软开源语音AI模型，ASR可单次处理60分钟音频，TTS支持90分钟多说话人对话，核心技术为超低帧率分词器与扩散模型。
+- **[C++26标准制定完成：ISO C++会议总结报告](https://news.ycombinator.com/item?id=47565365)**（来源：Hacker News）
+  > 了解C++语言的最新演进方向，对使用C++进行高性能后端和AI系统开发的工程师至关重要。
 
-- **[Pneuma——一个纯AI操作系统](https://news.ycombinator.com/item?id=47557165)**（来源：Hacker News）
-  > 通过自然语言描述即时生成Rust模块并编译为WASM在沙盒中运行，实现应用按需创建和复用的桌面环境。
+- **[认知暗森林](https://news.ycombinator.com/item?id=47566442)**（来源：Hacker News）
+  > 探讨信息过载时代如何保护深度思考能力，对工程师在AI辅助下保持技术判断力有重要启发。
 
-- **[Ask HN：只有我这样觉得吗？](https://news.ycombinator.com/item?id=47556554)**（来源：Hacker News）
-  > 开发者反思过度依赖AI编程工具可能导致被误导和技能退化，引发对工具设计目的与真实辅助价值的深度讨论。
+- **[英文维基百科正式禁止 AI 参与编写](https://sspai.com/post/108044)**（来源：少数派）
+  > 标志性社区对AI生成内容采取严格限制，引发对知识可信度、AI辅助边界及社区治理的深度思考。
 
-- **[AI的风险不是让我们变懒，而是让“懒惰”显得高效](https://news.ycombinator.com/item?id=47555081)**（来源：Hacker News）
-  > 探讨AI可能掩盖深度思考缺失的风险，关键在于用AI辅助深度工作而非替代思考，对工程师认知提升有启发。
+- **[HitCC：近百万字级 Claude Code 逆向分析文档](https://www.v2ex.com/t/1202048)**（来源：V2EX）
+  > 对Claude Code客户端运行逻辑的深度逆向分析，为研究AI编程助手内部机制和开发类似工具提供了宝贵资料。
 
 ---
 
 ### 各渠道精选摘要
-- [少数派](./2026-03-29/shaoshupai_2026-03-29.md)
-- [美团技术团队](./2026-03-29/meituan_2026-03-29.md)
+- [少数派](./2026-03-30/shaoshupai_2026-03-30.md)
+- [美团技术团队](./2026-03-30/meituan_2026-03-30.md)
 
 ---
 
 ### 渠道精选
-- [AINews](./2026-03-29/ai_news_summary_2026-03-29.md)
-- [GitHub Trending](./2026-03-29/github_trending_2026-03-29.md)
-- [V2EX 技术版](./2026-03-29/v2ex_hot_2026-03-29.md)
+- [AINews](./2026-03-30/ai_news_summary_2026-03-30.md)
+- [GitHub Trending](./2026-03-30/github_trending_2026-03-30.md)
+- [V2EX 技术版](./2026-03-30/v2ex_hot_2026-03-30.md)
 
 ---
 
 ### Hacker News 精选
-- [Hacker News 首页](./2026-03-29/hacker_news_frontpage_2026-03-29.md)
-- [Hacker News 近期最佳](./2026-03-29/hacker_news_best_2026-03-29.md)
-- [Hacker News 高赞评论](./2026-03-29/hacker_news_top_comments_2026-03-29.md)
-- [Hacker News 问答](./2026-03-29/hacker_news_ask_2026-03-29.md)
-- [Hacker News 展示](./2026-03-29/hacker_news_show_2026-03-29.md)
-- [Hacker News 音频技术](./2026-03-29/hacker_news_audio_tech_2026-03-29.md)
+- [Hacker News 首页](./2026-03-30/hacker_news_frontpage_2026-03-30.md)
+- [Hacker News 近期最佳](./2026-03-30/hacker_news_best_2026-03-30.md)
+- [Hacker News 高赞评论](./2026-03-30/hacker_news_top_comments_2026-03-30.md)
+- [Hacker News 问答](./2026-03-30/hacker_news_ask_2026-03-30.md)
+- [Hacker News 展示](./2026-03-30/hacker_news_show_2026-03-30.md)
+- [Hacker News 音频技术](./2026-03-30/hacker_news_audio_tech_2026-03-30.md)
 
 ---
 
 ### Reddit 精选频道
-- [Reddit AMA](./2026-03-29/reddit_ama_2026-03-29.md)
-- [Reddit AskReddit](./2026-03-29/reddit_askreddit_2026-03-29.md)
-- [Reddit Showerthoughts](./2026-03-29/reddit_showerthoughts_2026-03-29.md)
-- [Reddit TIL](./2026-03-29/reddit_todayilearned_2026-03-29.md)
-- [Reddit DevOps](./2026-03-29/reddit_devops_2026-03-29.md)
-- [Reddit Programming](./2026-03-29/reddit_programming_2026-03-29.md)
-- [Reddit ELI5](./2026-03-29/reddit_explainlikeimfive_2026-03-29.md)
-- [Reddit Golang](./2026-03-29/reddit_golang_2026-03-29.md)
-- [Reddit Rust](./2026-03-29/reddit_rust_2026-03-29.md)
-- [Reddit ML](./2026-03-29/reddit_machinelearning_2026-03-29.md)
+- [Reddit AMA](./2026-03-30/reddit_ama_2026-03-30.md)
+- [Reddit AskReddit](./2026-03-30/reddit_askreddit_2026-03-30.md)
+- [Reddit Showerthoughts](./2026-03-30/reddit_showerthoughts_2026-03-30.md)
+- [Reddit TIL](./2026-03-30/reddit_todayilearned_2026-03-30.md)
+- [Reddit DevOps](./2026-03-30/reddit_devops_2026-03-30.md)
+- [Reddit Programming](./2026-03-30/reddit_programming_2026-03-30.md)
+- [Reddit ELI5](./2026-03-30/reddit_explainlikeimfive_2026-03-30.md)
+- [Reddit Golang](./2026-03-30/reddit_golang_2026-03-30.md)
+- [Reddit Rust](./2026-03-30/reddit_rust_2026-03-30.md)
+- [Reddit ML](./2026-03-30/reddit_machinelearning_2026-03-30.md)
 
 ---
 
 ### 每周一看
 - [Cloudflare Blog](https://blog.cloudflare.com/zh-cn/)
-- [少数派](./2026-03-29/shaoshupai_2026-03-29.md)
-- [美团技术团队](./2026-03-29/meituan_2026-03-29.md)
+- [少数派](./2026-03-30/shaoshupai_2026-03-30.md)
+- [美团技术团队](./2026-03-30/meituan_2026-03-30.md)
 
 # 往日新闻
+
+#### [2026-03-29](./2026-03-29/newsletter.md)
 
 #### [2026-03-28](./2026-03-28/newsletter.md)
 
