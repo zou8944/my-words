@@ -1,87 +1,89 @@
 ## 今日要闻
 
-<sub> 生成时间：2026-04-02 08:18:17</sub>
+<sub> 生成时间：2026-04-03 08:18:19</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[Shopify利用DSPy优化AI应用，年成本从550万美元大幅降至7.3万美元](https://x.com/dbreunig/status/2038650860843245814)**（来源：AINews）
-  > 通过解构业务逻辑、使用DSPy对意图建模并转向更小、优化的模型，在保持性能的同时实现成本的大幅优化，极具工程实践价值。
+- **[Arcee发布开源推理大模型Trinity-Large-Thinking](https://x.com/arcee_ai/status/2039369121591120030)**（来源：AINews）
+  > 4000亿总参数，130亿激活参数，Apache 2.0开源。在PinchBench排名第二，电信任务SOTA，为开发者提供可检查、托管、蒸馏和微调的完整系统。
 
-- **[微软开源VibeVoice：7.5Hz超低帧率连续语音分词器](https://github.com/microsoft/VibeVoice)**（来源：GitHub Trending）
-  > 结合LLM与扩散模型，ASR可单次处理60分钟音频并生成带说话人、时间戳的结构化文本，为长音频处理提供高效开源方案。
+- **[Anthropic的Claude Code源代码意外泄露](https://x.com/ZhihuFrontier/status/2039229986339688581)**（来源：AINews）
+  > 约50万行TypeScript代码泄露，揭示其多智能体系统核心为`while(true)`循环，包含4层上下文压缩栈、40+工具模块化架构等关键工程细节。
 
-- **[CMU提出CAID框架：异步多代理软件工程设计获实证支持](https://x.com/omarsar0/status/2038627572108743011)**（来源：AINews）
-  > “集中式异步隔离委托”框架在PaperBench上实现+26.7绝对增益，证明并发性和隔离性优于单纯增加单个代理的迭代次数。
+- **[研究显示自组织智能体角色优于人工预设角色](https://x.com/dair_ai/status/2039350842382512455)**（来源：AINews）
+  > 在256个智能体、25000个任务环境中，自组织角色性能超越预定义层级结构14%，涌现5000+角色，开源模型能以低成本达闭源模型95%质量。
 
-- **[Show HN：Squire——专为Claude Code/Codex工作流设计的CLI优先远程运行时](https://news.ycombinator.com/item?id=47608280)**（来源：Hacker News）
-  > 在干净的远程运行时中运行短期验证和卸载任务，避免在本地进行测试，为AI辅助开发提供轻量级、隔离的执行环境。
+- **[DeepMind研究揭示针对AI智能体的网页攻击面](https://x.com/omarsar0/status/2039383554510217707)**（来源：AINews）
+  > 将智能体安全重心从模型越狱转向网页对抗内容，HTML/CSS中的提示词注入攻击成功率高达86%，记忆污染攻击在低污染率下成功率超80%。
 
-- **[阿里巴巴发布Qwen3.5-Omni，实现原生多模态理解与“视听氛围编码”](https://x.com/Alibaba_Qwen/status/2038636335272194241)**（来源：AINews）
-  > 支持文本/图像/音频/视频原生理解、长内容输入及内置网络搜索，其“音频-视觉氛围编码”演示展示了强大的多模态指令跟随潜力。
+- **[Hugging Face发布TRL v1.0统一后训练框架](https://x.com/RussellQuantum/status/2039270550099443954)**（来源：AINews）
+  > 将监督微调、奖励建模、DPO和GRPO等主流后训练方法统一到一个生产就绪的软件包中，为模型对齐提供标准化工具。
 
-- **[Show HN：我/Claude 逆向工程了 Figma 的二进制 WebSocket 协议](https://news.ycombinator.com/item?id=47607324)**（来源：Hacker News）
-  > 通过逆向工程解析Figma内部二进制协议，绕过REST API限制直接提取完整场景图数据，为深度集成提供新思路。
+- **[PrismML发布首个商业化可行的1比特大模型Bonsai](https://news.smol.ai/issues/26-04-01-not-much/)**（来源：AINews）
+  > 所有组件量化至1比特，8B版本内存仅1.15GB，体积缩小14倍、速度快8倍、能效高5倍，Apache 2.0开源，适用于边缘硬件部署。
 
-- **[清华/深圳团队研究自然语言代理工具链，让LLM执行SOP编排逻辑](https://x.com/rronak_/status/2038401494177694074)**（来源：AINews）
-  > 提出让LLM根据标准操作程序（SOP）执行编排逻辑，而非依赖硬编码的工具链规则，随着上下文预算增加具有颠覆性潜力。
+- **[基于Claude Code泄露代码重构的开源多智能体框架](https://github.com/JackChen-me/open-multi-agent)**（来源：GitHub Trending）
+  > 基于泄露代码重构的模型无关多智能体编排框架，包含协调器、任务调度与依赖解析、智能体间通信，约8000行TypeScript，MIT许可。
 
-- **[Show HN：结构化 Python 控制 AI 计算机使用代理](https://news.ycombinator.com/item?id=47608250)**（来源：Hacker News）
-  > Orbit框架用自然语言控制界面，Python控制流程，支持多模型混合与结构化数据提取，介于黑盒与原始工具调用之间。
+- **[ZINC：绕过ROCm的AMD GPU本地推理引擎](https://github.com/zolotukhin/zinc)**（来源：GitHub）
+  > 通过Vulkan直接与AMD GPU交互，绕过复杂ROCm堆栈。在Radeon AI PRO R9700上实现4倍加速，并能运行在ROCm官方不支持的硬件上。
 
-- **[PaddleOCR-VL-1.5：轻量级视觉语言模型精准解析复杂文档](https://github.com/PaddlePaddle/PaddleOCR)**（来源：GitHub Trending）
-  > 可精准解析弯曲、扫描件等复杂文档，集成PP-StructureV3实现表格、文本坐标提取，已被Dify等顶级项目采用。
+- **[Ask HN：离线CPU版LLM可能终结SaaS，为何关注者寥寥？](https://news.ycombinator.com/item?id=47621077)**（来源：Hacker News）
+  > 探讨离线运行的小型LLM（<4GB）的商业潜力，可解决隐私和网络依赖，可能通过硬件预装或游戏式销售改变行业模式。
 
-- **[Agent的家：如何在 AI 时代搭建硬件基座](https://sspai.com/post/108064)**（来源：少数派）
-  > 来自一线工程师的深度实战总结，分享为本地AI代理搭建稳定、高效硬件环境的具体方案与思考。
+- **[DistSim：在笔记本电脑上构建真实基础设施，学习分布式系统](https://news.ycombinator.com/item?id=47614941)**（来源：Hacker News）
+  > 开源分布式系统模拟器，使用Docker容器模拟真实机器，支持安装配置多种服务并进行混沌工程测试，为学习提供实践环境。
 
 ---
 
 ### 各渠道精选摘要
-- [少数派](./2026-04-02/shaoshupai_2026-04-02.md)
-- [美团技术团队](./2026-04-02/meituan_2026-04-02.md)
+- [少数派](./2026-04-03/shaoshupai_2026-04-03.md)
+- [美团技术团队](./2026-04-03/meituan_2026-04-03.md)
 
 ---
 
 ### 渠道精选
-- [AINews](./2026-04-02/ai_news_summary_2026-04-02.md)
-- [GitHub Trending](./2026-04-02/github_trending_2026-04-02.md)
-- [V2EX 技术版](./2026-04-02/v2ex_hot_2026-04-02.md)
+- [AINews](./2026-04-03/ai_news_summary_2026-04-03.md)
+- [GitHub Trending](./2026-04-03/github_trending_2026-04-03.md)
+- [V2EX 技术版](./2026-04-03/v2ex_hot_2026-04-03.md)
 
 ---
 
 ### Hacker News 精选
-- [Hacker News 首页](./2026-04-02/hacker_news_frontpage_2026-04-02.md)
-- [Hacker News 近期最佳](./2026-04-02/hacker_news_best_2026-04-02.md)
-- [Hacker News 高赞评论](./2026-04-02/hacker_news_top_comments_2026-04-02.md)
-- [Hacker News 问答](./2026-04-02/hacker_news_ask_2026-04-02.md)
-- [Hacker News 展示](./2026-04-02/hacker_news_show_2026-04-02.md)
-- [Hacker News 音频技术](./2026-04-02/hacker_news_audio_tech_2026-04-02.md)
+- [Hacker News 首页](./2026-04-03/hacker_news_frontpage_2026-04-03.md)
+- [Hacker News 近期最佳](./2026-04-03/hacker_news_best_2026-04-03.md)
+- [Hacker News 高赞评论](./2026-04-03/hacker_news_top_comments_2026-04-03.md)
+- [Hacker News 问答](./2026-04-03/hacker_news_ask_2026-04-03.md)
+- [Hacker News 展示](./2026-04-03/hacker_news_show_2026-04-03.md)
+- [Hacker News 音频技术](./2026-04-03/hacker_news_audio_tech_2026-04-03.md)
 
 ---
 
 ### Reddit 精选频道
-- [Reddit AMA](./2026-04-02/reddit_ama_2026-04-02.md)
-- [Reddit AskReddit](./2026-04-02/reddit_askreddit_2026-04-02.md)
-- [Reddit Showerthoughts](./2026-04-02/reddit_showerthoughts_2026-04-02.md)
-- [Reddit TIL](./2026-04-02/reddit_todayilearned_2026-04-02.md)
-- [Reddit DevOps](./2026-04-02/reddit_devops_2026-04-02.md)
-- [Reddit Programming](./2026-04-02/reddit_programming_2026-04-02.md)
-- [Reddit ELI5](./2026-04-02/reddit_explainlikeimfive_2026-04-02.md)
-- [Reddit Golang](./2026-04-02/reddit_golang_2026-04-02.md)
-- [Reddit Rust](./2026-04-02/reddit_rust_2026-04-02.md)
-- [Reddit ML](./2026-04-02/reddit_machinelearning_2026-04-02.md)
+- [Reddit AMA](./2026-04-03/reddit_ama_2026-04-03.md)
+- [Reddit AskReddit](./2026-04-03/reddit_askreddit_2026-04-03.md)
+- [Reddit Showerthoughts](./2026-04-03/reddit_showerthoughts_2026-04-03.md)
+- [Reddit TIL](./2026-04-03/reddit_todayilearned_2026-04-03.md)
+- [Reddit DevOps](./2026-04-03/reddit_devops_2026-04-03.md)
+- [Reddit Programming](./2026-04-03/reddit_programming_2026-04-03.md)
+- [Reddit ELI5](./2026-04-03/reddit_explainlikeimfive_2026-04-03.md)
+- [Reddit Golang](./2026-04-03/reddit_golang_2026-04-03.md)
+- [Reddit Rust](./2026-04-03/reddit_rust_2026-04-03.md)
+- [Reddit ML](./2026-04-03/reddit_machinelearning_2026-04-03.md)
 
 ---
 
 ### 每周一看
 - [Cloudflare Blog](https://blog.cloudflare.com/zh-cn/)
-- [少数派](./2026-04-02/shaoshupai_2026-04-02.md)
-- [美团技术团队](./2026-04-02/meituan_2026-04-02.md)
+- [少数派](./2026-04-03/shaoshupai_2026-04-03.md)
+- [美团技术团队](./2026-04-03/meituan_2026-04-03.md)
 
 # 往日新闻
+
+#### [2026-04-02](./2026-04-02/newsletter.md)
 
 #### [2026-04-01](./2026-04-01/newsletter.md)
 
