@@ -1,87 +1,89 @@
 ## 今日要闻
 
-<sub> 生成时间：2026-04-13 08:20:08</sub>
+<sub> 生成时间：2026-04-15 08:23:39</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[GLM-5.1跻身代码模型前沿梯队，成为排名第一的开源模型](https://x.com/arena/status/2042611135434891592)**（来源：AINews）
-  > 开源模型GLM-5.1在Code Arena上超越多个闭源模型，为开发者提供了强大的、可微调的开源代码模型基础。
+- **[OpenSSL 4.0.0 发布](https://news.ycombinator.com/item?id=47768788)**（来源：Hacker News）  
+  > 基础加密库重大版本更新，后端工程师需关注其新特性、API变更及对现有服务安全性的影响。
 
-- **[“廉价执行器+昂贵顾问”模式成为AI系统设计的一流范式](https://x.com/akshay_pachaar/status/2042479258682212689)**（来源：AINews）
-  > Anthropic在API层面推出“顾问策略”，通过混合模型（如Haiku+Opus）显著提升性能并降低成本，为智能体工程提供新范式。
+- **[Plain——为人类和智能体设计的全栈Python框架](https://news.ycombinator.com/item?id=47768750)**（来源：Hacker News）  
+  > 一个新颖的全栈框架，旨在同时服务人类用户和AI智能体，为构建下一代人机协同应用提供了新思路。
 
-- **[Qwen Code v0.14.x发布，内置智能体编排原语](https://x.com/Alibaba_Qwen/status/2042551216769765449)**（来源：AINews）
-  > 该版本集成了远程控制、定时任务、百万级上下文等生产级智能体功能，成为一个功能齐全的AI编码助手与智能体平台。
+- **[第五范式与数据库设计](https://news.ycombinator.com/item?id=47767676)**（来源：Hacker News）  
+  > 探讨超越传统范式的数据库设计思想，对处理复杂、非结构化数据（如AI生成内容）有启发价值。
 
-- **[Hermes智能体框架生态系统势头强劲，获得广泛实践认可](https://x.com/KSimback/status/2042369292813861334)**（来源：AINews）
-  > Hermes框架因其开箱即用的体验和活跃的生态系统（如移动工作空间）获得社区认可，成为首个被广泛实践的智能体框架。
+- **[Kontext CLI – 用 Go 编写的 AI 编程助手凭证代理工具](https://news.ycombinator.com/item?id=47765374)**（来源：Hacker News）  
+  > 解决AI编程工具（如Claude Code）的API密钥安全问题，通过OAuth和短期令牌管理，适合团队集成。
 
-- **[ClawBench和MirrorCode推动智能体评估超越玩具任务，走向现实场景](https://x.com/arankomatsuzaki/status/2042441980710699364)**（来源：AINews）
-  > 新基准测试显示智能体在真实网站任务中成功率骤降，揭示了现实任务的巨大挑战，推动评估方法向实用化发展。
+- **[jj – Jujutsu 的命令行工具](https://news.ycombinator.com/item?id=47763759)**（来源：Hacker News）  
+  > 一个新兴的Git兼容版本控制系统，其设计理念和性能可能对处理大型代码库（如AI项目）有优势。
 
-- **[microsoft/markitdown](https://github.com/microsoft/markitdown)**（来源：GitHub Trending）
-  > 微软开源工具，将PDF、Office文档等各类文件高质量转换为结构化Markdown，为LLM和文本分析管道提供优质输入。
+- **[分布式 DuckDB 实例](https://news.ycombinator.com/item?id=47761997)**（来源：Hacker News）  
+  > 讨论DuckDB的分布式方案，为需要在分析工作流中嵌入高性能、轻量级OLAP数据库的工程师提供参考。
 
-- **[coleam00/Archon](https://github.com/coleam00/Archon)**（来源：GitHub Trending）
-  > 首个开源AI编程流程引擎，通过YAML定义开发流程，将规划、编码、测试等环节标准化，实现稳定、可重复的自动化开发。
+- **[GitHub 在 Webhook 调用中泄露了 Webhook 密钥](https://news.ycombinator.com/item?id=47770975)**（来源：Hacker News）  
+  > 披露了一个持续近一年的GitHub平台漏洞，提醒所有集成方立即检查并更新webhook密钥，涉及安全实践。
 
-- **[挑战CUDA的ROCm：一步一个脚印](https://news.ycombinator.com/item?id=47745284)**（来源：Hacker News）
-  > 讨论AMD ROCm在AI计算领域挑战NVIDIA CUDA生态的进展与现状，涉及硬件优化和开发生态。
+- **[Zuver – 仅需10MB内存即可构建企业级智能体](https://news.ycombinator.com/item?id=47768506)**（来源：Hacker News）  
+  > 一个用Go编写的极轻量级AI代理框架，支持多代理协作与RAG，为资源受限的边缘/嵌入式部署提供了新选择。
 
-- **[我用每月20美元的技术栈运营着多个月入万美元的公司](https://news.ycombinator.com/item?id=47736555)**（来源：Hacker News）
-  > 分享如何用低成本技术栈（如VPS、SQLite）高效运营盈利业务，挑战过度工程化和云平台销售话术。
+- **[ContextPack——将任意代码库映射为分级上下文的命令行工具](https://news.ycombinator.com/item?id=47771847)**（来源：Hacker News）  
+  > 静态分析工具，能快速为陌生项目生成重要性排序的文件关系图，辅助AI编程助手或新人快速理解代码结构。
 
-- **[浅谈人工智能时代的用户体验：Agent Experience 导论](https://sspai.com/post/107600)**（来源：少数派）
-  > 探讨如何设计产品形态使AI Agent能可靠地“理解”、自主操作并高效集成，而非仅服务于人类用户。
+- **[我们微调了一个用于日志搜索的AI模型——准确率从50%提升至80%](https://news.ycombinator.com/item?id=47772271)**（来源：Hacker News）  
+  > 一个具体的AI工程实践案例：通过微调专门模型，显著提升日志搜索的语义理解准确率，具有直接借鉴意义。
 
 ---
 
 ### 各渠道精选摘要
-- [少数派](./2026-04-13/shaoshupai_2026-04-13.md)
-- [美团技术团队](./2026-04-13/meituan_2026-04-13.md)
+- [少数派](./2026-04-15/shaoshupai_2026-04-15.md)
+- [美团技术团队](./2026-04-15/meituan_2026-04-15.md)
 
 ---
 
 ### 渠道精选
-- [AINews](./2026-04-13/ai_news_summary_2026-04-13.md)
-- [GitHub Trending](./2026-04-13/github_trending_2026-04-13.md)
-- [V2EX 技术版](./2026-04-13/v2ex_hot_2026-04-13.md)
+- [AINews](./2026-04-15/ai_news_summary_2026-04-15.md)
+- [GitHub Trending](./2026-04-15/github_trending_2026-04-15.md)
+- [V2EX 技术版](./2026-04-15/v2ex_hot_2026-04-15.md)
 
 ---
 
 ### Hacker News 精选
-- [Hacker News 首页](./2026-04-13/hacker_news_frontpage_2026-04-13.md)
-- [Hacker News 近期最佳](./2026-04-13/hacker_news_best_2026-04-13.md)
-- [Hacker News 高赞评论](./2026-04-13/hacker_news_top_comments_2026-04-13.md)
-- [Hacker News 问答](./2026-04-13/hacker_news_ask_2026-04-13.md)
-- [Hacker News 展示](./2026-04-13/hacker_news_show_2026-04-13.md)
-- [Hacker News 音频技术](./2026-04-13/hacker_news_audio_tech_2026-04-13.md)
+- [Hacker News 首页](./2026-04-15/hacker_news_frontpage_2026-04-15.md)
+- [Hacker News 近期最佳](./2026-04-15/hacker_news_best_2026-04-15.md)
+- [Hacker News 高赞评论](./2026-04-15/hacker_news_top_comments_2026-04-15.md)
+- [Hacker News 问答](./2026-04-15/hacker_news_ask_2026-04-15.md)
+- [Hacker News 展示](./2026-04-15/hacker_news_show_2026-04-15.md)
+- [Hacker News 音频技术](./2026-04-15/hacker_news_audio_tech_2026-04-15.md)
 
 ---
 
 ### Reddit 精选频道
-- [Reddit AMA](./2026-04-13/reddit_ama_2026-04-13.md)
-- [Reddit AskReddit](./2026-04-13/reddit_askreddit_2026-04-13.md)
-- [Reddit Showerthoughts](./2026-04-13/reddit_showerthoughts_2026-04-13.md)
-- [Reddit TIL](./2026-04-13/reddit_todayilearned_2026-04-13.md)
-- [Reddit DevOps](./2026-04-13/reddit_devops_2026-04-13.md)
-- [Reddit Programming](./2026-04-13/reddit_programming_2026-04-13.md)
-- [Reddit ELI5](./2026-04-13/reddit_explainlikeimfive_2026-04-13.md)
-- [Reddit Golang](./2026-04-13/reddit_golang_2026-04-13.md)
-- [Reddit Rust](./2026-04-13/reddit_rust_2026-04-13.md)
-- [Reddit ML](./2026-04-13/reddit_machinelearning_2026-04-13.md)
+- [Reddit AMA](./2026-04-15/reddit_ama_2026-04-15.md)
+- [Reddit AskReddit](./2026-04-15/reddit_askreddit_2026-04-15.md)
+- [Reddit Showerthoughts](./2026-04-15/reddit_showerthoughts_2026-04-15.md)
+- [Reddit TIL](./2026-04-15/reddit_todayilearned_2026-04-15.md)
+- [Reddit DevOps](./2026-04-15/reddit_devops_2026-04-15.md)
+- [Reddit Programming](./2026-04-15/reddit_programming_2026-04-15.md)
+- [Reddit ELI5](./2026-04-15/reddit_explainlikeimfive_2026-04-15.md)
+- [Reddit Golang](./2026-04-15/reddit_golang_2026-04-15.md)
+- [Reddit Rust](./2026-04-15/reddit_rust_2026-04-15.md)
+- [Reddit ML](./2026-04-15/reddit_machinelearning_2026-04-15.md)
 
 ---
 
 ### 每周一看
 - [Cloudflare Blog](https://blog.cloudflare.com/zh-cn/)
-- [少数派](./2026-04-13/shaoshupai_2026-04-13.md)
-- [美团技术团队](./2026-04-13/meituan_2026-04-13.md)
+- [少数派](./2026-04-15/shaoshupai_2026-04-15.md)
+- [美团技术团队](./2026-04-15/meituan_2026-04-15.md)
 
 # 往日新闻
+
+#### [2026-04-13](./2026-04-13/newsletter.md)
 
 #### [2026-04-11](./2026-04-11/newsletter.md)
 
