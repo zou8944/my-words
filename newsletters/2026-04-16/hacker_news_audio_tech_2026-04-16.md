@@ -1,0 +1,126 @@
+## Hacker News 音频技术 - 2026-04-16
+
+
+### 1. [Gemini 3.1 Flash TTS：支持定向提示的文本转语音](https://news.ycombinator.com/item?id=47782610)
+
+<sub>作者: aanet | 发布于: 2026-04-15 17:47</sub>
+
+---
+
+### 2. [Moss-TTS-Nano：在CPU上实现实时语音AI（开源TTS技术栈）](https://news.ycombinator.com/item?id=47782479)
+
+<sub>作者: steveharing1 | 发布于: 2026-04-15 17:38</sub>
+
+---
+
+### 3. [Gemini 3.1 Flash TTS：新一代富有表现力的AI语音](https://news.ycombinator.com/item?id=47781492)
+
+<sub>作者: pretext | 发布于: 2026-04-15 16:32</sub>
+
+---
+
+### 4. [Show HN：我开发了一款设备端文本转语音应用，因为我在飞机上听完了所有有声书](https://news.ycombinator.com/item?id=47780234)
+> 开发者因不想依赖云端服务，开发了LoudReader，一款完全在设备上运行的iOS应用，可将文章和书籍转为语音。应用支持EPUB/PDF导入，并针对不同设备性能优化了语音合成引擎。
+
+<sub>作者: mowmiatlas | 发布于: 2026-04-15 15:11</sub>
+
+---
+
+### 5. [TTS引擎对比：WebSocket与同步接口性能差5.5倍，M4芯片上INT8反比fp16慢](https://news.ycombinator.com/item?id=47779418)
+
+<sub>作者: KirMoisha | 发布于: 2026-04-15 14:23</sub>
+
+---
+
+### 6. [Show HN：为欧洲打造语音模型，意外在英语Open-ASR中夺魁](https://news.ycombinator.com/item?id=47777945)
+
+<sub>作者: raoulritter | 发布于: 2026-04-15 12:06</sub>
+
+---
+
+### 7. [Voxtral TTS：高质量文本转语音API](https://news.ycombinator.com/item?id=47774145)
+
+<sub>作者: danielmateo773 | 发布于: 2026-04-15 02:54</sub>
+
+---
+
+### 8. [Show HN：我在 WhisperX 中新增了对 Qwen3-ASR 和 Qwen3 ForcedAligner 的支持](https://news.ycombinator.com/item?id=47767361)
+
+<sub>作者: mahfouz22 | 发布于: 2026-04-14 15:57</sub>
+
+---
+
+### 9. [克罗地亚语和塞尔维亚语ASR模型的区域性能差异](https://news.ycombinator.com/item?id=47739750)
+
+<sub>作者: taubek | 发布于: 2026-04-12 14:00</sub>
+
+---
+
+### 10. [Show HN：可自托管、兼容 Deepgram 监听 API 的语音转文字服务](https://news.ycombinator.com/item?id=47732461)
+
+<sub>作者: innovatorved | 发布于: 2026-04-11 17:40</sub>
+
+---
+
+### 11. [Parakeet 流式语音识别在 Apple Silicon 上通过 CoreML 实现——及 Swift 演示应用](https://news.ycombinator.com/item?id=47728486)
+
+<sub>作者: ipotapov | 发布于: 2026-04-11 07:57</sub>
+
+---
+
+### 12. [Tiny-TTS：仅含100万参数的最小英语TTS模型](https://news.ycombinator.com/item?id=47689557)
+
+<sub>作者: thunderbong | 发布于: 2026-04-08 12:58</sub>
+
+---
+
+### 13. [Show HN：SuperUtter – 一款轻量级 macOS 文本转语音应用（支持本地 Kokoro 和 ElevenLabs）](https://news.ycombinator.com/item?id=47689254)
+> SuperUtter是一款macOS文本转语音工具，使用本地Kokoro模型生成高质量音频，支持离线使用，也可接入ElevenLabs云服务。
+
+<sub>作者: jotaefea | 发布于: 2026-04-08 12:27</sub>
+
+---
+
+### 14. [Parakeet-unified-en-0.6B：支持离线和流式推理的统一ASR模型](https://news.ycombinator.com/item?id=47684648)
+
+<sub>作者: scottyeager | 发布于: 2026-04-08 03:19</sub>
+
+---
+
+### 15. [Show HN：Yapit——一款体验出色的PDF与网页阅读器，支持文本转语音](https://news.ycombinator.com/item?id=47660043)
+> Yapit将PDF和网页转为音频，通过视觉LLM处理复杂排版和数学公式，避免内容错乱。支持自托管和浏览器内TTS。
+
+<sub>作者: MaxWolf-01 | 发布于: 2026-04-06 12:28</sub>
+
+---
+
+### 16. [我们大幅改进了Kokoro TTS训练器](https://news.ycombinator.com/item?id=47653730)
+
+<sub>作者: SainzA | 发布于: 2026-04-05 20:49</sub>
+
+---
+
+### 17. [值得一试的开源语音克隆TTS模型](https://news.ycombinator.com/item?id=47650606)
+
+<sub>作者: steveharing1 | 发布于: 2026-04-05 15:47</sub>
+
+---
+
+### 18. [Voxtral 文本转语音系统](https://news.ycombinator.com/item?id=47617990)
+
+<sub>作者: mihau | 发布于: 2026-04-02 18:05</sub>
+
+---
+
+### 19. [OmniVoice：支持600多种语言的高质量文本转语音](https://news.ycombinator.com/item?id=47613467)
+
+<sub>作者: drakirus | 发布于: 2026-04-02 12:21</sub>
+
+---
+
+### 20. [Show HN：Dograh——利用LLM选择录音而非TTS的语音代理](https://news.ycombinator.com/item?id=47591510)
+> Dograh v1.20发布，这是一个开源语音AI代理平台。新增Gemini 3.1实时支持和预录音频功能以降低延迟。提供可视化工作流，支持自托管，避免供应商锁定。
+
+<sub>作者: a6kme | 发布于: 2026-03-31 18:28</sub>
+
+---
