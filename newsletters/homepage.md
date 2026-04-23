@@ -1,87 +1,89 @@
 ## 今日要闻
 
-<sub> 生成时间：2026-04-21 08:23:47</sub>
+<sub> 生成时间：2026-04-23 08:24:24</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[Kimi K2.6 展示超长程智能体执行能力](https://x.com/scaling01/status/2046250343479054540)**（来源：X）  
-  > 支持超4000次工具调用与12小时连续运行，社区已成功运行5天自主运维代理，为自动化编码与系统管理提供新范式。
+- **[Moonshot 开源高性能注意力内核 FlashKDA](https://x.com/Kimi_Moonshot/status/2046607915424034839)**（来源：AINews）
+  > 基于 CUTLASS 的 Kimi Delta Attention 内核，在 H20 GPU 上预填充速度比 flash-linear-attention 快 1.72-2.22 倍，可作为即插即用后端。
 
-- **[OpenAI 推出 Codex Chronicle 研究预览版](https://x.com/OpenAIDevs/status/2046288243768082699)**（来源：X）  
-  > 系统能从用户屏幕内容被动构建记忆并本地存储，标志着智能体记忆从对话历史转向环境上下文捕捉。
+- **[Hugging Face 发布开源研究循环智能体 ml-intern](https://x.com/akseljoonas/status/2046543093856412100)**（来源：AINews）
+  > 开源智能体能自动化后训练研究循环（读论文、收集数据、训练、评估），10小时内将 Qwen3-1.7B 在 GPQA 基准上的表现从 10% 提升至 32%。
 
-- **[推理系统架构新思路：跨数据中心预填充服务](https://x.com/ZhihuFrontier/status/2046171631228428572)**（来源：X）  
-  > 采用线性注意力等架构可大幅减少状态传输，在跨数据中心部署时提升吞吐量54%，降低延迟64%。
+- **[LightOn 发布高效开源检索模型 LateOn 和 DenseOn](https://x.com/raphaelsrty/status/2046609364929187845)**（来源：AINews）
+  > 两款 1.49 亿参数的 Apache 2.0 开源检索模型，在 BEIR 基准上性能超过参数规模 4 倍的模型，并发布了 14 亿查询-文档对数据集。
 
-- **[Redwood Research 发布 LinuxArena 安全测试环境](https://x.com/arankomatsuzaki/status/2046070569758752984)**（来源：X）  
-  > 包含20个真实生产环境的AI智能体测试平台，结果显示仅靠沙盒隔离不足，强调了可信监控的重要性。
+- **[vLLM 推出交互式部署知识库 recipes.vllm.ai](https://x.com/vllm_project/status/2046592125740142903)**（来源：AINews）
+  > 重新设计的网站将模型映射到可运行的部署方案，包含交互式命令构建器，支持 NVIDIA/AMD 硬件，旨在降低部署新开源模型的操作摩擦。
 
-- **[Sakana AI 提出“思维字符串种子”方法](https://x.com/SakanaAILabs/status/2046248967307174225)**（来源：X）  
-  > 通过让模型内部生成并操作随机字符串，改善输出校准性与多样性，解决“忠实于分布的生成”缺陷。
+- **[HKUDS/RAG-Anything](https://github.com/HKUDS/RAG-Anything)**（来源：GitHub Trending）
+  > 一体化多模态 RAG 框架，能统一处理文本、图像、表格和公式，基于 LightRAG 构建多模态知识图谱以增强理解，适用于复杂文档场景。
 
-- **[Skill-RAG：基于失败感知的检索选择](https://x.com/omarsar0/status/2046249336162632155)**（来源：X）  
-  > 通过探测模型隐藏状态来检测即将发生的知识失败，仅在必要时调用检索，使RAG转向更智能的条件检索。
+- **[过度编辑指模型对代码进行超出必要范围的修改](https://news.ycombinator.com/item?id=47866913)**（来源：Hacker News）
+  > 讨论 AI 编程助手（如 Copilot）倾向于对代码进行不必要的大范围修改，而非精准编辑，这一现象及其对开发工作流的影响。
 
-- **[高级 Hermes 使用模式：无状态单元与动态上下文注入](https://x.com/BTCqzy1/status/2045720855137903046)**（来源：X）  
-  > 分享使用无状态临时单元实现真并行、LLM驱动重规划及通过本地文件动态注入上下文的高级编排模式。
+- **[技术债、认知债与意图债](https://news.ycombinator.com/item?id=47865661)**（来源：Hacker News）
+  > 探讨软件工程中除技术债外，因理解偏差产生的“认知债”和因目标模糊产生的“意图债”，及其对项目长期健康的影响。
 
-- **[Holos——采用 compose 风格 YAML 配置、支持 GPU 与健康检查的 QEMU/KVM 管理工具](https://news.ycombinator.com/item?id=47840851)**（来源：Hacker News）  
-  > 基于QEMU/KVM的单主机虚拟机编排工具，类似Docker Compose，支持GPU直通与健康检查，简化虚拟机管理。
+- **[Ask HN：你们是如何在整个技术栈中处理数据保留的？](https://news.ycombinator.com/item?id=47868481)**（来源：Hacker News）
+  > 探讨在 SaaS 多系统（S3、DB、缓存等）中，根据客户各异策略管理数据保留与删除的实践难题与现有方案。
 
-- **[Sprag——无需JavaScript的全栈Python框架](https://news.ycombinator.com/item?id=47842183)**（来源：Hacker News）  
-  > 用Python编写前后端代码，可编译为JS，统一管理状态与实时功能，为全栈开发提供新思路。
+- **[我们绘制了暴露企业AI数据的未认证向量数据库分布图](https://news.ycombinator.com/item?id=47868779)**（来源：Hacker News）
+  > 发现大量 RAG 管道配置错误，向量数据库端口暴露公网且无认证。作者建立实时地图展示泄露规模，强调边界安全不足。
 
-- **[零编程经验，我如何构建了一个2.2万行代码的应用：智能体控制指南](https://news.ycombinator.com/item?id=47833955)**（来源：Hacker News）  
-  > 通过构建复杂调度引擎揭示AI编程初期易产生“代码腐化”，强调结合特定NLP工具与有效管理上下文比编码更重要。
+- **[ComposeFlux – 面向 Docker Compose 的 GitOps 持续部署工具](https://news.ycombinator.com/item?id=47868687)**（来源：Hacker News）
+  > 一个轻量级的 GitOps 风格部署工具，专为 Docker Compose 设计，简化容器化应用的持续部署流程。
 
 ---
 
 ### 各渠道精选摘要
-- [少数派](./2026-04-21/shaoshupai_2026-04-21.md)
-- [美团技术团队](./2026-04-21/meituan_2026-04-21.md)
+- [少数派](./2026-04-23/shaoshupai_2026-04-23.md)
+- [美团技术团队](./2026-04-23/meituan_2026-04-23.md)
 
 ---
 
 ### 渠道精选
-- [AINews](./2026-04-21/ai_news_summary_2026-04-21.md)
-- [GitHub Trending](./2026-04-21/github_trending_2026-04-21.md)
-- [V2EX 技术版](./2026-04-21/v2ex_hot_2026-04-21.md)
+- [AINews](./2026-04-23/ai_news_summary_2026-04-23.md)
+- [GitHub Trending](./2026-04-23/github_trending_2026-04-23.md)
+- [V2EX 技术版](./2026-04-23/v2ex_hot_2026-04-23.md)
 
 ---
 
 ### Hacker News 精选
-- [Hacker News 首页](./2026-04-21/hacker_news_frontpage_2026-04-21.md)
-- [Hacker News 近期最佳](./2026-04-21/hacker_news_best_2026-04-21.md)
-- [Hacker News 高赞评论](./2026-04-21/hacker_news_top_comments_2026-04-21.md)
-- [Hacker News 问答](./2026-04-21/hacker_news_ask_2026-04-21.md)
-- [Hacker News 展示](./2026-04-21/hacker_news_show_2026-04-21.md)
-- [Hacker News 音频技术](./2026-04-21/hacker_news_audio_tech_2026-04-21.md)
+- [Hacker News 首页](./2026-04-23/hacker_news_frontpage_2026-04-23.md)
+- [Hacker News 近期最佳](./2026-04-23/hacker_news_best_2026-04-23.md)
+- [Hacker News 高赞评论](./2026-04-23/hacker_news_top_comments_2026-04-23.md)
+- [Hacker News 问答](./2026-04-23/hacker_news_ask_2026-04-23.md)
+- [Hacker News 展示](./2026-04-23/hacker_news_show_2026-04-23.md)
+- [Hacker News 音频技术](./2026-04-23/hacker_news_audio_tech_2026-04-23.md)
 
 ---
 
 ### Reddit 精选频道
-- [Reddit AMA](./2026-04-21/reddit_ama_2026-04-21.md)
-- [Reddit AskReddit](./2026-04-21/reddit_askreddit_2026-04-21.md)
-- [Reddit Showerthoughts](./2026-04-21/reddit_showerthoughts_2026-04-21.md)
-- [Reddit TIL](./2026-04-21/reddit_todayilearned_2026-04-21.md)
-- [Reddit DevOps](./2026-04-21/reddit_devops_2026-04-21.md)
-- [Reddit Programming](./2026-04-21/reddit_programming_2026-04-21.md)
-- [Reddit ELI5](./2026-04-21/reddit_explainlikeimfive_2026-04-21.md)
-- [Reddit Golang](./2026-04-21/reddit_golang_2026-04-21.md)
-- [Reddit Rust](./2026-04-21/reddit_rust_2026-04-21.md)
-- [Reddit ML](./2026-04-21/reddit_machinelearning_2026-04-21.md)
+- [Reddit AMA](./2026-04-23/reddit_ama_2026-04-23.md)
+- [Reddit AskReddit](./2026-04-23/reddit_askreddit_2026-04-23.md)
+- [Reddit Showerthoughts](./2026-04-23/reddit_showerthoughts_2026-04-23.md)
+- [Reddit TIL](./2026-04-23/reddit_todayilearned_2026-04-23.md)
+- [Reddit DevOps](./2026-04-23/reddit_devops_2026-04-23.md)
+- [Reddit Programming](./2026-04-23/reddit_programming_2026-04-23.md)
+- [Reddit ELI5](./2026-04-23/reddit_explainlikeimfive_2026-04-23.md)
+- [Reddit Golang](./2026-04-23/reddit_golang_2026-04-23.md)
+- [Reddit Rust](./2026-04-23/reddit_rust_2026-04-23.md)
+- [Reddit ML](./2026-04-23/reddit_machinelearning_2026-04-23.md)
 
 ---
 
 ### 每周一看
 - [Cloudflare Blog](https://blog.cloudflare.com/zh-cn/)
-- [少数派](./2026-04-21/shaoshupai_2026-04-21.md)
-- [美团技术团队](./2026-04-21/meituan_2026-04-21.md)
+- [少数派](./2026-04-23/shaoshupai_2026-04-23.md)
+- [美团技术团队](./2026-04-23/meituan_2026-04-23.md)
 
 # 往日新闻
+
+#### [2026-04-21](./2026-04-21/newsletter.md)
 
 #### [2026-04-19](./2026-04-19/newsletter.md)
 
