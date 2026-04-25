@@ -1,87 +1,95 @@
 ## 今日要闻
 
-<sub> 生成时间：2026-04-23 08:24:24</sub>
+<sub> 生成时间：2026-04-25 08:20:43</sub>
 
 
 ---
 
 ### AI 推荐要点
 
-- **[Moonshot 开源高性能注意力内核 FlashKDA](https://x.com/Kimi_Moonshot/status/2046607915424034839)**（来源：AINews）
-  > 基于 CUTLASS 的 Kimi Delta Attention 内核，在 H20 GPU 上预填充速度比 flash-linear-attention 快 1.72-2.22 倍，可作为即插即用后端。
+好的，这是为您筛选和整理后的每日技术 Newsletter。
 
-- **[Hugging Face 发布开源研究循环智能体 ml-intern](https://x.com/akseljoonas/status/2046543093856412100)**（来源：AINews）
-  > 开源智能体能自动化后训练研究循环（读论文、收集数据、训练、评估），10小时内将 Qwen3-1.7B 在 GPQA 基准上的表现从 10% 提升至 32%。
+---
 
-- **[LightOn 发布高效开源检索模型 LateOn 和 DenseOn](https://x.com/raphaelsrty/status/2046609364929187845)**（来源：AINews）
-  > 两款 1.49 亿参数的 Apache 2.0 开源检索模型，在 BEIR 基准上性能超过参数规模 4 倍的模型，并发布了 14 亿查询-文档对数据集。
+## 🚀 后端与 AI 每日精选 (2026-04-25)
 
-- **[vLLM 推出交互式部署知识库 recipes.vllm.ai](https://x.com/vllm_project/status/2046592125740142903)**（来源：AINews）
-  > 重新设计的网站将模型映射到可运行的部署方案，包含交互式命令构建器，支持 NVIDIA/AMD 硬件，旨在降低部署新开源模型的操作摩擦。
+- **[GPT-5.5 正式发布：定位“真实工作与智能体”，Token 效率提升 40%](https://x.com/OpenAI/status/2047376561205325845)**（来源：OpenAI）
+  > 新旗舰模型，与 Nvidia GB200/GB300 协同设计，每任务 Token 用量减少约 40%，有效抵消了 2 倍的价格上涨。已在 ChatGPT 和 Codex 上线，API 访问推迟。
 
-- **[HKUDS/RAG-Anything](https://github.com/HKUDS/RAG-Anything)**（来源：GitHub Trending）
-  > 一体化多模态 RAG 框架，能统一处理文本、图像、表格和公式，基于 LightRAG 构建多模态知识图谱以增强理解，适用于复杂文档场景。
+- **[Qwen 3.6-27B 发布：27B 密集模型在编码基准上超越 397B MoE 模型](https://huggingface.co/Qwen/Qwen3.6-27B)**（来源：阿里云）
+  > 27B 参数的密集模型，在 SWE-bench 等编码测试中超越自家 397B 的 MoE 模型。支持思考/非思考双模式，Apache 2.0 开源，可在 16GB VRAM 上运行，极具本地部署价值。
 
-- **[过度编辑指模型对代码进行超出必要范围的修改](https://news.ycombinator.com/item?id=47866913)**（来源：Hacker News）
-  > 讨论 AI 编程助手（如 Copilot）倾向于对代码进行不必要的大范围修改，而非精准编辑，这一现象及其对开发工作流的影响。
+- **[DeepSeek 开源 TileKernels：实现线性扩展的并行处理内核](https://github.com/deepseek-ai/TileKernels)**（来源：GitHub）
+  > 引入新颖的内核执行方法，声称计算资源翻倍可直接带来处理速度翻倍。配套发布的 DeepEP V2 进一步增强了模型效率，是深度学习并行化的重要进展。
 
-- **[技术债、认知债与意图债](https://news.ycombinator.com/item?id=47865661)**（来源：Hacker News）
-  > 探讨软件工程中除技术债外，因理解偏差产生的“认知债”和因目标模糊产生的“意图债”，及其对项目长期健康的影响。
+- **[Google DeepMind 发布 Decoupled DiLoCo：跨数据中心异构硬件训练](https://x.com/GoogleDeepMind/status/2047330981145669790)**（来源：Google DeepMind）
+  > 一种针对低带宽网络、异构硬件且训练不会因硬件故障而中断的多数据中心训练技术。已成功用于在四个地区混合使用 TPU6e 和 TPUv5p 训练 12B 模型，为大规模 AI 训练基础设施提供了新思路。
 
-- **[Ask HN：你们是如何在整个技术栈中处理数据保留的？](https://news.ycombinator.com/item?id=47868481)**（来源：Hacker News）
-  > 探讨在 SaaS 多系统（S3、DB、缓存等）中，根据客户各异策略管理数据保留与删除的实践难题与现有方案。
+- **[Hugging Face 开源 ML Intern：能自主研究论文、训练模型的 AI 工程师](https://github.com/huggingface/ml-intern)**（来源：GitHub Trending）
+  > 一个能自主研究论文、训练模型并部署 ML 代码的 AI 工程师。深度集成 Hugging Face 生态，支持交互式与无人值守模式，内置防死循环机制，极大提升 ML 开发效率。
 
-- **[我们绘制了暴露企业AI数据的未认证向量数据库分布图](https://news.ycombinator.com/item?id=47868779)**（来源：Hacker News）
-  > 发现大量 RAG 管道配置错误，向量数据库端口暴露公网且无认证。作者建立实时地图展示泄露规模，强调边界安全不足。
+- **[HKUDS/RAG-Anything：全能多模态 RAG 框架](https://github.com/HKUDS/RAG-Anything)**（来源：GitHub Trending）
+  > 基于 LightRAG 的全能多模态 RAG 框架，统一处理文本、图像、表格和公式等混合内容。通过多阶段流水线和知识图谱实现跨模态检索，适用于学术研究和技术文档场景。
 
-- **[ComposeFlux – 面向 Docker Compose 的 GitOps 持续部署工具](https://news.ycombinator.com/item?id=47868687)**（来源：Hacker News）
-  > 一个轻量级的 GitOps 风格部署工具，专为 Docker Compose 设计，简化容器化应用的持续部署流程。
+- **[Context Mode：通过沙箱工具将工具输出压缩 98%，解决 AI 编码代理上下文膨胀](https://github.com/mksglu/context-mode)**（来源：GitHub Trending）
+  > 一个 MCP 服务器，通过沙箱工具将工具输出压缩 98%，有效解决 AI 编码代理的上下文窗口膨胀问题。利用 SQLite 和 FTS5 索引实现会话连续性，已被微软、谷歌等公司采用。
+
+- **[Hacker News 高赞评论：使用 AI 编码工具的真实体验与反思](https://news.ycombinator.com/item?id=47893895)**（来源：Hacker News）
+  > 一位资深开发者分享，使用 AI 编码工具后，工作从“写代码”变成了“读大量代码”，反而需要投入更多时间和精力。当工具不可用时，甚至无法正常工作，引发对依赖性的深刻反思。
+
+- **[Hacker News 高赞评论：DeepSeek V4 在数学研究场景中的惊艳表现](https://news.ycombinator.com/item?id=47886696)**（来源：Hacker News）
+  > 一位研究者分享，DeepSeek V4 Pro 在解决硕士/博士级别的概率与统计问题时，其证明能力令人印象深刻，在后续回复中表现甚至优于 Gemini 和 GPT-5，对于开源模型来说是巨大进步。
+
+- **[V2EX 技术贴：如何让 8GB 显卡跑 30B 模型从 3 tok/s 提到 21 tok/s](https://www.v2ex.com/t/1208365#reply39)**（来源：V2EX）
+  > 一篇极具实践价值的深度文章，详细记录了通过调整 MoE 模型 offload 策略、KV cache 类型、并行 slot 数量等参数，在 8GB 显存上将 Qwen3-30B 模型推理速度提升 7 倍的技术细节。
 
 ---
 
 ### 各渠道精选摘要
-- [少数派](./2026-04-23/shaoshupai_2026-04-23.md)
-- [美团技术团队](./2026-04-23/meituan_2026-04-23.md)
+- [少数派](./2026-04-25/shaoshupai_2026-04-25.md)
+- [美团技术团队](./2026-04-25/meituan_2026-04-25.md)
 
 ---
 
 ### 渠道精选
-- [AINews](./2026-04-23/ai_news_summary_2026-04-23.md)
-- [GitHub Trending](./2026-04-23/github_trending_2026-04-23.md)
-- [V2EX 技术版](./2026-04-23/v2ex_hot_2026-04-23.md)
+- [AINews](./2026-04-25/ai_news_summary_2026-04-25.md)
+- [GitHub Trending](./2026-04-25/github_trending_2026-04-25.md)
+- [V2EX 技术版](./2026-04-25/v2ex_hot_2026-04-25.md)
 
 ---
 
 ### Hacker News 精选
-- [Hacker News 首页](./2026-04-23/hacker_news_frontpage_2026-04-23.md)
-- [Hacker News 近期最佳](./2026-04-23/hacker_news_best_2026-04-23.md)
-- [Hacker News 高赞评论](./2026-04-23/hacker_news_top_comments_2026-04-23.md)
-- [Hacker News 问答](./2026-04-23/hacker_news_ask_2026-04-23.md)
-- [Hacker News 展示](./2026-04-23/hacker_news_show_2026-04-23.md)
-- [Hacker News 音频技术](./2026-04-23/hacker_news_audio_tech_2026-04-23.md)
+- [Hacker News 首页](./2026-04-25/hacker_news_frontpage_2026-04-25.md)
+- [Hacker News 近期最佳](./2026-04-25/hacker_news_best_2026-04-25.md)
+- [Hacker News 高赞评论](./2026-04-25/hacker_news_top_comments_2026-04-25.md)
+- [Hacker News 问答](./2026-04-25/hacker_news_ask_2026-04-25.md)
+- [Hacker News 展示](./2026-04-25/hacker_news_show_2026-04-25.md)
+- [Hacker News 音频技术](./2026-04-25/hacker_news_audio_tech_2026-04-25.md)
 
 ---
 
 ### Reddit 精选频道
-- [Reddit AMA](./2026-04-23/reddit_ama_2026-04-23.md)
-- [Reddit AskReddit](./2026-04-23/reddit_askreddit_2026-04-23.md)
-- [Reddit Showerthoughts](./2026-04-23/reddit_showerthoughts_2026-04-23.md)
-- [Reddit TIL](./2026-04-23/reddit_todayilearned_2026-04-23.md)
-- [Reddit DevOps](./2026-04-23/reddit_devops_2026-04-23.md)
-- [Reddit Programming](./2026-04-23/reddit_programming_2026-04-23.md)
-- [Reddit ELI5](./2026-04-23/reddit_explainlikeimfive_2026-04-23.md)
-- [Reddit Golang](./2026-04-23/reddit_golang_2026-04-23.md)
-- [Reddit Rust](./2026-04-23/reddit_rust_2026-04-23.md)
-- [Reddit ML](./2026-04-23/reddit_machinelearning_2026-04-23.md)
+- [Reddit AMA](./2026-04-25/reddit_ama_2026-04-25.md)
+- [Reddit AskReddit](./2026-04-25/reddit_askreddit_2026-04-25.md)
+- [Reddit Showerthoughts](./2026-04-25/reddit_showerthoughts_2026-04-25.md)
+- [Reddit TIL](./2026-04-25/reddit_todayilearned_2026-04-25.md)
+- [Reddit DevOps](./2026-04-25/reddit_devops_2026-04-25.md)
+- [Reddit Programming](./2026-04-25/reddit_programming_2026-04-25.md)
+- [Reddit ELI5](./2026-04-25/reddit_explainlikeimfive_2026-04-25.md)
+- [Reddit Golang](./2026-04-25/reddit_golang_2026-04-25.md)
+- [Reddit Rust](./2026-04-25/reddit_rust_2026-04-25.md)
+- [Reddit ML](./2026-04-25/reddit_machinelearning_2026-04-25.md)
 
 ---
 
 ### 每周一看
 - [Cloudflare Blog](https://blog.cloudflare.com/zh-cn/)
-- [少数派](./2026-04-23/shaoshupai_2026-04-23.md)
-- [美团技术团队](./2026-04-23/meituan_2026-04-23.md)
+- [少数派](./2026-04-25/shaoshupai_2026-04-25.md)
+- [美团技术团队](./2026-04-25/meituan_2026-04-25.md)
 
 # 往日新闻
+
+#### [2026-04-23](./2026-04-23/newsletter.md)
 
 #### [2026-04-21](./2026-04-21/newsletter.md)
 
