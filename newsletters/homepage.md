@@ -1,6 +1,6 @@
 ## 今日要闻
 
-<sub> 生成时间：2026-04-26 08:21:23</sub>
+<sub> 生成时间：2026-04-27 08:22:19</sub>
 
 
 ---
@@ -11,7 +11,7 @@
 
 ---
 
-## 🚀 后端与 AI 每日精选 (2026-04-26)
+## 🚀 后端与 AI 每日精选 (2026-04-27)
 
 - **[DeepSeek V4 系列发布：1M上下文、MIT许可、混合推理模式](https://huggingface.co/collections/deepseek-ai/deepseek-v4)**（来源：HuggingFace）
   > 发布 V4 Pro (1.6T/49B 激活) 和 V4 Flash (284B/13B 激活)，支持 1M token 上下文，采用 MIT 许可。其革命性长上下文注意力架构将 KV 缓存缩小 8.7 倍，极具工程参考价值。
@@ -46,48 +46,50 @@
 ---
 
 ### 各渠道精选摘要
-- [少数派](./2026-04-26/shaoshupai_2026-04-26.md)
-- [美团技术团队](./2026-04-26/meituan_2026-04-26.md)
+- [少数派](./2026-04-27/shaoshupai_2026-04-27.md)
+- [美团技术团队](./2026-04-27/meituan_2026-04-27.md)
 
 ---
 
 ### 渠道精选
-- [AINews](./2026-04-26/ai_news_summary_2026-04-26.md)
-- [GitHub Trending](./2026-04-26/github_trending_2026-04-26.md)
-- [V2EX 技术版](./2026-04-26/v2ex_hot_2026-04-26.md)
+- [AINews](./2026-04-27/ai_news_summary_2026-04-27.md)
+- [GitHub Trending](./2026-04-27/github_trending_2026-04-27.md)
+- [V2EX 技术版](./2026-04-27/v2ex_hot_2026-04-27.md)
 
 ---
 
 ### Hacker News 精选
-- [Hacker News 首页](./2026-04-26/hacker_news_frontpage_2026-04-26.md)
-- [Hacker News 近期最佳](./2026-04-26/hacker_news_best_2026-04-26.md)
-- [Hacker News 高赞评论](./2026-04-26/hacker_news_top_comments_2026-04-26.md)
-- [Hacker News 问答](./2026-04-26/hacker_news_ask_2026-04-26.md)
-- [Hacker News 展示](./2026-04-26/hacker_news_show_2026-04-26.md)
-- [Hacker News 音频技术](./2026-04-26/hacker_news_audio_tech_2026-04-26.md)
+- [Hacker News 首页](./2026-04-27/hacker_news_frontpage_2026-04-27.md)
+- [Hacker News 近期最佳](./2026-04-27/hacker_news_best_2026-04-27.md)
+- [Hacker News 高赞评论](./2026-04-27/hacker_news_top_comments_2026-04-27.md)
+- [Hacker News 问答](./2026-04-27/hacker_news_ask_2026-04-27.md)
+- [Hacker News 展示](./2026-04-27/hacker_news_show_2026-04-27.md)
+- [Hacker News 音频技术](./2026-04-27/hacker_news_audio_tech_2026-04-27.md)
 
 ---
 
 ### Reddit 精选频道
-- [Reddit AMA](./2026-04-26/reddit_ama_2026-04-26.md)
-- [Reddit AskReddit](./2026-04-26/reddit_askreddit_2026-04-26.md)
-- [Reddit Showerthoughts](./2026-04-26/reddit_showerthoughts_2026-04-26.md)
-- [Reddit TIL](./2026-04-26/reddit_todayilearned_2026-04-26.md)
-- [Reddit DevOps](./2026-04-26/reddit_devops_2026-04-26.md)
-- [Reddit Programming](./2026-04-26/reddit_programming_2026-04-26.md)
-- [Reddit ELI5](./2026-04-26/reddit_explainlikeimfive_2026-04-26.md)
-- [Reddit Golang](./2026-04-26/reddit_golang_2026-04-26.md)
-- [Reddit Rust](./2026-04-26/reddit_rust_2026-04-26.md)
-- [Reddit ML](./2026-04-26/reddit_machinelearning_2026-04-26.md)
+- [Reddit AMA](./2026-04-27/reddit_ama_2026-04-27.md)
+- [Reddit AskReddit](./2026-04-27/reddit_askreddit_2026-04-27.md)
+- [Reddit Showerthoughts](./2026-04-27/reddit_showerthoughts_2026-04-27.md)
+- [Reddit TIL](./2026-04-27/reddit_todayilearned_2026-04-27.md)
+- [Reddit DevOps](./2026-04-27/reddit_devops_2026-04-27.md)
+- [Reddit Programming](./2026-04-27/reddit_programming_2026-04-27.md)
+- [Reddit ELI5](./2026-04-27/reddit_explainlikeimfive_2026-04-27.md)
+- [Reddit Golang](./2026-04-27/reddit_golang_2026-04-27.md)
+- [Reddit Rust](./2026-04-27/reddit_rust_2026-04-27.md)
+- [Reddit ML](./2026-04-27/reddit_machinelearning_2026-04-27.md)
 
 ---
 
 ### 每周一看
 - [Cloudflare Blog](https://blog.cloudflare.com/zh-cn/)
-- [少数派](./2026-04-26/shaoshupai_2026-04-26.md)
-- [美团技术团队](./2026-04-26/meituan_2026-04-26.md)
+- [少数派](./2026-04-27/shaoshupai_2026-04-27.md)
+- [美团技术团队](./2026-04-27/meituan_2026-04-27.md)
 
 # 往日新闻
+
+#### [2026-04-26](./2026-04-26/newsletter.md)
 
 #### [2026-04-25](./2026-04-25/newsletter.md)
 
