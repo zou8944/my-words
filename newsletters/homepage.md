@@ -1,6 +1,6 @@
 ## 今日要闻
 
-<sub> 生成时间：2026-04-29 08:24:53</sub>
+<sub> 生成时间：2026-04-30 08:26:39</sub>
 
 
 ---
@@ -11,85 +11,87 @@
 
 ---
 
-## 每日技术简报 - 2026-04-30
+## 每日技术简报 - 2026-05-01
 
 > 为后端与AI工程师精选的10条高价值内容，助您快速掌握行业动态与实践要点。
 
-### 1. [OpenAI 打破 Azure 独家协议，模型将登陆 AWS Bedrock](https://x.com/sama/status/2048755148361707946)（来源：X / Sam Altman）
-> OpenAI 与微软更新合作，不再独占 Azure，模型将登陆 AWS Bedrock。这标志着 OpenAI 分销策略的重大转变，对多云部署和模型采购策略有直接影响。
+### 1. [Poolside 发布首个公开模型 Laguna XS.2：33B/3B 活跃参数的 MoE 编码器](https://x.com/poolsideai/status/2049144111626670282)（来源：X / Poolside）
+> 33B总参/3B活跃参数的MoE编码模型，Apache 2.0许可，可在单张GPU上运行。采用混合注意力机制和FP8 KV缓存，性能接近Qwen-3.5，Ollama已立即支持。
 
-### 2. [小米开源 MiMo-V2.5 系列模型，MIT 许可+1M 上下文](https://x.com/XiaomiMiMo/status/2048821516079661561)（来源：X / 小米）
-> 小米开源 MiMo-V2.5 系列，采用 MIT 许可，支持 1M token 上下文。Pro 版约 1T 总参数/42B 活跃参数，为开发者提供了强大的长上下文开源模型选择。
+### 2. [NVIDIA 发布 Nemotron 3 Nano Omni：30B/A3B 多模态 MoE 模型](https://x.com/NVIDIAAI/status/2049159441870717428)（来源：X / NVIDIA）
+> 开源30B/A3B多模态MoE模型，支持256K上下文，可处理文本、图像、视频、音频和文档。其Parakeet编码器实现5.95%词错误率，吞吐量是同类开源模型的约9倍。
 
-### 3. [Sakana 发布 7B Conductor：用 RL 训练模型来编排其他 AI 模型](https://x.com/SakanaAILabs/status/2048777689763639741)（来源：X / Sakana AI）
-> Sakana AI 推出 7B Conductor，通过强化学习训练，用自然语言动态编排和调用多个前沿模型，代表了“AI 管理 AI”和递归自选择作为测试时扩展的新方向。
+### 3. [Mistral 推出 Workflows 公开预览版：企业级 AI 编排层](https://x.com/MistralAI/status/2049128071874179091)（来源：X / Mistral）
+> 将企业AI流程转变为持久、可观测、容错的生产系统。支持子Agent/Agent即工具，具备持久化、流式传输和恢复能力，面向长时运行Agent的编排需求。
 
-### 4. [vLLM 0.20.0 发布，支持 DeepSeek V4 和 2-bit KV 缓存](https://x.com/vllm_project/status/2048918629144805619)（来源：X / vLLM）
-> vLLM 0.20.0 版本亮点：支持 DeepSeek V4 基础模型、FA4 作为默认 MLA 预填充、TurboQuant 2-bit KV 缓存，以及 Blackwell 上的 DeepSeek 专用 MegaMoE 路径，是推理部署的关键更新。
+### 4. [Microsoft TRELLIS.2：4B 参数开源图像转 3D 模型](https://github.com/microsoft/TRELLIS.2)（来源：GitHub / Microsoft）
+> 4B参数图像转3D模型，输出1536³ PBR纹理资产。采用原生3D VAE实现16倍空间压缩，基于“无场”稀疏体素结构O-Voxel，可重建复杂3D拓扑。
 
-### 5. [FP8 KV 缓存修复将 128k 大海捞针准确率从 13% 提升至 89%](https://x.com/vllm_project/status/2048796304508330462)（来源：X / vLLM）
-> vLLM 与 Red Hat/AWS 联合发布 FP8 KV 缓存深度分析，修复了 FA3 两级累积问题，将 128k 上下文的大海捞针测试准确率从 13% 提升至 89%，同时保留速度优势。
+### 5. [Luce DFlash：Qwen3.6-27B 在单张 RTX 3090 上实现 2 倍吞吐量](https://www.reddit.com/r/LocalLLaMA/comments/1sx8uok/luce_dflash_qwen3627b_at_up_to_2x_throughput_on_a/)（来源：Reddit）
+> 基于ggml的独立C++/CUDA栈，实现DDTree树验证推测解码、KV缓存压缩和滑动窗口Flash Attention。在HumanEval等基准上达1.98倍吞吐量，支持256K上下文，无需重新训练。
 
-### 6. [微软开源 VibeVoice：前沿语音 AI 模型家族](https://github.com/microsoft/VibeVoice)（来源：GitHub / Microsoft）
-> 微软开源 VibeVoice，包含 ASR 和 TTS 模型。核心创新在于 7.5Hz 超低帧率连续语音分词器，支持 60 分钟长音频单次转录和 90 分钟多说话人语音合成，是构建语音应用的重要开源资源。
+### 6. [GPT-5.5 Pro 在 Epoch 能力指数上达到 159，并在 FrontierMath 上取得新高](https://x.com/EpochAIResearch/status/2049186851844771888)（来源：X / Epoch AI）
+> GPT-5.5 Pro在Epoch能力指数上达到159分，FrontierMath基准测试Tier 1-3达52%，Tier 4达40%。其中两个Tier 4问题此前从未被任何模型解决。
 
-### 7. [Cognition 发布 Devin for Terminal：本地 Shell 代理](https://x.com/cognition/status/2048821234281181302)（来源：X / Cognition）
-> Cognition 推出 Devin for Terminal，一个本地 shell 代理，可以稍后“移交”到云端。这扩展了 Devin 的使用场景，使其能在本地环境中工作，同时保留云端的扩展能力。
+### 7. [ChatGPT 5.4 解决了一个 60 多年未解的 Erdős 数学难题](https://www.reddit.com/r/singularity/comments/1sxixck/chat_gpt_54_solved_a_60_years_unsolved_erdos/)（来源：Reddit）
+> ChatGPT 5.4 Pro在1小时20分钟内解决了长达60多年的Erdős #1196数学难题。著名数学家陶哲轩已确认该证明的合法性，挑战了LLM缺乏真正推理能力的观点。
 
-### 8. [Google 展示基于 Gemma 4 + WebGPU 的完全本地浏览器代理](https://x.com/googlegemma/status/2048805789788413984)（来源：X / Google Gemma）
-> Google Gemma 团队演示了一个 100% 本地运行的浏览器代理，使用 Gemma 4 和 WebGPU，支持原生工具调用。这标志着本地 AI 代理在浏览器端的重要进展。
+### 8. [Anthropic 悄然为 Claude Code Pro 用户设置 Opus 模型额外付费墙](https://www.reddit.com/r/ClaudeAI/comments/1sxi9mo/anthropic_just_quietly_locked_opus_behind_a/)（来源：Reddit）
+> Anthropic为Claude Code引入新定价，Pro计划用户需额外付费才能访问Opus模型，默认模型为Sonnet 4.5。此举引发用户对透明度和成本影响的强烈不满。
 
-### 9. [DeepSeek 再次降价：缓存命中输入 token 降至原价的 1/10](https://www.reddit.com/r/DeepSeek/comments/1sw6y3c/deepseek_reduces_prices_again_the_price_for_input/)（来源：Reddit）
-> DeepSeek 宣布永久性降价，缓存命中输入 token 价格降至原价的 1/10。这对需要 1M 上下文长度的应用尤其有利，显著增强了 DeepSeek 的市场竞争力。
+### 9. [GitHub Copilot 对 Claude 模型实施 9 倍价格上调](https://www.reddit.com/r/ClaudeAI/comments/1sxcxge/github_copilot_9x_price_increase_for_claude_models/)（来源：Reddit）
+> GitHub Copilot宣布从6月起对Claude模型实施900%的价格上调，从固定计划转向基于使用量的计费模式。这将严重影响依赖Claude Agent进行生产的企业客户。
 
-### 10. [Hermes Agent 仓库超越 Claude Code，原生视觉成为默认模式](https://x.com/Teknium/status/2048710115885523444)（来源：X / Teknium）
-> Hermes Agent 的 GitHub 仓库星数已超越 Claude Code。同时，当支持时，原生视觉已成为默认模式，表明 Hermes 生态系统在代理框架领域持续获得关注。
+### 10. [Vera：一种专为机器编写而设计的编程语言](https://news.ycombinator.com/item?id=47955118)（来源：Hacker News）
+> 一种专为AI代理编写代码而设计的编程语言，旨在解决AI生成代码的可维护性和可靠性问题，代表了编程语言设计的新方向。
 
 ---
 
 ### 各渠道精选摘要
-- [少数派](./2026-04-29/shaoshupai_2026-04-29.md)
-- [美团技术团队](./2026-04-29/meituan_2026-04-29.md)
+- [少数派](./2026-04-30/shaoshupai_2026-04-30.md)
+- [美团技术团队](./2026-04-30/meituan_2026-04-30.md)
 
 ---
 
 ### 渠道精选
-- [AINews](./2026-04-29/ai_news_summary_2026-04-29.md)
-- [GitHub Trending](./2026-04-29/github_trending_2026-04-29.md)
-- [V2EX 技术版](./2026-04-29/v2ex_hot_2026-04-29.md)
+- [AINews](./2026-04-30/ai_news_summary_2026-04-30.md)
+- [GitHub Trending](./2026-04-30/github_trending_2026-04-30.md)
+- [V2EX 技术版](./2026-04-30/v2ex_hot_2026-04-30.md)
 
 ---
 
 ### Hacker News 精选
-- [Hacker News 首页](./2026-04-29/hacker_news_frontpage_2026-04-29.md)
-- [Hacker News 近期最佳](./2026-04-29/hacker_news_best_2026-04-29.md)
-- [Hacker News 高赞评论](./2026-04-29/hacker_news_top_comments_2026-04-29.md)
-- [Hacker News 问答](./2026-04-29/hacker_news_ask_2026-04-29.md)
-- [Hacker News 展示](./2026-04-29/hacker_news_show_2026-04-29.md)
-- [Hacker News 音频技术](./2026-04-29/hacker_news_audio_tech_2026-04-29.md)
+- [Hacker News 首页](./2026-04-30/hacker_news_frontpage_2026-04-30.md)
+- [Hacker News 近期最佳](./2026-04-30/hacker_news_best_2026-04-30.md)
+- [Hacker News 高赞评论](./2026-04-30/hacker_news_top_comments_2026-04-30.md)
+- [Hacker News 问答](./2026-04-30/hacker_news_ask_2026-04-30.md)
+- [Hacker News 展示](./2026-04-30/hacker_news_show_2026-04-30.md)
+- [Hacker News 音频技术](./2026-04-30/hacker_news_audio_tech_2026-04-30.md)
 
 ---
 
 ### Reddit 精选频道
-- [Reddit AMA](./2026-04-29/reddit_ama_2026-04-29.md)
-- [Reddit AskReddit](./2026-04-29/reddit_askreddit_2026-04-29.md)
-- [Reddit Showerthoughts](./2026-04-29/reddit_showerthoughts_2026-04-29.md)
-- [Reddit TIL](./2026-04-29/reddit_todayilearned_2026-04-29.md)
-- [Reddit DevOps](./2026-04-29/reddit_devops_2026-04-29.md)
-- [Reddit Programming](./2026-04-29/reddit_programming_2026-04-29.md)
-- [Reddit ELI5](./2026-04-29/reddit_explainlikeimfive_2026-04-29.md)
-- [Reddit Golang](./2026-04-29/reddit_golang_2026-04-29.md)
-- [Reddit Rust](./2026-04-29/reddit_rust_2026-04-29.md)
-- [Reddit ML](./2026-04-29/reddit_machinelearning_2026-04-29.md)
+- [Reddit AMA](./2026-04-30/reddit_ama_2026-04-30.md)
+- [Reddit AskReddit](./2026-04-30/reddit_askreddit_2026-04-30.md)
+- [Reddit Showerthoughts](./2026-04-30/reddit_showerthoughts_2026-04-30.md)
+- [Reddit TIL](./2026-04-30/reddit_todayilearned_2026-04-30.md)
+- [Reddit DevOps](./2026-04-30/reddit_devops_2026-04-30.md)
+- [Reddit Programming](./2026-04-30/reddit_programming_2026-04-30.md)
+- [Reddit ELI5](./2026-04-30/reddit_explainlikeimfive_2026-04-30.md)
+- [Reddit Golang](./2026-04-30/reddit_golang_2026-04-30.md)
+- [Reddit Rust](./2026-04-30/reddit_rust_2026-04-30.md)
+- [Reddit ML](./2026-04-30/reddit_machinelearning_2026-04-30.md)
 
 ---
 
 ### 每周一看
 - [Cloudflare Blog](https://blog.cloudflare.com/zh-cn/)
-- [少数派](./2026-04-29/shaoshupai_2026-04-29.md)
-- [美团技术团队](./2026-04-29/meituan_2026-04-29.md)
+- [少数派](./2026-04-30/shaoshupai_2026-04-30.md)
+- [美团技术团队](./2026-04-30/meituan_2026-04-30.md)
 
 # 往日新闻
+
+#### [2026-04-29](./2026-04-29/newsletter.md)
 
 #### [2026-04-27](./2026-04-27/newsletter.md)
 
