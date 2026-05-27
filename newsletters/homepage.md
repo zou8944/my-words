@@ -1,6 +1,6 @@
 ## 今日要闻
 
-<sub> 生成时间：2026-05-01 08:26:51</sub>
+<sub> 生成时间：2026-05-27 08:31:24</sub>
 
 
 ---
@@ -11,85 +11,85 @@
 
 ---
 
-## 每日技术简报 - 2026-05-02
+## 每日技术精选 - 2026-05-27
 
-> 为后端与AI工程师精选的10条高价值内容，助您快速掌握行业动态与实践要点。
+- **[RAEv2 实现 10 倍以上训练加速](https://x.com/1jaskiratsingh/status/2057568174590304421)**（来源：X/Twitter）
+  > 表示自编码器重大更新，在统一视觉理解与生成上实现>10倍收敛加速，并已扩展至文生图与世界模型。
 
-### 1. [OpenAI 将 Codex 从编码工具转变为通用工作平台](https://x.com/OpenAI/status/2049583167406064115)（来源：X / OpenAI）
-> Codex 扩展为通用工作平台，支持研究合成、电子表格和决策跟踪。新增 Supabase 集成和 Figma 插件，标志着 AI 编码工具向通用工作自动化平台的战略转型。
+- **[NVIDIA 推出 Gated DeltaNet-2 线性注意力架构](https://x.com/ahatamiz1/status/2057586630450610673)**（来源：X/Twitter）
+  > 通过通道级门控解耦“擦除”与“写入”，1.3B参数下超越KDA和Mamba-3，长上下文检索任务表现突出。
 
-### 2. [Cursor 发布 SDK，从 IDE 产品转向可编程代理基础设施](https://x.com/cursor_ai/status/2049499866217185492)（来源：X / Cursor）
-> Cursor 推出 SDK，将其运行时、框架和模型开放给 CI/CD 及自动化场景。这标志着从基于座位的 IDE 产品向可编程代理基础设施的战略转型，与 Codex 应用服务器形成竞争。
+- **[数据过滤的惊人发现：最优过滤器可能是“无过滤”](https://x.com/tatsu_hashimoto/status/2057489411768803526)**（来源：X/Twitter）
+  > 在足够计算资源下，原始数据的多样性可能比精心筛选的数据更有价值，交叉点约在1e30 FLOPs。
 
-### 3. [Mistral Medium 3.5 发布：128B 密集模型引发激烈讨论](https://huggingface.co/mistralai/Mistral-Medium-3.5-128B)（来源：Hugging Face / Mistral）
-> 128B 密集参数模型，支持 256K 上下文和可配置推理深度。评论两极分化，有人批评其定价，也有人认为这是 Mistral 在企业可靠性上的战略押注。
+- **[turbopuffer 实现 1 亿美元年收入，仅融资不到 100 万美元](https://x.com/Sirupsen/status/2057470756070781400)**（来源：X/Twitter）
+  > 搜索/检索基础设施公司，19个月从100万ARR增长至1亿，证明“AI基础设施才是真正赚钱的地方”。
 
-### 4. [IBM 发布 Granite 4.1 系列：开源 Apache 2.0 模型](https://x.com/ArtificialAnlys/status/2049505499377193156)（来源：X / IBM）
-> 发布 30B、8B 和 3B 三个开源 Apache 2.0 非推理模型。Granite 4.1 8B 在 AA 智能指数上仅用 4M 输出 token，瞄准企业/边缘部署中对成本和透明度的需求。
+- **[Cohere 发布 Command A+：首个开源 MoE 模型](https://cohere.com/blog/command-a-plus)**（来源：Cohere Blog）
+  > 首个开源混合专家（MoE）模型，Apache 2.0许可，通过量化可在1-2个GPU上部署，面向代理/企业工作负载。
 
-### 5. [Agent 框架工程成为独立优化层：Terminal-Bench 2 提升至 77.0%](https://x.com/omarsar0/status/2049492169887748365)（来源：X / 研究）
-> 研究表明，模型质量本身不足以决定生产性能。通过可回滚组件、压缩执行证据等框架优化，在 10 次迭代中将 Terminal-Bench 2 pass@1 从 69.7% 提升至 77.0%，超越人类设计的基线。
+- **[vLLM 推出弹性专家并行，实现 MoE 动态调整](https://x.com/vllm_project/status/2057602243860574463)**（来源：X/Twitter）
+  > 允许在不重启的情况下实时调整MoE的DP/EP拓扑，通过NVLink/RDMA进行GPU直传，对扩展和容错服务至关重要。
 
-### 6. [Qwen 发布 FlashQLA：高性能线性注意力内核](https://github.com/QwenLM/FlashQLA)（来源：GitHub / Qwen）
-> 阿里巴巴发布基于 TileLang 的高性能线性注意力内核，报告 2-3 倍前向和 2 倍反向加速。特别适用于小模型、长上下文和 tensor-parallel 场景，定位为“个人设备上的代理 AI”解决方案。
+- **[LeRobot Humanoid：2500 美元的开源人形机器人](https://x.com/robotsdigest/status/2057507896129380581)**（来源：X/Twitter）
+  > Hugging Face发布，完整开源套件，3D打印制造，成本约2500美元，包含硬件、校准、仿真和训练流水线。
 
-### 7. [vLLM 与 Blackwell 协同设计：DeepSeek V3.2 达 230 tok/s](https://x.com/vllm_project/status/2049503979898274163)（来源：X / vLLM）
-> vLLM 在 Artificial Analysis 上实现 DeepSeek V3.2 输出速度第一（230 tok/s）。优化包括 NVFP4 量化、EAGLE3+MTP 推测解码和 per-model 内核融合，是硬件/软件/模型协同设计的典型案例。
+- **[Qwen3.6-35B-A3B 在 12GB VRAM 上实现 110 tok/s](https://www.reddit.com/r/LocalLLaMA/comments/1tjh7az/110_toks_with_12gb_vram_on_qwen36_35b_a3b_and_ik/)**（来源：Reddit）
+  > 用户使用ik_llama.cpp在RTX 4070 Super上运行，通过IQ4_XS量化和MTP推测解码，展示了MoE在消费级GPU上的高效部署。
 
-### 8. [Talkie：仅用 1931 年前数据训练的 13B 语言模型](https://talkie-lm.com/introducing-talkie)（来源：Talkie）
-> 使用 260B token 的 1931 年前文本训练，旨在研究 LLM 如何在没有现代数据的情况下泛化知识。令人惊讶的是，该模型能通过上下文示例生成 Python 代码，采用 Apache 2.0 许可。
+- **[Understand-Anything：将代码库转化为交互式知识图谱](https://github.com/Lum1104/Understand-Anything)**（来源：GitHub）
+  > 通过多智能体管道分析项目结构，自动提取依赖关系，支持可视化探索、语义搜索与问答，兼容主流AI编码工具。
 
-### 9. [Anthropic 发布 Blender MCP 连接器](https://www.blender.org/press/anthropic-joins-the-blender-development-fund-as-corporate-patron/)（来源：Blender / Anthropic）
-> 使 Claude 能通过 Python API 控制 Blender，支持自然语言创建和修改 3D 场景。Anthropic 同时加入 Blender 开发基金，这被视为对入门级创意自由职业者的重大冲击。
-
-### 10. [Google Cloud 同比增长 63%，Gemini 势头强劲](https://x.com/sundarpichai/status/2049581838260461916)（来源：X / Sundar Pichai）
-> Sundar Pichai 报告 Google Cloud 同比增长 63%，Gemini 势头强劲，搜索查询量创历史新高。同时，Gemini 现可直接从聊天生成可下载的 Docs、Sheets、Slides、PDF 等文件。
+- **[CodeGraph：为AI编程助手构建预索引代码知识图谱](https://github.com/colbymchenry/codegraph)**（来源：GitHub）
+  > 通过符号关系、调用图等结构化数据，减少70%工具调用和35%成本，100%本地运行，支持19种语言。
 
 ---
 
 ### 各渠道精选摘要
-- [少数派](./2026-05-01/shaoshupai_2026-05-01.md)
-- [美团技术团队](./2026-05-01/meituan_2026-05-01.md)
+- [少数派](./2026-05-27/shaoshupai_2026-05-27.md)
+- [美团技术团队](./2026-05-27/meituan_2026-05-27.md)
 
 ---
 
 ### 渠道精选
-- [AINews](./2026-05-01/ai_news_summary_2026-05-01.md)
-- [GitHub Trending](./2026-05-01/github_trending_2026-05-01.md)
-- [V2EX 技术版](./2026-05-01/v2ex_hot_2026-05-01.md)
+- [AINews](./2026-05-27/ai_news_summary_2026-05-27.md)
+- [GitHub Trending](./2026-05-27/github_trending_2026-05-27.md)
+- [V2EX 技术版](./2026-05-27/v2ex_hot_2026-05-27.md)
 
 ---
 
 ### Hacker News 精选
-- [Hacker News 首页](./2026-05-01/hacker_news_frontpage_2026-05-01.md)
-- [Hacker News 近期最佳](./2026-05-01/hacker_news_best_2026-05-01.md)
-- [Hacker News 高赞评论](./2026-05-01/hacker_news_top_comments_2026-05-01.md)
-- [Hacker News 问答](./2026-05-01/hacker_news_ask_2026-05-01.md)
-- [Hacker News 展示](./2026-05-01/hacker_news_show_2026-05-01.md)
-- [Hacker News 音频技术](./2026-05-01/hacker_news_audio_tech_2026-05-01.md)
+- [Hacker News 首页](./2026-05-27/hacker_news_frontpage_2026-05-27.md)
+- [Hacker News 近期最佳](./2026-05-27/hacker_news_best_2026-05-27.md)
+- [Hacker News 高赞评论](./2026-05-27/hacker_news_top_comments_2026-05-27.md)
+- [Hacker News 问答](./2026-05-27/hacker_news_ask_2026-05-27.md)
+- [Hacker News 展示](./2026-05-27/hacker_news_show_2026-05-27.md)
+- [Hacker News 音频技术](./2026-05-27/hacker_news_audio_tech_2026-05-27.md)
 
 ---
 
 ### Reddit 精选频道
-- [Reddit AMA](./2026-05-01/reddit_ama_2026-05-01.md)
-- [Reddit AskReddit](./2026-05-01/reddit_askreddit_2026-05-01.md)
-- [Reddit Showerthoughts](./2026-05-01/reddit_showerthoughts_2026-05-01.md)
-- [Reddit TIL](./2026-05-01/reddit_todayilearned_2026-05-01.md)
-- [Reddit DevOps](./2026-05-01/reddit_devops_2026-05-01.md)
-- [Reddit Programming](./2026-05-01/reddit_programming_2026-05-01.md)
-- [Reddit ELI5](./2026-05-01/reddit_explainlikeimfive_2026-05-01.md)
-- [Reddit Golang](./2026-05-01/reddit_golang_2026-05-01.md)
-- [Reddit Rust](./2026-05-01/reddit_rust_2026-05-01.md)
-- [Reddit ML](./2026-05-01/reddit_machinelearning_2026-05-01.md)
+- [Reddit AMA](./2026-05-27/reddit_ama_2026-05-27.md)
+- [Reddit AskReddit](./2026-05-27/reddit_askreddit_2026-05-27.md)
+- [Reddit Showerthoughts](./2026-05-27/reddit_showerthoughts_2026-05-27.md)
+- [Reddit TIL](./2026-05-27/reddit_todayilearned_2026-05-27.md)
+- [Reddit DevOps](./2026-05-27/reddit_devops_2026-05-27.md)
+- [Reddit Programming](./2026-05-27/reddit_programming_2026-05-27.md)
+- [Reddit ELI5](./2026-05-27/reddit_explainlikeimfive_2026-05-27.md)
+- [Reddit Golang](./2026-05-27/reddit_golang_2026-05-27.md)
+- [Reddit Rust](./2026-05-27/reddit_rust_2026-05-27.md)
+- [Reddit ML](./2026-05-27/reddit_machinelearning_2026-05-27.md)
 
 ---
 
 ### 每周一看
 - [Cloudflare Blog](https://blog.cloudflare.com/zh-cn/)
-- [少数派](./2026-05-01/shaoshupai_2026-05-01.md)
-- [美团技术团队](./2026-05-01/meituan_2026-05-01.md)
+- [少数派](./2026-05-27/shaoshupai_2026-05-27.md)
+- [美团技术团队](./2026-05-27/meituan_2026-05-27.md)
 
 # 往日新闻
+
+#### [2026-05-01](./2026-05-01/newsletter.md)
 
 #### [2026-04-30](./2026-04-30/newsletter.md)
 
