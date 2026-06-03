@@ -1,6 +1,6 @@
 ## 今日要闻
 
-<sub> 生成时间：2026-06-02 08:35:59</sub>
+<sub> 生成时间：2026-06-03 08:39:00</sub>
 
 
 ---
@@ -11,83 +11,85 @@
 
 ---
 
-## 📰 后端与AI工程师每日精选 (2026-06-02)
+## 📰 后端与AI工程师每日精选 (2026-06-03)
 
-- **[Step 3.7 Flash: 196B参数MoE模型发布，支持本地部署](https://huggingface.co/stepfun-ai/Step-3.7-Flash/)** (来源：Hugging Face / Reddit)
-  > 11B活跃参数的MoE模型，专为代理工作流设计，可在128GB RAM本地运行，SWE-Bench表现强劲。
+- **[NVIDIA 发布 Cosmos 3 世界模型与 Nemotron 3 Ultra 模型](https://x.com/NVIDIAAI/status/2061498958283968735)** (来源：X / NVIDIA)
+  > Cosmos 3是统一语言、图像、视频、音频和动作的全模态世界模型；Nemotron 3 Ultra (550B MoE) 被社区称为最强美国开源模型，推理速度可达300+ tok/s。
 
-- **[llama.cpp 发布官方应用 llama.app，简化本地AI部署](https://x.com/ggerganov/status/2060394400237109567)** (来源：X / ggerganov)
-  > 提供统一安装器和CLI入口点，标志着本地AI工具链走向成熟，方便第三方代理集成。
+- **[MiniMax M3 发布：开源多模态 Agent 模型，1M上下文](https://x.com/MiniMax_AI/status/2061425142795034794)** (来源：X / MiniMax)
+  > 开源权重，原生多模态，在SWE-Bench Pro (59.0%) 和 Terminal Bench 2.1 (66.0%) 上表现强劲，但存在高Token消耗问题。生态系统（Novita, Cloudflare等）首日即提供支持。
 
-- **[多轮RL训练中的“静默错误”被曝光](https://x.com/ClementDelangue/status/2060175330665508917)** (来源：X / Hugging Face)
-  > 揭示工具调用RL训练中因分词不一致导致的梯度错误，提出严格的“Token-In, Token-Out”修复方案。
+- **[Perplexity 推出 “Search as Code” 架构，性能翻倍](https://x.com/perplexity_ai/status/2061506359326384319)** (来源：X / Perplexity)
+  > 模型编写Python代码调用搜索SDK，而非迭代工具调用，实现自定义排序和批处理。内部WANDR基准测试从0.152跃升至0.386，是Agent架构创新的重要案例。
 
-- **[Z.ai 用 ZCube 网络架构替换 ROFT，推理性能提升15%](https://z.ai/blog/zcube)** (来源：Z.ai Blog)
-  > 扁平化ZCube架构在千卡集群上降低33%网络成本，提升15%吞吐量，P99尾延迟降低40.6%。
+- **[Google 推出 Gemini API 托管 Agent，单API调用启动](https://x.com/_philschmid/status/2061457703210197273)** (来源：X / Google)
+  > 单个API调用即可启动一个能在托管Linux沙箱内推理、编写/运行代码、管理文件的Agent。标志着Agent运行时成为主要工程杠杆点。
 
-- **[流行Python Web框架Starlette发现高危漏洞，影响大量AI工具](https://arstechnica.com/information-technology/2026/05/millions-of-ai-agents-imperiled-by-critical-vulnerability-in-open-source-package/)** (来源：Ars Technica)
-  > BadHost漏洞(CVE-2026-48710)影响Starlette < 1.0.1，波及vLLM、FastAPI等，存在RCE风险。
+- **[JetBrains 发布 Mellum2：面向开发者工作流的 12B MoE 模型](https://x.com/jetbrains/status/2061444430884675791)** (来源：X / JetBrains)
+  > 12B总参数，2.5B活跃参数，训练约11T Token。定位为超低延迟推理，用于路由、RAG、子Agent和IDE使用，已登陆vLLM。
 
-- **[LangChain Deep Agents v0.6: 将“工具配置文件”作为一等公民](https://x.com/LangChain/status/2060349231722852680)** (来源：X / LangChain)
-  > 为不同模型定制提示和工具，使Qwen/DeepSeek等模型能以低于前沿API 20倍的成本获得强劲性能。
+- **[OpenAI Codex 登陆 AWS Bedrock 并发布 Python SDK](https://x.com/OpenAI/status/2061564502160892138)** (来源：X / OpenAI)
+  > Codex和前沿模型现已在AWS Bedrock上可用，面向企业安全/合规工作流。同时发布Python SDK，支持线程、流式、恢复和沙箱控制。
 
-- **[vLLM 发布原生权重同步API和Rust BPE分词器 fastokens](https://x.com/vllm_project/status/2060208480292843720)** (来源：X / vLLM)
-  > 改进异步RL的暂停/恢复功能，fastokens旨在减少长上下文/代理工作负载中的CPU分词瓶颈。
+- **[Claude Code 出现Ops事故：并行子Agent导致用户配额耗尽](https://x.com/ClaudeDevs/status/2061501787769893055)** (来源：X / ClaudeDevs)
+  > 因修复bug导致Opus 4.8会话生成过多并行子Agent/工具调用，意外消耗用户配额。凸显编码Agent的产品质量越来越取决于编排行为而非模型智商。
 
-- **[DSPy 4.0 重新设计文档，聚焦可编程AI系统](https://x.com/DSPyOSS/status/2060186371902587119)** (来源：X / DSPy)
-  > 在4.0版本发布前，重新设计首页和文档，引导用户进入可编程AI系统世界，而非仅关注提示工程。
+- **[NVIDIA 推出 RTX Spark 个人AI计算机](https://x.com/kimmonismus/status/2061484174088007739)** (来源：X / NVIDIA)
+  > 基于Grace + Blackwell架构，最高128GB统一内存，声称1 PFLOP FP4。NVIDIA首次提供端到端本地AI系统，与Apple Silicon和x86 PC竞争。
 
-- **[Hugging Face 模型页面新增“仅基础模型”筛选开关](https://www.reddit.com/r/LocalLLaMA/comments/1tq2ce9/hf_models_page_now_has_a_base_only_toggle_to/)** (来源：Reddit / LocalLLaMA)
-  > 帮助用户过滤微调、量化等衍生模型，轻松找到原始基础模型检查点，提升搜索效率。
+- **[微软发布 MAI-Code-1-Flash 代码生成模型](https://news.ycombinator.com/item?id=48374466)** (来源：Hacker News)
+  > 微软发布7个新MAI模型，其中MAI-Code-1-Flash专注于代码生成，提供模型卡和详细文档，是微软在代码生成领域的重要布局。
 
-- **[Compound Engineering: 一个将工程经验沉淀为可复用知识的AI编程插件](https://github.com/EveryInc/compound-engineering-plugin)** (来源：GitHub Trending)
-  > 为Claude Code等工具提供37项技能和51个智能体，通过80%规划与审查、20%执行的工作流对抗技术债务。
+- **[Qwen3.7-Plus 发布：统一GUI/CLI操作的多模态混合Agent](https://x.com/Alibaba_Qwen/status/2061506641120641494)** (来源：X / Alibaba Qwen)
+  > 统一GUI和CLI操作、视觉推理、编码和搜索增强QA。代表亚洲实验室发布完整Agent能力多模态系统的趋势，已集成到Cline等工具中。
 
 ---
 
 ### 各渠道精选摘要
-- [少数派](./2026-06-02/shaoshupai_2026-06-02.md)
-- [美团技术团队](./2026-06-02/meituan_2026-06-02.md)
+- [少数派](./2026-06-03/shaoshupai_2026-06-03.md)
+- [美团技术团队](./2026-06-03/meituan_2026-06-03.md)
 
 ---
 
 ### 渠道精选
-- [AINews](./2026-06-02/ai_news_summary_2026-06-02.md)
-- [GitHub Trending](./2026-06-02/github_trending_2026-06-02.md)
-- [V2EX 技术版](./2026-06-02/v2ex_hot_2026-06-02.md)
+- [AINews](./2026-06-03/ai_news_summary_2026-06-03.md)
+- [GitHub Trending](./2026-06-03/github_trending_2026-06-03.md)
+- [V2EX 技术版](./2026-06-03/v2ex_hot_2026-06-03.md)
 
 ---
 
 ### Hacker News 精选
-- [Hacker News 首页](./2026-06-02/hacker_news_frontpage_2026-06-02.md)
-- [Hacker News 近期最佳](./2026-06-02/hacker_news_best_2026-06-02.md)
-- [Hacker News 高赞评论](./2026-06-02/hacker_news_top_comments_2026-06-02.md)
-- [Hacker News 问答](./2026-06-02/hacker_news_ask_2026-06-02.md)
-- [Hacker News 展示](./2026-06-02/hacker_news_show_2026-06-02.md)
-- [Hacker News 音频技术](./2026-06-02/hacker_news_audio_tech_2026-06-02.md)
+- [Hacker News 首页](./2026-06-03/hacker_news_frontpage_2026-06-03.md)
+- [Hacker News 近期最佳](./2026-06-03/hacker_news_best_2026-06-03.md)
+- [Hacker News 高赞评论](./2026-06-03/hacker_news_top_comments_2026-06-03.md)
+- [Hacker News 问答](./2026-06-03/hacker_news_ask_2026-06-03.md)
+- [Hacker News 展示](./2026-06-03/hacker_news_show_2026-06-03.md)
+- [Hacker News 音频技术](./2026-06-03/hacker_news_audio_tech_2026-06-03.md)
 
 ---
 
 ### Reddit 精选频道
-- [Reddit AMA](./2026-06-02/reddit_ama_2026-06-02.md)
-- [Reddit AskReddit](./2026-06-02/reddit_askreddit_2026-06-02.md)
-- [Reddit Showerthoughts](./2026-06-02/reddit_showerthoughts_2026-06-02.md)
-- [Reddit TIL](./2026-06-02/reddit_todayilearned_2026-06-02.md)
-- [Reddit DevOps](./2026-06-02/reddit_devops_2026-06-02.md)
-- [Reddit Programming](./2026-06-02/reddit_programming_2026-06-02.md)
-- [Reddit ELI5](./2026-06-02/reddit_explainlikeimfive_2026-06-02.md)
-- [Reddit Golang](./2026-06-02/reddit_golang_2026-06-02.md)
-- [Reddit Rust](./2026-06-02/reddit_rust_2026-06-02.md)
-- [Reddit ML](./2026-06-02/reddit_machinelearning_2026-06-02.md)
+- [Reddit AMA](./2026-06-03/reddit_ama_2026-06-03.md)
+- [Reddit AskReddit](./2026-06-03/reddit_askreddit_2026-06-03.md)
+- [Reddit Showerthoughts](./2026-06-03/reddit_showerthoughts_2026-06-03.md)
+- [Reddit TIL](./2026-06-03/reddit_todayilearned_2026-06-03.md)
+- [Reddit DevOps](./2026-06-03/reddit_devops_2026-06-03.md)
+- [Reddit Programming](./2026-06-03/reddit_programming_2026-06-03.md)
+- [Reddit ELI5](./2026-06-03/reddit_explainlikeimfive_2026-06-03.md)
+- [Reddit Golang](./2026-06-03/reddit_golang_2026-06-03.md)
+- [Reddit Rust](./2026-06-03/reddit_rust_2026-06-03.md)
+- [Reddit ML](./2026-06-03/reddit_machinelearning_2026-06-03.md)
 
 ---
 
 ### 每周一看
 - [Cloudflare Blog](https://blog.cloudflare.com/zh-cn/)
-- [少数派](./2026-06-02/shaoshupai_2026-06-02.md)
-- [美团技术团队](./2026-06-02/meituan_2026-06-02.md)
+- [少数派](./2026-06-03/shaoshupai_2026-06-03.md)
+- [美团技术团队](./2026-06-03/meituan_2026-06-03.md)
 
 # 往日新闻
+
+#### [2026-06-02](./2026-06-02/newsletter.md)
 
 #### [2026-05-31](./2026-05-31/newsletter.md)
 
