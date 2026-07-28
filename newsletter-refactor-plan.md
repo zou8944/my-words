@@ -44,7 +44,7 @@
 | V2EX 热榜 | `news_v2ex.py` | 低 —— 大量"求推荐"、"吐槽"、订阅问题 | **删除** |
 | 少数派 | `news_shaoshupai.py` | 低 —— 生活方式/消费科技 | **删除** |
 | 美团技术团队 | `news_meituan.py` | 高（但不稳定，无文章时生成空文件） | **保留并修复空文件问题** |
-| Go Weekly | `news_go_weekly.py` | 高（但一周一期，每日重复抓取浪费） | **保留，改为每周只抓一次** |
+| Go Weekly | `news_go_weekly.py` | 内容意义不大 | **停用** |
 | 36Kr | `news_36kr.py` | 已废弃（代码注释掉了） | **删除文件** |
 
 ### 1.2 提示词问题
@@ -74,65 +74,141 @@
 
 ## 2. 数据来源重构
 
-### 2.1 新增来源：后端/系统工程博客 RSS
+### 2.0 最终数据来源总览
 
-创建新文件 `script/newsletter/news_blogs.py`：
+经 RSS 可达性验证，以下为最终推荐来源（全部 HTTP 200，URL 可用）：
+
+| 来源 | URL | 文件 | 用途 | RSS 状态 |
+|---|---|---|---|---|
+| **Hacker News 首页** | `https://hnrss.org/frontpage` | `news_hacker_news.py` | 技术热点，英语技术社区核心 | ✅ 200 |
+| **Hacker News Best** | `https://hnrss.org/best` | `news_hacker_news.py` | 高质量讨论精选 | ✅ 200 |
+| **GitHub Trending (Kotlin)** | `https://mshibanami.github.io/GitHubTrendingRSS/daily/kotlin.xml` | `news_github_trending_daily.py` | 关注语言 | ✅ 200 |
+| **GitHub Trending (Java)** | `https://mshibanami.github.io/GitHubTrendingRSS/daily/java.xml` | `news_github_trending_daily.py` | 关注语言 | ✅ 200 |
+| **GitHub Trending (Golang)** | `https://mshibanami.github.io/GitHubTrendingRSS/daily/go.xml` | `news_github_trending_daily.py` | 关注语言 | ✅ 200 |
+| **GitHub Trending (JS)** | `https://mshibanami.github.io/GitHubTrendingRSS/daily/javascript.xml` | `news_github_trending_daily.py` | 关注语言 | ✅ 200 |
+| **GitHub Trending (Python)** | `https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml` | `news_github_trending_daily.py` | 关注语言 | ✅ 200 |
+| **Cloudflare Blog** | `https://blog.cloudflare.com/rss/` | `news_engineering_blogs.py` | 网络/边缘计算/Workers 深度技术 | ✅ 200 |
+| **AWS Architecture Blog** | `https://aws.amazon.com/blogs/architecture/feed/` | `news_engineering_blogs.py` | 分布式系统架构模式 | ✅ 200 |
+| **Netflix Tech Blog** | `https://netflixtechblog.com/feed` | `news_engineering_blogs.py` | 大规模系统工程实践 | ✅ 200 |
+| **Stripe Engineering** | `https://stripe.com/blog/feed.rss` | `news_engineering_blogs.py` | 支付系统/代码质量/基础设施 | ✅ 200 |
+| **Meta Engineering** | `https://engineering.fb.com/feed/` | `news_engineering_blogs.py` | 大规模基础设施/AI Infra | ✅ 200 |
+| **GitHub Engineering** | `https://github.blog/engineering/feed/` | `news_engineering_blogs.py` | Git/GitHub 基础设施演进 | ✅ 200 |
+| **美团技术团队** | `https://tech.meituan.com/feed/` | `news_meituan.py` | 中文后端工程深度文章 | ✅ 200 |
+| **PingCAP** | `https://www.pingcap.com/blog/feed/` | `news_engineering_blogs.py` | 分布式数据库/Go 工程实践 | ✅ 200 |
+| **Lobsters** | `https://lobste.rs/rss` | `news_lobsters.py` | 技术社区精选，替代 V2EX | ✅ 200 |
+| **AINews** | `https://news.smol.ai/rss.xml` | `news_ai_news.py` | AI 产品/模型动态（降级使用，见说明） | ✅ 200 |
+| **OpenAI Blog** | `https://openai.com/blog/rss.xml` | `news_engineering_blogs.py` | AI 工程化方向参考 | ✅ 200 |
+| **Reddit (5 个技术频道)** | `https://www.reddit.com/r/{channel}/top/.rss` | `news_reddit.py` | 技术讨论 | ⚠️ 见说明 |
+
+### 来源分级与说明
+
+**Tier 1 — 每日必抓，作为精选主体**
+
+- Hacker News Frontpage + Best：英语技术社区最高信噪比来源
+- GitHub Trending（5 语言）：按 Kotlin/Java/Golang/JS/Python 过滤，避免全语言总榜中的 README 模板和玩具项目
+
+**Tier 2 — 每周抓取，作为工程深度补充**
+
+- 工程博客（Cloudflare / AWS Architecture / Netflix / Stripe / Meta / GitHub / PingCAP / OpenAI）：发布频率低但单篇深度高，每周抓一次足够
+- 美团技术团队：已有独立抓取逻辑，保留
+
+**Tier 3 — 补充来源**
+
+- Lobsters（`https://lobste.rs/rss`）：技术社区精选，替代 V2EX，质量更高、有 downvote 过滤机制
+- AINews：**降级使用**。当前系统中 AINews 占据主精选 90% 的内容，这是"看不下去"的核心原因。改造后 AINews 只作为独立子栏目呈现，不参与主精选的竞争
+
+**移除的来源**
+
+| 来源 | 文件 | 移除原因 |
+|---|---|---|
+| Go Weekly | `news_go_weekly.py` | 内容意义不大 |
+| V2EX 热榜 | `news_v2ex.py` | 低质量用户闲聊 |
+| 少数派 | `news_shaoshupai.py` | 生活方式/消费科技，与目标读者不匹配 |
+| 36Kr | `news_36kr.py` | 已废弃 |
+| HN Best Comments | `news_hacker_news.py` | 碎片化评论片段，无独立阅读价值 |
+| HN Ask / Show / Audio Tech | `news_hacker_news.py` | 质量波动大或过于细分 |
+| Reddit 吹水频道（AMA / AskReddit / Showerthoughts / TIL / ELI5） | `news_reddit.py` | 与技术完全无关 |
+
+### Reddit 来源可靠性说明
+
+**现状**：从当前网络环境测试，Reddit RSS 对所有频道返回 HTTP 000（连接失败/超时）。Reddit 近年来对无登录状态的 RSS 请求做了越来越严格的限制，在 GitHub Actions 环境中能否正常访问无法在本地验证。
+
+**处理策略**：
+- 保留 `news_reddit.py` 但降低其在 `create_final_newsletter()` 中的权重
+- 在 GitHub Actions 恢复后观察 Reddit 抓取是否正常工作
+- 如果 Reddit RSS 持续不可用，整体移除 `news_reddit.py`，用 Lobsters 和工程博客替代其价值
+
+### 2.1 新增来源：工程博客聚合
+
+创建新文件 `script/newsletter/news_engineering_blogs.py`：
 
 ```python
 """
 工程博客 RSS 聚合
-
-每个来源按固定频率抓取（每周一次或每日一次），通过 RSS 获取最新文章。
+已验证可达的 RSS 源，统一抓取、去重、摘要。
 """
 
 BLOG_SOURCES = [
     # (slug, rss_url, title, fetch_frequency)
-    # fetch_frequency: "daily" | "weekly"
 
-    # === 高频（每日） ===
-    ("cloudflare_blog",      "https://blog.cloudflare.com/rss/",               "Cloudflare Blog",      "daily"),
-    ("aws_architecture",     "https://aws.amazon.com/blogs/architecture/feed/", "AWS Architecture Blog", "daily"),
-    ("netflix_tech",         "https://netflix.github.io/feed.xml",             "Netflix Tech Blog",    "weekly"),
-    ("uber_engineering",     "https://www.uber.com/blog/engineering/rss/",     "Uber Engineering",      "weekly"),
-    ("stripe_engineering",   "https://stripe.com/blog/engineering/feed.rss",   "Stripe Engineering",    "weekly"),
-    ("cloudflare_workers",   "https://blog.cloudflare.com/tag/developers/feed/","Cloudflare Developers", "daily"),
-
-    # === 中文工程博客（每周） ===
-    ("meituan_tech",         "https://tech.meituan.com/feed/",                "美团技术团队",          "weekly"),
-    ("pingcap",              "https://www.pingcap.com/blog/feed/",            "PingCAP",               "weekly"),
-    ("planetscale",          "https://planetscale.com/blog.rss",              "PlanetScale Blog",      "weekly"),
-    ("supabase",             "https://supabase.com/blog/rss.xml",             "Supabase Blog",         "weekly"),
+    # === 工程博客（每周抓取，单篇深度高） ===
+    ("cloudflare_blog",   "https://blog.cloudflare.com/rss/",               "Cloudflare Blog",     "weekly"),
+    ("aws_architecture",  "https://aws.amazon.com/blogs/architecture/feed/", "AWS Architecture Blog","weekly"),
+    ("netflix_tech",      "https://netflixtechblog.com/feed",               "Netflix Tech Blog",    "weekly"),
+    ("stripe_engineering","https://stripe.com/blog/feed.rss",               "Stripe Engineering",   "weekly"),
+    ("meta_engineering",  "https://engineering.fb.com/feed/",               "Meta Engineering",     "weekly"),
+    ("github_engineering","https://github.blog/engineering/feed/",          "GitHub Engineering",   "weekly"),
+    ("pingcap",           "https://www.pingcap.com/blog/feed/",             "PingCAP",              "weekly"),
+    ("openai_blog",       "https://openai.com/blog/rss.xml",               "OpenAI Blog",          "weekly"),
 ]
 ```
 
-创建 `script/newsletter/news_engineering_blogs.py`，实现：
+实现要点：
 - 每个来源独立抓取，结果存 R2（`blog_{slug}_{date}.md`）
-- 通过 LLM 生成单条摘要（50 字内）
-- 只抓取最近 7 天内的文章（避免旧文重复）
+- 通过 LLM 为每篇文章生成摘要（50 字内，突出工程价值）
+- 只抓取最近 7 天内发布的文章（避免旧文重复）
+- 各来源合并后在主筛选阶段统一参与筛选
 
-### 2.2 改造 GitHub Trending 过滤逻辑
+### 2.2 新增来源：Lobsters
+
+创建 `script/newsletter/news_lobsters.py`，逻辑与 `news_v2ex.py` 类似：
+
+```python
+"""
+Lobsters 技术社区 RSS
+https://lobste.rs/rss
+
+替代 V2EX，质量更高（有点赞/踩机制，技术内容集中）。
+"""
+
+LOBSTERS_RSS_URL = "https://lobste.rs/rss"
+
+def fetch_news():
+    entries = news_utils.get_rss_entries(LOBSTERS_RSS_URL, limit=30)
+    # ... 转 markdown、摘要 ...
+```
+
+### 2.3 改造 GitHub Trending 过滤逻辑
 
 修改 `script/newsletter/news_github_trending_daily.py`：
 
-当前问题：使用 `https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml`，全语言总榜。
+当前问题：使用 `https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml` 全语言总榜，混入大量非技术项目。
 
-改造方案：
-- 改用按语言的 RSS 源，只关注目标技术栈：
+改造方案：按关注语言分别抓取，合并后筛选：
 
 ```python
-# 修改 all_rss_urls 或直接改 fetch_news 的 URL
 GITHUB_TRENDING_URLS = [
-    # 后端 + AI Infra 相关语言
-    ("golang", "https://mshibanami.github.io/GitHubTrendingRSS/daily/go.xml"),
-    ("python", "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"),
-    ("rust",   "https://mshibanami.github.io/GitHubTrendingRSS/daily/rust.xml"),
+    ("kotlin",     "https://mshibanami.github.io/GitHubTrendingRSS/daily/kotlin.xml"),
+    ("java",       "https://mshibanami.github.io/GitHubTrendingRSS/daily/java.xml"),
+    ("golang",     "https://mshibanami.github.io/GitHubTrendingRSS/daily/go.xml"),
     ("javascript", "https://mshibanami.github.io/GitHubTrendingRSS/daily/javascript.xml"),
+    ("python",     "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"),
 ]
 ```
 
-- 每个语言取前 10，合并后由 LLM 按"对后端/AI 工程师的实践价值"筛选，只保留 Top 10
+每个语言取前 10，合并后由 LLM 按"对后端/AI 工程师的实践价值"筛选，只保留 Top 10。
 
-### 2.3 精简 HN 源
+### 2.4 精简 HN 源
 
 修改 `script/newsletter/news_hacker_news.py` 中 `all_rss_urls()`：
 
@@ -140,19 +216,18 @@ GITHUB_TRENDING_URLS = [
 def all_rss_urls() -> list[tuple[str, str, str]]:
     return [
         ("hacker_news_frontpage", "https://hnrss.org/frontpage", "Hacker News 首页"),
-        ("hacker_news_best", "https://hnrss.org/best", "Hacker News 近期最佳"),
+        ("hacker_news_best",      "https://hnrss.org/best",      "Hacker News 近期最佳"),
     ]
 ```
 
 删除：`bestcomments`、`ask`、`show`、`audio_tech` 四个 RSS 源。
 
-### 2.4 精简 Reddit 频道
+### 2.5 精简 Reddit 频道
 
-修改 `script/newsletter/news_reddit.py` 中 `all_reddit_channels()`：
+修改 `script/newsletter/news_reddit.py` 中 `all_reddit_channels()`，只保留技术频道：
 
 ```python
 def all_reddit_channels() -> list[tuple[str, str, str]]:
-    # 只保留技术相关频道
     tech_channels = [
         ("devops",          "Reddit DevOps"),
         ("programming",     "Reddit Programming"),
@@ -160,8 +235,7 @@ def all_reddit_channels() -> list[tuple[str, str, str]]:
         ("rust",            "Reddit Rust"),
         ("MachineLearning", "Reddit ML"),
     ]
-    # 删除：AMA、AskReddit、Showerthoughts、TIL、ELI5
-
+    # 已删除：AMA、AskReddit、Showerthoughts、TIL、ELI5
     channels = []
     for channel, title in tech_channels:
         slug = f"reddit_{channel.lower()}"
@@ -170,53 +244,29 @@ def all_reddit_channels() -> list[tuple[str, str, str]]:
     return channels
 ```
 
-### 2.5 停用 V2EX 和少数派
+### 2.6 停用 V2EX、少数派、Go Weekly
 
 - `newsletter.py:130`：删除 `v2ex = news_v2ex.get_today_news_content()`
+- `newsletter.py:131`：删除 `_ = news_go_weekly.get_today_news_content()`
 - `newsletter.py:138`：删除 `shaoshupai_content = news_shaoshupai.get_today_news_content()`
-- `create_final_newsletter` 函数签名移除 `shaoshupai` 和 `v2ex` 参数
-- 保留 `news_v2ex.py` 和 `news_shaoshupai.py` 文件但不调用（方便以后重新启用）
+- `create_final_newsletter` 函数签名移除 `shaoshupai`、`v2ex` 参数
+- 保留 `news_v2ex.py`、`news_shaoshupai.py`、`news_go_weekly.py` 文件但不调用
 
-### 2.6 Go Weekly 改为抓取逻辑
+### 2.7 AINews 降级使用
 
-修改 `script/newsletter/news_go_weekly.py`：
+**现状问题**：当前 AINews 是主精选的唯一输入源，每天输出 10 条 AI 产品/模型发布公告，90% 链接指向 X/Twitter，占据了精选列表的大部分席位。
 
-当前问题：Go Weekly 一周一期，但每天都会重新抓取（实际每天拿到的是同一期）。
+**改造方案**：
+- AINews 内容从主精选输入中移出，改为独立的"AI 资讯"子栏目
+- 主精选（`create_final_newsletter`）只接收：工程博客、GitHub Trending、HN、Reddit、Lobsters
+- AINews 的 10 条摘要在 newsletter.md 中单独列出（类似"AI 动态速览"），不参与主精选竞争
+- 降低 AINews 在 LLM 筛选中的权重，避免 AI 产品公告挤占工程深度内容
 
-改造方案：
-- 在 `fetch_latest_weekly()` 中检查当前期号是否与 R2 中已存的一致
-- 一致则跳过，不一致才重新抓取并生成摘要
-- 具体实现：读取最新 RSS entry 的 title（格式如 "Golang Weekly Issue #603"），与 R2 中已存的对比
-
-```python
-def fetch_latest_weekly():
-    entries = news_utils.get_rss_entries("https://cprss.s3.amazonaws.com/golangweekly.com.xml", 10)
-    if not entries:
-        return
-
-    entry = entries[0]
-    title = entry.get("title", "")
-    current_issue = get_today_news_file()  # go_weekly_{date}.md
-
-    # 检查当前期是否已存在（按 issue 标题去重）
-    existing = news_utils.get_file_from_r2_with_today(current_issue)
-    if existing and title in existing:
-        logger.info(f"Go Weekly {title} 已存在，跳过")
-        return
-
-    # ... 原有抓取逻辑
-```
-
-### 2.7 修复美团空文件问题
+### 2.8 修复美团空文件问题
 
 修改 `script/newsletter/news_meituan.py`：
 
-当前问题：无文章时仍然生成文件，内容为"今天没有新的文章发布"，并出现在 newsletter 索引中。
-
-改造方案：
-- `fetch_news()` 无文章时不写 R2 文件
-- `get_today_posts_content()` 返回空字符串（而非空文件内容）
-- `newsletter.py` 中对美团返回值做空检查，空时不在索引中显示链接
+当前问题：无文章时仍然生成文件，内容为"今天没有新的文章发布"，出现在 newsletter 索引中。
 
 ```python
 # news_meituan.py
@@ -227,6 +277,8 @@ def fetch_news():
         return  # 不写文件
     # ... 原有保存逻辑 ...
 ```
+
+`newsletter.py` 中对美团返回值做空检查，空时不在索引中显示链接。
 
 ---
 
@@ -240,12 +292,11 @@ def fetch_news():
 def create_final_newsletter(
     last_newsletter: str,
     engineering_blogs: str,
-    ai_news: str,
     github_trending: str,
     hacker_news: str,
+    lobsters: str,
     reddit_tech: str,
     meituan: str,
-    go_weekly: str,
 ) -> Optional[str]:
     system_prompt = """你是一位专注于后端系统与AI基础设施的技术编辑。
 你的读者是一位有5年+经验的后端工程师，日常工作涉及 Go、PostgreSQL、LLM 应用、分布式系统和云原生架构。
@@ -264,7 +315,7 @@ def create_final_newsletter(
 2. Go、PostgreSQL、Redis、Kafka、gRPC 等技术栈的重要更新
 3. LLM 应用层的工程实践（推理优化、RAG 架构、Agent 编排、评估方法）
 4. 一线工程团队（美团、Cloudflare、Stripe、Netflix 等）的实战总结
-5. 有深度技术讨论的 HN/Reddit 帖子（不是产品公告）
+5. 有深度技术讨论的 HN/Lobsters/Reddit 帖子（不是产品公告）
 
 【明确排除】：
 - AI 产品发布公告（如"X 发布 Y 模型"）—— 除非含具体架构/性能数据
@@ -290,11 +341,6 @@ def create_final_newsletter(
 {engineering_blogs}
 ```
 
-### AI 资讯
-```markdown
-{ai_news}
-```
-
 ### GitHub Trending
 ```markdown
 {github_trending}
@@ -303,6 +349,11 @@ def create_final_newsletter(
 ### Hacker News
 ```markdown
 {hacker_news}
+```
+
+### Lobsters
+```markdown
+{lobsters}
 ```
 
 ### Reddit 技术频道
@@ -314,14 +365,11 @@ def create_final_newsletter(
 ```markdown
 {meituan}
 ```
-
-### Go Weekly
-```markdown
-{go_weekly}
-```
 """
     return llm.one_shoot(system_prompt, user_prompt)
 ```
+
+AINews 内容不传入主筛选提示词，而是在 `generate_newsletter()` 中作为独立的"AI 动态速览"子栏目直接拼接到 newsletter.md 中，不经过 LLM 筛选。
 
 关键改动：
 - `system_prompt` 明确读者画像（5 年+后端工程师），限制输出风格
@@ -407,18 +455,31 @@ def generate_newsletter():
         logger.error("无法获取 newsletter 摘要")
         return
 
+    # AINews 作为独立子栏目，不经过主筛选
+    ai_news_content = news_ai_news.get_today_news_content()
+
     current_datetime_formatted = news_utils.current_datetime_formatted()
     contents = [
         "## 今日要闻",
         f"\n<sub> 生成时间：{current_datetime_formatted}</sub>\n",
         "\n---\n",
         newsletter_summary,
+    ]
+
+    # AI 动态速览（独立子栏目，不参与主精选竞争）
+    if ai_news_content:
+        contents.extend([
+            "\n---\n",
+            "### AI 动态速览",
+            ai_news_content,
+        ])
+
+    contents.extend([
         "\n---\n",
-        "### 每周一看",
+        "### 推荐阅读",
         "- [Cloudflare Blog](https://blog.cloudflare.com/zh-cn/)",
         "- [美团技术团队](https://tech.meituan.com)",
-        "- [Go Blog](https://go.dev/blog/)",
-    ]
+    ])
 
     newsletter_filename, _ = get_newsletter_filename()
     if news_utils.put_file_to_r2_with_today(newsletter_filename, "\n".join(contents)):
@@ -478,7 +539,7 @@ newsletters/*/v2ex_*.md
 newsletters/*/shaoshupai_*.md
 newsletters/*/ai_news_*.md
 newsletters/*/ai_news_summary_*.md
-newsletters/*/go_weekly_*.md
+newsletters/*/lobsters_*.md
 newsletters/*/meituan_*.md
 newsletters/*/blog_*.md
 ```
@@ -591,12 +652,14 @@ gh run view <run-id> --log-failed
 
 | 文件 | 改动类型 | 改动内容 |
 |---|---|---|
-| `script/newsletter/newsletter.py` | **修改** | 重写提示词、精简 newsletter.md 结构、修改 `load_all_files_from_r2()`、修改 `generate_newsletter()`、修复 `generate_newsletter_profile()` |
+| `script/newsletter/newsletter.py` | **修改** | 重写提示词、精简 newsletter.md 结构、修改 `load_all_files_from_r2()`、修改 `generate_newsletter()`、修复 `generate_newsletter_profile()`、移除 Go Weekly/V2EX/少数派调用、添加 Lobsters 调用 |
+| `script/newsletter/news_engineering_blogs.py` | **新增** | 工程博客 RSS 聚合（Cloudflare / AWS / Netflix / Stripe / Meta / GitHub / PingCAP / OpenAI） |
+| `script/newsletter/news_lobsters.py` | **新增** | Lobsters 技术社区 RSS，替代 V2EX |
 | `script/newsletter/news_hacker_news.py` | **修改** | `all_rss_urls()` 只保留 frontpage + best |
 | `script/newsletter/news_reddit.py` | **修改** | `all_reddit_channels()` 只保留技术频道 |
-| `script/newsletter/news_github_trending_daily.py` | **修改** | 改用按语言的 RSS 源 |
+| `script/newsletter/news_github_trending_daily.py` | **修改** | 改用按语言的 RSS 源（Kotlin/Java/Go/JS/Python） |
 | `script/newsletter/news_meituan.py` | **修改** | 无文章时不生成空文件 |
-| `script/newsletter/news_go_weekly.py` | **修改** | 增加去重逻辑，避免重复抓取同一期 |
+| `script/newsletter/news_go_weekly.py` | **不调用** | 不删除文件，但从 `newsletter.py` 移除调用 |
 | `script/newsletter/news_36kr.py` | **删除** | 已废弃 |
 | `script/newsletter/final_news_letter.py` | **删除** | 空文件 |
 | `script/newsletter/tokenizer/tokenizer.json` | **删除** | 改用 tiktoken 或运行时下载 |
@@ -617,36 +680,37 @@ gh run view <run-id> --log-failed
 
 ### Phase 2：数据来源改造（1-2天）
 
-4. 修改 `news_hacker_news.py`：精简 HN 源
-5. 修改 `news_reddit.py`：删除吹水频道
-6. 修改 `news_github_trending_daily.py`：按语言过滤
-7. 修改 `news_meituan.py`：修复空文件
-8. 修改 `news_go_weekly.py`：增加去重
-9. 创建 `news_engineering_blogs.py`（新增工程博客 RSS 源）
+4. 创建 `news_engineering_blogs.py`（新增工程博客 RSS 聚合）
+5. 创建 `news_lobsters.py`（新增 Lobsters 技术社区，替代 V2EX）
+6. 修改 `news_hacker_news.py`：精简 HN 源
+7. 修改 `news_reddit.py`：删除吹水频道
+8. 修改 `news_github_trending_daily.py`：按语言过滤（Kotlin/Java/Go/JS/Python）
+9. 修改 `news_meituan.py`：修复空文件
+10. 修改 `newsletter.py`：移除 Go Weekly/V2EX/少数派调用，添加 Lobsters/工程博客调用
 
 ### Phase 3：提示词重写（半天）
 
-10. 修改 `newsletter.py` 中 `create_final_newsletter()` 的提示词
-11. 修改 `generate_newsletter()` 精简 newsletter.md 结构
-12. 修改 `generate_newsletter_profile()` 适配新结构
+11. 修改 `newsletter.py` 中 `create_final_newsletter()` 的提示词
+12. 修改 `generate_newsletter()` 精简 newsletter.md 结构
+13. 修改 `generate_newsletter_profile()` 适配新结构
 
 ### Phase 4：存储改造（半天）
 
-13. 修改 `load_all_files_from_r2()` 只下载精选文件
-14. 更新 `.gitignore`
-15. 本地测试验证
+14. 修改 `load_all_files_from_r2()` 只下载精选文件
+15. 更新 `.gitignore`
+16. 本地测试验证
 
 ### Phase 5：代码清理（半天）
 
-16. 删除 `news_36kr.py`、`final_news_letter.py`
-17. 处理 `tokenizer.json`（改用 tiktoken 或运行时下载）
-18. 更新 `pyproject.toml` 依赖
+17. 删除 `news_36kr.py`、`final_news_letter.py`
+18. 处理 `tokenizer.json`（改用 tiktoken 或运行时下载）
+19. 更新 `pyproject.toml` 依赖
 
 ### Phase 6：CI/CD 改进（可选）
 
-19. 改用 fine-grained PAT
-20. 更新 workflow 增加 timeout 和失败通知
-21. 清理 Git 历史中的大文件（如需要）
+20. 改用 fine-grained PAT
+21. 更新 workflow 增加 timeout 和失败通知
+22. 清理 Git 历史中的大文件（如需要）
 
 ---
 
