@@ -96,7 +96,7 @@
 | **美团技术团队** | `https://tech.meituan.com/feed/` | `news_meituan.py` | 中文后端工程深度文章 | ✅ 200 |
 | **PingCAP** | `https://www.pingcap.com/blog/feed/` | `news_engineering_blogs.py` | 分布式数据库/Go 工程实践 | ✅ 200 |
 | **Lobsters** | `https://lobste.rs/rss` | `news_lobsters.py` | 技术社区精选，替代 V2EX | ✅ 200 |
-| **AINews** | `https://news.smol.ai/rss.xml` | `news_ai_news.py` | AI 产品/模型动态（降级使用，见说明） | ✅ 200 |
+| **AINews** | `https://news.smol.ai/rss.xml` | `news_ai_news.py` | AI + 重大科技事件速报（独立子栏目，见说明） | ✅ 200 |
 | **OpenAI Blog** | `https://openai.com/blog/rss.xml` | `news_engineering_blogs.py` | AI 工程化方向参考 | ✅ 200 |
 | **Reddit (5 个技术频道)** | `https://www.reddit.com/r/{channel}/top/.rss` | `news_reddit.py` | 技术讨论 | ⚠️ 见说明 |
 
@@ -115,6 +115,9 @@
 **Tier 3 — 补充来源**
 
 - Lobsters（`https://lobste.rs/rss`）：技术社区精选，替代 V2EX，质量更高、有 downvote 过滤机制
+- AINews（`https://news.smol.ai/rss.xml`）：**AI + 重大科技事件速报**，独立于主精选，作为每日科技新闻的时效性保障（苹果发布会、新模型突破、大厂产品更新等）。不参与主精选的 LLM 筛选，直接拼接到 newsletter.md
+
+> **说明**：不需要额外的科技新闻 RSS（The Verge / TechCrunch 等），因为 HN Frontpage 已覆盖重大科技事件，AINews 补充 AI 垂类 + X/Twitter 上的即时动态，两者组合足以保障时效性。
 - AINews：**降级使用**。当前系统中 AINews 占据主精选 90% 的内容，这是"看不下去"的核心原因。改造后 AINews 只作为独立子栏目呈现，不参与主精选的竞争
 
 **移除的来源**
@@ -252,15 +255,49 @@ def all_reddit_channels() -> list[tuple[str, str, str]]:
 - `create_final_newsletter` 函数签名移除 `shaoshupai`、`v2ex` 参数
 - 保留 `news_v2ex.py`、`news_shaoshupai.py`、`news_go_weekly.py` 文件但不调用
 
-### 2.7 AINews 降级使用
+### 2.7 AINews 定位调整：AI + 重大科技事件速报
 
 **现状问题**：当前 AINews 是主精选的唯一输入源，每天输出 10 条 AI 产品/模型发布公告，90% 链接指向 X/Twitter，占据了精选列表的大部分席位。
 
 **改造方案**：
-- AINews 内容从主精选输入中移出，改为独立的"AI 资讯"子栏目
+- AINews 从主精选中移出，改为独立的"AI + 科技事件速报"子栏目
 - 主精选（`create_final_newsletter`）只接收：工程博客、GitHub Trending、HN、Reddit、Lobsters
-- AINews 的 10 条摘要在 newsletter.md 中单独列出（类似"AI 动态速览"），不参与主精选竞争
-- 降低 AINews 在 LLM 筛选中的权重，避免 AI 产品公告挤占工程深度内容
+- AINews 的摘要在 newsletter.md 中单独列出（"AI 动态速览"），不经过 LLM 筛选，直接拼接
+- AINews 同时承担科技新闻时效性保障的职责（苹果发布会、新模型突破、大厂产品更新等），弥补工程博客和 HN 在即时性上的不足
+
+**修改 `news_ai_news.py` 中 `summarize()` 的提示词**：
+
+当前提示词只关注 AI 领域，需要扩展关注范围：
+
+```python
+system_prompt = """你是一位资深的科技新闻分析师，专门为工程师 Newsletter 撰写内容摘要。
+
+分析目标：
+- 新闻要点分析: 提取 10 个最重要的新闻要点
+- 工具产品分析: 如果文章涉及工具或产品，再单独提取 10 个工具相关要点
+
+关注重点：
+1. AI 技术突破与模型发布（推理能力、多模态、Agent 架构等）
+2. 重大科技事件（苹果/谷歌/Meta 发布会、重大安全漏洞、开源里程碑）
+3. 开发者工具与基础设施更新（IDE、CI/CD、云服务、数据库等）
+4. 编程语言 / 框架的重要版本发布
+
+明确排除：
+- 纯消费电子评测（手机、耳机、电视等硬件开箱）
+- 融资 / 收购新闻（除非涉及技术方向变化）
+- 泛科技娱乐内容
+
+来源链接要求：
+- 必须提取真实的原始链接（Twitter/X、GitHub、官网、博客等）
+- 禁止使用 Newsletter 自身链接
+
+输出格式：Markdown 列表，每条格式如下：
+### N. [标题](原始链接)
+> 详细描述（突出技术细节和工程价值）
+"""
+```
+
+关键改动：关注范围从"纯 AI"扩展到"AI + 重大科技事件"，明确排除消费电子评测，保留开发者相关的技术动态。
 
 ### 2.8 修复美团空文件问题
 
@@ -659,6 +696,7 @@ gh run view <run-id> --log-failed
 | `script/newsletter/news_reddit.py` | **修改** | `all_reddit_channels()` 只保留技术频道 |
 | `script/newsletter/news_github_trending_daily.py` | **修改** | 改用按语言的 RSS 源（Kotlin/Java/Go/JS/Python） |
 | `script/newsletter/news_meituan.py` | **修改** | 无文章时不生成空文件 |
+| `script/newsletter/news_ai_news.py` | **修改** | 扩展 `summarize()` 提示词关注范围：从纯 AI 扩展到 AI + 重大科技事件，排除消费电子评测 |
 | `script/newsletter/news_go_weekly.py` | **不调用** | 不删除文件，但从 `newsletter.py` 移除调用 |
 | `script/newsletter/news_36kr.py` | **删除** | 已废弃 |
 | `script/newsletter/final_news_letter.py` | **删除** | 空文件 |
@@ -686,31 +724,32 @@ gh run view <run-id> --log-failed
 7. 修改 `news_reddit.py`：删除吹水频道
 8. 修改 `news_github_trending_daily.py`：按语言过滤（Kotlin/Java/Go/JS/Python）
 9. 修改 `news_meituan.py`：修复空文件
-10. 修改 `newsletter.py`：移除 Go Weekly/V2EX/少数派调用，添加 Lobsters/工程博客调用
+10. 修改 `news_ai_news.py`：扩展提示词关注范围（AI + 重大科技事件）
+11. 修改 `newsletter.py`：移除 Go Weekly/V2EX/少数派调用，添加 Lobsters/工程博客调用
 
 ### Phase 3：提示词重写（半天）
 
-11. 修改 `newsletter.py` 中 `create_final_newsletter()` 的提示词
-12. 修改 `generate_newsletter()` 精简 newsletter.md 结构
-13. 修改 `generate_newsletter_profile()` 适配新结构
+12. 修改 `newsletter.py` 中 `create_final_newsletter()` 的提示词
+13. 修改 `generate_newsletter()` 精简 newsletter.md 结构
+14. 修改 `generate_newsletter_profile()` 适配新结构
 
 ### Phase 4：存储改造（半天）
 
-14. 修改 `load_all_files_from_r2()` 只下载精选文件
-15. 更新 `.gitignore`
-16. 本地测试验证
+15. 修改 `load_all_files_from_r2()` 只下载精选文件
+16. 更新 `.gitignore`
+17. 本地测试验证
 
 ### Phase 5：代码清理（半天）
 
-17. 删除 `news_36kr.py`、`final_news_letter.py`
-18. 处理 `tokenizer.json`（改用 tiktoken 或运行时下载）
-19. 更新 `pyproject.toml` 依赖
+18. 删除 `news_36kr.py`、`final_news_letter.py`
+19. 处理 `tokenizer.json`（改用 tiktoken 或运行时下载）
+20. 更新 `pyproject.toml` 依赖
 
 ### Phase 6：CI/CD 改进（可选）
 
-20. 改用 fine-grained PAT
-21. 更新 workflow 增加 timeout 和失败通知
-22. 清理 Git 历史中的大文件（如需要）
+21. 改用 fine-grained PAT
+22. 更新 workflow 增加 timeout 和失败通知
+23. 清理 Git 历史中的大文件（如需要）
 
 ---
 
