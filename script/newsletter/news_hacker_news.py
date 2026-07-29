@@ -192,10 +192,6 @@ def all_rss_urls() -> list[tuple[str, str, str]]:
     return [
         ("hacker_news_frontpage", "https://hnrss.org/frontpage", "Hacker News 首页"),
         ("hacker_news_best", "https://hnrss.org/best", "Hacker News 近期最佳"),
-        ("hacker_news_top_comments", "https://hnrss.org/bestcomments", "Hacker News 高赞评论"),
-        ("hacker_news_ask", "https://hnrss.org/ask", "Hacker News 问答"),
-        ("hacker_news_show", "https://hnrss.org/show", "Hacker News 展示"),
-        ("hacker_news_audio_tech", "https://hnrss.org/newest?q=asr+OR+tts+OR+stt", "Hacker News 音频技术"),
     ]
 
 

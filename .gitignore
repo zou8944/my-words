@@ -2,3 +2,16 @@
 .idea
 **/.venv
 **/.env
+
+# newsletter 源文件（只存 R2，不进 Git）
+newsletters/*/reddit_*.md
+newsletters/*/hacker_news_*.md
+newsletters/*/github_trending_*.md
+newsletters/*/v2ex_*.md
+newsletters/*/shaoshupai_*.md
+newsletters/*/ai_news_*.md
+newsletters/*/ai_news_summary_*.md
+newsletters/*/lobsters_*.md
+newsletters/*/meituan_*.md
+newsletters/*/blog_*.md
+newsletters/*/go_weekly_*.md

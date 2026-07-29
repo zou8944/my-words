@@ -149,28 +149,18 @@ def get_today_news_file(slug: str) -> str:
 
 
 def all_reddit_channels() -> list[tuple[str, str, str]]:
-    """返回所有 Reddit 频道配置: (slug, rss_url, title)"""
-    channels = []
-
-    # 吹水类
-    casual_channels = [
-        ("AMA", "Reddit AMA"),
-        ("AskReddit", "Reddit AskReddit"),
-        ("Showerthoughts", "Reddit Showerthoughts"),
-        ("todayilearned", "Reddit TIL"),
-    ]
-
-    # 技术类
+    """返回 Reddit 技术频道配置: (slug, rss_url, title)"""
+    # 只保留技术相关频道
     tech_channels = [
         ("devops", "Reddit DevOps"),
         ("programming", "Reddit Programming"),
-        ("explainlikeimfive", "Reddit ELI5"),
         ("golang", "Reddit Golang"),
         ("rust", "Reddit Rust"),
         ("MachineLearning", "Reddit ML"),
     ]
 
-    for channel, title in casual_channels + tech_channels:
+    channels = []
+    for channel, title in tech_channels:
         slug = f"reddit_{channel.lower()}"
         rss_url = f"https://www.reddit.com/r/{channel}/top/.rss"
         channels.append((slug, rss_url, title))
@@ -178,16 +168,22 @@ def all_reddit_channels() -> list[tuple[str, str, str]]:
     return channels
 
 
-def get_today_news_content():
+def get_today_news_content() -> str:
     """获取所有 Reddit 频道的今日内容"""
+    content = []
     for slug, url, title in all_reddit_channels():
         filename = get_today_news_file(slug)
         _content = news_utils.get_file_from_r2_with_today(filename)
         if _content:
-            logger.info(f"今天的 {title} 频道内容已存在，跳过: {filename}")
+            logger.info(f"今天的 {title} 频道内容已存在，直接读取: {filename}")
+            content.append(_content)
             continue
 
         process_reddit_channel(url, slug, title)
+        _content = news_utils.get_file_from_r2_with_today(filename)
+        if _content:
+            content.append(_content)
+    return "\n".join(content)
 
 
 if __name__ == "__main__":

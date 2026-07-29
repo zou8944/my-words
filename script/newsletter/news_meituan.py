@@ -82,8 +82,8 @@ def fetch_news():
         final_contents.append(f"### {title}\n\n> {published_date}\n\n{summary}\n\n[阅读全文]({link})\n\n")
 
     if not final_contents:
-        logger.info("美团技术团队今天没有发布新文章，将写一个空文件")
-        final_contents = ["今天没有新的文章发布"]
+        logger.info("美团技术团队今天没有发布新文章，跳过保存")
+        return
 
     # 获取文件路径并保存
     filename = get_today_news_file()
@@ -100,14 +100,13 @@ def get_today_posts_content():
     filename = get_today_news_file()
     content = news_utils.get_file_from_r2_with_today(filename)
     if content:
-        logger.info("今日美图技术团队文章已存在，直接返回内容")
+        logger.info("今日美团技术团队文章已存在，直接返回内容")
         return content
 
     fetch_news()
-    
+
     content = news_utils.get_file_from_r2_with_today(filename)
-    assert content
-    return content
+    return content or ""
 
 
 if __name__ == "__main__":

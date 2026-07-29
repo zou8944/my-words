@@ -4,92 +4,93 @@ from typing import Optional
 
 import llm
 import news_ai_news
+import news_engineering_blogs
 import news_github_trending_daily
-import news_go_weekly
 import news_hacker_news
+import news_lobsters
 import news_meituan
 import news_reddit
-import news_shaoshupai
 import news_utils
-import news_v2ex
 
 logger = news_utils.setup_logger(__name__)
 
 
 def create_final_newsletter(
     last_newsletter: str,
-    ai_news: str,
+    engineering_blogs: str,
     github_trending: str,
     hacker_news: str,
-    shaoshupai: str,
-    v2ex: str,
+    lobsters: str,
+    reddit_tech: str,
+    meituan: str,
 ) -> Optional[str]:
-    system_prompt = (
-        """你是一个专业且负责的技术内容编辑助手，擅长从大量信息中提取关键点，生成清晰、结构化的技术 newsletter。"""
-    )
-    user_prompt = f"""你是一个技术内容编辑助手，目标是为一位专注于后端和 AI 的工程师制作一篇高价值的每日技术 newsletter，帮助他在有限时间内掌握真正能提升认知和实践能力的内容。
+    system_prompt = """你是一位专注于后端系统与AI基础设施的技术编辑。
+你的读者是一位有5年+经验的后端工程师，日常工作涉及 Go、PostgreSQL、LLM 应用、分布式系统和云原生架构。
 
-【内容筛选原则】：
-- 只输出最多 10 条，覆盖：
-  - 新的高质量开源项目 / GitHub Trending
-  - 编程语言 / 技术栈的深度文章（如 Go、PostgreSQL、LLM 等）
-  - 模型 / 工具 / 库 的更新与发布（如新模型、新框架）
-  - Hacker News 近期技术热点、讨论或展示
-  - 来自一线工程团队的深度实战总结（如美团、字节、Meta AI 等）
-- 过滤以下内容：
-  - 无实质价值的融资/商业新闻
-  - 面向新手的重复内容
-  - 泛科技娱乐、AI 媒体营销
-  - 无代码、AI 视频剪辑工具、炒作类信息
-  - 昨天已出现过的内容
+你的目标：从原始素材中筛选出对这位工程师**真正有学习价值**的内容，帮助他在碎片时间里提升技术认知。
 
-【输出格式】
-请使用 Markdown 列表输出，每条格式如下：
-- **[标题](<原文链接>)**（来源：XXX）  
-  > 简要总结（50字内，突出可实践价值或思想亮点）
+严格禁止：
+- 输出"好的，这是为您..."等开场白，直接输出列表
+- 重复标题中的来源信息
+- 将同一条新闻在不同来源中重复推荐"""
 
+    user_prompt = f"""请从以下素材中筛选出最有价值的技术内容，生成今日 Newsletter。
 
-请开始筛选内容。
+【筛选标准】—— 只选满足以下任一条件的内容：
+1. 对后端/分布式系统工程师有直接参考价值的深度文章或项目
+2. Go、PostgreSQL、Redis、Kafka、gRPC 等技术栈的重要更新
+3. LLM 应用层的工程实践（推理优化、RAG 架构、Agent 编排、评估方法）
+4. 一线工程团队（美团、Cloudflare、Stripe、Netflix 等）的实战总结
+5. 有深度技术讨论的 HN/Lobsters/Reddit 帖子（不是产品公告）
+
+【明确排除】：
+- AI 产品发布公告（如"X 发布 Y 模型"）—— 除非含具体架构/性能数据
+- 融资新闻、商业动态
+- 面向新手的入门内容
+- 昨天已出现过的内容
+
+【输出格式】—— 直接输出 Markdown 列表，不要任何开场白：
+- **[标题](链接)**（来源：XXX）
+  > 一句话总结，突出技术细节或实践价值（50字内）
+
 ---
 
-以下是昨天的 newsletter 内容：
+以下是昨天已推送的内容（用于去重）：
 <<<
 {last_newsletter}
 >>>
 
-以下是 markdown 原始内容：
-<<<
+以下是今日原始素材：
 
-### AINews
-
+### 工程博客精选
 ```markdown
-{ai_news}
+{engineering_blogs}
 ```
 
 ### GitHub Trending
-
 ```markdown
 {github_trending}
 ```
 
 ### Hacker News
-
 ```markdown
 {hacker_news}
 ```
 
-### 少数派
-
+### Lobsters
 ```markdown
-{shaoshupai}
+{lobsters}
 ```
 
-### v2ex 科技贴
+### Reddit 技术频道
 ```markdown
-{v2ex[:2000]}
+{reddit_tech}
 ```
 
->>>
+### 美团技术团队
+```markdown
+{meituan}
+```
 """
     return llm.one_shoot(system_prompt, user_prompt)
 
@@ -110,7 +111,6 @@ def get_newsletter_directory() -> str:
 
 def get_last_newsletter_summary() -> str:
     """获取昨天的 newsletter 内容"""
-    # 昨天的内容从本地获取
     newsletter_dir = get_newsletter_directory()
     yesterday_formatted = news_utils.yesterday_date_formatted()
     _, summary_filename = get_newsletter_filename()
@@ -127,24 +127,26 @@ def generate_newsletter_summary():
         logger.info(f"今天的 newsletter 摘要 已经存在，不重复生成: {summary_filename}")
         return
 
-    v2ex = news_v2ex.get_today_news_content()
-    _ = news_meituan.get_today_posts_content()
-    _ = news_go_weekly.get_today_news_content()
-    _ = news_reddit.get_today_news_content()
+    # 获取各来源内容
     last_newsletter_summary = get_last_newsletter_summary()
-    ai_news_content = news_ai_news.get_today_news_content()
+    engineering_blogs_content = news_engineering_blogs.get_today_news_content()
     github_trending_content = news_github_trending_daily.get_today_news_content()
     hacker_news_content = news_hacker_news.get_today_news_content()
-    shaoshupai_content = news_shaoshupai.get_today_news_content()
-    # kr36_content = news_36kr.get_today_news_content()
+    lobsters_content = news_lobsters.get_today_news_content()
+    reddit_tech_content = news_reddit.get_today_news_content()
+    meituan_content = news_meituan.get_today_posts_content()
+
+    # 触发 AINews 抓取（不传入主筛选，但需要确保数据已生成）
+    _ = news_ai_news.get_today_news_content()
 
     newsletter = create_final_newsletter(
         last_newsletter=last_newsletter_summary,
-        ai_news=ai_news_content,
+        engineering_blogs=engineering_blogs_content,
         github_trending=github_trending_content,
         hacker_news=hacker_news_content,
-        shaoshupai=shaoshupai_content,
-        v2ex=v2ex,
+        lobsters=lobsters_content,
+        reddit_tech=reddit_tech_content,
+        meituan=meituan_content,
     )
     if not newsletter:
         logger.error("生成 newsletter 失败")
@@ -164,49 +166,36 @@ def generate_newsletter():
     # 生成 newsletter
     newsletter_filename, summary_filename = get_newsletter_filename()
     newsletter_summary = news_utils.get_file_from_r2_with_today(summary_filename)
+    if not newsletter_summary:
+        logger.error("无法获取 newsletter 摘要")
+        return
+
+    # AINews 作为独立子栏目，不经过主筛选
+    ai_news_content = news_ai_news.get_today_news_content()
 
     current_datetime_formatted = news_utils.current_datetime_formatted()
     contents = [
         "## 今日要闻",
-        "\n<sub> 生成时间：{}</sub>\n".format(current_datetime_formatted),
+        f"\n<sub> 生成时间：{current_datetime_formatted}</sub>\n",
         "\n---\n",
-        "### AI 推荐要点\n",
         newsletter_summary,
-        "\n---\n",
-        "### 各渠道精选摘要",
-        "- [少数派](./{})".format(news_shaoshupai.get_today_news_file()),
-        "- [美团技术团队](./{})".format(news_meituan.get_today_news_file()),
     ]
 
-    contents.append("\n---\n")
-    contents.append("### 渠道精选")
+    # AI 动态速览（独立子栏目，不参与主精选竞争）
+    if ai_news_content:
+        contents.extend([
+            "\n---\n",
+            "### AI 动态速览",
+            ai_news_content,
+        ])
+
+    # 推荐阅读
+    meituan_file = news_meituan.get_today_news_file()
     contents.extend([
-        "- [AINews](./{})".format(news_ai_news.get_today_news_file()[1]),
-        "- [GitHub Trending](./{})".format(news_github_trending_daily.get_today_news_file()),
-        "- [V2EX 技术版](./{})".format(news_v2ex.get_today_news_file()),
-    ])
-
-    # News Letter
-    contents.append("\n---\n")
-    contents.append("### Hacker News 精选")
-    for slug, _, title in news_hacker_news.all_rss_urls():
-        today_news_file = news_hacker_news.get_today_news_file(slug)
-        contents.append(f"- [{title}](./{today_news_file})")
-
-    # 添加 Reddit 频道部分
-    contents.append("\n---\n")
-    contents.append("### Reddit 精选频道")
-    for slug, _, title in news_reddit.all_reddit_channels():
-        today_news_file = news_reddit.get_today_news_file(slug)
-        contents.append(f"- [{title}](./{today_news_file})")
-
-    # 一周一看
-    contents.append("\n---\n")
-    contents.append("### 每周一看")
-    contents.extend([
+        "\n---\n",
+        "### 推荐阅读",
         "- [Cloudflare Blog](https://blog.cloudflare.com/zh-cn/)",
-        "- [少数派](./{})".format(news_shaoshupai.get_today_news_file()),
-        "- [美团技术团队](./{})".format(news_meituan.get_today_news_file()),
+        f"- [美团技术团队](./{meituan_file})" if news_utils.get_file_from_r2_with_today(meituan_file) else "",
     ])
 
     if news_utils.put_file_to_r2_with_today(newsletter_filename, "\n".join(contents)):
@@ -218,32 +207,28 @@ def generate_newsletter():
 
 def generate_newsletter_profile():
     newsletter_dir = get_newsletter_directory()
-    newsletter_files = list(pathlib.Path(newsletter_dir).glob("**/newsletter.md"))
-    newsletter_files.sort(key=lambda x: x.parent.absolute(), reverse=True)
+    newsletter_files = sorted(
+        pathlib.Path(newsletter_dir).glob("**/newsletter.md"),
+        key=lambda x: x.parent.name,
+        reverse=True,
+    )
 
     if not newsletter_files:
         logger.warning("没有找到任何 newsletter 文件")
         return
 
-    newsletter_homepage = []
-    
+    homepage = []
     for i, file in enumerate(newsletter_files):
-        date_formated = file.parent.name.split("/")[-1]
-        
-        if i == 0:  # 处理最新的newsletter
-            content = file.read_text(encoding="utf-8")
-            # 将所有相对路径链接都加上日期前缀
-            # 需要处理 "### 各渠道精选摘要"、"### Reddit 精选频道"、"### 每周一看" 等部分的链接
-            content = content.replace("](./", f"](./{date_formated}/")
-            newsletter_homepage.append(content)
-        
-        if i == 1:  # 在第二个文件前添加往日新闻标题
-            newsletter_homepage.append("\n# 往日新闻\n")
-        
-        if i > 0:  # 从第二个文件开始添加链接
-            newsletter_homepage.append(f"#### [{date_formated}](./{date_formated}/newsletter.md)\n")
+        date_formated = file.parent.name
+        content = file.read_text(encoding="utf-8")
+        if i == 0:
+            homepage.append(content)
+        else:
+            if i == 1:
+                homepage.append("\n# 往日新闻\n")
+            homepage.append(f"#### [{date_formated}](./{date_formated}/newsletter.md)\n")
 
-    homepage_content = "\n".join(newsletter_homepage)
+    homepage_content = "\n".join(homepage)
 
     homepage_file = os.path.join(newsletter_dir, "homepage.md")
     with open(homepage_file, "w", encoding="utf-8") as file:
@@ -252,22 +237,25 @@ def generate_newsletter_profile():
 
 
 def load_all_files_from_r2():
-    """将 r2 上当天的所有文件加载到本地"""
+    """将 R2 上当天的精选文件加载到本地（不加载源文件）"""
     newsletter_dir = get_newsletter_directory()
-    if not os.path.exists(newsletter_dir):
-        os.makedirs(newsletter_dir)
+    os.makedirs(newsletter_dir, exist_ok=True)
 
     today_formatted = news_utils.current_date_formatted()
     today_dir = os.path.join(newsletter_dir, today_formatted)
-    if not os.path.exists(today_dir):
-        os.makedirs(today_dir)
+    os.makedirs(today_dir, exist_ok=True)
 
-    r2_dir = news_utils.get_r2_dir_with_today()
-    if news_utils.copy_from_r2(r2_dir, today_dir):
-        logger.info(f"✓ 已将 R2 上的 {r2_dir} 目录内容复制到本地: {today_dir}")
-    else:
-        logger.error(f"✗ 无法将 R2 上的 {r2_dir} 目录内容复制到本地: {today_dir}")
-        return
+    # 只下载 newsletter 核心文件，不下载源文件
+    newsletter_filename, summary_filename = get_newsletter_filename()
+    for filename in [newsletter_filename, summary_filename]:
+        content = news_utils.get_file_from_r2_with_today(filename)
+        if content:
+            filepath = os.path.join(today_dir, filename)
+            with open(filepath, "w", encoding="utf-8") as f:
+                f.write(content)
+            logger.info(f"✓ 已保存 {filename} 到 {today_dir}")
+        else:
+            logger.warning(f"✗ R2 上不存在 {filename}")
 
 
 def try_generate_newsletter():
@@ -275,7 +263,7 @@ def try_generate_newsletter():
     generate_newsletter_summary()
     # 生成最终的 newsletter
     generate_newsletter()
-    # 加载到本地
+    # 加载精选文件到本地
     load_all_files_from_r2()
     # 生成主页
     generate_newsletter_profile()
