@@ -1,5 +1,4 @@
 import os
-import pathlib
 from typing import Optional
 
 import llm
@@ -110,14 +109,14 @@ def get_newsletter_directory() -> str:
 
 
 def get_last_newsletter_summary() -> str:
-    """获取昨天的 newsletter 内容"""
-    newsletter_dir = get_newsletter_directory()
+    """获取昨天的 newsletter 内容（从 R2 读取）"""
     yesterday_formatted = news_utils.yesterday_date_formatted()
     _, summary_filename = get_newsletter_filename()
-    yesterday_newsletter_path = os.path.join(newsletter_dir, yesterday_formatted, summary_filename)
-    if os.path.exists(yesterday_newsletter_path):
-        with open(yesterday_newsletter_path, "r", encoding="utf-8") as file:
-            return file.read()
+    content = news_utils.get_file_from_r2_with_date(yesterday_formatted, summary_filename)
+    if content:
+        logger.info(f"从 R2 获取到昨天的 newsletter 摘要: {yesterday_formatted}/{summary_filename}")
+        return content
+    logger.info("昨天的 newsletter 摘要不存在，跳过去重")
     return ""
 
 
@@ -206,29 +205,21 @@ def generate_newsletter():
 
 
 def generate_newsletter_profile():
+    """生成 homepage.md，内容从 R2 获取"""
     newsletter_dir = get_newsletter_directory()
-    newsletter_files = sorted(
-        pathlib.Path(newsletter_dir).glob("**/newsletter.md"),
-        key=lambda x: x.parent.name,
-        reverse=True,
-    )
+    os.makedirs(newsletter_dir, exist_ok=True)
 
-    if not newsletter_files:
-        logger.warning("没有找到任何 newsletter 文件")
+    today_formatted = news_utils.current_date_formatted()
+    newsletter_filename, _ = get_newsletter_filename()
+    today_content = news_utils.get_file_from_r2_with_today(newsletter_filename)
+
+    if not today_content:
+        logger.warning("今天的 newsletter 不存在，无法生成主页")
         return
 
-    homepage = []
-    for i, file in enumerate(newsletter_files):
-        date_formated = file.parent.name
-        content = file.read_text(encoding="utf-8")
-        if i == 0:
-            homepage.append(content)
-        else:
-            if i == 1:
-                homepage.append("\n# 往日新闻\n")
-            homepage.append(f"#### [{date_formated}](./{date_formated}/newsletter.md)\n")
-
-    homepage_content = "\n".join(homepage)
+    # 将相对链接替换为 R2 静态资源绝对链接
+    static_base = "https://static.zou8944.com/newsletter"
+    homepage_content = today_content.replace("](./", f"]({static_base}/{today_formatted}/")
 
     homepage_file = os.path.join(newsletter_dir, "homepage.md")
     with open(homepage_file, "w", encoding="utf-8") as file:
@@ -236,35 +227,11 @@ def generate_newsletter_profile():
         logger.info(f"✓ 已生成 newsletter 主页: {homepage_file}")
 
 
-def load_all_files_from_r2():
-    """将 R2 上当天的精选文件加载到本地（不加载源文件）"""
-    newsletter_dir = get_newsletter_directory()
-    os.makedirs(newsletter_dir, exist_ok=True)
-
-    today_formatted = news_utils.current_date_formatted()
-    today_dir = os.path.join(newsletter_dir, today_formatted)
-    os.makedirs(today_dir, exist_ok=True)
-
-    # 只下载 newsletter 核心文件，不下载源文件
-    newsletter_filename, summary_filename = get_newsletter_filename()
-    for filename in [newsletter_filename, summary_filename]:
-        content = news_utils.get_file_from_r2_with_today(filename)
-        if content:
-            filepath = os.path.join(today_dir, filename)
-            with open(filepath, "w", encoding="utf-8") as f:
-                f.write(content)
-            logger.info(f"✓ 已保存 {filename} 到 {today_dir}")
-        else:
-            logger.warning(f"✗ R2 上不存在 {filename}")
-
-
 def try_generate_newsletter():
     # 生成摘要
     generate_newsletter_summary()
     # 生成最终的 newsletter
     generate_newsletter()
-    # 加载精选文件到本地
-    load_all_files_from_r2()
     # 生成主页
     generate_newsletter_profile()
 

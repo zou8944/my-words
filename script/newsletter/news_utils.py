@@ -267,6 +267,12 @@ def get_file_from_r2_with_today(object_key: str) -> Optional[str]:
     return _get_file_from_r2(object_key)
 
 
+def get_file_from_r2_with_date(date_str: str, object_key: str) -> Optional[str]:
+    """从 R2 上指定日期的目录读取文件"""
+    object_key = f"{date_str}/{object_key}"
+    return _get_file_from_r2(object_key)
+
+
 def _get_file_from_r2(object_key: str) -> Optional[str]:
     object_key = _handle_r2_key(object_key)
     try:
