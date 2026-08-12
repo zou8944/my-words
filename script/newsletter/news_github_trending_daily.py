@@ -126,11 +126,14 @@ def get_today_news_content() -> str:
         return content
 
     logger.info(f"今天的GitHub Trending新闻不存在，开始抓取: {filename}")
-    fetch_news()
+    try:
+        fetch_news()
+    except Exception as e:
+        logger.error(f"获取 GitHub Trending 新闻失败: {e}")
+        return ""
 
     content = news_utils.get_file_from_r2_with_today(filename)
-    assert content
-    return content
+    return content or ""
 
 
 if __name__ == "__main__":

@@ -45,7 +45,7 @@ def get_rss_entries(rss_url: str, limit: int = 1000) -> List[dict]:
     Returns:
         List[dict]: RSS条目列表，每个条目包含title、link、summary等信息
     """
-    response = httpx.get(rss_url, timeout=10)
+    response = httpx.get(rss_url, timeout=10, follow_redirects=True)
     response.raise_for_status()
 
     feed = feedparser.parse(response.content)

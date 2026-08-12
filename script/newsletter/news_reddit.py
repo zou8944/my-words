@@ -18,7 +18,6 @@ Reddit 频道 RSS 源获取
 """
 
 from datetime import datetime
-from typing import Optional
 
 import llm
 import news_utils
@@ -26,7 +25,7 @@ import news_utils
 logger = news_utils.setup_logger(__name__)
 
 
-def concurrent_translate_title(titles: list[str]) -> list[Optional[str]]:
+def concurrent_translate_title(titles: list[str]) -> list[str | None]:
     system_prompt = """你是一位资深的 Reddit 帖子翻译专家，负责将英文帖子标题翻译成中文。
 
 ## 任务目标：
@@ -53,7 +52,7 @@ def concurrent_translate_title(titles: list[str]) -> list[Optional[str]]:
     return llm.concurrent_one_shoot([(system_prompt, user_prompt) for user_prompt in user_prompts])
 
 
-def concurrent_summarize_content(contents: list[str]) -> list[Optional[str]]:
+def concurrent_summarize_content(contents: list[str]) -> list[str | None]:
     system_prompt = """你是一位资深的 Reddit 内容分析师，专门处理 Reddit 帖子的概览内容。
 
 ## 任务目标：
@@ -179,7 +178,11 @@ def get_today_news_content() -> str:
             content.append(_content)
             continue
 
-        process_reddit_channel(url, slug, title)
+        try:
+            process_reddit_channel(url, slug, title)
+        except Exception as e:
+            logger.error(f"获取 {title} 频道失败: {e}")
+            continue
         _content = news_utils.get_file_from_r2_with_today(filename)
         if _content:
             content.append(_content)

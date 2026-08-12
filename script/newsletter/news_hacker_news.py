@@ -206,10 +206,14 @@ def get_today_news_content() -> str:
             content.append(_content)
             continue
 
-        process_top_hn(url, slug, title)
+        try:
+            process_top_hn(url, slug, title)
+        except Exception as e:
+            logger.error(f"获取 {title} 失败: {e}")
+            continue
         _content = news_utils.get_file_from_r2_with_today(filename)
-        assert _content
-        content.append(_content)
+        if _content:
+            content.append(_content)
     return "\n".join(content)
 
 

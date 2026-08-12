@@ -22,7 +22,7 @@ BLOG_SOURCES = [
     ("meta_engineering",   "https://engineering.fb.com/feed/",               "Meta Engineering"),
     ("github_engineering", "https://github.blog/engineering/feed/",          "GitHub Engineering"),
     ("pingcap",            "https://www.pingcap.com/blog/feed/",             "PingCAP"),
-    ("openai_blog",        "https://openai.com/blog/rss.xml",               "OpenAI Blog"),
+    ("openai_blog",        "https://openai.com/news/rss.xml",               "OpenAI Blog"),
 ]
 
 
@@ -135,7 +135,11 @@ def get_today_news_content() -> str:
             content.append(_content)
             continue
 
-        fetch_blog_source(slug, rss_url, title)
+        try:
+            fetch_blog_source(slug, rss_url, title)
+        except Exception as e:
+            logger.error(f"获取 {title} 博客失败: {e}")
+            continue
         _content = news_utils.get_file_from_r2_with_today(filename)
         if _content:
             content.append(_content)

@@ -82,7 +82,7 @@ def one_shoot(system_prompt: str, user_prompt: str) -> Optional[str]:
         client = OpenAI(api_key=config.settings.openai_api_key, base_url=config.settings.openai_base_url)
 
         response = client.chat.completions.create(
-            model="deepseek-chat",  # 可以根据需要修改模型
+            model=config.settings.openai_model,
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_prompt},

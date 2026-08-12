@@ -58,7 +58,8 @@ def fetch_news():
     for entry in entries:
         published_datetime = news_utils.get_entry_datetime(entry)
         if not published_datetime:
-            raise Exception("无法获取文章的发布日期")
+            logger.warning(f"无法获取文章的发布日期，跳过: {entry.get('title', '未知')}")
+            continue
 
         published_date = published_datetime.strftime("%Y-%m-%d")
         current_date = datetime.now().strftime("%Y-%m-%d")
@@ -72,12 +73,14 @@ def fetch_news():
         logger.info(f"找到今天的文章: {title} ({link})")
         content = news_utils.fetch_and_convert_to_markdown(link)
         if not content:
-            raise Exception(f"无法获取文章内容: {link}")
+            logger.warning(f"无法获取文章内容，跳过: {link}")
+            continue
 
         logger.info("开始对文章内容进行总结")
         summary = summarize_content(content)
         if not summary:
-            raise Exception(f"无法获取文章摘要: {link}")
+            logger.warning(f"无法获取文章摘要，跳过: {link}")
+            continue
         logger.info("总结完成")
         final_contents.append(f"### {title}\n\n> {published_date}\n\n{summary}\n\n[阅读全文]({link})\n\n")
 
@@ -103,7 +106,11 @@ def get_today_posts_content():
         logger.info("今日美团技术团队文章已存在，直接返回内容")
         return content
 
-    fetch_news()
+    try:
+        fetch_news()
+    except Exception as e:
+        logger.error(f"获取美团技术团队内容失败: {e}")
+        return ""
 
     content = news_utils.get_file_from_r2_with_today(filename)
     return content or ""

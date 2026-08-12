@@ -9,6 +9,7 @@ class Settings:
 
         self.openai_api_key = self._must_get_env("OPENAI_API_KEY")
         self.openai_base_url = self._must_get_env("OPENAI_BASE_URL")
+        self.openai_model = os.getenv("OPENAI_MODEL", "deepseek-chat")
 
         self.r2_endpoint = self._must_get_env("R2_ENDPOINT")
         self.r2_access_key_id = self._must_get_env("R2_ACCESS_KEY_ID")

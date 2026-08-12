@@ -61,7 +61,11 @@ def get_today_news_content() -> str:
         logger.info(f"今天的 Lobsters 内容已存在: {filename}")
         return content
 
-    fetch_news()
+    try:
+        fetch_news()
+    except Exception as e:
+        logger.error(f"获取 Lobsters 内容失败: {e}")
+        return ""
 
     content = news_utils.get_file_from_r2_with_today(filename)
     return content or ""
