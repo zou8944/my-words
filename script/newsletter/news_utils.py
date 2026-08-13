@@ -4,6 +4,7 @@
 
 import logging
 import os
+import time
 from datetime import datetime, timedelta
 from typing import List, Optional
 
@@ -45,6 +46,7 @@ def get_rss_entries(rss_url: str, limit: int = 1000) -> List[dict]:
     Returns:
         List[dict]: RSS条目列表，每个条目包含title、link、summary等信息
     """
+    time.sleep(1)
     response = httpx.get(rss_url, timeout=10, follow_redirects=True)
     response.raise_for_status()
 
@@ -80,6 +82,7 @@ def fetch_and_convert_to_markdown(url: str) -> Optional[str]:
     }
 
     # 获取网页内容
+    time.sleep(1)
     response = httpx.get(url, headers=headers, timeout=30)
     response.raise_for_status()
 

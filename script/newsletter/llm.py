@@ -88,7 +88,7 @@ def one_shoot(system_prompt: str, user_prompt: str) -> Optional[str]:
                 {"role": "user", "content": user_prompt},
             ],
             temperature=0.3,
-            max_tokens=3000,
+            max_tokens=8000,
         )
 
         # 计算耗时
