@@ -57,15 +57,13 @@ def fetch_news():
     final_contents = []
     for entry in entries:
         published_datetime = news_utils.get_entry_datetime(entry)
-        if not published_datetime:
-            logger.warning(f"无法获取文章的发布日期，跳过: {entry.get('title', '未知')}")
-            continue
+        published_date = published_datetime.strftime("%Y-%m-%d") if published_datetime else None
 
-        published_date = published_datetime.strftime("%Y-%m-%d")
-        current_date = datetime.now().strftime("%Y-%m-%d")
-        yesterday_date = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
-        if published_date != current_date and published_date != yesterday_date:
-            continue
+        if published_date:
+            current_date = datetime.now().strftime("%Y-%m-%d")
+            yesterday_date = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
+            if published_date != current_date and published_date != yesterday_date:
+                continue
 
         title = entry.get("title", "无标题")
         link = entry.get("link", "")
