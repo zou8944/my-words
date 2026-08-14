@@ -329,6 +329,31 @@ def _put_file_to_r2(object_key: str, content: str) -> bool:
         return False
 
 
+def list_r2_newsletter_dates() -> list[str]:
+    """列出 R2 上所有有 newsletter 的日期，返回降序排列的日期列表"""
+    try:
+        session = boto3.Session()
+        s3 = session.client(
+            service_name="s3",
+            endpoint_url=config.settings.r2_endpoint,
+            aws_access_key_id=config.settings.r2_access_key_id,
+            aws_secret_access_key=config.settings.r2_secret_access_key,
+            region_name="auto",
+        )
+        paginator = s3.get_paginator("list_objects_v2")
+        dates = set()
+        for page in paginator.paginate(Bucket=config.settings.r2_bucket, Prefix="newsletter/", Delimiter="/"):
+            for prefix in page.get("CommonPrefixes", []):
+                # prefix 形如 "newsletter/2026-08-12/"
+                date_dir = prefix["Prefix"].rstrip("/").split("/")[-1]
+                if len(date_dir) == 10 and date_dir[4] == "-" and date_dir[7] == "-":
+                    dates.add(date_dir)
+        return sorted(dates, reverse=True)
+    except Exception as e:
+        logger.error(f"列出 R2 日期目录失败: {e}")
+        return []
+
+
 def copy_from_r2(prefix: str, target_dir: str) -> bool:
     try:
         session = boto3.Session()

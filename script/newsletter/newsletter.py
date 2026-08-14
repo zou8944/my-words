@@ -221,6 +221,14 @@ def generate_newsletter_profile():
     static_base = "https://static.zou8944.com/newsletter"
     homepage_content = today_content.replace("](./", f"]({static_base}/{today_formatted}/")
 
+    # 追加往日新闻（过去 30 天）
+    all_dates = news_utils.list_r2_newsletter_dates()
+    recent_dates = [d for d in all_dates if d != today_formatted][:30]
+    if recent_dates:
+        homepage_content += "\n\n# 往日新闻\n\n"
+        for date in recent_dates:
+            homepage_content += f"#### [{date}]({static_base}/{date}/newsletter.md)\n\n"
+
     homepage_file = os.path.join(newsletter_dir, "homepage.md")
     with open(homepage_file, "w", encoding="utf-8") as file:
         file.write(homepage_content)
