@@ -1,211 +1,170 @@
 ## 今日要闻
 
-<sub> 生成时间：2026-08-14 09:05:02</sub>
+<sub> 生成时间：2026-08-15 08:41:27</sub>
 
 
 ---
 
-- **[Total eclipse of the Internet: traffic impacts in Iceland, Spain, and Portugal](https://blog.cloudflare.com/total-eclipse-internet-traffic-iceland-spain-portugal/)**（来源：Cloudflare Blog）
-  > 日全食对沿途网络流量造成显著影响，提醒后端工程师关注自然现象对基础设施的冲击，需强化系统弹性设计与数据监控能力。
-- **[Certificate Transparency Monitoring is now generally available](https://blog.cloudflare.com/certificate-transparency-monitoring-ga/)**（来源：Cloudflare Blog）
-  > 优化证书透明度监控策略，仅针对异常情况发出警报，提高安全通知的有效性和运维效率。
-- **[Cloudflare DDoS Threat Report H1 2026: 1 Tbps attacks soar as DNS floods and geopolitical tensions drive a new wave](https://blog.cloudflare.com/ddos-threat-report-2026-h1/)**（来源：Cloudflare Blog）
-  > 分析2026上半年DDoS攻击激增趋势，特别是DNS和CLDAP反射向量，为防御策略优化提供参考。
-- **[Unveiling good and bad behaviors on the Agentic Internet](https://blog.cloudflare.com/good-and-bad-agentic-behaviors/)**（来源：Cloudflare Blog）
-  > 将机器人防御从点时间风险评估升级为持续信任评估，通过实时行为分析优化检测策略。
-- **[Introducing Radar Researcher: An AI tool for exploring Internet data in plain language](https://blog.cloudflare.com/introducing-radar-researcher/)**（来源：Cloudflare Blog）
-  > 利用自然语言处理技术构建实时数据查询接口，为后端/AI工程师提供将AI能力集成至数据平台的实践范例。
-- **[Unifying Workers AI and AI Gateway into a single AI control plane](https://blog.cloudflare.com/workers-ai-gateway-unification/)**（来源：Cloudflare Blog）
-  > 统一AI Gateway与Workers AI至单一控制平面，简化动态路由、可观测性及计费，提升AI应用开发效率。
-- **[Track generative AI costs with Amazon Bedrock inference profiles](https://aws.amazon.com/blogs/architecture/track-generative-ai-costs-with-amazon-bedrock-inference-profiles/)**（来源：AWS Architecture Blog）
-  > 通过推理配置文件与成本分配标签，实现生成式AI成本的部门级追踪，优化云资源成本监控。
-- **[Recovery strategies to meet data residency requirements](https://aws.amazon.com/blogs/architecture/recovery-strategies-to-meet-data-residency-requirements/)**（来源：AWS Architecture Blog）
-  > 介绍三种兼顾数据合规与业务连续性的灾备架构模式，为工程师提供实践方案。
-- **[Scaling patterns for self-organizing multi-agent clusters with Kiro](https://aws.amazon.com/blogs/architecture/scaling-patterns-for-self-organizing-multi-agent-clusters-with-kiro/)**（来源：AWS Architecture Blog）
-  > 利用S3共享状态实现AI代理去中心化协调，替代中央编排器，为分布式AI系统提供可扩展架构实践。
-- **[How and Why Netflix Built a Real-Time Distributed Graph: Part 3 — Querying the graph with gRPC…](https://netflixtechblog.com/how-and-why-netflix-built-a-real-time-distributed-graph-part-3-querying-the-graph-with-grpc-0f3468349607)**（来源：Netflix Tech Blog）
-  > 设计高效图查询层，采用广度优先异步执行与选择性缓存，解决十亿级图数据在复杂查询下的低延迟难题。
-- **[Using the GitHub Copilot SDK for Java](https://github.blog/engineering/using-the-github-copilot-sdk-for-java/)**（来源：GitHub Engineering）
-  > 介绍如何利用Copilot Java SDK，通过注解和虚拟线程等现代Java特性集成AI代码辅助。
-- **[Why Agentic AI Architecture Needs a Database, Not Just a Vector Store](https://www.pingcap.com/blog/agentic-ai-architecture/)**（来源：PingCAP）
-  > 强调Agentic AI架构需数据库支持以实现工作持久化与状态管理，为构建可靠代理系统提供指导。
-- **[The Complete Agent State Stack: Memory, Files, and Serverless Database Persistence for AI Apps](https://www.pingcap.com/blog/serverless-database/)**（来源：PingCAP）
-  > 探讨利用无服务器数据库实现智能体状态的统一持久化，提供免运维、高弹性的后端方案。
-- **[Previewing Ultrafast mode: GPT-5.6 Sol at up to 14X the speed](https://openai.com/index/previewing-ultrafast)**（来源：OpenAI Blog）
-  > 基于Cerebras硬件加速，将GPT-5.6 Sol推理速度提升14倍，达750 tokens/秒，提供高效低延迟API方案。
-- **[embabel/embabel-agent](https://github.com/embabel/embabel-agent)**（来源：GitHub Trending）
-  > 基于Spring的JVM智能体框架，采用动态规划算法实现目标导向的复杂任务编排，适用于企业级AI应用。
-- **[Agent-Field/pr-af](https://github.com/Agent-Field/pr-af)**（来源：GitHub Trending）
-  > 开源智能代码审查工具，采用动态管道架构自动生成审查计划，基于代码证据深度分析风险。
-- **[trufflesecurity/trufflehog](https://github.com/trufflesecurity/trufflehog)**（来源：GitHub Trending）
-  > 强大的凭证泄露扫描工具，自动发现、分类和验证多种数据源中的秘密，支持800+凭证类型。
-- **[nats-io/nats-server](https://github.com/nats-io/nats-server)**（来源：GitHub Trending）
-  > 高性能、云原生的分布式消息系统，专注于简单、安全与实时通信，是构建现代分布式系统的可靠基础。
-- **[netdata/netdata](https://github.com/netdata/netdata)**（来源：GitHub Trending）
-  > AI驱动的开源实时监控平台，具备每秒级指标采集与零配置部署能力，利用边缘端ML进行异常检测。
-- **[semantica-agi/semantica](https://github.com/semantica-agi/semantica)**（来源：GitHub Trending）
-  > 开源AI基础设施，通过确定性推理（非LLM）构建可审计的知识图谱，满足高风险领域对AI透明度的要求。
-- **[anthropics/skills](https://github.com/anthropics/skills)**（来源：GitHub Trending）
-  > Anthropic官方开源的Claude技能系统，通过加载指令与资源文件夹，使AI能动态学习并执行特定专业任务。
-- **[单条日志行占用超过49KB（ext4）/110KB（btrfs）的systemd-journald磁盘写入](https://news.ycombinator.com/item?id=49290215)**（来源：Hacker News）
-  > 涉及系统级日志行为与磁盘写入的有趣讨论，提醒工程师注意极端场景下的资源消耗。
-- **[选择成熟技术 (2015)](https://news.ycombinator.com/item?id=49289512)**（来源：Hacker News）
-  > 经典文章，提醒工程师在技术选型时权衡稳定性与创新性，具有长期参考价值。
-- **[计算最优并非集群最优](https://news.ycombinator.com/item?id=49289372)**（来源：Hacker News）
-  > 新论文将系统阶段融入扩展定律，强调架构评估应基于集群实际性能，MoE稀疏度取决于训练集群。
-- **[Does anyone run Postgres without PgBouncer?](https://brandur.org/fragments/postgres-without-pgbouncer)**（来源：Lobsters）
-  > 直接探讨在生产环境中是否以及如何绕过连接池器运行PostgreSQL，引发对连接管理最佳实践的思考。
-- **[Agent评测漫谈 —— 由浅入深讲解Agent评测](https://tech.meituan.com/2026/08/07/Agent-Evaluation.html)**（来源：美团技术团队）
-  > 系统阐述Agent评测方法论，提出覆盖结果、过程、效率、风险的四层评估体系，将评测转化为驱动迭代的基础设施。
-- **[让AI离开温室，走向动态世界：MineExplorer揭示顶级多模态大模型被忽视的能力断层](https://tech.meituan.com/2026/07/24/LongCat-MineExplorer.html)**（来源：美团技术团队）
-  > 在Minecraft动态开放世界中评测多模态大模型长期探索能力，发现顶尖模型在多跳任务上性能断崖式下降。
-- **[正式开源！美团 LongCat-2.0 同步开放国产卡推理代码](https://tech.meituan.com/2026/07/12/LongCat-2.0-Open-source.html)**（来源：美团技术团队）
-  > 开源万亿参数大模型，针对国产算力芯片在模型、芯片适配与部署层面进行协同优化，提供可复用技术路径。
+- **[Reducing Text2SQL latency with parameterized query templates](https://aws.amazon.com/blogs/architecture/reducing-text2sql-latency-with-parameterized-query-templates/)**（来源：AWS Architecture Blog）
+  > 通过参数化查询模板与语义缓存，将Text2SQL延迟降低80%、token消耗减少50%，为高频LLM查询提供高效优化路径。
+
+- **[How Cloudflare detects MCP traffic and helps secure it](https://blog.cloudflare.com/mcp-security-updates/)**（来源：Cloudflare Blog）
+  > 通过协议级启发式识别MCP请求，为AI服务提供精细化的网络层安全监控与门户式访问控制能力。
+
+- **[Mapping the AI economy](https://stripe.com/blog/mapping-the-ai-economy)**（来源：Stripe Engineering）
+  > 基于Stripe数据分析全球AI需求热点，为设计支持全球化的数据基础设施提供数据驱动的市场洞察。
+
+- **[Adobe Firefly: Simplified observability with Amazon Managed Prometheus](https://aws.amazon.com/blogs/architecture/adobe-firefly-simplified-observability-with-amazon-managed-prometheus/)**（来源：AWS Architecture Blog）
+  > 将自建Prometheus迁移至AWS托管服务，实现GPU查询性能提升28倍，显著降低监控系统运维复杂度。
+
+- **[infiniflow/ragflow](https://github.com/infiniflow/ragflow)**（来源：GitHub Trending）
+  > 融合RAG与Agent能力的开源引擎，核心是深度文档理解与智能分块，能显著减少幻觉并提供可追溯引用。
+
+- **[alibaba/skill-up](https://github.com/alibaba/skill-up)**（来源：GitHub Trending）
+  > 阿里开源的Agent技能评估工具，通过声明式YAML配置测试用例，支持多引擎与自动分析迭代，形成评估闭环。
+
+- **[actions/actions-runner-controller](https://github.com/actions/actions-runner-controller)**（来源：GitHub Trending）
+  > Kubernetes operator，用于自动编排和缩放GitHub Actions自托管runner，实现云原生CI/CD环境的按需动态扩缩容。
+
+- **[别再给我发巨大的PR了：一点吐槽](https://news.ycombinator.com/item?id=49305558)**（来源：Hacker News）
+  > 对代码审查实践中发送过量、过大PR的吐槽，引发关于工程团队协作与代码提交粒度的深度讨论。
 
 ---
 
 ### AI 动态速览
-## AINews - 2026-08-14
+## AINews - 2026-08-15
 
 > [原文链接](https://news.smol.ai/issues/26-08-13-not-much/)
 
 ## 📰 十大新闻要点
 
-### 1. Google发布Gemini 3.7 Flash，价格减半，性能显著提升
-> Google在发布3.6 Flash仅三周后，快速迭代推出Gemini 3.7 Flash，旨在成为编码、Web开发和代理工作流的新主力模型。新模型在关键基准测试上表现出色（如DeepSWE从49.0%提升至65.3%），并推出了年底50%的价格优惠。其生态系统立即全面铺开，迅速集成到AI Studio、VS Code Agents等工具中。
-- [Google官方发布](https://x.com/Google/status/2087948901265354817)
-- [GoogleDeepMind推文](https://x.com/GoogleDeepMind/status/2087948366294515977)
-- [AI Studio集成](https://x.com/GoogleAIStudio/status/2087949211564183730)
+### 1. [Google发布Gemini 3.7 Flash，价格减半，代码能力大幅提升](https://x.com/Google/status/2087948901265354817)
+> Google在3.6 Flash发布仅三周后推出了Gemini 3.7 Flash，定位为编码、网页开发和代理工作流的新主力模型。在关键编码基准（如DeepSWE）上提升显著，并宣布了至年末50%的促销价格。该模型迅速集成到Gemini API、AI Studio及Cline、Devin等第三方工具中。
 
----
+### 2. [OpenAI与Cerebras合作推出GPT-5.6 Sol “Ultrafast”模式，速度提升14倍](https://x.com/OpenAI/status/2087947721936359705)
+> OpenAI预览了由Cerebras硬件驱动的GPT-5.6 Sol Ultrafast模式，输出速度高达750 tok/s，比标准模式快14倍。这引发了关于在代理系统中，工具延迟即将取代模型延迟成为主要瓶颈的讨论。
 
-### 2. DeepSeek开源其Agent运行时“Harness”，引发架构讨论
-> DeepSeek以MIT许可证开源了DeepSeek Harness的开发者预览版。社区讨论的重点并非基准分数，而是其架构：多种运行模式、可组合插件、可见的执行轨迹以及“KV缓存感知的追加式历史语义”。它被视为一个用于递归自我改进的“操作系统/运行时基底”，而不仅仅是另一个Claude Code克隆。
-- [@tianyi的发布推文](https://x.com/tianyi/status/2087888089759015218)
-- [GitHub仓库](https://github.com/deepseek-ai/deepseek-harness)
-- [产品页面](https://deepseek.com/harness/en/)
+### 3. [DeepSeek开源其代理运行时框架DeepSeek Harness (MIT许可)](https://github.com/deepseek-ai/deepseek-harness)
+> DeepSeek以开发者预览形式开源了DeepSeek Harness。其技术社区的关注点在于其架构设计：插件化、可观测的轨迹、以及支持递归改进的KV-cache感知历史语义，被广泛解读为不仅仅是一个代码工具，而是面向长期自主代理的操作系统/运行时基底。
 
----
+### 4. [DeepSeek发布DeepSeek-V4-Pro模型，并宣布大幅上调API价格](https://www.reddit.com/r/LocalLLaMA/comments/1vn8m1x/deepseek_were_launching_deepseekv4pro_today/)
+> DeepSeek发布了V4-Pro模型，但其新的API定价（峰值时段价格翻倍，缓存命中价格涨幅高达1114%）引发了社区强烈反响。许多用户认为其原有的性价比优势已丧失，可能促使更多本地部署或转向其他提供商。
 
-### 3. OpenAI与Cerebras合作推出GPT-5.6 Sol“超快”模式，速度高达750 tok/s
-> OpenAI预览了GPT-5.6 Sol的“超快”模式，由Cerebras芯片提供支持，API速度可达750 tokens/秒，比标准模式快14倍。此模式主要面向低延迟的语音、客服、编码等场景。这引发了关于代理系统瓶颈将从模型延迟转向工具延迟的广泛讨论。
-- [OpenAI官方发布](https://x.com/OpenAI/status/2087947721936359705)
-- [详细说明](https://x.com/OpenAI/status/2087947724725665908)
+### 5. [MiniMax开源音乐模型MiniMax-Music3，并在视频编辑基准测试中夺冠](https://x.com/MiniMax_AI/status/2087934657354678421)
+> MiniMax推出开源（open-weights）音乐生成模型MiniMax-Music3，可在消费级硬件上运行。同时，其视频模型MiniMax-H3在Video Edit Arena中位列所有模型和开源模型的第一名。
 
----
+### 6. [Arcee开源其内部代理框架NAC，用于长时运行、异步、无人值守任务](https://x.com/latkins/status/2087952185376346507)
+> Arcee开源了NAC（Apache 2.0许可），这是一个在其内部用于支持预训练、后训练和数据管道的异步代理框架。它展示了代理框架在支持跨仓库工程、自动研究和实验管理等长时间后台任务方面的实际应用。
 
-### 4. DeepSeek发布V4-Pro模型，性能跃升但API价格大幅上涨
-> DeepSeek发布了其新的旗舰模型DeepSeek-V4-Pro，在基准测试上表现强劲（如DeepSWE得分从12.8跃升至62.7）。然而，其API定价发生了重大变化，引入了峰值/非峰值计费，对于依赖提示缓存的长上下文/重复工作负载，缓存命中成本增幅高达1114%，削弱了其原有的成本优势。
-- [DeepSeek-V4-Pro Hugging Face仓库](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813)
-- [API定价文档](https://api-docs.deepseek.com/quick_start/pricing/)
+### 7. [推理加速与内核优化：OpenAI的Ultrafast模式、Red Hat的DSpark推测器、Prime Intellect的MoE内核](https://x.com/RedHat_AI/status/2087907190929531028)
+> 推理优化成为焦点：Red Hat发布DSpark，为Kimi-K3模型提供约4倍的解码速度提升；Prime Intellect发布为NVIDIA Blackwell优化的MoE推理CUDA内核。这表明基础设施团队正围绕日益普及的MoE推理端点，在底层服务栈上展开激烈竞争。
 
----
+### 8. [定制评估基准成为产品化平台：Artificial Analysis推出Optima，Vals AI获融资并扩展工具](https://x.com/ArtificialAnlys/status/2087930781050322977)
+> Artificial Analysis发布了Optima平台，允许企业基于内部工作负载和自然语言描述构建自定义基准测试。Vals AI在融资4000万美元的同时，推出了从GitHub仓库生成自定义编码基准的工具。这反映了行业对标准化、第三方评估的迫切需求。
 
-### 5. MiniMax开源音乐和视频模型，登顶视频编辑榜单
-> MiniMax开源了音乐生成模型MiniMax-Music3（8B LLM + 2.7B DiT），可在消费级硬件上运行。同时，其视频模型MiniMax-H3在Video Edit Arena榜单上位居总分及开源模型第一名，得分1390，并领先第二名32分。
-- [MiniMax-Music3发布](https://x.com/MiniMax_AI/status/2087934657354678421)
-- [MiniMax-H3登顶推文](https://x.com/MiniMax_AI/status/2087938612088410302)
+### 9. [技术论文指出代理评估陷阱：技能库可能有害，上下文压缩损失大](https://x.com/omarsar0/status/2087926158432309306)
+> 一系列研究论文讨论了当前评估方法的局限性。一篇与微软相关的论文指出，加载的技能库可能导致代理性能下降（307次失败中，125次为功能失败）；另一研究显示，上下文压缩器仅能保留17%的持久会话约束，除非辅以专用提取器。
 
----
-
-### 6. Nous为Hermes Agent大幅扩展功能，推出Bot Mode
-> Nous大幅扩展了Hermes Agent的插件表面，并新增了实时子代理引导/转录功能以及“Bot Mode”。在该模式下，代理配置文件变成了具有独立聊天、例程、记忆、SOUL.md和代理间消息传递功能的命名机器人。
-- [Teknium关于功能扩展的推文](https://x.com/Teknium/status/2087947369229009119)
-- [Bot Mode发布](https://x.com/Teknium/status/2088003994904113614)
-
----
-
-### 7. Meta的Muse Glimmer 30B获得社区工具支持，训练优化方案公布
-> Meta的开源代理模型Muse Glimmer 30B持续受到关注。Unsloth为其添加了免费的微调笔记本，并支持GRPO强化学习，声称训练速度提升1.5倍，VRAM占用减少50%，并能在24GB VRAM上进行本地训练。
-- [Unsloth优化发布](https://x.com/UnslothAI/status/2087930141217607798)
-- [Ollama集成](https://x.com/ollama/status/2087965142097309871)
-
----
-
-### 8. 主要AI公司签署欧盟AI生成内容透明度准则
-> Anthropic、OpenAI、Google、Meta、Microsoft和Mistral签署了欧盟关于AI生成内容透明度的实践准则。OpenAI表示希望将溯源信号扩展到包括文本在内的所有模态。这预示着AI生成的文本（包括代码）未来可能会包含不可见的数字水印。
-- [来源：文章内容](https://news.smol.ai/issues/26-08-13-not-much/)
-
----
-
-### 9. 阿里云发布超大模型Qwen 3.8-2.4T-A95B
-> 阿里云Qwen团队发布了Qwen3.8-2.4T-A95B模型。这是一个总参数约2.4万亿、活跃参数约950亿的MoE模型。其庞大的规模（bf16格式约需5TB存储）使其本地部署对绝大多数用户来说不切实际，社区主要在讨论可能到来的更小（如27B）的变体。
-- [Qwen3.8-2.4T-A95B发布Reddit帖](https://www.reddit.com/r/LocalLLaMA/comments/1vmgozv/qwen3824ta95b_released/)
-- [Qwen Hugging Face页面](https://huggingface.co/Qwen)
-
----
-
-### 10. Artificial Analysis和Vals AI推出新基准测试平台，强化评估体系
-> Artificial Analysis推出了Optima平台，允许企业基于内部工作负载、自然语言描述或代理轨迹构建和运行自定义基准测试。同时，Vals AI在完成4000万美元融资后，扩展了其基准测试套件，推出用于自定义编码基准的Vals Smith和用于评估AI研发能力的RSI Index。
-- [Optima平台发布](https://x.com/ArtificialAnlys/status/2087930781050322977)
-- [Vals AI公告](https://x.com/ValsAI/status/2087917239966290168)
-
----
+### 10. [行业动态：Meta的本地代理模型受关注，xAI的Grok 4.6在基准测试中接近前沿模型](https://x.com/UnslothAI/status/2087930141217607798)
+> Meta的开源代理模型Muse Glimmer 30B（Apache 2.0）持续吸引关注，Unsloth为其提供了优化的微调方案，支持在24GB VRAM上本地训练。同时，在Reddit讨论中，xAI的Grok 4.6在Artificial Analysis Intelligence Index上与GPT-5.6 Sol并列，展示了激烈的前沿模型竞争格局。
 
 ## 🛠️ 十大工具产品要点
 
-### 1. DeepSeek Harness: 开源的、插件化的Agent运行时
-> DeepSeek Harness是一个MIT许可证的开源Agent运行时（开发预览版），其核心架构特点是“一切皆插件”，支持多种运行模式、可组合性和可观察的执行轨迹，旨在成为代理自我改进的底层基底。
-- [GitHub仓库](https://github.com/deepseek-ai/deepseek-harness)
+### 1. [DeepSeek Harness：开源代理运行时框架 (MIT)](https://github.com/deepseek-ai/deepseek-harness)
+> DeepSeek开源的代理运行时，具有插件化架构、KV-cache感知历史记录和可观测轨迹。旨在作为支持代理递归改进和长时运行任务的底层“操作系统”和开发环境。
 
----
+### 2. [Arcee NAC：用于异步、无人值守工作的开源代理框架 (Apache 2.0)](https://x.com/latkins/status/2087952185376346507)
+> Arcee内部开发的框架，已在其生产管线中用于自动化实验管理、跨仓库工程等任务。强调长时运行和异步执行能力，可通过手机或从其他代理（如Codex）委托任务。
 
-### 2. Cursor Builds: 加速云Agent启动并提升韧性
-> Cursor发布了“builds”功能，使云代理的启动速度提升了3倍，并能在失败时回退到最后一次成功的构建，从而提高了长时间自主工作的韧性和可调试性。
-- [Cursor官方发布](https://x.com/cursor_ai/status/2087941307624980753)
+### 3. [Artificial Analysis Optima：企业级自定义基准测试构建平台](https://x.com/ArtificialAnlys/status/2087930781050322977)
+> 一个SaaS平台，允许企业上传内部数据集或使用代理轨迹，基于自然语言描述生成自定义基准测试，并跟踪质量、成本和任务时间，解决企业难以自行构建有效评估的问题。
 
----
+### 4. [Vals Smith：从任意GitHub仓库生成自定义编码基准测试的工具](https://x.com/ValsAI/status/2087917239966290168)
+> 作为Vals AI新产品线的一部分，该工具旨在帮助团队为特定代码库创建定制化的评估基准，减少对模型厂商自身提供基准的依赖。
 
-### 3. LangChain “Managed Deep Agents”: 文件定义的生产级Agent
-> LangChain团队倡导将生产级代理构建为“管理式深度代理”，即通过文件定义、具有计划任务、记忆、Slack集成和受治理的运行时语义的Harness，而非临时性的聊天机器人。
-- [hwchase17的推文](https://x.com/hwchase17/status/2087950696457162837)
+### 5. [Cursor Builds：云代理启动速度提升3倍，支持故障转移](https://x.com/cursor_ai/status/2087941307624980753)
+> Cursor对其云代理功能进行了重大改进，通过“构建”功能使代理启动速度提升3倍，并引入故障转移到上一个良好构建的机制，增强了长时运行自主工作的韧性和可调试性。
 
----
+### 6. [Unsloth支持Meta Muse Glimmer 30B模型的GRPO RL高效微调](https://x.com/UnslothAI/status/2087930141217607798)
+> Unsloth为Meta的开源代理模型Muse Glimmer 30B添加了免费的微调笔记本，声称使用其优化的GRPO强化学习方案，训练速度提升1.5倍，VRAM占用减少50%，并支持在24GB VRAM的消费级GPU上进行本地训练。
 
-### 4. Prime Intellect Prime Flash MoE: 针对Blackwell优化的CUDA内核
-> Prime Intellect发布了一套针对NVIDIA Blackwell GPU优化的CUDA内核，用于MoE模型推理。它融合了路由感知的GEMM、SwiGLU激活、量化等操作，并提供了BF16和MXFP8两种路径的基准测试。
-- [Prime Intellect发布](https://x.com/PrimeIntellect/status/2087969614156247504)
+### 7. [Prime Flash MoE：为NVIDIA Blackwell优化的MoE推理CUDA内核](https://x.com/PrimeIntellect/status/2087969614156247504)
+> Prime Intellect发布了一套优化的CUDA内核，专门针对混合专家（MoE）模型的推理，融合了路由、GEMM、SwiGLU激活、量化等操作，并在B200 GPU上对BF16和MXFP8精度进行了基准测试，旨在提升MoE模型的服务效率。
 
----
+### 8. [Nous Hermes Agent Bot Mode：将代理配置转化为持久化、可互操作的命名机器人](https://x.com/Teknium/status/2088003994904113614)
+> Nous大幅扩展了其Hermes代理的插件生态，并引入了“Bot Mode”。该模式允许将代理配置文件转化为拥有独立聊天、例程、记忆、设置文件（SOUL.md）及机器人间消息传递功能的持久化命名机器人。
 
-### 5. Artificial Analysis Optima: 企业自定义AI基准测试平台
-> 该平台允许企业上传自己的数据集或从自然语言描述生成基准，用于评估内部工作负载下的模型质量、单任务成本和单任务时间，旨在解决企业难以构建良好自定义评估的痛点。
-- [Optima平台发布公告](https://x.com/ArtificialAnlys/status/2087930781050322977)
+### 9. [LangChain Managed Deep Agents：将生产代理定义为带有调度、记忆和集成功能的文件](https://x.com/hwchase17/status/2087950696457162837)
+> LangChain的“托管深度代理”理念，将生产环境中的代理框架为由文件定义的实体，具备调度、持久记忆、Slack集成以及受管控的运行时语义，推动代理从临时聊天机器人向可靠软件组件的范式转变。
 
----
-
-### 6. Red Hat AI DSpark: 用于Kimi-K3的推测解码加速器
-> Red Hat AI发布了一个推测解码器DSpark，针对Kimi-K3模型进行了优化。它声称在数学推理任务上可将单用户解码速度从约110 tok/s提升至约435 tok/s（约4倍），并能通过跨草案层的滑动窗口注意力在20K上下文长度下保持稳定的接受率。
-- [Red Hat AI发布](https://x.com/RedHat_AI/status/2087907190929531028)
-
----
-
-### 7. Sakana Chat更新：支持免费无登录的代码执行
-> Sakana AI Labs更新了其聊天应用Sakana Chat（由Fugu和Namazu模型驱动），新增了免费且无需登录的代码执行功能，支持交互式应用/游戏/工具生成以及电子表格/商业分析工作流。
-- [Sakana AI Labs公告](https://x.com/SakanaAILabs/status/2087880850318696481)
-- [用例展示](https://x.com/SakanaAILabs/status/2087956599214391505)
-
----
-
-### 8. Unsloth: 针对Muse Glimmer 30B的优化本地训练方案
-> Unsloth为Meta的Muse Glimmer 30B模型添加了免费的微调笔记本和GRPO强化学习支持。其方案声称可将训练速度提升1.5倍，VRAM占用减少50%，并支持在24GB VRAM的消费级GPU上进行本地训练。
-- [Unsloth优化发布](https://x.com/UnslothAI/status/2087930141217607798)
-
----
-
-### 9. Nous Hermes Agent Bot Mode: 将代理配置文件转化为命名机器人
-> Nous为Hermes Agent引入的Bot Mode功能，可以将代理配置文件转化为具有独立聊天上下文、自定义例程、持久记忆、指令文件（SOUL.md）以及机器人间消息传递能力的命名机器人实体。
-- [Bot Mode发布公告](https://x.com/Teknium/status/2088003994904113614)
-
----
-
-### 10. Arcee NAC: 用于长期异步任务的开源内部代理Harness
-> Arcee开源了其内部代理Harness NAC（Apache 2.0许可），专门用于处理长时间运行、异步、无需人工干预的任务。据称，在过去三个月中，该框架已驱动了其预训练、后训练和数据管道中相当一部分代码提交。
-- [Arcee NAC发布](https://x.com/latkins/status/2087952185376346507)
-- [相关推文](https://x.com/latkins/status/2087952198919753847)
+### 10. [DeepSeek V4-Pro模型权重发布 (Hugging Face)](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813)
+> DeepSeek在Hugging Face上发布了其最新模型V4-Pro的权重，支持用户进行本地或自托管部署。尽管发布时曾因配置文件错误短暂下架，但它为需要更强大模型能力但不愿支付新API高价的用户提供了另一个选择。
 
 ---
 
 ### 推荐阅读
 - [Cloudflare Blog](https://blog.cloudflare.com/zh-cn/)
-- [美团技术团队](https://static.zou8944.com/newsletter/2026-08-14/meituan_2026-08-14.md)
+- [美团技术团队](https://static.zou8944.com/newsletter/2026-08-15/meituan_2026-08-15.md)
+
+# 往日新闻
+
+#### [2026-08-14](https://static.zou8944.com/newsletter/2026-08-14/newsletter.md)
+
+#### [2026-08-13](https://static.zou8944.com/newsletter/2026-08-13/newsletter.md)
+
+#### [2026-08-12](https://static.zou8944.com/newsletter/2026-08-12/newsletter.md)
+
+#### [2026-08-11](https://static.zou8944.com/newsletter/2026-08-11/newsletter.md)
+
+#### [2026-08-10](https://static.zou8944.com/newsletter/2026-08-10/newsletter.md)
+
+#### [2026-08-09](https://static.zou8944.com/newsletter/2026-08-09/newsletter.md)
+
+#### [2026-08-08](https://static.zou8944.com/newsletter/2026-08-08/newsletter.md)
+
+#### [2026-08-07](https://static.zou8944.com/newsletter/2026-08-07/newsletter.md)
+
+#### [2026-08-06](https://static.zou8944.com/newsletter/2026-08-06/newsletter.md)
+
+#### [2026-08-05](https://static.zou8944.com/newsletter/2026-08-05/newsletter.md)
+
+#### [2026-08-04](https://static.zou8944.com/newsletter/2026-08-04/newsletter.md)
+
+#### [2026-08-03](https://static.zou8944.com/newsletter/2026-08-03/newsletter.md)
+
+#### [2026-08-02](https://static.zou8944.com/newsletter/2026-08-02/newsletter.md)
+
+#### [2026-08-01](https://static.zou8944.com/newsletter/2026-08-01/newsletter.md)
+
+#### [2026-07-31](https://static.zou8944.com/newsletter/2026-07-31/newsletter.md)
+
+#### [2026-07-30](https://static.zou8944.com/newsletter/2026-07-30/newsletter.md)
+
+#### [2026-07-29](https://static.zou8944.com/newsletter/2026-07-29/newsletter.md)
+
+#### [2026-07-28](https://static.zou8944.com/newsletter/2026-07-28/newsletter.md)
+
+#### [2026-07-27](https://static.zou8944.com/newsletter/2026-07-27/newsletter.md)
+
+#### [2026-07-26](https://static.zou8944.com/newsletter/2026-07-26/newsletter.md)
+
+#### [2026-07-25](https://static.zou8944.com/newsletter/2026-07-25/newsletter.md)
+
+#### [2026-07-24](https://static.zou8944.com/newsletter/2026-07-24/newsletter.md)
+
+#### [2026-07-23](https://static.zou8944.com/newsletter/2026-07-23/newsletter.md)
+
+#### [2026-07-22](https://static.zou8944.com/newsletter/2026-07-22/newsletter.md)
+
+#### [2026-07-21](https://static.zou8944.com/newsletter/2026-07-21/newsletter.md)
+
+#### [2026-07-20](https://static.zou8944.com/newsletter/2026-07-20/newsletter.md)
+
+#### [2026-07-19](https://static.zou8944.com/newsletter/2026-07-19/newsletter.md)
+
+#### [2026-07-18](https://static.zou8944.com/newsletter/2026-07-18/newsletter.md)
+
+#### [2026-07-17](https://static.zou8944.com/newsletter/2026-07-17/newsletter.md)
+
+#### [2026-07-16](https://static.zou8944.com/newsletter/2026-07-16/newsletter.md)
+
