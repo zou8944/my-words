@@ -1,168 +1,137 @@
 ## 今日要闻
 
-<sub> 生成时间：2026-08-17 08:39:26</sub>
+<sub> 生成时间：2026-08-18 08:40:50</sub>
 
 
 ---
 
-- **[How Cloudflare detects MCP traffic and helps secure it](https://blog.cloudflare.com/mcp-security-updates/)**（来源：Cloudflare Blog）
-  > Cloudflare通过协议级启发式识别Model Context Protocol请求，实现企业网络内AI服务流量的可视化与统一管控，防范影子AI风险。
+- **[Secure all your internal vibe-coded applications — in one click](https://blog.cloudflare.com/workers-protected-by-access/)**（来源：Cloudflare Blog）
+  > Cloudflare Access现可直接应用于Workers，在所有部署路径统一强制执行安全策略，简化了后端应用的访问控制配置，提升开发效率与安全性。
 
-- **[Reducing Text2SQL latency with parameterized query templates](https://aws.amazon.com/blogs/architecture/reducing-text2sql-latency-with-parameterized-query-templates/)**（来源：AWS Architecture Blog）
-  > 通过参数化查询模板与智能缓存层优化Text2SQL应用，减少80%延迟和50%以上LLM令牌消耗，为RAG等应用提供高效架构参考。
+- **[Serverless vehicle tracking at scale: Bosch L.OS on AWS](https://aws.amazon.com/blogs/architecture/serverless-vehicle-tracking-at-scale-bosch-l-os-on-aws/)**（来源：AWS Architecture Blog）
+  > 博世通过AWS无服务器架构（ECS/Lambda/MSK）构建高扩展性事件驱动平台，为处理实时数据流与构建可观察性系统提供参考。
 
-- **[Recovery strategies to meet data residency requirements](https://aws.amazon.com/blogs/architecture/recovery-strategies-to-meet-data-residency-requirements/)**（来源：AWS Architecture Blog）
-  > 介绍三种灾难恢复策略以满足数据驻留要求，为后端工程师在合规约束下设计高韧性分布式系统提供具体方案。
+- **[Track generative AI costs with Amazon Bedrock inference profiles](https://aws.amazon.com/blogs/architecture/track-generative-ai-costs-with-amazon-bedrock-inference-profiles/)**（来源：AWS Architecture Blog）
+  > 通过Bedrock推理配置文件和成本标签实现部门级AI成本追踪，是LLM应用成本管理与资源优化的重要工程实践。
 
-- **[How We’re Building Scam Alert on WhatsApp With End-to-End Encryption and Verifiability Guarantees](https://engineering.fb.com/2026/08/12/security/how-were-building-scam-alert-whatsapp/)**（来源：Meta Engineering）
-  > 在端到端加密环境下构建AI诈骗警报系统，通过可验证性保证平衡安全与隐私，为加密环境集成AI提供工程实践。
+- **[Scaling patterns for self-organizing multi-agent clusters with Kiro](https://aws.amazon.com/blogs/architecture/scaling-patterns-for-self-organizing-multi-agent-clusters-with-kiro/)**（来源：AWS Architecture Blog）
+  > 提出用S3共享状态替代中心编排器，实现AI智能体自组织协调，为构建可扩展的分布式多智能体系统提供新架构思路。
 
-- **[Using the GitHub Copilot SDK for Java](https://github.blog/engineering/using-the-github-copilot-sdk-for-java/)**（来源：GitHub Engineering）
-  > GitHub发布Java SDK，允许通过注解、虚拟线程等方式原生调用AI编程助手，为后端开发者提供高效集成AI的新路径。
+- **[Previewing Ultrafast mode: GPT-5.6 Sol at up to 14X the speed](https://openai.com/index/previewing-ultrafast)**（来源：OpenAI Blog）
+  > OpenAI推出Ultrafast API，通过硬件加速将GPT-5.6 Sol推理速度提升14倍，为集成高吞吐低延迟AI服务提供了具体工程方案。
 
-- **[agentsview](https://github.com/kenn-io/agentsview)**（来源：GitHub Trending）
-  > 针对Claude Code、Codex等AI编码代理的本地化管理工具，支持会话追踪、成本统计与分析，数据本地存储，适合监控代理使用开销。
+- **[From assistance to execution: How enterprises put AI to work](https://openai.com/index/how-enterprises-put-ai-to-work)**（来源：OpenAI Blog）
+  > 研究揭示企业将AI从辅助工具转向执行系统的实践模式，为后端架构集成Agent能力提供商业落地洞察。
 
-- **[ragflow](https://github.com/infiniflow/ragflow)**（来源：GitHub Trending）
-  > 开源RAG引擎，融合检索增强生成与Agent能力，支持深度文档理解与智能分块，可构建低幻觉、高可靠的企业级AI应用。
+- **[aldinokemal/go-whatsapp-web-multidevice](https://github.com/aldinokemal/go-whatsapp-web-multidevice)**（来源：GitHub Trending）
+  > 基于Go构建的WhatsApp REST API服务器，支持多账户、Webhooks及MCP协议集成，为Go工程师开发消息自动化服务提供参考。
 
-- **[compozy/compozy](https://github.com/compozy/compozy)**（来源：GitHub Trending）
-  > 面向AI智能体的操作系统，用于整合Claude Code、Codex等CLI工具，实现智能体任务分配、协作与共享记忆，支持后台运行与Web管理。
+- **[mostlygeek/llama-swap](https://github.com/mostlygeek/llama-swap)**（来源：GitHub Trending）
+  > Go编写的本地AI模型管理工具，支持热切换多种兼容OpenAI API的推理服务器，适用于本地LLM开发工作流。
 
-- **[Emerging patterns and problems in multi-agent systems](https://news.ycombinator.com/item?id=49316271)**（来源：Hacker News）
-  > 深度讨论新兴多智能体系统中的设计模式、协调挑战与潜在问题，为构建复杂AI系统提供架构思考。
+- **[harness/harness](https://github.com/harness/harness)**（来源：GitHub Trending）
+  > 开源端到端开发平台，集成代码托管、CI/CD、托管开发环境及制品库，提供统一DevOps工作流参考。
 
-- **[Protocol Buffers finally has LSP support, you‘re welcome.](https://www.reddit.com/r/programming/comments/1vq4pbv/protobuf_finally_has_lsp_support_youre_welcome_buf/)**（来源：Reddit Programming）
-  > Protobuf 现已支持语言服务器协议，显著提升开发体验，是protobuf/gRPC工具链的重要更新。
+- **[OWASP/www-project-api-security-testing-framework](https://github.com/OWASP/www-project-api-security-testing-framework)**（来源：GitHub Trending）
+  > OWASP开源API安全测试框架，基于Java 21虚拟线程实现高并发扫描，深度检测BOLA等漏洞，可集成至CI/CD。
 
-- **[AI Software Development – What Does The Data Say?](https://codemanship.wordpress.com/2026/08/12/ai-software-development-what-does-the-data-say/)**（来源：Lobsters）
-  > 基于实证数据探讨AI辅助软件开发的实际效果，提供超越炒作的冷静分析，对评估AI工具价值有参考意义。
+- **[Qwen 3.8 27B is excellent, but it defaults to wildly overthinking things](https://simonwillison.net/2026/Aug/16/qwen-38-27b/)**（来源：Lobsters）
+  > 深度分析Qwen 3.8 27B模型在默认设置下过度思考的问题，对评估和使用LLM有重要实践参考。
 
-- **[Agent评测漫谈 —— 由浅入深讲解Agent评测](https://tech.meituan.com/2026/08/07/Agent-Evaluation.html)**（来源：美团技术团队）
-  > 系统阐述Agent评测需从“答案评测”转向“行为评测”，提出全链路观测、二元化Rubric及Task轨迹评估等前沿实践方法。
+- **[Ask HN: GitHub的替代方案](https://news.ycombinator.com/item?id=49331033)**（来源：Hacker News）
+  > 讨论GitHub频繁宕机背景下，代码托管平台的替代方案与可靠性，反映当前基础设施痛点。
 
-- **[下一代搜索智能体评测基准！美团开源LoHoSearch，用知识图谱校准AI能力认知](https://tech.meituan.com/2026/07/24/LongCat-LoHoSearch.html)**（来源：美团技术团队）
-  > 基于知识图谱自动生成高难度搜索评测基准，系统控制搜索空间结构复杂度，有效区分模型长程推理能力。
+- **[A practical workflow for LLM-assisted development](https://yogthos.net/posts/2026-08-17-llm-workflow.html)**（来源：Lobsters）
+  > 分享一套实用的LLM辅助开发工作流，涵盖代码生成、测试与调试等环节的具体实践方法论。
 
-- **[美团正式发布 CatPaw：全场景 AI Agent，从个人提效到企业智能化](https://tech.meituan.com/2026/07/28/CatPaw-LongCat.html)**（来源：美团技术团队）
-  > 基于LongCat模型构建的全场景AI Agent平台，支持多端协作、多Agent协同架构与Managed Agents托管服务，提供企业级Agent运维方案。
+- **[A Preview of DuckDB v2.0](https://duckdb.org/2026/08/17/duckdb-20-highlights.html)**（来源：Lobsters）
+  > DuckDB v2.0版本预览，作为高性能嵌入式分析数据库的重要更新，对后端数据处理有直接参考价值。
+
+- **[KDD'26美团学术论文精选及KDD Cup'26 DataAgents赛道冠军思路解读](https://tech.meituan.com/2026/08/13/KDD-2026-meituan-papers.html)**（来源：美团技术团队）
+  > 美团在KDD'26展示工业级大模型、推荐系统、智能体等前沿研究，涵盖系统优化与落地架构，极具深度。
 
 ---
 
 ### AI 动态速览
-## AINews - 2026-08-17
+## AINews - 2026-08-18
 
-> [原文链接](https://news.smol.ai/issues/26-08-13-not-much/)
+> [原文链接](https://news.smol.ai/issues/26-08-17-not-much/)
 
 ## 📰 十大新闻要点
 
-### 1. [Google 发布 Gemini 3.7 Flash：编码与 Agent 能力大幅提升，价格减半](https://x.com/Google/status/2087948901265354817)
-> 谷歌仅在 3.6 Flash 发布三周后便迅速推出了 Gemini 3.7 Flash，定位为其在编码、Web 开发和 Agent 工作流方面的新主力模型。基准测试显示其在 DeepSWE、FrontierCode 和 AutomationBench 等关键指标上均有显著提升。发布时提供限时 50% 折扣，并迅速在 Gemini API、AI Studio、Android Studio 及 Cline、Devin 等第三方工具中完成生态集成。
+### 1. [OpenAI 启动超大规模基础设施建设，俄亥俄州项目规划达8GW](https://x.com/kimmonismus/status/2089371190276092299)
+> 有多条信息表明 OpenAI 正在垂直整合其基础设施栈。`@markchen90` 透露了超过 **4GW** 的 NVIDIA 算力承诺。更引人注目的是 `@kimmonismus` 补充的细节：一个位于俄亥俄州的 **8GW** 园区，由 SB Energy 负责建设和运营，NVIDIA 支持首批 4.25GW，预计建设周期长达**至2032年**。这标志着 AI 算力竞争已从 GPU 供应延伸到对电力、数据中心、芯片和长期使用权的全方位控制。
 
----
+### 2. [Cursor 推出代码托管平台 Origin，向全栈AI原生IDE演进](https://x.com/cursor_ai/status/2089399057659596847)
+> AI 代码编辑器 Cursor 宣布推出其代码托管产品 **Origin**。这不仅仅是一个 GitHub 的竞品，更表明 Cursor 意图掌控从代码仓库、智能体、代码审查到部署钩子的完整开发循环。虽然 GitHub 仍可同步，但其战略方向清晰：AI 辅助编码产品正试图吸收周边的平台生态，而不仅仅是提供自动补全。
 
-### 2. [OpenAI 联合 Cerebras 推出 GPT-5.6 Sol “Ultrafast” 模式，速度提升 14 倍](https://x.com/OpenAI/status/2087947721936359705)
-> OpenAI 预览了由 Cerebras 驱动的 GPT-5.6 Sol “Ultrafast” 模式，推理速度高达 750 tok/s，比标准模式快 14 倍。该模式最初面向部分 API 客户开放，适用于语音、客服、编码等低延迟场景。此事件引发了关于在 Agent 系统中，“工具延迟”而非“模型延迟”即将成为瓶颈的广泛讨论。
+### 3. [Qwen3.8-27B 模型性能逼近前沿模型，本地模型能力跃升](https://x.com/cline/status/2089425906569977896)
+> 据 `@cline` 透露，阿里的 **Qwen3.8-27B** 模型在人工智能分析智能指数（Artificial Analysis Intelligence Index）上的得分已达到 **DeepSeek V4-Pro / GPT-5.6 Luna** 级别，这被认为是开源/本地模型首次触及该能力层级。Ollama 迅速为此模型提供了本地部署路径，用户报告其已可用于长上下文本地编码场景。
 
----
+### 4. [Stripe 拟以超70亿美元收购模型路由聚合商 OpenRouter](https://x.com/AndrewCurran_/status/2089088356676440483)
+> Bloomberg 报道 Stripe 已同意收购 OpenRouter，交易金额超过 70 亿美元。这凸显了模型访问/路由层的巨大价值。然而，`@kimmonismus` 等评论员也指出，如果该层的加价空间因零加价竞争者的出现而被压缩至零，其市场地位可能很脆弱。这引发了关于模型经纪层利润持久性的讨论。
 
-### 3. [DeepSeek 开源 DeepSeek Harness：一个面向自我改进 Agent 的 OS 级运行时](https://github.com/deepseek-ai/deepseek-harness)
-> DeepSeek 以 MIT 协议开源了其 Agent Harness 开发者预览版。社区热议其架构设计，包括多种运行模式、可组合插件、可见的执行轨迹以及 KV 缓存感知的追加历史语义。其被解读为不只是一个代码工具，而是作为支持递归自我改进的 Agent 基础操作系统/运行时。
+### 5. [多智能体协作从演示走向实用，专业化与持久上下文成关键](https://x.com/Teknium/status/2089430781668303090)
+> 多条推文展示了多智能体编排正从演示走向实用化模式。`@tonbistudio` 展示了 Hermes 桌面机器人基于推断的专业技能自动认领游戏开发任务；`@Teknium` 正式重新介绍了 Bot Mode，其中智能体维护独立的记忆、技能、工具和跨智能体通信。共同趋势是专业化分工加上持久化上下文，而非简单的“智能体对话”。
 
----
+### 6. [推理与记忆正成为独立的扩展方向，提升模型效率与能力](https://x.com/OpenAIDevs/status/2089374232040132764)
+> 多个案例表明，通过**潜在推理和记忆机制**提升模型能力已成为一个独立的扩展维度。例如，一个 150M 参数的模型通过潜在空间推理和临时记忆，在 ARC-AGI-1 上以极低成本达到可观分数。OpenAI 开发者账号也报告，通过**保留推理和压缩策略**，GPT-5.6 Sol 在 ARC-AGI-3 上的得分从 13.3% 提升至 38.3%，同时输出 token 用量减少了约 6 倍。
 
-### 4. [Qwen 发布 2.4T 参数的 MoE 模型 Qwen3.8-2.4T-A95B](https://www.reddit.com/r/LocalLLaMA/comments/1vmgozv/qwen3824ta95b_released/)
-> Qwen 发布了其最新超大型 MoE 模型 Qwen3.8-2.4T-A95B，总参数约 2.4 万亿，每 token 活跃参数约 950 亿。模型在 bf16 格式下需要约 4.8-5TB 显存/存储，使得完整本地部署对消费级硬件不切实际，社区主要关注其小参数版本（如 27B）的可用性。
+### 7. [评估体系从模型评估转向整体解决方案评估，成为真正杠杆点](https://x.com/HamelHusain/status/2089438973714440196)
+> `Hamel Husain` 更新的评估技能插件新增了错误发现工作流，可将模型输出/轨迹转化为带注释的失败模式和集群审查界面。这与 `Agent Arena` 新增的基于 170 万以上真实会话的“每任务成本”和“类别过滤器”相结合，表明该领域正从模型级评估缓慢转向整体解决方案级的度量，涵盖路由、分解、记忆、验证循环和总完成成本。
 
----
+### 8. [Anthropic Claude 水印部署引发技术政策争论，涉及AI内容信任架构](https://x.com/random_walker/status/2089414077286166911)
+> Anthropic 对 Claude 输出进行水印标记的举措引发了一场严肃的技术政策辩论。`@random_walker` 等评论员指出，**保质量的文本水印在技术上是可行的**，但 Anthropic 的部署在沟通、验证器透明度和用户信任框架上存在失误。争论焦点已超越“是否可行”，转向强制性的隐形来源标记是否会改变写作规范、作者期望和用户自主性，这正从抽象政策问题演变为产品架构考量。
 
-### 5. [DeepSeek V4-Pro 模型发布，但 API 价格大幅上涨引发用户迁移](https://www.reddit.com/r/LocalLLaMA/comments/1vn8m1x/deepseek_were_launching_deepseekv4pro_today/)
-> DeepSeek 发布了 DeepSeek-V4-Pro 模型并公开了权重。然而，其 API 定价发生重大变化，引入峰谷定价，缓存输入价格最高上涨 1114%。这一变动大幅削弱了 DeepSeek 的成本优势，导致部分用户考虑转向本地部署或其他提供商。
+### 9. [语音合成(TTS)质量快速提升，Cartesia 领跑主要公共榜单](https://x.com/ArtificialAnlys/status/2089400880688976062)
+> 据人工智能分析（Artificial Analysis）报告，Cartesia 的 **Sonic 3.6** 在“供应商语音”和“受控语音”榜单上均排名第一，Cartesia 的发布帖声称其自然度在 **44 种语言**中得到改进。技术要点在于质量与吞吐量的结合：人工智能分析引用其速度为 **136.1 字符/秒**，明显快于其他几个同类高端系统。
 
----
-
-### 6. [研究揭示可从 Claude/GPT API 中解码隐藏的“推理痕迹”](https://www.reddit.com/r/LocalLLaMA/comments/1vmawd2/hidden_reasoning_from_claude_and_gpt_are_decoded/)
-> 一篇被引用的论文展示了一种方法，可以从 Claude 和 GPT 模型的 API 响应中提取隐藏的推理 token。泄露的示例显示模型在解决数学问题时，其内部推理过程包含了记忆检索、自我修正和不确定性表达，引发了关于基准测试污染和闭源模型与开源模型能力差距的讨论。
-
----
-
-### 7. [评估平台和工具化成为新产品品类：Artificial Analysis 推出 Optima，Vals AI 获巨额融资](https://x.com/ArtificialAnlys/status/2087930781050322977)
-> Artificial Analysis 推出了 Optima 平台，允许企业针对内部工作负载构建和运行自定义基准测试。同时，Vals AI 宣布完成 4000 万美元融资，并发布了用于从代码仓库生成自定义编码基准测试的工具 Vals Smith。这标志着高质量、定制化的 AI 评估正在成为关键的基础设施。
-
----
-
-### 8. [MiniMax 开源音乐模型 MiniMax-Music3，视频模型 MiniMax-H3 登顶 Video Edit Arena](https://x.com/MiniMax_AI/status/2087934657354678421)
-> MiniMax 发布了开源权重的音乐生成模型 MiniMax-Music3（8B LLM + 2.7B DiT），可根据提示和歌词生成完整歌曲，支持在消费级硬件上运行。其视频模型 MiniMax-H3 在 Video Edit Arena 总体排名中位居第一，以 1390 分领先。
-
----
-
-### 9. [OpenAI 为 ChatGPT/Codex 增加 “Computer History” 上下文功能](https://x.com/OpenAI/status/2087996496088297746)
-> OpenAI 推出了 “Computer History” 功能，允许用户选择性地将计算机的应用和网站活动历史作为上下文提供给 ChatGPT 和 Codex。该功能包含时间线视图和用户控制选项，旨在为 AI 助手提供更丰富的用户环境信息。
-
----
-
-### 10. [Grok 4.6 基准测试表现强劲，在多项指标上与 GPT-5.6 Sol 持平且价格更低](https://www.reddit.com/r/singularity/comments/1vmhtfu/grok_46_is_an_equivalent_to_sol_56_according_to/)
-> 根据 Artificial Analysis Intelligence Index 的基准测试，xAI 的 Grok 4.6 在综合指数上与 OpenAI 的 GPT-5.6 Sol 并列。有评论指出 Grok 4.6 的价格（$2/M 输入，$6/M 输出）远低于 Sol（$5/M 输入，$30/M 输出），且据称是一个更小的 1.5T 参数模型，凸显了其性价比。
+### 10. [推理强化学习(RL)被指仅改变少量关键 token，新方法可千倍效率复制其收益](https://arxiv.org/abs/2605.06241)
+> 一篇名为 **ReasonMaxxer** 的论文（Akgül, 2026）声称，用于提升推理能力的强化学习（RL）带来的改进主要源于**稀疏的策略修正**，而非新学到的推理能力。跨模型家族和 RL 算法的分析发现，仅有约 **1-3%** 的 token 位置发生变化，且集中在高熵的“决策点”。该论文提出了一个名为 ReasonMaxxer 的无 RL 方法，据称能以约 **1/1000** 的计算量匹配或超越全 RL 训练在数学基准上的表现。
 
 ---
 
 ## 🛠️ 十大工具产品要点
 
-### 1. [Google Gemini 3.7 Flash 生态快速集成](https://x.com/GoogleAIStudio/status/2087949211564183730)
-> Gemini 3.7 Flash 在发布后迅速集成到 Google 的全套开发工具中，包括 Gemini API、AI Studio、Android Studio、Antigravity、Managed Agents 等，并同步在 Cline、Devin、VS Code Agents 等外部编码工具栈中可用。
+### 1. [Ollama 迅速为本地用户部署 Qwen3.8 模型优化路径](https://x.com/ollama/status/2089454609765146744)
+> 本地大模型运行工具 Ollama 迅速行动，为性能逼近前沿的 **Qwen3.8-27B** 模型优化了本地部署路径，使得开发者可以更便捷地在本地硬件上体验和利用这个强大的开源模型。
 
----
+### 2. [OpenRouter 和 Vercel 同时降低模型 API 访问价格](https://x.com/OpenRouter/status/2089406144297214339)
+> 在 Stripe 收购 OpenRouter 的背景下，模型路由服务市场竞争加剧。**OpenRouter 降低了 GPT-5.6 Sol 的定价**，而 **Vercel 也同步降低了其 AI Gateway 的价格**。这进一步印证了模型经纪正从稳定的“收费站”变为价格战战场。
 
-### 2. [OpenAI GPT-5.6 Sol Ultrafast API（Cerebras 驱动）](https://x.com/OpenAI/status/2087947724725665908)
-> OpenAI 通过 Cerebras 提供的专用硬件加速，为 GPT-5.6 Sol 推出了 “Ultrafast” 推理模式，API 速度高达 750 tok/s，旨在服务对延迟敏感的企业级 Agent 和实时工作流。
+### 3. [LangChain 展示通过 LangSmith 沙箱实现智能体工作空间隔离](https://x.com/LangChain/status/2089422681481592910)
+> LangChain 的 monday.com 案例研究重点介绍了通过 **LangSmith Sandboxes** 为智能体提供隔离工作空间。这对于执行 CSV 分析或地图生成等迭代工作的智能体至关重要，表明“智能体”产品的质量越来越依赖于权限管理和执行隔离，而非仅仅是推理质量。
 
----
+### 4. [Hamel Husain 更新 eval-skills 插件，新增错误发现工作流](https://x.com/HamelHusain/status/2089438973714440196)
+> 该更新为评估插件增加了一个工作流，能够自动将模型输出和运行轨迹转化为**带注释的失败模式**和可集群审查的界面。这为系统性地识别、分析和修复 AI 系统中的问题提供了强大的工具支持。
 
-### 3. [DeepSeek Harness 开源 Agent 运行时框架](https://github.com/deepseek-ai/deepseek-harness)
-> DeepSeek 开源的 Agent Harness 是一个基于插件化架构、支持 KV 缓存和轨迹可视化的开发运行时。它被设计为支持长时间运行、可组合且能自我改进的 Agent 系统的底层基础设施。
+### 5. [MiniMax H3 模型通过 ComfyUI 插件扩展本地 AI 艺术创作工作流](https://github.com/thaakeno/ComfyUI-MiniMax-H3-Studio)
+> 尽管 MiniMax H3 主要被定位为视频生成模型，但其出色的文本到图像提示遵循能力引发了关注。社区开发者为此推出了 **ComfyUI-MiniMax-H3-Studio** 插件，支持文生图、图生图、参考图编辑、多达 9 张有序参考、Qwen3-VL 提示词分析等功能，极大丰富了本地 AI 艺术创作的工作流。
 
----
+### 6. [Vanta 为其 TrustVanta 智能体新增计算机使用能力，用于截图证据捕获](https://x.com/christinacaci/status/2089405423912616073)
+> Vanta 的新功能为其企业智能体增加了**计算机使用能力**，旨在解决一个真实的企业工作流痛点：在没有 API 接口的情况下，自动捕获截图作为合规或审计证据。这是 AI 智能体在企业自动化场景中的一个具体应用产品化。
 
-### 4. [Arcee NAC：用于长时间异步 Agent 工作的开源框架](https://x.com/latkins/status/2087952198919753847)
-> Arcee 开源了其内部使用的 Agent 框架 NAC（Apache 2.0），专为长时间运行、异步、无需干预的任务设计。该框架已用于其预训练、后训练和数据流水线中的大量代码提交和实验管理。
+### 7. [GitSkills 数据集发布，挖掘约380万个 SKILL.md 文件以构建智能体技能库](https://x.com/dair_ai/status/2089457322833936598)
+> 一个名为 **GitSkills** 的数据集被发布，据称通过挖掘了约 **380 万个 SKILL.md 文件**来探索智能体技能的发现、包装和触发管理。这表明围绕智能体技能库的生态系统正在走向成熟，为构建可复用、可发现的智能体能力提供了基础数据。
 
----
+### 8. [NVIDIA Nemotron 3.5 Lightning：一个专为高吞吐智能体执行设计的30B MoE模型](https://x.com/cwolferesearch/status/2089419256354033911)
+> `@cwolferesearch` 讨论了 NVIDIA 的 **Nemotron 3.5 Lightning** 模型。这是一个 **30B 参数、3B 激活**的 MoE（混合专家）模型，专为高吞吐量智能体执行而训练。它支持**多 token 预测**以进行推测性解码，并提供了额外的草案生成器/量化检查点，代表了从架构层面而非仅量化层面提升推理效率的趋势。
 
-### 5. [Red Hat AI DSpark：用于 Kimi-K3 模型的开源推测解码加速器](https://x.com/RedHat_AI/status/2087907190929531028)
-> Red Hat AI 发布了 DSpark，一个针对 Kimi-K3 模型的推测解码器。它声称可将解码速度从约 110 tok/s/user 提升至约 435 tok/s/user（约 4 倍），并通过跨草稿层的滑动窗口注意力机制保持了高达 20K 上下文的稳定性。
+### 9. [人工智能分析(AA) 推出基于170万+真实会话的“每任务成本”与“类别过滤器”评估功能](https://x.com/arena/status/2089464753567797321)
+> **Agent Arena** 的评估工具增加了基于 **170 万以上真实世界会话**的“每任务成本”和“类别过滤器”。这为评估 AI 智能体和应用提供了更精细、更贴近真实使用情况的度量标准，帮助开发者理解系统在不同任务类型下的效率和成本。
 
----
-
-### 6. [Prime Intellect Prime Flash MoE：面向 Blackwell GPU 优化的 MoE 推理 CUDA 内核](https://x.com/PrimeIntellect/status/2087969614156247504)
-> Prime Intellect 发布了一套为 NVIDIA Blackwell (B200) GPU 优化的 CUDA 内核，专门用于 MoE 模型的推理。内核融合了路由感知的 GEMM、SwiGLU、量化和规约操作，并支持 BF16 和 MXFP8 数据格式。
-
----
-
-### 7. [Artificial Analysis Optima：企业自定义 AI 基准测试平台](https://x.com/ArtificialAnlys/status/2087930781050322977)
-> Artificial Analysis 推出的 Optima 平台允许企业上传内部数据集或从自然语言描述生成基准测试，用于评估 AI 模型在特定任务上的质量、单次任务成本和耗时，解决了企业难以自建高质量评估体系的问题。
-
----
-
-### 8. [Vals AI 发布 Vals Smith：从任意 GitHub 仓库自定义编码基准测试工具](https://x.com/ValsAI/status/2087917239966290168)
-> 获得 4000 万美元融资的 Vals AI 推出了 Vals Smith，允许开发者从任何 GitHub 代码仓库自动生成自定义的编码基准测试套件，并发布了用于评估 AI 研发能力的 RSI Index 和用于网络安全评估的 ReverseEngBench。
-
----
-
-### 9. [Nous Hermes Agent 更新：推出 Bot Mode，支持多智能体交互](https://x.com/Teknium/status/2088003994904113614)
-> Nous 极大地扩展了 Hermes Agent 的插件系统，并新增了 “Bot Mode”。该模式将 Agent 配置文件转变为具有独立聊天、例程、记忆和命名（SOUL.md）的持久化机器人，并支持机器人间的消息传递。
-
----
-
-### 10. [Sakana Chat 更新：支持无需登录的免费代码执行功能](https://x.com/SakanaAILabs/status/2087880850318696481)
-> Sakana AI Labs 更新了其 Sakana Chat 工具，现在支持无需登录和免费使用的代码执行功能。该功能由 Fugu 和 Namazu 模型驱动，可用于交互式应用/游戏生成、电子表格分析和商业分析等任务。
+### 10. [HeroCoders 错误报告：Cursor 在特定环境下会话意外终止](https://github.com/heroformlabs/biggie/issues/1)
+> 虽然这更多是一个问题报告，但它指向了开发者工具质量的关键点。报告称在使用 **Cursor** 编辑器时，若通过 `ssh` 连接的远程机器上运行 `cursor`，且远程机器长时间闲置导致 `ssh` 超时，可能会导致当前编辑会话**意外终止**，且恢复会话的选项变灰。这对于依赖稳定开发环境的工程师来说是一个需要关注的可靠性问题。
 
 ---
 
 ### 推荐阅读
 - [Cloudflare Blog](https://blog.cloudflare.com/zh-cn/)
-- [美团技术团队](https://static.zou8944.com/newsletter/2026-08-17/meituan_2026-08-17.md)
+- [美团技术团队](https://static.zou8944.com/newsletter/2026-08-18/meituan_2026-08-18.md)
 
 # 往日新闻
+
+#### [2026-08-17](https://static.zou8944.com/newsletter/2026-08-17/newsletter.md)
 
 #### [2026-08-16](https://static.zou8944.com/newsletter/2026-08-16/newsletter.md)
 
@@ -221,6 +190,4 @@
 #### [2026-07-20](https://static.zou8944.com/newsletter/2026-07-20/newsletter.md)
 
 #### [2026-07-19](https://static.zou8944.com/newsletter/2026-07-19/newsletter.md)
-
-#### [2026-07-18](https://static.zou8944.com/newsletter/2026-07-18/newsletter.md)
 
