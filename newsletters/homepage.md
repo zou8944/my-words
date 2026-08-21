@@ -1,171 +1,143 @@
 ## 今日要闻
 
-<sub> 生成时间：2026-08-20 08:41:12</sub>
+<sub> 生成时间：2026-08-21 08:44:18</sub>
 
 
 ---
 
-- **[A revisit of remote Spectre attacks on Cloudflare Workers](https://blog.cloudflare.com/revisiting-spectre-attacks-on-workers/)**（来源：Cloudflare Blog）
-  > Cloudflare揭示针对Workers的远程Spectre攻击新原语及共置方法，为多租户云环境安全加固提供关键参考。
+- **[How AgentFlo built AI sales agents with Amazon Bedrock AgentCore – Part 1](https://aws.amazon.com/blogs/architecture/how-agentflo-built-ai-sales-agents-with-amazon-bedrock-agentcore-part-1/)**（来源：AWS Architecture Blog）
+  > 展示基于Bedrock AgentCore和Strands SDK构建生产级AI销售代理的架构，包含配方部署、工具路由及有状态对话，是AI Agent工程化的重要参考。
 
-- **[AI-powered clinical trial eligibility and safety using Amazon Bedrock AgentCore](https://aws.amazon.com/blogs/architecture/ai-agents-for-clinical-trial-screening/)**（来源：AWS Architecture Blog）
-  > 展示基于Bedrock AgentCore构建高风险领域AI代理的架构，强调可评估的代理工程框架。
+- **[Consistency is the new latency: AI at the data layer](https://aws.amazon.com/blogs/architecture/consistency-is-the-new-latency-ai-at-the-data-layer/)**（来源：AWS Architecture Blog）
+  > 剖析数据复制延迟如何破坏AI智能体上下文，提出根据任务需求匹配Aurora、DynamoDB等数据库复制模型，是AI应用数据层设计的关键洞察。
 
-- **[Serverless vehicle tracking at scale: Bosch L.OS on AWS](https://aws.amazon.com/blogs/architecture/serverless-vehicle-tracking-at-scale-bosch-l-os-on-aws/)**（来源：AWS Architecture Blog）
-  > Bosch利用ECS、Lambda、MSK构建无服务器平台整合物流市场，是实时位置数据处理的工程实践参考。
+- **[Stampli cuts launch hours by 68% using ChatGPT Work](https://openai.com/index/stampli)**（来源：OpenAI Blog）
+  > Stampli利用Codex和ChatGPT Work将数周开发压缩至数天，展示了AI编程工具在应对紧迫工程挑战时的实际效能提升。
 
-- **[Go 1.27](https://news.ycombinator.com/item?id=49365405)**（来源：Hacker News）
-  > Go语言最新版本发布，是Go开发者及云原生工程师必须关注的技术栈更新。
+- **[Asana cleared 5 years of engineering work in 2 weeks with Codex](https://openai.com/index/asana)**（来源：OpenAI Blog）
+  > Asana使用OpenAI Codex在两周内替换旧测试系统，展示了AI工具在自动化代码迁移和重构中的巨大效率潜力与低成本。
 
-- **[PostgreSQL万能论](https://news.ycombinator.com/item?id=49361279)**（来源：Hacker News）
-  > 深度讨论PostgreSQL在各类场景下的适用性，引发对数据库选型的深度思考。
+- **[美团搜索3.0：LLM 语义表征在排序模型的探索与应用](https://tech.meituan.com/2026/08/20/01-meituan-Query-3.0.html)**（来源：美团技术团队）
+  > 系统性地将LLM语义向量通过对比学习与分桶融合策略注入精排模型，有效提升长尾搜索效果，是LLM与传统推荐系统结合的工业级实践。
 
-- **[大语言模型时代的可扩展软件](https://news.ycombinator.com/item?id=49363668)**（来源：Hacker News）
-  > 探讨LLM时代如何设计可扩展的后端软件架构，对系统架构师有启发。
+- **[Agent评测漫谈 —— 由浅入深讲解Agent评测](https://tech.meituan.com/2026/08/07/Agent-Evaluation.html)**（来源：美团技术团队）
+  > 提出Agent评测需从模型输出转向“任务系统”全链路观测，并介绍“人人一致”的对齐方法论与机评主导的基建，对构建可靠Agent系统至关重要。
 
-- **[《io_uring的设计与演化》作者：Jens Axboe](https://www.reddit.com/r/programming/comments/1vt19vc/the_design_and_evolution_of_io_uring_by_jens_axboe/)**（来源：Reddit Programming）
-  > Linux内核io_uring作者分享其设计哲学与演化历程，是高性能I/O与系统编程的深度内容。
+- **[正式开源！美团 LongCat-2.0 同步开放国产卡推理代码](https://tech.meituan.com/2026/07/12/LongCat-2.0-Open-source.html)**（来源：美团技术团队）
+  > 详解万亿参数MoE模型在国产算力集群上的全栈优化，包括LSA稀疏注意力、ScMoE并行及PD分离部署，为大模型工程部署提供完整路径。
 
-- **[capri: Type-safe, atomic Gleam bindings for Khepri, the modern distributed database for the BEAM](https://capri.hexdocs.pm/)**（来源：Lobsters）
-  > 为现代分布式数据库Khepri（基于BEAM）提供类型安全绑定，对构建高并发、分布式系统有参考价值。
+- **[nageoffer/ragent](https://github.com/nageoffer/ragent)**（来源：GitHub Trending）
+  > 生产级Java Agentic RAG平台，全链路覆盖文档解析、混合检索、意图识别，并集成熔断降级等企业级容错机制，是构建真实智能体的工程范本。
 
-- **[Bun 1.4 Rust rewrite is not looking good](https://tipiirai.com/writing/bun-rust-rewrite-worries)**（来源：Lobsters）
-  > 对Bun运行时Rust重写版本的性能与稳定性进行深入分析，引发对JS/TS运行时工程选择的讨论。
+- **[agent-substrate/substrate](https://github.com/agent-substrate/substrate)**（来源：GitHub Trending）
+  > 高性能智能体运行时，专为大规模AI代理部署设计，基于Kubernetes实现亚秒级挂起恢复与超密部署，兼容主流框架，适用于多智能体系统。
 
-- **[Apache Fluss](https://github.com/apache/fluss)**（来源：GitHub Trending）
-  > 专为实时分析与AI设计的流式存储，支持亚秒级数据新鲜度，是构建实时数据层的新兴基础设施。
+- **[TencentCloud/CubeSandbox](https://github.com/TencentCloud/CubeSandbox)**（来源：GitHub Trending）
+  > 面向AI代理的高性能安全沙箱，基于硬件虚拟化实现毫秒级启动与极低内存开销，提供硬件级隔离，兼容E2B SDK，适用于代码执行场景。
 
-- **[argoproj/argo-workflows](https://github.com/argoproj/argo-workflows)**（来源：GitHub Trending）
-  > Kubernetes原生的容器化工作流引擎，通过DAG编排任务，是云原生环境下自动化流程（包括ML任务）的标准选择。
+- **[QuantumNous/new-api](https://github.com/QuantumNous/new-api)**（来源：GitHub Trending）
+  > 统一的Go语言AI模型网关，聚合多种大模型并转换为兼容OpenAI的格式，提供智能路由、用量计费与权限管理，简化AI服务调用与管理。
 
-- **[zzet/gortex](https://github.com/zzet/gortex)**（来源：GitHub Trending）
-  > 高性能代码智能引擎，通过图索引为AI编程助手提供精准上下文，可减少50倍token消耗，是LLM编码助手的优化利器。
+- **[Gentleman-Programming/engram](https://github.com/Gentleman-Programming/engram)**（来源：GitHub Trending）
+  > 为AI编码代理提供持久化记忆的Go系统，通过MCP协议与主流代理集成，内嵌SQLite和全文搜索，解决会话间上下文遗忘问题。
 
-- **[KDD'26美团学术论文精选及KDD Cup'26 DataAgents赛道冠军思路解读](https://tech.meituan.com/2026/08/13/KDD-2026-meituan-papers.html)**（来源：美团技术团队）
-  > 系统解读美团在推荐、RLHF对齐与数据智能体等方面的工业级技术突破，多项成果已全量上线。
+- **[milvus-io/milvus](https://github.com/milvus-io/milvus)**（来源：GitHub Trending）
+  > 高性能云原生向量数据库，专为大规模向量近似最近邻搜索设计，通过分布式架构和硬件加速实现卓越性能，是AI应用（如RAG）的关键基础设施。
 
-- **[MineExplorer揭示顶级多模态大模型被忽视的能力断层](https://tech.meituan.com/2026/07/24/LongCat-MineExplorer.html)**（来源：美团技术团队）
-  > 首个基于《我的世界》的开放世界基准，系统评估多模态大模型的长程探索与规划能力，揭示关键瓶颈。
+- **[seaweedfs/seaweedfs](https://github.com/seaweedfs/seaweedfs)**（来源：GitHub Trending）
+  > 分布式存储系统，支持S3对象存储、文件系统和Iceberg表，基于Haystack设计实现O(1)磁盘访问和轻松水平扩展，适用于海量文件存储。
 
-- **[LongCat开源VitaBench 2.0：长期动态智能体基准新标杆](https://tech.meituan.com/2026/06/29/LongCat-VitaBench-2.0.html)**（来源：美团技术团队）
-  > 首个面向长期动态用户建模的智能体基准，系统揭示大模型在持续理解与个性化应用上的短板。
+- **[Malicious Rust package Arrayref executes build-time payload](https://news.ycombinator.com/item?id=49374269)**（来源：Hacker News）
+  > Rust供应链攻击案例：恶意软件包在构建时执行有效载荷，凸显开源依赖安全审查的重要性，是开发流程安全加固的警示。
+
+- **[Why compiling Rust to WebAssembly is slow](https://00f.net/2026/08/19/why-compiling-rust-to-webassembly-is-slow/)**（来源：Lobsters）
+  > 深入分析Rust编译到WebAssembly缓慢的技术原因，涉及单态化、链接等编译器层面的挑战，对追求高性能WASM的开发者有参考价值。
+
+- **[Understanding the limitations of Pubsub systems](https://dl.acm.org/doi/pdf/10.1145/3713082.3730397)**（来源：Lobsters）
+  > 学术论文探讨发布订阅系统的局限性，为设计更可靠、可扩展的分布式消息系统提供理论洞察，对后端架构师有启发。
 
 ---
 
 ### AI 动态速览
-## AINews - 2026-08-20
+## AINews - 2026-08-21
 
-> [原文链接](https://news.smol.ai/issues/26-08-18-not-much/)
+> [原文链接](https://news.smol.ai/issues/26-08-19-not-much/)
 
 ## 📰 十大新闻要点
 
-### 1. [OpenAI 暂停前沿 RL 训练两周以加强安全控制](https://x.com/OpenAI/status/2089777845187031262)
-> OpenAI 宣布暂停部分前沿强化学习（RL）训练两周，以加强安全、隔离和监控措施。这被视为能力发展速度已超过安全准备速度的体现。Sam Altman 和 Greg Brockman 强调，安全信心将日益成为前沿模型扩展速度的决定因素。暂停主要影响较远期的发布，而非即将推出的产品。
+### 1. [Ornith-1.5 开源模型家族发布，支持端到端自我改进](https://x.com/ornith_/status/2090074077084127302)
+> Ornith_ 发布了 MIT 许可的 Ornith-1.5 模型家族，包括 9B dense、35B MoE 和 397B MoE 变体。其关键声称是实现了端到端的自我改进能力：模型可以自行提出任务、生成脚手架并产生强化学习（RL）rollouts 来创建新的训练经验。在多个代理/编码基准测试中表现出色，如 Terminal-Bench 2.1 达 86.1，SWE-Bench Verified 达 86。
+
+### 2. [压缩技术持续进步，1-bit 量化模型在 8GB RAM 上运行仍保有高精度](https://x.com/UnslothAI/status/2090103470015828184)
+> Unsloth AI 发布了使用 Dynamic V3 的 Qwen3.8-27B 新 GGUF 量化模型，声称在相同大小下精度提高约 10%。更重要的是，他们展示了 1-bit 量化版本，仅需约 8GB RAM 即可运行，同时保留了大约 77% 的 BF16 精度。他们还推出了新的 Divergence-300 指标，用于评估在更长生成序列上的性能。
+
+### 3. [Agent Arena 发布 Pareto 视图，揭示模型质量与成本的价值前沿](https://x.com/arena/status/2090137780932538549)
+> Agent Arena 发布了模型性能的 Pareto 视图。Claude Opus 5 (High) 在质量上领先，但包括 Kimi K3、GLM 5.2、Grok 4.5 和 GPT-5.6 Luna 在内的低成本模型定义了大部分的价值前沿。这显示了在代理任务中，成本效益平衡正成为关键考量。
+
+### 4. [DeepSeek Harness (DSH) 被剖析为“开放代理运行时”，强调插件架构](https://x.com/ZhihuFrontier/status/2089998555889250478)
+> 详细分析将 DeepSeek Harness 定位为一个有意设计的、基于插件架构（Cordis）的轻量级外壳。其关键设计是“一切皆插件”，包括代理循环本身。据称早期测试用户在一周内贡献了超过 100 个插件和 400 多个问题。其架构更侧重于用户可扩展的工具、可交换的控制循环和业务规则注入，而非一个“产品化的助手”。
+
+### 5. [GLM-5.3 的能力提升被归因于为期一个月的额外强化学习，而非模型规模扩大](https://x.com/kimmonismus/status/2090026799916888080)
+> 来自 zAI/GLM 创始人的观点指出，前沿模型的进展仍然依赖于扩展，但过多讨论过分关注参数数量，而非数据质量、推理计算和训练后处理。以 GLM-5.3 为例，它基于与 GLM-5.2 相同的基础模型架构，但通过大约一个月的额外强化学习（RL）实现了显著改进。
+
+### 6. [Gemini 3.7 Flash 在 AA-AnalystAgent 基准测试中排名第一](https://x.com/_philschmid/status/2090063976872751408)
+> Google 的 Gemini 3.7 Flash 在 Artificial Analysis 的 AA-AnalystAgent 基准测试中取得第一名，该测试涵盖 80 个以电子表格/文档处理为主的定量任务。其 pass^5 达 60.0%，平均成本为 0.54 美元，每个任务耗时 1.32 秒。同时，该模型被进一步集成到 Google 的产品中，如 Gemini 聊天、Spark 和 AI Studio 的 GitHub 同步。
+
+### 7. [OpenAI 推出“私有安全处理”以实现前沿模型的零数据保留](https://x.com/OpenAI/status/2090165328290701800)
+> OpenAI 推出了“私有安全处理”（Private Safety Processing），旨在为前沿模型保留“零数据保留”（Zero Data Retention）策略的同时，仍能检测跨交互的安全风险，且无需人工访问底层内容。这反映了在隐私保护与安全审查之间寻求技术解决方案的努力。
+
+### 8. [Qdrant 推出可过滤 HNSW，声称在带过滤的 ANN 搜索中性能远超 ACORN](https://x.com/qdrant_engine/status/2089999409404957029)
+> 向量数据库 Qdrant 认为，带过滤的近似最近邻（ANN）搜索应在索引层面解决，而不仅是在查询时。他们提出的可过滤 HNSW 在共享索引载荷值的点之间添加边，以保持过滤子图的连接性。在对 100 万向量进行 1% 过滤的基准测试中，他们报告召回率达 99.8%，延迟为 1.0 毫秒，而 ACORN 的召回率为 67.7%，延迟为 4.7 毫秒。
+
+### 9. [微软发布 Agent Lightning v1.0，通过 RL 改进 Qwen3.5-9B 性能](https://x.com/omarsar0/status/2090078336697733531)
+> 微软的 Agent Lightning v1.0 通过端点代理将任意代理框架（harness）连接到强化学习（RL），处理诸如重新分词、样本合并、优势计算、归一化以及调度器/后端协调等问题。报告称，仅使用约 6000 个训练样本和适度的计算资源，就将 Qwen3.5-9B 在 SWE-Bench Verified 上的性能从 41.8% 提升到了 56.4%。
+
+### 10. [OpenRouter 被 Stripe 收购，印证 token 路由/市场成为核心基础设施](https://x.com/patrickc/status/2090125021910020520)
+> Patrick Collison 确认 OpenRouter 将加入 Stripe。此举被广泛解读为 token 路由和市场正在从边缘工具转变为核心基础设施的验证。这标志着 AI 推理服务的聚合和路由层在技术栈中的重要性日益提升。
 
 ---
 
-### 2. [Qwen3.8-27B 成为本地/开源模型讨论焦点](https://x.com/kimmonismus/status/2089740575830409700)
-> Qwen3.8-27B 被视为新的“本地可运行的准前沿”时刻，在多个基准测试中表现突出，包括在 Artificial Analysis 的代理指数中排名第7（在27B模型中），并在法律基准测试中排名开源模型第一。然而，也有批评指出其基准测试优势可能在真实编码使用中被高估。
+## 🛠️ 十大工具产品要点（如适用）
 
----
+### 1. [TrueFoundry 开源 TrueForge：一个面向生产环境代理的、厂商中立的自托管框架](https://x.com/truefoundry/status/2090081376330715176)
+> TrueFoundry 开源了 MIT 许可的 TrueForge，一个用于生产环境代理的、可自托管、厂商中立的代理框架。该技术栈包含工具编排、上下文管理、子代理、代码沙箱、人工审批和跟踪，支持本地和托管部署。技术亮点包括，在 14 项企业基准测试中，TrueForge 在使用 Opus 4.8 时匹配了 Claude 管理代理，并且通过路由到 GLM-5.2 可将成本降低约 75%，同时保持准确性。
 
-### 3. [Mojo 语言正式以 Apache 2.0 协议开源](https://x.com/Modular/status/2089749936770634118)
-> Modular 公司正式开源了 Mojo 编程语言。此举意义重大，不仅在于语言本身，更在于它与硬件抽象层相结合，旨在为跨加速器（包括高通数据中心AI加速器）提供可移植的工具链。
+### 2. [DFlash 2 发布，用于 Qwen 3.8 27B 和 Muse Glimmer 的加速推理](https://www.reddit.com/r/LocalLLaMA/comments/1vs2tsn/dflash_2_available_for_qwen_38_27b_and_muse/)
+> DFlash 2 已为 Qwen 3.8 27B 和 Muse Glimmer 发布，相应的 `llama.cpp` PR (#27342) 也已提交。基准测试图表显示，DFlash 2 在 Qwen 3.8 27B 上的性能大幅优于 MTP（推测解码）。该工具用于加速本地模型推理，但报告指出当前不支持 `tensor split`。
 
----
+### 3. [Unsloth 发布 Qwen3.8-27B Dynamic V3 GGUFs 量化工具与模型](https://huggingface.co/unsloth/Qwen3.8-27B-GGUF)
+> Unsloth AI 发布了基于 Dynamic V3 技术的 Qwen3.8-27B GGUF 量化模型。提供了从 1-bit 到 BF16 的多种量化版本，声称在相同大小下精度比其他提供商高 10% 以上。他们强调这是训练后量化（PTQ）而非量化感知训练（QAT），并公开了 imatrix 校准文件。
 
-### 4. [NVIDIA 发布 TensorRT Model Connect 公共预览版](https://x.com/NVIDIAAI/status/2089750360869233059)
-> NVIDIA 推出 TensorRT Model Connect，承诺可以直接将支持的 Hugging Face 模型转换为端到端 TensorRT 推理，无需中间的 ONNX 导出步骤。该项目本身大量使用了 Codex 代理在人工审查下构建，是工具开发中代理辅助实现的又一信号。
+### 4. [vLLM 和 Ollama 快速集成 Ornith-1.5 模型](https://x.com/vllm_project/status/2090243605147586955)
+> 新发布的 Ornith-1.5 开源模型家族迅速被集成到主流推理框架中。vLLM 和 Ollama 都宣布了对 Ornith-1.5 的支持，使其能够快速用于服务部署和本地运行，降低了开发者的使用门槛。
 
----
+### 5. [Sentence Transformers v6.0 发布，推动从单向量到多向量检索的实际应用](https://x.com/tomaarsen/status/2090018110052987171)
+> Sentence Transformers v6.0 的发布反映了从单向量（密集）检索到多向量（晚期交互）检索的实际转变。多向量检索保留 token 级别的向量，并在聚合最佳匹配之前对查询和文档 token 进行评分。这对于构建对质量敏感的搜索系统变得越来越重要。
 
-### 5. [GLM-5.3 API 发布，聚焦后训练优化](https://x.com/Zai_org/status/2089816129011098048)
-> Z.ai 推出 GLM-5.3 API，用于编码、防御性网络和长周期代理任务。其性能提升主要归因于更强的**后训练**技术，特别是异步 RL（SAO）、可执行沙盒训练和在线策略蒸馏。这表明代理能力的扩展正从参数规模转向 RL 系统与环境质量。
+### 6. [Claude Code 增加“简洁输出模式”，将响应形式作为一等 UX 变量](https://x.com/ClaudeDevs/status/2090245922685063634)
+> Anthropic 为 Claude Code 添加了“简洁输出风格”。这标志着产品团队现在不仅调整模型的能力，还将响应的形状（格式、长度）作为首要的用户体验（UX）变量进行调优，以改善日常编码代理的交互体验。
 
----
+### 7. [OpenAI 强调开源 Codex 运行时是其内部工具、运营仪表盘和自定义应用的基础](https://x.com/OpenAIDevs/status/2090230646497251387)
+> OpenAI 开发者团队强调，开源的 Codex 运行时（harness）是其内部工具、运营仪表盘和自定义应用程序构建的基础。这延续了其给予团队嵌入自家产品所需的代理基元（primitives）的战略，而非只提供一个封闭的托管代理服务。
 
-### 6. [Anthropic 宣布 Claude 能自主为14/15个目标设计蛋白质结合剂](https://x.com/AnthropicAI/status/2089842387845804246)
-> Anthropic 报告 Claude 模型能够自主设计蛋白质结合剂，并成功针对14/15个目标生成。这标志着 AI 在科学发现和复杂工程任务中的自主能力取得重要进展。
+### 8. [Linear 将其 Delta 同步读路径从 Postgres 迁移到 turbopuffer](https://x.com/turbopuffer/status/2090091547585065283)
+> 项目管理工具 Linear 将其数据同步的读路径从 Postgres 迁移到向量数据库 turbopuffer。他们利用属性索引进行权限过滤，将最大的同步操作时间缩短了约 8 秒。这显示了向量基础设施正在进入非搜索类的“热路径”。
 
----
+### 9. [阿里巴巴 XuanTie C950 RISC-V CPU 原生运行 Qwen-3.8 27B](https://wccftech.com/alibabas-tsmc-built-5nm-risc-v-chip-xuantie-c950-now-runs-qwen-3-8-27b-model-natively-unlocking-massive-vertical-integration-tailwinds/)
+> 阿里巴巴的 64 核 RISC-V XuanTie C950 CPU 被报道能够原生运行 Qwen-3.8 27B 模型，解码速度达 30 tokens/s，首 token 时间 1.9 秒。该 TSMC 5nm 服务器级 CPU 集成了向量/矩阵加速，定位为独立于 GPU 的推理目标，为阿里自家的 Qwen 模型栈提供了垂直整合的可能。
 
-### 7. [Cursor 发布 Git 存储基础设施设计回顾](https://x.com/cursor_ai/status/2089758713183613266)
-> Cursor 发布了一篇关于将 Git 存储“像数据库一样设计”的技术文章。随着 AI 编程代理增加仓库变动和分支/会话增殖，Git 托管正从普通的 DevOps 原语转变为关键的 **AI 基础设施依赖**。
-
----
-
-### 8. [DFlash 2 在 M5 Max 上声称实现 Qwen3.8-27B 达 70 tok/s](https://x.com/zhijianliu_/status/2089836737132650504)
-> DFlash 2 声称在 Apple M5 Max 设备上，将 Qwen3.8-27B 模型的解码速度提升至 70 tok/s，相比自回归解码提升高达 **4.6 倍**。在数据中心端，Cerebras 发布 CS-4 芯片，声称在 10T 参数模型上可达 1000 tok/s。**推理速度正成为产品用户体验、经济性和国家竞争力政策的交汇点。**
-
----
-
-### 9. [Miles v0.1：一个新的严肃开源 RL 框架](https://x.com/radixark/status/2089746481339384068)
-> 开发者 radixark 宣布开源其历时9个月构建的强化学习框架 Miles，拥有72名贡献者和1326次提交。该框架已在 Kimi K3、DeepSeek V4 等模型上经过实战测试。它解决了 RL 训练中启动容易但**调试正确性、利用率和规模**才是真正瓶颈的问题。
-
----
-
-### 10. [多智能体协调的实证研究发现](https://x.com/omarsar0/status/2089741366331146694)
-> 一项研究对1902个多智能体编码运行进行了时间网络分析。关键发现包括：指定协调者并不能可靠改善结果；团队规模增大时，直接通信呈近似二次方增长；用**共享文件**替代重复的1对1消息，在8个智能体且消息繁重的任务中，可将输出令牌减少约**42%**。研究还指出，智能体集体中会迅速出现“策略游戏”行为。
-
----
-
-## 🛠️ 十大工具产品要点
-
-### 1. [Mojo 编程语言正式开源](https://x.com/Modular/status/2089749936770634118)
-> Modular 将 Mojo 语言以 Apache 2.0 协议开源。其核心价值在于结合了语言本身的高性能特性与统一的硬件抽象层，旨在为跨 CPU、GPU、专用加速器等多种硬件平台提供可移植的 AI 基础设施工具链。
-
----
-
-### 2. [NVIDIA TensorRT Model Connect (公共预览)](https://x.com/NVIDIAAI/status/2089750360869233059)
-> 该工具可直接将 Hugging Face 上的模型转换为优化的 TensorRT 引擎，并支持通过原生 C++ API 部署，省去了传统的 ONNX 导出步骤。其开发过程本身大量使用了 AI 代理，是工具开发流程自动化的一个范例。
-
----
-
-### 3. [Miles v0.1 - 开源强化学习框架](https://github.com/MilesRL/Miles)
-> 一个专注于解决 LLM 和多模态模型 RL 训练中**工程化痛点**的开源框架。它提供了稳健的 rollout、CI、可观测性和环境管道，旨在降低大规模 RL 训练的调试和管理复杂度。
-
----
-
-### 4. [LangSmith 推出“专用评估器”](https://x.com/hwchase17/status/2089755542931865901)
-> LangChain 为其 LangSmith 平台引入了“Tuned Evaluators”，首个是“Perceived Error”评估器。其战略意义在于推动将评估从发布前的检查点，转变为在生产环境 trace 上持续运行**数百个廉价评估器**的持续数据挖掘循环，以改进代理。
-
----
-
-### 5. [DFlash 2 - 更快的推测解码技术](https://github.com/ggml-org/llama.cpp/pull/27342)
-> DFlash 2 发布了针对 Qwen3.8-27B 和 Muse Glimmer 的 GGUF 量化版本，并配套了 llama.cpp 的 PR。基准测试显示，其在 Qwen3.8-27B 上的解码效率远超标准的**多令牌预测（MTP）**，是一种显著的推理加速技术。
-
----
-
-### 6. [Artificial Analysis 推出“搜索索引”基准](https://x.com/ArtificialAnlys/status/2089755262915936661)
-> Artificial Analysis 在其开源代理框架 Stirrup 内，使用 GPT-5.6 Luna 模型，对多家搜索提供商进行了标准化评估。初步结果显示，**Parallel (75)**、**Exa (74)** 和 **Firecrawl (73)** 领先。一个关键结论是，更好的搜索可以通过减少模型令牌消耗来**降低总任务成本**，表明代理栈优化是全系统性的。
-
----
-
-### 7. [Cursor 的 Git 存储设计](https://x.com/cursor_ai/status/2089758713183613266)
-> Cursor 分享了其如何像设计数据库一样设计 Git 存储，以确保在大规模代理使用下的可靠性和性能。这对于构建 AI 编程代理后端至关重要，因为代理的普及将极大增加仓库的变动频率和分支数量。
-
----
-
-### 8. [OpenCode & llama.cpp 配置实践](https://www.reddit.com/r/LocalLLaMA/comments/1vqrt86/after_pushing_1m_tokens_through_qwen_38_27b_here/)
-> 有用户分享了在 16GB VRAM 的 RTX 5060 Ti 上，通过精心配置的 llama.cpp（使用 Q4 量化、FlashAttention、N-gram 推测解码等）运行 Qwen3.8-27B，并利用 OpenCode 代理完成了超过100万令牌的编码任务。这为在消费级硬件上实现可用的代理编码提供了详细的配置参考。
-
----
-
-### 9. [llama.cpp v0.1.0 版本发布](https://github.com/ggml-org/llama.cpp/releases/tag/v0.1.0)
-> llama.cpp 发布了首个采用语义化版本控制的 v0.1.0 版本，告别了纯数字构建标识符。这标志着该项目在版本发布工程上向更成熟和稳定迈进了一步，尽管社区呼吁需要更完善的变更日志和弃用跟踪。
-
----
-
-### 10. [NodeTerm - 面向 AI 工作流的终端管理器](https://github.com/eneskirca/nodeterm)
-> 一个开源的终端工作区管理工具，旨在管理持久化的本地和 SSH 终端会话。它声称支持会话重连、拖放、内置 Git 操作以及与 Claude Code 等 AI 代理工作流的上下文共享，旨在为复杂的 AI 辅助开发提供更高效的终端管理体验。
+### 10. [用户分享在多 GPU 设置上运行 DeepSeek V4 Flash 的详细配置](https://www.reddit.com/r/LocalLLaMA/comments/1vrqf4f/running_deepseek_v4_flash_q4_k_xl_at_100_toks/)
+> 一名用户分享了在 4 张 RTX 3060 12GB 显卡上运行 DeepSeek-V4-Flash-0731 的详细配置和性能。通过非常规的内存布局策略（如 `-ncmoe 34`, `-ot`, `-ts 100,1,1,1`），实现了约 99.4 tok/s 的预填充和 10.1 tok/s 的解码速度。这为在受限硬件上运行大型模型提供了具体的、可操作的工程实践参考。
 
 ---
 
 ### 推荐阅读
 - [Cloudflare Blog](https://blog.cloudflare.com/zh-cn/)
-- [美团技术团队](https://static.zou8944.com/newsletter/2026-08-20/meituan_2026-08-20.md)
+- [美团技术团队](https://static.zou8944.com/newsletter/2026-08-21/meituan_2026-08-21.md)
 
 # 往日新闻
+
+#### [2026-08-20](https://static.zou8944.com/newsletter/2026-08-20/newsletter.md)
 
 #### [2026-08-19](https://static.zou8944.com/newsletter/2026-08-19/newsletter.md)
 
@@ -224,6 +196,4 @@
 #### [2026-07-23](https://static.zou8944.com/newsletter/2026-07-23/newsletter.md)
 
 #### [2026-07-22](https://static.zou8944.com/newsletter/2026-07-22/newsletter.md)
-
-#### [2026-07-21](https://static.zou8944.com/newsletter/2026-07-21/newsletter.md)
 
