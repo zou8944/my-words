@@ -1,165 +1,146 @@
 ## 今日要闻
 
-<sub> 生成时间：2026-08-23 08:42:59</sub>
+<sub> 生成时间：2026-08-24 08:42:27</sub>
 
 
 ---
 
-- **[AWS Architecture Blog - How AgentFlo built AI sales agents with Amazon Bedrock AgentCore – Part 1](https://aws.amazon.com/blogs/architecture/how-agentflo-built-ai-sales-agents-with-amazon-bedrock-agentcore-part-1/)**（来源：AWS Architecture Blog）
-  > 详解基于AgentCore构建生产级AI销售代理的架构，涵盖Recipe部署、网关工具路由及有状态会话管理，提供可复用的代理工程范式。
+- **[Build a unified AI agent architecture with DynamoDB and Bedrock](https://aws.amazon.com/blogs/architecture/build-a-unified-ai-agent-architecture-with-dynamodb-and-bedrock/)**（来源：AWS Architecture Blog）
+  > 创新性地将向量嵌入与结构化数据同表存储，通过DynamoDB Streams同步，为AI Agent提供统一的语义搜索与精确查询架构。
 
-- **[AWS Architecture Blog - Consistency is the new latency: AI at the data layer](https://aws.amazon.com/blogs/architecture/consistency-is-the-new-latency-ai-at-the-data-layer/)**（来源：AWS Architecture Blog）
-  > 深入分析数据复制滞后如何破坏AI代理的上下文一致性，并指导根据任务需求匹配不同数据库的复制模型，优化数据层架构。
+- **[A Tale of Two Flink Autoscalers](https://netflixtechblog.com/a-tale-of-two-flink-autoscalers-e9f6a1b1492b)**（来源：Netflix Tech Blog）
+  > Netflix从自研Flink自动扩缩容迁移到社区方案，通过算子级指标实现更精准的资源调整，其Temporal适配架构为大规模流处理提供重要参考。
 
-- **[PingCAP Blog - My Journey from Traditional Monolithic Architecture to Distributed SQL](https://www.pingcap.com/blog/journey-from-traditional-monolithic-architecture-to-distributed-sql/)**（来源：PingCAP Blog）
-  > TiDB作者分享从单体架构到分布式SQL的演进，深入解析其多节点自动分片与云原生设计，为大规模数据库架构提供实践参考。
+- **[Tencent/WeKnora](https://github.com/Tencent/WeKnora)**（来源：GitHub Trending）
+  > 腾讯开源的LLM知识平台，支持文档转化为RAG知识库与自主推理Agent，具备企业级权限与20+ LLM集成。
 
-- **[agent-substrate/substrate](https://github.com/agent-substrate/substrate)**（来源：GitHub Trending）
-  > 专为大规模AI智能体设计的高性能Go运行时，通过Kubernetes实现亚秒级恢复与超密部署，框架无关，显著提升资源效率。
+- **[cloudnative-pg/cloudnative-pg](https://github.com/cloudnative-pg/cloudnative-pg)**（来源：GitHub Trending）
+  > Kubernetes原生的PostgreSQL Operator，通过Operator模式自动化管理数据库生命周期，支持高可用、扩展与GitOps集成。
 
-- **[maximhq/bifrost](https://github.com/maximhq/bifrost)**（来源：GitHub Trending）
-  > 高性能企业级AI网关，统一接入20+提供商，通过单一API提供自动故障转移、负载均衡和语义缓存，开销极低。
+- **[Wild AI-related reliability incidents are coming](https://surfingcomplexity.blog/2026/08/22/wild-ai-related-reliability-incidents-are-coming/)**（来源：Lobsters）
+  > 预测AI系统将引入全新的、不可预测的故障模式，呼吁工程界重新思考分布式系统的可靠性、可观测性与容错设计。
 
-- **[JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman)**（来源：GitHub Trending）
-  > AI代理优化工具，通过压缩算法和本地模式可减少高达65%的输出token和33.2%的输入token，有效降低API成本。
-
-- **[alibaba/open-code-review](https://github.com/alibaba/open-code-review)**（来源：GitHub Trending）
-  > 阿里开源的代码审查工具，融合确定性流程与LLM Agent，提供精准行级评论，兼容多种主流模型，适合集成到工程流程。
-
-- **[OTel Isn't Going Well (And I Made A Spreadsheet About It)](https://matduggan.com/otel-isnt-going-well-and-i-made-a-spreadsheet-about-it/)**（来源：Lobsters）
-  > 深度分析OpenTelemetry在实际采纳中遇到的挑战，包括配置复杂、性能开销和社区支持问题，对可观测性架构有重要参考价值。
-
-- **[为什么你的本地LLM显得不够聪明](https://news.ycombinator.com/item?id=49402232)**（来源：Hacker News）
-  > 讨论本地部署大模型效果不佳的常见原因，如量化损失、提示词工程和上下文管理，对优化推理性能有实用见解。
-
-- **[美团搜索3.0：LLM 语义表征在排序模型的探索与应用](https://tech.meituan.com/2026/08/20/01-meituan-Query-3.0.html)**（来源：美团技术团队）
-  > 系统介绍美团在搜索排序中应用LLM语义表征的工程实践，通过对比学习与PEPNet门控机制将语义信号注入精排模型，提升长尾查询效果。
-
-- **[Agent评测漫谈 —— 由浅入深讲解Agent评测](https://tech.meituan.com/2026/08/07/Agent-Evaluation.html)**（来源：美团技术团队）
-  > 提出覆盖结果、过程、效率与风险的Agent四层评测框架，并分享通过“指标下钻”和“Rubric二元化”实现主观评测“人机对齐”的方法论。
-
-- **[下一代搜索智能体评测基准！美团开源LoHoSearch，用知识图谱校准AI能力认知](https://tech.meituan.com/2026/07/24/LongCat-LoHoSearch.html)**（来源：美团技术团队）
-  > 美团开源基于大规模知识图谱的Agent评测基准LoHoSearch，通过自动化生成题目控制难度，揭示现有模型在长程推理上的能力断层。
-
-- **[正规企业如何安全地授权开发者访问开发数据库？](https://www.reddit.com/r/devops/comments/1vv3h37/how_do_real_companies_securely_give_developers/)**（来源：Reddit DevOps）
-  > 社区讨论在限制预算下安全为开发者提供数据库访问的多种方案，如临时凭证、权限代理和数据库代理层，具有实践参考性。
+- **[Khaos - Kafka流量生成、负载测试与故障模拟工具，现用Go重写](https://www.reddit.com/r/devops/comments/1vwhp7b/khaos_kafka_traffic_generation_load_testing_and/)**（来源：Reddit DevOps）
+  > 专为Kafka设计的Go语言负载测试工具，可模拟消费者延迟、分区热点、Broker故障等复杂场景，用于验证系统韧性。
 
 ---
 
 ### AI 动态速览
-## AINews - 2026-08-23
+## AINews - 2026-08-24
 
 > [原文链接](https://news.smol.ai/issues/26-08-21-not-much/)
 
 ## 📰 十大新闻要点
 
-### 1. [DeepSeek 发布支持多模态的 V4-Flash-Vision-Exp 模型](https://x.com/deepseek_ai/status/2090730032574631962)
-> DeepSeek 发布了 `DeepSeek-V4-Flash-Vision-Exp` 模型，在保持文本能力的同时新增了多模态输入支持。该模型在多模态智能体基准测试中声称性能接近 Opus-4.8，并推出了混合文本+图像 API 及新的文件 API 以支持图像重用，按 Flash 模型定价收费。
+### 1. [神秘“Ox Alpha”模型在编码任务中表现惊人，被推测为智谱GLM家族新成员](https://x.com/theo/status/2090657271827312727)
+> 一个名为Ox Alpha的隐藏模型在编码和代理任务中表现卓越，社区推测其可能是智谱AI的GLM-5.3 Vision或其变体。该模型在内部基准测试中“屠杀”对手，并能基于其审查直接合并PR，在SWE任务上得分超过80%，远超Fable和GPT-5.6 Sol。后续分析认为其性能源于后训练与基础设施优化，而非单纯扩大模型规模。
 
 ---
 
-### 2. [神秘模型 Ox Alpha 在编码和智能体任务中表现惊艳，引发社区猜测](https://x.com/theo/status/2090657271827312727)
-> 一个名为 Ox Alpha 的未知模型在编码和智能体任务中展现出强大性能，据报道其在内部基准和 DeepSWE 任务上大幅领先 Fable 和 GPT-5.6 Sol。社区广泛推测其可能是智谱 AI (Zhipu) 的 GLM 系列模型（如 GLM-5.3 Vision），其优势可能源于高效的后训练和基础设施优化，而非巨大的参数规模。
+### 2. [DeepSeek发布V4-Flash-Vision-Exp，新增多模态支持，性能接近Opus-4.8](https://x.com/deepseek_ai/status/2090730032574631962)
+> DeepSeek正式发布了V4-Flash-Vision-Exp，为其高效模型增添了多模态输入能力，同时保持了文本能力。新模型在多模态代理任务上的性能接近Opus-4.8，并提供了混合文本+图像API支持及用于重用图片的新Files API。此举可能解决了部分关于“Ox Alpha”身份的猜测。
 
 ---
 
-### 3. [OpenAI 将 GPT-5.6 Sol API 价格下调超过 20%](https://x.com/OpenAI/status/2090885187634905500)
-> OpenAI 宣布将 GPT-5.6 Sol 在 API 和积分产品中的价格下调超过 20%，活动为期三个月。此举被视为对高效利用/成本优化的更新，也是对中国模型在价格/性能方面竞争的回应。
+### 3. [OpenAI宣布GPT-5.6 Sol API价格大幅下调超20%，为期三个月](https://x.com/OpenAI/status/2090885187634905500)
+> OpenAI宣布对其GPT-5.6 Sol模型在API及信用制产品中的定价进行超过20%的削减，活动持续三个月。此举被视为对高效推理的需求响应以及对中国低成本推理的直接竞争反应，并叠加了如Code产品50%折扣等其他促销活动。
 
 ---
 
-### 4. [OpenAI Codex 用户量突破 2000 万并为用户重置用量限额](https://x.com/thsottiaux/status/2090766694897619318)
-> 据报道，OpenAI 的 Codex 产品活跃用户数已达到 2000 万。OpenAI 为所有 Codex 和 ChatGPT Work 用户提供了“存款重置”，以应对激增的使用量。这标志着开发者工具采用的快速增长。
+### 4. [Codex活跃用户达2000万，并为用户提供“额度重置”](https://x.com/thsottiaux/status/2090766694897619318)
+> 据报道，OpenAI的Codex已达到2000万活跃用户，并为Codex和ChatGPT Work用户提供了“额度重置”。有用户反馈称，一个长期运行的目标消耗了约800美元的代币，这显示了产品使用量的爆炸式增长和代理工作负载的不可预测性。
 
 ---
 
-### 5. [vLLM 项目发布 IsoExec 解决强化学习训练中的浮点精度不一致问题](https://x.com/vllm_project/status/2090815806297063661)
-> vLLM 推出的 `IsoExec` 解决了强化学习（RL）训练中因浮点运算非结合性导致的 rollout 与训练 logprob 不匹配问题。在 TP/EP/SP 不同布局下强制实现比特级一致性，据报道在 Qwen3.5-35B-A3B 上将 logprob 差异从 1.6e-2 降至 6.7e-7，开销为 25.3%。
+### 5. [AI训练重心从提示转向环境：以GLM-5.3和谷歌EnvHarness为例](https://x.com/ZhihuFrontier/status/2090731537037987931)
+> 技术分析指出，模型性能提升的中心正在从提示工程转向环境设计。以GLM-5.3为例，其在相同基础模型上，通过更丰富的可执行环境和SAO风格的信用分配实现了长期任务性能提升。谷歌的EnvHarness/EnvRigger也通过自适应环境提高了性能，并减少了执行步骤。
 
 ---
 
-### 6. [NVIDIA AVO 在 ARC-AGI-3 公开环境上达到 100% 通过率](https://x.com/NVIDIAAI/status/2090786258981466231)
-> NVIDIA 宣布其通用编码/自主智能体 `NVIDIA AVO` 在 ARC-AGI-3 交互式推理基准的公开环境集（25 个环境，183 个关卡）上达到了 100% 的通过率。François Chollet 指出这仅限于公开演示/教程集，而非完整的基准测试。
+### 6. [多个更难、更具体的AI代理基准测试发布](https://x.com/HuggingPapers/status/2090714199596941555)
+> 新的基准测试不断涌现，旨在评估AI代理在特定领域的极限。FACET从代理技能创建可执行终端任务；SWE-bench Science引入科学软件任务，即使Claude Code + Opus-5通过率也低于50%；CADBench在3D建模任务中模型通过率仅24.6%；AI4AI-Bench测试递归自我改进能力。
 
 ---
 
-### 7. [Ollama 添加 Kimi K3 到 Pro/Max 订阅，并欢迎 AT&T 加入开源模型](https://x.com/ollama/status/2090906360808411568)
-> 本地模型运行工具 Ollama 将 Kimi K3 添加到其 Pro/Max 订阅服务中，并欢迎电信巨头 AT&T 加入其开源模型生态系统。这表明了开源模型在企业和开发者中的采用正在扩大。
+### 7. [GitHub将协作代理工作流集成至Slack和Teams](https://x.com/tiagonbotelho/status/2090837735351230828)
+> GitHub将其协作代理工作流功能扩展到Slack和Teams平台。这实现了类似Devin的工作流，代理可以在共享频道中接收任务、提交PR并协调设计。同时，多个代理运行时工具也获得了更新，包括nac、Hermes Agent和OpenHands。
 
 ---
 
-### 8. [UC Berkeley 推出 FreeToken，在消费级 GPU 上实现大模型高效推理](https://x.com/Yuchenj_UW/status/2090857982385066474)
-> UC Berkeley 的 `FreeToken` 项目声称在消费级 GPU 上实现了显著的推理速度提升：在单张 RTX PRO 6000 上运行 753B 参数的 GLM-5.2 模型达到 14.9 tok/s，在 8GB 显存的 RTX 4060 笔记本上运行 Qwen3.6-35B 模型达到 39.3 tok/s，速度据称是 Ollama 的 2-4 倍。
+### 8. [研究亮点：DeepMind“Recirculation”推理技术和谷歌“Pandora’s Router”路由框架](https://x.com/TheTuringPost/status/2090583644964565215)
+> DeepMind的一项研究提出在推理时将上下文化的深层激活反馈回早期处理层，无需重新训练，报告在困惑度和基准测试上取得显著提升。谷歌DeepMind的Pandora’s Router将模型路由框架化为一个带有检查成本的最优搜索问题，声称在更少调用昂贵估计器的情况下达到同等质量。
 
 ---
 
-### 9. [Percy Liang 宣布开源大模型 Marin 535B-A23B 开始训练](https://x.com/percyliang/status/2090918065634684997)
-> 斯坦福大学 Percy Liang 宣布，开源训练项目 Marin 的新模型 `535B-A23B` 已开始训练。该模型拥有 5350 亿总参数，230 亿激活参数，计划在 11 块 GB200 NVL72 加速卡上训练约 18.75 万亿 token，历时约 3 个月，训练过程保持开源。
+### 9. [本地推理性能优化：FreeToken在消费级GPU上实现高吞吐量](https://x.com/Yuchenj_UW/status/2090857982385066474)
+> UC Berkeley的FreeToken项目声称在消费级GPU上实现了显著的推理速度提升，例如在单张RTX PRO 6000上以14.9 tok/s运行753B的GLM-5.2，在8GB的RTX 4060笔记本上以39.3 tok/s运行Qwen3.6-35B，吞吐量是Ollama的2-4倍。这凸显了模型效率优化的重要性。
 
 ---
 
-### 10. [Nvidia 计划支付约 60 亿美元许可费并投资 Poolside 的模型开发技术栈](https://www.theinformation.com/briefings/nvidia-reportedly-pay-6-billion-licensing-hiring-deal-ai-model-startup-poolside)
-> 据报道，Nvidia 将支付约 60 亿美元许可费，获取 AI 初创公司 Poolside 的“模型工厂”开发栈，并投资约 10 亿美元（估值约 120 亿美元）。此交易涉及向 Poolside 的 109 名员工发出工作邀请，这被视为 Nvidia 增强其开源模型和 Nemotron 生态系统的重要举措。
+### 10. [OpenAI强化API支出控制，支持按密钥和项目设置限额](https://x.com/OpenAIDevs/status/2090903221663380576)
+> OpenAI为其API推出了更精细的支出控制功能。团队现在可以按API密钥跟踪使用情况和支出，并设置组织/项目的月度硬性限额。这对于处理不可预测且高度并发的代理工作负载非常有用。
 
 ---
 
-## 🛠️ 十大工具产品要点（如适用）
+## 🛠️ 十大工具产品要点
 
-### 1. [DeepSeek 推出 Files API 以支持图像重用](https://x.com/deepseek_ai/status/2090730042586489333)
-> DeepSeek 发布了新的 Files API，允许用户上传一次图像，通过 `file_id` 在后续请求中引用，避免了重复发送图像数据，减少了带宽开销。这是其 V4-Flash-Vision-Exp 多模态模型发布的一部分。
-
----
-
-### 2. [GitHub 将协作智能体工作流集成到 Slack 和 Microsoft Teams](https://x.com/tiagonbotelho/status/2090837735351230828)
-> GitHub 将协作智能体工作流引入 Slack 和 Microsoft Teams。这使得类似 Devin 的流程能够在共享频道中运行：智能体接收任务、创建 PR 并让设计人员参与，实现了更紧密的团队协作开发体验。
+### 1. [DeepSeek V4-Flash-Vision-Exp：新增多模态API与Files API](https://x.com/deepseek_ai/status/2090730032574631962)
+> DeepSeek发布视觉实验版API，支持混合文本和图像输入（通过base64、URL或Files API），图像按最多384个代币计费。新推出的Files API允许用户上传图片一次后通过file_id重复引用，减少带宽开销。
 
 ---
 
-### 3. [nac 智能体运行时 v0.1.3 更新，添加沙盒化 Git Worktree 和视觉功能](https://x.com/arcee_ai/status/2090821442409562524)
-> nac v0.1.3 版本增加了重要功能，包括用于隔离开发的沙盒化 Git Worktree、更好的会话组织，以及能够感知图像内容的视觉功能。这些更新增强了本地 AI 编码助手的实用性和安全性。
+### 2. [Hermes Agent：集成Ox Alpha模型并推出“白板模式”](https://x.com/Teknium/status/2090756018045321641)
+> Hermes Agent快速集成了神秘的Ox Alpha模型，并新增了“白板模式”和自动技能修剪功能。这使得开发者能更便捷地在代理框架中测试和使用最新的高性能模型。
 
 ---
 
-### 4. [Hermes Agent 集成 Ox Alpha 模型并推出新功能](https://x.com/Teknium/status/2090756018045321641)
-> Hermes Agent 已集成近期备受关注的 Ox Alpha 模型。同时，它还推出了“空白画布模式”以及自动技能修剪功能，以优化智能体的性能和资源使用。
+### 3. [nac v0.1.3：新增沙盒化Git工作树和视觉感知](https://x.com/arcee_ai/status/2090821442409562524)
+> 代理运行时工具nac更新至v0.1.3版本，新增了沙盒化的Git工作树、会话组织功能以及视觉感知的图像读取能力，增强了代理在代码和视觉任务中的操作安全性与能力。
 
 ---
 
-### 5. [OpenHands 将免费默认模型切换为 Kimi K3](https://x.com/rajistics/status/2090846963558408280)
-> 开源 AI 编码助手 OpenHands 已将其免费层级使用的默认模型切换为 Kimi K3。这反映了 Kimi K3 在性能和成本效益上得到开发者社区的认可。
+### 4. [vLLM IsoExec：解决RL训练中浮点数非结合性导致的日志概率不匹配问题](https://x.com/vllm_project/status/2090815806297063661)
+> vLLM项目推出IsoExec，旨在解决在强化学习rollout/训练过程中，由于浮点数非结合性导致的日志概率不匹配问题。它强制在TP/EP/SP布局间实现比特级一致性，在测试中将差异大幅降低，但带来约25.3%的开销。
 
 ---
 
-### 6. [ComfyUI 社区节点通过稀疏注意力为 H3 Minimax 视频生成带来加速](https://github.com/PlagueKind/ComfyUI-PlagueKind-Nodes)
-> 开发者 PlagueKind 为 ComfyUI 创建了适用于 H3 Minimax 视频生成模型的稀疏注意力节点。该节点在特定工作流配置下声称可带来高达 2.5 倍的速度提升，但实际效果和画质影响取决于模型和内容。
+### 5. [Ollama：新增对Kimi K3模型的支持](https://x.com/ollama/status/2090906360808411568)
+> 本地模型运行工具Ollama在Pro/Max订阅中新增了Kimi K3模型的支持，进一步丰富了其可托管的开源模型库，为开发者提供了更多本地测试和开发的选择。
 
 ---
 
-### 7. [开发者对比本地运行的 PI Agent 与 OpenCode 智能体运行时](https://www.reddit.com/r/LocalLLaMA/comments/1vu0u2v/qwen_38_27b_pi_agent_vs_opencode/)
-> 开发者使用本地 `Qwen3.8-27B` 模型，在 RTX 3090 上对 PI Agent 和 OpenCode 两种智能体运行时进行了对比。测试报告称 PI Agent 生成质量更好、更节省 token，并且在高上下文长度下表现更稳定。
+### 6. [谷歌EnvHarness/EnvRigger：自适应环境提升代理性能](https://x.com/omarsar0/status/2090797828163637286)
+> 谷歌研究推出EnvHarness/EnvRigger框架，它使用一个插件层和策略诊断来重塑静态环境，从而提高代理在未见过任务上的性能。据报告，该技术可将性能提升多达9个百分点，同时减少9.8%的执行步骤。
 
 ---
 
-### 8. [Generalist AI 发布 GEN-1.5，声称具备机器人单次学习能力](https://generalistai.com/blog/gen-1.5)
-> Generalist AI 发布了 `GEN-1.5`，一个面向具身智能/机器人的单次学习系统。其核心能力是用户演示一次任务后，机器人能快速复现和泛化该行为。社区对此给予了高度评价，称其为“机器人领域的 GPT-2 时刻”。
+### 7. [PlagueKind Minimax H3稀疏注意力节点：提供高达2.5倍加速](https://github.com/PlagueKind/ComfyUI-PlagueKind-Nodes)
+> 开发者PlagueKind为ComfyUI添加了用于Minimax H3模型的稀疏注意力/SLA节点，声称在特定配置下可实现高达2.5倍的速度提升。该节点需要放置在工作流的末端，与导向器和调度器直接相连。
 
 ---
 
-### 9. [DaxAI 在 WRC'26 展出全地形机器人“马”](https://www.reddit.com/r/singularity/comments/1vthwpm/daxais_all_terrain_robothorse_debuts_at_wrc26/)
-> DaxAI 在世界机器人大会 (WRC'26) 上展示了其全地形四足“机器人马”。该机器人声称具备 100 公里/10 小时的续航能力、300 公斤最大负载和 40 公里/小时的最高时速，展示了机器人技术在复杂环境下的应用潜力。
+### 8. [OpenHands切换默认免费模型至Kimi K3](https://x.com/rajistics/status/2090846963558408280)
+> 开源AI代理平台OpenHands宣布将其默认的免费模型切换至Kimi K3，为使用其免费层的开发者提供了新的默认模型选择。
 
 ---
 
-### 10. [WRC'26 现场演示机械臂高速分拣包裹](https://www.reddit.com/r/singularity/comments/1vtvh53/robotic_arms_at_wrc26_reorient_packages_as_fast/)
-> 在世界机器人大会 (WRC'26) 上，现场演示了机械臂高速重新定向包裹的过程，速度声称与人类相当。讨论中对其实际错误率、必要性（与360度扫描方案对比）以及真实价值提出了技术性疑问。
+### 9. [Qwen3.8-27B本地代理评测：展示强大的自主工具使用能力](https://www.reddit.com/r/LocalLLaMA/comments/1vt78xd/qwen3827b_has_the_highest_level_of_agency_ive/)
+> 社区用户报告，在单张RTX 3090上本地运行的Qwen3.8-27B模型（经Q4_K_S量化）展示了异常强大的自主代理工作流能力，包括使用Playwright和现有会话Cookie自主访问大学系统获取课程表，以及自动下载视频、提取帧、转录和增强图像。
+
+---
+
+### 10. [PI Agent vs OpenCode：本地Qwen3.8-27B代理框架对比](https://www.reddit.com/r/LocalLLaMA/comments/1vu0u2v/qwen_38_27b_pi_agent_vs_opencode/)
+> 开发者对比了在本地运行Qwen3.8-27B时，PI Agent与OpenCode两个代理框架的表现。初步测试显示PI Agent在一次性HTML生成任务中输出更好、使用的代币更少，并且能更晚地进行上下文压缩（约90k tokens），而OpenCode在约67k tokens时就开始压缩。
 
 ---
 
 ### 推荐阅读
 - [Cloudflare Blog](https://blog.cloudflare.com/zh-cn/)
-- [美团技术团队](https://static.zou8944.com/newsletter/2026-08-23/meituan_2026-08-23.md)
+- [美团技术团队](https://static.zou8944.com/newsletter/2026-08-24/meituan_2026-08-24.md)
 
 # 往日新闻
+
+#### [2026-08-23](https://static.zou8944.com/newsletter/2026-08-23/newsletter.md)
 
 #### [2026-08-22](https://static.zou8944.com/newsletter/2026-08-22/newsletter.md)
 
@@ -218,6 +199,4 @@
 #### [2026-07-26](https://static.zou8944.com/newsletter/2026-07-26/newsletter.md)
 
 #### [2026-07-25](https://static.zou8944.com/newsletter/2026-07-25/newsletter.md)
-
-#### [2026-07-24](https://static.zou8944.com/newsletter/2026-07-24/newsletter.md)
 
