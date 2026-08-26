@@ -1,168 +1,173 @@
 ## 今日要闻
 
-<sub> 生成时间：2026-08-25 08:42:15</sub>
+<sub> 生成时间：2026-08-26 08:47:37</sub>
 
 
 ---
 
-- **[Consistency is the new latency: AI at the data layer](https://aws.amazon.com/blogs/architecture/consistency-is-the-new-latency-ai-at-the-data-layer/)**（来源：AWS Architecture Blog）
-  > 分析复制延迟对AI Agent决策的影响，并提供基于Aurora、DynamoDB等的数据库选型指南，帮助工程师优化数据层一致性设计。
+- **[From all-or-nothing to task-based OAuth consent](https://blog.cloudflare.com/task-based-oauth-consent/)**（来源：Cloudflare Blog）
+  > 介绍OAuth引入可选作用域支持，实现任务导向的精细化授权，为构建安全、用户体验良好的后端与AI应用权限系统提供参考。
 
-- **[A revisit of remote Spectre attacks on Cloudflare Workers](https://blog.cloudflare.com/revisiting-spectre-attacks-on-workers/)**（来源：Cloudflare Blog）
-  > 评估Workers环境下的新型Spectre攻击原语与防御加固，为在云函数/边缘计算中保障执行安全提供实践参考。
+- **[How a global payment processor preserved AWS RAM shares and Lake Formation permissions during an AWS Organizations migration](https://aws.amazon.com/blogs/architecture/how-a-global-payment-processor-preserved-aws-ram-shares-and-lake-formation-permissions-during-an-aws-organizations-migration/)**（来源：AWS Architecture Blog）
+  > 分享在382账户跨组织大规模迁移中，通过临时桥接共享方案维持权限连续性的工程实践，是处理复杂云资源迁移的可复用模式。
 
-- **[MetaRoCE: A New RDMA Transport Built for AI-Scale Ethernet](https://engineering.fb.com/2026/08/24/networking-traffic/metaroce-rdma-transport-ai-ethernet/)**（来源：Meta Engineering）
-  > Meta发布专为AI工作负载优化的RDMA协议，基于商品以太网提升GPU间通信效率，并开源了规范和实现。
+- **[Build a unified AI agent architecture with DynamoDB and Bedrock](https://aws.amazon.com/blogs/architecture/build-a-unified-ai-agent-architecture-with-dynamodb-and-bedrock/)**（来源：AWS Architecture Blog）
+  > 阐述如何利用DynamoDB的原生向量搜索，在单表中统一存储操作数据与向量嵌入，并结合Bedrock构建高效AI Agent架构。
 
-- **[MTIA 300: Meta’s First Training Chip with Built-in NICs and Communication-Offloading Engines](https://engineering.fb.com/2026/08/24/networking-traffic/mtia-300-meta-training-chip-built-in-nics/)**（来源：Meta Engineering）
-  > Meta推出内置网卡和通信卸载引擎的训练芯片，通过软硬件协同设计优化推荐模型等场景的通信瓶颈。
+- **[How AgentFlo built AI sales agents with Amazon Bedrock AgentCore – Part 2](https://aws.amazon.com/blogs/architecture/how-agentflo-built-ai-sales-agents-with-amazon-bedrock-agentcore-part-2/)**（来源：AWS Architecture Blog）
+  > 分享构建可信AI代理的实践，通过三层护栏、有据数据与端到端可观测性实现可靠性，为后端AI系统提供可监控的参考架构。
 
-- **[Sub2API](https://github.com/Wei-Shaw/sub2api)**（来源：GitHub Trending）
-  > 开源AI API网关，支持Claude、OpenAI等模型的统一接入与订阅配额分发，通过拼车模式降低成本，适用于多团队协作。
+- **[A Tale of Two Flink Autoscalers](https://netflixtechblog.com/a-tale-of-two-flink-autoscalers-e9f6a1b1492b)**（来源：Netflix Tech Blog）
+  > Netflix优化Flink流处理作业自动扩展的实践，从自研方案迁移至基于真实处理率的开源方案，集成Temporal管理，提升资源效率。
 
-- **[google/sam](https://github.com/google/sam)**（来源：GitHub Trending）
-  > 一个为自主AI代理构建的去中心化智能网络，核心特点是零配置自动组网和零信任安全认证，支持跨云边缘部署。
+- **[My Journey from Traditional Monolithic Architecture to Distributed SQL](https://www.pingcap.com/blog/journey-from-traditional-monolithic-architecture-to-distributed-sql/)**（来源：PingCAP）
+  > 讨论从传统单体数据库迁移到分布式SQL（TiDB）的架构演进，涉及云原生数据库的可扩展性、多节点自动分片等核心考量。
 
-- **[Show HN: PicoMQ – 基于对象存储的HTTP持久流](https://news.ycombinator.com/item?id=49421806)**（来源：Hacker News）
-  > 一个基于对象存储的Rust流服务器原型，使用Postgres协调，探讨了构建廉价、URL可寻址流处理系统的新思路。
+- **[Jalapeño’s first results show industry-leading speed and efficiency in AI inference](https://openai.com/index/jalapeno-first-results)**（来源：OpenAI Blog）
+  > 披露OpenAI自定义推理芯片Jalapeño的初步性能数据，展示其通过硬件优化实现高吞吐低延迟的推理能力，为后端工程师提供硬件优化参考。
 
-- **[Your executable is a SQLite database](https://fzakaria.com/2026/08/23/your-executable-is-a-sqlite-database)**（来源：Lobsters）
-  > 探讨了一种将可执行文件嵌入为SQLite数据库的技术，涉及构建系统创新，可能用于软件分发或状态管理。
+- **[Maiao：适用于GitHub、GitLab、Gitea等平台的Gerrit风格代码审查工作流](https://news.ycombinator.com/item?id=49441666)**（来源：Hacker News）
+  > 一个实现Gerrit风格堆叠差异（Stacked Diffs）的代码审查工具，支持多个主流Git平台，可能改变大型代码变更的协作方式。
 
-- **[Control and complexity: tension in systems design](https://ferd.ca/control-and-complexity-tension-in-systems-design.html)**（来源：Lobsters）
-  > 深度文章探讨系统设计中“控制”与“复杂性”之间的根本张力，对构建和维护分布式系统有哲学层面的启发。
+- **[Show HN: LatticeDB – 如同图数据库领域的SQLite](https://news.ycombinator.com/item?id=49437049)**（来源：Hacker News）
+  > 一个旨在成为“图数据库中的SQLite”的本地优先、嵌入式图数据库项目原型，探讨了简化图数据本地使用的思路。
 
-- **[哪个工作流编排工具真的具备企业级RBAC，而不是简单的管理员/查看者角色？](https://www.reddit.com/r/devops/comments/1vwww41/what_workflow_orchestration_too_actually_has_real/)**（来源：Reddit DevOps）
-  > 讨论多租户场景下工作流编排工具（如Airflow替代品）应具备的细粒度、企业级访问控制（RBAC）需求。
+- **[Hunting Down a Go Runtime Bug on 32-bit Embedded Systems](https://sigma-star.at/blog/2026/08/go-runtime-netpoll-bug/)**（来源：Lobsters）
+  > 深度记录在32位嵌入式系统上排查并定位Go运行时网络轮询器（netpoll）bug的过程，对理解Go底层运行时和调试复杂问题极具参考价值。
 
-- **[如何添加Go语言MCP服务器](https://www.reddit.com/r/golang/comments/1vx9fui/how_do_i_add_a_go_mcp_server/)**（来源：Reddit Golang）
-  > 讨论为Go REST API添加MCP（Model Context Protocol）服务器的实践，涉及AI集成、安全与未来兼容性考量。
+- **[Solving the 1+N query problem](https://acadia.engineering/blog/solving-the-1-plus-N-query-problem)**（来源：Lobsters）
+  > 探讨解决ORM中经典的1+N查询性能问题的多种策略与实践，是后端工程师优化数据库访问模式的常见必修课。
 
-- **[美团搜索3.0：LLM 语义表征在排序模型的探索与应用](https://tech.meituan.com/2026/08/20/01-meituan-Query-3.0.html)**（来源：美团技术团队）
-  > 系统阐述美团如何将LLM生成的Query-POI-Deal三元语义表征，通过对比学习注入精排模型，显著提升长尾搜索效果。
+- **[Another look at SQLite's WAL-Reset bug](https://theconsensus.dev/p/2026/08/23/another-look-at-sqlite-wal-reset.html)**（来源：Lobsters）
+  > 对SQLite WAL（Write-Ahead Logging）模式重置相关bug的深度再分析，涉及数据库底层机制，对依赖SQLite的系统有参考意义。
 
-- **[Agent评测漫谈 —— 由浅入深讲解Agent评测](https://tech.meituan.com/2026/08/07/Agent-Evaluation.html)**（来源：美团技术团队）
-  > 系统讲解AI Agent评测方法论，从“答案评测”转向“行为与过程评测”，提出“人人一致”的标准化对齐框架。
+- **[我绘制了每个公共 Go 模块及其依赖关系（2.6M 个模块，9.4M 条依赖关系）](https://www.reddit.com/r/golang/comments/1vy5rbs/i_mapped_every_public_go_module_and_its/)**（来源：Reddit Golang）
+  > 作者对全部公开Go模块的依赖关系图进行可视化与分析，揭示了模块复用现状（如testify最流行），是了解Go生态的宏观视角。
 
-- **[KDD&apos;26美团学术论文精选及KDD Cup&apos;26 DataAgents赛道冠军思路解读](https://tech.meituan.com/2026/08/13/KDD-2026-meituan-papers.html)**（来源：美团技术团队）
-  > 解读美团在KDD 2026的论文，涵盖无对齐推荐大模型MTFM、对比驱动奖励建模CDRRM等工业级技术方案。
+- **[GoRL v2.2.1 —— 分片键锁技术，在并发多键负载下性能提升61-67%（经benchstat验证）](https://www.reddit.com/r/golang/comments/1vyd0xt/gorl_v221_sharded_key_locks_6167_faster_under/)**（来源：Reddit Golang）
+  > 介绍GoRL库通过分片键锁优化并发性能的实践，在特定负载下将延迟降低约60-67%，并提供了基准测试数据，对Go并发编程有参考价值。
+
+- **[下一代搜索智能体评测基准！美团开源LoHoSearch，用知识图谱校准AI能力认知](https://tech.meituan.com/2026/07/24/LongCat-LoHoSearch.html)**（来源：美团技术团队）
+  > 美团开源高难度搜索智能体评测基准LoHoSearch，利用知识图谱生成复杂任务，对当前先进模型构成显著挑战，为评估Agent长程推理能力提供新工具。
 
 ---
 
 ### AI 动态速览
-## AINews - 2026-08-25
+## AINews - 2026-08-26
 
-> [原文链接](https://news.smol.ai/issues/26-08-21-not-much/)
+> [原文链接](https://news.smol.ai/issues/26-08-24-not-much/)
 
 ## 📰 十大新闻要点
 
-### 1. [神秘模型“Ox Alpha”在编码与智能体任务中表现卓越](https://x.com/theo/status/2090657271827312727)
-> 一个被称为“Ox Alpha”的神秘模型在多个基准测试中展现出强大的编码和智能体（agentic）性能，表现优于Fable和GPT-5.6 Sol。社区推测其可能来自智谱（Zhipu/GLM）系列，例如GLM-5.3 Vision或其变体。其成功被归因于高效的后训练（post-training）和基础设施，而非纯粹的模型规模。
+### 1. [NVIDIA 提出“Skill Lift”评估方法，挑战现有代理评估标准](https://x.com/omarsar0/status/2091869893339812222)
+> NVIDIA 的新研究表明，对代理“技能”的结构化检查与实际有用性相关性很低（Spearman ρ = 0.14）。他们提出使用 **“Skill Lift”** 来衡量：在相同条件下，比较有某项技能和没有该技能时完成同一任务的差异。这挑战了仅优化模型本身的思路。
 
 ---
 
-### 2. [DeepSeek发布V4-Flash-Vision-Exp，支持多模态智能体](https://x.com/deepseek_ai/status/2090730032574631962)
-> DeepSeek发布了DeepSeek-V4-Flash-Vision-Exp，这是一个支持多模态输入（文本+图像）的模型，声称其多模态智能体性能接近Opus-4.8。该更新保留了V4-Flash的文本能力，并引入了新的Files API以实现图像文件的复用。此举可能部分解释了此前“Ox Alpha”的混淆。
+### 2. [Anthropic 推出 MCP 企业级认证管理，推动 Agent 生产部署](https://x.com/ClaudeDevs/status/2091953609185657251)
+> Anthropic 为 MCP 连接器（如 Asana、Notion、Slack 等）推出了 **企业级托管认证**，将授权集中到组织的身份提供商中。这解决了终端用户对每个工具进行 OAuth 的繁琐问题，是 MCP 从玩具演示走向可审计企业部署的关键一步。
 
 ---
 
-### 3. [OpenAI将GPT-5.6 Sol价格下调超20%](https://x.com/OpenAI/status/2090885187634905500)
-> OpenAI宣布在API和基于信用的产品中，将GPT-5.6 Sol的价格下调超过20%，有效期三个月。此举被视为对高效推理技术更新和来自中国实验室（如DeepSeek）廉价推理服务的直接竞争回应。
+### 3. [持续性自修改代理进入开源实现阶段](https://x.com/andykonwinski/status/2091990178638496195)
+> **Headlong** 是一个开源的“微框架”，专为持续思考（而非仅在请求时响应）的持久代理设计。它将轨迹存储为 JSONL 文件的 DAG 结构，并保持一个自我引导的内部循环运行。报告称其在 **48 分钟**内实现了无人值守的自我调试修复，但成本约为每小时 1-2 美元，且偶尔会出现自我导致的故障。
 
 ---
 
-### 4. [Codex活跃用户达2000万，市场格局变化](https://x.com/thsottiaux/status/2090766694897619318)
-> OpenAI的Codex产品活跃用户数已达到2000万。同时，有观点认为在开发者工具市场，OpenAI（通过Sol和Codex）可能正在从Anthropic手中夺回份额，市场情绪出现转变。
+### 4. [Qwen3.8-27B 在 Code Arena: WebDev 基准测试中闯入前十](https://x.com/arena/status/2091920512796725272)
+> 阿里 Qwen3.8-27B 模型在 **Code Arena: WebDev** 基准中以 1595 分位列 **总榜第 9**，是前十中唯一一个在其规模类别（27B）的模型，仅比其更大的 Qwen3.8-Max 低六个名次，展示了其超越模型参数规模的竞争力。
 
 ---
 
-### 5. [智能体训练重心从提示转向环境设计](https://x.com/ZhihuFrontier/status/2090731537037987931)
-> 业界趋势显示，提升智能体（Agent）性能的关键正从精巧的提示工程转向构建更丰富、可执行的环境（environments）进行训练。智谱GLM-5.3的分析表明，其性能提升归功于更好的沙箱环境和用于长期任务信用分配的SAO技术，而非基础模型改变。
+### 5. [OpenAI 发布 GPT-5.6 及 Sol 变体，大幅优化代理任务成本](https://x.com/OpenAIDevs/status/2091966993998266397)
+> OpenAI 开发者宣布 **GPT-5.6** 在 Kiro 环境中可用，并声称在 Terra 变体上，成功完成 **Terminal-Bench 2.1 任务的成本降低了约 82%**。同时，GPT-5.6 Sol 的 API 价格降至 **4 美元/百万输入 token** 和 **20 美元/百万输出 token**，重塑了性价比边界。
 
 ---
 
-### 6. [新基准测试推动智能体能力评估走向具体化与高难度](https://x.com/HuggingPapers/status/2090714199596941555)
-> 多个新的、更具体且更具挑战性的智能体基准测试被发布或更新，包括FACET（6078个终端任务）、SWE-bench Science（科学软件任务，Opus-5通过率<50%）、CADBench（3D CAD任务，顶级模型通过率仅24.6%）和AI4AI-Bench（递归自我改进任务）。
+### 6. [Speculative Programmatic Tool Calling (sPTC) 提出代理工作流级加速新思路](https://x.com/a1zhang/status/2091938825580716079)
+> **sPTC** 在代码生成期间预测可能的安全工具调用，并在环境副本中提前启动，使工具执行与 token 生成重叠。目前提速约 1.0-1.2 倍，但机制意义重大：优化重点从 token 级解码技巧转向了 **代理工作流流水线**，类似于 CPU 的投机执行。
 
 ---
 
-### 7. [DeepMind“Recirculation”技术提升推理时性能](https://x.com/TheTuringPost/status/2090583644964565215)
-> DeepMind的一篇论文介绍了“Recirculation”技术，该技术在推理时将深层网络的激活反馈回较早的层进行处理，无需重新训练。报告称该技术可减少60%的语境化错误，降低23%的困惑度，并在GSM8K数学测试中提升21%的准确率。
+### 7. [成本归一化代理基准重塑模型选择：GLM-5.3 在预算下表现超越 Fable 5](https://x.com/togethercompute/status/2091711899704385740)
+> 在 Together AI 的 DeepSWE 测试中，给定 **100 美元预算**，**GLM-5.3** 完成了 **5 倍于 Fable 5** 的工作量（约 17 个 vs 3 个已解决任务），尽管两者首次尝试性能相似。这表明在评估模型时，任务成功率和单位成本变得比单次尝试性能更重要。
 
 ---
 
-### 8. [NVIDIA AVO在ARC-AGI-3公开环境上达成100%通过率](https://x.com/NVIDIAAI/status/2090786258981466231)
-> NVIDIA的通用智能体NVIDIA AVO在ARC-AGI-3交互推理基准的25个公开环境（共183关）中全部通过。然而，François Chollet指出这只是公开的演示/教程集，而非完整的私有基准，因此结果需谨慎解读。
+### 8. [Liquid AI 与 Artificial Analysis 推出严肃的设备端 AI 评测套件](https://x.com/liquidai/status/2091906366428598284)
+> **Pipette** 是一个开源的设备端推理评测套件，可测量模型、量化、运行时和设备组合下的 **质量、速度、延迟和内存**，包含超过 1 万条经过验证的结果。其配套的手机端（iPhone 17 Pro， Galaxy S26 Ultra）独立智能评估表明，设备端存在一个与云端不同的帕累托前沿。
 
 ---
 
-### 9. [本地模型Qwen3.8-27B展示强大但存在权衡的智能体能力](https://www.reddit.com/r/LocalLLaMA/comments/1vt78xd/qwen3827b_has_the_highest_level_of_agency_ive/)
-> Reddit用户报告，在单个RTX 3090上使用量化后的Qwen3.8-27B运行本地智能体，表现出高度的自主性（如使用浏览器处理学校系统）。但同时也有报告指出，相比前代Qwen3.6-27B，新模型在无工具辅助的离线知识回忆能力上有所下降，这被视为在编码/智能体任务与通用知识存储之间的有意权衡。
+### 9. [NVIDIA Groq 3 LPX 与 vLLM AgentX 1.0 竞争代理特定吞吐量](https://x.com/GroqLLC/status/2091908837305663688)
+> **NVIDIA Groq 3 LPX** 为 Vera Rubin 增加了专用的 token 生成加速器，在 100K 上下文下对 Gemma 4 31B 实现了 **3400 输出 token/秒**。同时，**vLLM** 发布了 **AgentX 1.0** 结果，强调 KV 卸载、前缀重用和预填充/解码解聚是实现高代理吞吐的关键，而非传统的单轮服务指标。
 
 ---
 
-### 10. [推理计算资源仍是关键制约因素](https://x.com/saranormous/status/2090655089077977130)
-> 多位行业观察者指出，推理计算容量不仅没有变得宽裕，反而在收紧，这成为限制AI公司增长的关键因素。这使得模型效率、调度优化和每美元/每令牌的性能改进在战略上变得至关重要。
+### 10. [强化学习在 LLMs 中的应用成为热点，涵盖从 token 级到代理级训练](https://x.com/cwolferesearch/status/2091872097723359673)
+> 一份全面的强化学习指南发布，涵盖 token 级与完成级公式化、PPO/GRPO 变体、基于评分标准的 RL 以及代理 RL 和世界建模。这反映了对“框架原生”RL 和代理环境的日益关注，相关论文如 **Agent Lightning**、**LEGO-RL** 等也受到讨论。
 
 ---
 
-## 🛠️ 十大工具产品要点
+## 🛠️ 十大工具产品要点（如适用）
 
-### 1. [Hermes Agent集成Ox Alpha并引入新功能](https://x.com/Teknium/status/2090756018045321641)
-> Hermes Agent框架快速集成了性能强劲的Ox Alpha模型，并同时新增了“空白画布模式”（Blank Slate mode）和自动技能修剪功能，提升了智能体框架的灵活性和效率。
-
----
-
-### 2. [OpenHands将免费默认模型切换至Kimi K3](https://x.com/rajistics/status/2090846963558408280)
-> AI编码助手OpenHands宣布将其免费服务的默认模型切换为Kimi K3，这反映了开源或高效模型在提供免费/低成本开发者工具服务中的重要性。
+### 1. [Anthropic 为 MCP 连接器推出企业级托管认证](https://x.com/ClaudeDevs/status/2091953609185657251)
+> 该功能将 MCP 连接器的授权集中到组织的身份提供商（IdP）管理，支持 Asana、Atlassian、Figma、Slack 等数十个工具。这使得代理可以在企业环境中安全、便捷地使用多种第三方工具，无需用户逐一配置 OAuth。
 
 ---
 
-### 3. [nac v0.1.3发布：增强沙箱化与视觉功能](https://x.com/arcee_ai/status/2090821442409562524)
-> 智能体运行时nac发布v0.1.3版本，新增了沙箱化的Git工作区、会话组织功能以及支持视觉感知的图像读取能力，进一步完善了本地智能体开发的基础设施。
+### 2. [Headlong：开源持续思考代理微框架](https://x.com/andykonwinski/status/2091990178638496195)
+> 一个允许代理持续运行内部思考循环（而非仅响应请求）的开源框架。它通过 DAG 存储轨迹，实现了长时间无人值守的运行和自我调试。适合需要持续监控和自适应的复杂代理场景。
 
 ---
 
-### 4. [vLLM推出IsoExec确保分布式推理中训练与推理的对数概率一致性](https://x.com/vllm_project/status/2090815806297063661)
-> vLLM项目发布了IsoExec，旨在解决因浮点数非关联性导致的分布式推理（rollout）与训练（logprob）之间的数值不一致问题，确保比特级的精确匹配。在Qwen3.5-35B-A3B模型上，该技术将对数概率差异从1.6e-2大幅降低至6.7e-7，但带来约25.3%的开销。
+### 3. [Carnice-V3-27B：基于 Qwen 的开源 Hermes 代理 SFT 模型](https://x.com/kaiostephens/status/2091710751509475543)
+> 一个 **27B 参数**、基于 Qwen 并经过 Hermes 代理监督微调的模型，旨在适用于消费级 GPU（3090+）。提供合并的 BF16 和 GGUF 变体，旨在将强大的代理能力部署到本地环境。
 
 ---
 
-### 5. [FreeToken实现消费级GPU上的高效推理](https://x.com/Yuchenj_UW/status/2090857982385066474)
-> UC Berkeley推出的FreeToken工具展示了在消费级硬件上运行大模型的惊人效率，例如在单张RTX PRO 6000上实现753B参数GLM-5.2以14.9 tok/s的速度运行，在8GB RTX 4060笔记本上实现Qwen3.6-35B以39.3 tok/s的速度运行，声称比Ollama快2-4倍。
+### 4. [Pipette：开源设备端 AI 推理评测套件](https://x.com/liquidai/status/2091906366428598284)
+> 由 Liquid AI 发布的评测工具，可系统性地评估不同模型、量化方法、推理运行时和硬件设备组合在质量、速度、延迟和内存使用方面的表现，提供了超过 1 万条经过验证的数据点。
 
 ---
 
-### 6. [Ollama整合AT&T开放模型并新增Kimi K3支持](https://x.com/ollama/status/2090601698402447748)
-> 本地大模型运行工具Ollama欢迎AT&T加入开源模型阵营，并在其Pro/Max订阅服务中新增了对Kimi K3模型的支持，持续扩展其本地模型库。
+### 5. [exо：支持递归自我改进的代理框架架构](https://x.com/omarsar0/status/2091915906305704015)
+> 一种专为递归自我改进设计的框架，具有仅追加事件日志、可交换执行器以及支持快照/回滚的沙箱。其核心设计是允许代理重写提示、工具和记忆，而不会损坏持久状态，增强了安全性和可逆性。
 
 ---
 
-### 7. [GitHub将协作式智能体工作流引入Slack和Teams](https://x.com/tiagonbotelho/status/2090837735351230828)
-> GitHub将其智能体协作能力集成到Slack和Teams等团队协作平台中。在Slack中，智能体可以直接在共享频道中认领任务、提交PR并协调设计，类似Devin的工作流程。
+### 6. [Atomic Dynamic GGUF：Qwen 3.8 27B 的量化版本与基准测试](https://huggingface.co/collections/AtomicChat/qwen-38-27b)
+> **AtomicChat** 发布了 Qwen 3.8 27B 的多种动态 GGUF 量化版本（AD-Q4_K_M 到 Q8_0），并在 RTX PRO 6000 上进行了场景生成任务基准测试。测试显示了质量与速度之间的权衡，为本地部署提供了选择参考。
 
 ---
 
-### 8. [Google推出EnvHarness/EnvRigger用于自适应环境训练](https://x.com/omarsar0/status/2090797828163637286)
-> Google发布了EnvHarness/EnvRigger工具，它通过一个插件层和策略诊断的重塑机制来适配静态环境，用于训练智能体。报告称该方法在保持或提升性能的同时，减少了高达9.8%的执行步骤。
+### 7. [CMP 170HX 矿卡解锁方案，打造 64GB 长上下文推理服务器](https://github.com/amoghmunikote/cmpunlocker)
+> 通过修改开源内核驱动，将二手 **NVIDIA CMP 170HX** 矿卡解锁为拥有 **64GB HBM** 显存的 AI 推理 GPU。结合 vLLM 和 AWQ 量化，在 200K 上下文下仍能保持 57 tok/s 的解码速度，为低成本大内存本地推理提供了方案。
 
 ---
 
-### 9. [Cline集成Ox Alpha模型](https://x.com/cline/status/2090854216399220985)
-> 智能编码助手Cline也快速集成了当日备受关注的Ox Alpha模型，使得开发者能够通过该工具使用这一高性能模型。
+### 8. [SHADOW-250M：从头训练的超紧凑量化 LLM](https://github.com/QLNI/SHADOW-250M-Instruct)
+> 一个完全从头训练的 **250M 参数** LLM，经过 <2 比特量化后部署包仅约 **60MB**，运行时占用约 80MB RAM。其在 CPU 上的推理速度可达约 **400 tok/s**，适用于极端资源受限的边缘设备，如游戏 NPC 或语音助手前端。
 
 ---
 
-### 10. [ComfyUI节点为H3 Minimax带来稀疏注意力加速](https://github.com/PlagueKind/ComfyUI-PlagueKind-Nodes)
-> 开发者为ComfyUI添加了一个针对H3 Minimax视频生成模型的稀疏注意力（SLA）节点，声称可带来最高2.5倍的速度提升（实测约1.4倍），但用户反馈在特定内容（如动漫）上可能引入质量损失。
+### 9. [pi.dev / OhMyPi：被证明能显著提升代理编码能力的环境](https://www.reddit.com/r/LocalLLM/comments/1vvzkl9/qwen_38_isnt_opus_level_i_reran_the_test/)
+> 在 Reddit 的测试中，使用 **pi.dev** 环境运行 Qwen3.8-27B 代理成功完成了之前在 VS Code Copilot 下失败的 OpenGL 海洋渲染任务。评论指出，与 VS Code 等沙盒环境相比，提供执行和截图反馈的 **agentic harness**（如 pi.dev）能极大释放模型潜力。
+
+---
+
+### 10. [llama.cpp 文档新主页及未来主题](https://x.com/mervenoyann/status/2091892738832703781)
+> **llama.cpp** 的文档有了新的集中存放地，并宣布未来将添加关于 **推测解码**、**量化** 以及编码代理的专题内容。这将为使用这一关键本地推理框架的开发者提供更权威和深入的指导。
 
 ---
 
 ### 推荐阅读
 - [Cloudflare Blog](https://blog.cloudflare.com/zh-cn/)
-- [美团技术团队](https://static.zou8944.com/newsletter/2026-08-25/meituan_2026-08-25.md)
+- [美团技术团队](https://static.zou8944.com/newsletter/2026-08-26/meituan_2026-08-26.md)
 
 # 往日新闻
+
+#### [2026-08-25](https://static.zou8944.com/newsletter/2026-08-25/newsletter.md)
 
 #### [2026-08-24](https://static.zou8944.com/newsletter/2026-08-24/newsletter.md)
 
@@ -221,6 +226,4 @@
 #### [2026-07-28](https://static.zou8944.com/newsletter/2026-07-28/newsletter.md)
 
 #### [2026-07-27](https://static.zou8944.com/newsletter/2026-07-27/newsletter.md)
-
-#### [2026-07-26](https://static.zou8944.com/newsletter/2026-07-26/newsletter.md)
 
